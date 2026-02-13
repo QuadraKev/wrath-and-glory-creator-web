@@ -2732,9 +2732,13 @@ textarea {
 
 .sheet-weapons-table .sheet-weapon-ap {
     text-align: center;
-    font-size: 11px;
+    font-size: 12px;
     color: var(--text-secondary);
-    margin-top: 2px;
+}
+
+.sheet-weapons-table .sheet-weapon-sub-row td {
+    border-top: none;
+    padding-top: 0;
 }
 
 .sheet-weapons-table .sheet-weapon-range {
@@ -2764,8 +2768,8 @@ textarea {
 
 .sheet-weapons-table .sheet-weapon-ap[title] {
     cursor: help;
-    text-decoration: underline dotted var(--text-muted);
-    text-underline-offset: 2px;
+    border-bottom: 1px dotted var(--text-muted);
+    font-weight: 500;
     color: var(--accent-gold);
 }
 
@@ -3340,7 +3344,8 @@ textarea {
     /* Tappable stat cells: dotted underline on values (tap to show breakdown) */
     .sheet-weapons-table .sheet-weapon-dice[title],
     .sheet-weapons-table .sheet-weapon-damage[title],
-    .sheet-weapons-table .sheet-weapon-ed[title] {
+    .sheet-weapons-table .sheet-weapon-ed[title],
+    .sheet-weapons-table .sheet-weapon-ap[title] {
         text-decoration: underline dotted var(--text-muted);
         text-underline-offset: 3px;
         cursor: pointer;
@@ -3348,25 +3353,24 @@ textarea {
         font-weight: 500;
     }
 
-    .sheet-weapons-table .sheet-weapon-ap[title] {
-        cursor: pointer;
-    }
-
     /* --- Weapons table → cards --- */
     .sheet-weapons-table thead {
         display: none;
     }
 
+    /* Main weapon rows: card grid layout */
     .sheet-weapons-table tbody tr {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 6px 16px;
-        padding: 12px;
-        border-bottom: 1px solid var(--border-color);
+        padding: 12px 12px 0;
     }
 
-    .sheet-weapons-table tbody tr:last-child {
-        border-bottom: none;
+    /* Sub-rows (AP + ED): merge into previous card */
+    .sheet-weapons-table tbody tr.sheet-weapon-sub-row {
+        padding: 6px 12px 12px;
+        border-bottom: 1px solid var(--border-color);
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .sheet-weapons-table tbody td {
@@ -3409,6 +3413,7 @@ textarea {
     /* Stat labels */
     .sheet-weapons-table .sheet-weapon-dice::before { content: "Dice"; }
     .sheet-weapons-table .sheet-weapon-damage::before { content: "Damage"; }
+    .sheet-weapons-table .sheet-weapon-ap::before { content: "AP"; }
     .sheet-weapons-table .sheet-weapon-ed::before { content: "ED"; }
     .sheet-weapons-table .sheet-weapon-range::before { content: "Range"; }
     .sheet-weapons-table .sheet-weapon-traits::before { content: "Traits"; }

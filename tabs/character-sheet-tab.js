@@ -472,8 +472,6 @@ const CharacterSheetTab = {
 
         // Check if Simultaneous Strike is active
         const hasSimultaneousStrike = simultaneousStrike !== null;
-        const equipHeader = hasSimultaneousStrike ? '<th class="sheet-weapon-equip-header">In Hand</th>' : '';
-
         const rows = weapons.map(weapon => {
             // Combine base traits with upgrade-added traits
             let allTraits = [...(weapon.traits || [])];
@@ -507,9 +505,9 @@ const CharacterSheetTab = {
                 const isCompatible = this.isWeaponCompatibleWithSimultaneousStrike(weapon, simultaneousStrike);
                 if (isCompatible) {
                     const checked = weapon.isEquipped ? 'checked' : '';
-                    equipCell = `<td class="sheet-weapon-equip"><input type="checkbox" class="weapon-equip-checkbox" data-wargear-index="${weapon.wargearIndex}" ${checked}></td>`;
+                    equipCell = `<td class="sheet-weapon-equip" rowspan="2"><input type="checkbox" class="weapon-equip-checkbox" data-wargear-index="${weapon.wargearIndex}" ${checked}></td>`;
                 } else {
-                    equipCell = '<td class="sheet-weapon-equip">-</td>';
+                    equipCell = '<td class="sheet-weapon-equip" rowspan="2">-</td>';
                 }
             }
 
@@ -541,19 +539,21 @@ const CharacterSheetTab = {
             return `
                 <tr>
                     ${equipCell}
-                    <td class="sheet-weapon-name">${weapon.name}${upgradesDisplay}</td>
-                    <td class="sheet-weapon-dice"${diceTooltip}>${weapon.attackDice.display}</td>
-                    <td class="sheet-weapon-damage"${damageTooltip}>
-                        ${weapon.calculatedDamage.display}
-                        <div class="sheet-weapon-ap"${apTooltip}>${weapon.calculatedDamage.apDisplay} AP</div>
-                    </td>
-                    <td class="sheet-weapon-ed"${edTooltip}>${weapon.calculatedDamage.edDisplay}</td>
-                    <td class="sheet-weapon-range">${range}</td>
-                    <td class="sheet-weapon-traits">${traits}</td>
+                    <td class="sheet-weapon-name" rowspan="2">${weapon.name}${upgradesDisplay}</td>
+                    <td class="sheet-weapon-dice" rowspan="2"${diceTooltip}>${weapon.attackDice.display}</td>
+                    <td class="sheet-weapon-damage" colspan="2"${damageTooltip}>${weapon.calculatedDamage.display}</td>
+                    <td class="sheet-weapon-range" rowspan="2">${range}</td>
+                    <td class="sheet-weapon-traits" rowspan="2">${traits}</td>
+                </tr>
+                <tr class="sheet-weapon-sub-row">
+                    <td class="sheet-weapon-ap"${apTooltip}>${weapon.calculatedDamage.apDisplay} AP</td>
+                    <td class="sheet-weapon-ed"${edTooltip}>${weapon.calculatedDamage.edDisplay} ED</td>
                 </tr>
                 ${descRow}
             `;
         }).join('');
+
+        const equipHeaderCell = hasSimultaneousStrike ? '<th rowspan="2" class="sheet-weapon-equip-header">In Hand</th>' : '';
 
         return `
             <div class="sheet-section">
@@ -562,13 +562,16 @@ const CharacterSheetTab = {
                 <table class="sheet-table sheet-weapons-table">
                     <thead>
                         <tr>
-                            ${equipHeader}
-                            <th>Name</th>
-                            <th>Dice</th>
-                            <th>Damage</th>
+                            ${equipHeaderCell}
+                            <th rowspan="2">Name</th>
+                            <th rowspan="2">Dice</th>
+                            <th colspan="2">Damage</th>
+                            <th rowspan="2">Range</th>
+                            <th rowspan="2">Traits</th>
+                        </tr>
+                        <tr>
+                            <th>AP</th>
                             <th>ED</th>
-                            <th>Range</th>
-                            <th>Traits</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -1394,7 +1397,7 @@ const CharacterSheetTab = {
 
     // Bind tap/click handlers to show tooltips on cells with title attributes
     bindStatTooltips(container) {
-        const tappableCells = container.querySelectorAll('.sheet-weapons-table td[title], .sheet-weapons-table .sheet-weapon-ap[title]');
+        const tappableCells = container.querySelectorAll('.sheet-weapons-table td[title]');
 
         tappableCells.forEach(cell => {
             cell.addEventListener('click', (e) => {
