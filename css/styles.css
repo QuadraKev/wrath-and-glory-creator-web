@@ -3293,14 +3293,38 @@ textarea {
         -webkit-overflow-scrolling: touch;
     }
 
-    /* Character sheet tables: horizontal scroll */
-    .sheet-section {
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
+    /* Character sheet tables: wrap text to fit viewport */
+    .sheet-table th,
+    .sheet-table td {
+        white-space: normal;
+        word-break: break-word;
     }
 
-    .sheet-table {
-        min-width: 500px;
+    /* Remove fixed widths on sheet table columns */
+    .sheet-weapons-table .sheet-weapon-damage,
+    .sheet-weapons-table .sheet-weapon-ed,
+    .sheet-weapons-table .sheet-weapon-ap,
+    .sheet-weapons-table .sheet-weapon-range,
+    .sheet-weapons-table .sheet-weapon-dice,
+    .sheet-weapons-table .sheet-weapon-equip,
+    .sheet-weapons-table .sheet-weapon-equip-header,
+    .sheet-armor-table .sheet-armor-ar,
+    .sheet-armor-table .sheet-armor-value,
+    .sheet-armor-table .sheet-armor-rarity,
+    .sheet-equipment-table .sheet-equip-value,
+    .sheet-equipment-table .sheet-equip-rarity,
+    .sheet-powers-table .sheet-power-dn,
+    .sheet-skills-table .sheet-skill-rating,
+    .sheet-skills-table .sheet-skill-attr,
+    .sheet-skills-table .sheet-skill-total,
+    .sheet-attributes-table .sheet-attr-value,
+    .sheet-attributes-table .sheet-attr-abbrev {
+        width: auto;
+        min-width: 0;
+    }
+
+    .sheet-weapons-table .sheet-weapon-traits {
+        max-width: none;
     }
 
     /* Discipline tabs: wrap */
@@ -3494,17 +3518,20 @@ textarea {
     /* Sheet tables: tighter padding, smaller fonts */
     .sheet-table th,
     .sheet-table td {
-        padding: 6px 6px;
-        font-size: 12px;
+        padding: 4px 4px;
+        font-size: 11px;
     }
 
     .sheet-table th {
-        font-size: 10px;
+        font-size: 9px;
     }
 
     .sheet-weapons-table .sheet-weapon-traits {
-        font-size: 11px;
-        max-width: 100px;
+        font-size: 10px;
+    }
+
+    .sheet-weapons-table .sheet-weapon-ed {
+        font-size: 10px;
     }
 
     .sheet-section {
