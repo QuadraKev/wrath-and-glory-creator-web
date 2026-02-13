@@ -525,7 +525,7 @@ const CharacterSheetTab = {
                 ? weapon.keywords.map(k => `<span class="sheet-mini-keyword">${k}</span>`).join(' ')
                 : '';
             const hasDescOrKeywords = description || keywords;
-            const colSpan = hasSimultaneousStrike ? 8 : 7;
+            const colSpan = hasSimultaneousStrike ? 7 : 6;
 
             const descRow = hasDescOrKeywords ? `
                 <tr class="sheet-weapon-desc-row">
@@ -543,9 +543,11 @@ const CharacterSheetTab = {
                     ${equipCell}
                     <td class="sheet-weapon-name">${weapon.name}${upgradesDisplay}</td>
                     <td class="sheet-weapon-dice"${diceTooltip}>${weapon.attackDice.display}</td>
-                    <td class="sheet-weapon-damage"${damageTooltip}>${weapon.calculatedDamage.display}</td>
+                    <td class="sheet-weapon-damage"${damageTooltip}>
+                        ${weapon.calculatedDamage.display}
+                        <div class="sheet-weapon-ap"${apTooltip}>${weapon.calculatedDamage.apDisplay} AP</div>
+                    </td>
                     <td class="sheet-weapon-ed"${edTooltip}>${weapon.calculatedDamage.edDisplay}</td>
-                    <td class="sheet-weapon-ap"${apTooltip}>${weapon.calculatedDamage.apDisplay}</td>
                     <td class="sheet-weapon-range">${range}</td>
                     <td class="sheet-weapon-traits">${traits}</td>
                 </tr>
@@ -565,7 +567,6 @@ const CharacterSheetTab = {
                             <th>Dice</th>
                             <th>Damage</th>
                             <th>ED</th>
-                            <th>AP</th>
                             <th>Range</th>
                             <th>Traits</th>
                         </tr>
@@ -1393,7 +1394,7 @@ const CharacterSheetTab = {
 
     // Bind tap/click handlers to show tooltips on cells with title attributes
     bindStatTooltips(container) {
-        const tappableCells = container.querySelectorAll('.sheet-weapons-table td[title]');
+        const tappableCells = container.querySelectorAll('.sheet-weapons-table td[title], .sheet-weapons-table .sheet-weapon-ap[title]');
 
         tappableCells.forEach(cell => {
             cell.addEventListener('click', (e) => {

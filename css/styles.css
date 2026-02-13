@@ -2732,7 +2732,9 @@ textarea {
 
 .sheet-weapons-table .sheet-weapon-ap {
     text-align: center;
-    width: 50px;
+    font-size: 11px;
+    color: var(--text-secondary);
+    margin-top: 2px;
 }
 
 .sheet-weapons-table .sheet-weapon-range {
@@ -2753,11 +2755,17 @@ textarea {
 /* Tooltip indicator for cells with breakdown info */
 .sheet-weapons-table .sheet-weapon-dice[title],
 .sheet-weapons-table .sheet-weapon-damage[title],
-.sheet-weapons-table .sheet-weapon-ed[title],
-.sheet-weapons-table .sheet-weapon-ap[title] {
+.sheet-weapons-table .sheet-weapon-ed[title] {
     cursor: help;
     border-bottom: 1px dotted var(--text-muted);
     font-weight: 500;
+    color: var(--accent-gold);
+}
+
+.sheet-weapons-table .sheet-weapon-ap[title] {
+    cursor: help;
+    text-decoration: underline dotted var(--text-muted);
+    text-underline-offset: 2px;
     color: var(--accent-gold);
 }
 
@@ -3332,13 +3340,16 @@ textarea {
     /* Tappable stat cells: dotted underline on values (tap to show breakdown) */
     .sheet-weapons-table .sheet-weapon-dice[title],
     .sheet-weapons-table .sheet-weapon-damage[title],
-    .sheet-weapons-table .sheet-weapon-ed[title],
-    .sheet-weapons-table .sheet-weapon-ap[title] {
+    .sheet-weapons-table .sheet-weapon-ed[title] {
         text-decoration: underline dotted var(--text-muted);
         text-underline-offset: 3px;
         cursor: pointer;
         color: var(--accent-gold);
         font-weight: 500;
+    }
+
+    .sheet-weapons-table .sheet-weapon-ap[title] {
+        cursor: pointer;
     }
 
     /* --- Weapons table → cards --- */
@@ -3399,7 +3410,6 @@ textarea {
     .sheet-weapons-table .sheet-weapon-dice::before { content: "Dice"; }
     .sheet-weapons-table .sheet-weapon-damage::before { content: "Damage"; }
     .sheet-weapons-table .sheet-weapon-ed::before { content: "ED"; }
-    .sheet-weapons-table .sheet-weapon-ap::before { content: "AP"; }
     .sheet-weapons-table .sheet-weapon-range::before { content: "Range"; }
     .sheet-weapons-table .sheet-weapon-traits::before { content: "Traits"; }
     .sheet-weapons-table .sheet-weapon-equip::before { content: "In Hand"; }
