@@ -2752,12 +2752,29 @@ textarea {
 
 /* Tooltip indicator for cells with breakdown info */
 .sheet-weapons-table .sheet-weapon-dice[title],
+.sheet-weapons-table .sheet-weapon-damage[title],
 .sheet-weapons-table .sheet-weapon-ed[title],
 .sheet-weapons-table .sheet-weapon-ap[title] {
     cursor: help;
     border-bottom: 1px dotted var(--text-muted);
     font-weight: 500;
     color: var(--accent-gold);
+}
+
+/* Tap-to-show tooltip popup (for mobile stat breakdowns) */
+.stat-tooltip-popup {
+    position: fixed;
+    background: var(--bg-secondary);
+    border: 1px solid var(--accent-gold);
+    border-radius: var(--radius-sm);
+    padding: 8px 12px;
+    font-size: 12px;
+    color: var(--text-primary);
+    z-index: 2000;
+    box-shadow: var(--shadow-lg);
+    white-space: pre-line;
+    max-width: 300px;
+    line-height: 1.5;
 }
 
 .sheet-weapon-upgrades {
@@ -3312,21 +3329,16 @@ textarea {
         justify-content: flex-start;
     }
 
-    /* Tappable stat indicator for cells with tooltip breakdowns */
+    /* Tappable stat cells: dotted underline on values (tap to show breakdown) */
     .sheet-weapons-table .sheet-weapon-dice[title],
+    .sheet-weapons-table .sheet-weapon-damage[title],
     .sheet-weapons-table .sheet-weapon-ed[title],
     .sheet-weapons-table .sheet-weapon-ap[title] {
-        border-bottom: none;
-        position: relative;
-    }
-
-    .sheet-weapons-table .sheet-weapon-dice[title]::after,
-    .sheet-weapons-table .sheet-weapon-ed[title]::after,
-    .sheet-weapons-table .sheet-weapon-ap[title]::after {
-        content: " \2139";
-        font-size: 10px;
-        color: var(--accent-blue);
-        vertical-align: super;
+        text-decoration: underline dotted var(--text-muted);
+        text-underline-offset: 3px;
+        cursor: pointer;
+        color: var(--accent-gold);
+        font-weight: 500;
     }
 
     /* --- Weapons table → cards --- */

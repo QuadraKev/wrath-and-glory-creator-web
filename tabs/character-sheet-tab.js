@@ -62,6 +62,9 @@ const CharacterSheetTab = {
         // Bind weapon equip checkboxes
         this.bindWeaponEquipCheckboxes(container);
 
+        // Bind tap-to-show tooltip for stat cells (Dice, Damage, ED, AP)
+        this.bindStatTooltips(container);
+
         // Bind session tracking controls
         this.bindSessionTrackingControls(container);
     },
@@ -514,6 +517,7 @@ const CharacterSheetTab = {
             const diceTooltip = weapon.attackDice.tooltip ? ` title="${this.escapeHtml(weapon.attackDice.tooltip)}"` : '';
             const edTooltip = weapon.calculatedDamage.edTooltip ? ` title="${this.escapeHtml(weapon.calculatedDamage.edTooltip)}"` : '';
             const apTooltip = weapon.calculatedDamage.apTooltip ? ` title="${this.escapeHtml(weapon.calculatedDamage.apTooltip)}"` : '';
+            const damageTooltip = weapon.calculatedDamage.damageTooltip ? ` title="${this.escapeHtml(weapon.calculatedDamage.damageTooltip)}"` : '';
 
             // Build description and keywords row
             const description = weapon.description || '';
@@ -539,7 +543,7 @@ const CharacterSheetTab = {
                     ${equipCell}
                     <td class="sheet-weapon-name">${weapon.name}${upgradesDisplay}</td>
                     <td class="sheet-weapon-dice"${diceTooltip}>${weapon.attackDice.display}</td>
-                    <td class="sheet-weapon-damage">${weapon.calculatedDamage.display}</td>
+                    <td class="sheet-weapon-damage"${damageTooltip}>${weapon.calculatedDamage.display}</td>
                     <td class="sheet-weapon-ed"${edTooltip}>${weapon.calculatedDamage.edDisplay}</td>
                     <td class="sheet-weapon-ap"${apTooltip}>${weapon.calculatedDamage.apDisplay}</td>
                     <td class="sheet-weapon-range">${range}</td>
@@ -1344,40 +1348,93 @@ const CharacterSheetTab = {
             const attrValue = character.attributes[weapon.damage.attribute] || 0;
             const attrAbbrev = weapon.damage.attribute.substring(0, 3).toUpperCase();
 
-            let damageDisplay = `${baseDamage} + ${attrValue} (${attrAbbrev})`;
+            const totalDamage = baseDamage + attrValue + totalDamageBonus;
+            let damageTooltip = `Base: ${baseDamage} + ${attrAbbrev}: ${attrValue}`;
             if (damageBonuses.length > 0) {
                 const bonusStrings = damageBonuses.map(b => `+${b.value} (${b.source})`);
-                damageDisplay += ` ${bonusStrings.join(' ')}`;
+                damageTooltip += `\n${bonusStrings.join('\n')}`;
             }
+            damageTooltip += `\nTotal: ${totalDamage}`;
 
             return {
-                damage: baseDamage + attrValue + totalDamageBonus,
+                damage: totalDamage,
                 ed: totalED,
                 ap: totalAP,
                 edDisplay: `${totalED}`,
                 edTooltip: edTooltip,
                 apDisplay: `${totalAP}`,
                 apTooltip: apBonuses.length > 0 ? apTooltip : null,
-                display: damageDisplay
+                display: `${totalDamage}`,
+                damageTooltip: damageTooltip
             };
         }
 
-        let damageDisplay = `${baseDamage}`;
+        const totalDamage = baseDamage + totalDamageBonus;
+        let damageTooltip = null;
         if (damageBonuses.length > 0) {
+            damageTooltip = `Base: ${baseDamage}`;
             const bonusStrings = damageBonuses.map(b => `+${b.value} (${b.source})`);
-            damageDisplay += ` ${bonusStrings.join(' ')}`;
+            damageTooltip += `\n${bonusStrings.join('\n')}`;
+            damageTooltip += `\nTotal: ${totalDamage}`;
         }
 
         return {
-            damage: baseDamage + totalDamageBonus,
+            damage: totalDamage,
             ed: totalED,
             ap: totalAP,
             edDisplay: `${totalED}`,
             edTooltip: edTooltip,
             apDisplay: `${totalAP}`,
             apTooltip: apBonuses.length > 0 ? apTooltip : null,
-            display: damageDisplay
+            display: `${totalDamage}`,
+            damageTooltip: damageTooltip
         };
+    },
+
+    // Bind tap/click handlers to show tooltips on cells with title attributes
+    bindStatTooltips(container) {
+        const tappableCells = container.querySelectorAll('.sheet-weapons-table td[title]');
+
+        tappableCells.forEach(cell => {
+            cell.addEventListener('click', (e) => {
+                e.stopPropagation();
+
+                // Remove any existing tooltip
+                const existing = document.querySelector('.stat-tooltip-popup');
+                if (existing) existing.remove();
+
+                const tooltip = document.createElement('div');
+                tooltip.className = 'stat-tooltip-popup';
+                tooltip.textContent = cell.getAttribute('title');
+                document.body.appendChild(tooltip);
+
+                // Position below the cell
+                const rect = cell.getBoundingClientRect();
+                const tooltipRect = tooltip.getBoundingClientRect();
+                let top = rect.bottom + 8;
+                let left = rect.left;
+
+                // Keep within viewport
+                if (left + tooltipRect.width > window.innerWidth - 10) {
+                    left = window.innerWidth - tooltipRect.width - 10;
+                }
+                if (top + tooltipRect.height > window.innerHeight - 10) {
+                    top = rect.top - tooltipRect.height - 8;
+                }
+
+                tooltip.style.top = `${top}px`;
+                tooltip.style.left = `${Math.max(10, left)}px`;
+
+                // Dismiss on click outside
+                const dismiss = (evt) => {
+                    if (!tooltip.contains(evt.target)) {
+                        tooltip.remove();
+                        document.removeEventListener('click', dismiss);
+                    }
+                };
+                setTimeout(() => document.addEventListener('click', dismiss), 0);
+            });
+        });
     },
 
     // Helper: Escape HTML
