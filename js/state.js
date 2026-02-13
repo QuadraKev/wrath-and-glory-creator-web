@@ -1,0 +1,1001 @@
+// State Manager - Manages character state and updates
+
+const State = {
+    // Current character state
+    character: null,
+
+    // Game data reference
+    gameData: null,
+
+    // Enabled source books
+    enabledSources: ['core', 'fspg', 'redacted1', 'redacted2', 'church', 'voa', 'aeldari', 'apocrypha', 'dh', 'shotguns'],
+
+    // Event listeners for state changes
+    listeners: [],
+
+    // Dirty state tracking - true when character has unsaved changes
+    isDirty: false,
+
+    // Initialize state with default character
+    init(gameData) {
+        this.gameData = gameData;
+        this.character = this.createNewCharacter();
+    },
+
+    // Create a new blank character
+    createNewCharacter() {
+        return {
+            name: '',
+            tier: 1,
+            rank: 1,
+            additionalXp: 0,
+            setting: '',
+
+            species: {
+                id: null,
+                xpCost: 0,
+                subOptions: []  // Array of { type, optionId } for selected sub-options
+            },
+
+            archetype: {
+                id: null,
+                xpCost: 0
+            },
+
+            customArchetype: {
+                name: '',
+                abilityArchetypeId: null,
+                keywords: [],
+                wargear: []
+            },
+
+            ascensionPackages: [],
+
+            attributes: {
+                strength: 1,
+                toughness: 1,
+                agility: 1,
+                initiative: 1,
+                willpower: 1,
+                intellect: 1,
+                fellowship: 1
+            },
+
+            skills: {
+                athletics: 0,
+                awareness: 0,
+                ballisticSkill: 0,
+                cunning: 0,
+                deception: 0,
+                insight: 0,
+                intimidation: 0,
+                investigation: 0,
+                leadership: 0,
+                medicae: 0,
+                persuasion: 0,
+                pilot: 0,
+                psychicMastery: 0,
+                scholar: 0,
+                stealth: 0,
+                survival: 0,
+                tech: 0,
+                weaponSkill: 0
+            },
+
+            talents: [],
+            wargear: [],
+            psychicPowers: [],
+
+            background: {
+                origin: null,
+                accomplishment: null,
+                goal: null,
+                bonusUsed: null
+            },
+
+            languages: ['low_gothic'],
+            notes: '',
+            corruption: 0,
+
+            // Session tracking (current values that change during play)
+            currentWounds: null,  // null means full (equal to max)
+            currentShock: null,   // null means full (equal to max)
+            currentWealth: null,  // null means equal to base wealth
+            currentWrath: null,   // null means default (2)
+            currentFaith: null    // null means equal to max faith
+        };
+    },
+
+    // Mark state as clean (no unsaved changes)
+    markClean() {
+        this.isDirty = false;
+    },
+
+    // Reset character to new
+    newCharacter() {
+        this.character = this.createNewCharacter();
+        this.notifyListeners('reset');
+        this.isDirty = false;
+    },
+
+    // Load a character from data
+    loadCharacter(data) {
+        const newChar = this.createNewCharacter();
+        this.character = { ...newChar, ...data };
+
+        // Ensure species subOptions is properly initialized
+        if (this.character.species && !this.character.species.subOptions) {
+            this.character.species.subOptions = [];
+        }
+
+        this.notifyListeners('load');
+        this.isDirty = false;
+    },
+
+    // Get current character
+    getCharacter() {
+        return this.character;
+    },
+
+    // Update character name
+    setName(name) {
+        this.character.name = name;
+        this.notifyListeners('name');
+    },
+
+    // Update tier
+    setTier(tier) {
+        const oldTier = this.character.tier;
+        this.character.tier = parseInt(tier) || 1;
+        this.notifyListeners('tier');
+
+        // If Kroot and tier increased, notify that more mutations may be available
+        if (this.character.species?.id === 'kroot' && this.character.tier > oldTier) {
+            this.notifyListeners('krootMutationsAvailable');
+        }
+    },
+
+    // Update rank
+    setRank(rank) {
+        this.character.rank = parseInt(rank) || 1;
+        this.notifyListeners('rank');
+    },
+
+    // Update additional XP
+    setAdditionalXP(xp) {
+        this.character.additionalXp = parseInt(xp) || 0;
+        this.notifyListeners('xp');
+    },
+
+    // Update setting description
+    setSetting(setting) {
+        this.character.setting = setting;
+        this.notifyListeners('setting');
+    },
+
+    // Set species
+    setSpecies(speciesId) {
+        const species = DataLoader.getSpecies(speciesId);
+        if (species) {
+            this.character.species = {
+                id: speciesId,
+                xpCost: species.cost || 0,
+                subOptions: []  // Clear sub-options when species changes
+            };
+
+            // Apply species base attributes
+            if (species.baseAttributes) {
+                for (const [attr, value] of Object.entries(species.baseAttributes)) {
+                    this.character.attributes[attr] = Math.max(this.character.attributes[attr], value);
+                }
+            }
+
+            // Always clear archetype when species changes (user must re-select)
+            if (this.character.archetype.id) {
+                this.clearArchetype();
+            }
+        } else {
+            this.character.species = { id: null, xpCost: 0, subOptions: [] };
+        }
+
+        this.notifyListeners('species');
+    },
+
+    // Set a species sub-option (chapter, path, mutation, etc.)
+    setSpeciesSubOption(type, optionId) {
+        if (!this.character.species.subOptions) {
+            this.character.species.subOptions = [];
+        }
+
+        // For mutation type, we allow multiple selections
+        const species = DataLoader.getSpecies(this.character.species.id);
+        const subOptionsConfig = this.getSubOptionsConfig(species);
+        const config = Array.isArray(subOptionsConfig)
+            ? subOptionsConfig.find(c => c.type === type)
+            : (subOptionsConfig?.type === type ? subOptionsConfig : null);
+
+        if (config?.countByTier) {
+            // Multi-select type (like mutations) - add if not already present
+            const existing = this.character.species.subOptions.find(
+                opt => opt.type === type && opt.optionId === optionId
+            );
+            if (!existing) {
+                this.character.species.subOptions.push({ type, optionId });
+            }
+        } else {
+            // Single-select type - replace any existing option of this type
+            const existingIndex = this.character.species.subOptions.findIndex(opt => opt.type === type);
+            if (existingIndex >= 0) {
+                this.character.species.subOptions[existingIndex] = { type, optionId };
+            } else {
+                this.character.species.subOptions.push({ type, optionId });
+            }
+        }
+
+        this.notifyListeners('speciesSubOption', { type, optionId });
+    },
+
+    // Remove a species sub-option
+    removeSpeciesSubOption(type, optionId) {
+        if (!this.character.species.subOptions) return;
+
+        const index = this.character.species.subOptions.findIndex(
+            opt => opt.type === type && opt.optionId === optionId
+        );
+        if (index >= 0) {
+            this.character.species.subOptions.splice(index, 1);
+            this.notifyListeners('speciesSubOption', { type, optionId, removed: true });
+        }
+    },
+
+    // Get all selected sub-options for the current species
+    getSpeciesSubOptions() {
+        return this.character.species?.subOptions || [];
+    },
+
+    // Get selected sub-option(s) for a specific type
+    getSpeciesSubOptionsByType(type) {
+        return (this.character.species?.subOptions || []).filter(opt => opt.type === type);
+    },
+
+    // Helper to get sub-options config from species (handles both single object and array format)
+    getSubOptionsConfig(species) {
+        if (!species?.subOptions) return null;
+        return species.subOptions;
+    },
+
+    // Check how many mutations a Kroot can have based on tier
+    getKrootMutationCount() {
+        return this.character.tier || 1;
+    },
+
+    // Check if more Kroot mutations are available
+    canAddMoreKrootMutations() {
+        if (this.character.species?.id !== 'kroot') return false;
+        const currentMutations = this.getSpeciesSubOptionsByType('mutation');
+        return currentMutations.length < this.getKrootMutationCount();
+    },
+
+    // Set archetype
+    setArchetype(archetypeId) {
+        const archetype = DataLoader.getArchetype(archetypeId);
+        if (archetype) {
+            this.character.archetype = {
+                id: archetypeId,
+                xpCost: archetype.cost || 0
+            };
+
+            // Apply archetype attribute bonuses
+            if (archetype.attributeBonus) {
+                for (const [attr, value] of Object.entries(archetype.attributeBonus)) {
+                    this.character.attributes[attr] = Math.max(this.character.attributes[attr], value);
+                }
+            }
+
+            // Apply archetype skill bonuses
+            if (archetype.skillBonus) {
+                for (const [skill, value] of Object.entries(archetype.skillBonus)) {
+                    this.character.skills[skill] = Math.max(this.character.skills[skill], value);
+                }
+            }
+
+            // Set starting wargear
+            // Supports both simple strings "frag_grenades" and objects { "id": "frag_grenades", "qty": 3 }
+            // Each item is stored as a separate entry (no qty field - multiples are separate entries)
+            this.character.wargear = [];
+            for (const entry of (archetype.startingWargear || [])) {
+                if (typeof entry === 'string') {
+                    // Simple string ID, quantity = 1
+                    this.character.wargear.push({
+                        id: entry,
+                        isStarting: true
+                    });
+                } else if (typeof entry === 'object' && entry.id) {
+                    // Object with id and optional qty - add qty separate entries
+                    const qty = entry.qty || 1;
+                    for (let i = 0; i < qty; i++) {
+                        this.character.wargear.push({
+                            id: entry.id,
+                            isStarting: true
+                        });
+                    }
+                }
+            }
+
+        } else {
+            this.clearArchetype();
+        }
+
+        this.notifyListeners('archetype');
+    },
+
+    // Clear archetype selection
+    clearArchetype() {
+        this.character.archetype = { id: null, xpCost: 0 };
+        this.character.customArchetype = { name: '', abilityArchetypeId: null, keywords: [], wargear: [] };
+        this.resetStats();
+    },
+
+    // Check if character is using custom archetype
+    isCustomArchetype() {
+        return this.character.archetype?.id === 'custom';
+    },
+
+    // Wargear budget by tier for custom archetype
+    WARGEAR_BUDGET: {
+        1: { totalValue: 15, maxValue: 7, maxRarity: 'Uncommon' },
+        2: { totalValue: 20, maxValue: 9, maxRarity: 'Rare' },
+        3: { totalValue: 25, maxValue: 10, maxRarity: 'Very Rare' },
+        4: { totalValue: 30, maxValue: null, maxRarity: 'Very Rare' },
+        5: { totalValue: 35, maxValue: null, maxRarity: null }
+    },
+
+    RARITY_ORDER: ['Common', 'Uncommon', 'Rare', 'Very Rare', 'Unique'],
+
+    // Set custom archetype mode
+    setCustomArchetype() {
+        this.character.archetype = { id: 'custom', xpCost: 0 };
+        this.character.customArchetype = { name: '', abilityArchetypeId: null, keywords: [], wargear: [] };
+        this.character.wargear = [];
+        this.resetStats();
+        this.notifyListeners('archetype');
+    },
+
+    // Set custom archetype name
+    setCustomArchetypeName(name) {
+        this.character.customArchetype.name = name;
+        this.notifyListeners('customArchetype');
+    },
+
+    // Set custom archetype ability (archetypeId whose ability is purchased, or null)
+    setCustomArchetypeAbility(archetypeId) {
+        this.character.customArchetype.abilityArchetypeId = archetypeId || null;
+        this.notifyListeners('customArchetype');
+    },
+
+    // Add a custom keyword
+    addCustomKeyword(keyword) {
+        const upper = keyword.toUpperCase().trim();
+        if (upper && !this.character.customArchetype.keywords.includes(upper)) {
+            this.character.customArchetype.keywords.push(upper);
+            this.notifyListeners('customArchetype');
+        }
+    },
+
+    // Remove a custom keyword
+    removeCustomKeyword(keyword) {
+        const index = this.character.customArchetype.keywords.indexOf(keyword);
+        if (index !== -1) {
+            this.character.customArchetype.keywords.splice(index, 1);
+            this.notifyListeners('customArchetype');
+        }
+    },
+
+    // Get wargear budget for current tier
+    getWargearBudget() {
+        return this.WARGEAR_BUDGET[this.character.tier] || this.WARGEAR_BUDGET[1];
+    },
+
+    // Get total value of custom starting wargear
+    getWargearBudgetUsed() {
+        let total = 0;
+        for (const itemId of this.character.customArchetype.wargear) {
+            const item = DataLoader.getWargearItem(itemId);
+            if (item) total += item.value || 0;
+        }
+        return total;
+    },
+
+    // Check if a wargear item is within budget constraints
+    canAddCustomWargear(itemId) {
+        const item = DataLoader.getWargearItem(itemId);
+        if (!item) return false;
+
+        const budget = this.getWargearBudget();
+        const used = this.getWargearBudgetUsed();
+        const itemValue = item.value || 0;
+
+        // Check total value
+        if (used + itemValue > budget.totalValue) return false;
+
+        // Check max value per item
+        if (budget.maxValue !== null && itemValue > budget.maxValue) return false;
+
+        // Check rarity
+        if (budget.maxRarity !== null) {
+            const itemRarityIndex = this.RARITY_ORDER.indexOf(item.rarity || 'Common');
+            const maxRarityIndex = this.RARITY_ORDER.indexOf(budget.maxRarity);
+            if (itemRarityIndex > maxRarityIndex) return false;
+        }
+
+        return true;
+    },
+
+    // Add custom starting wargear
+    addCustomStartingWargear(itemId) {
+        if (this.canAddCustomWargear(itemId)) {
+            this.character.customArchetype.wargear.push(itemId);
+            // Also add to main wargear list as starting gear
+            this.character.wargear.push({ id: itemId, isStarting: true });
+            this.notifyListeners('customArchetype');
+            this.notifyListeners('wargear', itemId);
+        }
+    },
+
+    // Remove custom starting wargear
+    removeCustomStartingWargear(index) {
+        if (index >= 0 && index < this.character.customArchetype.wargear.length) {
+            const itemId = this.character.customArchetype.wargear[index];
+            this.character.customArchetype.wargear.splice(index, 1);
+            // Also remove from main wargear list (find the matching starting item)
+            const wargearIndex = this.character.wargear.findIndex(w => w.id === itemId && w.isStarting);
+            if (wargearIndex !== -1) {
+                this.character.wargear.splice(wargearIndex, 1);
+            }
+            this.notifyListeners('customArchetype');
+            this.notifyListeners('wargear', itemId);
+        }
+    },
+
+    // Reset attributes and skills to species baseline
+    resetStats() {
+        const species = DataLoader.getSpecies(this.character.species?.id);
+        const archetype = DataLoader.getArchetype(this.character.archetype?.id);
+
+        // Reset attributes
+        for (const attr of Object.keys(this.character.attributes)) {
+            let value = 1;
+            if (species?.baseAttributes?.[attr]) {
+                value = Math.max(value, species.baseAttributes[attr]);
+            }
+            if (archetype?.attributeBonus?.[attr]) {
+                value = Math.max(value, archetype.attributeBonus[attr]);
+            }
+            this.character.attributes[attr] = value;
+        }
+
+        // Reset skills
+        for (const skill of Object.keys(this.character.skills)) {
+            let value = 0;
+            if (archetype?.skillBonus?.[skill]) {
+                value = Math.max(value, archetype.skillBonus[skill]);
+            }
+            this.character.skills[skill] = value;
+        }
+
+        this.notifyListeners('stats');
+    },
+
+    // Increase an attribute
+    increaseAttribute(attr) {
+        const species = DataLoader.getSpecies(this.character.species?.id);
+        const max = species?.attributeMaximums?.[attr] || 8;
+        const current = this.character.attributes[attr] || 1;
+
+        if (current < max) {
+            const cost = XPCalculator.getNextAttributeCost(current);
+            if (cost !== null && XPCalculator.canAfford(this.character, cost)) {
+                this.character.attributes[attr] = current + 1;
+                this.notifyListeners('attribute', attr);
+                return true;
+            }
+        }
+        return false;
+    },
+
+    // Decrease an attribute
+    decreaseAttribute(attr) {
+        const species = DataLoader.getSpecies(this.character.species?.id);
+        const archetype = DataLoader.getArchetype(this.character.archetype?.id);
+
+        // Calculate minimum (species base or archetype bonus, whichever is higher)
+        let min = 1;
+        if (species?.baseAttributes?.[attr]) {
+            min = Math.max(min, species.baseAttributes[attr]);
+        }
+        if (archetype?.attributeBonus?.[attr]) {
+            min = Math.max(min, archetype.attributeBonus[attr]);
+        }
+
+        const current = this.character.attributes[attr] || 1;
+        if (current > min) {
+            this.character.attributes[attr] = current - 1;
+            this.notifyListeners('attribute', attr);
+            return true;
+        }
+        return false;
+    },
+
+    // Increase a skill
+    increaseSkill(skill) {
+        const current = this.character.skills[skill] || 0;
+        const max = 8;
+
+        if (current < max) {
+            const cost = XPCalculator.getNextSkillCost(current);
+            if (cost !== null && XPCalculator.canAfford(this.character, cost)) {
+                this.character.skills[skill] = current + 1;
+                this.notifyListeners('skill', skill);
+                return true;
+            }
+        }
+        return false;
+    },
+
+    // Decrease a skill
+    decreaseSkill(skill) {
+        const archetype = DataLoader.getArchetype(this.character.archetype?.id);
+        const min = archetype?.skillBonus?.[skill] || 0;
+        const current = this.character.skills[skill] || 0;
+
+        if (current > min) {
+            this.character.skills[skill] = current - 1;
+            this.notifyListeners('skill', skill);
+            return true;
+        }
+        return false;
+    },
+
+    // Add a talent (with optional choice for talents that require it)
+    addTalent(talentId, choice = null) {
+        // Check if already has this talent
+        const hasTalent = this.character.talents.some(t =>
+            (typeof t === 'string' ? t : t.id) === talentId
+        );
+
+        if (!hasTalent) {
+            const talent = DataLoader.getTalent(talentId);
+            if (talent && XPCalculator.canAfford(this.character, talent.cost || 0)) {
+                // Store as object if choice provided, otherwise just the ID
+                if (choice !== null) {
+                    this.character.talents.push({ id: talentId, choice: choice });
+                } else {
+                    this.character.talents.push(talentId);
+                }
+                this.notifyListeners('talent', talentId);
+                return true;
+            }
+        }
+        return false;
+    },
+
+    // Remove a talent
+    removeTalent(talentId) {
+        const index = this.character.talents.findIndex(t =>
+            (typeof t === 'string' ? t : t.id) === talentId
+        );
+        if (index !== -1) {
+            this.character.talents.splice(index, 1);
+            this.notifyListeners('talent', talentId);
+            return true;
+        }
+        return false;
+    },
+
+    // Get talent entry (returns { id, choice } or { id } for string entries)
+    getTalentEntry(talentId) {
+        const entry = this.character.talents.find(t =>
+            (typeof t === 'string' ? t : t.id) === talentId
+        );
+        if (!entry) return null;
+        return typeof entry === 'string' ? { id: entry } : entry;
+    },
+
+    // Check if character has a specific talent
+    hasTalent(talentId) {
+        return this.character.talents.some(t =>
+            (typeof t === 'string' ? t : t.id) === talentId
+        );
+    },
+
+    // Add a psychic power
+    addPower(powerId) {
+        if (!this.character.psychicPowers.includes(powerId)) {
+            const power = DataLoader.getPsychicPower(powerId);
+            if (power && XPCalculator.canAfford(this.character, power.cost || 0)) {
+                this.character.psychicPowers.push(powerId);
+                this.notifyListeners('power', powerId);
+                return true;
+            }
+        }
+        return false;
+    },
+
+    // Remove a psychic power
+    removePower(powerId) {
+        const index = this.character.psychicPowers.indexOf(powerId);
+        if (index !== -1) {
+            this.character.psychicPowers.splice(index, 1);
+            this.notifyListeners('power', powerId);
+            return true;
+        }
+        return false;
+    },
+
+    // Add wargear (each item is a separate entry, no qty - call multiple times for multiples)
+    addWargear(itemId, isStarting = false) {
+        this.character.wargear.push({ id: itemId, isStarting: isStarting });
+        this.notifyListeners('wargear', itemId);
+    },
+
+    // Remove wargear by ID (first match)
+    removeWargear(itemId) {
+        const index = this.character.wargear.findIndex(w => w.id === itemId);
+        if (index !== -1) {
+            this.character.wargear.splice(index, 1);
+            this.notifyListeners('wargear', itemId);
+            return true;
+        }
+        return false;
+    },
+
+    // Remove wargear by index (for handling multiple copies of same item)
+    removeWargearByIndex(wargearIndex) {
+        if (wargearIndex >= 0 && wargearIndex < this.character.wargear.length) {
+            const item = this.character.wargear[wargearIndex];
+            this.character.wargear.splice(wargearIndex, 1);
+            this.notifyListeners('wargear', item.id);
+            return true;
+        }
+        return false;
+    },
+
+    // Toggle weapon equipped status (for Simultaneous Strike tracking)
+    // Uses array index for unique identification when same weapon appears multiple times
+    toggleWeaponEquipped(wargearIndex) {
+        if (wargearIndex >= 0 && wargearIndex < this.character.wargear.length) {
+            const item = this.character.wargear[wargearIndex];
+            item.equipped = !item.equipped;
+            this.notifyListeners('wargear', wargearIndex);
+            return item.equipped;
+        }
+        return false;
+    },
+
+    // Get equipped weapons with their indices
+    getEquippedWeapons() {
+        const equipped = [];
+        for (let i = 0; i < (this.character.wargear || []).length; i++) {
+            const item = this.character.wargear[i];
+            if (item.equipped) {
+                const weapon = DataLoader.getWeapon(item.id);
+                if (weapon) {
+                    equipped.push({ ...weapon, wargearIndex: i });
+                }
+            }
+        }
+        return equipped;
+    },
+
+    // Check if weapon at index is equipped
+    isWeaponEquipped(wargearIndex) {
+        if (wargearIndex >= 0 && wargearIndex < this.character.wargear.length) {
+            return this.character.wargear[wargearIndex].equipped || false;
+        }
+        return false;
+    },
+
+    // Add an upgrade to a weapon at the specified wargear index
+    addWeaponUpgrade(wargearIndex, upgradeId) {
+        if (wargearIndex >= 0 && wargearIndex < this.character.wargear.length) {
+            const item = this.character.wargear[wargearIndex];
+            const weapon = DataLoader.getWeapon(item.id);
+
+            // Only weapons can have upgrades
+            if (!weapon) return false;
+
+            // Initialize upgrades array if needed
+            if (!item.upgrades) {
+                item.upgrades = [];
+            }
+
+            // Check if upgrade is valid
+            const validUpgrades = DataLoader.getValidUpgradesForWeapon(weapon, item.upgrades);
+            const isValid = validUpgrades.some(u => u.id === upgradeId);
+
+            if (isValid && !item.upgrades.includes(upgradeId)) {
+                item.upgrades.push(upgradeId);
+                this.notifyListeners('wargear', wargearIndex);
+                return true;
+            }
+        }
+        return false;
+    },
+
+    // Remove an upgrade from a weapon at the specified wargear index
+    removeWeaponUpgrade(wargearIndex, upgradeId) {
+        if (wargearIndex >= 0 && wargearIndex < this.character.wargear.length) {
+            const item = this.character.wargear[wargearIndex];
+            if (item.upgrades) {
+                const idx = item.upgrades.indexOf(upgradeId);
+                if (idx !== -1) {
+                    item.upgrades.splice(idx, 1);
+                    this.notifyListeners('wargear', wargearIndex);
+                    return true;
+                }
+            }
+        }
+        return false;
+    },
+
+    // Get upgrades for a weapon at the specified wargear index
+    getWeaponUpgrades(wargearIndex) {
+        if (wargearIndex >= 0 && wargearIndex < this.character.wargear.length) {
+            return this.character.wargear[wargearIndex].upgrades || [];
+        }
+        return [];
+    },
+
+    // Set background option
+    setBackground(type, backgroundId, bonusType = null) {
+        this.character.background[type] = backgroundId ? { id: backgroundId, bonusType: bonusType } : null;
+        this.notifyListeners('background', type);
+    },
+
+    // Use background bonus
+    useBackgroundBonus(type) {
+        this.character.background.bonusUsed = type;
+        this.notifyListeners('background', 'bonus');
+    },
+
+    // Add language
+    addLanguage(language) {
+        if (!this.character.languages.includes(language)) {
+            this.character.languages.push(language);
+            this.notifyListeners('language', language);
+        }
+    },
+
+    // Remove language
+    removeLanguage(language) {
+        if (language !== 'low_gothic') { // Can't remove Low Gothic
+            const index = this.character.languages.indexOf(language);
+            if (index !== -1) {
+                this.character.languages.splice(index, 1);
+                this.notifyListeners('language', language);
+            }
+        }
+    },
+
+    // Set notes
+    setNotes(notes) {
+        this.character.notes = notes;
+        this.notifyListeners('notes');
+    },
+
+    // === SESSION TRACKING (Current Wounds, Shock, Wealth) ===
+    // Note: Wounds and Shock count UP from 0 (tracking damage taken)
+
+    // Get current wounds (null means 0, tracks damage taken)
+    getCurrentWounds() {
+        return this.character.currentWounds || 0;
+    },
+
+    // Set current wounds (capped at max)
+    setCurrentWounds(value) {
+        const max = DerivedStats.calculateMaxWounds(this.character);
+        this.character.currentWounds = Math.max(0, Math.min(value, max));
+        if (this.character.currentWounds === 0) {
+            this.character.currentWounds = null; // Store as null when 0
+        }
+        this.notifyListeners('currentWounds');
+    },
+
+    // Modify current wounds by delta (positive = take damage, negative = heal)
+    modifyCurrentWounds(delta) {
+        const current = this.getCurrentWounds();
+        this.setCurrentWounds(current + delta);
+    },
+
+    // Get current shock (null means 0, tracks shock taken)
+    getCurrentShock() {
+        return this.character.currentShock || 0;
+    },
+
+    // Set current shock (capped at max)
+    setCurrentShock(value) {
+        const max = DerivedStats.calculateMaxShock(this.character);
+        this.character.currentShock = Math.max(0, Math.min(value, max));
+        if (this.character.currentShock === 0) {
+            this.character.currentShock = null; // Store as null when 0
+        }
+        this.notifyListeners('currentShock');
+    },
+
+    // Modify current shock by delta (positive = take shock, negative = recover)
+    modifyCurrentShock(delta) {
+        const current = this.getCurrentShock();
+        this.setCurrentShock(current + delta);
+    },
+
+    // Get current wealth (null means equal to base)
+    getCurrentWealth() {
+        const base = DerivedStats.calculateWealth(this.character);
+        if (this.character.currentWealth === null) {
+            return base;
+        }
+        return this.character.currentWealth;
+    },
+
+    // Set current wealth
+    setCurrentWealth(value) {
+        const base = DerivedStats.calculateWealth(this.character);
+        if (value === base) {
+            this.character.currentWealth = null;
+        } else {
+            this.character.currentWealth = Math.max(0, value);
+        }
+        this.notifyListeners('currentWealth');
+    },
+
+    // Modify current wealth by delta (positive = gain, negative = spend)
+    modifyCurrentWealth(delta) {
+        const current = this.getCurrentWealth();
+        this.setCurrentWealth(current + delta);
+    },
+
+    // Reset session values (wounds/shock to 0, wealth to base)
+    resetSessionValues() {
+        this.character.currentWounds = null;
+        this.character.currentShock = null;
+        this.character.currentWealth = null;
+        this.character.currentWrath = null;
+        this.character.currentFaith = null;
+        this.notifyListeners('sessionReset');
+    },
+
+    // === WRATH AND FAITH TRACKING ===
+
+    // Get max Faith from talents (count talents with "You gain +1 Faith." in description)
+    getMaxFaith() {
+        let faith = 0;
+        for (const talentEntry of this.character.talents) {
+            const talentId = typeof talentEntry === 'string' ? talentEntry : talentEntry.id;
+            const talent = DataLoader.getTalent(talentId);
+            if (talent && talent.effect && talent.effect.includes('You gain +1 Faith.')) {
+                faith += 1;
+            }
+        }
+        return faith;
+    },
+
+    // Get current Wrath (null means default of 2)
+    getCurrentWrath() {
+        if (this.character.currentWrath === null) {
+            return 2; // Default Wrath is 2
+        }
+        return this.character.currentWrath;
+    },
+
+    // Set current Wrath (no upper limit, minimum 0)
+    setCurrentWrath(value) {
+        const newValue = Math.max(0, value);
+        if (newValue === 2) {
+            this.character.currentWrath = null; // Store as null when at default
+        } else {
+            this.character.currentWrath = newValue;
+        }
+        this.notifyListeners('currentWrath');
+    },
+
+    // Modify current Wrath by delta
+    modifyCurrentWrath(delta) {
+        const current = this.getCurrentWrath();
+        this.setCurrentWrath(current + delta);
+    },
+
+    // Get current Faith (null means equal to max)
+    getCurrentFaith() {
+        const max = this.getMaxFaith();
+        if (this.character.currentFaith === null) {
+            return max; // Default to max faith
+        }
+        return this.character.currentFaith;
+    },
+
+    // Set current Faith (capped at max, minimum 0)
+    setCurrentFaith(value) {
+        const max = this.getMaxFaith();
+        const newValue = Math.max(0, Math.min(value, max));
+        if (newValue === max) {
+            this.character.currentFaith = null; // Store as null when at max
+        } else {
+            this.character.currentFaith = newValue;
+        }
+        this.notifyListeners('currentFaith');
+    },
+
+    // Modify current Faith by delta
+    modifyCurrentFaith(delta) {
+        const current = this.getCurrentFaith();
+        this.setCurrentFaith(current + delta);
+    },
+
+    // Reset Wrath and Faith to session defaults (Wrath=2, Faith=max)
+    resetWrathAndFaith() {
+        this.character.currentWrath = null;
+        this.character.currentFaith = null;
+        this.notifyListeners('wrathFaithReset');
+    },
+
+    // Add ascension package
+    addAscensionPackage(packageId) {
+        if (!this.character.ascensionPackages.includes(packageId)) {
+            this.character.ascensionPackages.push(packageId);
+            this.notifyListeners('ascension', packageId);
+        }
+    },
+
+    // Remove ascension package
+    removeAscensionPackage(packageId) {
+        const index = this.character.ascensionPackages.indexOf(packageId);
+        if (index !== -1) {
+            this.character.ascensionPackages.splice(index, 1);
+            this.notifyListeners('ascension', packageId);
+        }
+    },
+
+    // Set enabled sources
+    setEnabledSources(sources) {
+        this.enabledSources = sources;
+        this.notifyListeners('sources');
+    },
+
+    // Check if source is enabled
+    isSourceEnabled(source) {
+        return this.enabledSources.includes(source);
+    },
+
+    // Register a listener for state changes
+    addListener(callback) {
+        this.listeners.push(callback);
+    },
+
+    // Remove a listener
+    removeListener(callback) {
+        const index = this.listeners.indexOf(callback);
+        if (index !== -1) {
+            this.listeners.splice(index, 1);
+        }
+    },
+
+    // Notify all listeners of a change
+    notifyListeners(changeType, data = null) {
+        if (changeType !== 'reset' && changeType !== 'load') {
+            this.isDirty = true;
+        }
+        for (const listener of this.listeners) {
+            listener(changeType, data, this.character);
+        }
+    },
+
+    // Get character keywords
+    getKeywords() {
+        return PrerequisiteChecker.getCharacterKeywords(this.character);
+    },
+
+    // Check if character is a psyker
+    isPsyker() {
+        return this.getKeywords().includes('PSYKER');
+    }
+};

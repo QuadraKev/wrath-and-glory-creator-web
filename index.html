@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Wrath and Glory Character Creator</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Header -->
+        <header class="app-header">
+            <div class="header-left">
+                <h1 class="app-title">Wrath & Glory</h1>
+                <span class="app-subtitle">Character Creator</span>
+            </div>
+            <div class="header-right">
+                <button id="btn-new" class="header-btn" title="New Character">
+                    <span class="btn-icon">+</span> New
+                </button>
+                <button id="btn-load" class="header-btn" title="Load Character">
+                    <span class="btn-icon">&#128193;</span> Load
+                </button>
+                <button id="btn-save" class="header-btn" title="Save Character">
+                    <span class="btn-icon">&#128190;</span> Save
+                </button>
+            </div>
+        </header>
+
+        <!-- Tab Navigation -->
+        <nav class="tab-nav">
+            <div class="tab-nav-left">
+                <span id="campaign-display" class="campaign-info">Tier 1 Campaign</span>
+                <span id="xp-display" class="xp-info">0 / 100 XP</span>
+            </div>
+            <div class="tab-nav-tabs">
+                <button class="tab-btn active" data-tab="builder">CHARACTER BUILDER</button>
+                <button class="tab-btn" data-tab="character-sheet">CHARACTER SHEET</button>
+                <button class="tab-btn" data-tab="glossary">GLOSSARY</button>
+            </div>
+        </nav>
+
+        <!-- Main Content Area -->
+        <div class="main-container">
+            <!-- Character Builder Tab -->
+            <div id="tab-builder" class="tab-content active">
+                <!-- Left Sidebar - Navigation within Builder -->
+                <aside class="sidebar">
+                    <div class="sidebar-section">
+                        <div class="sidebar-item active" data-section="setting">
+                            <span class="sidebar-label">Setting</span>
+                            <span id="sidebar-setting-xp" class="sidebar-xp">0 / 100 XP</span>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-section">
+                        <div class="sidebar-item" data-section="species">
+                            <span class="sidebar-label">1. Species</span>
+                            <span id="sidebar-species-name" class="sidebar-name">-</span>
+                            <span id="sidebar-species-xp" class="sidebar-xp">0 XP</span>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-section">
+                        <div class="sidebar-item" data-section="archetype">
+                            <span class="sidebar-label">2. Archetype</span>
+                            <span id="sidebar-archetype-name" class="sidebar-name">-</span>
+                            <span id="sidebar-archetype-xp" class="sidebar-xp">0 XP</span>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-section">
+                        <div class="sidebar-item" data-section="ascension">
+                            <span class="sidebar-label">3. Ascension</span>
+                            <span id="sidebar-ascension-xp" class="sidebar-xp">0 XP</span>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-section">
+                        <div class="sidebar-item" data-section="stats">
+                            <span class="sidebar-label">4. Stats</span>
+                            <span class="sidebar-sublabel">Attributes & Skills</span>
+                            <span id="sidebar-stats-xp" class="sidebar-xp">0 XP</span>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-section">
+                        <div class="sidebar-item" data-section="talents">
+                            <span class="sidebar-label">5. Talents</span>
+                            <span id="sidebar-talents-count" class="sidebar-count">0 Talents learned</span>
+                            <span id="sidebar-talents-xp" class="sidebar-xp">0 XP</span>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-section">
+                        <div class="sidebar-item" data-section="wargear">
+                            <span class="sidebar-label">6. Wargear</span>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-section">
+                        <div class="sidebar-item" data-section="powers">
+                            <span class="sidebar-label">7. Powers</span>
+                            <span id="sidebar-powers-count" class="sidebar-count">0 Powers learned</span>
+                            <span id="sidebar-powers-xp" class="sidebar-xp">0 XP</span>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-section">
+                        <div class="sidebar-item" data-section="background">
+                            <span class="sidebar-label">8. Background</span>
+                            <span id="sidebar-faction" class="sidebar-faction">-</span>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- Builder Content Area -->
+                <main class="content">
+                    <!-- Setting Section -->
+                    <div id="section-setting" class="builder-section active">
+                        <h2>Character</h2>
+
+                        <div class="form-group">
+                            <label for="character-name">Character Name</label>
+                            <input type="text" id="character-name" placeholder="Enter character name">
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="additional-xp">Additional Experience Points</label>
+                                <input type="number" id="additional-xp" value="0" min="0">
+                                <span class="form-hint">Add the XP earned by playing the game. Usually granted by the GM.</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="character-rank">Rank</label>
+                                <input type="number" id="character-rank" value="1" min="1" max="5">
+                                <span class="form-hint">Set your Character's Rank, usually between 1-3.</span>
+                            </div>
+                        </div>
+
+                        <h3>Framework</h3>
+                        <p class="section-desc">Define your campaign framework.</p>
+
+                        <div class="form-group">
+                            <label for="tier-select">Select a fitting tier</label>
+                            <select id="tier-select">
+                                <option value="1">1 - Defenders of Humanity (100 XP)</option>
+                                <option value="2">2 - Agents of Fate (200 XP)</option>
+                                <option value="3">3 - Elite Guardians (300 XP)</option>
+                                <option value="4">4 - Heroic Champions (400 XP)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="setting-desc">Describe your Setting or Campaign</label>
+                            <input type="text" id="setting-desc" placeholder="Only a few words">
+                        </div>
+
+                        <h3>Source Books</h3>
+                        <p class="section-desc">Enable specific content from official publications.</p>
+
+                        <div class="source-books">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="source-core" checked disabled>
+                                <span>Wrath & Glory Core Rules</span>
+                                <span class="source-desc">Core Factions</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="source-forsaken" checked>
+                                <span>Forsaken System Player Guide</span>
+                                <span class="source-desc">Imperial Archetypes, Ogryn, Ratling, Kroot</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="source-redacted1" checked>
+                                <span>Redacted Records I</span>
+                                <span class="source-desc">Additional Talents</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="source-redacted2" checked>
+                                <span>Redacted Records II</span>
+                                <span class="source-desc">More Talents, Faith Talents</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="source-church" checked>
+                                <span>Church of Steel</span>
+                                <span class="source-desc">Additional Content</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="source-vow" checked>
+                                <span>Vow of Absolution</span>
+                                <span class="source-desc">Space Marine Content</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="source-aeldari" checked>
+                                <span>Aeldari - Inheritance of Embers</span>
+                                <span class="source-desc">Aeldari Content</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="source-dh" checked>
+                                <span>Threat Assessment: Daemons & Heretics</span>
+                                <span class="source-desc">Psychic Powers, Prayers, Litanies</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="source-shotguns" checked>
+                                <span>Departmento Munitorum Shotguns</span>
+                                <span class="source-desc">Shotguns, Ammo Types</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="source-apocrypha" checked>
+                                <span>An Abundance of Apocrypha (Homebrew)</span>
+                                <span class="source-desc">Species, Archetypes, Talents, Powers, Equipment</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Species Section -->
+                    <div id="section-species" class="builder-section">
+                        <h2>Select a Species</h2>
+                        <div id="species-list" class="card-grid">
+                            <!-- Species cards populated by JavaScript -->
+                        </div>
+                    </div>
+
+                    <!-- Archetype Section -->
+                    <div id="section-archetype" class="builder-section">
+                        <h2>Select an Archetype</h2>
+                        <div class="search-bar">
+                            <input type="text" id="archetype-search" placeholder="Search...">
+                        </div>
+                        <div id="archetype-list" class="archetype-list">
+                            <!-- Archetype list populated by JavaScript -->
+                        </div>
+                        <div id="archetype-detail" class="archetype-detail hidden">
+                            <!-- Selected archetype details -->
+                        </div>
+                    </div>
+
+                    <!-- Ascension Section -->
+                    <div id="section-ascension" class="builder-section">
+                        <h2>Select an Ascension Package</h2>
+                        <p class="section-desc">Ascension packages represent major character milestones and advancement.</p>
+                        <div id="ascension-list" class="card-grid">
+                            <!-- Ascension packages populated by JavaScript -->
+                        </div>
+                    </div>
+
+                    <!-- Stats Section -->
+                    <div id="section-stats" class="builder-section">
+                        <div class="stats-header">
+                            <h2>Select Attributes and Skills</h2>
+                            <button id="btn-reset-stats" class="btn-secondary">RESET STATS</button>
+                        </div>
+
+                        <div class="stats-container">
+                            <div class="stats-column">
+                                <h3>Attributes</h3>
+                                <div id="attributes-list" class="stats-list">
+                                    <!-- Attributes populated by JavaScript -->
+                                </div>
+
+                                <h3>Traits</h3>
+                                <div id="derived-stats" class="derived-stats">
+                                    <!-- Derived stats populated by JavaScript -->
+                                </div>
+                            </div>
+
+                            <div class="stats-column">
+                                <h3>Skills</h3>
+                                <div id="skills-list" class="stats-list">
+                                    <!-- Skills populated by JavaScript -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Talents Section -->
+                    <div id="section-talents" class="builder-section">
+                        <h2>Manage Talents</h2>
+
+                        <div id="selected-talents" class="selected-talents">
+                            <!-- Selected talents shown here -->
+                        </div>
+
+                        <div class="talents-controls">
+                            <input type="text" id="talent-search" placeholder="Search">
+                            <label class="checkbox-label inline">
+                                <input type="checkbox" id="filter-prerequisites">
+                                <span>Show only fulfilled prerequisites</span>
+                            </label>
+                        </div>
+
+                        <div id="talents-table" class="talents-table">
+                            <!-- Talents table populated by JavaScript -->
+                        </div>
+
+                        <div id="talents-pagination" class="pagination">
+                            <!-- Pagination controls -->
+                        </div>
+                    </div>
+
+                    <!-- Wargear Section -->
+                    <div id="section-wargear" class="builder-section">
+                        <h2>Wargear</h2>
+
+                        <h3>Current Wargear (<span id="wargear-count">0</span>)</h3>
+                        <div id="current-wargear">
+                            <!-- Current wargear items rendered by JavaScript -->
+                        </div>
+
+                        <h3>Add Wargear</h3>
+                        <div id="additional-wargear">
+                            <!-- Wargear browser rendered by JavaScript -->
+                        </div>
+                    </div>
+
+                    <!-- Powers Section -->
+                    <div id="section-powers" class="builder-section">
+                        <h2>Manage Powers</h2>
+
+                        <div id="selected-powers" class="selected-powers">
+                            <!-- Selected powers shown as chips -->
+                        </div>
+
+                        <div class="discipline-tabs">
+                            <button class="discipline-btn active" data-discipline="minor">Minor</button>
+                            <button class="discipline-btn" data-discipline="universal">Universal</button>
+                            <button class="discipline-btn" data-discipline="biomancy">Biomancy</button>
+                            <button class="discipline-btn" data-discipline="divination">Divination</button>
+                            <button class="discipline-btn" data-discipline="pyromancy">Pyromancy</button>
+                            <button class="discipline-btn" data-discipline="telekinesis">Telekinesis</button>
+                            <button class="discipline-btn" data-discipline="telepathy">Telepathy</button>
+                            <button class="discipline-btn" data-discipline="maleficarum">Maleficarum</button>
+                            <button class="discipline-btn" data-discipline="runes of battle">Runes of Battle</button>
+                            <button class="discipline-btn" data-discipline="runes of fate">Runes of Fate</button>
+                            <button class="discipline-btn" data-discipline="runes of fortune">Runes of Fortune</button>
+                            <button class="discipline-btn" data-discipline="bonesinging">Bonesinging</button>
+                            <button class="discipline-btn" data-discipline="phantasmancy">Phantasmancy</button>
+                        </div>
+
+                        <div class="powers-controls">
+                            <input type="text" id="power-search" placeholder="Search">
+                        </div>
+
+                        <div id="powers-table" class="powers-table">
+                            <!-- Powers table populated by JavaScript -->
+                        </div>
+                    </div>
+
+                    <!-- Background Section -->
+                    <div id="section-background" class="builder-section">
+                        <h2>Manage Backgrounds</h2>
+                        <p class="section-desc">Select a background for each Section and choose a single Trait bonus.</p>
+
+                        <div id="background-bonus" class="background-bonus hidden">
+                            <!-- Selected bonus display -->
+                        </div>
+
+                        <div class="background-section">
+                            <h3>Origin</h3>
+                            <select id="origin-select">
+                                <option value="">Select an Origin...</option>
+                            </select>
+                            <div id="origin-detail" class="background-detail"></div>
+                        </div>
+
+                        <div class="background-section">
+                            <h3>Accomplishment</h3>
+                            <select id="accomplishment-select">
+                                <option value="">Select an Accomplishment...</option>
+                            </select>
+                            <div id="accomplishment-detail" class="background-detail"></div>
+                        </div>
+
+                        <div class="background-section">
+                            <h3>Goal</h3>
+                            <select id="goal-select">
+                                <option value="">Select a Goal...</option>
+                            </select>
+                            <div id="goal-detail" class="background-detail"></div>
+                        </div>
+
+                        <div class="background-section">
+                            <h3>Manage Languages</h3>
+                            <p class="section-desc">Every character starts with Low Gothic and an additional language common to your homeworld or origin.</p>
+                            <div id="languages-list" class="languages-list">
+                                <span class="language-chip">Low Gothic</span>
+                            </div>
+                            <div class="add-language">
+                                <input type="text" id="new-language" placeholder="Enter a custom language">
+                                <button id="btn-add-language" class="btn-small">+</button>
+                            </div>
+                        </div>
+
+                        <div class="background-section">
+                            <h3>Notes</h3>
+                            <textarea id="character-notes" placeholder="Additional notes about your character..."></textarea>
+                        </div>
+                    </div>
+                </main>
+            </div>
+
+            <!-- Character Sheet Tab -->
+            <div id="tab-character-sheet" class="tab-content tab-fullwidth">
+                <div class="character-sheet">
+                    <div class="sheet-actions">
+                        <button id="btn-print" class="header-btn">
+                            <span class="btn-icon">&#128438;</span> Print
+                        </button>
+                        <button id="btn-export-pdf" class="header-btn">
+                            <span class="btn-icon">&#128196;</span> Export PDF
+                        </button>
+                    </div>
+                    <div id="character-sheet-content">
+                        <!-- Character sheet content populated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Glossary Tab -->
+            <div id="tab-glossary" class="tab-content tab-fullwidth">
+                <div class="glossary-container">
+                    <h2>Glossary</h2>
+                    <div class="glossary-controls">
+                        <input type="text" id="glossary-search" placeholder="Search terms..." class="search-input">
+                        <div class="glossary-filters">
+                            <button class="glossary-filter-btn active" data-category="all">All</button>
+                            <button class="glossary-filter-btn" data-category="characterTerms">Character Terms</button>
+                            <button class="glossary-filter-btn" data-category="conditions">Conditions</button>
+                            <button class="glossary-filter-btn" data-category="combatTerms">Combat Rules</button>
+                            <button class="glossary-filter-btn" data-category="terms">Game Rules</button>
+                            <button class="glossary-filter-btn" data-category="weaponTraits">Weapon Traits</button>
+                            <button class="glossary-filter-btn" data-category="armorTraits">Armor Traits</button>
+                            <button class="glossary-filter-btn" data-category="keywords">Keywords</button>
+                            <button class="glossary-filter-btn" data-category="psychicPowers">Psychic Powers</button>
+                        </div>
+                    </div>
+                    <div id="glossary-content">
+                        <!-- Glossary entries populated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="app-footer">
+            <span id="footer-xp" class="footer-xp">0 / 100 XP</span>
+            <span id="footer-keywords" class="footer-keywords"></span>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/web-api.js"></script>
+    <script src="js/data-loader.js"></script>
+    <script src="js/xp-calculator.js"></script>
+    <script src="js/derived-stats.js"></script>
+    <script src="js/prerequisite.js"></script>
+    <script src="js/state.js"></script>
+    <script src="js/character-io.js"></script>
+    <script src="js/glossary.js"></script>
+    <script src="tabs/setting-tab.js"></script>
+    <script src="tabs/species-tab.js"></script>
+    <script src="tabs/archetype-tab.js"></script>
+    <script src="tabs/ascension-tab.js"></script>
+    <script src="tabs/stats-tab.js"></script>
+    <script src="tabs/talents-tab.js"></script>
+    <script src="tabs/wargear-tab.js"></script>
+    <script src="tabs/powers-tab.js"></script>
+    <script src="tabs/background-tab.js"></script>
+    <script src="tabs/character-sheet-tab.js"></script>
+    <script src="tabs/glossary-tab.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
