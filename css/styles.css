@@ -3293,6 +3293,16 @@ textarea {
         -webkit-overflow-scrolling: touch;
     }
 
+    /* Character sheet tables: horizontal scroll */
+    .sheet-section {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .sheet-table {
+        min-width: 500px;
+    }
+
     /* Discipline tabs: wrap */
     .discipline-tabs {
         gap: 6px;
@@ -3479,6 +3489,26 @@ textarea {
     .wargear-tab-btn {
         padding: 5px 10px;
         font-size: 11px;
+    }
+
+    /* Sheet tables: tighter padding, smaller fonts */
+    .sheet-table th,
+    .sheet-table td {
+        padding: 6px 6px;
+        font-size: 12px;
+    }
+
+    .sheet-table th {
+        font-size: 10px;
+    }
+
+    .sheet-weapons-table .sheet-weapon-traits {
+        font-size: 11px;
+        max-width: 100px;
+    }
+
+    .sheet-section {
+        padding: 12px;
     }
 }
 
