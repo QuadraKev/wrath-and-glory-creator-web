@@ -537,19 +537,21 @@ const CharacterSheetTab = {
             ` : '';
 
             return `
-                <tr>
-                    ${equipCell}
-                    <td class="sheet-weapon-name" rowspan="2">${weapon.name}${upgradesDisplay}</td>
-                    <td class="sheet-weapon-dice" rowspan="2"${diceTooltip}>${weapon.attackDice.display}</td>
-                    <td class="sheet-weapon-damage" colspan="2"${damageTooltip}>${weapon.calculatedDamage.display}</td>
-                    <td class="sheet-weapon-range" rowspan="2">${range}</td>
-                    <td class="sheet-weapon-traits" rowspan="2">${traits}</td>
-                </tr>
-                <tr class="sheet-weapon-sub-row">
-                    <td class="sheet-weapon-ap"${apTooltip}>${weapon.calculatedDamage.apDisplay} AP</td>
-                    <td class="sheet-weapon-ed"${edTooltip}>${weapon.calculatedDamage.edDisplay} ED</td>
-                </tr>
-                ${descRow}
+                <tbody class="sheet-weapon-group">
+                    <tr>
+                        ${equipCell}
+                        <td class="sheet-weapon-name" rowspan="2">${weapon.name}${upgradesDisplay}</td>
+                        <td class="sheet-weapon-dice" rowspan="2"${diceTooltip}>${weapon.attackDice.display}</td>
+                        <td class="sheet-weapon-damage" colspan="2"${damageTooltip}>${weapon.calculatedDamage.display}</td>
+                        <td class="sheet-weapon-range" rowspan="2">${range}</td>
+                        <td class="sheet-weapon-traits" rowspan="2">${traits}</td>
+                    </tr>
+                    <tr class="sheet-weapon-sub-row">
+                        <td class="sheet-weapon-ap"${apTooltip}>${weapon.calculatedDamage.apDisplay} AP</td>
+                        <td class="sheet-weapon-ed"${edTooltip}>${weapon.calculatedDamage.edDisplay} ED</td>
+                    </tr>
+                    ${descRow}
+                </tbody>
             `;
         }).join('');
 
@@ -574,9 +576,7 @@ const CharacterSheetTab = {
                             <th>ED</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        ${rows}
-                    </tbody>
+                    ${rows}
                 </table>
             </div>
         `;

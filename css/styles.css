@@ -3358,22 +3358,21 @@ textarea {
         display: none;
     }
 
-    /* Main weapon rows: card grid layout */
-    .sheet-weapons-table tbody tr {
+    /* Each weapon group (tbody) becomes a grid card */
+    .sheet-weapons-table .sheet-weapon-group {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 6px 16px;
-        padding: 12px 12px 0;
-    }
-
-    /* Sub-rows (AP + ED): merge into previous card */
-    .sheet-weapons-table tbody tr.sheet-weapon-sub-row {
-        padding: 6px 12px 12px;
+        padding: 12px;
         border-bottom: 1px solid var(--border-color);
-        grid-template-columns: repeat(2, 1fr);
     }
 
-    .sheet-weapons-table tbody td {
+    /* Flatten tr elements so td cells participate in the tbody grid */
+    .sheet-weapons-table .sheet-weapon-group tr {
+        display: contents;
+    }
+
+    .sheet-weapons-table .sheet-weapon-group td {
         display: block;
         text-align: left;
         padding: 0;
@@ -3385,7 +3384,7 @@ textarea {
         font-size: 13px;
     }
 
-    .sheet-weapons-table tbody td::before {
+    .sheet-weapons-table .sheet-weapon-group td::before {
         display: block;
         font-size: 9px;
         font-weight: 600;
@@ -3398,6 +3397,7 @@ textarea {
     /* Weapon name: full-width card title */
     .sheet-weapons-table .sheet-weapon-name {
         grid-column: 1 / -1;
+        order: 1;
         font-size: 15px;
         font-weight: 600;
         color: var(--accent-gold);
@@ -3409,6 +3409,13 @@ textarea {
     .sheet-weapons-table .sheet-weapon-name::before {
         display: none;
     }
+
+    /* Stat ordering: Dice/Damage/Range, then AP/ED below */
+    .sheet-weapons-table .sheet-weapon-dice { order: 2; }
+    .sheet-weapons-table .sheet-weapon-damage { order: 3; }
+    .sheet-weapons-table .sheet-weapon-range { order: 4; }
+    .sheet-weapons-table .sheet-weapon-ap { order: 5; grid-column: 2; }
+    .sheet-weapons-table .sheet-weapon-ed { order: 6; grid-column: 3; }
 
     /* Stat labels */
     .sheet-weapons-table .sheet-weapon-dice::before { content: "Dice"; }
@@ -3422,6 +3429,7 @@ textarea {
     /* Traits: full width */
     .sheet-weapons-table .sheet-weapon-traits {
         grid-column: 1 / -1;
+        order: 7;
         max-width: none;
         font-size: 12px;
         padding-top: 2px;
@@ -3429,20 +3437,16 @@ textarea {
         margin-top: 2px;
     }
 
-    /* Equip checkbox cell */
+    /* Equip checkbox cell: full width, before everything */
     .sheet-weapons-table .sheet-weapon-equip {
         grid-column: 1 / -1;
+        order: 0;
     }
 
     /* Description/keyword rows */
-    .sheet-weapons-table .sheet-weapon-desc-row {
-        display: block;
-        padding: 0 12px 12px;
-        border-bottom: 1px solid var(--border-color);
-    }
-
     .sheet-weapons-table .sheet-weapon-desc-row td {
-        display: block;
+        grid-column: 1 / -1;
+        order: 8;
         padding: 0;
         background: transparent;
     }
@@ -3777,9 +3781,11 @@ textarea {
     }
 
     /* Weapon cards: 2-column grid at small sizes */
-    .sheet-weapons-table tbody tr {
+    .sheet-weapons-table .sheet-weapon-group {
         grid-template-columns: 1fr 1fr;
     }
+    .sheet-weapons-table .sheet-weapon-ap { grid-column: 1; }
+    .sheet-weapons-table .sheet-weapon-ed { grid-column: 2; }
 }
 
 /* ===== Auto-Save Banner ===== */
