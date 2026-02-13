@@ -16,6 +16,10 @@ const State = {
     // Dirty state tracking - true when character has unsaved changes
     isDirty: false,
 
+    // Auto-save support
+    _autoSaveTimer: null,
+    _AUTO_SAVE_KEY: 'wng-creator-autosave',
+
     // Initialize state with default character
     init(gameData) {
         this.gameData = gameData;
@@ -116,6 +120,7 @@ const State = {
         this.character = this.createNewCharacter();
         this.notifyListeners('reset');
         this.isDirty = false;
+        this.clearAutoSave();
     },
 
     // Load a character from data
@@ -983,10 +988,58 @@ const State = {
     notifyListeners(changeType, data = null) {
         if (changeType !== 'reset' && changeType !== 'load') {
             this.isDirty = true;
+            this._scheduleAutoSave();
         }
         for (const listener of this.listeners) {
             listener(changeType, data, this.character);
         }
+    },
+
+    // ===== Auto-Save =====
+
+    // Schedule an auto-save after a 2-second debounce
+    _scheduleAutoSave() {
+        clearTimeout(this._autoSaveTimer);
+        this._autoSaveTimer = setTimeout(() => this._performAutoSave(), 2000);
+    },
+
+    // Perform the auto-save to localStorage
+    _performAutoSave() {
+        // Skip if character is essentially empty
+        if (!this.character.name && !this.character.species.id && !this.character.archetype.id) {
+            return;
+        }
+        try {
+            const data = {
+                character: this.character,
+                enabledSources: this.enabledSources,
+                timestamp: Date.now()
+            };
+            localStorage.setItem(this._AUTO_SAVE_KEY, JSON.stringify(data));
+        } catch (e) {
+            console.warn('Auto-save failed:', e);
+        }
+    },
+
+    // Check if an auto-save exists
+    hasAutoSave() {
+        return localStorage.getItem(this._AUTO_SAVE_KEY) !== null;
+    },
+
+    // Get the auto-saved data
+    getAutoSave() {
+        try {
+            const raw = localStorage.getItem(this._AUTO_SAVE_KEY);
+            return raw ? JSON.parse(raw) : null;
+        } catch (e) {
+            console.warn('Failed to read auto-save:', e);
+            return null;
+        }
+    },
+
+    // Clear the auto-save
+    clearAutoSave() {
+        localStorage.removeItem(this._AUTO_SAVE_KEY);
     },
 
     // Get character keywords
