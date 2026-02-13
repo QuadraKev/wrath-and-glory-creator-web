@@ -3193,6 +3193,295 @@ textarea {
     margin: 12px 0 0 0;
 }
 
+/* ===== Hamburger & Backdrop (hidden on desktop) ===== */
+.hamburger-btn {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    z-index: 1000;
+}
+
+.hamburger-btn span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: var(--text-primary);
+    border-radius: 2px;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.sidebar-backdrop {
+    display: none;
+}
+
+/* ===== Responsive: Tablet (<=1024px) ===== */
+@media (max-width: 1024px) {
+    .sidebar {
+        width: 160px;
+    }
+
+    .content {
+        padding: 15px 20px;
+    }
+
+    .form-row {
+        flex-wrap: wrap;
+    }
+}
+
+/* ===== Responsive: Small Tablet / Landscape Phone (<=768px) ===== */
+@media (max-width: 768px) {
+    /* Show hamburger */
+    .hamburger-btn {
+        display: flex;
+    }
+
+    /* Sidebar as fixed drawer */
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 240px;
+        z-index: 900;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+        overflow-y: auto;
+        padding-top: 15px;
+    }
+
+    body.sidebar-open .sidebar {
+        transform: translateX(0);
+    }
+
+    /* Backdrop overlay */
+    body.sidebar-open .sidebar-backdrop {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 899;
+    }
+
+    /* Stats: single column */
+    .stats-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    /* Character sheet: single column layouts */
+    .sheet-columns {
+        grid-template-columns: 1fr;
+    }
+
+    .sheet-compact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Tables: horizontal scroll */
+    .talents-table,
+    .powers-table {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    /* Discipline tabs: wrap */
+    .discipline-tabs {
+        gap: 6px;
+    }
+
+    .discipline-btn {
+        padding: 5px 10px;
+        font-size: 11px;
+    }
+
+    /* Tab nav: hide left panel (XP in footer) */
+    .tab-nav-left {
+        display: none;
+    }
+
+    /* Modals: near full width */
+    .modal-content,
+    .modal-large {
+        width: 95vw;
+        max-width: 95vw;
+    }
+
+    /* Header buttons: icon only */
+    .header-btn {
+        padding: 6px 8px;
+        font-size: 0;
+    }
+
+    .header-btn .btn-icon {
+        font-size: 16px;
+    }
+
+    /* Glossary popup: no overflow */
+    .glossary-popup {
+        max-width: calc(100vw - 20px);
+    }
+
+    /* Tab buttons: smaller */
+    .tab-btn {
+        padding: 6px 10px;
+        font-size: 11px;
+    }
+
+    /* Content padding */
+    .content {
+        padding: 15px;
+    }
+
+    .tab-fullwidth {
+        padding: 15px 20px;
+    }
+
+    /* Wargear table: scrollable */
+    .wargear-table-wrapper {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    /* Talents grid: adapt for small screens */
+    .talents-table-header,
+    .talent-row {
+        grid-template-columns: 24px 1fr 60px 1fr 60px;
+        gap: 6px;
+        font-size: 12px;
+    }
+
+    /* Powers grid: adapt */
+    .powers-table-header,
+    .power-row {
+        grid-template-columns: 120px 100px 50px 1fr 60px;
+        gap: 6px;
+        font-size: 12px;
+    }
+}
+
+/* ===== Responsive: Portrait Phone (<=480px) ===== */
+@media (max-width: 480px) {
+    .app-title {
+        font-size: 16px;
+    }
+
+    .app-subtitle {
+        display: none;
+    }
+
+    .app-header {
+        padding: 0 12px;
+    }
+
+    .tab-nav {
+        padding: 0 10px;
+    }
+
+    .content {
+        padding: 10px 15px;
+    }
+
+    .tab-fullwidth {
+        padding: 10px 15px;
+    }
+
+    /* Card grid: single column */
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Form row: stack */
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    /* Section headings */
+    .builder-section h2,
+    .tab-fullwidth h2 {
+        font-size: 20px;
+    }
+
+    /* Source books: smaller */
+    .source-books .checkbox-label {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    /* Talents/Powers: stack columns */
+    .talents-table-header,
+    .talent-row {
+        grid-template-columns: 24px 1fr 50px;
+        gap: 4px;
+    }
+
+    /* Hide prereq and action columns on very small screens */
+    .talents-table-header > span:nth-child(4),
+    .talents-table-header > span:nth-child(5),
+    .talent-row > span:nth-child(4),
+    .talent-row > span:nth-child(5),
+    .talent-row > button:last-child {
+        display: none;
+    }
+
+    .powers-table-header,
+    .power-row {
+        grid-template-columns: 1fr 80px 40px 60px;
+        gap: 4px;
+    }
+
+    /* Hide effect column on very small screens */
+    .powers-table-header > span:nth-child(4),
+    .power-row > span:nth-child(4) {
+        display: none;
+    }
+
+    /* Glossary filters: smaller */
+    .glossary-filter-btn {
+        padding: 6px 10px;
+        font-size: 11px;
+    }
+
+    /* Stats */
+    .stat-row {
+        padding: 6px 8px;
+    }
+
+    .stat-name {
+        font-size: 13px;
+    }
+
+    /* Archetype detail */
+    .detail-stats {
+        grid-template-columns: 1fr;
+    }
+
+    /* Sheet character name */
+    .sheet-character-name {
+        font-size: 22px;
+    }
+
+    /* Sheet tracking */
+    .tracker-row-horizontal {
+        gap: 20px;
+    }
+
+    /* Wargear category tabs: smaller */
+    .wargear-tab-btn {
+        padding: 5px 10px;
+        font-size: 11px;
+    }
+}
+
 /* ===== Print Styles ===== */
 @media print {
     /* Hide app chrome */

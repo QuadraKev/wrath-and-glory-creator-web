@@ -13,6 +13,9 @@
         <!-- Header -->
         <header class="app-header">
             <div class="header-left">
+                <button class="hamburger-btn" id="hamburger-btn" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
                 <h1 class="app-title">Wrath & Glory</h1>
                 <span class="app-subtitle">Character Creator</span>
             </div>
@@ -449,6 +452,18 @@
             <span id="footer-keywords" class="footer-keywords"></span>
         </footer>
     </div>
+
+    <div class="sidebar-backdrop" id="sidebar-backdrop"></div>
+
+    <!-- Mobile menu toggle -->
+    <script>
+    document.getElementById('hamburger-btn').addEventListener('click', function() {
+        document.body.classList.toggle('sidebar-open');
+    });
+    document.getElementById('sidebar-backdrop').addEventListener('click', function() {
+        document.body.classList.remove('sidebar-open');
+    });
+    </script>
 
     <!-- Scripts -->
     <script src="js/web-api.js"></script>
