@@ -3410,12 +3410,12 @@ textarea {
         display: none;
     }
 
-    /* Stat ordering: Dice/Damage/Range, then AP/ED below */
+    /* Stat ordering: Dice/Damage, then AP/ED below, then Range, then Traits */
     .sheet-weapons-table .sheet-weapon-dice { order: 2; }
     .sheet-weapons-table .sheet-weapon-damage { order: 3; }
-    .sheet-weapons-table .sheet-weapon-range { order: 4; }
-    .sheet-weapons-table .sheet-weapon-ap { order: 5; grid-column: 2; }
-    .sheet-weapons-table .sheet-weapon-ed { order: 6; grid-column: 3; }
+    .sheet-weapons-table .sheet-weapon-ap { order: 4; grid-column: 2; }
+    .sheet-weapons-table .sheet-weapon-ed { order: 5; grid-column: 3; }
+    .sheet-weapons-table .sheet-weapon-range { order: 6; grid-column: 1 / -1; }
 
     /* Stat labels */
     .sheet-weapons-table .sheet-weapon-dice::before { content: "Dice"; }
