@@ -3295,16 +3295,50 @@ textarea {
 
     /* ---- Character sheet: card layout for wargear tables ---- */
 
-    /* Weapons table → cards */
+    /* Disable hover highlight on card rows */
+    .sheet-weapons-table tbody tr:hover,
+    .sheet-armor-table tbody tr:hover,
+    .sheet-equipment-table tbody tr:hover {
+        background: transparent;
+    }
+
+    /* Description/keywords: stack vertically on mobile */
+    .sheet-item-details {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .sheet-item-keywords {
+        justify-content: flex-start;
+    }
+
+    /* Tappable stat indicator for cells with tooltip breakdowns */
+    .sheet-weapons-table .sheet-weapon-dice[title],
+    .sheet-weapons-table .sheet-weapon-ed[title],
+    .sheet-weapons-table .sheet-weapon-ap[title] {
+        border-bottom: none;
+        position: relative;
+    }
+
+    .sheet-weapons-table .sheet-weapon-dice[title]::after,
+    .sheet-weapons-table .sheet-weapon-ed[title]::after,
+    .sheet-weapons-table .sheet-weapon-ap[title]::after {
+        content: " \2139";
+        font-size: 10px;
+        color: var(--accent-blue);
+        vertical-align: super;
+    }
+
+    /* --- Weapons table → cards --- */
     .sheet-weapons-table thead {
         display: none;
     }
 
     .sheet-weapons-table tbody tr {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 4px 12px;
-        padding: 10px 12px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 6px 16px;
+        padding: 12px;
         border-bottom: 1px solid var(--border-color);
     }
 
@@ -3315,12 +3349,13 @@ textarea {
     .sheet-weapons-table tbody td {
         display: block;
         text-align: left;
-        padding: 2px 0;
+        padding: 0;
         border: none;
         white-space: normal;
         word-break: break-word;
         width: auto;
         min-width: 0;
+        font-size: 13px;
     }
 
     .sheet-weapons-table tbody td::before {
@@ -3330,17 +3365,18 @@ textarea {
         text-transform: uppercase;
         color: var(--text-muted);
         letter-spacing: 0.5px;
+        margin-bottom: 1px;
     }
 
-    /* Weapon name: spans full width as card title */
+    /* Weapon name: full-width card title */
     .sheet-weapons-table .sheet-weapon-name {
         grid-column: 1 / -1;
         font-size: 15px;
         font-weight: 600;
         color: var(--accent-gold);
-        padding-bottom: 4px;
-        border-bottom: 1px solid var(--border-color);
+        padding-bottom: 6px;
         margin-bottom: 2px;
+        border-bottom: 1px solid var(--border-color);
     }
 
     .sheet-weapons-table .sheet-weapon-name::before {
@@ -3356,11 +3392,14 @@ textarea {
     .sheet-weapons-table .sheet-weapon-traits::before { content: "Traits"; }
     .sheet-weapons-table .sheet-weapon-equip::before { content: "In Hand"; }
 
-    /* Traits span full row */
+    /* Traits: full width */
     .sheet-weapons-table .sheet-weapon-traits {
         grid-column: 1 / -1;
         max-width: none;
         font-size: 12px;
+        padding-top: 2px;
+        border-top: 1px solid var(--border-color);
+        margin-top: 2px;
     }
 
     /* Equip checkbox cell */
@@ -3371,25 +3410,26 @@ textarea {
     /* Description/keyword rows */
     .sheet-weapons-table .sheet-weapon-desc-row {
         display: block;
-        padding: 0 12px 10px;
+        padding: 0 12px 12px;
         border-bottom: 1px solid var(--border-color);
     }
 
     .sheet-weapons-table .sheet-weapon-desc-row td {
         display: block;
         padding: 0;
+        background: transparent;
     }
 
-    /* Armor table → cards */
+    /* --- Armor table → cards --- */
     .sheet-armor-table thead {
         display: none;
     }
 
     .sheet-armor-table tbody tr {
         display: grid;
-        grid-template-columns: 1fr auto auto;
-        gap: 4px 12px;
-        padding: 10px 12px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 6px 16px;
+        padding: 12px;
         border-bottom: 1px solid var(--border-color);
         align-items: start;
     }
@@ -3401,11 +3441,12 @@ textarea {
     .sheet-armor-table tbody td {
         display: block;
         text-align: left;
-        padding: 2px 0;
+        padding: 0;
         border: none;
         white-space: normal;
         width: auto;
         min-width: 0;
+        font-size: 13px;
     }
 
     .sheet-armor-table tbody td::before {
@@ -3414,6 +3455,7 @@ textarea {
         font-weight: 600;
         text-transform: uppercase;
         color: var(--text-muted);
+        margin-bottom: 1px;
     }
 
     .sheet-armor-table .sheet-armor-name {
@@ -3421,9 +3463,9 @@ textarea {
         font-size: 15px;
         font-weight: 600;
         color: var(--accent-gold);
-        padding-bottom: 4px;
-        border-bottom: 1px solid var(--border-color);
+        padding-bottom: 6px;
         margin-bottom: 2px;
+        border-bottom: 1px solid var(--border-color);
     }
 
     .sheet-armor-table .sheet-armor-name::before { display: none; }
@@ -3433,27 +3475,31 @@ textarea {
 
     .sheet-armor-table .sheet-armor-traits {
         grid-column: 1 / -1;
+        padding-top: 2px;
+        border-top: 1px solid var(--border-color);
+        margin-top: 2px;
     }
 
     .sheet-armor-table .sheet-armor-desc-row {
         display: block;
-        padding: 0 12px 10px;
+        padding: 0 12px 12px;
         border-bottom: 1px solid var(--border-color);
     }
 
     .sheet-armor-table .sheet-armor-desc-row td {
         display: block;
         padding: 0;
+        background: transparent;
     }
 
-    /* Equipment table → cards */
+    /* --- Equipment table → cards --- */
     .sheet-equipment-table thead {
         display: none;
     }
 
     .sheet-equipment-table tbody tr {
         display: block;
-        padding: 10px 12px;
+        padding: 12px;
         border-bottom: 1px solid var(--border-color);
     }
 
@@ -3464,11 +3510,12 @@ textarea {
     .sheet-equipment-table tbody td {
         display: block;
         text-align: left;
-        padding: 2px 0;
+        padding: 0;
         border: none;
         white-space: normal;
         width: auto;
         min-width: 0;
+        font-size: 13px;
     }
 
     .sheet-equipment-table tbody td::before {
@@ -3477,30 +3524,36 @@ textarea {
         font-weight: 600;
         text-transform: uppercase;
         color: var(--text-muted);
+        margin-bottom: 1px;
     }
 
     .sheet-equipment-table .sheet-equip-name {
         font-size: 15px;
         font-weight: 600;
         color: var(--accent-gold);
-        padding-bottom: 4px;
+        padding-bottom: 6px;
+        margin-bottom: 4px;
         border-bottom: 1px solid var(--border-color);
-        margin-bottom: 2px;
     }
 
     .sheet-equipment-table .sheet-equip-name::before { display: none; }
     .sheet-equipment-table .sheet-equip-effect::before { content: "Effect"; }
     .sheet-equipment-table .sheet-equip-value::before { content: "Value"; }
 
+    .sheet-equipment-table .sheet-equip-effect {
+        margin-bottom: 4px;
+    }
+
     .sheet-equipment-table .sheet-equip-desc-row {
         display: block;
-        padding: 0 12px 10px;
+        padding: 0 12px 12px;
         border-bottom: 1px solid var(--border-color);
     }
 
     .sheet-equipment-table .sheet-equip-desc-row td {
         display: block;
         padding: 0;
+        background: transparent;
     }
 
     /* Discipline tabs: wrap */
