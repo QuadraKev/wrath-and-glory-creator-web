@@ -5,23 +5,33 @@ const PowersTab = {
     searchQuery: '',
 
     init() {
-        // Discipline tabs
-        document.querySelectorAll('.discipline-btn').forEach(btn => {
-            btn.addEventListener('click', () => {
-                this.currentDiscipline = btn.dataset.discipline;
-                document.querySelectorAll('.discipline-btn').forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
-                this.renderTable();
-            });
-        });
-
-        // Search input
-        document.getElementById('power-search').addEventListener('input', (e) => {
-            this.searchQuery = e.target.value.toLowerCase();
-            this.renderTable();
-        });
-
         this.render();
+    },
+
+    // Get all disciplines from the data, sorted alphabetically with Minor and Universal first
+    getDisciplines() {
+        const allPowers = DataLoader.getAllPsychicPowers();
+        const disciplineSet = new Set();
+        for (const p of allPowers) {
+            if (p.discipline && State.isSourceEnabled(p.source)) {
+                disciplineSet.add(p.discipline);
+            }
+        }
+
+        const disciplines = Array.from(disciplineSet);
+
+        // Sort alphabetically, but pin Minor and Universal to the front
+        const pinned = ['Minor', 'Universal'];
+        disciplines.sort((a, b) => {
+            const aPin = pinned.indexOf(a);
+            const bPin = pinned.indexOf(b);
+            if (aPin !== -1 && bPin !== -1) return aPin - bPin;
+            if (aPin !== -1) return -1;
+            if (bPin !== -1) return 1;
+            return a.localeCompare(b);
+        });
+
+        return disciplines;
     },
 
     render() {
@@ -39,6 +49,20 @@ const PowersTab = {
             return;
         }
 
+        // Build discipline tabs dynamically from data
+        const disciplines = this.getDisciplines();
+
+        // If current discipline no longer exists in the filtered list, reset to first
+        if (!disciplines.some(d => d.toLowerCase() === this.currentDiscipline.toLowerCase())) {
+            this.currentDiscipline = disciplines.length > 0 ? disciplines[0].toLowerCase() : 'minor';
+        }
+
+        const disciplineButtons = disciplines.map(d => {
+            const key = d.toLowerCase();
+            const isActive = key === this.currentDiscipline.toLowerCase();
+            return `<button class="discipline-btn ${isActive ? 'active' : ''}" data-discipline="${key}">${d}</button>`;
+        }).join('\n                ');
+
         // Restore full UI
         document.getElementById('section-powers').innerHTML = `
             <h2>Manage Powers</h2>
@@ -46,19 +70,7 @@ const PowersTab = {
             <div id="selected-powers" class="selected-powers"></div>
 
             <div class="discipline-tabs">
-                <button class="discipline-btn ${this.currentDiscipline === 'minor' ? 'active' : ''}" data-discipline="minor">Minor</button>
-                <button class="discipline-btn ${this.currentDiscipline === 'universal' ? 'active' : ''}" data-discipline="universal">Universal</button>
-                <button class="discipline-btn ${this.currentDiscipline === 'biomancy' ? 'active' : ''}" data-discipline="biomancy">Biomancy</button>
-                <button class="discipline-btn ${this.currentDiscipline === 'divination' ? 'active' : ''}" data-discipline="divination">Divination</button>
-                <button class="discipline-btn ${this.currentDiscipline === 'pyromancy' ? 'active' : ''}" data-discipline="pyromancy">Pyromancy</button>
-                <button class="discipline-btn ${this.currentDiscipline === 'telekinesis' ? 'active' : ''}" data-discipline="telekinesis">Telekinesis</button>
-                <button class="discipline-btn ${this.currentDiscipline === 'telepathy' ? 'active' : ''}" data-discipline="telepathy">Telepathy</button>
-                <button class="discipline-btn ${this.currentDiscipline === 'maleficarum' ? 'active' : ''}" data-discipline="maleficarum">Maleficarum</button>
-                <button class="discipline-btn ${this.currentDiscipline === 'runes of battle' ? 'active' : ''}" data-discipline="runes of battle">Runes of Battle</button>
-                <button class="discipline-btn ${this.currentDiscipline === 'runes of fate' ? 'active' : ''}" data-discipline="runes of fate">Runes of Fate</button>
-                <button class="discipline-btn ${this.currentDiscipline === 'runes of fortune' ? 'active' : ''}" data-discipline="runes of fortune">Runes of Fortune</button>
-                <button class="discipline-btn ${this.currentDiscipline === 'bonesinging' ? 'active' : ''}" data-discipline="bonesinging">Bonesinging</button>
-                <button class="discipline-btn ${this.currentDiscipline === 'phantasmancy' ? 'active' : ''}" data-discipline="phantasmancy">Phantasmancy</button>
+                ${disciplineButtons}
             </div>
 
             <div class="powers-controls">
@@ -198,23 +210,11 @@ const PowersTab = {
     },
 
     formatDiscipline(discipline) {
-        const names = {
-            'minor': 'Minor',
-            'universal': 'Universal',
-            'biomancy': 'Biomancy',
-            'divination': 'Divination',
-            'pyromancy': 'Pyromancy',
-            'telekinesis': 'Telekinesis',
-            'telepathy': 'Telepathy',
-            'maleficarum': 'Maleficarum',
-            'runes of battle': 'Runes of Battle',
-            'runes of fate': 'Runes of Fate',
-            'runes of fortune': 'Runes of Fortune',
-            'bonesinging': 'Bonesinging',
-            'phantasmancy': 'Phantasmancy'
-        };
-        const key = discipline ? discipline.toLowerCase() : '';
-        return names[key] || discipline;
+        if (!discipline) return '';
+        // Look up the original casing from the data
+        const allPowers = DataLoader.getAllPsychicPowers();
+        const match = allPowers.find(p => p.discipline && p.discipline.toLowerCase() === discipline.toLowerCase());
+        return match ? match.discipline : discipline;
     },
 
     refresh() {
