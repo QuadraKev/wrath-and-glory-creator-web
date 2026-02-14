@@ -185,8 +185,9 @@ const PowersTab = {
                 return entry.disciplines.some(d => d.toLowerCase() === p.discipline.toLowerCase());
             }).sort((a, b) => a.name.localeCompare(b.name));
 
+            const showDiscipline = entry.disciplines.length > 1;
             const powerButtons = availablePowers.map(p =>
-                `<button class="btn-free-power-pick" data-power-id="${p.id}" style="margin: 3px;">${p.name} (${p.discipline})</button>`
+                `<button class="btn-free-power-pick" data-power-id="${p.id}" style="margin: 3px;">${p.name}${showDiscipline ? ' (' + p.discipline + ')' : ''}</button>`
             ).join('');
 
             html += `
