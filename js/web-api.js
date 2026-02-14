@@ -20,7 +20,7 @@
 
         // Show save dialog - returns a synthetic result with the filename
         showSaveDialog: async (defaultName) => {
-            return { canceled: false, filePath: defaultName || 'character.json' };
+            return { canceled: false, filePath: defaultName || 'character.character' };
         },
 
         // Show open dialog - opens file picker and stores file reference
@@ -28,7 +28,7 @@
             return new Promise((resolve) => {
                 const input = document.createElement('input');
                 input.type = 'file';
-                input.accept = '.json';
+                input.accept = '.character,.json';
                 input.onchange = () => {
                     if (!input.files || !input.files[0]) {
                         resolve({ canceled: true });

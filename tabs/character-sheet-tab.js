@@ -659,7 +659,7 @@ const CharacterSheetTab = {
 
             const descRow = hasDescOrKeywords ? `
                 <tr class="sheet-armor-desc-row">
-                    <td colspan="4">
+                    <td colspan="3">
                         <div class="sheet-item-details">
                             ${description ? `<span class="sheet-item-description">${description}</span>` : ''}
                             ${keywords ? `<span class="sheet-item-keywords">${keywords}</span>` : ''}
@@ -673,7 +673,6 @@ const CharacterSheetTab = {
                     <td class="sheet-armor-name">${armor.name}</td>
                     <td class="sheet-armor-ar">${armor.ar || 0}</td>
                     <td class="sheet-armor-traits">${traits}</td>
-                    <td class="sheet-armor-value">${armor.value || '-'}</td>
                 </tr>
                 ${descRow}
             `;
@@ -688,7 +687,6 @@ const CharacterSheetTab = {
                             <th>Name</th>
                             <th>AR</th>
                             <th>Traits</th>
-                            <th>Value</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -728,7 +726,7 @@ const CharacterSheetTab = {
 
             const descRow = hasDescOrKeywords ? `
                 <tr class="sheet-equip-desc-row">
-                    <td colspan="3">
+                    <td colspan="2">
                         <div class="sheet-item-details">
                             ${description ? `<span class="sheet-item-description">${description}</span>` : ''}
                             ${keywords ? `<span class="sheet-item-keywords">${keywords}</span>` : ''}
@@ -741,7 +739,6 @@ const CharacterSheetTab = {
                 <tr>
                     <td class="sheet-equip-name">${equip.name}</td>
                     <td class="sheet-equip-effect">${equip.effect || '-'}</td>
-                    <td class="sheet-equip-value">${equip.value || '-'}</td>
                 </tr>
                 ${descRow}
             `;
@@ -755,7 +752,6 @@ const CharacterSheetTab = {
                         <tr>
                             <th>Name</th>
                             <th>Effect</th>
-                            <th>Value</th>
                         </tr>
                     </thead>
                     <tbody>

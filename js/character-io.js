@@ -15,7 +15,7 @@ const CharacterIO = {
         const defaultName = character.name || 'character';
 
         try {
-            const dialogResult = await window.api.showSaveDialog(`${defaultName}.json`);
+            const dialogResult = await window.api.showSaveDialog(`${defaultName}.character`);
 
             if (!dialogResult.canceled && dialogResult.filePath) {
                 const result = await window.api.exportCharacter(character, dialogResult.filePath);

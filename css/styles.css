@@ -3265,9 +3265,19 @@ textarea {
 
 /* ===== Responsive: Small Tablet / Landscape Phone (<=768px) ===== */
 @media (max-width: 768px) {
-    /* Show hamburger */
+    /* Show hamburger (only on builder tab) */
     .hamburger-btn {
         display: flex;
+    }
+
+    body.tab-character-sheet .hamburger-btn,
+    body.tab-glossary .hamburger-btn {
+        display: none;
+    }
+
+    /* Hide hamburger when sidebar is open */
+    body.sidebar-open .hamburger-btn {
+        display: none;
     }
 
     /* Sidebar as fixed drawer */

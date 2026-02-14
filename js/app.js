@@ -152,6 +152,15 @@ const App = {
             content.classList.toggle('active', content.id === `tab-${tabName}`);
         });
 
+        // Update body class for tab-specific CSS (e.g. hiding hamburger)
+        document.body.classList.remove('tab-builder', 'tab-character-sheet', 'tab-glossary');
+        document.body.classList.add(`tab-${tabName}`);
+
+        // Close sidebar when switching away from builder
+        if (tabName !== 'builder') {
+            document.body.classList.remove('sidebar-open');
+        }
+
         // Trigger tab-specific refresh
         if (tabName === 'character-sheet') {
             CharacterSheetTab.refresh();
@@ -331,45 +340,8 @@ const App = {
 
     // ===== Auto-Save Restore =====
 
-    // Check for auto-saved state on startup
+    // Check for auto-saved state on startup and auto-load it
     checkAutoSave() {
-        const saved = State.getAutoSave();
-        if (saved) {
-            this.showRestoreBanner(saved.timestamp);
-        }
-    },
-
-    // Show the restore banner
-    showRestoreBanner(timestamp) {
-        const banner = document.createElement('div');
-        banner.className = 'autosave-banner';
-        banner.id = 'autosave-banner';
-
-        const date = new Date(timestamp);
-        const timeStr = date.toLocaleString();
-
-        banner.innerHTML = `
-            <span class="autosave-text">Unsaved character found from <strong>${timeStr}</strong></span>
-            <div class="autosave-actions">
-                <button class="autosave-btn-restore" id="autosave-restore">Restore</button>
-                <button class="autosave-btn-dismiss" id="autosave-dismiss">Dismiss</button>
-            </div>
-        `;
-
-        const tabNav = document.querySelector('.tab-nav');
-        tabNav.parentNode.insertBefore(banner, tabNav.nextSibling);
-
-        document.getElementById('autosave-restore').addEventListener('click', () => {
-            this.restoreAutoSave();
-        });
-        document.getElementById('autosave-dismiss').addEventListener('click', () => {
-            State.clearAutoSave();
-            this.removeRestoreBanner();
-        });
-    },
-
-    // Restore auto-saved state
-    restoreAutoSave() {
         const saved = State.getAutoSave();
         if (!saved) return;
 
@@ -383,15 +355,6 @@ const App = {
         SettingTab.refresh();
         this.switchTab('builder');
         this.switchSection('setting');
-        this.removeRestoreBanner();
-    },
-
-    // Remove the restore banner with animation
-    removeRestoreBanner() {
-        const banner = document.getElementById('autosave-banner');
-        if (!banner) return;
-        banner.classList.add('autosave-banner-hide');
-        setTimeout(() => banner.remove(), 300);
     }
 };
 
