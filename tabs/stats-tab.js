@@ -82,8 +82,8 @@ const StatsTab = {
     renderDerivedStats() {
         const container = document.getElementById('derived-stats');
         const character = State.getCharacter();
-        const armorRating = DerivedStats.getTotalArmorRating(character);
-        const derived = DerivedStats.getAllDerivedStats(character, armorRating);
+        const armorBreakdown = DerivedStats.getArmorBreakdown(character);
+        const derived = DerivedStats.getAllDerivedStats(character, armorBreakdown);
 
         const stats = [
             { name: 'Defence', value: derived.defence },

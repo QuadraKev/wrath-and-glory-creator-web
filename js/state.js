@@ -304,28 +304,8 @@ const State = {
                 }
             }
 
-            // Set starting wargear
-            // Supports both simple strings "frag_grenades" and objects { "id": "frag_grenades", "qty": 3 }
-            // Each item is stored as a separate entry (no qty field - multiples are separate entries)
-            this.character.wargear = [];
-            for (const entry of (archetype.startingWargear || [])) {
-                if (typeof entry === 'string') {
-                    // Simple string ID, quantity = 1
-                    this.character.wargear.push({
-                        id: entry,
-                        isStarting: true
-                    });
-                } else if (typeof entry === 'object' && entry.id) {
-                    // Object with id and optional qty - add qty separate entries
-                    const qty = entry.qty || 1;
-                    for (let i = 0; i < qty; i++) {
-                        this.character.wargear.push({
-                            id: entry.id,
-                            isStarting: true
-                        });
-                    }
-                }
-            }
+            // Wargear is managed via the Wargear tab "Add Starting Wargear" button.
+            // We do NOT clear or set wargear here to avoid losing manually added items.
 
         } else {
             this.clearArchetype();

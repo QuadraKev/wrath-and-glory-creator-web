@@ -132,19 +132,32 @@ const DerivedStats = {
         return bonus;
     },
 
-    // Calculate Defence (Initiative - 1 + Talent Bonuses)
-    calculateDefence(character) {
+    // Calculate Defence (Initiative - 1 + Shield AR + Equipment Bonuses + Talent Bonuses)
+    calculateDefence(character, armorBreakdown = null) {
+        if (!armorBreakdown) armorBreakdown = this.getArmorBreakdown(character);
         const base = Math.max(0, (character.attributes?.initiative || 1) - 1);
+        const shieldAR = armorBreakdown.shieldAR;
+        const equipBonus = this.getEquipmentBonusTotal(character, 'defence');
         const talentBonus = this.getTalentTraitBonus(character, 'Defence');
-        return base + talentBonus;
+        return base + shieldAR + equipBonus + talentBonus;
     },
 
-    // Calculate Resilience (Toughness + 1 + Armor Rating + Species Sub-Option Bonus + Talent Bonuses)
-    calculateResilience(character, armorRating = 0) {
-        const base = (character.attributes?.toughness || 1) + 1 + armorRating;
+    // Calculate Resilience (Toughness + 1 + Best Armor AR + Shield AR + Equipment Bonuses + Species Sub-Option Bonus + Talent Bonuses)
+    calculateResilience(character, armorRatingOrBreakdown = 0) {
+        let bestArmorAR, shieldAR;
+        if (typeof armorRatingOrBreakdown === 'object' && armorRatingOrBreakdown !== null) {
+            bestArmorAR = armorRatingOrBreakdown.bestArmorAR;
+            shieldAR = armorRatingOrBreakdown.shieldAR;
+        } else {
+            // Legacy compat: if a number is passed, use it as bestArmorAR with no shield
+            bestArmorAR = armorRatingOrBreakdown;
+            shieldAR = 0;
+        }
+        const base = (character.attributes?.toughness || 1) + 1 + bestArmorAR + shieldAR;
         const subOptionBonus = this.getSpeciesSubOptionBonus(character, 'resilience');
+        const equipBonus = this.getEquipmentBonusTotal(character, 'resilience');
         const talentBonus = this.getTalentTraitBonus(character, 'Resilience');
-        return base + subOptionBonus + talentBonus;
+        return base + subOptionBonus + equipBonus + talentBonus;
     },
 
     // Calculate Determination (equal to Toughness + background bonus + Talent Bonuses)
@@ -191,12 +204,13 @@ const DerivedStats = {
         return willpower + tier + backgroundBonus + subOptionBonus + talentBonus;
     },
 
-    // Get Speed from species + Talent Bonuses
+    // Get Speed from species + Equipment Bonuses + Talent Bonuses
     calculateSpeed(character) {
         const species = DataLoader.getSpecies(character.species?.id);
         const base = species?.speed || 6;
+        const equipBonus = this.getEquipmentBonusTotal(character, 'speed');
         const talentBonus = this.getTalentTraitBonus(character, 'Speed');
-        return base + talentBonus;
+        return base + equipBonus + talentBonus;
     },
 
     // Calculate Conviction (equal to Willpower + Background Bonus + Talent Bonuses)
@@ -285,10 +299,15 @@ const DerivedStats = {
     },
 
     // Get all derived stats as an object
-    getAllDerivedStats(character, armorRating = 0) {
+    getAllDerivedStats(character, armorRatingOrBreakdown = 0) {
+        // Accept either a number (legacy) or armor breakdown object
+        const armorBreakdown = (typeof armorRatingOrBreakdown === 'object' && armorRatingOrBreakdown !== null)
+            ? armorRatingOrBreakdown
+            : { bestArmorAR: armorRatingOrBreakdown, bestArmorName: null, shieldAR: 0, shieldName: null };
+
         return {
-            defence: this.calculateDefence(character),
-            resilience: this.calculateResilience(character, armorRating),
+            defence: this.calculateDefence(character, armorBreakdown),
+            resilience: this.calculateResilience(character, armorBreakdown),
             determination: this.calculateDetermination(character),
             maxWounds: this.calculateMaxWounds(character),
             maxShock: this.calculateMaxShock(character),
@@ -367,18 +386,117 @@ const DerivedStats = {
         return true;
     },
 
-    // Get total armor rating from equipped armor
-    getTotalArmorRating(character) {
-        let totalAR = 0;
+    // Get armor breakdown: best non-shield AR and best shield AR (no stacking)
+    getArmorBreakdown(character) {
+        let bestArmorAR = 0;
+        let bestArmorName = null;
+        let shieldAR = 0;
+        let shieldName = null;
 
         for (const item of character.wargear || []) {
             const armor = DataLoader.getArmor(item.id);
-            if (armor) {
-                totalAR += armor.ar || 0;
+            if (!armor) continue;
+
+            const ar = armor.ar || 0;
+            const traits = armor.traits || [];
+            const isShield = traits.some(t => t === 'Shield');
+
+            if (isShield) {
+                if (ar > shieldAR) {
+                    shieldAR = ar;
+                    shieldName = armor.name;
+                }
+            } else {
+                if (ar > bestArmorAR) {
+                    bestArmorAR = ar;
+                    bestArmorName = armor.name;
+                }
             }
         }
 
-        return totalAR;
+        return { bestArmorAR, bestArmorName, shieldAR, shieldName };
+    },
+
+    // Compat wrapper: returns best non-shield AR only
+    getTotalArmorRating(character) {
+        return this.getArmorBreakdown(character).bestArmorAR;
+    },
+
+    // Get all equipment bonuses grouped by key
+    getEquipmentBonuses(character) {
+        const bonuses = {};
+
+        for (const item of character.wargear || []) {
+            const equip = DataLoader.getEquipment(item.id);
+            if (!equip?.bonuses) continue;
+
+            for (const [key, value] of Object.entries(equip.bonuses)) {
+                if (!bonuses[key]) bonuses[key] = [];
+                bonuses[key].push({ value, source: equip.name });
+            }
+        }
+
+        return bonuses;
+    },
+
+    // Sum all equipment bonuses for a given key
+    getEquipmentBonusTotal(character, bonusKey) {
+        const bonuses = this.getEquipmentBonuses(character);
+        if (!bonuses[bonusKey]) return 0;
+        return bonuses[bonusKey].reduce((sum, b) => sum + b.value, 0);
+    },
+
+    // Get Resilience breakdown for tooltip
+    getResilienceBreakdown(character) {
+        const armorBreakdown = this.getArmorBreakdown(character);
+        const tou = character.attributes?.toughness || 1;
+        const subOptionBonus = this.getSpeciesSubOptionBonus(character, 'resilience');
+        const equipBonus = this.getEquipmentBonusTotal(character, 'resilience');
+        const talentBonus = this.getTalentTraitBonus(character, 'Resilience');
+
+        const parts = [];
+        parts.push({ label: `Base (TOU+1)`, value: tou + 1 });
+        if (armorBreakdown.bestArmorAR > 0) {
+            parts.push({ label: armorBreakdown.bestArmorName || 'Armor', value: armorBreakdown.bestArmorAR });
+        }
+        if (armorBreakdown.shieldAR > 0) {
+            parts.push({ label: armorBreakdown.shieldName || 'Shield', value: armorBreakdown.shieldAR });
+        }
+        if (subOptionBonus > 0) {
+            parts.push({ label: 'Path', value: subOptionBonus });
+        }
+        if (equipBonus !== 0) {
+            parts.push({ label: 'Equipment', value: equipBonus });
+        }
+        if (talentBonus !== 0) {
+            parts.push({ label: 'Talent', value: talentBonus });
+        }
+
+        const total = this.calculateResilience(character, armorBreakdown);
+        return { value: total, breakdown: parts };
+    },
+
+    // Get Defence breakdown for tooltip
+    getDefenceBreakdown(character) {
+        const armorBreakdown = this.getArmorBreakdown(character);
+        const ini = character.attributes?.initiative || 1;
+        const equipBonus = this.getEquipmentBonusTotal(character, 'defence');
+        const talentBonus = this.getTalentTraitBonus(character, 'Defence');
+
+        const parts = [];
+        parts.push({ label: `Base (INI-1)`, value: Math.max(0, ini - 1) });
+        if (armorBreakdown.shieldAR > 0) {
+            parts.push({ label: armorBreakdown.shieldName || 'Shield', value: armorBreakdown.shieldAR });
+        }
+        if (equipBonus !== 0) {
+            parts.push({ label: 'Equipment', value: equipBonus });
+        }
+        if (talentBonus !== 0) {
+            parts.push({ label: 'Talent', value: talentBonus });
+        }
+
+        const total = this.calculateDefence(character, armorBreakdown);
+        return { value: total, breakdown: parts };
     },
 
     // Format attribute name for display

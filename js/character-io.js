@@ -175,7 +175,8 @@ const CharacterIO = {
     createCharacterSheet(character) {
         const species = DataLoader.getSpecies(character.species?.id);
         const archetype = DataLoader.getArchetype(character.archetype?.id);
-        const derived = DerivedStats.getAllDerivedStats(character);
+        const armorBreakdown = DerivedStats.getArmorBreakdown(character);
+        const derived = DerivedStats.getAllDerivedStats(character, armorBreakdown);
 
         let sheet = `# ${character.name || 'Unnamed Character'}\n\n`;
         sheet += `**Species:** ${species?.name || '-'}\n`;

@@ -174,19 +174,21 @@ const WargearTab = {
         const character = State.getCharacter();
         const archetype = DataLoader.getArchetype(character.archetype?.id);
 
-        // Check starting wargear status
-        const hasStartingGear = character.wargear.some(w => w.isStarting);
+        // Always show starting wargear button when archetype has starting wargear
         let startingGearHtml = '';
 
-        if (archetype && archetype.startingWargear && archetype.startingWargear.length > 0 && !hasStartingGear) {
+        if (archetype && archetype.startingWargear && archetype.startingWargear.length > 0) {
             startingGearHtml = `
                 <div class="starting-wargear-notice">
                     <h4>Starting Wargear</h4>
                     <p>Your archetype (${archetype.name}) provides starting wargear:</p>
                     <ul>
-                        ${archetype.startingWargear.map(id => {
+                        ${archetype.startingWargear.map(entry => {
+                            const id = typeof entry === 'string' ? entry : entry.id;
+                            const qty = typeof entry === 'object' ? (entry.qty || 1) : 1;
                             const item = DataLoader.getWargearItem(id);
-                            return `<li>${item?.name || id}</li>`;
+                            const name = item?.name || id;
+                            return `<li>${qty > 1 ? qty + 'x ' : ''}${name}</li>`;
                         }).join('')}
                     </ul>
                     <button class="btn-primary" id="btn-add-starting">Add Starting Wargear</button>
@@ -216,8 +218,15 @@ const WargearTab = {
         // Bind events
         if (document.getElementById('btn-add-starting')) {
             document.getElementById('btn-add-starting').addEventListener('click', () => {
-                for (const itemId of archetype.startingWargear) {
-                    State.addWargear(itemId, true);
+                for (const entry of archetype.startingWargear) {
+                    if (typeof entry === 'string') {
+                        State.addWargear(entry, true);
+                    } else if (typeof entry === 'object' && entry.id) {
+                        const qty = entry.qty || 1;
+                        for (let i = 0; i < qty; i++) {
+                            State.addWargear(entry.id, true);
+                        }
+                    }
                 }
                 this.render();
             });

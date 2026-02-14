@@ -189,8 +189,48 @@ const GlossaryTab = {
                 body.classList.toggle('hidden');
                 expand.innerHTML = isExpanded ? '&#9654;' : '&#9660;';
                 entry.classList.toggle('expanded', !isExpanded);
+
+                // Update URL hash
+                const entryId = entry.dataset.entryId;
+                if (!isExpanded) {
+                    history.replaceState(null, '', '#glossary/' + entryId);
+                } else {
+                    history.replaceState(null, '', location.pathname + location.search);
+                }
             });
         });
+    },
+
+    // Navigate to a specific entry by ID (for deep linking)
+    navigateToEntry(entryId) {
+        // Reset filters so the entry is visible
+        this.currentCategory = 'all';
+        this.searchQuery = '';
+        document.getElementById('glossary-search').value = '';
+        document.querySelectorAll('.glossary-filter-btn').forEach(btn => {
+            btn.classList.toggle('active', btn.dataset.category === 'all');
+        });
+
+        // Re-render to ensure all entries are in the DOM
+        this.renderEntries();
+
+        // Find the target entry element
+        const entryEl = document.querySelector(`.glossary-entry[data-entry-id="${entryId}"]`);
+        if (!entryEl) return;
+
+        // Expand it
+        const body = entryEl.querySelector('.glossary-entry-body');
+        const expand = entryEl.querySelector('.glossary-entry-expand');
+        body.classList.remove('hidden');
+        expand.innerHTML = '&#9660;';
+        entryEl.classList.add('expanded');
+
+        // Scroll into view
+        entryEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+        // Highlight briefly
+        entryEl.classList.add('glossary-entry-highlight');
+        setTimeout(() => entryEl.classList.remove('glossary-entry-highlight'), 2000);
     },
 
     // Refresh the tab

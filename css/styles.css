@@ -2789,6 +2789,23 @@ textarea {
     line-height: 1.5;
 }
 
+.sheet-trait-tappable {
+    cursor: pointer;
+    border-bottom-style: dotted;
+    border-bottom-color: var(--text-muted);
+}
+
+.sheet-trait-tappable:hover {
+    background: var(--bg-hover);
+}
+
+.sheet-equip-bonus {
+    font-size: 10px;
+    color: var(--accent-green);
+    margin-left: 3px;
+    vertical-align: super;
+}
+
 .sheet-weapon-upgrades {
     font-size: 11px;
     color: var(--accent-gold);
@@ -3167,6 +3184,15 @@ textarea {
 
 .glossary-entry.expanded {
     border-color: var(--accent-gold);
+}
+
+.glossary-entry.glossary-entry-highlight {
+    animation: glossary-highlight-fade 2s ease-out;
+}
+
+@keyframes glossary-highlight-fade {
+    0% { box-shadow: 0 0 12px 2px var(--accent-gold); }
+    100% { box-shadow: none; }
 }
 
 .glossary-entry-header {
