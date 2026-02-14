@@ -1263,93 +1263,120 @@ textarea {
     letter-spacing: 0.5px;
 }
 
-.wargear-table-wrapper {
-    overflow-x: auto;
+/* Wargear card layout */
+.wargear-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    padding: 15px;
+    margin-bottom: 10px;
 }
 
-.wargear-table {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 12px;
+.wargear-card:hover {
+    border-color: var(--accent-gold);
 }
 
-.wargear-table th {
-    background: var(--bg-tertiary);
-    color: var(--text-muted);
-    font-weight: 500;
-    text-transform: uppercase;
-    font-size: 10px;
-    padding: 8px 6px;
-    text-align: left;
-    border-bottom: 1px solid var(--border-color);
-    white-space: nowrap;
+.wargear-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    gap: 10px;
 }
 
-.wargear-table td {
-    padding: 8px 6px;
-    border-bottom: 1px solid var(--border-color);
-    vertical-align: middle;
-}
-
-.wargear-table tbody tr:hover {
-    background: var(--bg-hover);
-}
-
-.wargear-table tbody tr.owned-row {
-    opacity: 0.5;
-    background: var(--bg-secondary);
-}
-
-.wargear-table-name {
-    font-weight: 500;
-    color: var(--text-primary);
-    white-space: nowrap;
-}
-
-.wargear-table-center {
-    text-align: center;
-}
-
-.wargear-table-range {
-    text-align: center;
-    white-space: nowrap;
-    font-size: 11px;
-}
-
-.wargear-table-traits {
-    font-size: 11px;
-    color: var(--text-secondary);
-    max-width: 150px;
-}
-
-.wargear-table-keywords {
-    font-size: 10px;
+.wargear-card-name {
+    font-size: 15px;
+    font-weight: 600;
     color: var(--accent-gold);
-    max-width: 150px;
 }
 
-.wargear-table-rarity {
-    font-size: 11px;
+.wargear-card-type {
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-left: 8px;
+}
+
+.wargear-card-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+}
+
+.wargear-card-meta {
+    font-size: 12px;
+    color: var(--text-muted);
     white-space: nowrap;
 }
 
-/* Rarity colors */
-.wargear-table-rarity.rarity-common { color: var(--text-secondary); }
-.wargear-table-rarity.rarity-uncommon { color: #22c55e; }
-.wargear-table-rarity.rarity-rare { color: #3b82f6; }
-.wargear-table-rarity.rarity-very-rare { color: #a855f7; }
-.wargear-table-rarity.rarity-unique { color: var(--accent-gold); }
+.wargear-card-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 10px;
+    background: var(--bg-tertiary);
+    border-radius: var(--radius-sm);
+    margin-bottom: 10px;
+}
 
-.wargear-table-effect {
-    font-size: 11px;
+.wargear-card-stats > div {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    min-width: 60px;
+    flex: 1;
+}
+
+.wargear-card-stat-label {
+    font-size: 10px;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.wargear-card-stats > div > span:last-child {
+    font-size: 13px;
+    color: var(--text-primary);
+}
+
+.wargear-card-traits {
+    font-size: 12px;
     color: var(--text-secondary);
-    max-width: 250px;
+    margin-top: 8px;
 }
 
-.wargear-table-action {
-    text-align: center;
-    white-space: nowrap;
+.wargear-card-effect {
+    font-size: 13px;
+    color: var(--text-secondary);
+    line-height: 1.5;
+    margin-top: 8px;
 }
+
+.wargear-card-keywords {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-top: 8px;
+}
+
+.wargear-card-keyword {
+    font-size: 9px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border-color);
+    border-radius: 3px;
+    padding: 1px 5px;
+    color: var(--accent-gold);
+}
+
+/* Rarity colors (standalone) */
+.rarity-common { color: var(--text-secondary); }
+.rarity-uncommon { color: #22c55e; }
+.rarity-rare { color: #3b82f6; }
+.rarity-very-rare { color: #a855f7; }
+.rarity-unique { color: var(--accent-gold); }
 
 .owned-count {
     display: inline-block;
@@ -3751,10 +3778,9 @@ textarea {
         padding: 15px 20px;
     }
 
-    /* Wargear table: scrollable */
-    .wargear-table-wrapper {
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
+    /* Wargear cards: reduce padding on tablet */
+    .wargear-card {
+        padding: 12px;
     }
 
     /* Talents grid: adapt for small screens */
@@ -3853,6 +3879,21 @@ textarea {
 
     .power-card-actions {
         align-self: flex-end;
+    }
+
+    /* Wargear cards: stack header on phone */
+    .wargear-card-header {
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .wargear-card-actions {
+        align-self: flex-end;
+    }
+
+    .wargear-card-stats {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     /* Glossary filters: smaller */

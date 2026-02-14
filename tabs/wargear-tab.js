@@ -282,7 +282,7 @@ const WargearTab = {
         if (this.currentCategory === 'all' || this.currentCategory === 'melee') {
             const meleeWeapons = filterBySearch(filterBySource(weapons.filter(w => w.type === 'melee')));
             if (meleeWeapons.length > 0) {
-                html += this.renderMeleeWeaponsTable(meleeWeapons, ownedCounts);
+                html += this.renderMeleeWeaponsCards(meleeWeapons, ownedCounts);
             }
         }
 
@@ -290,7 +290,7 @@ const WargearTab = {
         if (this.currentCategory === 'all' || this.currentCategory === 'ranged') {
             const rangedWeapons = filterBySearch(filterBySource(weapons.filter(w => w.type === 'ranged')));
             if (rangedWeapons.length > 0) {
-                html += this.renderRangedWeaponsTable(rangedWeapons, ownedCounts);
+                html += this.renderRangedWeaponsCards(rangedWeapons, ownedCounts);
             }
         }
 
@@ -298,7 +298,7 @@ const WargearTab = {
         if (this.currentCategory === 'all' || this.currentCategory === 'armor') {
             const armorItems = filterBySearch(filterBySource(armor));
             if (armorItems.length > 0) {
-                html += this.renderArmorTable(armorItems, ownedCounts);
+                html += this.renderArmorCards(armorItems, ownedCounts);
             }
         }
 
@@ -306,7 +306,7 @@ const WargearTab = {
         if (this.currentCategory === 'all' || this.currentCategory === 'equipment') {
             const equipmentItems = filterBySearch(filterBySource(equipment));
             if (equipmentItems.length > 0) {
-                html += this.renderEquipmentTable(equipmentItems, ownedCounts);
+                html += this.renderEquipmentCards(equipmentItems, ownedCounts);
             }
         }
 
@@ -317,218 +317,205 @@ const WargearTab = {
         return html;
     },
 
-    // Render melee weapons table
-    renderMeleeWeaponsTable(weapons, ownedCounts) {
+    // Render melee weapons cards
+    renderMeleeWeaponsCards(weapons, ownedCounts) {
         weapons.sort((a, b) => a.name.localeCompare(b.name));
 
-        const rows = weapons.map(w => {
+        const cards = weapons.map(w => {
             const ownedCount = ownedCounts[w.id] || 0;
             const damage = this.formatMeleeDamage(w);
-            const traits = (w.traits || []).join(', ') || '-';
-            const keywords = (w.keywords || []).join(', ') || '-';
-            // Melee range/reach - some weapons have reach (2, 4, etc.), most are "-"
             const reach = w.reach || '-';
             const rarityClass = this.getRarityClass(w.rarity);
             const ownedBadge = ownedCount > 0 ? `<span class="owned-count">${ownedCount}</span>` : '';
+            const traits = (w.traits || []);
+            const keywords = (w.keywords || []);
+
+            const traitsHtml = traits.length > 0
+                ? `<div class="wargear-card-traits">${traits.join(', ')}</div>`
+                : '';
+
+            const keywordsHtml = keywords.length > 0
+                ? `<div class="wargear-card-keywords">${keywords.map(k => `<span class="wargear-card-keyword">${k}</span>`).join('')}</div>`
+                : '';
 
             return `
-                <tr>
-                    <td class="wargear-table-name">${w.name}</td>
-                    <td class="wargear-table-center">${damage}</td>
-                    <td class="wargear-table-center">${w.ed || 0}</td>
-                    <td class="wargear-table-center">${w.ap ? w.ap : '-'}</td>
-                    <td class="wargear-table-center">${reach}</td>
-                    <td class="wargear-table-traits">${traits}</td>
-                    <td class="wargear-table-center">${w.value || '-'}</td>
-                    <td class="wargear-table-rarity ${rarityClass}">${w.rarity || 'Common'}</td>
-                    <td class="wargear-table-keywords">${keywords}</td>
-                    <td class="wargear-table-action">
-                        ${ownedBadge}
-                        <button class="btn-small btn-add-wargear" data-id="${w.id}">Add</button>
-                    </td>
-                </tr>
+                <div class="wargear-card">
+                    <div class="wargear-card-header">
+                        <div>
+                            <span class="wargear-card-name">${w.name}</span>
+                            <span class="wargear-card-type">Melee${w.category ? ' • ' + w.category : ''}</span>
+                        </div>
+                        <div class="wargear-card-actions">
+                            <span class="wargear-card-meta">Value: ${w.value || '-'} • <span class="${rarityClass}">${w.rarity || 'Common'}</span></span>
+                            ${ownedBadge}
+                            <button class="btn-small btn-add-wargear" data-id="${w.id}">Add</button>
+                        </div>
+                    </div>
+                    <div class="wargear-card-stats">
+                        <div><span class="wargear-card-stat-label">Damage</span><span>${damage}</span></div>
+                        <div><span class="wargear-card-stat-label">ED</span><span>${w.ed || 0}</span></div>
+                        <div><span class="wargear-card-stat-label">AP</span><span>${w.ap ? w.ap : '-'}</span></div>
+                        <div><span class="wargear-card-stat-label">Reach</span><span>${reach}</span></div>
+                    </div>
+                    ${traitsHtml}
+                    ${keywordsHtml}
+                </div>
             `;
         }).join('');
 
         return `
             <div class="wargear-table-section">
                 <h4>Melee Weapons</h4>
-                <div class="wargear-table-wrapper">
-                    <table class="wargear-table">
-                        <thead>
-                            <tr>
-                                <th>Name</th>
-                                <th>Damage</th>
-                                <th>ED</th>
-                                <th>AP</th>
-                                <th>Reach</th>
-                                <th>Traits</th>
-                                <th>Value</th>
-                                <th>Rarity</th>
-                                <th>Keywords</th>
-                                <th></th>
-                            </tr>
-                        </thead>
-                        <tbody>${rows}</tbody>
-                    </table>
-                </div>
+                ${cards}
             </div>
         `;
     },
 
-    // Render ranged weapons table
-    renderRangedWeaponsTable(weapons, ownedCounts) {
+    // Render ranged weapons cards
+    renderRangedWeaponsCards(weapons, ownedCounts) {
         weapons.sort((a, b) => a.name.localeCompare(b.name));
 
-        const rows = weapons.map(w => {
+        const cards = weapons.map(w => {
             const ownedCount = ownedCounts[w.id] || 0;
-            const traits = (w.traits || []).join(', ') || '-';
-            const keywords = (w.keywords || []).join(', ') || '-';
             const range = w.range ? `${w.range.short}/${w.range.medium}/${w.range.long}` : '-';
             const rarityClass = this.getRarityClass(w.rarity);
             const ownedBadge = ownedCount > 0 ? `<span class="owned-count">${ownedCount}</span>` : '';
+            const traits = (w.traits || []);
+            const keywords = (w.keywords || []);
+
+            const traitsHtml = traits.length > 0
+                ? `<div class="wargear-card-traits">${traits.join(', ')}</div>`
+                : '';
+
+            const keywordsHtml = keywords.length > 0
+                ? `<div class="wargear-card-keywords">${keywords.map(k => `<span class="wargear-card-keyword">${k}</span>`).join('')}</div>`
+                : '';
 
             return `
-                <tr>
-                    <td class="wargear-table-name">${w.name}</td>
-                    <td class="wargear-table-center">${w.damage?.base || 0}</td>
-                    <td class="wargear-table-center">${w.ed || 0}</td>
-                    <td class="wargear-table-center">${w.ap ? w.ap : '-'}</td>
-                    <td class="wargear-table-range">${range}</td>
-                    <td class="wargear-table-center">${w.salvo || '-'}</td>
-                    <td class="wargear-table-traits">${traits}</td>
-                    <td class="wargear-table-center">${w.value || '-'}</td>
-                    <td class="wargear-table-rarity ${rarityClass}">${w.rarity || 'Common'}</td>
-                    <td class="wargear-table-keywords">${keywords}</td>
-                    <td class="wargear-table-action">
-                        ${ownedBadge}
-                        <button class="btn-small btn-add-wargear" data-id="${w.id}">Add</button>
-                    </td>
-                </tr>
+                <div class="wargear-card">
+                    <div class="wargear-card-header">
+                        <div>
+                            <span class="wargear-card-name">${w.name}</span>
+                            <span class="wargear-card-type">Ranged${w.category ? ' • ' + w.category : ''}</span>
+                        </div>
+                        <div class="wargear-card-actions">
+                            <span class="wargear-card-meta">Value: ${w.value || '-'} • <span class="${rarityClass}">${w.rarity || 'Common'}</span></span>
+                            ${ownedBadge}
+                            <button class="btn-small btn-add-wargear" data-id="${w.id}">Add</button>
+                        </div>
+                    </div>
+                    <div class="wargear-card-stats">
+                        <div><span class="wargear-card-stat-label">Damage</span><span>${w.damage?.base || 0}</span></div>
+                        <div><span class="wargear-card-stat-label">ED</span><span>${w.ed || 0}</span></div>
+                        <div><span class="wargear-card-stat-label">AP</span><span>${w.ap ? w.ap : '-'}</span></div>
+                        <div><span class="wargear-card-stat-label">Range</span><span>${range}</span></div>
+                        <div><span class="wargear-card-stat-label">Salvo</span><span>${w.salvo || '-'}</span></div>
+                    </div>
+                    ${traitsHtml}
+                    ${keywordsHtml}
+                </div>
             `;
         }).join('');
 
         return `
             <div class="wargear-table-section">
                 <h4>Ranged Weapons</h4>
-                <div class="wargear-table-wrapper">
-                    <table class="wargear-table">
-                        <thead>
-                            <tr>
-                                <th>Name</th>
-                                <th>Damage</th>
-                                <th>ED</th>
-                                <th>AP</th>
-                                <th>Range</th>
-                                <th>Salvo</th>
-                                <th>Traits</th>
-                                <th>Value</th>
-                                <th>Rarity</th>
-                                <th>Keywords</th>
-                                <th></th>
-                            </tr>
-                        </thead>
-                        <tbody>${rows}</tbody>
-                    </table>
-                </div>
+                ${cards}
             </div>
         `;
     },
 
-    // Render armor table
-    renderArmorTable(armorItems, ownedCounts) {
+    // Render armor cards
+    renderArmorCards(armorItems, ownedCounts) {
         armorItems.sort((a, b) => a.name.localeCompare(b.name));
 
-        const rows = armorItems.map(a => {
+        const cards = armorItems.map(a => {
             const ownedCount = ownedCounts[a.id] || 0;
-            const traits = (a.traits || []).join(', ') || '-';
-            const keywords = (a.keywords || []).join(', ') || '-';
             const rarityClass = this.getRarityClass(a.rarity);
             const ownedBadge = ownedCount > 0 ? `<span class="owned-count">${ownedCount}</span>` : '';
+            const traits = (a.traits || []);
+            const keywords = (a.keywords || []);
+
+            const traitsHtml = traits.length > 0
+                ? `<div class="wargear-card-traits">${traits.join(', ')}</div>`
+                : '';
+
+            const keywordsHtml = keywords.length > 0
+                ? `<div class="wargear-card-keywords">${keywords.map(k => `<span class="wargear-card-keyword">${k}</span>`).join('')}</div>`
+                : '';
 
             return `
-                <tr>
-                    <td class="wargear-table-name">${a.name}</td>
-                    <td class="wargear-table-center">${a.ar || 0}</td>
-                    <td class="wargear-table-traits">${traits}</td>
-                    <td class="wargear-table-center">${a.value || '-'}</td>
-                    <td class="wargear-table-rarity ${rarityClass}">${a.rarity || 'Common'}</td>
-                    <td class="wargear-table-keywords">${keywords}</td>
-                    <td class="wargear-table-action">
-                        ${ownedBadge}
-                        <button class="btn-small btn-add-wargear" data-id="${a.id}">Add</button>
-                    </td>
-                </tr>
+                <div class="wargear-card">
+                    <div class="wargear-card-header">
+                        <div>
+                            <span class="wargear-card-name">${a.name}</span>
+                            <span class="wargear-card-type">Armor</span>
+                        </div>
+                        <div class="wargear-card-actions">
+                            <span class="wargear-card-meta">Value: ${a.value || '-'} • <span class="${rarityClass}">${a.rarity || 'Common'}</span></span>
+                            ${ownedBadge}
+                            <button class="btn-small btn-add-wargear" data-id="${a.id}">Add</button>
+                        </div>
+                    </div>
+                    <div class="wargear-card-stats">
+                        <div><span class="wargear-card-stat-label">AR</span><span>${a.ar || 0}</span></div>
+                    </div>
+                    ${traitsHtml}
+                    ${keywordsHtml}
+                </div>
             `;
         }).join('');
 
         return `
             <div class="wargear-table-section">
                 <h4>Armor</h4>
-                <div class="wargear-table-wrapper">
-                    <table class="wargear-table">
-                        <thead>
-                            <tr>
-                                <th>Name</th>
-                                <th>AR</th>
-                                <th>Traits</th>
-                                <th>Value</th>
-                                <th>Rarity</th>
-                                <th>Keywords</th>
-                                <th></th>
-                            </tr>
-                        </thead>
-                        <tbody>${rows}</tbody>
-                    </table>
-                </div>
+                ${cards}
             </div>
         `;
     },
 
-    // Render equipment table
-    renderEquipmentTable(equipmentItems, ownedCounts) {
+    // Render equipment cards
+    renderEquipmentCards(equipmentItems, ownedCounts) {
         equipmentItems.sort((a, b) => a.name.localeCompare(b.name));
 
-        const rows = equipmentItems.map(e => {
+        const cards = equipmentItems.map(e => {
             const ownedCount = ownedCounts[e.id] || 0;
-            const keywords = (e.keywords || []).join(', ') || '-';
-            const effect = e.effect || e.description || '-';
+            const effect = e.effect || e.description || '';
             const rarityClass = this.getRarityClass(e.rarity);
             const ownedBadge = ownedCount > 0 ? `<span class="owned-count">${ownedCount}</span>` : '';
+            const keywords = (e.keywords || []);
+
+            const effectHtml = effect
+                ? `<div class="wargear-card-effect">${effect}</div>`
+                : '';
+
+            const keywordsHtml = keywords.length > 0
+                ? `<div class="wargear-card-keywords">${keywords.map(k => `<span class="wargear-card-keyword">${k}</span>`).join('')}</div>`
+                : '';
 
             return `
-                <tr>
-                    <td class="wargear-table-name">${e.name}</td>
-                    <td class="wargear-table-effect">${effect}</td>
-                    <td class="wargear-table-center">${e.value || '-'}</td>
-                    <td class="wargear-table-rarity ${rarityClass}">${e.rarity || 'Common'}</td>
-                    <td class="wargear-table-keywords">${keywords}</td>
-                    <td class="wargear-table-action">
-                        ${ownedBadge}
-                        <button class="btn-small btn-add-wargear" data-id="${e.id}">Add</button>
-                    </td>
-                </tr>
+                <div class="wargear-card">
+                    <div class="wargear-card-header">
+                        <div>
+                            <span class="wargear-card-name">${e.name}</span>
+                            <span class="wargear-card-type">${e.category || 'Equipment'}</span>
+                        </div>
+                        <div class="wargear-card-actions">
+                            <span class="wargear-card-meta">Value: ${e.value || '-'} • <span class="${rarityClass}">${e.rarity || 'Common'}</span></span>
+                            ${ownedBadge}
+                            <button class="btn-small btn-add-wargear" data-id="${e.id}">Add</button>
+                        </div>
+                    </div>
+                    ${effectHtml}
+                    ${keywordsHtml}
+                </div>
             `;
         }).join('');
 
         return `
             <div class="wargear-table-section">
                 <h4>Equipment</h4>
-                <div class="wargear-table-wrapper">
-                    <table class="wargear-table">
-                        <thead>
-                            <tr>
-                                <th>Name</th>
-                                <th>Effect</th>
-                                <th>Value</th>
-                                <th>Rarity</th>
-                                <th>Keywords</th>
-                                <th></th>
-                            </tr>
-                        </thead>
-                        <tbody>${rows}</tbody>
-                    </table>
-                </div>
+                ${cards}
             </div>
         `;
     },
