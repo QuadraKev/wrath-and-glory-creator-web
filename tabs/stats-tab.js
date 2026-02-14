@@ -134,7 +134,7 @@ const StatsTab = {
             const min = archetype?.skillBonus?.[skill] || 0;
 
             const linkedAttr = DerivedStats.getLinkedAttribute(skill);
-            const attrValue = character.attributes[linkedAttr] || 1;
+            const attrValue = DerivedStats.getEffectiveAttribute(character, linkedAttr);
             const total = value + attrValue;
 
             const nextCost = XPCalculator.getNextSkillCost(value);

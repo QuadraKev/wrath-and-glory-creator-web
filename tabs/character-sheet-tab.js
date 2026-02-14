@@ -367,15 +367,25 @@ const CharacterSheetTab = {
             const baseValue = character.attributes?.[attr.key] || 1;
             const attrBonuses = equipBonuses[attr.key] || [];
             const equipTotal = attrBonuses.reduce((sum, b) => sum + b.value, 0);
-            const displayValue = baseValue + equipTotal;
-            const bonusIndicator = equipTotal !== 0
-                ? `<span class="sheet-equip-bonus" title="${attrBonuses.map(b => `${b.value > 0 ? '+' : ''}${b.value} ${b.source}`).join(', ')}">${equipTotal > 0 ? '+' : ''}${equipTotal}</span>`
-                : '';
+            const effectiveValue = baseValue + equipTotal;
+
+            // Build tooltip for attributes with equipment bonuses
+            let tooltipAttr = '';
+            let tappableClass = '';
+            if (equipTotal !== 0) {
+                const lines = [`Base: ${baseValue}`];
+                for (const b of attrBonuses) {
+                    lines.push(`${b.value > 0 ? '+' : ''}${b.value} ${b.source}`);
+                }
+                lines.push(`Total: ${effectiveValue}`);
+                tappableClass = ' sheet-trait-tappable';
+                tooltipAttr = ` title="${this.escapeHtml(lines.join('\n'))}"`;
+            }
 
             return `
-                <div class="sheet-compact-item">
+                <div class="sheet-compact-item${tappableClass}"${tooltipAttr}>
                     <span class="sheet-compact-name">${attr.name}</span>
-                    <span class="sheet-compact-value">${displayValue}${bonusIndicator}</span>
+                    <span class="sheet-compact-value">${effectiveValue}</span>
                     <span class="sheet-compact-abbrev">[${attr.abbrev}]</span>
                 </div>
             `;
@@ -426,7 +436,7 @@ const CharacterSheetTab = {
 
         const rows = skills.map(skill => {
             const rating = character.skills?.[skill.key] || 0;
-            const attrValue = character.attributes?.[skill.attr] || 1;
+            const attrValue = DerivedStats.getEffectiveAttribute(character, skill.attr);
             const subOptionBonus = DerivedStats.getSpeciesSubOptionSkillBonus(character, skill.key);
             const total = rating + attrValue + subOptionBonus;
             const abbrev = attrAbbrevs[skill.attr];
@@ -1154,7 +1164,7 @@ const CharacterSheetTab = {
         }
 
         const skillRating = character.skills?.[skillKey] || 0;
-        const attrValue = character.attributes?.[attrKey] || 1;
+        const attrValue = DerivedStats.getEffectiveAttribute(character, attrKey);
         const basePool = skillRating + attrValue;
 
         // Collect bonus dice from upgrades
@@ -1375,8 +1385,8 @@ const CharacterSheetTab = {
         }
 
         // Check if weapon adds attribute to damage (typically Strength for melee)
-        if (weapon.damage?.attribute && character.attributes) {
-            const attrValue = character.attributes[weapon.damage.attribute] || 0;
+        if (weapon.damage?.attribute) {
+            const attrValue = DerivedStats.getEffectiveAttribute(character, weapon.damage.attribute);
             const attrAbbrev = weapon.damage.attribute.substring(0, 3).toUpperCase();
 
             const totalDamage = baseDamage + attrValue + totalDamageBonus;

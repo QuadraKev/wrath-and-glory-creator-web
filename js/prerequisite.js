@@ -13,7 +13,7 @@ const PrerequisiteChecker = {
         // Check attribute requirements
         if (prereqs.attributes) {
             for (const [attr, required] of Object.entries(prereqs.attributes)) {
-                const current = character.attributes?.[attr] || 1;
+                const current = DerivedStats.getEffectiveAttribute(character, attr);
                 if (current < required) {
                     reasons.push(`${DerivedStats.formatAttributeName(attr)} ${required}+`);
                 }
@@ -129,7 +129,7 @@ const PrerequisiteChecker = {
 
         // Check willpower requirement
         if (power.prerequisites?.willpower) {
-            const current = character.attributes?.willpower || 1;
+            const current = DerivedStats.getEffectiveAttribute(character, 'willpower');
             if (current < power.prerequisites.willpower) {
                 reasons.push(`Willpower ${power.prerequisites.willpower}+`);
             }

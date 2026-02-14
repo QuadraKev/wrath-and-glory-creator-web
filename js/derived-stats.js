@@ -102,6 +102,12 @@ const DerivedStats = {
         return this.SKILL_ATTRIBUTES[skillName] || null;
     },
 
+    // Get effective attribute value (base + equipment bonuses)
+    getEffectiveAttribute(character, attr) {
+        const base = character.attributes?.[attr] || 1;
+        return base + this.getEquipmentBonusTotal(character, attr);
+    },
+
     // Helper to check if character has a talent
     hasTalent(character, talentId) {
         return (character.talents || []).some(t =>
@@ -135,7 +141,7 @@ const DerivedStats = {
     // Calculate Defence (Initiative - 1 + Shield AR + Equipment Bonuses + Talent Bonuses)
     calculateDefence(character, armorBreakdown = null) {
         if (!armorBreakdown) armorBreakdown = this.getArmorBreakdown(character);
-        const base = Math.max(0, (character.attributes?.initiative || 1) - 1);
+        const base = Math.max(0, this.getEffectiveAttribute(character, 'initiative') - 1);
         const shieldAR = armorBreakdown.shieldAR;
         const equipBonus = this.getEquipmentBonusTotal(character, 'defence');
         const talentBonus = this.getTalentTraitBonus(character, 'Defence');
@@ -153,7 +159,7 @@ const DerivedStats = {
             bestArmorAR = armorRatingOrBreakdown;
             shieldAR = 0;
         }
-        const base = (character.attributes?.toughness || 1) + 1 + bestArmorAR + shieldAR;
+        const base = this.getEffectiveAttribute(character, 'toughness') + 1 + bestArmorAR + shieldAR;
         const subOptionBonus = this.getSpeciesSubOptionBonus(character, 'resilience');
         const equipBonus = this.getEquipmentBonusTotal(character, 'resilience');
         const talentBonus = this.getTalentTraitBonus(character, 'Resilience');
@@ -162,7 +168,7 @@ const DerivedStats = {
 
     // Calculate Determination (equal to Toughness + background bonus + Talent Bonuses)
     calculateDetermination(character) {
-        const base = character.attributes?.toughness || 1;
+        const base = this.getEffectiveAttribute(character, 'toughness');
         const backgroundBonus = this.getBackgroundBonus(character, 'determination');
         const talentBonus = this.getTalentTraitBonus(character, 'Determination');
         return base + backgroundBonus + talentBonus;
@@ -172,7 +178,7 @@ const DerivedStats = {
     calculateMaxWounds(character) {
         const tier = character.tier || 1;
         const rank = character.rank || 1;
-        const toughness = character.attributes?.toughness || 1;
+        const toughness = this.getEffectiveAttribute(character, 'toughness');
         const species = DataLoader.getSpecies(character.species?.id);
         const speciesBonus = species?.woundBonus || 0;
         const backgroundBonus = this.getBackgroundBonus(character, 'maxWounds');
@@ -191,7 +197,7 @@ const DerivedStats = {
     // Calculate Max Shock (Willpower + Tier + Background Bonus + Species Sub-Option Bonus + Talent Bonuses)
     calculateMaxShock(character) {
         let tier = character.tier || 1;
-        const willpower = character.attributes?.willpower || 1;
+        const willpower = this.getEffectiveAttribute(character, 'willpower');
         const backgroundBonus = this.getBackgroundBonus(character, 'maxShock');
         const subOptionBonus = this.getSpeciesSubOptionBonus(character, 'maxShock');
         const talentBonus = this.getTalentTraitBonus(character, 'Shock');
@@ -216,7 +222,7 @@ const DerivedStats = {
     // Calculate Conviction (equal to Willpower + Background Bonus + Talent Bonuses)
     calculateConviction(character) {
         const rank = character.rank || 1;
-        const base = character.attributes?.willpower || 1;
+        const base = this.getEffectiveAttribute(character, 'willpower');
         const backgroundBonus = this.getBackgroundBonus(character, 'conviction');
         let talentBonus = this.getTalentTraitBonus(character, 'Conviction');
 
@@ -231,7 +237,7 @@ const DerivedStats = {
     // Calculate Resolve (Willpower - 1 + Background Bonus + Talent Bonuses)
     calculateResolve(character) {
         const rank = character.rank || 1;
-        const base = Math.max(0, (character.attributes?.willpower || 1) - 1);
+        const base = Math.max(0, this.getEffectiveAttribute(character, 'willpower') - 1);
         const backgroundBonus = this.getBackgroundBonus(character, 'resolve');
         let talentBonus = this.getTalentTraitBonus(character, 'Resolve');
 
@@ -246,7 +252,7 @@ const DerivedStats = {
     // Calculate Passive Awareness (ceiling of (Intellect + Awareness) / 2 + Talent Bonuses)
     calculatePassiveAwareness(character) {
         const rank = character.rank || 1;
-        const intellect = character.attributes?.intellect || 1;
+        const intellect = this.getEffectiveAttribute(character, 'intellect');
         const awareness = character.skills?.awareness || 0;
         const base = Math.ceil((intellect + awareness) / 2);
         let talentBonus = 0;
@@ -261,7 +267,7 @@ const DerivedStats = {
 
     // Calculate Influence (Fellowship - 1 + Archetype Bonus + Background Bonus)
     calculateInfluence(character) {
-        const fellowship = character.attributes?.fellowship || 1;
+        const fellowship = this.getEffectiveAttribute(character, 'fellowship');
         const archetype = DataLoader.getArchetype(character.archetype?.id);
         const archetypeBonus = archetype?.influenceModifier || 0;
         const backgroundBonus = this.getBackgroundBonus(character, 'influence');
@@ -284,7 +290,7 @@ const DerivedStats = {
     calculateSkillTotal(character, skillName) {
         const skillRating = character.skills?.[skillName] || 0;
         const linkedAttr = this.SKILL_ATTRIBUTES[skillName];
-        const attrValue = character.attributes?.[linkedAttr] || 1;
+        const attrValue = this.getEffectiveAttribute(character, linkedAttr);
         const subOptionBonus = this.getSpeciesSubOptionSkillBonus(character, skillName);
         return skillRating + attrValue + subOptionBonus;
     },
@@ -332,7 +338,7 @@ const DerivedStats = {
 
         // Add attribute bonus (usually Strength for melee)
         if (weapon.damage?.attribute) {
-            damage += character.attributes?.[weapon.damage.attribute] || 0;
+            damage += this.getEffectiveAttribute(character, weapon.damage.attribute);
         }
 
         // Check for talent bonuses to ED
@@ -449,7 +455,7 @@ const DerivedStats = {
     // Get Resilience breakdown for tooltip
     getResilienceBreakdown(character) {
         const armorBreakdown = this.getArmorBreakdown(character);
-        const tou = character.attributes?.toughness || 1;
+        const tou = this.getEffectiveAttribute(character, 'toughness');
         const subOptionBonus = this.getSpeciesSubOptionBonus(character, 'resilience');
         const equipBonus = this.getEquipmentBonusTotal(character, 'resilience');
         const talentBonus = this.getTalentTraitBonus(character, 'Resilience');
@@ -479,7 +485,7 @@ const DerivedStats = {
     // Get Defence breakdown for tooltip
     getDefenceBreakdown(character) {
         const armorBreakdown = this.getArmorBreakdown(character);
-        const ini = character.attributes?.initiative || 1;
+        const ini = this.getEffectiveAttribute(character, 'initiative');
         const equipBonus = this.getEquipmentBonusTotal(character, 'defence');
         const talentBonus = this.getTalentTraitBonus(character, 'Defence');
 

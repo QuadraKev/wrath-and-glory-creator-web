@@ -186,7 +186,9 @@ const CharacterIO = {
 
         sheet += `## Attributes\n`;
         for (const [attr, value] of Object.entries(character.attributes)) {
-            sheet += `- ${DerivedStats.formatAttributeName(attr)}: ${value}\n`;
+            const effective = DerivedStats.getEffectiveAttribute(character, attr);
+            const display = effective !== value ? `${effective} (base ${value})` : `${value}`;
+            sheet += `- ${DerivedStats.formatAttributeName(attr)}: ${display}\n`;
         }
 
         sheet += `\n## Derived Stats\n`;
