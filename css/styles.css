@@ -1640,44 +1640,109 @@ textarea {
 }
 
 .powers-table {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.power-card {
     background: var(--bg-card);
     border: 1px solid var(--border-color);
     border-radius: var(--radius-md);
-    overflow: hidden;
+    padding: 15px;
+    margin-bottom: 10px;
 }
 
-.powers-table-header {
-    display: grid;
-    grid-template-columns: 150px 120px 60px 1fr 80px;
+.power-card:hover {
+    border-color: var(--accent-gold);
+}
+
+.power-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 10px;
     gap: 10px;
-    padding: 10px 15px;
-    background: var(--bg-tertiary);
+}
+
+.power-card-name {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--accent-gold);
+}
+
+.power-card-discipline {
     font-size: 12px;
-    font-weight: 500;
+    color: var(--text-muted);
+    margin-left: 8px;
+}
+
+.power-card-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+}
+
+.power-card-cost {
+    font-size: 13px;
+    color: var(--text-muted);
+    white-space: nowrap;
+}
+
+.power-card-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    padding: 10px;
+    background: var(--bg-tertiary);
+    border-radius: var(--radius-sm);
+    margin-bottom: 10px;
+}
+
+.power-card-stats > div {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.power-card-stat-label {
+    font-size: 10px;
+    font-weight: 600;
     color: var(--text-muted);
     text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
-.power-row {
-    display: grid;
-    grid-template-columns: 150px 120px 60px 1fr 80px;
-    gap: 10px;
-    padding: 10px 15px;
-    border-bottom: 1px solid var(--border-color);
-    align-items: center;
+.power-card-stats > div > span:last-child {
+    font-size: 13px;
+    color: var(--text-primary);
 }
 
-.power-dn {
+.power-card-effect {
+    font-size: 13px;
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+
+.power-card-potency {
+    margin-top: 8px;
+    padding-top: 8px;
+    border-top: 1px solid var(--border-color);
     font-size: 12px;
+    color: var(--accent-gold);
+    font-style: italic;
+    line-height: 1.4;
+}
+
+.power-card-section-label {
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
     color: var(--text-muted);
-}
-
-.power-row:last-child {
-    border-bottom: none;
-}
-
-.power-row:hover {
-    background: var(--bg-hover);
+    font-style: normal;
+    margin-right: 6px;
 }
 
 /* ===== Background Tab ===== */
@@ -3700,12 +3765,14 @@ textarea {
         font-size: 12px;
     }
 
-    /* Powers grid: adapt */
-    .powers-table-header,
-    .power-row {
-        grid-template-columns: 120px 100px 50px 1fr 60px;
+    /* Power cards: reduce padding on tablet */
+    .power-card {
+        padding: 12px;
+    }
+
+    .power-card-stats {
         gap: 6px;
-        font-size: 12px;
+        padding: 8px;
     }
 }
 
@@ -3774,16 +3841,18 @@ textarea {
         display: none;
     }
 
-    .powers-table-header,
-    .power-row {
-        grid-template-columns: 1fr 80px 40px 60px;
-        gap: 4px;
+    /* Power cards: stack stats on phone */
+    .power-card-stats {
+        grid-template-columns: repeat(2, 1fr);
     }
 
-    /* Hide effect column on very small screens */
-    .powers-table-header > span:nth-child(4),
-    .power-row > span:nth-child(4) {
-        display: none;
+    .power-card-header {
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .power-card-actions {
+        align-self: flex-end;
     }
 
     /* Glossary filters: smaller */

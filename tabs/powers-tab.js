@@ -304,41 +304,51 @@ const PowersTab = {
         // Sort by name
         powers.sort((a, b) => a.name.localeCompare(b.name));
 
-        container.innerHTML = `
-            <div class="powers-table-header">
-                <span>Name</span>
-                <span>DN</span>
-                <span>Cost</span>
-                <span>Effect</span>
-                <span>Learn</span>
-            </div>
-        `;
+        container.innerHTML = '';
 
         for (const power of powers) {
             const prereqCheck = PrerequisiteChecker.checkPowerPrerequisites(power, character);
             const canAfford = XPCalculator.canAfford(character, power.cost || 0);
             const canAdd = prereqCheck.met && canAfford;
 
-            const row = document.createElement('div');
-            row.className = 'power-row';
-            row.innerHTML = `
-                <span class="power-name">${power.name}</span>
-                <span class="power-dn">${power.dn || '-'}</span>
-                <span class="power-cost">${power.cost || 0}</span>
-                <span class="power-effect">${power.effect || ''}</span>
-                <button class="btn-add" data-id="${power.id}" ${!canAdd ? 'disabled' : ''}>ADD</button>
+            const card = document.createElement('div');
+            card.className = 'power-card';
+
+            const potencyHtml = power.potency
+                ? `<div class="power-card-potency"><span class="power-card-section-label">Potency</span>${power.potency}</div>`
+                : '';
+
+            card.innerHTML = `
+                <div class="power-card-header">
+                    <div>
+                        <span class="power-card-name">${power.name}</span>
+                        <span class="power-card-discipline">${power.discipline}</span>
+                    </div>
+                    <div class="power-card-actions">
+                        <span class="power-card-cost">${power.cost || 0} XP</span>
+                        <button class="btn-add" data-id="${power.id}" ${!canAdd ? 'disabled' : ''}>ADD</button>
+                    </div>
+                </div>
+                <div class="power-card-stats">
+                    <div><span class="power-card-stat-label">DN</span><span>${power.dn || '-'}</span></div>
+                    <div><span class="power-card-stat-label">Activation</span><span>${power.activation || '-'}</span></div>
+                    <div><span class="power-card-stat-label">Duration</span><span>${power.duration || '-'}</span></div>
+                    <div><span class="power-card-stat-label">Range</span><span>${power.range || '-'}</span></div>
+                </div>
+                <div class="power-card-effect">${power.effect || ''}</div>
+                ${potencyHtml}
             `;
 
-            row.querySelector('.btn-add').addEventListener('click', () => {
+            card.querySelector('.btn-add').addEventListener('click', () => {
                 if (State.addPower(power.id)) {
                     this.render();
                 }
             });
 
             // Enhance power effects with glossary terms
-            Glossary.enhanceElement(row.querySelector('.power-effect'));
+            Glossary.enhanceElement(card.querySelector('.power-card-effect'));
 
-            container.appendChild(row);
+            container.appendChild(card);
         }
 
         if (powers.length === 0) {
