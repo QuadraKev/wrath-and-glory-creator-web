@@ -3,6 +3,8 @@
 (function() {
     // Store file reference from open dialog for subsequent importCharacter call
     let _pendingFile = null;
+    // Store file handle from File System Access API for save/overwrite
+    let _saveFileHandle = null;
 
     window.api = {
         // Load game data via fetch (cache-busted with version)
@@ -18,13 +20,56 @@
         saveCharacter: async () => ({ success: false, error: 'Not supported in web version' }),
         deleteCharacter: async () => ({ success: false, error: 'Not supported in web version' }),
 
-        // Show save dialog - returns a synthetic result with the filename
+        // Show save dialog - uses File System Access API for real Save As when available
         showSaveDialog: async (defaultName) => {
+            if (window.showSaveFilePicker) {
+                try {
+                    const handle = await window.showSaveFilePicker({
+                        suggestedName: defaultName || 'character.character',
+                        types: [{
+                            description: 'Character Files',
+                            accept: { 'application/json': ['.character'] }
+                        }]
+                    });
+                    _saveFileHandle = handle;
+                    return { canceled: false, filePath: handle.name };
+                } catch (e) {
+                    if (e.name === 'AbortError') {
+                        return { canceled: true };
+                    }
+                    throw e;
+                }
+            }
+            // Fallback for browsers without File System Access API
             return { canceled: false, filePath: defaultName || 'character.character' };
         },
 
         // Show open dialog - opens file picker and stores file reference
-        showOpenDialog: () => {
+        showOpenDialog: async () => {
+            // Use File System Access API when available for handle-based open
+            if (window.showOpenFilePicker) {
+                try {
+                    const [handle] = await window.showOpenFilePicker({
+                        types: [{
+                            description: 'Character Files',
+                            accept: { 'application/json': ['.character', '.json'] }
+                        }]
+                    });
+                    _pendingFile = await handle.getFile();
+                    _saveFileHandle = handle;
+                    return {
+                        canceled: false,
+                        filePaths: [handle.name]
+                    };
+                } catch (e) {
+                    if (e.name === 'AbortError') {
+                        return { canceled: true };
+                    }
+                    throw e;
+                }
+            }
+
+            // Fallback: use <input type="file">
             return new Promise((resolve) => {
                 const input = document.createElement('input');
                 input.type = 'file';
@@ -35,6 +80,7 @@
                         return;
                     }
                     _pendingFile = input.files[0];
+                    _saveFileHandle = null;
                     resolve({
                         canceled: false,
                         filePaths: [input.files[0].name]
@@ -45,9 +91,25 @@
             });
         },
 
-        // Export character - triggers browser download
+        // Export character - writes to file handle if available, otherwise triggers download
         exportCharacter: async (character, filePath) => {
-            const blob = new Blob([JSON.stringify(character, null, 2)], { type: 'application/json' });
+            const json = JSON.stringify(character, null, 2);
+
+            // Use stored file handle from Save As dialog when available
+            if (_saveFileHandle) {
+                try {
+                    const writable = await _saveFileHandle.createWritable();
+                    await writable.write(json);
+                    await writable.close();
+                    return { success: true };
+                } catch (e) {
+                    // Handle lost permission — clear handle and fall through to download
+                    _saveFileHandle = null;
+                }
+            }
+
+            // Fallback: trigger browser download
+            const blob = new Blob([json], { type: 'application/json' });
             const url = URL.createObjectURL(blob);
             const a = document.createElement('a');
             a.href = url;
