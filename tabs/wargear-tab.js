@@ -550,6 +550,13 @@ const WargearTab = {
                 this.render();
             });
         });
+
+        // Enhance card text with glossary tooltips
+        if (typeof Glossary !== 'undefined' && Glossary.enhanceElement) {
+            container.querySelectorAll('.wargear-card-traits, .wargear-card-effect').forEach(el => {
+                Glossary.enhanceElement(el);
+            });
+        }
     },
 
     // Show the upgrade modal for a weapon
@@ -632,6 +639,13 @@ const WargearTab = {
         html += '</div>';
 
         content.innerHTML = html;
+
+        // Enhance upgrade effects with glossary tooltips
+        if (typeof Glossary !== 'undefined' && Glossary.enhanceElement) {
+            content.querySelectorAll('.upgrade-effect').forEach(el => {
+                Glossary.enhanceElement(el);
+            });
+        }
 
         // Bind events
         content.querySelectorAll('.btn-add-upgrade').forEach(btn => {

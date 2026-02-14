@@ -242,6 +242,13 @@ const SpeciesTab = {
             optionsContainer.appendChild(btn);
         }
 
+        // Enhance ability/effect text with glossary tooltips
+        if (typeof Glossary !== 'undefined' && Glossary.enhanceElement) {
+            optionsContainer.querySelectorAll('.choice-ability-effect, .choice-option-desc').forEach(el => {
+                Glossary.enhanceElement(el);
+            });
+        }
+
         // Show selected items for multi-select
         if (config.countByTier) {
             const selected = State.getSpeciesSubOptionsByType(config.type);

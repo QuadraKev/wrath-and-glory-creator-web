@@ -147,6 +147,14 @@ const BackgroundTab = {
             goalDetail.innerHTML = '';
         }
 
+        // Enhance descriptions with glossary tooltips
+        if (typeof Glossary !== 'undefined' && Glossary.enhanceElement) {
+            [originDetail, accomplishmentDetail, goalDetail].forEach(el => {
+                const desc = el.querySelector('p');
+                if (desc) Glossary.enhanceElement(desc);
+            });
+        }
+
         // Attach event listeners for bonus buttons
         document.querySelectorAll('.btn-use-bonus').forEach(btn => {
             btn.addEventListener('click', () => {
