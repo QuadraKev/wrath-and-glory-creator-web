@@ -1537,10 +1537,10 @@
     },
     "sanctuary_aoa": {
       "name": "Sanctuary (Abundance of Apocrypha)",
-      "discipline": "Theosophamy",
-      "dn": "5",
-      "cost": 15,
-      "description": "<b>Discipline:</b> Theosophamy<br><b>DN:</b> 5<br><b>XP Cost:</b> 15<br><b>Activation:</b> Action<br><b>Duration:</b> Sustained<br><b>Range:</b> Self<br><b>Keywords:</b> PSYCHIC<br><br><b>Effect:</b> By tapping into the various breaches and cracks that exist in the real world, you are able to wrap yourself within tendrils of warp energy and use them to gird yourself against harm. While this power remains in effect, an enemy who wishes to target you with a ranged attack or move within 3m of you must pass a DN 3 Willpower test; if they fail, they forgo their turn as the power holds them at bay. Further, you may roll Determination against Mortal Wounds while this power remains in effect. The effect ends instantly when you make a ranged attack.<br><br><b>Potency:</b> *[2] The power affects you and all allies you can see within 5m. [1] Willpower test has +1 DN. === PAGE 296 === Seal the Breach"
+      "discipline": "Sanctic",
+      "dn": "6",
+      "cost": 25,
+      "description": "<b>Discipline:</b> Sanctic<br><b>DN:</b> 6<br><b>XP Cost:</b> 25<br><b>Activation:</b> Action<br><b>Duration:</b> 1 Round<br><b>Range:</b> 5m<br><b>Keywords:</b> PSYCHIC<br><br><b>Effect:</b> Chanting words of warding, you create a zone of light around you that can protect you from harm and repel daemonic creatures. You, and all allies within range, add +1 to your Determination, may roll Determination against Mortal Wounds, and do not suffer Shock when rolling Determination, until the start of your next turn. Further, creatures with the DAEMON keyword treat the area within range of you as difficult terrain until the start of your next turn.<br><br><b>Potency:</b> [2] +1 Determination [3] +5m range. Vortex of Doom"
     },
     "vortex_of_doom_aoa": {
       "name": "Vortex of Doom (Abundance of Apocrypha)",
@@ -1607,10 +1607,10 @@
     },
     "fortify_aoa": {
       "name": "Fortify (Abundance of Apocrypha)",
-      "discipline": "Skeinwrought",
-      "dn": "5",
-      "cost": 10,
-      "description": "<b>Discipline:</b> Skeinwrought<br><b>DN:</b> 5<br><b>XP Cost:</b> 10<br><b>Activation:</b> Action<br><b>Duration:</b> 1 Round<br><b>Range:</b> 12m<br><b>Keywords:</b> LEAGUES OF VOTANN, PSYCHIC<br><br><b>Effect:</b> The Kin have a natural belief in their own indomitable fortitude. Employing controlled empyric energies, you cause these beliefs to manifest as temporary physical enhancement. Select a number of LEAGUES OF VOTANN allies within range. Until the start of your next turn, the affected allies add +2 to their Resilience, and gain +2 dice on Determination rolls.<br><br><b>Potency:</b> [1] +1 dice on Determination rolls [1] +1 Resilience Ancestral Wrath"
+      "discipline": "Geokinesis",
+      "dn": "3",
+      "cost": 15,
+      "description": "<b>Discipline:</b> Geokinesis<br><b>DN:</b> 3<br><b>XP Cost:</b> 15<br><b>Activation:</b> Full Action<br><b>Duration:</b> Instant<br><b>Range:</b> 25m<br><b>Keywords:</b> PSYCHIC<br><br><b>Effect:</b> You envision a mighty citadel, ravaged by battle but under swift repair. As you do so, you let your powers wash over your battle- brothers, compelling their flesh to knit and their bones to set, just as your mental fortress is restored to its original magnificence. If this power is successful, select a single ally within range; they recover 1d3 Wounds, or twice that amount if they possess the IMPERIAL FISTS keyword. Once a creature has been affected by this power, they may not do so again until after their next Regroup.<br><br><b>Potency:</b> [3] The target recovers +1 Wound. [2] The target also recovers 1d3 Shock. Iron Inferno"
     },
     "iron_inferno_aoa": {
       "name": "Iron Inferno (Abundance of Apocrypha)",
@@ -2080,6 +2080,13 @@
       "dn": "3",
       "cost": 10,
       "description": "<b>Discipline:</b> Theosophamy<br><b>DN:</b> 3<br><b>XP Cost:</b> 10<br><b>Activation:</b> Action<br><b>Duration:</b> Sustained<br><b>Range:</b> Willpower x 10m<br><b>Keywords:</b> PSYCHIC<br><br><b>Effect:</b> The foul mutant cannot bear to stand against he who has stood before the God- Emperor. Those who dare gaze upon him have their own imperfections reflected back upon them; only the most stalwart can stand against this. When using this technique, you open yourself up to the currents of the warp and act as a mirror, revealing to the viewer what he truly is. If this power is successful, any ABHUMAN or MUTANT character within range must take a DN 3 Fear test. They suffer 1d3 Mortal Wounds at the start of their turn if within the power’s range while suffering from Fear.<br><br><b>Potency:</b> [1] +1 DN to the Fear test. [2] Targets suffer +1 Mortal Wound. Sanctuary"
+    },
+    "sanctuary_theosophamy_aoa": {
+      "name": "Sanctuary (Abundance of Apocrypha)",
+      "discipline": "Theosophamy",
+      "dn": "5",
+      "cost": 15,
+      "description": "<b>Discipline:</b> Theosophamy<br><b>DN:</b> 5<br><b>XP Cost:</b> 15<br><b>Activation:</b> Action<br><b>Duration:</b> Sustained<br><b>Range:</b> Self<br><b>Keywords:</b> PSYCHIC<br><br><b>Effect:</b> By tapping into the various breaches and cracks that exist in the real world, you are able to wrap yourself within tendrils of warp energy and use them to gird yourself against harm. While this power remains in effect, an enemy who wishes to target you with a ranged attack or move within 3m of you must pass a DN 3 Willpower test; if they fail, they forgo their turn as the power holds them at bay. Further, you may roll Determination against Mortal Wounds while this power remains in effect. The effect ends instantly when you make a ranged attack.<br><br><b>Potency:</b> *[2] The power affects you and all allies you can see within 5m. [1] Willpower test has +1 DN. === PAGE 296 === Seal the Breach"
     },
     "seal_the_breach_aoa": {
       "name": "Seal the Breach (Abundance of Apocrypha)",
@@ -2577,6 +2584,13 @@
       "dn": "4",
       "cost": 15,
       "description": "<b>Discipline:</b> Skeinwrought<br><b>DN:</b> 4<br><b>XP Cost:</b> 15<br><b>Activation:</b> Action<br><b>Duration:</b> Instant<br><b>Range:</b> Self<br><b>Keywords:</b> LEAGUES OF VOTANN, PSYCHIC<br><br><b>Effect:</b> You draw empyrically archived Votannic wisdom from within ward-tech augmetic neural buffers and use it to inform your comrades’ battle plan. If the power is successful, you immediately gain 1 Glory.<br><br><b>Potency:</b> [2] Gain +1 Glory *[3] Gain 1 Wrath Fortify"
+    },
+    "fortify_skeinwrought_aoa": {
+      "name": "Fortify (Abundance of Apocrypha)",
+      "discipline": "Skeinwrought",
+      "dn": "5",
+      "cost": 10,
+      "description": "<b>Discipline:</b> Skeinwrought<br><b>DN:</b> 5<br><b>XP Cost:</b> 10<br><b>Activation:</b> Action<br><b>Duration:</b> 1 Round<br><b>Range:</b> 12m<br><b>Keywords:</b> LEAGUES OF VOTANN, PSYCHIC<br><br><b>Effect:</b> The Kin have a natural belief in their own indomitable fortitude. Employing controlled empyric energies, you cause these beliefs to manifest as temporary physical enhancement. Select a number of LEAGUES OF VOTANN allies within range. Until the start of your next turn, the affected allies add +2 to their Resilience, and gain +2 dice on Determination rolls.<br><br><b>Potency:</b> [1] +1 dice on Determination rolls [1] +1 Resilience Ancestral Wrath"
     },
     "ancestral_wrath_aoa": {
       "name": "Ancestral Wrath (Abundance of Apocrypha)",

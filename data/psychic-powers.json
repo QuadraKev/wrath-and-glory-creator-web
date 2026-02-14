@@ -3432,7 +3432,7 @@
     "potency": "[1] +1 DN to the Fear test. [2] Targets suffer +1 Mortal Wound. Sanctuary"
   },
   {
-    "id": "sanctuary_aoa",
+    "id": "sanctuary_theosophamy_aoa",
     "name": "Sanctuary (Abundance of Apocrypha)",
     "discipline": "Theosophamy",
     "source": "apocrypha",
@@ -4746,7 +4746,7 @@
     "potency": "[2] Gain +1 Glory *[3] Gain 1 Wrath Fortify"
   },
   {
-    "id": "fortify_aoa",
+    "id": "fortify_skeinwrought_aoa",
     "name": "Fortify (Abundance of Apocrypha)",
     "discipline": "Skeinwrought",
     "source": "apocrypha",
