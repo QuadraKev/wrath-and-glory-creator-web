@@ -1613,6 +1613,24 @@ textarea {
     border-color: var(--accent-gold);
 }
 
+.btn-free-power-pick,
+.btn-discipline-unlock {
+    padding: 6px 14px;
+    background: var(--bg-card);
+    color: var(--text-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    cursor: pointer;
+    font-size: 12px;
+    transition: all 0.2s;
+}
+
+.btn-free-power-pick:hover,
+.btn-discipline-unlock:hover {
+    border-color: var(--accent-gold);
+    color: var(--accent-gold);
+}
+
 .powers-controls {
     margin-bottom: 15px;
 }
