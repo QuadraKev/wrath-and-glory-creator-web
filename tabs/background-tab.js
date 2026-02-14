@@ -219,7 +219,7 @@ const BackgroundTab = {
                 chip.textContent = 'Low Gothic';
             } else {
                 chip.innerHTML = `
-                    ${language}
+                    ${language} <span class="language-xp-cost">(1 XP)</span>
                     <span class="language-remove" data-lang="${language}" style="cursor: pointer; margin-left: 5px;">&times;</span>
                 `;
 

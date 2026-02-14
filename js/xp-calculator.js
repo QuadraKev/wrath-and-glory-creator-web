@@ -130,12 +130,19 @@ const XPCalculator = {
     calculatePowerXP(character) {
         let xp = 0;
         for (const powerId of character.psychicPowers || []) {
+            // Skip cost for archetype-granted free powers
+            if ((character.freePowers || []).includes(powerId)) continue;
             const power = DataLoader.getPsychicPower(powerId);
             if (power) {
                 xp += power.cost || 0;
             }
         }
         return xp;
+    },
+
+    // Calculate XP spent on languages (1 XP each beyond free Low Gothic)
+    calculateLanguageXP(character) {
+        return Math.max(0, (character.languages || []).length - 1);
     },
 
     // Calculate total spent XP
@@ -183,6 +190,9 @@ const XPCalculator = {
         // Psychic powers
         spent += this.calculatePowerXP(character);
 
+        // Languages
+        spent += this.calculateLanguageXP(character);
+
         return spent;
     },
 
@@ -217,7 +227,8 @@ const XPCalculator = {
             attributes: this.calculateAttributeXP(character, archetype),
             skills: this.calculateSkillXP(character, archetype),
             talents: this.calculateTalentXP(character),
-            powers: this.calculatePowerXP(character)
+            powers: this.calculatePowerXP(character),
+            languages: this.calculateLanguageXP(character)
         };
     },
 

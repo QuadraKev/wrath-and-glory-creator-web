@@ -377,6 +377,12 @@
       "ration_packs"
     ],
     "isPsyker": true,
+    "psykerConfig": {
+      "grantedPowers": ["smite"],
+      "freePowerChoices": [{ "disciplines": ["Minor"], "count": 1 }],
+      "unlockedDisciplines": [],
+      "disciplineChoices": 0
+    },
     "source": "core"
   },
   {
@@ -926,6 +932,12 @@
       "spirit_stone"
     ],
     "isPsyker": true,
+    "psykerConfig": {
+      "grantedPowers": ["smite"],
+      "freePowerChoices": [{ "disciplines": ["Runes of Battle"], "count": 1 }],
+      "unlockedDisciplines": ["Runes of Battle"],
+      "disciplineChoices": 0
+    },
     "source": "core"
   },
   {
@@ -1965,6 +1977,12 @@
       }
     ],
     "isPsyker": true,
+    "psykerConfig": {
+      "grantedPowers": ["smite"],
+      "freePowerChoices": [{ "disciplines": ["Librarius"], "count": 1 }],
+      "unlockedDisciplines": ["Librarius"],
+      "disciplineChoices": 1
+    },
     "source": "fspg"
   },
   {
@@ -2955,6 +2973,12 @@
     ],
     "wargearChoices": "Witchblade or Singing Spear",
     "isPsyker": true,
+    "psykerConfig": {
+      "grantedPowers": ["smite"],
+      "freePowerChoices": [{ "disciplines": ["Divination", "Runes of Fate", "Runes of Fortune"], "count": 2 }],
+      "unlockedDisciplines": ["Divination", "Runes of Fate", "Runes of Fortune"],
+      "disciplineChoices": 0
+    },
     "source": "aeldari"
   },
   {
@@ -3501,6 +3525,12 @@
     ],
     "wargearChoices": "Shuriken Pistol or Neuro Disruptor",
     "isPsyker": true,
+    "psykerConfig": {
+      "grantedPowers": ["smite"],
+      "freePowerChoices": [{ "disciplines": ["Divination", "Phantasmancy", "Telepathy"], "count": 2 }],
+      "unlockedDisciplines": ["Divination", "Phantasmancy", "Telepathy"],
+      "disciplineChoices": 0
+    },
     "source": "aeldari"
   },
   {
@@ -3636,6 +3666,12 @@
     ],
     "wargearChoices": "Shuriken Pistol and Corsair Sabre or Witchstaff",
     "isPsyker": true,
+    "psykerConfig": {
+      "grantedPowers": ["smite"],
+      "freePowerChoices": [],
+      "unlockedDisciplines": [],
+      "disciplineChoices": 0
+    },
     "source": "aeldari"
   },
   {

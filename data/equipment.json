@@ -381,6 +381,50 @@
     "source": "core"
   },
   {
+    "id": "clothing_common",
+    "name": "Clothing (Common)",
+    "category": "clothing",
+    "description": "Simple, everyday clothing.",
+    "effect": "Basic clothing.",
+    "value": 1,
+    "rarity": "Common",
+    "keywords": [],
+    "source": "core"
+  },
+  {
+    "id": "clothing_uncommon",
+    "name": "Clothing (Uncommon)",
+    "category": "clothing",
+    "description": "Well-made clothing of decent quality.",
+    "effect": "Basic clothing.",
+    "value": 1,
+    "rarity": "Uncommon",
+    "keywords": [],
+    "source": "core"
+  },
+  {
+    "id": "clothing_rare",
+    "name": "Clothing (Rare)",
+    "category": "clothing",
+    "description": "High-quality or distinctive clothing.",
+    "effect": "Basic clothing.",
+    "value": 1,
+    "rarity": "Rare",
+    "keywords": [],
+    "source": "core"
+  },
+  {
+    "id": "clothing_very_rare",
+    "name": "Clothing (Very Rare)",
+    "category": "clothing",
+    "description": "Exceptionally fine or exotic clothing.",
+    "effect": "Basic clothing.",
+    "value": 1,
+    "rarity": "Very Rare",
+    "keywords": [],
+    "source": "core"
+  },
+  {
     "id": "ration_packs",
     "name": "Ration Packs",
     "category": "misc",

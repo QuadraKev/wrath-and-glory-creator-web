@@ -1,20 +1,24 @@
 // Powers Tab - Psychic powers management
 
 const PowersTab = {
-    currentDiscipline: 'minor',
+    selectedDisciplines: new Set(),
     searchQuery: '',
 
     init() {
         this.render();
     },
 
-    // Get all disciplines from the data, sorted alphabetically with Minor and Universal first
+    // Get disciplines available to the character (only unlocked ones), sorted with Minor/Universal first
     getDisciplines() {
         const allPowers = DataLoader.getAllPsychicPowers();
+        const unlocked = State.getUnlockedDisciplines();
         const disciplineSet = new Set();
         for (const p of allPowers) {
             if (p.discipline && State.isSourceEnabled(p.source)) {
-                disciplineSet.add(p.discipline);
+                // Only include disciplines the character has unlocked
+                if (unlocked.some(d => d.toLowerCase() === p.discipline.toLowerCase())) {
+                    disciplineSet.add(p.discipline);
+                }
             }
         }
 
@@ -49,23 +53,33 @@ const PowersTab = {
             return;
         }
 
-        // Build discipline tabs dynamically from data
+        // Build discipline tabs dynamically from unlocked disciplines
         const disciplines = this.getDisciplines();
 
-        // If current discipline no longer exists in the filtered list, reset to first
-        if (!disciplines.some(d => d.toLowerCase() === this.currentDiscipline.toLowerCase())) {
-            this.currentDiscipline = disciplines.length > 0 ? disciplines[0].toLowerCase() : 'minor';
+        // Clean up selectedDisciplines: remove any that are no longer available
+        for (const d of this.selectedDisciplines) {
+            if (!disciplines.some(disc => disc.toLowerCase() === d.toLowerCase())) {
+                this.selectedDisciplines.delete(d);
+            }
         }
 
-        const disciplineButtons = disciplines.map(d => {
+        const allActive = this.selectedDisciplines.size === 0;
+        const disciplineButtons = [
+            `<button class="discipline-btn ${allActive ? 'active' : ''}" data-discipline="all">All</button>`
+        ].concat(disciplines.map(d => {
             const key = d.toLowerCase();
-            const isActive = key === this.currentDiscipline.toLowerCase();
+            const isActive = this.selectedDisciplines.has(key);
             return `<button class="discipline-btn ${isActive ? 'active' : ''}" data-discipline="${key}">${d}</button>`;
-        }).join('\n                ');
+        })).join('\n                ');
+
+        // Build setup section HTML
+        const setupHtml = this.renderSetupSection();
 
         // Restore full UI
         document.getElementById('section-powers').innerHTML = `
             <h2>Manage Powers</h2>
+
+            ${setupHtml}
 
             <div id="selected-powers" class="selected-powers"></div>
 
@@ -80,12 +94,29 @@ const PowersTab = {
             <div id="powers-table" class="powers-table"></div>
         `;
 
-        // Re-attach event listeners
+        // Attach discipline button listeners (multi-select toggle)
         document.querySelectorAll('.discipline-btn').forEach(btn => {
             btn.addEventListener('click', () => {
-                this.currentDiscipline = btn.dataset.discipline;
-                document.querySelectorAll('.discipline-btn').forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
+                const key = btn.dataset.discipline;
+                if (key === 'all') {
+                    // Clear selection → show all
+                    this.selectedDisciplines.clear();
+                } else {
+                    // Toggle this discipline
+                    if (this.selectedDisciplines.has(key)) {
+                        this.selectedDisciplines.delete(key);
+                    } else {
+                        this.selectedDisciplines.add(key);
+                    }
+                }
+                // Update active classes
+                document.querySelectorAll('.discipline-btn').forEach(b => {
+                    if (b.dataset.discipline === 'all') {
+                        b.classList.toggle('active', this.selectedDisciplines.size === 0);
+                    } else {
+                        b.classList.toggle('active', this.selectedDisciplines.has(b.dataset.discipline));
+                    }
+                });
                 this.renderTable();
             });
         });
@@ -95,13 +126,102 @@ const PowersTab = {
             this.renderTable();
         });
 
+        // Attach setup section event listeners
+        this.attachSetupListeners();
+
         this.renderSelected();
         this.renderTable();
+    },
+
+    // Render the setup section for pending psyker choices (discipline unlocks + free power picks)
+    renderSetupSection() {
+        const archetype = DataLoader.getArchetype(State.getCharacter().archetype?.id);
+        if (!archetype?.psykerConfig) return '';
+
+        let html = '';
+
+        // 1. Discipline unlock prompt
+        const remainingChoices = State.getRemainingDisciplineChoices();
+        if (remainingChoices > 0) {
+            // Get all disciplines in the data that aren't already unlocked
+            const allPowers = DataLoader.getAllPsychicPowers();
+            const unlocked = State.getUnlockedDisciplines();
+            const availableDisciplines = new Set();
+            for (const p of allPowers) {
+                if (p.discipline && State.isSourceEnabled(p.source)) {
+                    if (!unlocked.some(d => d.toLowerCase() === p.discipline.toLowerCase())) {
+                        availableDisciplines.add(p.discipline);
+                    }
+                }
+            }
+
+            const buttons = Array.from(availableDisciplines).sort().map(d =>
+                `<button class="btn-discipline-unlock" data-discipline="${d}">${d}</button>`
+            ).join(' ');
+
+            html += `
+                <div class="setup-section" style="padding: 15px; margin-bottom: 15px; background: var(--bg-card); border-radius: var(--radius-md); border: 2px solid var(--accent);">
+                    <p style="margin-bottom: 10px;"><strong>Choose ${remainingChoices} discipline${remainingChoices > 1 ? 's' : ''} to unlock:</strong></p>
+                    <div class="discipline-unlock-buttons">${buttons}</div>
+                </div>
+            `;
+        }
+
+        // 2. Free power pick prompts
+        const choiceStatus = State.getFreePowerChoiceStatus();
+        for (let i = 0; i < choiceStatus.length; i++) {
+            const entry = choiceStatus[i];
+            if (entry.remaining <= 0) continue;
+
+            const disciplineLabel = entry.disciplines.join(', ');
+            // Get available powers from those disciplines
+            const allPowers = DataLoader.getAllPsychicPowers();
+            const character = State.getCharacter();
+            const grantedPowers = archetype.psykerConfig.grantedPowers || [];
+            const availablePowers = allPowers.filter(p => {
+                if (!State.isSourceEnabled(p.source)) return false;
+                if (character.psychicPowers.includes(p.id)) return false;
+                if (grantedPowers.includes(p.id)) return false;
+                return entry.disciplines.some(d => d.toLowerCase() === p.discipline.toLowerCase());
+            }).sort((a, b) => a.name.localeCompare(b.name));
+
+            const powerButtons = availablePowers.map(p =>
+                `<button class="btn-free-power-pick" data-power-id="${p.id}" style="margin: 3px;">${p.name} (${p.discipline})</button>`
+            ).join('');
+
+            html += `
+                <div class="setup-section" style="padding: 15px; margin-bottom: 15px; background: var(--bg-card); border-radius: var(--radius-md); border: 2px solid var(--accent);">
+                    <p style="margin-bottom: 10px;"><strong>Choose ${entry.remaining} free power${entry.remaining > 1 ? 's' : ''} from ${disciplineLabel}:</strong></p>
+                    <div class="free-power-buttons" style="display: flex; flex-wrap: wrap; gap: 5px;">${powerButtons}</div>
+                </div>
+            `;
+        }
+
+        return html;
+    },
+
+    // Attach event listeners for setup section buttons
+    attachSetupListeners() {
+        document.querySelectorAll('.btn-discipline-unlock').forEach(btn => {
+            btn.addEventListener('click', () => {
+                State.addDisciplineChoice(btn.dataset.discipline);
+                this.render();
+            });
+        });
+
+        document.querySelectorAll('.btn-free-power-pick').forEach(btn => {
+            btn.addEventListener('click', () => {
+                State.addFreePowerPick(btn.dataset.powerId);
+                this.render();
+            });
+        });
     },
 
     renderSelected() {
         const container = document.getElementById('selected-powers');
         const character = State.getCharacter();
+        const archetype = DataLoader.getArchetype(character.archetype?.id);
+        const grantedPowers = archetype?.psykerConfig?.grantedPowers || [];
 
         if (!container) return;
 
@@ -116,17 +236,27 @@ const PowersTab = {
             const power = DataLoader.getPsychicPower(powerId);
             if (!power) continue;
 
+            const isFree = (character.freePowers || []).includes(powerId);
+            const isGranted = grantedPowers.includes(powerId);
+            const freeLabel = isFree ? ' <span class="power-free-label">(Free)</span>' : '';
+
             const chip = document.createElement('span');
             chip.className = 'power-chip';
-            chip.innerHTML = `
-                ${power.name}
-                <span class="power-chip-remove" data-id="${powerId}">&times;</span>
-            `;
 
-            chip.querySelector('.power-chip-remove').addEventListener('click', () => {
-                State.removePower(powerId);
-                this.render();
-            });
+            if (isGranted) {
+                // Granted powers (e.g. Smite) cannot be removed
+                chip.innerHTML = `${power.name}${freeLabel}`;
+            } else {
+                chip.innerHTML = `
+                    ${power.name}${freeLabel}
+                    <span class="power-chip-remove" data-id="${powerId}">&times;</span>
+                `;
+
+                chip.querySelector('.power-chip-remove').addEventListener('click', () => {
+                    State.removePower(powerId);
+                    this.render();
+                });
+            }
 
             container.appendChild(chip);
         }
@@ -136,6 +266,7 @@ const PowersTab = {
         const container = document.getElementById('powers-table');
         const character = State.getCharacter();
         const allPowers = DataLoader.getAllPsychicPowers();
+        const unlocked = State.getUnlockedDisciplines();
 
         if (!container) return;
 
@@ -152,8 +283,13 @@ const PowersTab = {
             // Check if already owned
             if (character.psychicPowers.includes(p.id)) return false;
 
-            // Check discipline (case-insensitive)
-            if (p.discipline.toLowerCase() !== this.currentDiscipline.toLowerCase()) return false;
+            // Enforce discipline unlock: only show powers from unlocked disciplines
+            if (!unlocked.some(d => d.toLowerCase() === p.discipline.toLowerCase())) return false;
+
+            // Check discipline filter (multi-select)
+            if (this.selectedDisciplines.size > 0) {
+                if (!this.selectedDisciplines.has(p.discipline.toLowerCase())) return false;
+            }
 
             // Check search query
             if (this.searchQuery) {

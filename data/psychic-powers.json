@@ -8,7 +8,7 @@
     "duration": "Instant",
     "range": "35m",
     "multiTarget": true,
-    "cost": 0,
+    "cost": 10,
     "effect": "You concentrate destructive power through the lens of your will, summoning lethal bolts of raw psychic energy that blast your enemies into ash. Target one enemy within range and make a Psychic Mastery (Wil) Test against their Defence. If successful, the target suffers 1d3 Mortal Wounds.",
     "potency": "[3] +1 Mortal Wound.",
     "keywords": [

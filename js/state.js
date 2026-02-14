@@ -89,6 +89,8 @@ const State = {
             talents: [],
             wargear: [],
             psychicPowers: [],
+            freePowers: [],
+            unlockedDisciplines: [],
 
             background: {
                 origin: null,
@@ -307,6 +309,23 @@ const State = {
             // Wargear is managed via the Wargear tab "Add Starting Wargear" button.
             // We do NOT clear or set wargear here to avoid losing manually added items.
 
+            // Set up psyker starting powers if archetype has psykerConfig
+            if (archetype.psykerConfig) {
+                this.character.freePowers = [];
+                this.character.unlockedDisciplines = [];
+                this.character.psychicPowers = [];
+
+                // Auto-add granted powers (e.g. Smite)
+                for (const powerId of archetype.psykerConfig.grantedPowers || []) {
+                    if (!this.character.psychicPowers.includes(powerId)) {
+                        this.character.psychicPowers.push(powerId);
+                    }
+                    if (!this.character.freePowers.includes(powerId)) {
+                        this.character.freePowers.push(powerId);
+                    }
+                }
+            }
+
         } else {
             this.clearArchetype();
         }
@@ -318,6 +337,9 @@ const State = {
     clearArchetype() {
         this.character.archetype = { id: null, xpCost: 0 };
         this.character.customArchetype = { name: '', abilityArchetypeId: null, keywords: [], wargear: [] };
+        this.character.freePowers = [];
+        this.character.unlockedDisciplines = [];
+        this.character.psychicPowers = [];
         this.resetStats();
     },
 
@@ -611,6 +633,11 @@ const State = {
         const index = this.character.psychicPowers.indexOf(powerId);
         if (index !== -1) {
             this.character.psychicPowers.splice(index, 1);
+            // Also remove from freePowers if present
+            const freeIndex = (this.character.freePowers || []).indexOf(powerId);
+            if (freeIndex !== -1) {
+                this.character.freePowers.splice(freeIndex, 1);
+            }
             this.notifyListeners('power', powerId);
             return true;
         }
@@ -743,12 +770,17 @@ const State = {
         this.notifyListeners('background', 'bonus');
     },
 
-    // Add language
+    // Add language (costs 1 XP each beyond Low Gothic)
     addLanguage(language) {
         if (!this.character.languages.includes(language)) {
+            if (!XPCalculator.canAfford(this.character, 1)) {
+                return false;
+            }
             this.character.languages.push(language);
             this.notifyListeners('language', language);
+            return true;
         }
+        return false;
     },
 
     // Remove language
@@ -1030,5 +1062,79 @@ const State = {
     // Check if character is a psyker
     isPsyker() {
         return this.getKeywords().includes('PSYKER');
+    },
+
+    // Get list of unlocked disciplines for the current psyker archetype
+    getUnlockedDisciplines() {
+        const base = ['Minor', 'Universal'];
+        const archetype = DataLoader.getArchetype(this.character.archetype?.id);
+        if (archetype?.psykerConfig) {
+            for (const d of archetype.psykerConfig.unlockedDisciplines || []) {
+                if (!base.includes(d)) base.push(d);
+            }
+        }
+        for (const d of this.character.unlockedDisciplines || []) {
+            if (!base.includes(d)) base.push(d);
+        }
+        return base;
+    },
+
+    // Add a user-chosen discipline unlock
+    addDisciplineChoice(discipline) {
+        if (!this.character.unlockedDisciplines) {
+            this.character.unlockedDisciplines = [];
+        }
+        if (!this.character.unlockedDisciplines.includes(discipline)) {
+            this.character.unlockedDisciplines.push(discipline);
+            this.notifyListeners('discipline', discipline);
+        }
+    },
+
+    // Get remaining discipline choices (how many more the user can unlock)
+    getRemainingDisciplineChoices() {
+        const archetype = DataLoader.getArchetype(this.character.archetype?.id);
+        if (!archetype?.psykerConfig) return 0;
+        const allowed = archetype.psykerConfig.disciplineChoices || 0;
+        const used = (this.character.unlockedDisciplines || []).length;
+        return Math.max(0, allowed - used);
+    },
+
+    // Add a free power pick (archetype-granted free choice)
+    addFreePowerPick(powerId) {
+        if (!this.character.psychicPowers.includes(powerId)) {
+            this.character.psychicPowers.push(powerId);
+        }
+        if (!this.character.freePowers) {
+            this.character.freePowers = [];
+        }
+        if (!this.character.freePowers.includes(powerId)) {
+            this.character.freePowers.push(powerId);
+        }
+        this.notifyListeners('power', powerId);
+    },
+
+    // Get free power choice status: for each freePowerChoices entry, how many picks remain
+    getFreePowerChoiceStatus() {
+        const archetype = DataLoader.getArchetype(this.character.archetype?.id);
+        if (!archetype?.psykerConfig) return [];
+
+        const grantedPowers = archetype.psykerConfig.grantedPowers || [];
+        const freePowers = this.character.freePowers || [];
+
+        return (archetype.psykerConfig.freePowerChoices || []).map(entry => {
+            // Count how many freePowers are from the allowed disciplines (excluding grantedPowers)
+            const picked = freePowers.filter(pid => {
+                if (grantedPowers.includes(pid)) return false;
+                const power = DataLoader.getPsychicPower(pid);
+                if (!power) return false;
+                return entry.disciplines.some(d => d.toLowerCase() === power.discipline.toLowerCase());
+            });
+            return {
+                disciplines: entry.disciplines,
+                count: entry.count,
+                picked: picked.length,
+                remaining: Math.max(0, entry.count - picked.length)
+            };
+        });
     }
 };
