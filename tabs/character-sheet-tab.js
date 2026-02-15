@@ -61,9 +61,17 @@ const CharacterSheetTab = {
                 ${hasWeapons ? `<div class="sheet-column sheet-column-weapons">${weaponsHtml}</div>` : ''}
             </div>
             <div class="sheet-lower-sections">
-                ${!hasWeapons ? weaponsHtml : ''}
-                ${armorHtml}${equipmentHtml}${speciesAbilitiesHtml}${archetypeAbilitiesHtml}
-                ${talentsHtml}${powersHtml}${injuriesHtml}${backgroundHtml}${notesHtml}
+                <div class="sheet-lower-left">
+                    ${speciesAbilitiesHtml}
+                    ${powersHtml}
+                    ${notesHtml}
+                </div>
+                <div class="sheet-lower-right">
+                    ${!hasWeapons ? weaponsHtml : ''}
+                    ${armorHtml}${equipmentHtml}
+                    ${archetypeAbilitiesHtml}
+                    ${talentsHtml}${injuriesHtml}${backgroundHtml}
+                </div>
             </div>
         `;
 
