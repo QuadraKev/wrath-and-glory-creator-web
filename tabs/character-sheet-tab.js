@@ -8,11 +8,6 @@ const CharacterSheetTab = {
             this.print();
         });
 
-        // Export PDF button
-        document.getElementById('btn-export-pdf').addEventListener('click', () => {
-            this.exportPDF();
-        });
-
         // Copy Summary button
         document.getElementById('btn-copy-summary').addEventListener('click', (e) => {
             this.copySummary(e.target);
@@ -1150,23 +1145,6 @@ const CharacterSheetTab = {
         window.addEventListener('afterprint', cleanup);
 
         window.print();
-    },
-
-    // Export to PDF (opens automatically after export)
-    async exportPDF() {
-        const character = State.getCharacter();
-        const filename = `${character.name || 'character'}-sheet.pdf`;
-
-        try {
-            const result = await window.api.exportPDF({ filename });
-
-            if (!result.success && result.error !== 'cancelled') {
-                alert('Error exporting PDF: ' + (result.error || 'Unknown error'));
-            }
-        } catch (error) {
-            console.error('PDF export error:', error);
-            alert('Error exporting PDF: ' + error.message);
-        }
     },
 
     // Copy character summary as plain text to clipboard

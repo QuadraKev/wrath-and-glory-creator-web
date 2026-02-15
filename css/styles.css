@@ -4148,6 +4148,100 @@ textarea {
         display: none !important;
     }
 
+    /* Weapon cards: 2-column layout for print */
+    .sheet-weapons-table .sheet-weapon-group {
+        width: 50% !important;
+        box-sizing: border-box !important;
+        padding: 8px 10px !important;
+        border-bottom: 1px solid #ddd !important;
+    }
+
+    /* Remove tooltip underline decoration in print */
+    .sheet-weapons-table .sheet-weapon-dice[title],
+    .sheet-weapons-table .sheet-weapon-damage[title],
+    .sheet-weapons-table .sheet-weapon-ed[title],
+    .sheet-weapons-table .sheet-weapon-ap[title] {
+        text-decoration: none !important;
+    }
+
+    /* Compact card spacing for print */
+    .sheet-weapons-table .sheet-weapon-group td {
+        font-size: 11px !important;
+    }
+
+    .sheet-weapons-table .sheet-weapon-group td::before {
+        font-size: 8px !important;
+    }
+
+    .sheet-weapons-table .sheet-weapon-name {
+        font-size: 12px !important;
+        padding-bottom: 3px !important;
+        margin-bottom: 1px !important;
+    }
+
+    .sheet-weapons-table .sheet-weapon-group {
+        gap: 3px 10px !important;
+    }
+
+    .sheet-weapons-table .sheet-weapon-traits {
+        font-size: 10px !important;
+        padding-top: 1px !important;
+        margin-top: 1px !important;
+    }
+
+    /* Armor cards: compact for print */
+    .sheet-armor-table tbody tr {
+        padding: 8px 10px !important;
+        gap: 3px 10px !important;
+    }
+
+    .sheet-armor-table tbody td {
+        font-size: 11px !important;
+    }
+
+    .sheet-armor-table tbody td::before {
+        font-size: 8px !important;
+    }
+
+    .sheet-armor-table .sheet-armor-name {
+        font-size: 12px !important;
+        padding-bottom: 3px !important;
+        margin-bottom: 1px !important;
+    }
+
+    .sheet-armor-table .sheet-armor-traits {
+        font-size: 10px !important;
+        padding-top: 1px !important;
+        margin-top: 1px !important;
+    }
+
+    .sheet-armor-table .sheet-armor-desc-row {
+        padding: 0 10px 8px !important;
+    }
+
+    /* Equipment cards: compact for print */
+    .sheet-equipment-table tbody tr {
+        padding: 8px 10px !important;
+    }
+
+    .sheet-equipment-table tbody td {
+        font-size: 11px !important;
+    }
+
+    .sheet-equipment-table tbody td::before {
+        font-size: 8px !important;
+    }
+
+    .sheet-equipment-table .sheet-equip-name {
+        font-size: 12px !important;
+        padding-bottom: 3px !important;
+        margin-bottom: 2px !important;
+    }
+
+    .sheet-equipment-table .sheet-equip-desc-row {
+        padding: 0 10px 8px !important;
+    }
+
     /* Compact spacing for print to fit more on first page */
     .sheet-section {
         padding: 10px 15px !important;
@@ -4324,6 +4418,53 @@ textarea {
     body.print-light-theme .sheet-note,
     body.print-light-theme .sheet-weapon-upgrades {
         color: #555 !important;
+    }
+
+    /* Card layout light theme colors */
+    body.print-light-theme .sheet-weapons-table .sheet-weapon-name,
+    body.print-light-theme .sheet-armor-table .sheet-armor-name,
+    body.print-light-theme .sheet-equipment-table .sheet-equip-name {
+        color: #000 !important;
+        border-bottom-color: #ccc !important;
+    }
+
+    body.print-light-theme .sheet-weapons-table .sheet-weapon-group td,
+    body.print-light-theme .sheet-armor-table tbody td,
+    body.print-light-theme .sheet-equipment-table tbody td {
+        color: #333 !important;
+    }
+
+    body.print-light-theme .sheet-weapons-table .sheet-weapon-group td::before,
+    body.print-light-theme .sheet-armor-table tbody td::before,
+    body.print-light-theme .sheet-equipment-table tbody td::before {
+        color: #888 !important;
+    }
+
+    body.print-light-theme .sheet-weapons-table .sheet-weapon-dice[title],
+    body.print-light-theme .sheet-weapons-table .sheet-weapon-damage[title],
+    body.print-light-theme .sheet-weapons-table .sheet-weapon-ed[title],
+    body.print-light-theme .sheet-weapons-table .sheet-weapon-ap[title] {
+        color: #333 !important;
+    }
+
+    body.print-light-theme .sheet-weapons-table .sheet-weapon-group {
+        border-bottom-color: #ddd !important;
+    }
+
+    body.print-light-theme .sheet-weapons-table .sheet-weapon-traits {
+        border-top-color: #ddd !important;
+    }
+
+    body.print-light-theme .sheet-armor-table tbody tr {
+        border-bottom-color: #ddd !important;
+    }
+
+    body.print-light-theme .sheet-armor-table .sheet-armor-traits {
+        border-top-color: #ddd !important;
+    }
+
+    body.print-light-theme .sheet-equipment-table tbody tr {
+        border-bottom-color: #ddd !important;
     }
 
     body.print-light-theme .sheet-tracking-section,
