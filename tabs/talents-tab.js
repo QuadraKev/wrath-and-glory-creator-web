@@ -319,7 +319,11 @@ const TalentsTab = {
                 ${flavorHtml}
             `;
 
-            item.querySelector('.btn-remove').addEventListener('click', () => {
+            item.querySelector('.btn-remove').addEventListener('click', async () => {
+                const talentData = DataLoader.getTalent(talentId);
+                const name = talentData ? talentData.name : talentId;
+                const confirmed = await window.api.showConfirm(`Remove talent ${name}?`);
+                if (!confirmed) return;
                 State.removeTalent(talentId, talentIdx);
                 this.render();
             });

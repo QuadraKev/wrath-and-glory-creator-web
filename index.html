@@ -6,7 +6,7 @@
     <meta name="robots" content="noindex, nofollow">
 
     <title>Wrath and Glory Character Creator</title>
-    <link rel="stylesheet" href="css/styles.css?v=17">
+    <link rel="stylesheet" href="css/styles.css?v=18">
 </head>
 <body>
     <div id="app">
@@ -20,12 +20,6 @@
                 <span class="app-subtitle">Character Creator</span>
             </div>
             <div class="header-right">
-                <button id="btn-undo" class="header-btn" title="Undo (Ctrl+Z)" disabled>
-                    <span class="btn-icon">&#8630;</span> Undo
-                </button>
-                <button id="btn-redo" class="header-btn" title="Redo (Ctrl+Y)" disabled>
-                    <span class="btn-icon">&#8631;</span> Redo
-                </button>
                 <button id="btn-new" class="header-btn" title="New Character">
                     <span class="btn-icon">+</span> New
                 </button>
@@ -127,6 +121,12 @@
 
                 <!-- Builder Content Area -->
                 <main class="content">
+                    <!-- Top Section Navigation -->
+                    <div class="section-nav section-nav-top">
+                        <button id="btn-prev-section-top" class="btn-secondary" disabled>&#9664; Previous</button>
+                        <button id="btn-next-section-top" class="btn-secondary">Next &#9654;</button>
+                    </div>
+
                     <!-- Setting Section -->
                     <div id="section-setting" class="builder-section active">
                         <h2>Character</h2>
@@ -484,25 +484,25 @@
     </script>
 
     <!-- Scripts -->
-    <script src="js/web-api.js?v=17"></script>
-    <script src="js/data-loader.js?v=17"></script>
-    <script src="js/xp-calculator.js?v=17"></script>
-    <script src="js/derived-stats.js?v=17"></script>
-    <script src="js/prerequisite.js?v=17"></script>
-    <script src="js/state.js?v=17"></script>
-    <script src="js/character-io.js?v=17"></script>
-    <script src="js/glossary.js?v=17"></script>
-    <script src="tabs/setting-tab.js?v=17"></script>
-    <script src="tabs/species-tab.js?v=17"></script>
-    <script src="tabs/archetype-tab.js?v=17"></script>
-    <script src="tabs/ascension-tab.js?v=17"></script>
-    <script src="tabs/stats-tab.js?v=17"></script>
-    <script src="tabs/talents-tab.js?v=17"></script>
-    <script src="tabs/wargear-tab.js?v=17"></script>
-    <script src="tabs/powers-tab.js?v=17"></script>
-    <script src="tabs/background-tab.js?v=17"></script>
-    <script src="tabs/character-sheet-tab.js?v=17"></script>
-    <script src="tabs/glossary-tab.js?v=17"></script>
-    <script src="js/app.js?v=17"></script>
+    <script src="js/web-api.js?v=18"></script>
+    <script src="js/data-loader.js?v=18"></script>
+    <script src="js/xp-calculator.js?v=18"></script>
+    <script src="js/derived-stats.js?v=18"></script>
+    <script src="js/prerequisite.js?v=18"></script>
+    <script src="js/state.js?v=18"></script>
+    <script src="js/character-io.js?v=18"></script>
+    <script src="js/glossary.js?v=18"></script>
+    <script src="tabs/setting-tab.js?v=18"></script>
+    <script src="tabs/species-tab.js?v=18"></script>
+    <script src="tabs/archetype-tab.js?v=18"></script>
+    <script src="tabs/ascension-tab.js?v=18"></script>
+    <script src="tabs/stats-tab.js?v=18"></script>
+    <script src="tabs/talents-tab.js?v=18"></script>
+    <script src="tabs/wargear-tab.js?v=18"></script>
+    <script src="tabs/powers-tab.js?v=18"></script>
+    <script src="tabs/background-tab.js?v=18"></script>
+    <script src="tabs/character-sheet-tab.js?v=18"></script>
+    <script src="tabs/glossary-tab.js?v=18"></script>
+    <script src="js/app.js?v=18"></script>
 </body>
 </html>

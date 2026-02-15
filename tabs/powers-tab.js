@@ -276,7 +276,11 @@ const PowersTab = {
                     <span class="power-chip-remove" data-id="${powerId}">&times;</span>
                 `;
 
-                chip.querySelector('.power-chip-remove').addEventListener('click', () => {
+                chip.querySelector('.power-chip-remove').addEventListener('click', async () => {
+                    const powerData = DataLoader.getPsychicPower(powerId);
+                    const name = powerData ? powerData.name : powerId;
+                    const confirmed = await window.api.showConfirm(`Remove power ${name}?`);
+                    if (!confirmed) return;
                     State.removePower(powerId);
                     this.render();
                 });

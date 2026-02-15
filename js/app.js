@@ -35,7 +35,6 @@ const App = {
         this.initSidebar();
         this.initHeaderButtons();
         this.initSectionNav();
-        this.initUndoRedo();
 
         // Initialize tab modules
         SettingTab.init();
@@ -170,6 +169,12 @@ const App = {
         document.getElementById('btn-next-section').addEventListener('click', () => {
             this.navigateNext();
         });
+        document.getElementById('btn-prev-section-top').addEventListener('click', () => {
+            this.navigatePrevious();
+        });
+        document.getElementById('btn-next-section-top').addEventListener('click', () => {
+            this.navigateNext();
+        });
     },
 
     // Navigate to the previous builder section
@@ -191,40 +196,18 @@ const App = {
     // Update prev/next button disabled states
     updateSectionNavButtons() {
         const idx = this.SECTION_ORDER.indexOf(this.currentSection);
+        const isFirst = idx <= 0;
+        const isLast = idx >= this.SECTION_ORDER.length - 1;
+
         const prevBtn = document.getElementById('btn-prev-section');
         const nextBtn = document.getElementById('btn-next-section');
-        if (prevBtn) prevBtn.disabled = idx <= 0;
-        if (nextBtn) nextBtn.disabled = idx >= this.SECTION_ORDER.length - 1;
-    },
+        const prevBtnTop = document.getElementById('btn-prev-section-top');
+        const nextBtnTop = document.getElementById('btn-next-section-top');
 
-    // Initialize undo/redo buttons and keyboard shortcuts
-    initUndoRedo() {
-        document.getElementById('btn-undo').addEventListener('click', () => {
-            State.undo();
-        });
-        document.getElementById('btn-redo').addEventListener('click', () => {
-            State.redo();
-        });
-
-        // Keyboard shortcuts
-        document.addEventListener('keydown', (e) => {
-            if (!(e.ctrlKey || e.metaKey)) return;
-            if (!e.shiftKey && e.key === 'z') {
-                e.preventDefault();
-                State.undo();
-            } else if ((e.shiftKey && e.key === 'Z') || (!e.shiftKey && e.key === 'y')) {
-                e.preventDefault();
-                State.redo();
-            }
-        });
-    },
-
-    // Update undo/redo button states
-    updateUndoRedoButtons() {
-        const undoBtn = document.getElementById('btn-undo');
-        const redoBtn = document.getElementById('btn-redo');
-        if (undoBtn) undoBtn.disabled = State._undoStack.length === 0;
-        if (redoBtn) redoBtn.disabled = State._redoStack.length === 0;
+        if (prevBtn) prevBtn.disabled = isFirst;
+        if (nextBtn) nextBtn.disabled = isLast;
+        if (prevBtnTop) prevBtnTop.disabled = isFirst;
+        if (nextBtnTop) nextBtnTop.disabled = isLast;
     },
 
     // Switch to a different main tab
@@ -328,9 +311,6 @@ const App = {
 
         // Update keywords in footer
         this.updateKeywords();
-
-        // Update undo/redo button states
-        this.updateUndoRedoButtons();
 
         // Refresh current section if relevant
         if (changeType === 'reset' || changeType === 'load') {

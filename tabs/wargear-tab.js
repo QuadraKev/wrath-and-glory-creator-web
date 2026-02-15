@@ -108,8 +108,14 @@ const WargearTab = {
 
         // Bind event handlers
         container.querySelectorAll('.btn-remove-wargear').forEach(btn => {
-            btn.addEventListener('click', () => {
-                State.removeWargearByIndex(parseInt(btn.dataset.index, 10));
+            btn.addEventListener('click', async () => {
+                const wargearIndex = parseInt(btn.dataset.index, 10);
+                const wargearEntry = State.getCharacter().wargear[wargearIndex];
+                const item = wargearEntry ? DataLoader.getWargearItem(wargearEntry.id) : null;
+                const name = item ? item.name : 'this item';
+                const confirmed = await window.api.showConfirm(`Remove ${name}?`);
+                if (!confirmed) return;
+                State.removeWargearByIndex(wargearIndex);
                 this.render();
             });
         });
