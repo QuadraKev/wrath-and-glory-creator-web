@@ -2924,20 +2924,16 @@ textarea {
     color: var(--accent-gold);
 }
 
-/* Tap-to-show tooltip popup (for mobile stat breakdowns) */
-.stat-tooltip-popup {
-    position: fixed;
-    background: var(--bg-secondary);
-    border: 1px solid var(--accent-gold);
-    border-radius: var(--radius-sm);
-    padding: 8px 12px;
-    font-size: 12px;
-    color: var(--text-primary);
-    z-index: 2000;
-    box-shadow: var(--shadow-lg);
-    white-space: pre-line;
-    max-width: 300px;
-    line-height: 1.5;
+/* Breakdown popup content lines */
+.breakdown-line {
+    padding: 2px 0;
+}
+
+.breakdown-total {
+    padding-top: 4px;
+    margin-top: 4px;
+    border-top: 1px solid var(--border-color);
+    font-weight: 600;
 }
 
 .sheet-trait-tappable {

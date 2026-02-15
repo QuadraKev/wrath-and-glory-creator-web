@@ -64,14 +64,11 @@ const CharacterSheetTab = {
         // Bind weapon equip checkboxes
         this.bindWeaponEquipCheckboxes(container);
 
-        // Bind tap-to-show tooltip for stat cells (Dice, Damage, ED, AP)
-        this.bindStatTooltips(container);
+        // Bind glossary-style breakdown tooltips for stat cells and traits
+        this.bindBreakdownTooltips(container);
 
         // Bind session tracking controls
         this.bindSessionTrackingControls(container);
-
-        // Bind tappable trait tooltips
-        this.bindTraitTooltips(container);
     },
 
     // Bind event handlers for session tracking (boxes and +/- buttons)
@@ -1521,97 +1518,165 @@ const CharacterSheetTab = {
         };
     },
 
-    // Bind tap/click handlers to show tooltips on cells with title attributes
-    bindStatTooltips(container) {
-        const tappableCells = container.querySelectorAll('.sheet-weapons-table td[title]');
+    // Timers for breakdown tooltip hover behavior
+    _breakdownHoverTimer: null,
+    _breakdownCloseTimer: null,
 
-        tappableCells.forEach(cell => {
-            cell.addEventListener('click', (e) => {
+    // Bind glossary-style breakdown tooltips for stat cells and trait items
+    bindBreakdownTooltips(container) {
+        const elements = container.querySelectorAll(
+            '.sheet-weapons-table td[title], .sheet-trait-tappable[title], .sheet-skill-bonus[title]'
+        );
+
+        elements.forEach(el => {
+            // Click handler
+            el.addEventListener('click', (e) => {
                 e.stopPropagation();
+                this._showBreakdownPopup(el);
+            });
 
-                // Remove any existing tooltip
-                const existing = document.querySelector('.stat-tooltip-popup');
-                if (existing) existing.remove();
-
-                const tooltip = document.createElement('div');
-                tooltip.className = 'stat-tooltip-popup';
-                tooltip.textContent = cell.getAttribute('title');
-                document.body.appendChild(tooltip);
-
-                // Position below the cell
-                const rect = cell.getBoundingClientRect();
-                const tooltipRect = tooltip.getBoundingClientRect();
-                let top = rect.bottom + 8;
-                let left = rect.left;
-
-                // Keep within viewport
-                if (left + tooltipRect.width > window.innerWidth - 10) {
-                    left = window.innerWidth - tooltipRect.width - 10;
-                }
-                if (top + tooltipRect.height > window.innerHeight - 10) {
-                    top = rect.top - tooltipRect.height - 8;
-                }
-
-                tooltip.style.top = `${top}px`;
-                tooltip.style.left = `${Math.max(10, left)}px`;
-
-                // Dismiss on click outside
-                const dismiss = (evt) => {
-                    if (!tooltip.contains(evt.target)) {
-                        tooltip.remove();
-                        document.removeEventListener('click', dismiss);
+            // Hover handlers (desktop)
+            el.addEventListener('mouseenter', () => {
+                clearTimeout(this._breakdownCloseTimer);
+                this._breakdownHoverTimer = setTimeout(() => {
+                    // Only show on hover if no popup is already open
+                    if (!document.querySelector('.breakdown-popup')) {
+                        this._showBreakdownPopup(el);
                     }
-                };
-                setTimeout(() => document.addEventListener('click', dismiss), 0);
+                }, 300);
+            });
+
+            el.addEventListener('mouseleave', () => {
+                clearTimeout(this._breakdownHoverTimer);
+                this._breakdownCloseTimer = setTimeout(() => {
+                    this._closeBreakdownPopup();
+                }, 200);
             });
         });
     },
 
-    // Bind click-to-popup for tappable trait items
-    bindTraitTooltips(container) {
-        container.querySelectorAll('.sheet-trait-tappable[title]').forEach(el => {
-            el.addEventListener('click', (e) => {
-                e.stopPropagation();
+    // Show a glossary-style breakdown popup for an element
+    _showBreakdownPopup(el) {
+        // Close any existing breakdown popup and restore its element's title
+        this._closeBreakdownPopup();
 
-                // Remove any existing popup
-                const existing = document.querySelector('.stat-tooltip-popup');
-                if (existing) existing.remove();
+        const titleText = el.getAttribute('title');
+        if (!titleText) return;
 
-                const titleText = el.getAttribute('title');
-                if (!titleText) return;
+        // Store and remove title to suppress native tooltip
+        el.dataset.breakdownTitle = titleText;
+        el.removeAttribute('title');
 
-                const popup = document.createElement('div');
-                popup.className = 'stat-tooltip-popup';
-                popup.textContent = titleText;
-                document.body.appendChild(popup);
+        // Determine the popup header label
+        const label = this._getBreakdownLabel(el);
 
-                // Position below the element
-                const rect = el.getBoundingClientRect();
-                const popupRect = popup.getBoundingClientRect();
-                let top = rect.bottom + 4;
-                let left = rect.left;
+        // Parse lines from title text
+        const lines = titleText.split('\n');
+        const lastLine = lines[lines.length - 1];
+        const isTotal = lines.length > 1 && lastLine.toLowerCase().startsWith('total');
 
-                // Keep within viewport
-                if (left + popupRect.width > window.innerWidth - 10) {
-                    left = window.innerWidth - popupRect.width - 10;
-                }
-                if (top + popupRect.height > window.innerHeight - 10) {
-                    top = rect.top - popupRect.height - 4;
-                }
+        let contentHtml = '';
+        for (let i = 0; i < lines.length; i++) {
+            const line = lines[i];
+            if (i === lines.length - 1 && isTotal) {
+                contentHtml += `<div class="breakdown-line breakdown-total">${this.escapeHtml(line)}</div>`;
+            } else {
+                contentHtml += `<div class="breakdown-line">${this.escapeHtml(line)}</div>`;
+            }
+        }
 
-                popup.style.top = `${top}px`;
-                popup.style.left = `${Math.max(10, left)}px`;
+        // Build glossary-style popup
+        const popup = document.createElement('div');
+        popup.className = 'glossary-popup breakdown-popup';
+        popup.innerHTML = `
+            <div class="glossary-popup-header">
+                <span class="glossary-popup-type">Breakdown</span>
+                <span class="glossary-popup-title">${this.escapeHtml(label)}</span>
+                <button class="glossary-popup-close" title="Close">&times;</button>
+            </div>
+            <div class="glossary-popup-content">
+                ${contentHtml}
+            </div>
+        `;
 
-                // Close on click outside
-                const closeHandler = (ev) => {
-                    if (!popup.contains(ev.target)) {
-                        popup.remove();
-                        document.removeEventListener('click', closeHandler);
-                    }
-                };
-                setTimeout(() => document.addEventListener('click', closeHandler), 0);
-            });
+        // Close button
+        popup.querySelector('.glossary-popup-close').addEventListener('click', (e) => {
+            e.stopPropagation();
+            this._closeBreakdownPopup();
         });
+
+        // Prevent clicks inside popup from closing it
+        popup.addEventListener('click', (e) => {
+            e.stopPropagation();
+        });
+
+        // Keep popup open while hovered
+        popup.addEventListener('mouseenter', () => {
+            clearTimeout(this._breakdownCloseTimer);
+        });
+        popup.addEventListener('mouseleave', () => {
+            this._breakdownCloseTimer = setTimeout(() => {
+                this._closeBreakdownPopup();
+            }, 200);
+        });
+
+        document.body.appendChild(popup);
+
+        // Position using Glossary helper
+        Glossary.positionPopup(popup, el);
+
+        // Dismiss on click outside
+        const dismiss = (evt) => {
+            if (!popup.contains(evt.target) && evt.target !== el && !el.contains(evt.target)) {
+                this._closeBreakdownPopup();
+                document.removeEventListener('click', dismiss);
+            }
+        };
+        setTimeout(() => document.addEventListener('click', dismiss), 0);
+
+        // Dismiss on Escape
+        const escHandler = (evt) => {
+            if (evt.key === 'Escape') {
+                this._closeBreakdownPopup();
+                document.removeEventListener('keydown', escHandler);
+            }
+        };
+        document.addEventListener('keydown', escHandler);
+    },
+
+    // Close the breakdown popup and restore title attribute
+    _closeBreakdownPopup() {
+        clearTimeout(this._breakdownCloseTimer);
+        const popup = document.querySelector('.breakdown-popup');
+        if (popup) {
+            popup.remove();
+        }
+        // Restore title on the element that had it removed
+        const el = document.querySelector('[data-breakdown-title]');
+        if (el) {
+            el.setAttribute('title', el.dataset.breakdownTitle);
+            delete el.dataset.breakdownTitle;
+        }
+    },
+
+    // Determine the header label for a breakdown popup based on element context
+    _getBreakdownLabel(el) {
+        if (el.classList.contains('sheet-weapon-dice')) return 'Attack Dice';
+        if (el.classList.contains('sheet-weapon-damage')) return 'Damage';
+        if (el.classList.contains('sheet-weapon-ap')) return 'AP';
+        if (el.classList.contains('sheet-weapon-ed')) return 'ED';
+        if (el.classList.contains('sheet-trait-tappable')) {
+            const nameEl = el.querySelector('.sheet-compact-name');
+            return nameEl ? nameEl.textContent : 'Trait';
+        }
+        if (el.classList.contains('sheet-skill-bonus')) {
+            const row = el.closest('tr');
+            if (row) {
+                const nameEl = row.querySelector('.sheet-skill-name');
+                return nameEl ? nameEl.textContent : 'Skill';
+            }
+        }
+        return 'Breakdown';
     },
 
     // Helper: Get CSS class for rarity
