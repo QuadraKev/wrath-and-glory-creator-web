@@ -3116,6 +3116,12 @@ textarea {
 }
 
 /* --- Weapons table → cards --- */
+.sheet-weapons-table {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+}
+
 .sheet-weapons-table thead {
     display: none;
 }
@@ -3123,11 +3129,11 @@ textarea {
 /* Each weapon group (tbody) becomes a grid card */
 .sheet-weapons-table .sheet-weapon-group {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 6px 16px;
     padding: 12px;
     border-bottom: 1px solid var(--border-color);
-    max-width: 600px;
+    width: 100%;
 }
 
 /* Flatten tr elements so td cells participate in the tbody grid */
@@ -3173,11 +3179,11 @@ textarea {
     display: none;
 }
 
-/* Stat ordering: Dice/Damage, then AP/ED below, then Range, then Traits */
-.sheet-weapons-table .sheet-weapon-dice { order: 2; }
-.sheet-weapons-table .sheet-weapon-damage { order: 3; }
-.sheet-weapons-table .sheet-weapon-ap { order: 4; grid-column: 2; }
-.sheet-weapons-table .sheet-weapon-ed { order: 5; grid-column: 3; }
+/* Stat ordering: Dice/Damage in row 1, AP/ED in row 2, then Range, then Traits */
+.sheet-weapons-table .sheet-weapon-dice { order: 2; grid-column: 1; }
+.sheet-weapons-table .sheet-weapon-damage { order: 3; grid-column: 2; }
+.sheet-weapons-table .sheet-weapon-ap { order: 4; grid-column: 1; }
+.sheet-weapons-table .sheet-weapon-ed { order: 5; grid-column: 2; }
 .sheet-weapons-table .sheet-weapon-range { order: 6; grid-column: 1 / -1; }
 
 /* Stat labels */
@@ -3226,7 +3232,6 @@ textarea {
     padding: 12px;
     border-bottom: 1px solid var(--border-color);
     align-items: start;
-    max-width: 600px;
 }
 
 .sheet-armor-table tbody tr:last-child {
@@ -3296,7 +3301,6 @@ textarea {
     display: block;
     padding: 12px;
     border-bottom: 1px solid var(--border-color);
-    max-width: 600px;
 }
 
 .sheet-equipment-table tbody tr:last-child {
@@ -3350,6 +3354,14 @@ textarea {
     display: block;
     padding: 0;
     background: transparent;
+}
+
+/* Wide screen: 2-column card layout for weapons */
+@media (min-width: 769px) {
+    .sheet-weapons-table .sheet-weapon-group {
+        width: 50%;
+        box-sizing: border-box;
+    }
 }
 
 /* Powers Table */
@@ -3980,13 +3992,6 @@ textarea {
     .sheet-section {
         padding: 12px;
     }
-
-    /* Weapon cards: 2-column grid at small sizes */
-    .sheet-weapons-table .sheet-weapon-group {
-        grid-template-columns: 1fr 1fr;
-    }
-    .sheet-weapons-table .sheet-weapon-ap { grid-column: 1; }
-    .sheet-weapons-table .sheet-weapon-ed { grid-column: 2; }
 }
 
 /* ===== Auto-Save Banner ===== */
