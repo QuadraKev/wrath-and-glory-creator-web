@@ -3346,9 +3346,47 @@ textarea {
     background: transparent;
 }
 
-/* Wide screen: 2-column card layout for weapons */
+/* Wide screen: 2-column card layout for weapons, armor, equipment */
 @media (min-width: 769px) {
     .sheet-weapons-table .sheet-weapon-group {
+        width: 50%;
+        box-sizing: border-box;
+    }
+
+    .sheet-armor-table {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .sheet-armor-table tbody {
+        display: contents;
+    }
+
+    .sheet-armor-table tbody tr {
+        width: 50%;
+        box-sizing: border-box;
+    }
+
+    .sheet-armor-table .sheet-armor-desc-row {
+        width: 50%;
+        box-sizing: border-box;
+    }
+
+    .sheet-equipment-table {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .sheet-equipment-table tbody {
+        display: contents;
+    }
+
+    .sheet-equipment-table tbody tr {
+        width: 50%;
+        box-sizing: border-box;
+    }
+
+    .sheet-equipment-table .sheet-equip-desc-row {
         width: 50%;
         box-sizing: border-box;
     }
@@ -4192,10 +4230,26 @@ textarea {
         margin-top: 1px !important;
     }
 
-    /* Armor cards: compact for print */
+    /* Armor cards: 2-column layout for print */
+    .sheet-armor-table {
+        display: flex !important;
+        flex-wrap: wrap !important;
+    }
+
+    .sheet-armor-table tbody {
+        display: contents !important;
+    }
+
     .sheet-armor-table tbody tr {
+        width: 50% !important;
+        box-sizing: border-box !important;
         padding: 8px 10px !important;
         gap: 3px 10px !important;
+    }
+
+    .sheet-armor-table .sheet-armor-desc-row {
+        width: 50% !important;
+        box-sizing: border-box !important;
     }
 
     .sheet-armor-table tbody td {
@@ -4220,9 +4274,25 @@ textarea {
         padding: 0 10px 8px !important;
     }
 
-    /* Equipment cards: compact for print */
+    /* Equipment cards: 2-column layout for print */
+    .sheet-equipment-table {
+        display: flex !important;
+        flex-wrap: wrap !important;
+    }
+
+    .sheet-equipment-table tbody {
+        display: contents !important;
+    }
+
     .sheet-equipment-table tbody tr {
+        width: 50% !important;
+        box-sizing: border-box !important;
         padding: 8px 10px !important;
+    }
+
+    .sheet-equipment-table .sheet-equip-desc-row {
+        width: 50% !important;
+        box-sizing: border-box !important;
     }
 
     .sheet-equipment-table tbody td {
