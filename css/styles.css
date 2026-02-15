@@ -3127,6 +3127,7 @@ textarea {
     gap: 6px 16px;
     padding: 12px;
     border-bottom: 1px solid var(--border-color);
+    max-width: 600px;
 }
 
 /* Flatten tr elements so td cells participate in the tbody grid */
@@ -3225,6 +3226,7 @@ textarea {
     padding: 12px;
     border-bottom: 1px solid var(--border-color);
     align-items: start;
+    max-width: 600px;
 }
 
 .sheet-armor-table tbody tr:last-child {
@@ -3294,6 +3296,7 @@ textarea {
     display: block;
     padding: 12px;
     border-bottom: 1px solid var(--border-color);
+    max-width: 600px;
 }
 
 .sheet-equipment-table tbody tr:last-child {
