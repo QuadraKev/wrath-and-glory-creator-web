@@ -4120,6 +4120,19 @@ textarea {
     }
 
     .sheet-column {
+        page-break-inside: auto;
+    }
+
+    /* Allow Attributes + Traits to share a page within columns */
+    .sheet-column .sheet-section {
+        page-break-inside: auto;
+    }
+
+    .sheet-column .sheet-compact-item {
+        page-break-inside: avoid;
+    }
+
+    .sheet-tracking-section {
         page-break-inside: avoid;
     }
 
@@ -4284,23 +4297,27 @@ textarea {
     }
 
     .sheet-compact-grid {
-        gap: 4px 10px !important;
+        gap: 2px 10px !important;
     }
 
     .sheet-compact-item {
-        padding: 4px 0 !important;
+        padding: 3px 0 !important;
     }
 
     .sheet-compact-name {
-        font-size: 12px !important;
+        font-size: 11px !important;
     }
 
     .sheet-compact-value {
-        font-size: 14px !important;
+        font-size: 13px !important;
+    }
+
+    .sheet-derived-section {
+        margin-top: 5px !important;
     }
 
     .sheet-tracking-section {
-        margin-top: 8px !important;
+        margin-top: 5px !important;
     }
 
     .tracker-row {
