@@ -1373,10 +1373,18 @@ textarea {
 
 /* Rarity colors (standalone) */
 .rarity-common { color: var(--text-secondary); }
-.rarity-uncommon { color: #22c55e; }
-.rarity-rare { color: #3b82f6; }
-.rarity-very-rare { color: #a855f7; }
-.rarity-unique { color: var(--accent-gold); }
+.rarity-uncommon { color: #22c55e; font-weight: 600; }
+.rarity-rare { color: #3b82f6; font-weight: 600; }
+.rarity-very-rare { color: #a855f7; font-weight: 600; }
+.rarity-unique { color: var(--accent-gold); font-weight: 600; }
+
+/* Rarity tag style for accessibility (border + background for non-color differentiation) */
+[class^="rarity-"]:not(.rarity-common) {
+    padding: 1px 6px;
+    border-radius: 3px;
+    border: 1px solid currentColor;
+    font-size: 11px;
+}
 
 .owned-count {
     display: inline-block;
@@ -4329,4 +4337,68 @@ textarea {
         background: #333 !important;
         border-color: #333 !important;
     }
+
+    /* Hide section nav in print */
+    .section-nav {
+        display: none !important;
+    }
+}
+
+/* ===== Section Navigation (Prev/Next) ===== */
+.section-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    margin-top: 20px;
+    border-top: 1px solid var(--border-color);
+}
+
+.section-nav .btn-secondary {
+    padding: 8px 20px;
+    background: var(--bg-card);
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    font-size: 13px;
+    transition: all 0.2s;
+}
+
+.section-nav .btn-secondary:hover:not(:disabled) {
+    background: var(--bg-hover);
+    border-color: var(--accent-gold);
+    color: var(--accent-gold);
+}
+
+.section-nav .btn-secondary:disabled {
+    opacity: 0.3;
+    cursor: default;
+}
+
+/* ===== Rarity tag on character sheet ===== */
+.sheet-item-rarity {
+    display: inline-block;
+    margin-left: 8px;
+    font-size: 10px;
+    vertical-align: middle;
+}
+
+/* ===== Copy Button ===== */
+.btn-copy {
+    display: inline-block;
+    padding: 3px 10px;
+    margin-top: 8px;
+    background: transparent;
+    color: var(--text-muted);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    font-size: 11px;
+    transition: all 0.2s;
+}
+
+.btn-copy:hover {
+    background: var(--bg-hover);
+    color: var(--text-primary);
+    border-color: var(--accent-gold);
 }

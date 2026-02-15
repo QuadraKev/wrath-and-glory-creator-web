@@ -4,6 +4,8 @@ const Glossary = {
     data: null,
     popupStack: [],
     popupIdCounter: 0,
+    _hoverTimer: null,
+    _closeTimer: null,
 
     async init() {
         // Load glossary data
@@ -184,14 +186,32 @@ const Glossary = {
         return result;
     },
 
-    // Attach click handlers to glossary terms in a container
+    // Attach click and hover handlers to glossary terms in a container
     attachHandlers(container) {
         const terms = container.querySelectorAll('.glossary-term');
         terms.forEach(term => {
             // Remove existing handler if any
             term.removeEventListener('click', this.handleTermClick);
-            // Add click handler
+            // Add click handler (fallback for mobile / touch)
             term.addEventListener('click', (e) => this.handleTermClick(e));
+
+            // Hover handlers for desktop
+            term.addEventListener('mouseenter', (e) => {
+                clearTimeout(this._closeTimer);
+                this._hoverTimer = setTimeout(() => {
+                    // Only show hover popup if no popups are open (avoid conflict with click)
+                    if (this.popupStack.length === 0) {
+                        this.handleTermClick(e);
+                    }
+                }, 300);
+            });
+
+            term.addEventListener('mouseleave', () => {
+                clearTimeout(this._hoverTimer);
+                this._closeTimer = setTimeout(() => {
+                    this.closeAllPopups();
+                }, 200);
+            });
         });
     },
 
@@ -263,6 +283,16 @@ const Glossary = {
         // Prevent popup clicks from closing it
         popup.addEventListener('click', (e) => {
             e.stopPropagation();
+        });
+
+        // Keep popup open while hovered
+        popup.addEventListener('mouseenter', () => {
+            clearTimeout(this._closeTimer);
+        });
+        popup.addEventListener('mouseleave', () => {
+            this._closeTimer = setTimeout(() => {
+                this.closeAllPopups();
+            }, 200);
         });
 
         // Add to document

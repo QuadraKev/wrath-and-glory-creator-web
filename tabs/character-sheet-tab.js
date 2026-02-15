@@ -12,6 +12,11 @@ const CharacterSheetTab = {
         document.getElementById('btn-export-pdf').addEventListener('click', () => {
             this.exportPDF();
         });
+
+        // Copy Summary button
+        document.getElementById('btn-copy-summary').addEventListener('click', (e) => {
+            this.copySummary(e.target);
+        });
     },
 
     // Refresh the character sheet
@@ -566,6 +571,12 @@ const CharacterSheetTab = {
             const hasDescOrKeywords = description || keywords;
             const colSpan = hasSimultaneousStrike ? 7 : 6;
 
+            // Rarity display
+            const rarityClass = this.getRarityClass(weapon.rarity);
+            const rarityDisplay = weapon.rarity && weapon.rarity !== 'Common'
+                ? `<span class="sheet-item-rarity ${rarityClass}">${weapon.rarity}</span>`
+                : '';
+
             const descRow = hasDescOrKeywords ? `
                 <tr class="sheet-weapon-desc-row">
                     <td colspan="${colSpan}">
@@ -581,7 +592,7 @@ const CharacterSheetTab = {
                 <tbody class="sheet-weapon-group">
                     <tr>
                         ${equipCell}
-                        <td class="sheet-weapon-name" rowspan="2">${weapon.name}${upgradesDisplay}</td>
+                        <td class="sheet-weapon-name" rowspan="2">${weapon.name}${rarityDisplay}${upgradesDisplay}</td>
                         <td class="sheet-weapon-dice" rowspan="2"${diceTooltip}>${weapon.attackDice.display}</td>
                         <td class="sheet-weapon-damage" colspan="2"${damageTooltip}>${weapon.calculatedDamage.display}</td>
                         <td class="sheet-weapon-range" rowspan="2">${range}</td>
@@ -691,6 +702,12 @@ const CharacterSheetTab = {
                 ? `<span class="sheet-traits-cell">${armor.traits.join(', ')}</span>`
                 : '-';
 
+            // Rarity display
+            const rarityClass = this.getRarityClass(armor.rarity);
+            const rarityDisplay = armor.rarity && armor.rarity !== 'Common'
+                ? `<span class="sheet-item-rarity ${rarityClass}">${armor.rarity}</span>`
+                : '';
+
             // Build description and keywords row
             const description = armor.description || '';
             const keywords = armor.keywords?.length > 0
@@ -711,7 +728,7 @@ const CharacterSheetTab = {
 
             return `
                 <tr>
-                    <td class="sheet-armor-name">${armor.name}</td>
+                    <td class="sheet-armor-name">${armor.name}${rarityDisplay}</td>
                     <td class="sheet-armor-ar">${armor.ar || 0}</td>
                     <td class="sheet-armor-traits">${traits}</td>
                 </tr>
@@ -758,6 +775,12 @@ const CharacterSheetTab = {
         }
 
         const rows = equipment.map(equip => {
+            // Rarity display
+            const rarityClass = this.getRarityClass(equip.rarity);
+            const rarityDisplay = equip.rarity && equip.rarity !== 'Common'
+                ? `<span class="sheet-item-rarity ${rarityClass}">${equip.rarity}</span>`
+                : '';
+
             // Build description and keywords row
             const description = equip.description || '';
             const keywords = equip.keywords?.length > 0
@@ -778,7 +801,7 @@ const CharacterSheetTab = {
 
             return `
                 <tr>
-                    <td class="sheet-equip-name">${equip.name}</td>
+                    <td class="sheet-equip-name">${equip.name}${rarityDisplay}</td>
                     <td class="sheet-equip-effect">${equip.effect || '-'}</td>
                 </tr>
                 ${descRow}
@@ -1144,6 +1167,94 @@ const CharacterSheetTab = {
             console.error('PDF export error:', error);
             alert('Error exporting PDF: ' + error.message);
         }
+    },
+
+    // Copy character summary as plain text to clipboard
+    copySummary(btn) {
+        const character = State.getCharacter();
+        const species = DataLoader.getSpecies(character.species?.id);
+        const archetype = DataLoader.getArchetype(character.archetype?.id);
+        const keywords = State.getKeywords();
+        const derivedStats = DerivedStats.getAllDerivedStats(character, DerivedStats.getArmorBreakdown(character));
+        const lines = [];
+
+        // Header
+        const name = character.name || 'Unnamed Character';
+        const speciesName = species?.name || '-';
+        const archetypeName = character.archetype?.id === 'custom'
+            ? (character.customArchetype?.name || 'Custom Archetype')
+            : (archetype?.name || '-');
+        lines.push(name);
+        lines.push(`${speciesName} | ${archetypeName} | Tier ${character.tier} | Rank ${character.rank}`);
+        if (keywords.length > 0) lines.push(`Keywords: ${keywords.join(', ')}`);
+        lines.push('');
+
+        // Attributes
+        lines.push('ATTRIBUTES');
+        const attrNames = { strength: 'STR', toughness: 'TOU', agility: 'AGI', initiative: 'INI', willpower: 'WIL', intellect: 'INT', fellowship: 'FEL' };
+        const attrParts = Object.entries(attrNames).map(([key, abbr]) => `${abbr}: ${character.attributes[key]}`);
+        lines.push(attrParts.join(' | '));
+        lines.push('');
+
+        // Traits
+        lines.push('TRAITS');
+        lines.push(`Defence: ${derivedStats.defence} | Resilience: ${derivedStats.resilience} | Determination: ${derivedStats.determination} | Speed: ${derivedStats.speed}`);
+        lines.push(`Max Wounds: ${derivedStats.maxWounds} | Max Shock: ${derivedStats.maxShock} | Conviction: ${derivedStats.conviction} | Resolve: ${derivedStats.resolve}`);
+        lines.push('');
+
+        // Skills
+        const skillNames = {
+            athletics: 'Athletics', awareness: 'Awareness', ballisticSkill: 'Ballistic Skill',
+            cunning: 'Cunning', deception: 'Deception', insight: 'Insight',
+            intimidation: 'Intimidation', investigation: 'Investigation', leadership: 'Leadership',
+            medicae: 'Medicae', persuasion: 'Persuasion', pilot: 'Pilot',
+            psychicMastery: 'Psychic Mastery', scholar: 'Scholar', stealth: 'Stealth',
+            survival: 'Survival', tech: 'Tech', weaponSkill: 'Weapon Skill'
+        };
+        lines.push('SKILLS');
+        for (const [key, label] of Object.entries(skillNames)) {
+            const rating = character.skills[key] || 0;
+            if (rating > 0) lines.push(`  ${label}: ${rating}`);
+        }
+        lines.push('');
+
+        // Talents
+        if (character.talents?.length > 0) {
+            lines.push('TALENTS');
+            for (const entry of character.talents) {
+                const talentId = typeof entry === 'string' ? entry : entry.id;
+                const talent = DataLoader.getTalent(talentId);
+                if (talent) lines.push(`  ${talent.name}`);
+            }
+            lines.push('');
+        }
+
+        // Wargear
+        if (character.wargear?.length > 0) {
+            lines.push('WARGEAR');
+            for (const item of character.wargear) {
+                const wargear = DataLoader.getWargearItem(item.id);
+                if (wargear) lines.push(`  ${wargear.name}`);
+            }
+            lines.push('');
+        }
+
+        // Psychic Powers
+        if (character.psychicPowers?.length > 0) {
+            lines.push('PSYCHIC POWERS');
+            for (const powerId of character.psychicPowers) {
+                const power = DataLoader.getPsychicPower(powerId);
+                if (power) lines.push(`  ${power.name} (DN ${power.dn || '-'})`);
+            }
+            lines.push('');
+        }
+
+        const text = lines.join('\n');
+        navigator.clipboard.writeText(text).then(() => {
+            const originalText = btn.innerHTML;
+            btn.innerHTML = '<span class="btn-icon">&#10003;</span> Copied!';
+            setTimeout(() => { btn.innerHTML = originalText; }, 1500);
+        });
     },
 
     // Helper: Calculate attack dice pool for a weapon
@@ -1523,6 +1634,12 @@ const CharacterSheetTab = {
                 setTimeout(() => document.addEventListener('click', closeHandler), 0);
             });
         });
+    },
+
+    // Helper: Get CSS class for rarity
+    getRarityClass(rarity) {
+        if (!rarity) return 'rarity-common';
+        return 'rarity-' + rarity.toLowerCase().replace(' ', '-');
     },
 
     // Helper: Escape HTML

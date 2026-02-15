@@ -7,6 +7,9 @@ const App = {
     // Current active builder section
     currentSection: 'setting',
 
+    // Ordered list of builder sections for prev/next navigation
+    SECTION_ORDER: ['setting', 'species', 'archetype', 'ascension', 'stats', 'talents', 'wargear', 'powers', 'background'],
+
     // Initialize the application
     async init() {
         console.log('Initializing Wrath & Glory Character Creator...');
@@ -31,6 +34,8 @@ const App = {
         this.initTabNavigation();
         this.initSidebar();
         this.initHeaderButtons();
+        this.initSectionNav();
+        this.initUndoRedo();
 
         // Initialize tab modules
         SettingTab.init();
@@ -157,6 +162,71 @@ const App = {
         });
     },
 
+    // Initialize section prev/next navigation
+    initSectionNav() {
+        document.getElementById('btn-prev-section').addEventListener('click', () => {
+            this.navigatePrevious();
+        });
+        document.getElementById('btn-next-section').addEventListener('click', () => {
+            this.navigateNext();
+        });
+    },
+
+    // Navigate to the previous builder section
+    navigatePrevious() {
+        const idx = this.SECTION_ORDER.indexOf(this.currentSection);
+        if (idx > 0) {
+            this.switchSection(this.SECTION_ORDER[idx - 1]);
+        }
+    },
+
+    // Navigate to the next builder section
+    navigateNext() {
+        const idx = this.SECTION_ORDER.indexOf(this.currentSection);
+        if (idx < this.SECTION_ORDER.length - 1) {
+            this.switchSection(this.SECTION_ORDER[idx + 1]);
+        }
+    },
+
+    // Update prev/next button disabled states
+    updateSectionNavButtons() {
+        const idx = this.SECTION_ORDER.indexOf(this.currentSection);
+        const prevBtn = document.getElementById('btn-prev-section');
+        const nextBtn = document.getElementById('btn-next-section');
+        if (prevBtn) prevBtn.disabled = idx <= 0;
+        if (nextBtn) nextBtn.disabled = idx >= this.SECTION_ORDER.length - 1;
+    },
+
+    // Initialize undo/redo buttons and keyboard shortcuts
+    initUndoRedo() {
+        document.getElementById('btn-undo').addEventListener('click', () => {
+            State.undo();
+        });
+        document.getElementById('btn-redo').addEventListener('click', () => {
+            State.redo();
+        });
+
+        // Keyboard shortcuts
+        document.addEventListener('keydown', (e) => {
+            if (!(e.ctrlKey || e.metaKey)) return;
+            if (!e.shiftKey && e.key === 'z') {
+                e.preventDefault();
+                State.undo();
+            } else if ((e.shiftKey && e.key === 'Z') || (!e.shiftKey && e.key === 'y')) {
+                e.preventDefault();
+                State.redo();
+            }
+        });
+    },
+
+    // Update undo/redo button states
+    updateUndoRedoButtons() {
+        const undoBtn = document.getElementById('btn-undo');
+        const redoBtn = document.getElementById('btn-redo');
+        if (undoBtn) undoBtn.disabled = State._undoStack.length === 0;
+        if (redoBtn) redoBtn.disabled = State._redoStack.length === 0;
+    },
+
     // Switch to a different main tab
     switchTab(tabName) {
         this.currentTab = tabName;
@@ -210,6 +280,9 @@ const App = {
             section.classList.toggle('active', section.id === `section-${sectionName}`);
         });
 
+        // Update prev/next buttons
+        this.updateSectionNavButtons();
+
         // Trigger section-specific refresh
         this.refreshCurrentSection();
     },
@@ -255,6 +328,9 @@ const App = {
 
         // Update keywords in footer
         this.updateKeywords();
+
+        // Update undo/redo button states
+        this.updateUndoRedoButtons();
 
         // Refresh current section if relevant
         if (changeType === 'reset' || changeType === 'load') {

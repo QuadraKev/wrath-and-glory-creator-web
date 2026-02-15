@@ -16,6 +16,15 @@ const State = {
     // Dirty state tracking - true when character has unsaved changes
     isDirty: false,
 
+    // Undo/Redo support
+    _undoStack: [],
+    _redoStack: [],
+    _MAX_UNDO: 10,
+    _isUndoRedoAction: false,
+    _lastSnapshot: null,
+    _undoDebounceTimer: null,
+    _pendingUndoSnapshot: null,
+
     // Auto-save support
     _autoSaveTimer: null,
     _AUTO_SAVE_KEY: 'wng-creator-autosave',
@@ -24,6 +33,7 @@ const State = {
     init(gameData) {
         this.gameData = gameData;
         this.character = this.createNewCharacter();
+        this._lastSnapshot = JSON.parse(JSON.stringify(this.character));
     },
 
     // Create a new blank character
@@ -121,6 +131,9 @@ const State = {
     // Reset character to new
     newCharacter() {
         this.character = this.createNewCharacter();
+        this._undoStack = [];
+        this._redoStack = [];
+        this._lastSnapshot = JSON.parse(JSON.stringify(this.character));
         this.notifyListeners('reset');
         this.isDirty = false;
         this.clearAutoSave();
@@ -136,6 +149,9 @@ const State = {
             this.character.species.subOptions = [];
         }
 
+        this._undoStack = [];
+        this._redoStack = [];
+        this._lastSnapshot = JSON.parse(JSON.stringify(this.character));
         this.notifyListeners('load');
         this.isDirty = false;
     },
@@ -1040,10 +1056,93 @@ const State = {
         if (changeType !== 'reset' && changeType !== 'load') {
             this.isDirty = true;
             this._scheduleAutoSave();
+
+            // Save undo state (skip if this is an undo/redo action)
+            if (!this._isUndoRedoAction) {
+                this._saveUndoState();
+            }
         }
         for (const listener of this.listeners) {
             listener(changeType, data, this.character);
         }
+    },
+
+    // Save previous state to undo stack with debouncing for rapid changes (e.g., typing)
+    _saveUndoState() {
+        // Capture the pre-change snapshot to save (only the first one in a burst)
+        if (!this._pendingUndoSnapshot && this._lastSnapshot) {
+            this._pendingUndoSnapshot = this._lastSnapshot;
+        }
+
+        // Clear redo stack on any new change
+        this._redoStack = [];
+
+        // Debounce: commit the pending snapshot after 500ms of inactivity
+        clearTimeout(this._undoDebounceTimer);
+        this._undoDebounceTimer = setTimeout(() => {
+            if (this._pendingUndoSnapshot) {
+                this._undoStack.push(this._pendingUndoSnapshot);
+                this._pendingUndoSnapshot = null;
+
+                // Cap undo stack at max size
+                if (this._undoStack.length > this._MAX_UNDO) {
+                    this._undoStack.shift();
+                }
+            }
+        }, 500);
+
+        // Always update the last snapshot to current state
+        this._lastSnapshot = JSON.parse(JSON.stringify(this.character));
+    },
+
+    // Undo the last change
+    undo() {
+        // Flush any pending debounced undo snapshot
+        if (this._pendingUndoSnapshot) {
+            clearTimeout(this._undoDebounceTimer);
+            this._undoStack.push(this._pendingUndoSnapshot);
+            this._pendingUndoSnapshot = null;
+            if (this._undoStack.length > this._MAX_UNDO) {
+                this._undoStack.shift();
+            }
+        }
+
+        if (this._undoStack.length === 0) return;
+
+        // Push current state to redo stack
+        this._redoStack.push(JSON.parse(JSON.stringify(this.character)));
+
+        // Pop from undo stack and restore
+        const previousState = this._undoStack.pop();
+        this.character = previousState;
+        this._lastSnapshot = JSON.parse(JSON.stringify(this.character));
+
+        // Notify without adding to undo stack
+        this._isUndoRedoAction = true;
+        this.notifyListeners('load');
+        this._isUndoRedoAction = false;
+        this.isDirty = true;
+        this._scheduleAutoSave();
+    },
+
+    // Redo the last undone change
+    redo() {
+        if (this._redoStack.length === 0) return;
+
+        // Push current state to undo stack
+        this._undoStack.push(JSON.parse(JSON.stringify(this.character)));
+
+        // Pop from redo stack and restore
+        const nextState = this._redoStack.pop();
+        this.character = nextState;
+        this._lastSnapshot = JSON.parse(JSON.stringify(this.character));
+
+        // Notify without adding to undo stack
+        this._isUndoRedoAction = true;
+        this.notifyListeners('load');
+        this._isUndoRedoAction = false;
+        this.isDirty = true;
+        this._scheduleAutoSave();
     },
 
     // ===== Auto-Save =====

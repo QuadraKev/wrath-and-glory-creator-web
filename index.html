@@ -6,7 +6,7 @@
     <meta name="robots" content="noindex, nofollow">
 
     <title>Wrath and Glory Character Creator</title>
-    <link rel="stylesheet" href="css/styles.css?v=16">
+    <link rel="stylesheet" href="css/styles.css?v=17">
 </head>
 <body>
     <div id="app">
@@ -20,6 +20,12 @@
                 <span class="app-subtitle">Character Creator</span>
             </div>
             <div class="header-right">
+                <button id="btn-undo" class="header-btn" title="Undo (Ctrl+Z)" disabled>
+                    <span class="btn-icon">&#8630;</span> Undo
+                </button>
+                <button id="btn-redo" class="header-btn" title="Redo (Ctrl+Y)" disabled>
+                    <span class="btn-icon">&#8631;</span> Redo
+                </button>
                 <button id="btn-new" class="header-btn" title="New Character">
                     <span class="btn-icon">+</span> New
                 </button>
@@ -404,6 +410,12 @@
                             <textarea id="character-notes" placeholder="Additional notes about your character..."></textarea>
                         </div>
                     </div>
+
+                    <!-- Section Navigation -->
+                    <div class="section-nav">
+                        <button id="btn-prev-section" class="btn-secondary" disabled>&#9664; Previous</button>
+                        <button id="btn-next-section" class="btn-secondary">Next &#9654;</button>
+                    </div>
                 </main>
             </div>
 
@@ -411,6 +423,9 @@
             <div id="tab-character-sheet" class="tab-content tab-fullwidth">
                 <div class="character-sheet">
                     <div class="sheet-actions">
+                        <button id="btn-copy-summary" class="header-btn">
+                            <span class="btn-icon">&#128203;</span> Copy Summary
+                        </button>
                         <button id="btn-print" class="header-btn">
                             <span class="btn-icon">&#128438;</span> Print
                         </button>
@@ -469,25 +484,25 @@
     </script>
 
     <!-- Scripts -->
-    <script src="js/web-api.js?v=16"></script>
-    <script src="js/data-loader.js?v=16"></script>
-    <script src="js/xp-calculator.js?v=16"></script>
-    <script src="js/derived-stats.js?v=16"></script>
-    <script src="js/prerequisite.js?v=16"></script>
-    <script src="js/state.js?v=16"></script>
-    <script src="js/character-io.js?v=16"></script>
-    <script src="js/glossary.js?v=16"></script>
-    <script src="tabs/setting-tab.js?v=16"></script>
-    <script src="tabs/species-tab.js?v=16"></script>
-    <script src="tabs/archetype-tab.js?v=16"></script>
-    <script src="tabs/ascension-tab.js?v=16"></script>
-    <script src="tabs/stats-tab.js?v=16"></script>
-    <script src="tabs/talents-tab.js?v=16"></script>
-    <script src="tabs/wargear-tab.js?v=16"></script>
-    <script src="tabs/powers-tab.js?v=16"></script>
-    <script src="tabs/background-tab.js?v=16"></script>
-    <script src="tabs/character-sheet-tab.js?v=16"></script>
-    <script src="tabs/glossary-tab.js?v=16"></script>
-    <script src="js/app.js?v=16"></script>
+    <script src="js/web-api.js?v=17"></script>
+    <script src="js/data-loader.js?v=17"></script>
+    <script src="js/xp-calculator.js?v=17"></script>
+    <script src="js/derived-stats.js?v=17"></script>
+    <script src="js/prerequisite.js?v=17"></script>
+    <script src="js/state.js?v=17"></script>
+    <script src="js/character-io.js?v=17"></script>
+    <script src="js/glossary.js?v=17"></script>
+    <script src="tabs/setting-tab.js?v=17"></script>
+    <script src="tabs/species-tab.js?v=17"></script>
+    <script src="tabs/archetype-tab.js?v=17"></script>
+    <script src="tabs/ascension-tab.js?v=17"></script>
+    <script src="tabs/stats-tab.js?v=17"></script>
+    <script src="tabs/talents-tab.js?v=17"></script>
+    <script src="tabs/wargear-tab.js?v=17"></script>
+    <script src="tabs/powers-tab.js?v=17"></script>
+    <script src="tabs/background-tab.js?v=17"></script>
+    <script src="tabs/character-sheet-tab.js?v=17"></script>
+    <script src="tabs/glossary-tab.js?v=17"></script>
+    <script src="js/app.js?v=17"></script>
 </body>
 </html>

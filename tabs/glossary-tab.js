@@ -172,12 +172,13 @@ const GlossaryTab = {
                 </div>
                 <div class="glossary-entry-body hidden">
                     <div class="glossary-entry-description">${entry.description}</div>
+                    <button class="btn-copy" data-copy-name="${this.escapeAttr(entry.name)}" data-copy-desc="${this.escapeAttr(this.stripHtml(entry.description))}">Copy</button>
                 </div>
             </div>
         `;
     },
 
-    // Bind click handlers for expandable entries
+    // Bind click handlers for expandable entries and copy buttons
     bindEntryClicks(container) {
         container.querySelectorAll('.glossary-entry').forEach(entry => {
             const header = entry.querySelector('.glossary-entry-header');
@@ -197,6 +198,20 @@ const GlossaryTab = {
                 } else {
                     history.replaceState(null, '', location.pathname + location.search);
                 }
+            });
+        });
+
+        // Bind copy buttons
+        container.querySelectorAll('.btn-copy').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                const name = btn.dataset.copyName;
+                const desc = btn.dataset.copyDesc;
+                const text = `${name}: ${desc}`;
+                navigator.clipboard.writeText(text).then(() => {
+                    btn.textContent = 'Copied!';
+                    setTimeout(() => { btn.textContent = 'Copy'; }, 1500);
+                });
             });
         });
     },
@@ -231,6 +246,19 @@ const GlossaryTab = {
         // Highlight briefly
         entryEl.classList.add('glossary-entry-highlight');
         setTimeout(() => entryEl.classList.remove('glossary-entry-highlight'), 2000);
+    },
+
+    // Helper: Strip HTML tags from text
+    stripHtml(html) {
+        const div = document.createElement('div');
+        div.innerHTML = html;
+        return div.textContent || div.innerText || '';
+    },
+
+    // Helper: Escape text for use in HTML attributes
+    escapeAttr(text) {
+        if (!text) return '';
+        return text.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/'/g, '&#39;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
     },
 
     // Refresh the tab
