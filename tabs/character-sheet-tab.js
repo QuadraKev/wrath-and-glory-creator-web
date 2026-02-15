@@ -36,41 +36,31 @@ const CharacterSheetTab = {
 
         const container = document.getElementById('character-sheet-content');
 
-        const hasWeapons = (character.wargear || []).some(item => DataLoader.getWeapon(item.id));
-        const weaponsHtml = this.renderWeapons(character);
-        const armorHtml = this.renderArmor(character);
-        const equipmentHtml = this.renderEquipment(character);
-        const speciesAbilitiesHtml = this.renderSpeciesAbilities(character, species);
-        const archetypeAbilitiesHtml = this.renderArchetypeAbilities(archetype);
-        const talentsHtml = this.renderTalents(character);
-        const powersHtml = this.renderPsychicPowers(character);
-        const injuriesHtml = this.renderInjuriesCorruption(character);
-        const backgroundHtml = this.renderBackground(character);
-        const notesHtml = this.renderNotes(character);
-
         container.innerHTML = `
             ${this.renderHeader(character, species, archetype, keywords)}
-            <div class="sheet-columns">
-                <div class="sheet-column">
-                    ${this.renderAttributes(character)}
-                    ${this.renderTraits(derivedStats, { resilience: resilienceBreakdown, defence: defenceBreakdown })}
+            <div class="sheet-body">
+                <div class="sheet-body-left">
+                    <div class="sheet-columns">
+                        <div class="sheet-column">
+                            ${this.renderAttributes(character)}
+                            ${this.renderTraits(derivedStats, { resilience: resilienceBreakdown, defence: defenceBreakdown })}
+                        </div>
+                        <div class="sheet-column">
+                            ${this.renderSkills(character)}
+                        </div>
+                    </div>
+                    ${this.renderPsychicPowers(character)}
+                    ${this.renderSpeciesAbilities(character, species)}
+                    ${this.renderArchetypeAbilities(archetype)}
+                    ${this.renderTalents(character)}
+                    ${this.renderInjuriesCorruption(character)}
+                    ${this.renderBackground(character)}
+                    ${this.renderNotes(character)}
                 </div>
-                <div class="sheet-column">
-                    ${this.renderSkills(character)}
-                </div>
-                ${hasWeapons ? `<div class="sheet-column sheet-column-weapons">${weaponsHtml}</div>` : ''}
-            </div>
-            <div class="sheet-lower-sections">
-                <div class="sheet-lower-left">
-                    ${speciesAbilitiesHtml}
-                    ${powersHtml}
-                    ${notesHtml}
-                </div>
-                <div class="sheet-lower-right">
-                    ${!hasWeapons ? weaponsHtml : ''}
-                    ${armorHtml}${equipmentHtml}
-                    ${archetypeAbilitiesHtml}
-                    ${talentsHtml}${injuriesHtml}${backgroundHtml}
+                <div class="sheet-body-right">
+                    ${this.renderWeapons(character)}
+                    ${this.renderArmor(character)}
+                    ${this.renderEquipment(character)}
                 </div>
             </div>
         `;

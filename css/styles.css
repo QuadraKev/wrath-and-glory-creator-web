@@ -2788,15 +2788,6 @@ textarea {
     margin-bottom: 0;
 }
 
-/* Weapons column: full width below the 2-column layout by default */
-.sheet-column-weapons {
-    grid-column: 1 / -1;
-}
-
-.sheet-column-weapons > .sheet-section {
-    margin-bottom: 0;
-}
-
 /* Sheet Tables */
 .sheet-table {
     width: 100%;
@@ -3722,17 +3713,8 @@ textarea {
         max-width: none;
     }
 
-    /* 3-column top section: Attributes/Traits | Skills | Weapons */
-    .sheet-columns {
-        grid-template-columns: 1fr 1.2fr 1.5fr;
-    }
-
-    .sheet-column-weapons {
-        grid-column: auto;
-    }
-
-    /* Lower sections: explicit 2-column grid */
-    .sheet-lower-sections {
+    /* 2-column body: left (stats + character) | right (wargear) */
+    .sheet-body {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 15px;
@@ -4165,13 +4147,8 @@ textarea {
         page-break-inside: auto;
     }
 
-    /* Ensure weapons column spans full width in print */
-    .sheet-column-weapons {
-        grid-column: 1 / -1 !important;
-    }
-
-    /* Disable grid layout for lower sections in print */
-    .sheet-lower-sections {
+    /* Disable 2-column body layout in print */
+    .sheet-body {
         display: block !important;
     }
 
