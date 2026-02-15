@@ -54,6 +54,7 @@ const CharacterSheetTab = {
             ${this.renderArchetypeAbilities(archetype)}
             ${this.renderTalents(character)}
             ${this.renderPsychicPowers(character)}
+            ${this.renderInjuriesCorruption(character)}
             ${this.renderBackground(character)}
             ${this.renderNotes(character)}
         `;
@@ -158,6 +159,12 @@ const CharacterSheetTab = {
             const miniKeywords = container.querySelectorAll('.sheet-mini-keyword');
             miniKeywords.forEach(kw => {
                 Glossary.enhanceElement(kw);
+            });
+
+            // Process mutation effect text
+            const mutationEffects = container.querySelectorAll('.sheet-mutation-effect');
+            mutationEffects.forEach(eff => {
+                Glossary.enhanceElement(eff);
             });
 
             // Process equipment effects only (not descriptions - those are flavor)
@@ -1063,6 +1070,154 @@ const CharacterSheetTab = {
                 </table>
             </div>
         `;
+    },
+
+    // Render injuries & corruption section
+    renderInjuriesCorruption(character) {
+        const data = DataLoader.getInjuriesCorruptionData();
+        if (!data) return '';
+
+        const memorableInjuries = character.memorableInjuries || [];
+        const traumaticInjuries = character.traumaticInjuries || [];
+        const corruption = character.corruption || 0;
+        const mutations = character.mutations || [];
+
+        // Hide section entirely if nothing to show
+        if (memorableInjuries.length === 0 && traumaticInjuries.length === 0 && corruption === 0 && mutations.length === 0) {
+            return '';
+        }
+
+        let sections = '';
+
+        // Memorable Injuries
+        if (memorableInjuries.length > 0) {
+            const items = memorableInjuries.map(entry => {
+                const inj = (data.memorableInjuries || []).find(i => i.id === entry.id);
+                if (!inj) return '';
+                const escalatedLabel = entry.escalated
+                    ? ` <span class="sheet-injury-escalated">(${inj.escalation})</span>`
+                    : '';
+                const escalatedDesc = entry.escalated
+                    ? `<div class="sheet-injury-desc">${inj.escalationDesc}</div>`
+                    : '';
+                return `
+                    <div class="sheet-injury-item">
+                        <span class="sheet-injury-name">${inj.name}${escalatedLabel}</span>
+                        ${escalatedDesc}
+                    </div>
+                `;
+            }).join('');
+
+            sections += `
+                <h3 class="sheet-subsection-title">Memorable Injuries</h3>
+                ${items}
+            `;
+        }
+
+        // Traumatic Injuries
+        if (traumaticInjuries.length > 0) {
+            const items = traumaticInjuries.map(entry => {
+                const inj = (data.traumaticInjuries || []).find(i => i.id === entry.id);
+                if (!inj) return '';
+                const sideLabel = entry.side ? ` (${entry.side})` : '';
+                return `
+                    <div class="sheet-injury-item">
+                        <span class="sheet-injury-name">${inj.name}${sideLabel}</span>
+                        <div class="sheet-injury-desc">${inj.description}</div>
+                    </div>
+                `;
+            }).join('');
+
+            sections += `
+                <h3 class="sheet-subsection-title">Traumatic Injuries</h3>
+                ${items}
+            `;
+        }
+
+        // Corruption
+        if (corruption > 0) {
+            const table = data.corruptionTable || [];
+            const currentLevel = table.find(l => corruption >= l.min && (l.max === null || corruption <= l.max)) || table[0];
+            const dnDisplay = currentLevel.dnModifier === null ? '-' : `+${currentLevel.dnModifier}`;
+
+            sections += `
+                <h3 class="sheet-subsection-title">Corruption</h3>
+                <div class="sheet-corruption-summary">
+                    <span>Level: <strong>${currentLevel.name}</strong></span>
+                    <span>Points: <strong>${corruption}</strong></span>
+                    <span>Test DN Modifier: <strong>${dnDisplay}</strong></span>
+                </div>
+            `;
+        }
+
+        // Mutations
+        if (mutations.length > 0) {
+            const allMutations = data.mutations || [];
+            const items = mutations.map(entry => {
+                const mutation = allMutations.find(m => m.id === entry.id);
+                if (!mutation) return '';
+
+                let subChoiceLabel = '';
+                let effectText = mutation.effect;
+                let activeBonuses = mutation.bonuses;
+
+                if (entry.subChoice && mutation.subChoices) {
+                    const sub = mutation.subChoices.find(s => s.id === entry.subChoice);
+                    if (sub) {
+                        subChoiceLabel = ` — ${sub.name}`;
+                        effectText = sub.effect;
+                        activeBonuses = sub.bonuses || null;
+                    }
+                }
+
+                const severityClass = `sheet-mutation-severity-${mutation.severity}`;
+
+                let bonusDisplay = '';
+                if (activeBonuses) {
+                    const bonusParts = Object.entries(activeBonuses).map(([key, val]) => {
+                        const name = this.formatMutationBonusKey(key);
+                        return `${val > 0 ? '+' : ''}${val} ${name}`;
+                    });
+                    bonusDisplay = `<div class="sheet-mutation-bonuses">${bonusParts.join(', ')}</div>`;
+                }
+
+                return `
+                    <div class="sheet-mutation-item">
+                        <div class="sheet-mutation-header">
+                            <span class="sheet-mutation-name">${mutation.name}${subChoiceLabel}</span>
+                            <span class="sheet-mutation-severity ${severityClass}">${mutation.severity}</span>
+                        </div>
+                        <div class="sheet-mutation-desc">${mutation.description}</div>
+                        <div class="sheet-mutation-effect">${effectText}</div>
+                        ${bonusDisplay}
+                    </div>
+                `;
+            }).join('');
+
+            sections += `
+                <h3 class="sheet-subsection-title">Mutations</h3>
+                ${items}
+            `;
+        }
+
+        return `
+            <div class="sheet-section">
+                <h2 class="sheet-section-title">Injuries & Corruption</h2>
+                ${sections}
+            </div>
+        `;
+    },
+
+    // Format mutation bonus key for display
+    formatMutationBonusKey(key) {
+        const map = {
+            strength: 'Strength', toughness: 'Toughness', agility: 'Agility',
+            initiative: 'Initiative', willpower: 'Willpower', intellect: 'Intellect',
+            fellowship: 'Fellowship', resilience: 'Resilience', defence: 'Defence',
+            maxWounds: 'Max Wounds', maxShock: 'Max Shock', speed: 'Speed',
+            resolve: 'Resolve', passiveAwareness: 'Passive Awareness'
+        };
+        return map[key] || key;
     },
 
     // Render background

@@ -75,6 +75,39 @@ const DerivedStats = {
         return bonus;
     },
 
+    // Get all mutation bonuses grouped by key
+    getMutationBonuses(character) {
+        const bonuses = {};
+        const data = DataLoader.getInjuriesCorruptionData();
+        for (const entry of character.mutations || []) {
+            const mutation = data?.mutations?.find(m => m.id === entry.id);
+            if (!mutation) continue;
+            let activeBonuses = mutation.bonuses;
+            // If mutation has sub-choices, use the sub-choice bonuses
+            if (entry.subChoice && mutation.subChoices) {
+                const sub = mutation.subChoices.find(s => s.id === entry.subChoice);
+                if (sub?.bonuses) activeBonuses = sub.bonuses;
+                else activeBonuses = null;
+            }
+            if (!activeBonuses) continue;
+            for (const [key, value] of Object.entries(activeBonuses)) {
+                if (!bonuses[key]) bonuses[key] = [];
+                const sourceName = entry.subChoice && mutation.subChoices
+                    ? `${mutation.name} (${mutation.subChoices.find(s => s.id === entry.subChoice)?.name || entry.subChoice})`
+                    : mutation.name;
+                bonuses[key].push({ value, source: sourceName });
+            }
+        }
+        return bonuses;
+    },
+
+    // Sum all mutation bonuses for a given key
+    getMutationBonusTotal(character, bonusKey) {
+        const bonuses = this.getMutationBonuses(character);
+        if (!bonuses[bonusKey]) return 0;
+        return bonuses[bonusKey].reduce((sum, b) => sum + b.value, 0);
+    },
+
     // Linked attributes for each skill
     SKILL_ATTRIBUTES: {
         athletics: 'strength',
@@ -102,10 +135,10 @@ const DerivedStats = {
         return this.SKILL_ATTRIBUTES[skillName] || null;
     },
 
-    // Get effective attribute value (base + equipment bonuses)
+    // Get effective attribute value (base + equipment bonuses + mutation bonuses)
     getEffectiveAttribute(character, attr) {
         const base = character.attributes?.[attr] || 1;
-        return base + this.getEquipmentBonusTotal(character, attr);
+        return base + this.getEquipmentBonusTotal(character, attr) + this.getMutationBonusTotal(character, attr);
     },
 
     // Helper to check if character has a talent
@@ -138,14 +171,15 @@ const DerivedStats = {
         return bonus;
     },
 
-    // Calculate Defence (Initiative - 1 + Shield AR + Equipment Bonuses + Talent Bonuses)
+    // Calculate Defence (Initiative - 1 + Shield AR + Equipment Bonuses + Talent Bonuses + Mutation Bonuses)
     calculateDefence(character, armorBreakdown = null) {
         if (!armorBreakdown) armorBreakdown = this.getArmorBreakdown(character);
         const base = Math.max(0, this.getEffectiveAttribute(character, 'initiative') - 1);
         const shieldAR = armorBreakdown.shieldAR;
         const equipBonus = this.getEquipmentBonusTotal(character, 'defence');
         const talentBonus = this.getTalentTraitBonus(character, 'Defence');
-        return base + shieldAR + equipBonus + talentBonus;
+        const mutationBonus = this.getMutationBonusTotal(character, 'defence');
+        return base + shieldAR + equipBonus + talentBonus + mutationBonus;
     },
 
     // Calculate Resilience (Toughness + 1 + Best Armor AR + Shield AR + Equipment Bonuses + Species Sub-Option Bonus + Talent Bonuses)
@@ -163,7 +197,8 @@ const DerivedStats = {
         const subOptionBonus = this.getSpeciesSubOptionBonus(character, 'resilience');
         const equipBonus = this.getEquipmentBonusTotal(character, 'resilience');
         const talentBonus = this.getTalentTraitBonus(character, 'Resilience');
-        return base + subOptionBonus + equipBonus + talentBonus;
+        const mutationBonus = this.getMutationBonusTotal(character, 'resilience');
+        return base + subOptionBonus + equipBonus + talentBonus + mutationBonus;
     },
 
     // Calculate Determination (equal to Toughness + background bonus + Talent Bonuses)
@@ -191,7 +226,8 @@ const DerivedStats = {
             talentBonus += rank;
         }
 
-        return (tier * 2) + toughness + speciesBonus + backgroundBonus + talentBonus;
+        const mutationBonus = this.getMutationBonusTotal(character, 'maxWounds');
+        return (tier * 2) + toughness + speciesBonus + backgroundBonus + talentBonus + mutationBonus;
     },
 
     // Calculate Max Shock (Willpower + Tier + Background Bonus + Species Sub-Option Bonus + Talent Bonuses)
@@ -207,7 +243,8 @@ const DerivedStats = {
             tier = 0;
         }
 
-        return willpower + tier + backgroundBonus + subOptionBonus + talentBonus;
+        const mutationBonus = this.getMutationBonusTotal(character, 'maxShock');
+        return willpower + tier + backgroundBonus + subOptionBonus + talentBonus + mutationBonus;
     },
 
     // Get Speed from species + Equipment Bonuses + Talent Bonuses
@@ -216,7 +253,8 @@ const DerivedStats = {
         const base = species?.speed || 6;
         const equipBonus = this.getEquipmentBonusTotal(character, 'speed');
         const talentBonus = this.getTalentTraitBonus(character, 'Speed');
-        return base + equipBonus + talentBonus;
+        const mutationBonus = this.getMutationBonusTotal(character, 'speed');
+        return base + equipBonus + talentBonus + mutationBonus;
     },
 
     // Calculate Conviction (equal to Willpower + Background Bonus + Talent Bonuses)
@@ -234,7 +272,7 @@ const DerivedStats = {
         return base + backgroundBonus + talentBonus;
     },
 
-    // Calculate Resolve (Willpower - 1 + Background Bonus + Talent Bonuses)
+    // Calculate Resolve (Willpower - 1 + Background Bonus + Talent Bonuses + Mutation Bonuses)
     calculateResolve(character) {
         const rank = character.rank || 1;
         const base = Math.max(0, this.getEffectiveAttribute(character, 'willpower') - 1);
@@ -246,7 +284,8 @@ const DerivedStats = {
             talentBonus += rank * 2;
         }
 
-        return base + backgroundBonus + talentBonus;
+        const mutationBonus = this.getMutationBonusTotal(character, 'resolve');
+        return base + backgroundBonus + talentBonus + mutationBonus;
     },
 
     // Calculate Passive Awareness (ceiling of (Intellect + Awareness) / 2 + Talent Bonuses)
@@ -262,7 +301,8 @@ const DerivedStats = {
             talentBonus += rank * 2;
         }
 
-        return base + talentBonus;
+        const mutationBonus = this.getMutationBonusTotal(character, 'passiveAwareness');
+        return base + talentBonus + mutationBonus;
     },
 
     // Calculate Influence (Fellowship - 1 + Archetype Bonus + Background Bonus)
@@ -459,6 +499,7 @@ const DerivedStats = {
         const subOptionBonus = this.getSpeciesSubOptionBonus(character, 'resilience');
         const equipBonus = this.getEquipmentBonusTotal(character, 'resilience');
         const talentBonus = this.getTalentTraitBonus(character, 'Resilience');
+        const mutationBonuses = this.getMutationBonuses(character)['resilience'] || [];
 
         const parts = [];
         parts.push({ label: `Base (TOU+1)`, value: tou + 1 });
@@ -477,6 +518,9 @@ const DerivedStats = {
         if (talentBonus !== 0) {
             parts.push({ label: 'Talent', value: talentBonus });
         }
+        for (const mb of mutationBonuses) {
+            parts.push({ label: mb.source, value: mb.value });
+        }
 
         const total = this.calculateResilience(character, armorBreakdown);
         return { value: total, breakdown: parts };
@@ -488,6 +532,7 @@ const DerivedStats = {
         const ini = this.getEffectiveAttribute(character, 'initiative');
         const equipBonus = this.getEquipmentBonusTotal(character, 'defence');
         const talentBonus = this.getTalentTraitBonus(character, 'Defence');
+        const mutationBonuses = this.getMutationBonuses(character)['defence'] || [];
 
         const parts = [];
         parts.push({ label: `Base (INI-1)`, value: Math.max(0, ini - 1) });
@@ -499,6 +544,9 @@ const DerivedStats = {
         }
         if (talentBonus !== 0) {
             parts.push({ label: 'Talent', value: talentBonus });
+        }
+        for (const mb of mutationBonuses) {
+            parts.push({ label: mb.source, value: mb.value });
         }
 
         const total = this.calculateDefence(character, armorBreakdown);

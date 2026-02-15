@@ -99,6 +99,10 @@ const State = {
                 bonusUsed: null
             },
 
+            memorableInjuries: [],   // [{ id, escalated }]
+            traumaticInjuries: [],   // [{ id, side }]  (side: "left"/"right"/null)
+            mutations: [],           // [{ id, subChoice }]  (subChoice: sub-option id or null)
+
             languages: ['low_gothic'],
             freeLanguages: [],
             notes: '',
@@ -837,6 +841,71 @@ const State = {
     setNotes(notes) {
         this.character.notes = notes;
         this.notifyListeners('notes');
+    },
+
+    // === INJURIES & CORRUPTION ===
+
+    // Add a memorable injury
+    addMemorableInjury(injuryId) {
+        if (!this.character.memorableInjuries) this.character.memorableInjuries = [];
+        this.character.memorableInjuries.push({ id: injuryId, escalated: false });
+        this.notifyListeners('injuries');
+    },
+
+    // Remove a memorable injury by index
+    removeMemorableInjury(index) {
+        if (!this.character.memorableInjuries) return;
+        if (index >= 0 && index < this.character.memorableInjuries.length) {
+            this.character.memorableInjuries.splice(index, 1);
+            this.notifyListeners('injuries');
+        }
+    },
+
+    // Toggle escalation on a memorable injury
+    escalateMemorableInjury(index) {
+        if (!this.character.memorableInjuries) return;
+        if (index >= 0 && index < this.character.memorableInjuries.length) {
+            this.character.memorableInjuries[index].escalated = !this.character.memorableInjuries[index].escalated;
+            this.notifyListeners('injuries');
+        }
+    },
+
+    // Add a traumatic injury
+    addTraumaticInjury(injuryId, side = null) {
+        if (!this.character.traumaticInjuries) this.character.traumaticInjuries = [];
+        this.character.traumaticInjuries.push({ id: injuryId, side: side });
+        this.notifyListeners('injuries');
+    },
+
+    // Remove a traumatic injury by index
+    removeTraumaticInjury(index) {
+        if (!this.character.traumaticInjuries) return;
+        if (index >= 0 && index < this.character.traumaticInjuries.length) {
+            this.character.traumaticInjuries.splice(index, 1);
+            this.notifyListeners('injuries');
+        }
+    },
+
+    // Set corruption points
+    setCorruptionPoints(value) {
+        this.character.corruption = Math.max(0, parseInt(value) || 0);
+        this.notifyListeners('injuries');
+    },
+
+    // Add a mutation
+    addMutation(mutationId, subChoice = null) {
+        if (!this.character.mutations) this.character.mutations = [];
+        this.character.mutations.push({ id: mutationId, subChoice: subChoice });
+        this.notifyListeners('injuries');
+    },
+
+    // Remove a mutation by index
+    removeMutation(index) {
+        if (!this.character.mutations) return;
+        if (index >= 0 && index < this.character.mutations.length) {
+            this.character.mutations.splice(index, 1);
+            this.notifyListeners('injuries');
+        }
     },
 
     // === SESSION TRACKING (Current Wounds, Shock, Wealth) ===

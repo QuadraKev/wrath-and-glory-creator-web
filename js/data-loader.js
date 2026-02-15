@@ -41,7 +41,8 @@ const DataLoader = {
             'psychic-powers.json',
             'ascension-packages.json',
             'backgrounds.json',
-            'weapon-upgrades.json'
+            'weapon-upgrades.json',
+            'injuries-corruption.json'
         ];
 
         const results = await Promise.all(files.map(f => this.loadFile(f)));
@@ -56,7 +57,8 @@ const DataLoader = {
             psychicPowers: results[6] || [],
             ascensionPackages: results[7] || [],
             backgrounds: results[8] || {},
-            weaponUpgrades: results[9] || []
+            weaponUpgrades: results[9] || [],
+            injuriesCorruption: results[10] || {}
         };
 
         console.log('[DataLoader] All data loaded. Summary:', {
@@ -220,6 +222,40 @@ const DataLoader = {
     getWeaponUpgrade(id) {
         const upgrades = this.cache['weapon-upgrades.json'] || [];
         return upgrades.find(u => u.id === id);
+    },
+
+    // Get injuries & corruption data
+    getInjuriesCorruptionData() {
+        return this.cache['injuries-corruption.json'] || {};
+    },
+
+    // Get memorable injuries list
+    getMemorableInjuries() {
+        const data = this.getInjuriesCorruptionData();
+        return data.memorableInjuries || [];
+    },
+
+    // Get traumatic injuries list
+    getTraumaticInjuries() {
+        const data = this.getInjuriesCorruptionData();
+        return data.traumaticInjuries || [];
+    },
+
+    // Get corruption table
+    getCorruptionTable() {
+        const data = this.getInjuriesCorruptionData();
+        return data.corruptionTable || [];
+    },
+
+    // Get all mutations
+    getMutations() {
+        const data = this.getInjuriesCorruptionData();
+        return data.mutations || [];
+    },
+
+    // Get mutation by ID
+    getMutation(id) {
+        return this.getMutations().find(m => m.id === id);
     },
 
     // Get valid upgrades for a specific weapon
