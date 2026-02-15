@@ -36,6 +36,18 @@ const CharacterSheetTab = {
 
         const container = document.getElementById('character-sheet-content');
 
+        const hasWeapons = (character.wargear || []).some(item => DataLoader.getWeapon(item.id));
+        const weaponsHtml = this.renderWeapons(character);
+        const armorHtml = this.renderArmor(character);
+        const equipmentHtml = this.renderEquipment(character);
+        const speciesAbilitiesHtml = this.renderSpeciesAbilities(character, species);
+        const archetypeAbilitiesHtml = this.renderArchetypeAbilities(archetype);
+        const talentsHtml = this.renderTalents(character);
+        const powersHtml = this.renderPsychicPowers(character);
+        const injuriesHtml = this.renderInjuriesCorruption(character);
+        const backgroundHtml = this.renderBackground(character);
+        const notesHtml = this.renderNotes(character);
+
         container.innerHTML = `
             ${this.renderHeader(character, species, archetype, keywords)}
             <div class="sheet-columns">
@@ -46,17 +58,13 @@ const CharacterSheetTab = {
                 <div class="sheet-column">
                     ${this.renderSkills(character)}
                 </div>
+                ${hasWeapons ? `<div class="sheet-column sheet-column-weapons">${weaponsHtml}</div>` : ''}
             </div>
-            ${this.renderWeapons(character)}
-            ${this.renderArmor(character)}
-            ${this.renderEquipment(character)}
-            ${this.renderSpeciesAbilities(character, species)}
-            ${this.renderArchetypeAbilities(archetype)}
-            ${this.renderTalents(character)}
-            ${this.renderPsychicPowers(character)}
-            ${this.renderInjuriesCorruption(character)}
-            ${this.renderBackground(character)}
-            ${this.renderNotes(character)}
+            <div class="sheet-lower-sections">
+                ${!hasWeapons ? weaponsHtml : ''}
+                ${armorHtml}${equipmentHtml}${speciesAbilitiesHtml}${archetypeAbilitiesHtml}
+                ${talentsHtml}${powersHtml}${injuriesHtml}${backgroundHtml}${notesHtml}
+            </div>
         `;
 
         // Apply glossary enhancement to the character sheet

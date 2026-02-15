@@ -2788,6 +2788,15 @@ textarea {
     margin-bottom: 0;
 }
 
+/* Weapons column: full width below the 2-column layout by default */
+.sheet-column-weapons {
+    grid-column: 1 / -1;
+}
+
+.sheet-column-weapons > .sheet-section {
+    margin-bottom: 0;
+}
+
 /* Sheet Tables */
 .sheet-table {
     width: 100%;
@@ -3706,6 +3715,33 @@ textarea {
     display: none;
 }
 
+/* ===== Responsive: Wide Screen (>=1400px) ===== */
+@media (min-width: 1400px) {
+    /* Remove the narrow max-width constraint */
+    .character-sheet {
+        max-width: none;
+    }
+
+    /* 3-column top section: Attributes/Traits | Skills | Weapons */
+    .sheet-columns {
+        grid-template-columns: 1fr 1.2fr 1.5fr;
+    }
+
+    .sheet-column-weapons {
+        grid-column: auto;
+    }
+
+    /* Lower sections: 2-column flow */
+    .sheet-lower-sections {
+        column-count: 2;
+        column-gap: 15px;
+    }
+
+    .sheet-lower-sections > * {
+        break-inside: avoid;
+    }
+}
+
 /* ===== Responsive: Tablet (<=1024px) ===== */
 @media (max-width: 1024px) {
     .sidebar {
@@ -4129,6 +4165,16 @@ textarea {
 
     .sheet-column {
         page-break-inside: auto;
+    }
+
+    /* Ensure weapons column spans full width in print */
+    .sheet-column-weapons {
+        grid-column: 1 / -1 !important;
+    }
+
+    /* Disable multi-column layout for lower sections in print */
+    .sheet-lower-sections {
+        column-count: auto !important;
     }
 
     /* Allow Attributes + Traits to share a page within columns */
