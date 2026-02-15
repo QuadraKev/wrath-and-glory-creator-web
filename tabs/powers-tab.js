@@ -135,13 +135,13 @@ const PowersTab = {
 
     // Render the setup section for pending psyker choices (discipline unlocks + free power picks)
     renderSetupSection() {
-        const archetype = DataLoader.getArchetype(State.getCharacter().archetype?.id);
-        if (!archetype?.psykerConfig) return '';
+        const psykerConfig = State.getPsykerConfig();
+        if (!psykerConfig) return '';
 
         let html = '';
 
         // 1. Discipline unlock prompt
-        const allowed = archetype.psykerConfig.disciplineChoices || 0;
+        const allowed = psykerConfig.disciplineChoices || 0;
         const remainingChoices = State.getRemainingDisciplineChoices();
         if (allowed > 0) {
             const chosenDisciplines = State.getCharacter().unlockedDisciplines || [];
@@ -193,7 +193,7 @@ const PowersTab = {
             // Get available powers from those disciplines
             const allPowers = DataLoader.getAllPsychicPowers();
             const character = State.getCharacter();
-            const grantedPowers = archetype.psykerConfig.grantedPowers || [];
+            const grantedPowers = psykerConfig.grantedPowers || [];
             const availablePowers = allPowers.filter(p => {
                 if (!State.isSourceEnabled(p.source)) return false;
                 if (character.psychicPowers.includes(p.id)) return false;
@@ -244,8 +244,8 @@ const PowersTab = {
     renderSelected() {
         const container = document.getElementById('selected-powers');
         const character = State.getCharacter();
-        const archetype = DataLoader.getArchetype(character.archetype?.id);
-        const grantedPowers = archetype?.psykerConfig?.grantedPowers || [];
+        const psykerConfig = State.getPsykerConfig();
+        const grantedPowers = psykerConfig?.grantedPowers || [];
 
         if (!container) return;
 

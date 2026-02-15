@@ -6288,6 +6288,13 @@
       "Psy Focus",
       "2 doses of Spook"
     ],
+    "isPsyker": true,
+    "psykerConfig": {
+      "grantedPowers": ["smite"],
+      "freePowerChoices": [{ "disciplines": ["Maleficarum"], "count": 1 }],
+      "unlockedDisciplines": ["Maleficarum"],
+      "disciplineChoices": 1
+    },
     "source": "apocrypha"
   },
   {

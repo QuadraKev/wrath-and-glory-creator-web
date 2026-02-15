@@ -378,6 +378,30 @@ const State = {
     // Set custom archetype ability (archetypeId whose ability is purchased, or null)
     setCustomArchetypeAbility(archetypeId) {
         this.character.customArchetype.abilityArchetypeId = archetypeId || null;
+
+        // Set up psyker starting powers if the ability archetype has psykerConfig
+        const abilityArchetype = archetypeId ? DataLoader.getArchetype(archetypeId) : null;
+        if (abilityArchetype?.psykerConfig) {
+            this.character.freePowers = [];
+            this.character.unlockedDisciplines = [];
+            this.character.psychicPowers = [];
+
+            // Auto-add granted powers (e.g. Smite)
+            for (const powerId of abilityArchetype.psykerConfig.grantedPowers || []) {
+                if (!this.character.psychicPowers.includes(powerId)) {
+                    this.character.psychicPowers.push(powerId);
+                }
+                if (!this.character.freePowers.includes(powerId)) {
+                    this.character.freePowers.push(powerId);
+                }
+            }
+        } else {
+            // Clear psyker state when switching away from a psyker ability
+            this.character.freePowers = [];
+            this.character.unlockedDisciplines = [];
+            this.character.psychicPowers = [];
+        }
+
         this.notifyListeners('customArchetype');
     },
 
@@ -1079,12 +1103,26 @@ const State = {
         return this.getKeywords().includes('PSYKER');
     },
 
+    // Get the effective psykerConfig for the character.
+    // For standard archetypes, returns the archetype's psykerConfig.
+    // For custom archetypes, returns the ability archetype's psykerConfig (if any).
+    getPsykerConfig() {
+        const archetype = DataLoader.getArchetype(this.character.archetype?.id);
+        if (archetype?.psykerConfig) return archetype.psykerConfig;
+        // Custom archetype: check the ability archetype
+        if (this.character.archetype?.id === 'custom' && this.character.customArchetype?.abilityArchetypeId) {
+            const abilityArchetype = DataLoader.getArchetype(this.character.customArchetype.abilityArchetypeId);
+            if (abilityArchetype?.psykerConfig) return abilityArchetype.psykerConfig;
+        }
+        return null;
+    },
+
     // Get list of unlocked disciplines for the current psyker archetype
     getUnlockedDisciplines() {
         const base = ['Minor', 'Universal'];
-        const archetype = DataLoader.getArchetype(this.character.archetype?.id);
-        if (archetype?.psykerConfig) {
-            for (const d of archetype.psykerConfig.unlockedDisciplines || []) {
+        const psykerConfig = this.getPsykerConfig();
+        if (psykerConfig) {
+            for (const d of psykerConfig.unlockedDisciplines || []) {
                 if (!base.includes(d)) base.push(d);
             }
         }
@@ -1125,9 +1163,9 @@ const State = {
 
     // Get remaining discipline choices (how many more the user can unlock)
     getRemainingDisciplineChoices() {
-        const archetype = DataLoader.getArchetype(this.character.archetype?.id);
-        if (!archetype?.psykerConfig) return 0;
-        const allowed = archetype.psykerConfig.disciplineChoices || 0;
+        const psykerConfig = this.getPsykerConfig();
+        if (!psykerConfig) return 0;
+        const allowed = psykerConfig.disciplineChoices || 0;
         const used = (this.character.unlockedDisciplines || []).length;
         return Math.max(0, allowed - used);
     },
@@ -1148,13 +1186,13 @@ const State = {
 
     // Get free power choice status: for each freePowerChoices entry, how many picks remain
     getFreePowerChoiceStatus() {
-        const archetype = DataLoader.getArchetype(this.character.archetype?.id);
-        if (!archetype?.psykerConfig) return [];
+        const psykerConfig = this.getPsykerConfig();
+        if (!psykerConfig) return [];
 
-        const grantedPowers = archetype.psykerConfig.grantedPowers || [];
+        const grantedPowers = psykerConfig.grantedPowers || [];
         const freePowers = this.character.freePowers || [];
 
-        return (archetype.psykerConfig.freePowerChoices || []).map(entry => {
+        return (psykerConfig.freePowerChoices || []).map(entry => {
             // Count how many freePowers are from the allowed disciplines (excluding grantedPowers)
             const picked = freePowers.filter(pid => {
                 if (grantedPowers.includes(pid)) return false;
