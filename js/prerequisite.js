@@ -179,6 +179,17 @@ const PrerequisiteChecker = {
             archetype.keywords.forEach(k => keywords.add(k));
         }
 
+        // Custom archetype: include ability archetype's keywords
+        if (character.archetype?.id === 'custom' && character.customArchetype?.abilityArchetypeId) {
+            const abilityArchetype = DataLoader.getArchetype(character.customArchetype.abilityArchetypeId);
+            if (abilityArchetype?.keywords) {
+                abilityArchetype.keywords.forEach(k => keywords.add(k));
+            }
+            if (abilityArchetype?.isPsyker) {
+                keywords.add('PSYKER');
+            }
+        }
+
         // Check if character is a psyker (has Psychic Mastery skill > 0 or archetype grants it)
         if (character.skills?.psychicMastery > 0) {
             keywords.add('PSYKER');
