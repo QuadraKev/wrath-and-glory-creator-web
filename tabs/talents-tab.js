@@ -201,6 +201,15 @@ const TalentsTab = {
                 }
                 return validDisciplines;
 
+            case 'discipline_unlock':
+                // Get all psychic disciplines NOT already unlocked by the character
+                const allDisciplines = DataLoader.getAllPsychicPowers()
+                    .map(p => p.discipline)
+                    .filter((d, i, arr) => d && arr.indexOf(d) === i) // unique
+                    .sort();
+                const unlockedDisciplines = State.getUnlockedDisciplines();
+                return allDisciplines.filter(d => !unlockedDisciplines.includes(d));
+
             case 'augmetics':
                 // Return placeholder - user should type freeform
                 return null; // Will fall through to freeform
@@ -262,7 +271,8 @@ const TalentsTab = {
 
         container.innerHTML = '';
 
-        for (const talentEntry of character.talents) {
+        for (let talentIdx = 0; talentIdx < character.talents.length; talentIdx++) {
+            const talentEntry = character.talents[talentIdx];
             // Handle both old format (string) and new format (object)
             const talentId = typeof talentEntry === 'string' ? talentEntry : talentEntry.id;
             const talentChoice = typeof talentEntry === 'object' ? talentEntry.choice : null;
@@ -310,7 +320,7 @@ const TalentsTab = {
             `;
 
             item.querySelector('.btn-remove').addEventListener('click', () => {
-                State.removeTalent(talentId);
+                State.removeTalent(talentId, talentIdx);
                 this.render();
             });
 
@@ -337,10 +347,13 @@ const TalentsTab = {
             if (!State.isSourceEnabled(t.source)) return false;
 
             // Check if already owned (handle both string and object formats)
-            const hasTalent = character.talents.some(entry =>
-                (typeof entry === 'string' ? entry : entry.id) === t.id
-            );
-            if (hasTalent) return false;
+            // Allow repeatable talents to appear even if already owned
+            if (!t.repeatable) {
+                const hasTalent = character.talents.some(entry =>
+                    (typeof entry === 'string' ? entry : entry.id) === t.id
+                );
+                if (hasTalent) return false;
+            }
 
             // Check search query
             if (this.searchQuery) {

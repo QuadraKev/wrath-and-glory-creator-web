@@ -100,6 +100,7 @@ const State = {
             },
 
             languages: ['low_gothic'],
+            freeLanguages: [],
             notes: '',
             corruption: 0,
 
@@ -565,33 +566,38 @@ const State = {
 
     // Add a talent (with optional choice for talents that require it)
     addTalent(talentId, choice = null) {
-        // Check if already has this talent
-        const hasTalent = this.character.talents.some(t =>
-            (typeof t === 'string' ? t : t.id) === talentId
-        );
+        const talent = DataLoader.getTalent(talentId);
+        if (!talent) return false;
 
-        if (!hasTalent) {
-            const talent = DataLoader.getTalent(talentId);
-            if (talent && XPCalculator.canAfford(this.character, talent.cost || 0)) {
-                // Store as object if choice provided, otherwise just the ID
-                if (choice !== null) {
-                    this.character.talents.push({ id: talentId, choice: choice });
-                } else {
-                    this.character.talents.push(talentId);
-                }
-                this.notifyListeners('talent', talentId);
-                return true;
+        // Check if already has this talent (skip check for repeatable talents)
+        if (!talent.repeatable) {
+            const hasTalent = this.character.talents.some(t =>
+                (typeof t === 'string' ? t : t.id) === talentId
+            );
+            if (hasTalent) return false;
+        }
+
+        if (XPCalculator.canAfford(this.character, talent.cost || 0)) {
+            // Store as object if choice provided, otherwise just the ID
+            if (choice !== null) {
+                this.character.talents.push({ id: talentId, choice: choice });
+            } else {
+                this.character.talents.push(talentId);
             }
+            this.notifyListeners('talent', talentId);
+            return true;
         }
         return false;
     },
 
-    // Remove a talent
-    removeTalent(talentId) {
-        const index = this.character.talents.findIndex(t =>
-            (typeof t === 'string' ? t : t.id) === talentId
-        );
-        if (index !== -1) {
+    // Remove a talent (by index for repeatable talents, or first match by ID)
+    removeTalent(talentId, index = -1) {
+        if (index === -1) {
+            index = this.character.talents.findIndex(t =>
+                (typeof t === 'string' ? t : t.id) === talentId
+            );
+        }
+        if (index !== -1 && index < this.character.talents.length) {
             this.character.talents.splice(index, 1);
             this.notifyListeners('talent', talentId);
             return true;
@@ -770,13 +776,17 @@ const State = {
         this.notifyListeners('background', 'bonus');
     },
 
-    // Add language (costs 1 XP each beyond Low Gothic)
-    addLanguage(language) {
+    // Add language (costs 1 XP each beyond Low Gothic, unless free)
+    addLanguage(language, isFree = false) {
         if (!this.character.languages.includes(language)) {
-            if (!XPCalculator.canAfford(this.character, 1)) {
+            if (!isFree && !XPCalculator.canAfford(this.character, 1)) {
                 return false;
             }
             this.character.languages.push(language);
+            if (isFree) {
+                if (!this.character.freeLanguages) this.character.freeLanguages = [];
+                this.character.freeLanguages.push(language);
+            }
             this.notifyListeners('language', language);
             return true;
         }
@@ -789,6 +799,11 @@ const State = {
             const index = this.character.languages.indexOf(language);
             if (index !== -1) {
                 this.character.languages.splice(index, 1);
+                // Also remove from freeLanguages if present
+                const freeIndex = (this.character.freeLanguages || []).indexOf(language);
+                if (freeIndex !== -1) {
+                    this.character.freeLanguages.splice(freeIndex, 1);
+                }
                 this.notifyListeners('language', language);
             }
         }
@@ -1075,6 +1090,14 @@ const State = {
         }
         for (const d of this.character.unlockedDisciplines || []) {
             if (!base.includes(d)) base.push(d);
+        }
+        // Include disciplines unlocked by Warped Mind talent
+        for (const talentEntry of this.character.talents || []) {
+            if (typeof talentEntry === 'object' && talentEntry.id === 'warped_mind' && talentEntry.choice) {
+                if (!base.includes(talentEntry.choice)) {
+                    base.push(talentEntry.choice);
+                }
+            }
         }
         return base;
     },

@@ -140,9 +140,11 @@ const XPCalculator = {
         return xp;
     },
 
-    // Calculate XP spent on languages (1 XP each beyond free Low Gothic)
+    // Calculate XP spent on languages (1 XP each beyond free Low Gothic and free languages)
     calculateLanguageXP(character) {
-        return Math.max(0, (character.languages || []).length - 1);
+        const totalLanguages = (character.languages || []).length;
+        const freeLanguages = (character.freeLanguages || []).length;
+        return Math.max(0, totalLanguages - 1 - freeLanguages);
     },
 
     // Calculate total spent XP

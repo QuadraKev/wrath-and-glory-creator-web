@@ -29,9 +29,10 @@ const BackgroundTab = {
         // Add language button
         document.getElementById('btn-add-language').addEventListener('click', () => {
             const input = document.getElementById('new-language');
+            const freeToggle = document.getElementById('free-language-toggle');
             const language = input.value.trim();
             if (language) {
-                State.addLanguage(language);
+                State.addLanguage(language, freeToggle.checked);
                 input.value = '';
                 this.renderLanguages();
             }
@@ -219,6 +220,8 @@ const BackgroundTab = {
 
         container.innerHTML = '';
 
+        const freeLanguages = character.freeLanguages || [];
+
         for (const language of character.languages) {
             const chip = document.createElement('span');
             chip.className = 'language-chip';
@@ -226,8 +229,10 @@ const BackgroundTab = {
             if (language === 'low_gothic') {
                 chip.textContent = 'Low Gothic';
             } else {
+                const isFree = freeLanguages.includes(language);
+                const costLabel = isFree ? '(Free)' : '(1 XP)';
                 chip.innerHTML = `
-                    ${language} <span class="language-xp-cost">(1 XP)</span>
+                    ${language} <span class="language-xp-cost">${costLabel}</span>
                     <span class="language-remove" data-lang="${language}" style="cursor: pointer; margin-left: 5px;">&times;</span>
                 `;
 

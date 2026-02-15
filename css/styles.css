@@ -1832,7 +1832,17 @@ textarea {
 .add-language {
     display: flex;
     gap: 10px;
-    max-width: 300px;
+    max-width: 400px;
+    align-items: center;
+}
+
+.free-language-toggle {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 13px;
+    white-space: nowrap;
+    cursor: pointer;
 }
 
 .add-language input {

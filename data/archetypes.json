@@ -226,7 +226,8 @@
     "description": "A space pirate, a self-imposed exile of your Species, you raid and fight for coin, and to experience the full spectrum of sensation and emotion.",
     "tier": 1,
     "species": [
-      "aeldari"
+      "aeldari",
+      "aeldari_psychosensitive"
     ],
     "cost": 6,
     "faction": "Aeldari",
@@ -378,10 +379,19 @@
     ],
     "isPsyker": true,
     "psykerConfig": {
-      "grantedPowers": ["smite"],
-      "freePowerChoices": [{ "disciplines": ["Minor"], "count": 1 }],
+      "grantedPowers": [
+        "smite"
+      ],
+      "freePowerChoices": [
+        {
+          "disciplines": [
+            "Minor"
+          ],
+          "count": 1
+        }
+      ],
       "unlockedDisciplines": [],
-      "disciplineChoices": 0
+      "disciplineChoices": 1
     },
     "source": "core"
   },
@@ -601,7 +611,8 @@
     "description": "Embracing the path of the Outcast, you stealthily travel the galaxy in search of new experiences, eliminating threats to your Craftworld from afar.",
     "tier": 2,
     "species": [
-      "aeldari"
+      "aeldari",
+      "aeldari_psychosensitive"
     ],
     "cost": 24,
     "faction": "Aeldari",
@@ -900,7 +911,8 @@
     "description": "Harnessing eldritch power and aspect warrior training, you are an aggressive battle Psyker driven to war.",
     "tier": 3,
     "species": [
-      "aeldari"
+      "aeldari",
+      "aeldari_psychosensitive"
     ],
     "cost": 46,
     "faction": "Aeldari",
@@ -933,9 +945,20 @@
     ],
     "isPsyker": true,
     "psykerConfig": {
-      "grantedPowers": ["smite"],
-      "freePowerChoices": [{ "disciplines": ["Runes of Battle"], "count": 1 }],
-      "unlockedDisciplines": ["Runes of Battle"],
+      "grantedPowers": [
+        "smite"
+      ],
+      "freePowerChoices": [
+        {
+          "disciplines": [
+            "Runes of Battle"
+          ],
+          "count": 1
+        }
+      ],
+      "unlockedDisciplines": [
+        "Runes of Battle"
+      ],
       "disciplineChoices": 0
     },
     "source": "core"
@@ -1978,9 +2001,20 @@
     ],
     "isPsyker": true,
     "psykerConfig": {
-      "grantedPowers": ["smite"],
-      "freePowerChoices": [{ "disciplines": ["Librarius"], "count": 1 }],
-      "unlockedDisciplines": ["Librarius"],
+      "grantedPowers": [
+        "smite"
+      ],
+      "freePowerChoices": [
+        {
+          "disciplines": [
+            "Librarius"
+          ],
+          "count": 1
+        }
+      ],
+      "unlockedDisciplines": [
+        "Librarius"
+      ],
       "disciplineChoices": 1
     },
     "source": "fspg"
@@ -2501,7 +2535,8 @@
     "description": "You have been called from civilian pursuits to don your war mask and defend your people.",
     "tier": 2,
     "species": [
-      "aeldari"
+      "aeldari",
+      "aeldari_psychosensitive"
     ],
     "cost": 32,
     "faction": "Asuryani",
@@ -2545,7 +2580,8 @@
     "description": "You are a foreboding wielder of heavy weaponry, reaping formations of soldiers in a barrage of explosive missiles.",
     "tier": 3,
     "species": [
-      "aeldari"
+      "aeldari",
+      "aeldari_psychosensitive"
     ],
     "cost": 60,
     "faction": "Asuryani",
@@ -2587,7 +2623,8 @@
     "description": "You are a student of the first Aspect Warrior Temple, exemplifying retribution, valour, and relentless firing discipline.",
     "tier": 3,
     "species": [
-      "aeldari"
+      "aeldari",
+      "aeldari_psychosensitive"
     ],
     "cost": 64,
     "faction": "Asuryani",
@@ -2632,7 +2669,8 @@
     "description": "You are a tank-hunter and fortification-leveller, applying the focused fury of concentrated fire.",
     "tier": 3,
     "species": [
-      "aeldari"
+      "aeldari",
+      "aeldari_psychosensitive"
     ],
     "cost": 62,
     "faction": "Asuryani",
@@ -2675,7 +2713,8 @@
     "description": "You are a quicksilver melee combatant, leaping into every assault with an ear-splitting howl.",
     "tier": 3,
     "species": [
-      "aeldari"
+      "aeldari",
+      "aeldari_psychosensitive"
     ],
     "cost": 80,
     "faction": "Asuryani",
@@ -2717,7 +2756,8 @@
     "description": "You employ stealth to infiltrate enemy positions before attacking in a roar of spinning blades.",
     "tier": 3,
     "species": [
-      "aeldari"
+      "aeldari",
+      "aeldari_psychosensitive"
     ],
     "cost": 74,
     "faction": "Asuryani",
@@ -2762,7 +2802,8 @@
     "description": "You effortlessly soar across the battlefield on wings formed of vibrating feather plates and gravitic lifters.",
     "tier": 3,
     "species": [
-      "aeldari"
+      "aeldari",
+      "aeldari_psychosensitive"
     ],
     "cost": 76,
     "faction": "Asuryani",
@@ -2807,7 +2848,8 @@
     "description": "You risk short leaps through the Warp to outmanoeuvre your enemies before shredding them with razor-sharp monofilament wire.",
     "tier": 3,
     "species": [
-      "aeldari"
+      "aeldari",
+      "aeldari_psychosensitive"
     ],
     "cost": 76,
     "faction": "Asuryani",
@@ -2890,7 +2932,8 @@
     "description": "Your experience training at multiple Aspect Warrior Temples has prepared you to become the ultimate battlefield general.",
     "tier": 5,
     "species": [
-      "aeldari"
+      "aeldari",
+      "aeldari_psychosensitive"
     ],
     "cost": 206,
     "faction": "Asuryani",
@@ -2936,7 +2979,8 @@
     "description": "You channel psychic powers that reveal the myriad paths of the future, using your foreknowledge to shape the destiny of entire species.",
     "tier": 5,
     "species": [
-      "aeldari"
+      "aeldari",
+      "aeldari_psychosensitive"
     ],
     "cost": 157,
     "faction": "Asuryani",
@@ -2974,9 +3018,24 @@
     "wargearChoices": "Witchblade or Singing Spear",
     "isPsyker": true,
     "psykerConfig": {
-      "grantedPowers": ["smite"],
-      "freePowerChoices": [{ "disciplines": ["Divination", "Runes of Fate", "Runes of Fortune"], "count": 2 }],
-      "unlockedDisciplines": ["Divination", "Runes of Fate", "Runes of Fortune"],
+      "grantedPowers": [
+        "smite"
+      ],
+      "freePowerChoices": [
+        {
+          "disciplines": [
+            "Divination",
+            "Runes of Fate",
+            "Runes of Fortune"
+          ],
+          "count": 2
+        }
+      ],
+      "unlockedDisciplines": [
+        "Divination",
+        "Runes of Fate",
+        "Runes of Fortune"
+      ],
       "disciplineChoices": 0
     },
     "source": "aeldari"
@@ -3396,7 +3455,8 @@
     "tier": 3,
     "species": [
       "aeldari",
-      "drukhari"
+      "drukhari",
+      "aeldari_psychosensitive"
     ],
     "cost": 84,
     "faction": "Harlequin",
@@ -3439,7 +3499,8 @@
     "tier": 4,
     "species": [
       "aeldari",
-      "drukhari"
+      "drukhari",
+      "aeldari_psychosensitive"
     ],
     "cost": 166,
     "faction": "Harlequin",
@@ -3482,7 +3543,8 @@
     "tier": 5,
     "species": [
       "aeldari",
-      "drukhari"
+      "drukhari",
+      "aeldari_psychosensitive"
     ],
     "cost": 267,
     "faction": "Harlequin",
@@ -3526,9 +3588,24 @@
     "wargearChoices": "Shuriken Pistol or Neuro Disruptor",
     "isPsyker": true,
     "psykerConfig": {
-      "grantedPowers": ["smite"],
-      "freePowerChoices": [{ "disciplines": ["Divination", "Phantasmancy", "Telepathy"], "count": 2 }],
-      "unlockedDisciplines": ["Divination", "Phantasmancy", "Telepathy"],
+      "grantedPowers": [
+        "smite"
+      ],
+      "freePowerChoices": [
+        {
+          "disciplines": [
+            "Divination",
+            "Phantasmancy",
+            "Telepathy"
+          ],
+          "count": 2
+        }
+      ],
+      "unlockedDisciplines": [
+        "Divination",
+        "Phantasmancy",
+        "Telepathy"
+      ],
       "disciplineChoices": 0
     },
     "source": "aeldari"
@@ -3540,7 +3617,8 @@
     "tier": 5,
     "species": [
       "aeldari",
-      "drukhari"
+      "drukhari",
+      "aeldari_psychosensitive"
     ],
     "cost": 243,
     "faction": "Harlequin",
@@ -3588,7 +3666,8 @@
     "tier": 2,
     "species": [
       "aeldari",
-      "drukhari"
+      "drukhari",
+      "aeldari_psychosensitive"
     ],
     "cost": 34,
     "faction": "Anhrathe",
@@ -3630,7 +3709,8 @@
     "tier": 2,
     "species": [
       "aeldari",
-      "drukhari"
+      "drukhari",
+      "aeldari_psychosensitive"
     ],
     "cost": 54,
     "faction": "Anhrathe",
@@ -3667,10 +3747,12 @@
     "wargearChoices": "Shuriken Pistol and Corsair Sabre or Witchstaff",
     "isPsyker": true,
     "psykerConfig": {
-      "grantedPowers": ["smite"],
+      "grantedPowers": [
+        "smite"
+      ],
       "freePowerChoices": [],
       "unlockedDisciplines": [],
-      "disciplineChoices": 0
+      "disciplineChoices": 1
     },
     "source": "aeldari"
   },
@@ -3681,7 +3763,8 @@
     "tier": 3,
     "species": [
       "aeldari",
-      "drukhari"
+      "drukhari",
+      "aeldari_psychosensitive"
     ],
     "cost": 84,
     "faction": "Anhrathe",
@@ -3729,7 +3812,8 @@
     "tier": 3,
     "species": [
       "aeldari",
-      "drukhari"
+      "drukhari",
+      "aeldari_psychosensitive"
     ],
     "cost": 134,
     "faction": "Anhrathe",
@@ -3780,7 +3864,8 @@
     "tier": 4,
     "species": [
       "aeldari",
-      "drukhari"
+      "drukhari",
+      "aeldari_psychosensitive"
     ],
     "cost": 200,
     "faction": "Anhrathe",
@@ -4163,7 +4248,8 @@
     "description": "A citizen-soldier of an Aeldari Craftworld, called to arms in times of need to defend their home.",
     "tier": 1,
     "species": [
-      "aeldari"
+      "aeldari",
+      "aeldari_psychosensitive"
     ],
     "cost": 10,
     "faction": "Aeldari",
@@ -4593,7 +4679,8 @@
     "description": "An Aeldari Corsair, a pirate and raider who plies the void between the stars.",
     "tier": 1,
     "species": [
-      "aeldari"
+      "aeldari",
+      "aeldari_psychosensitive"
     ],
     "cost": 10,
     "faction": "Aeldari",
@@ -4747,7 +4834,23 @@
     ],
     "startingWargear": [],
     "wargearChoices": "Knife, common clothing, hooded cloak",
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "isPsyker": true,
+    "psykerConfig": {
+      "grantedPowers": [
+        "smite"
+      ],
+      "freePowerChoices": [
+        {
+          "disciplines": [
+            "Minor"
+          ],
+          "count": 2
+        }
+      ],
+      "unlockedDisciplines": [],
+      "disciplineChoices": 1
+    }
   },
   {
     "id": "aeronautica_pilot_aoa",
@@ -4815,7 +4918,23 @@
     ],
     "startingWargear": [],
     "wargearChoices": "Laspistol, Psykana Mercy Blade, Robes, Psy Focus",
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "isPsyker": true,
+    "psykerConfig": {
+      "grantedPowers": [
+        "smite"
+      ],
+      "freePowerChoices": [
+        {
+          "disciplines": [
+            "Minor"
+          ],
+          "count": 1
+        }
+      ],
+      "unlockedDisciplines": [],
+      "disciplineChoices": 1
+    }
   },
   {
     "id": "beast_snagga_boy_aoa",
@@ -5034,7 +5153,25 @@
     ],
     "startingWargear": [],
     "wargearChoices": "Nemesis Force Sword or Nemesis Force Halberd, Storm Bolter, Aegis Armour, Psyk-Out Grenades, Liber Daemonica",
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "isPsyker": true,
+    "psykerConfig": {
+      "grantedPowers": [
+        "smite"
+      ],
+      "freePowerChoices": [
+        {
+          "disciplines": [
+            "Sanctic"
+          ],
+          "count": 2
+        }
+      ],
+      "unlockedDisciplines": [
+        "Sanctic"
+      ],
+      "disciplineChoices": 0
+    }
   },
   {
     "id": "chaos_sorcerer_aoa",
@@ -5073,7 +5210,29 @@
     ],
     "startingWargear": [],
     "wargearChoices": "Force Stave or Force Sword, Bolt Pistol, Power Armour, Chaos Icon",
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "isPsyker": true,
+    "psykerConfig": {
+      "grantedPowers": [
+        "smite"
+      ],
+      "freePowerChoices": [
+        {
+          "disciplines": [
+            "Dark Hereticus",
+            "Maleficarum",
+            "Pandaemoniac",
+            "Soulstain",
+            "Warprot"
+          ],
+          "count": 3
+        }
+      ],
+      "unlockedDisciplines": [
+        "Dark Hereticus"
+      ],
+      "disciplineChoices": 1
+    }
   },
   {
     "id": "harlequin_player_aoa",
@@ -5081,7 +5240,8 @@
     "description": "A performer and warrior of the Laughing God, dancing through battle with lethal grace.",
     "tier": 4,
     "species": [
-      "aeldari"
+      "aeldari",
+      "aeldari_psychosensitive"
     ],
     "cost": 80,
     "faction": "Aeldari",
@@ -5332,7 +5492,8 @@
     "description": "You are a psyker; you know the Smite and Vaul’s Song psychic powers and may purchase other powers from the Divination discipline, the Runes of Shaping discipline, and one other discipline of your choi...",
     "tier": 2,
     "species": [
-      "aeldari"
+      "aeldari",
+      "aeldari_psychosensitive"
     ],
     "cost": 72,
     "faction": "Aeldari",
@@ -5365,7 +5526,20 @@
       "Bonesinger shard",
       "Spirit Stone"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "isPsyker": true,
+    "psykerConfig": {
+      "grantedPowers": [
+        "smite",
+        "vaul_s_song_aoa"
+      ],
+      "freePowerChoices": [],
+      "unlockedDisciplines": [
+        "Divination",
+        "Runes of Shaping"
+      ],
+      "disciplineChoices": 1
+    }
   },
   {
     "id": "burna_boy_aoa",
@@ -5866,7 +6040,18 @@
       "Nobilite Robes (clothing)",
       "Emperor’s Tarot deck (Psychic Focus)"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "isPsyker": true,
+    "psykerConfig": {
+      "grantedPowers": [
+        "the_lidless_stare_aoa"
+      ],
+      "freePowerChoices": [],
+      "unlockedDisciplines": [
+        "Navigator"
+      ],
+      "disciplineChoices": 0
+    }
   },
   {
     "id": "imperial_navy_breacher_aoa",
@@ -6685,7 +6870,8 @@
     "description": "When you make a shooting attack against another FLYER, add +Rank bonus dice to your attack.",
     "tier": 3,
     "species": [
-      "aeldari"
+      "aeldari",
+      "aeldari_psychosensitive"
     ],
     "cost": 160,
     "faction": "Aeldari",
@@ -6773,7 +6959,8 @@
     "description": "You may reroll up to Double Rank dice on any aimed Ranged Attack you make.",
     "tier": 3,
     "species": [
-      "aeldari"
+      "aeldari",
+      "aeldari_psychosensitive"
     ],
     "cost": 92,
     "faction": "Aeldari",
@@ -6860,7 +7047,8 @@
     "description": "When an enemy concludes their movement within 3 +Rank metres of you, you may make a ranged attack against them as a Reflexive Action, adding +2 to the DN of the attack. This attack is resolved before ...",
     "tier": 3,
     "species": [
-      "aeldari"
+      "aeldari",
+      "aeldari_psychosensitive"
     ],
     "cost": 116,
     "faction": "Aeldari",
@@ -6992,7 +7180,8 @@
     "description": "When you attack a vehicle, structure, or monstrous creature, add +Rank ED to the attack. In addition, add +Rank to your Resilience against attacks with the FIRE or MELTA keywords.",
     "tier": 3,
     "species": [
-      "aeldari"
+      "aeldari",
+      "aeldari_psychosensitive"
     ],
     "cost": 108,
     "faction": "Aeldari",
@@ -7129,7 +7318,8 @@
     "description": "Increase your Defence by +Rank and add +1 to your Speed. In addition, you may use Agility instead of Strength for your Athletics skill tests.",
     "tier": 3,
     "species": [
-      "aeldari"
+      "aeldari",
+      "aeldari_psychosensitive"
     ],
     "cost": 127,
     "faction": "Aeldari",
@@ -7355,7 +7545,8 @@
     "description": "You may reroll Double Rank dice on any Pilot test you make when operating an Aeldari Jetbike and increase the jetbike’s Defence by +Rank.",
     "tier": 3,
     "species": [
-      "aeldari"
+      "aeldari",
+      "aeldari_psychosensitive"
     ],
     "cost": 141,
     "faction": "Aeldari",
@@ -7584,7 +7775,8 @@
     "description": "You may reroll up to Double Rank dice when making a Stealth test. In addition, you add +Rank bonus dice when you make a Surprise Attack.",
     "tier": 3,
     "species": [
-      "aeldari"
+      "aeldari",
+      "aeldari_psychosensitive"
     ],
     "cost": 108,
     "faction": "Aeldari",
@@ -7627,7 +7819,8 @@
     "description": "",
     "tier": 3,
     "species": [
-      "aeldari"
+      "aeldari",
+      "aeldari_psychosensitive"
     ],
     "cost": 101,
     "faction": "Aeldari",
@@ -7712,7 +7905,8 @@
     "description": "As a Reflexive Action when a ranged attack is made against you, you may add +Double Rank to your Defence, as you use your Warp Jump Generator to flicker in and out of reality.",
     "tier": 3,
     "species": [
-      "aeldari"
+      "aeldari",
+      "aeldari_psychosensitive"
     ],
     "cost": 108,
     "faction": "Aeldari",
@@ -7783,7 +7977,25 @@
       "Ork Flak Armour",
       "collection of jangly baubles"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "isPsyker": true,
+    "psykerConfig": {
+      "grantedPowers": [
+        "smite"
+      ],
+      "freePowerChoices": [
+        {
+          "disciplines": [
+            "WAAAGH!"
+          ],
+          "count": 1
+        }
+      ],
+      "unlockedDisciplines": [
+        "WAAAGH!"
+      ],
+      "disciplineChoices": 0
+    }
   },
   {
     "id": "zephyrim_aoa",
@@ -7971,7 +8183,25 @@
       "Ancestral Ward Crest",
       "two CORVs armed with Autoch-pattern Bolters"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "isPsyker": true,
+    "psykerConfig": {
+      "grantedPowers": [
+        "smite"
+      ],
+      "freePowerChoices": [
+        {
+          "disciplines": [
+            "Skeinwrought"
+          ],
+          "count": 1
+        }
+      ],
+      "unlockedDisciplines": [
+        "Skeinwrought"
+      ],
+      "disciplineChoices": 0
+    }
   },
   {
     "id": "kâhl_aoa",
@@ -8191,7 +8421,25 @@
       "Emperor’s Tarot deck (Psychic Focus)",
       "Wealth 4"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "isPsyker": true,
+    "psykerConfig": {
+      "grantedPowers": [
+        "the_lidless_stare_aoa"
+      ],
+      "freePowerChoices": [
+        {
+          "disciplines": [
+            "Navigator"
+          ],
+          "count": 1
+        }
+      ],
+      "unlockedDisciplines": [
+        "Navigator"
+      ],
+      "disciplineChoices": 0
+    }
   },
   {
     "id": "noise_marine_aoa",
@@ -8835,7 +9083,25 @@
       "3 Krak Grenades",
       "Psychic Hood"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "isPsyker": true,
+    "psykerConfig": {
+      "grantedPowers": [
+        "smite"
+      ],
+      "freePowerChoices": [
+        {
+          "disciplines": [
+            "Librarius"
+          ],
+          "count": 1
+        }
+      ],
+      "unlockedDisciplines": [
+        "Librarius"
+      ],
+      "disciplineChoices": 1
+    }
   },
   {
     "id": "primaris_librarian_aoa",
@@ -8887,7 +9153,25 @@
       "heavy bolt pistol",
       "3 frag and 3 krak grenades"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "isPsyker": true,
+    "psykerConfig": {
+      "grantedPowers": [
+        "smite"
+      ],
+      "freePowerChoices": [
+        {
+          "disciplines": [
+            "Librarius"
+          ],
+          "count": 1
+        }
+      ],
+      "unlockedDisciplines": [
+        "Librarius"
+      ],
+      "disciplineChoices": 1
+    }
   },
   {
     "id": "primaris_techmarine_aoa",
@@ -9148,7 +9432,8 @@
     "description": "Whenever an ally who can hear you with fails a Test, you may spend 1 Glory as a Free Action to allow them to re-roll a number of dice equal to your Leadership. In addition, allied [CRAFTWORLD] charact...",
     "tier": 5,
     "species": [
-      "aeldari"
+      "aeldari",
+      "aeldari_psychosensitive"
     ],
     "cost": 290,
     "faction": "Aeldari",
@@ -9410,7 +9695,8 @@
     "description": "Damage rolls you make against enemies who are currently suffering from the effects of Fear, Terror, or Pinning add +Rank ED.",
     "tier": 5,
     "species": [
-      "aeldari"
+      "aeldari",
+      "aeldari_psychosensitive"
     ],
     "cost": 238,
     "faction": "Harlequin",
@@ -9457,7 +9743,8 @@
     "description": "You are a Psyker, and you know the Smite psychic power, and one power from the Phantasmancy discipline. You may learn additional psychic powers from the Divination, Telepathy, and Phantasmancy discipl...",
     "tier": 5,
     "species": [
-      "aeldari"
+      "aeldari",
+      "aeldari_psychosensitive"
     ],
     "cost": 281,
     "faction": "Harlequin",
@@ -9498,7 +9785,27 @@
       "pack grenade launcher",
       "6 hallucinogen grenades"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "isPsyker": true,
+    "psykerConfig": {
+      "grantedPowers": [
+        "smite"
+      ],
+      "freePowerChoices": [
+        {
+          "disciplines": [
+            "Phantasmancy"
+          ],
+          "count": 1
+        }
+      ],
+      "unlockedDisciplines": [
+        "Divination",
+        "Telepathy",
+        "Phantasmancy"
+      ],
+      "disciplineChoices": 0
+    }
   },
   {
     "id": "harlequin_solitaire_aoa",
@@ -9506,7 +9813,8 @@
     "description": "Other Aeldari shun you, and you add +6 to the DN of all Interaction tests with other Aeldari outside of ritual circumstances or performances. All Aeldari – even allies – must pass a Fear test (DN 3) w...",
     "tier": 5,
     "species": [
-      "aeldari"
+      "aeldari",
+      "aeldari_psychosensitive"
     ],
     "cost": 283,
     "faction": "Harlequin",
@@ -9551,7 +9859,8 @@
     "description": "Harlequin allies within 6 metres of you add +Rank ED to their melee attacks.",
     "tier": 5,
     "species": [
-      "aeldari"
+      "aeldari",
+      "aeldari_psychosensitive"
     ],
     "cost": 226,
     "faction": "Harlequin",

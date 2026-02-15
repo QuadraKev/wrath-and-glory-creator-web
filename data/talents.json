@@ -5632,6 +5632,10 @@
         "psychicMastery": 4
       }
     },
+    "repeatable": true,
+    "requiresChoice": true,
+    "choiceType": "discipline_unlock",
+    "choiceDescription": "Choose a psychic discipline to unlock:",
     "effect": "You may learn psychic powers from an additional psychic discipline. You may choose to take Corruption to reduce the XP cost of this Talent. For every point of Corruption you take, reduce the XP cost by 5.",
     "flavor": "You have opened your mind to access another psychic discipline, either through intense discipline and study or traumatic exposure to the Warp.",
     "source": "core"
