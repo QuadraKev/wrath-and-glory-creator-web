@@ -3269,16 +3269,6 @@ textarea {
 .sheet-armor-table .sheet-armor-traits::before { content: "Traits"; }
 .sheet-armor-table .sheet-armor-value::before { content: "Value"; }
 
-.sheet-armor-table .sheet-armor-ar {
-    grid-column: 1 / -1;
-}
-
-.sheet-armor-table .sheet-armor-traits {
-    grid-column: 1 / -1;
-    padding-top: 2px;
-    border-top: 1px solid var(--border-color);
-    margin-top: 2px;
-}
 
 .sheet-armor-table .sheet-armor-desc-row {
     display: block;
@@ -4224,8 +4214,6 @@ textarea {
 
     .sheet-armor-table .sheet-armor-traits {
         font-size: 10px !important;
-        padding-top: 1px !important;
-        margin-top: 1px !important;
     }
 
     .sheet-armor-table .sheet-armor-desc-row {
@@ -4476,9 +4464,6 @@ textarea {
         border-bottom-color: #ddd !important;
     }
 
-    body.print-light-theme .sheet-armor-table .sheet-armor-traits {
-        border-top-color: #ddd !important;
-    }
 
     body.print-light-theme .sheet-equipment-table tbody tr {
         border-bottom-color: #ddd !important;
