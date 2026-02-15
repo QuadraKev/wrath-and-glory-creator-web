@@ -141,28 +141,44 @@ const PowersTab = {
         let html = '';
 
         // 1. Discipline unlock prompt
+        const allowed = archetype.psykerConfig.disciplineChoices || 0;
         const remainingChoices = State.getRemainingDisciplineChoices();
-        if (remainingChoices > 0) {
-            // Get all disciplines in the data that aren't already unlocked
-            const allPowers = DataLoader.getAllPsychicPowers();
-            const unlocked = State.getUnlockedDisciplines();
-            const availableDisciplines = new Set();
-            for (const p of allPowers) {
-                if (p.discipline && State.isSourceEnabled(p.source)) {
-                    if (!unlocked.some(d => d.toLowerCase() === p.discipline.toLowerCase())) {
-                        availableDisciplines.add(p.discipline);
+        if (allowed > 0) {
+            const chosenDisciplines = State.getCharacter().unlockedDisciplines || [];
+
+            // Show chosen disciplines as removable chips
+            const chosenHtml = chosenDisciplines.map(d =>
+                `<span class="discipline-chosen-chip">${d} <span class="discipline-chosen-remove" data-discipline="${d}">&times;</span></span>`
+            ).join(' ');
+
+            // Show unlock buttons for remaining choices
+            let buttonsHtml = '';
+            if (remainingChoices > 0) {
+                const allPowers = DataLoader.getAllPsychicPowers();
+                const unlocked = State.getUnlockedDisciplines();
+                const availableDisciplines = new Set();
+                for (const p of allPowers) {
+                    if (p.discipline && State.isSourceEnabled(p.source)) {
+                        if (!unlocked.some(d => d.toLowerCase() === p.discipline.toLowerCase())) {
+                            availableDisciplines.add(p.discipline);
+                        }
                     }
                 }
+
+                buttonsHtml = Array.from(availableDisciplines).sort().map(d =>
+                    `<button class="btn-discipline-unlock" data-discipline="${d}">${d}</button>`
+                ).join(' ');
             }
 
-            const buttons = Array.from(availableDisciplines).sort().map(d =>
-                `<button class="btn-discipline-unlock" data-discipline="${d}">${d}</button>`
-            ).join(' ');
+            const promptText = remainingChoices > 0
+                ? `Choose ${remainingChoices} discipline${remainingChoices > 1 ? 's' : ''} to unlock:`
+                : 'Unlocked discipline:';
 
             html += `
                 <div class="setup-section" style="padding: 15px; margin-bottom: 15px; background: var(--bg-card); border-radius: var(--radius-md); border: 2px solid var(--accent);">
-                    <p style="margin-bottom: 10px;"><strong>Choose ${remainingChoices} discipline${remainingChoices > 1 ? 's' : ''} to unlock:</strong></p>
-                    <div class="discipline-unlock-buttons">${buttons}</div>
+                    <p style="margin-bottom: 10px;"><strong>${promptText}</strong></p>
+                    ${chosenHtml ? `<div style="margin-bottom: 10px;">${chosenHtml}</div>` : ''}
+                    ${buttonsHtml ? `<div class="discipline-unlock-buttons">${buttonsHtml}</div>` : ''}
                 </div>
             `;
         }
@@ -206,6 +222,13 @@ const PowersTab = {
         document.querySelectorAll('.btn-discipline-unlock').forEach(btn => {
             btn.addEventListener('click', () => {
                 State.addDisciplineChoice(btn.dataset.discipline);
+                this.render();
+            });
+        });
+
+        document.querySelectorAll('.discipline-chosen-remove').forEach(btn => {
+            btn.addEventListener('click', () => {
+                State.removeDisciplineChoice(btn.dataset.discipline);
                 this.render();
             });
         });

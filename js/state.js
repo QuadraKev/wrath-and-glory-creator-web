@@ -1113,6 +1113,16 @@ const State = {
         }
     },
 
+    // Remove a user-chosen discipline unlock
+    removeDisciplineChoice(discipline) {
+        if (!this.character.unlockedDisciplines) return;
+        const index = this.character.unlockedDisciplines.indexOf(discipline);
+        if (index !== -1) {
+            this.character.unlockedDisciplines.splice(index, 1);
+            this.notifyListeners('discipline', discipline);
+        }
+    },
+
     // Get remaining discipline choices (how many more the user can unlock)
     getRemainingDisciplineChoices() {
         const archetype = DataLoader.getArchetype(this.character.archetype?.id);
