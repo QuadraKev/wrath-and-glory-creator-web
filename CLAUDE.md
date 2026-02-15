@@ -53,6 +53,16 @@ Each data entry has a `source` field using these lowercase identifiers:
 - **IDs**: snake_case (e.g., `angel_of_death`). Apocrypha IDs use `_aaa` suffix to avoid conflicts.
 - **Traits/keywords**: Arrays of strings
 
+## Character Sheet Layout
+
+The Character Sheet tab (`tabs/character-sheet-tab.js`) uses a responsive 2-column layout on wide screens (>=1400px via `@media` query in `styles.css`). The HTML structure is:
+
+- `.sheet-body` — 2-column CSS grid on wide screens, stacks on narrow
+  - `.sheet-body-left` — Attributes+Traits | Skills (`.sheet-columns` 2-col sub-grid), then Psychic Powers, Species Abilities, Archetype Abilities, Talents, Injuries & Corruption, Background, Notes
+  - `.sheet-body-right` — Weapons, Armor, Equipment
+
+On screens <1400px, `.sheet-body` is not a grid and the two divs stack vertically. The `.sheet-columns` sub-grid within the left column goes single-column at <=768px.
+
 ## Workflow Rules
 
 - **Cache busting**: When modifying CSS or JS files, bump the `?v=N` query string on ALL affected `<script>` and `<link>` tags in `index.html`. Always bump all version numbers together.
@@ -81,3 +91,4 @@ Note: `pdftotext` is installed for text extraction. 2-column PDFs may produce ga
 9. **An Abundance of Apocrypha**: Content integrated
 10. **Injuries & Corruption** (Section 9): Memorable/traumatic injuries, corruption tracking, mutations with mechanical bonuses integrated into derived stats
 11. **Non-Core sourcebook review for injuries/corruption**: Checked all books -- no expanded tables or rules beyond Core Rulebook. Only individual talents/abilities that interact with existing systems.
+12. **Wide-screen character sheet layout**: 2-column body (left: stats/abilities/talents, right: wargear) on >=1400px viewports
