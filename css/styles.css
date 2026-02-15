@@ -3217,24 +3217,32 @@ textarea {
 }
 
 /* --- Armor table → cards --- */
+.sheet-armor-table {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+}
+
 .sheet-armor-table thead {
     display: none;
 }
 
-.sheet-armor-table tbody tr {
+/* Each armor group (tbody) becomes a grid card */
+.sheet-armor-group {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 6px 16px;
     padding: 12px;
     border-bottom: 1px solid var(--border-color);
-    align-items: start;
+    width: 100%;
 }
 
-.sheet-armor-table tbody tr:last-child {
-    border-bottom: none;
+/* Flatten tr elements so td cells participate in the tbody grid */
+.sheet-armor-group tr {
+    display: contents;
 }
 
-.sheet-armor-table tbody td {
+.sheet-armor-group td {
     display: block;
     text-align: left;
     padding: 0;
@@ -3245,7 +3253,7 @@ textarea {
     font-size: 13px;
 }
 
-.sheet-armor-table tbody td::before {
+.sheet-armor-group td::before {
     display: block;
     font-size: 9px;
     font-weight: 600;
@@ -3269,35 +3277,40 @@ textarea {
 .sheet-armor-table .sheet-armor-traits::before { content: "Traits"; }
 .sheet-armor-table .sheet-armor-value::before { content: "Value"; }
 
-
-.sheet-armor-table .sheet-armor-desc-row {
-    display: block;
-    padding: 0 12px 12px;
-    border-bottom: 1px solid var(--border-color);
-}
-
+/* Description/keyword rows */
 .sheet-armor-table .sheet-armor-desc-row td {
-    display: block;
+    grid-column: 1 / -1;
     padding: 0;
     background: transparent;
 }
 
 /* --- Equipment table → cards --- */
+.sheet-equipment-table {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+}
+
 .sheet-equipment-table thead {
     display: none;
 }
 
-.sheet-equipment-table tbody tr {
-    display: block;
+/* Each equipment group (tbody) becomes a grid card */
+.sheet-equip-group {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4px;
     padding: 12px;
     border-bottom: 1px solid var(--border-color);
+    width: 100%;
 }
 
-.sheet-equipment-table tbody tr:last-child {
-    border-bottom: none;
+/* Flatten tr elements so td cells participate in the tbody grid */
+.sheet-equip-group tr {
+    display: contents;
 }
 
-.sheet-equipment-table tbody td {
+.sheet-equip-group td {
     display: block;
     text-align: left;
     padding: 0;
@@ -3308,7 +3321,7 @@ textarea {
     font-size: 13px;
 }
 
-.sheet-equipment-table tbody td::before {
+.sheet-equip-group td::before {
     display: block;
     font-size: 9px;
     font-weight: 600;
@@ -3334,14 +3347,9 @@ textarea {
     margin-bottom: 4px;
 }
 
-.sheet-equipment-table .sheet-equip-desc-row {
-    display: block;
-    padding: 0 12px 12px;
-    border-bottom: 1px solid var(--border-color);
-}
-
+/* Description/keyword rows */
 .sheet-equipment-table .sheet-equip-desc-row td {
-    display: block;
+    grid-column: 1 / -1;
     padding: 0;
     background: transparent;
 }
@@ -3353,40 +3361,12 @@ textarea {
         box-sizing: border-box;
     }
 
-    .sheet-armor-table {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .sheet-armor-table tbody {
-        display: contents;
-    }
-
-    .sheet-armor-table tbody tr {
+    .sheet-armor-group {
         width: 50%;
         box-sizing: border-box;
     }
 
-    .sheet-armor-table .sheet-armor-desc-row {
-        width: 50%;
-        box-sizing: border-box;
-    }
-
-    .sheet-equipment-table {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .sheet-equipment-table tbody {
-        display: contents;
-    }
-
-    .sheet-equipment-table tbody tr {
-        width: 50%;
-        box-sizing: border-box;
-    }
-
-    .sheet-equipment-table .sheet-equip-desc-row {
+    .sheet-equip-group {
         width: 50%;
         box-sizing: border-box;
     }

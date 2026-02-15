@@ -726,12 +726,14 @@ const CharacterSheetTab = {
             ` : '';
 
             return `
-                <tr>
-                    <td class="sheet-armor-name">${armor.name}${rarityDisplay}</td>
-                    <td class="sheet-armor-ar">${armor.ar || 0}</td>
-                    <td class="sheet-armor-traits">${traits}</td>
-                </tr>
-                ${descRow}
+                <tbody class="sheet-armor-group">
+                    <tr>
+                        <td class="sheet-armor-name">${armor.name}${rarityDisplay}</td>
+                        <td class="sheet-armor-ar">${armor.ar || 0}</td>
+                        <td class="sheet-armor-traits">${traits}</td>
+                    </tr>
+                    ${descRow}
+                </tbody>
             `;
         }).join('');
 
@@ -746,9 +748,7 @@ const CharacterSheetTab = {
                             <th>Traits</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        ${rows}
-                    </tbody>
+                    ${rows}
                 </table>
             </div>
         `;
@@ -799,11 +799,13 @@ const CharacterSheetTab = {
             ` : '';
 
             return `
-                <tr>
-                    <td class="sheet-equip-name">${equip.name}${rarityDisplay}</td>
-                    <td class="sheet-equip-effect">${equip.effect || '-'}</td>
-                </tr>
-                ${descRow}
+                <tbody class="sheet-equip-group">
+                    <tr>
+                        <td class="sheet-equip-name">${equip.name}${rarityDisplay}</td>
+                        <td class="sheet-equip-effect">${equip.effect || '-'}</td>
+                    </tr>
+                    ${descRow}
+                </tbody>
             `;
         }).join('');
 
@@ -817,9 +819,7 @@ const CharacterSheetTab = {
                             <th>Effect</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        ${rows}
-                    </tbody>
+                    ${rows}
                 </table>
             </div>
         `;
