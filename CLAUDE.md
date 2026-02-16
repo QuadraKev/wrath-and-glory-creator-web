@@ -63,6 +63,10 @@ The Character Sheet tab (`tabs/character-sheet-tab.js`) uses a responsive 2-colu
 
 On screens <1400px, `.sheet-body` is not a grid and the two divs stack vertically. The `.sheet-columns` sub-grid within the left column goes single-column at <=768px.
 
+## Glossary
+
+The glossary (`data/glossary.json`) should be kept in sync with the bestiary app's glossary. Both apps share identical categories: `characterTerms`, `conditions`, `combatTerms`, `terms`, `weaponTraits`, `armorTraits`, `keywords`, `psychicPowers`. If new terms are added to one app, copy them to the other.
+
 ## Workflow Rules
 
 - **Cache busting**: When modifying CSS or JS files, bump the `?v=N` query string on ALL affected `<script>` and `<link>` tags in `index.html`. Always bump all version numbers together.
