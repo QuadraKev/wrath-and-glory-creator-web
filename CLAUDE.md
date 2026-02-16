@@ -80,7 +80,7 @@ Source material PDFs are available locally for reference:
 - Official bestiary: Threat Assessment Daemons & Heretics, Threat Assessment Xenos
 - Homebrew: An Abundance of Apocrypha v9
 
-Note: `pdftotext` is installed for text extraction. 2-column PDFs may produce garbled text.
+**Important**: Always use `pdftotext` to extract text from PDFs -- do NOT try to read PDFs visually. Many sourcebook PDFs have had image assets stripped to reduce file size, making them unreadable as images. 2-column PDFs may produce garbled text with `pdftotext`.
 
 ## Work Completed
 
