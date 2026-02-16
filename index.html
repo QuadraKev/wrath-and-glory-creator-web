@@ -6,7 +6,7 @@
     <meta name="robots" content="noindex, nofollow">
 
     <title>Wrath and Glory Character Creator</title>
-    <link rel="stylesheet" href="css/styles.css?v=31">
+    <link rel="stylesheet" href="css/styles.css?v=32">
 </head>
 <body>
     <div id="app">
@@ -75,15 +75,8 @@
                     </div>
 
                     <div class="sidebar-section">
-                        <div class="sidebar-item" data-section="ascension">
-                            <span class="sidebar-label">3. Ascension</span>
-                            <span id="sidebar-ascension-xp" class="sidebar-xp">0 XP</span>
-                        </div>
-                    </div>
-
-                    <div class="sidebar-section">
                         <div class="sidebar-item" data-section="stats">
-                            <span class="sidebar-label">4. Stats</span>
+                            <span class="sidebar-label">3. Stats</span>
                             <span class="sidebar-sublabel">Attributes & Skills</span>
                             <span id="sidebar-stats-xp" class="sidebar-xp">0 XP</span>
                         </div>
@@ -91,7 +84,7 @@
 
                     <div class="sidebar-section">
                         <div class="sidebar-item" data-section="talents">
-                            <span class="sidebar-label">5. Talents</span>
+                            <span class="sidebar-label">4. Talents</span>
                             <span id="sidebar-talents-count" class="sidebar-count">0 Talents learned</span>
                             <span id="sidebar-talents-xp" class="sidebar-xp">0 XP</span>
                         </div>
@@ -99,13 +92,13 @@
 
                     <div class="sidebar-section">
                         <div class="sidebar-item" data-section="wargear">
-                            <span class="sidebar-label">6. Wargear</span>
+                            <span class="sidebar-label">5. Wargear</span>
                         </div>
                     </div>
 
                     <div class="sidebar-section">
                         <div class="sidebar-item" data-section="powers">
-                            <span class="sidebar-label">7. Powers</span>
+                            <span class="sidebar-label">6. Powers</span>
                             <span id="sidebar-powers-count" class="sidebar-count">0 Powers learned</span>
                             <span id="sidebar-powers-xp" class="sidebar-xp">0 XP</span>
                         </div>
@@ -113,15 +106,23 @@
 
                     <div class="sidebar-section">
                         <div class="sidebar-item" data-section="background">
-                            <span class="sidebar-label">8. Background</span>
+                            <span class="sidebar-label">7. Background</span>
                             <span id="sidebar-faction" class="sidebar-faction">-</span>
                         </div>
                     </div>
 
                     <div class="sidebar-section">
                         <div class="sidebar-item" data-section="injuries">
-                            <span class="sidebar-label">9. Injuries</span>
+                            <span class="sidebar-label">8. Injuries</span>
                             <span class="sidebar-sublabel">Injuries & Corruption</span>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-section">
+                        <div class="sidebar-item" data-section="ascension">
+                            <span class="sidebar-label">9. Ascension</span>
+                            <span id="sidebar-ascension-count" class="sidebar-count"></span>
+                            <span id="sidebar-ascension-xp" class="sidebar-xp">0 XP</span>
                         </div>
                     </div>
                 </aside>
@@ -250,15 +251,6 @@
                         </div>
                         <div id="archetype-detail" class="archetype-detail hidden">
                             <!-- Selected archetype details -->
-                        </div>
-                    </div>
-
-                    <!-- Ascension Section -->
-                    <div id="section-ascension" class="builder-section">
-                        <h2>Select an Ascension Package</h2>
-                        <p class="section-desc">Ascension packages represent major character milestones and advancement.</p>
-                        <div id="ascension-list" class="card-grid">
-                            <!-- Ascension packages populated by JavaScript -->
                         </div>
                     </div>
 
@@ -424,6 +416,15 @@
                         <!-- Content rendered by InjuriesTab -->
                     </div>
 
+                    <!-- Ascension Section -->
+                    <div id="section-ascension" class="builder-section">
+                        <h2>Ascension</h2>
+                        <p class="section-desc">Ascension represents major character advancement, increasing your effective tier. For each ascension slot, choose an Ascension Package (costs XP) or an Archetype Ascension (adopt a higher-tier archetype's abilities).</p>
+                        <div id="ascension-content">
+                            <!-- Ascension slots populated by JavaScript -->
+                        </div>
+                    </div>
+
                     <!-- Section Navigation -->
                     <div class="section-nav">
                         <button id="btn-prev-section" class="btn-secondary" disabled>&#9664; Previous</button>
@@ -494,26 +495,26 @@
     </script>
 
     <!-- Scripts -->
-    <script src="js/web-api.js?v=31"></script>
-    <script src="js/data-loader.js?v=31"></script>
-    <script src="js/xp-calculator.js?v=31"></script>
-    <script src="js/derived-stats.js?v=31"></script>
-    <script src="js/prerequisite.js?v=31"></script>
-    <script src="js/state.js?v=31"></script>
-    <script src="js/character-io.js?v=31"></script>
-    <script src="js/glossary.js?v=31"></script>
-    <script src="tabs/setting-tab.js?v=31"></script>
-    <script src="tabs/species-tab.js?v=31"></script>
-    <script src="tabs/archetype-tab.js?v=31"></script>
-    <script src="tabs/ascension-tab.js?v=31"></script>
-    <script src="tabs/stats-tab.js?v=31"></script>
-    <script src="tabs/talents-tab.js?v=31"></script>
-    <script src="tabs/wargear-tab.js?v=31"></script>
-    <script src="tabs/powers-tab.js?v=31"></script>
-    <script src="tabs/background-tab.js?v=31"></script>
-    <script src="tabs/injuries-tab.js?v=31"></script>
-    <script src="tabs/character-sheet-tab.js?v=31"></script>
-    <script src="tabs/glossary-tab.js?v=31"></script>
-    <script src="js/app.js?v=31"></script>
+    <script src="js/web-api.js?v=32"></script>
+    <script src="js/data-loader.js?v=32"></script>
+    <script src="js/xp-calculator.js?v=32"></script>
+    <script src="js/derived-stats.js?v=32"></script>
+    <script src="js/prerequisite.js?v=32"></script>
+    <script src="js/state.js?v=32"></script>
+    <script src="js/character-io.js?v=32"></script>
+    <script src="js/glossary.js?v=32"></script>
+    <script src="tabs/setting-tab.js?v=32"></script>
+    <script src="tabs/species-tab.js?v=32"></script>
+    <script src="tabs/archetype-tab.js?v=32"></script>
+    <script src="tabs/ascension-tab.js?v=32"></script>
+    <script src="tabs/stats-tab.js?v=32"></script>
+    <script src="tabs/talents-tab.js?v=32"></script>
+    <script src="tabs/wargear-tab.js?v=32"></script>
+    <script src="tabs/powers-tab.js?v=32"></script>
+    <script src="tabs/background-tab.js?v=32"></script>
+    <script src="tabs/injuries-tab.js?v=32"></script>
+    <script src="tabs/character-sheet-tab.js?v=32"></script>
+    <script src="tabs/glossary-tab.js?v=32"></script>
+    <script src="js/app.js?v=32"></script>
 </body>
 </html>

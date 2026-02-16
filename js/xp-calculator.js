@@ -173,11 +173,14 @@ const XPCalculator = {
         }
 
         // Ascension packages
-        for (const packageId of character.ascensionPackages || []) {
-            const pkg = DataLoader.getAscensionPackages().find(p => p.id === packageId);
-            if (pkg) {
-                spent += pkg.cost || 0;
+        for (const asc of character.ascensions || []) {
+            if (asc.type === 'package' && asc.packageId) {
+                const pkg = DataLoader.getAscensionPackages().find(p => p.id === asc.packageId);
+                if (pkg) {
+                    spent += pkg.costMultiplier ? pkg.costMultiplier * asc.targetTier : parseInt(pkg.cost) || 0;
+                }
             }
+            // Archetype ascension has no direct XP cost
         }
 
         // Attributes beyond baseline
@@ -222,9 +225,12 @@ const XPCalculator = {
         return {
             species: species?.cost || 0,
             archetype: (archetype?.cost || 0) + customAbilityCost,
-            ascension: (character.ascensionPackages || []).reduce((sum, id) => {
-                const pkg = DataLoader.getAscensionPackages().find(p => p.id === id);
-                return sum + (pkg?.cost || 0);
+            ascension: (character.ascensions || []).reduce((sum, asc) => {
+                if (asc.type === 'package' && asc.packageId) {
+                    const pkg = DataLoader.getAscensionPackages().find(p => p.id === asc.packageId);
+                    if (pkg) return sum + (pkg.costMultiplier ? pkg.costMultiplier * asc.targetTier : parseInt(pkg.cost) || 0);
+                }
+                return sum;
             }, 0),
             attributes: this.calculateAttributeXP(character, archetype),
             skills: this.calculateSkillXP(character, archetype),

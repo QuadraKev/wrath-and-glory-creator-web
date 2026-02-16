@@ -8,7 +8,7 @@ const App = {
     currentSection: 'setting',
 
     // Ordered list of builder sections for prev/next navigation
-    SECTION_ORDER: ['setting', 'species', 'archetype', 'ascension', 'stats', 'talents', 'wargear', 'powers', 'background', 'injuries'],
+    SECTION_ORDER: ['setting', 'species', 'archetype', 'stats', 'talents', 'wargear', 'powers', 'background', 'injuries', 'ascension'],
 
     // Initialize the application
     async init() {
@@ -335,7 +335,11 @@ const App = {
         const remaining = total - spent;
 
         const xpText = `${spent} / ${total} XP`;
-        const tierText = `Tier ${character.tier} Campaign`;
+        const effectiveTier = State.getEffectiveTier();
+        const startingTier = character.tier;
+        const tierText = effectiveTier > startingTier
+            ? `Tier ${startingTier} Campaign (Effective Tier ${effectiveTier})`
+            : `Tier ${startingTier} Campaign`;
 
         // Update all XP displays
         document.getElementById('xp-display').textContent = xpText;
@@ -389,6 +393,11 @@ const App = {
         document.getElementById('sidebar-archetype-xp').textContent = `${breakdown.archetype} XP`;
 
         // Ascension
+        const ascensionCount = (character.ascensions || []).length;
+        const ascensionCountEl = document.getElementById('sidebar-ascension-count');
+        if (ascensionCountEl) {
+            ascensionCountEl.textContent = ascensionCount > 0 ? `${ascensionCount} Ascension${ascensionCount > 1 ? 's' : ''}` : '';
+        }
         document.getElementById('sidebar-ascension-xp').textContent = `${breakdown.ascension} XP`;
 
         // Stats

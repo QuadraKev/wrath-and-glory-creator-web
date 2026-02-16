@@ -53,7 +53,8 @@ const State = {
                 wargear: []
             },
 
-            ascensionPackages: [],
+            ascensions: [],
+            // Each entry: { targetTier: N, type: 'package'|'archetype', packageId: 'id'|null, archetypeId: 'id'|null }
 
             attributes: {
                 strength: 1,
@@ -138,6 +139,23 @@ const State = {
         // Ensure species subOptions is properly initialized
         if (this.character.species && !this.character.species.subOptions) {
             this.character.species.subOptions = [];
+        }
+
+        // Migrate old ascensionPackages array to new ascensions format
+        if (this.character.ascensionPackages && !this.character.ascensions) {
+            const startingTier = this.character.tier || 1;
+            this.character.ascensions = this.character.ascensionPackages.map((packageId, index) => ({
+                targetTier: startingTier + index + 1,
+                type: 'package',
+                packageId: packageId,
+                archetypeId: null
+            }));
+        }
+        if (this.character.ascensionPackages) {
+            delete this.character.ascensionPackages;
+        }
+        if (!this.character.ascensions) {
+            this.character.ascensions = [];
         }
 
         this.notifyListeners('load');
@@ -1063,21 +1081,42 @@ const State = {
         this.notifyListeners('wrathFaithReset');
     },
 
-    // Add ascension package
-    addAscensionPackage(packageId) {
-        if (!this.character.ascensionPackages.includes(packageId)) {
-            this.character.ascensionPackages.push(packageId);
-            this.notifyListeners('ascension', packageId);
+    // Set or clear an ascension for a specific target tier
+    // data = { type: 'package'|'archetype', packageId, archetypeId } or null to clear
+    setAscension(targetTier, data) {
+        if (!this.character.ascensions) this.character.ascensions = [];
+
+        // Remove any existing entry for this target tier
+        this.character.ascensions = this.character.ascensions.filter(a => a.targetTier !== targetTier);
+
+        if (data) {
+            this.character.ascensions.push({
+                targetTier: targetTier,
+                type: data.type,
+                packageId: data.packageId || null,
+                archetypeId: data.archetypeId || null
+            });
+            // Sort by targetTier for consistency
+            this.character.ascensions.sort((a, b) => a.targetTier - b.targetTier);
         }
+
+        this.notifyListeners('ascension', targetTier);
     },
 
-    // Remove ascension package
-    removeAscensionPackage(packageId) {
-        const index = this.character.ascensionPackages.indexOf(packageId);
-        if (index !== -1) {
-            this.character.ascensionPackages.splice(index, 1);
-            this.notifyListeners('ascension', packageId);
-        }
+    // Get the effective tier (starting tier + number of non-creation ascensions)
+    // Creation ascension = slot where targetTier <= starting tier
+    getEffectiveTier() {
+        const startingTier = this.character.tier || 1;
+        const ascensions = this.character.ascensions || [];
+        const earnedAscensions = ascensions.filter(a => a.targetTier > startingTier).length;
+        return Math.min(5, startingTier + earnedAscensions);
+    },
+
+    // Get the archetype's tier (for determining creation ascension availability)
+    getArchetypeTier() {
+        const archetype = DataLoader.getArchetype(this.character.archetype?.id);
+        if (this.character.archetype?.id === 'custom') return this.character.tier || 1;
+        return archetype?.tier || this.character.tier || 1;
     },
 
     // Set enabled sources

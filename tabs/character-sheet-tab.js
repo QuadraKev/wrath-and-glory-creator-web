@@ -52,6 +52,7 @@ const CharacterSheetTab = {
                     ${this.renderPsychicPowers(character)}
                     ${this.renderSpeciesAbilities(character, species)}
                     ${this.renderArchetypeAbilities(archetype)}
+                    ${this.renderAscensions(character)}
                     ${this.renderTalents(character)}
                     ${this.renderInjuriesCorruption(character)}
                     ${this.renderBackground(character)}
@@ -215,17 +216,20 @@ const CharacterSheetTab = {
             ? (character.customArchetype?.name || 'Custom Archetype')
             : (archetype?.name || '-');
         const tier = character.tier || 1;
+        const effectiveTier = State.getEffectiveTier();
         const rank = character.rank || 1;
 
         const keywordHtml = keywords.length > 0
             ? keywords.map(k => `<span class="sheet-keyword">${k}</span>`).join('')
             : '<span class="sheet-keyword">-</span>';
 
+        const tierDisplay = effectiveTier > tier ? `Tier ${effectiveTier} (base ${tier})` : `Tier ${tier}`;
+
         return `
             <div class="sheet-section sheet-header-section">
                 <h1 class="sheet-character-name">${this.escapeHtml(name)}</h1>
                 <div class="sheet-subtitle">
-                    ${speciesName} &bull; ${archetypeName} &bull; Tier ${tier} &bull; Rank ${rank}
+                    ${speciesName} &bull; ${archetypeName} &bull; ${tierDisplay} &bull; Rank ${rank}
                 </div>
                 <div class="sheet-keywords">
                     ${keywordHtml}
@@ -972,6 +976,66 @@ const CharacterSheetTab = {
         `;
     },
 
+    // Render ascension details
+    renderAscensions(character) {
+        const ascensions = character.ascensions || [];
+        if (ascensions.length === 0) return '';
+
+        const items = ascensions.map(asc => {
+            let name = '';
+            let details = '';
+
+            if (asc.type === 'package' && asc.packageId) {
+                const pkg = DataLoader.getAscensionPackages().find(p => p.id === asc.packageId);
+                if (pkg) {
+                    name = pkg.name;
+                    const xpCost = pkg.costMultiplier ? pkg.costMultiplier * asc.targetTier : parseInt(pkg.cost) || 0;
+                    details = `<span class="sheet-ascension-cost">${xpCost} XP</span>`;
+                    if (pkg.benefits && pkg.benefits.length > 0) {
+                        details += `<ul class="sheet-ascension-benefits">${pkg.benefits.map(b => `<li>${b}</li>`).join('')}</ul>`;
+                    }
+                    if (pkg.keywordsGained && pkg.keywordsGained.length > 0) {
+                        details += `<div class="sheet-ascension-keywords">Keywords: ${pkg.keywordsGained.join(', ')}</div>`;
+                    }
+                }
+            } else if (asc.type === 'archetype' && asc.archetypeId) {
+                const arch = DataLoader.getArchetype(asc.archetypeId);
+                if (arch) {
+                    name = `Archetype: ${arch.name}`;
+                    details = `<span class="sheet-ascension-cost">0 XP</span>`;
+                    if (arch.abilities && arch.abilities.length > 0) {
+                        const abilityNames = arch.abilities.map(a => a.name).join(', ');
+                        details += `<div>Abilities: ${abilityNames}</div>`;
+                    }
+                }
+            }
+
+            if (!name) return '';
+
+            return `
+                <div class="sheet-ascension-item">
+                    <div class="sheet-ascension-header">
+                        <span class="sheet-ascension-name">${name}</span>
+                        <span class="sheet-ascension-tier">Tier ${asc.targetTier}</span>
+                    </div>
+                    <div class="sheet-ascension-details">${details}</div>
+                </div>
+            `;
+        }).filter(Boolean).join('');
+
+        if (!items) return '';
+
+        const effectiveTier = State.getEffectiveTier();
+        const startingTier = character.tier || 1;
+
+        return `
+            <div class="sheet-section">
+                <h2 class="sheet-section-title">Ascension${effectiveTier > startingTier ? ` (Effective Tier ${effectiveTier})` : ''}</h2>
+                ${items}
+            </div>
+        `;
+    },
+
     // Render talents
     renderTalents(character) {
         if (!character.talents || character.talents.length === 0) {
@@ -1320,8 +1384,10 @@ const CharacterSheetTab = {
         const archetypeName = character.archetype?.id === 'custom'
             ? (character.customArchetype?.name || 'Custom Archetype')
             : (archetype?.name || '-');
+        const effectiveTierCopy = State.getEffectiveTier();
+        const tierCopyDisplay = effectiveTierCopy > character.tier ? `Tier ${effectiveTierCopy} (base ${character.tier})` : `Tier ${character.tier}`;
         lines.push(name);
-        lines.push(`${speciesName} | ${archetypeName} | Tier ${character.tier} | Rank ${character.rank}`);
+        lines.push(`${speciesName} | ${archetypeName} | ${tierCopyDisplay} | Rank ${character.rank}`);
         if (keywords.length > 0) lines.push(`Keywords: ${keywords.join(', ')}`);
         lines.push('');
 

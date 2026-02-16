@@ -211,7 +211,7 @@ const DerivedStats = {
 
     // Calculate Max Wounds (Tier x 2 + Toughness + Species Bonus + Background Bonus + Talent Bonuses)
     calculateMaxWounds(character) {
-        const tier = character.tier || 1;
+        const tier = State.getEffectiveTier ? State.getEffectiveTier() : (character.tier || 1);
         const rank = character.rank || 1;
         const toughness = this.getEffectiveAttribute(character, 'toughness');
         const species = DataLoader.getSpecies(character.species?.id);
@@ -232,7 +232,7 @@ const DerivedStats = {
 
     // Calculate Max Shock (Willpower + Tier + Background Bonus + Species Sub-Option Bonus + Talent Bonuses)
     calculateMaxShock(character) {
-        let tier = character.tier || 1;
+        let tier = State.getEffectiveTier ? State.getEffectiveTier() : (character.tier || 1);
         const willpower = this.getEffectiveAttribute(character, 'willpower');
         const backgroundBonus = this.getBackgroundBonus(character, 'maxShock');
         const subOptionBonus = this.getSpeciesSubOptionBonus(character, 'maxShock');
@@ -305,18 +305,32 @@ const DerivedStats = {
         return base + talentBonus + mutationBonus;
     },
 
-    // Calculate Influence (Fellowship - 1 + Archetype Bonus + Background Bonus)
+    // Calculate Influence (Fellowship - 1 + Archetype Bonus + Background Bonus + Ascension Bonuses)
     calculateInfluence(character) {
         const fellowship = this.getEffectiveAttribute(character, 'fellowship');
         const archetype = DataLoader.getArchetype(character.archetype?.id);
         const archetypeBonus = archetype?.influenceModifier || 0;
         const backgroundBonus = this.getBackgroundBonus(character, 'influence');
-        return Math.max(0, fellowship - 1 + archetypeBonus + backgroundBonus);
+
+        // Sum influence modifiers from ascension packages and archetype ascensions
+        let ascensionBonus = 0;
+        for (const asc of character.ascensions || []) {
+            if (asc.type === 'package' && asc.packageId) {
+                const pkg = DataLoader.getAscensionPackages().find(p => p.id === asc.packageId);
+                if (pkg) ascensionBonus += pkg.influenceModifier || 0;
+            }
+            if (asc.type === 'archetype' && asc.archetypeId) {
+                const arch = DataLoader.getArchetype(asc.archetypeId);
+                if (arch) ascensionBonus += arch.influenceModifier || 0;
+            }
+        }
+
+        return Math.max(0, fellowship - 1 + archetypeBonus + backgroundBonus + ascensionBonus);
     },
 
-    // Calculate Wealth (equal to Tier + Background Bonus)
+    // Calculate Wealth (equal to Effective Tier + Background Bonus)
     calculateWealth(character) {
-        const base = character.tier || 1;
+        const base = State.getEffectiveTier ? State.getEffectiveTier() : (character.tier || 1);
         const backgroundBonus = this.getBackgroundBonus(character, 'wealth');
         return base + backgroundBonus;
     },
