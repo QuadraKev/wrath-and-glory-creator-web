@@ -52,13 +52,29 @@ Each data entry has a `source` field using these lowercase identifiers:
 - **Weapons**: `damage: { base, attribute, bonus }`, `range: { short, medium, long }`
 - **IDs**: snake_case (e.g., `angel_of_death`). Apocrypha IDs use `_aaa` suffix to avoid conflicts.
 - **Traits/keywords**: Arrays of strings
+- **Ascension packages**: `costMultiplier` * targetTier = XP cost. Fixed-cost packages have `costMultiplier: 0` and a numeric string in `cost` (e.g., `"30"`). The `cost` string field (e.g., `"10 x new Tier"`) is display-only — always use `costMultiplier` for calculation.
+
+### Ascension Data Model
+
+Character ascension data is stored in `character.ascensions` (array). Each entry:
+```json
+{ "targetTier": 3, "type": "package", "packageId": "stay_the_course", "archetypeId": null }
+```
+- `targetTier`: The tier being ascended TO
+- `type`: `"package"` or `"archetype"` (mutually exclusive per slot)
+- `packageId`: ID from `ascension-packages.json` (if type=package)
+- `archetypeId`: ID from `archetypes.json` (if type=archetype)
+
+**Effective tier** = starting tier + count of ascensions where `targetTier > startingTier`. Use `State.getEffectiveTier()`.
+**Starting tier** (`character.tier`) determines XP pool — ascensions cost XP, they don't add XP.
+**Old format migration**: `loadCharacter()` auto-converts old `ascensionPackages: ["id1"]` arrays to the new format.
 
 ## Character Sheet Layout
 
 The Character Sheet tab (`tabs/character-sheet-tab.js`) uses a responsive 2-column layout on wide screens (>=1400px via `@media` query in `styles.css`). The HTML structure is:
 
 - `.sheet-body` — 2-column CSS grid on wide screens, stacks on narrow
-  - `.sheet-body-left` — Attributes+Traits | Skills (`.sheet-columns` 2-col sub-grid), then Psychic Powers, Species Abilities, Archetype Abilities, Talents, Injuries & Corruption, Background, Notes
+  - `.sheet-body-left` — Attributes+Traits | Skills (`.sheet-columns` 2-col sub-grid), then Psychic Powers, Species Abilities, Archetype Abilities, Ascension, Talents, Injuries & Corruption, Background, Notes
   - `.sheet-body-right` — Weapons, Armor, Equipment
 
 On screens <1400px, `.sheet-body` is not a grid and the two divs stack vertically. The `.sheet-columns` sub-grid within the left column goes single-column at <=768px.
@@ -96,3 +112,9 @@ Source material PDFs are available locally for reference:
 10. **Injuries & Corruption** (Section 9): Memorable/traumatic injuries, corruption tracking, mutations with mechanical bonuses integrated into derived stats
 11. **Non-Core sourcebook review for injuries/corruption**: Checked all books -- no expanded tables or rules beyond Core Rulebook. Only individual talents/abilities that interact with existing systems.
 12. **Wide-screen character sheet layout**: 2-column body (left: stats/abilities/talents, right: wargear) on >=1400px viewports
+13. **Ascension system**: Slot-based ascension with package/archetype choice per tier, effective tier tracking, fixed XP/influence/derived stat calculations, backward compat migration from old format
+
+## Builder Section Order
+
+Sidebar and navigation order (defined in `App.SECTION_ORDER`):
+Setting, 1-Species, 2-Archetype, 3-Stats, 4-Talents, 5-Wargear, 6-Powers, 7-Background, 8-Injuries, 9-Ascension
