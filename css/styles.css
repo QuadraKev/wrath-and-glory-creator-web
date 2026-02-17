@@ -166,6 +166,12 @@ body {
     gap: 4px;
     flex: 1;
     overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.tab-nav-tabs::-webkit-scrollbar {
+    display: none;
 }
 
 .tab-btn {
