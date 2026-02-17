@@ -105,7 +105,7 @@ const AscensionTab = {
             const prereqClass = prereqResult.met ? '' : ' ascension-prereq-unmet';
 
             const card = `
-                <div class="card ascension-card${isSelected ? ' selected' : ''}${prereqClass}" data-type="package" data-id="${pkg.id}" data-target-tier="${slot.targetTier}">
+                <div class="card ascension-card${isSelected ? ' selected' : ''}${prereqClass}" data-type="package" data-id="${pkg.id}" data-target-tier="${slot.targetTier}" data-prereqs-met="${prereqResult.met}">
                     <div class="card-header">
                         <span class="card-title">${pkg.name}</span>
                         <span class="card-xp">${xpCost} XP</span>
@@ -438,6 +438,8 @@ const AscensionTab = {
                     if (current?.packageId === id) {
                         State.setAscension(targetTier, { type: 'package', packageId: null, archetypeId: null });
                     } else {
+                        // Block selection if prerequisites aren't met
+                        if (card.dataset.prereqsMet === 'false') return;
                         State.setAscension(targetTier, { type: 'package', packageId: id, archetypeId: null });
                     }
                 } else if (type === 'archetype') {
