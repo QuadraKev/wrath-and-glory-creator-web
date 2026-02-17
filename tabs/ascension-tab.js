@@ -240,7 +240,7 @@ const AscensionTab = {
                 }
 
                 const card = `
-                    <div class="card ascension-card${isSelected ? ' selected' : ''}${!allMet ? ' ascension-prereq-unmet' : ''}" data-type="archetype" data-id="${a.id}" data-target-tier="${slot.targetTier}">
+                    <div class="card ascension-card${isSelected ? ' selected' : ''}${!allMet ? ' ascension-prereq-unmet' : ''}" data-type="archetype" data-id="${a.id}" data-target-tier="${slot.targetTier}" data-prereqs-met="${allMet}">
                         <div class="card-header">
                             <span class="card-title">${a.name}</span>
                             <span class="card-xp">0 XP</span>
@@ -445,6 +445,8 @@ const AscensionTab = {
                     if (current?.archetypeId === id) {
                         State.setAscension(targetTier, { type: 'archetype', packageId: null, archetypeId: null });
                     } else {
+                        // Block selection if prerequisites aren't met
+                        if (card.dataset.prereqsMet === 'false') return;
                         State.setAscension(targetTier, { type: 'archetype', packageId: null, archetypeId: id });
                     }
                 }
