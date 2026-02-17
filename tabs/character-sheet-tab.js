@@ -918,8 +918,8 @@ const CharacterSheetTab = {
         return `
             <div class="sheet-section">
                 <h2 class="sheet-section-title">Species Abilities</h2>
-                <div class="source-ref">${DataLoader.formatSourcePage(species)}</div>
                 ${abilitiesHtml}
+                <div class="source-ref">${DataLoader.formatSourcePage(species)}</div>
             </div>
         `;
     },
@@ -990,8 +990,8 @@ const CharacterSheetTab = {
         return `
             <div class="sheet-section">
                 <h2 class="sheet-section-title">Archetype Abilities</h2>
-                ${archetype ? `<div class="source-ref">${DataLoader.formatSourcePage(archetype)}</div>` : ''}
                 ${allAbilitiesHtml}
+                ${archetype ? `<div class="source-ref">${DataLoader.formatSourcePage(archetype)}</div>` : ''}
             </div>
         `;
     },
