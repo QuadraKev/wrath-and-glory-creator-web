@@ -202,8 +202,36 @@ const WargearTab = {
             `;
         }
 
+        // Build ascension wargear sections for archetype ascensions
+        let ascensionGearHtml = '';
+        const character2 = State.getCharacter();
+        for (const asc of character2.ascensions || []) {
+            if (asc.type === 'archetype' && asc.archetypeId) {
+                const ascArchetype = DataLoader.getArchetype(asc.archetypeId);
+                if (ascArchetype?.startingWargear && ascArchetype.startingWargear.length > 0) {
+                    ascensionGearHtml += `
+                        <div class="starting-wargear-notice">
+                            <h4>Ascension Wargear (${ascArchetype.name})</h4>
+                            <p>Your archetype ascension to ${ascArchetype.name} provides wargear:</p>
+                            <ul>
+                                ${ascArchetype.startingWargear.map(entry => {
+                                    const id = typeof entry === 'string' ? entry : entry.id;
+                                    const qty = typeof entry === 'object' ? (entry.qty || 1) : 1;
+                                    const item = DataLoader.getWargearItem(id);
+                                    const name = item?.name || id;
+                                    return `<li>${qty > 1 ? qty + 'x ' : ''}${name}</li>`;
+                                }).join('')}
+                            </ul>
+                            <button class="btn-primary btn-add-ascension-wargear" data-archetype-id="${ascArchetype.id}">Add ${ascArchetype.name} Wargear</button>
+                        </div>
+                    `;
+                }
+            }
+        }
+
         container.innerHTML = `
             ${startingGearHtml}
+            ${ascensionGearHtml}
             <div class="wargear-browser">
                 <div class="wargear-browser-controls">
                     <input type="text" id="wargear-search" class="search-input" placeholder="Search wargear..." value="${this.escapeHtml(this.searchQuery)}">
@@ -237,6 +265,27 @@ const WargearTab = {
                 this.render();
             });
         }
+
+        // Ascension wargear buttons
+        container.querySelectorAll('.btn-add-ascension-wargear').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const ascArchetypeId = btn.dataset.archetypeId;
+                const ascArchetype = DataLoader.getArchetype(ascArchetypeId);
+                if (ascArchetype?.startingWargear) {
+                    for (const entry of ascArchetype.startingWargear) {
+                        if (typeof entry === 'string') {
+                            State.addWargear(entry, true);
+                        } else if (typeof entry === 'object' && entry.id) {
+                            const qty = entry.qty || 1;
+                            for (let i = 0; i < qty; i++) {
+                                State.addWargear(entry.id, true);
+                            }
+                        }
+                    }
+                    this.render();
+                }
+            });
+        });
 
         document.getElementById('wargear-search').addEventListener('input', (e) => {
             this.searchQuery = e.target.value.toLowerCase();

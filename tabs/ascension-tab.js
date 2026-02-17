@@ -126,9 +126,39 @@ const AscensionTab = {
             `;
 
             html += card;
+
+            // Show choice UI if this package is selected and requires a choice
+            if (isSelected && pkg.requiresChoice) {
+                html += this.renderPackageChoiceUI(pkg, slot, current);
+            }
         }
 
         html += '</div>';
+        return html;
+    },
+
+    // Render choice UI for a package that requires a choice (e.g., Demanding Patron)
+    renderPackageChoiceUI(pkg, slot, current) {
+        if (!pkg.choiceOptions) return '';
+
+        const choices = current?.choices || {};
+        const currentChoice = choices[pkg.choiceType] || null;
+
+        let html = `<div class="ascension-choice-ui" data-target-tier="${slot.targetTier}" data-choice-type="${pkg.choiceType}">`;
+        html += `<div class="ascension-choice-label">Choose a benefit:</div>`;
+        html += `<div class="ascension-choice-options">`;
+
+        for (const option of pkg.choiceOptions) {
+            const isChecked = currentChoice === option.value;
+            html += `
+                <label class="ascension-choice-radio">
+                    <input type="radio" name="ascension-choice-${slot.targetTier}" value="${option.value}" ${isChecked ? 'checked' : ''}>
+                    <span>${option.label}</span>
+                </label>
+            `;
+        }
+
+        html += `</div></div>`;
         return html;
     },
 
@@ -196,8 +226,12 @@ const AscensionTab = {
 
                 const abilities = (a.abilities || []).map(ab => ab.name).join(', ');
 
+                // Check stat prerequisites (archetype's attributeBonus/skillBonus as prereqs)
+                const statPrereqs = this.checkArchetypeAscensionPrereqs(a, character);
+                const allMet = rankMet && statPrereqs.met;
+
                 const card = `
-                    <div class="card ascension-card${isSelected ? ' selected' : ''}${!rankMet ? ' ascension-prereq-unmet' : ''}" data-type="archetype" data-id="${a.id}" data-target-tier="${slot.targetTier}">
+                    <div class="card ascension-card${isSelected ? ' selected' : ''}${!allMet ? ' ascension-prereq-unmet' : ''}" data-type="archetype" data-id="${a.id}" data-target-tier="${slot.targetTier}">
                         <div class="card-header">
                             <span class="card-title">${a.name}</span>
                             <span class="card-xp">0 XP</span>
@@ -206,6 +240,7 @@ const AscensionTab = {
                             <span>Tier ${a.tier} ${a.faction}</span>
                             ${a.influenceModifier ? ` | <span>Influence: ${a.influenceModifier > 0 ? '+' : ''}${a.influenceModifier}</span>` : ''}
                         </div>
+                        ${statPrereqs.text ? `<div class="ascension-prereqs${statPrereqs.met ? '' : ' unmet'}">${statPrereqs.text}</div>` : ''}
                         <div class="card-description">${a.description || ''}</div>
                         ${abilities ? `<div class="ascension-benefits"><strong>Abilities:</strong> ${abilities}</div>` : ''}
                     </div>
@@ -313,6 +348,40 @@ const AscensionTab = {
         };
     },
 
+    // Check archetype ascension stat prerequisites
+    // The archetype's attributeBonus and skillBonus represent the minimum stats needed
+    checkArchetypeAscensionPrereqs(archetype, character) {
+        const parts = [];
+        let allMet = true;
+
+        // Attribute prerequisites from archetype's attributeBonus
+        if (archetype.attributeBonus) {
+            for (const [attr, val] of Object.entries(archetype.attributeBonus)) {
+                const current = character.attributes?.[attr] || 1;
+                const met = current >= val;
+                if (!met) allMet = false;
+                const attrName = DerivedStats.formatAttributeName(attr);
+                parts.push(`<span class="${met ? '' : 'ascension-stat-unmet'}">${attrName} ${val}${met ? '' : ` (have ${current})`}</span>`);
+            }
+        }
+
+        // Skill prerequisites from archetype's skillBonus
+        if (archetype.skillBonus) {
+            for (const [skill, val] of Object.entries(archetype.skillBonus)) {
+                const current = character.skills?.[skill] || 0;
+                const met = current >= val;
+                if (!met) allMet = false;
+                const skillName = DerivedStats.formatSkillName(skill);
+                parts.push(`<span class="${met ? '' : 'ascension-stat-unmet'}">${skillName} ${val}${met ? '' : ` (have ${current})`}</span>`);
+            }
+        }
+
+        return {
+            met: allMet,
+            text: parts.length > 0 ? `Stat Prerequisites: ${parts.join(', ')}` : ''
+        };
+    },
+
     // Get skill value from character, handling snake_case skill keys from data
     getSkillValue(character, skillKey) {
         // Convert snake_case to camelCase
@@ -371,6 +440,17 @@ const AscensionTab = {
                     }
                 }
                 this.render();
+            });
+        });
+
+        // Package choice radio buttons (e.g., Demanding Patron)
+        container.querySelectorAll('.ascension-choice-ui input[type="radio"]').forEach(radio => {
+            radio.addEventListener('change', (e) => {
+                const choiceUI = e.target.closest('.ascension-choice-ui');
+                const targetTier = parseInt(choiceUI.dataset.targetTier);
+                const choiceType = choiceUI.dataset.choiceType;
+                const value = e.target.value;
+                State.setAscensionChoice(targetTier, choiceType, value);
             });
         });
     },

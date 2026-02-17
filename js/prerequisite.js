@@ -208,6 +208,16 @@ const PrerequisiteChecker = {
             character.customArchetype.keywords.forEach(k => keywords.add(k));
         }
 
+        // Ascension package keywords (e.g., PSYKER from Psychic Revelations)
+        for (const asc of character.ascensions || []) {
+            if (asc.type === 'package' && asc.packageId) {
+                const pkg = DataLoader.getAscensionPackages().find(p => p.id === asc.packageId);
+                if (pkg?.keywordsGranted) {
+                    pkg.keywordsGranted.forEach(k => keywords.add(k));
+                }
+            }
+        }
+
         // Remove placeholder keywords if their actual value exists
         // [CHAPTER] is replaced by the actual chapter name
         if (hasChapterKeyword) {

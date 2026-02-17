@@ -314,10 +314,17 @@ const DerivedStats = {
 
         // Sum influence modifiers from ascension packages and archetype ascensions
         let ascensionBonus = 0;
+        const startingTier = character.tier || 1;
         for (const asc of character.ascensions || []) {
             if (asc.type === 'package' && asc.packageId) {
                 const pkg = DataLoader.getAscensionPackages().find(p => p.id === asc.packageId);
                 if (pkg) ascensionBonus += pkg.influenceModifier || 0;
+
+                // Demanding Patron: +2 Influence per Tier Ascended if "influence" choice is selected
+                if (asc.packageId === 'demanding_patron' && asc.choices?.patronBenefit === 'influence') {
+                    const tiersAscended = Math.max(0, asc.targetTier - startingTier);
+                    ascensionBonus += 2 * tiersAscended;
+                }
             }
             if (asc.type === 'archetype' && asc.archetypeId) {
                 const arch = DataLoader.getArchetype(asc.archetypeId);

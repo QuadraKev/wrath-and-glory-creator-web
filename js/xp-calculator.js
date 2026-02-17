@@ -116,6 +116,8 @@ const XPCalculator = {
     calculateTalentXP(character) {
         let xp = 0;
         for (const talentEntry of character.talents || []) {
+            // Skip ascension-granted talents (they don't cost XP)
+            if (typeof talentEntry === 'object' && talentEntry.ascensionGranted) continue;
             // Handle both string (old format) and object (new format) entries
             const talentId = typeof talentEntry === 'string' ? talentEntry : talentEntry.id;
             const talent = DataLoader.getTalent(talentId);

@@ -276,6 +276,7 @@ const TalentsTab = {
             // Handle both old format (string) and new format (object)
             const talentId = typeof talentEntry === 'string' ? talentEntry : talentEntry.id;
             const talentChoice = typeof talentEntry === 'object' ? talentEntry.choice : null;
+            const isAscensionGranted = typeof talentEntry === 'object' && talentEntry.ascensionGranted;
 
             const talent = DataLoader.getTalent(talentId);
             if (!talent) continue;
@@ -308,25 +309,33 @@ const TalentsTab = {
                 ? `<div class="selected-talent-flavor">${talent.flavor}</div>`
                 : '';
 
+            // Ascension-granted badge and remove button
+            const grantedBadge = isAscensionGranted ? '<span class="badge-starting">Ascension</span>' : '';
+            const removeBtn = isAscensionGranted
+                ? ''
+                : `<button class="btn-remove" data-id="${talentId}">REMOVE</button>`;
+
             const item = document.createElement('div');
             item.className = 'selected-talent';
             item.innerHTML = `
                 <div class="selected-talent-header">
-                    <span class="selected-talent-name">${displayName}</span>
-                    <button class="btn-remove" data-id="${talentId}">REMOVE</button>
+                    <span class="selected-talent-name">${displayName} ${grantedBadge}</span>
+                    ${removeBtn}
                 </div>
                 <div class="selected-talent-effect">${talent.effect || ''}</div>
                 ${flavorHtml}
             `;
 
-            item.querySelector('.btn-remove').addEventListener('click', async () => {
-                const talentData = DataLoader.getTalent(talentId);
-                const name = talentData ? talentData.name : talentId;
-                const confirmed = await window.api.showConfirm(`Remove talent ${name}?`);
-                if (!confirmed) return;
-                State.removeTalent(talentId, talentIdx);
-                this.render();
-            });
+            if (!isAscensionGranted) {
+                item.querySelector('.btn-remove').addEventListener('click', async () => {
+                    const talentData = DataLoader.getTalent(talentId);
+                    const name = talentData ? talentData.name : talentId;
+                    const confirmed = await window.api.showConfirm(`Remove talent ${name}?`);
+                    if (!confirmed) return;
+                    State.removeTalent(talentId, talentIdx);
+                    this.render();
+                });
+            }
 
             // Enhance effect text with glossary terms (not flavor text)
             Glossary.enhanceElement(item.querySelector('.selected-talent-effect'));

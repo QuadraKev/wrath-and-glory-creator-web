@@ -923,55 +923,69 @@ const CharacterSheetTab = {
         `;
     },
 
-    // Render archetype abilities
+    // Render archetype abilities (including from archetype ascensions)
     renderArchetypeAbilities(archetype) {
         const character = State.getCharacter();
 
-        // For custom archetype, look up the purchased ability
-        let abilitiesToRender = [];
-        let sectionTitle = 'Archetype Abilities';
+        // Collect all ability groups: { title, abilities[] }
+        const abilityGroups = [];
 
+        // Base archetype abilities
         if (character.archetype?.id === 'custom' && character.customArchetype?.abilityArchetypeId) {
             const abilityArchetype = DataLoader.getArchetype(character.customArchetype.abilityArchetypeId);
             if (abilityArchetype?.abilities) {
-                abilitiesToRender = abilityArchetype.abilities;
-                sectionTitle = `Archetype Ability (from ${abilityArchetype.name})`;
+                abilityGroups.push({ source: null, abilities: abilityArchetype.abilities });
             }
         } else if (archetype?.abilities) {
-            abilitiesToRender = archetype.abilities;
+            abilityGroups.push({ source: null, abilities: archetype.abilities });
         }
 
-        if (abilitiesToRender.length === 0) {
+        // Archetype ascension abilities
+        for (const asc of character.ascensions || []) {
+            if (asc.type === 'archetype' && asc.archetypeId) {
+                const ascArchetype = DataLoader.getArchetype(asc.archetypeId);
+                if (ascArchetype?.abilities) {
+                    abilityGroups.push({ source: ascArchetype.name, abilities: ascArchetype.abilities });
+                }
+            }
+        }
+
+        if (abilityGroups.length === 0) {
             return '';
         }
 
-        const abilities = abilitiesToRender.map(ability => {
-            // Support both old 'description' format and new 'flavor'+'effect' format
-            const flavor = ability.flavor || null;
-            const effect = ability.effect || ability.description;
+        const allAbilitiesHtml = abilityGroups.map(group => {
+            return group.abilities.map(ability => {
+                const flavor = ability.flavor || null;
+                const effect = ability.effect || ability.description;
 
-            const flavorHtml = flavor
-                ? `<div class="sheet-ability-flavor">${this.escapeHtml(flavor)}</div>`
-                : '';
-            const effectHtml = `<div class="sheet-ability-effect">${effect}</div>`;
+                const flavorHtml = flavor
+                    ? `<div class="sheet-ability-flavor">${this.escapeHtml(flavor)}</div>`
+                    : '';
+                const effectHtml = `<div class="sheet-ability-effect">${effect}</div>`;
+                const sourceHtml = group.source
+                    ? `<span class="sheet-ability-source">(from ${group.source} Ascension)</span>`
+                    : '';
 
-            return `
-                <div class="sheet-ability">
-                    <div class="sheet-ability-header">
-                        <span class="sheet-ability-name">${ability.name}</span>
+                return `
+                    <div class="sheet-ability">
+                        <div class="sheet-ability-header">
+                            <span class="sheet-ability-name">${ability.name}</span>
+                            ${sourceHtml}
+                        </div>
+                        <div class="sheet-ability-content">
+                            ${effectHtml}
+                            ${flavorHtml}
+                        </div>
                     </div>
-                    <div class="sheet-ability-content">
-                        ${effectHtml}
-                        ${flavorHtml}
-                    </div>
-                </div>
-            `;
+                `;
+            }).join('');
         }).join('');
 
         return `
             <div class="sheet-section">
-                <h2 class="sheet-section-title">${sectionTitle}</h2>
-                ${abilities}
+                <h2 class="sheet-section-title">Archetype Abilities</h2>
+                ${allAbilitiesHtml}
             </div>
         `;
     },
@@ -991,6 +1005,15 @@ const CharacterSheetTab = {
                     name = pkg.name;
                     const xpCost = pkg.costMultiplier ? pkg.costMultiplier * asc.targetTier : parseInt(pkg.cost) || 0;
                     details = `<span class="sheet-ascension-cost">${xpCost} XP</span>`;
+                    // Show choice if applicable
+                    if (asc.choices && pkg.choiceOptions) {
+                        for (const [key, val] of Object.entries(asc.choices)) {
+                            const option = pkg.choiceOptions.find(o => o.value === val);
+                            if (option) {
+                                details += `<div class="sheet-ascension-choice">Chosen: ${option.label}</div>`;
+                            }
+                        }
+                    }
                     if (pkg.benefits && pkg.benefits.length > 0) {
                         details += `<ul class="sheet-ascension-benefits">${pkg.benefits.map(b => `<li>${b}</li>`).join('')}</ul>`;
                     }
@@ -1050,6 +1073,7 @@ const CharacterSheetTab = {
         const talents = character.talents.map(entry => {
             const talentId = typeof entry === 'string' ? entry : entry.id;
             const choice = typeof entry === 'object' ? entry.choice : null;
+            const isAscensionGranted = typeof entry === 'object' && entry.ascensionGranted;
             const talent = DataLoader.getTalent(talentId);
 
             if (!talent) return '';
@@ -1066,6 +1090,7 @@ const CharacterSheetTab = {
                 }
             }
 
+            const grantedLabel = isAscensionGranted ? ' <span class="sheet-talent-granted">(Ascension)</span>' : '';
             const nameWithChoice = choiceDisplay
                 ? `${talent.name} (${choiceDisplay})`
                 : talent.name;
@@ -1086,7 +1111,7 @@ const CharacterSheetTab = {
             return `
                 <div class="sheet-talent">
                     <div class="sheet-talent-header">
-                        <span class="sheet-talent-name">${nameWithChoice}</span>
+                        <span class="sheet-talent-name">${nameWithChoice}${grantedLabel}</span>
                     </div>
                     <div class="sheet-talent-content">
                         <div class="sheet-talent-effect">${effectText}</div>

@@ -39,6 +39,13 @@
       "[ANY] (Patron's Faction)"
     ],
     "influenceModifier": 2,
+    "requiresChoice": true,
+    "choiceType": "patronBenefit",
+    "choiceOptions": [
+      { "value": "wargear", "label": "Rare Wargear (value 3 + new Tier)" },
+      { "value": "wealth", "label": "2 Wealth" },
+      { "value": "influence", "label": "+2 Influence per Tier Ascended" }
+    ],
     "source": "core"
   },
   {
@@ -57,6 +64,7 @@
       "[ANY]"
     ],
     "influenceModifier": 2,
+    "talentsGranted": ["devotees"],
     "source": "core"
   },
   {
@@ -96,6 +104,13 @@
       "PSYKER"
     ],
     "influenceModifier": 1,
+    "keywordsGranted": ["PSYKER"],
+    "psykerConfig": {
+      "grantedPowers": ["smite"],
+      "freePowerChoices": [{ "disciplines": ["Minor"], "count": 1 }],
+      "unlockedDisciplines": [],
+      "disciplineChoices": 1
+    },
     "source": "core"
   },
   {
@@ -363,6 +378,8 @@
       "FARSEER"
     ],
     "influenceModifier": 3,
+    "powersGranted": ["prescience", "scriers_gaze"],
+    "disciplinesUnlocked": ["Runes of Fate"],
     "source": "apocrypha"
   },
   {

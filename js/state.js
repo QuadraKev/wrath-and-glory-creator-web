@@ -1082,24 +1082,155 @@ const State = {
     },
 
     // Set or clear an ascension for a specific target tier
-    // data = { type: 'package'|'archetype', packageId, archetypeId } or null to clear
+    // data = { type: 'package'|'archetype', packageId, archetypeId, choices } or null to clear
     setAscension(targetTier, data) {
         if (!this.character.ascensions) this.character.ascensions = [];
+
+        // Get old entry to clean up its effects
+        const oldEntry = this.character.ascensions.find(a => a.targetTier === targetTier);
+        if (oldEntry) {
+            this._removeAscensionEffects(oldEntry);
+        }
 
         // Remove any existing entry for this target tier
         this.character.ascensions = this.character.ascensions.filter(a => a.targetTier !== targetTier);
 
         if (data) {
-            this.character.ascensions.push({
+            const entry = {
                 targetTier: targetTier,
                 type: data.type,
                 packageId: data.packageId || null,
                 archetypeId: data.archetypeId || null
-            });
+            };
+            // Preserve choices if provided
+            if (data.choices) {
+                entry.choices = data.choices;
+            }
+            this.character.ascensions.push(entry);
             // Sort by targetTier for consistency
             this.character.ascensions.sort((a, b) => a.targetTier - b.targetTier);
+
+            // Apply effects from the new package
+            this._applyAscensionEffects(entry);
         }
 
+        this.notifyListeners('ascension', targetTier);
+    },
+
+    // Apply mechanical effects from an ascension package
+    _applyAscensionEffects(entry) {
+        if (entry.type !== 'package' || !entry.packageId) return;
+        const pkg = DataLoader.getAscensionPackages().find(p => p.id === entry.packageId);
+        if (!pkg) return;
+
+        // Auto-grant talents
+        if (pkg.talentsGranted) {
+            for (const talentId of pkg.talentsGranted) {
+                // Add as ascension-granted (won't cost XP, can't be manually removed)
+                const hasTalent = this.character.talents.some(t =>
+                    (typeof t === 'string' ? t : t.id) === talentId
+                );
+                if (!hasTalent) {
+                    this.character.talents.push({ id: talentId, ascensionGranted: true });
+                }
+            }
+        }
+
+        // Auto-grant psychic powers
+        if (pkg.psykerConfig?.grantedPowers) {
+            for (const powerId of pkg.psykerConfig.grantedPowers) {
+                if (!this.character.psychicPowers.includes(powerId)) {
+                    this.character.psychicPowers.push(powerId);
+                }
+                if (!this.character.freePowers) this.character.freePowers = [];
+                if (!this.character.freePowers.includes(powerId)) {
+                    this.character.freePowers.push(powerId);
+                }
+            }
+        }
+
+        // Auto-grant specific powers (e.g., Lost Upon The Seer Path)
+        if (pkg.powersGranted) {
+            for (const powerId of pkg.powersGranted) {
+                if (!this.character.psychicPowers.includes(powerId)) {
+                    this.character.psychicPowers.push(powerId);
+                }
+                if (!this.character.freePowers) this.character.freePowers = [];
+                if (!this.character.freePowers.includes(powerId)) {
+                    this.character.freePowers.push(powerId);
+                }
+            }
+        }
+
+        // Auto-unlock disciplines
+        if (pkg.disciplinesUnlocked) {
+            if (!this.character.unlockedDisciplines) this.character.unlockedDisciplines = [];
+            for (const d of pkg.disciplinesUnlocked) {
+                if (!this.character.unlockedDisciplines.includes(d)) {
+                    this.character.unlockedDisciplines.push(d);
+                }
+            }
+        }
+    },
+
+    // Remove mechanical effects from an ascension package
+    _removeAscensionEffects(entry) {
+        if (entry.type !== 'package' || !entry.packageId) return;
+        const pkg = DataLoader.getAscensionPackages().find(p => p.id === entry.packageId);
+        if (!pkg) return;
+
+        // Remove ascension-granted talents
+        if (pkg.talentsGranted) {
+            for (const talentId of pkg.talentsGranted) {
+                const idx = this.character.talents.findIndex(t =>
+                    typeof t === 'object' && t.id === talentId && t.ascensionGranted
+                );
+                if (idx !== -1) {
+                    this.character.talents.splice(idx, 1);
+                }
+            }
+        }
+
+        // Remove auto-granted psychic powers
+        const powersToRemove = [
+            ...(pkg.psykerConfig?.grantedPowers || []),
+            ...(pkg.powersGranted || [])
+        ];
+        for (const powerId of powersToRemove) {
+            const powerIdx = this.character.psychicPowers.indexOf(powerId);
+            if (powerIdx !== -1) {
+                this.character.psychicPowers.splice(powerIdx, 1);
+            }
+            const freeIdx = (this.character.freePowers || []).indexOf(powerId);
+            if (freeIdx !== -1) {
+                this.character.freePowers.splice(freeIdx, 1);
+            }
+        }
+
+        // Remove auto-unlocked disciplines
+        if (pkg.disciplinesUnlocked) {
+            for (const d of pkg.disciplinesUnlocked) {
+                const idx = (this.character.unlockedDisciplines || []).indexOf(d);
+                if (idx !== -1) {
+                    this.character.unlockedDisciplines.splice(idx, 1);
+                }
+            }
+        }
+
+        // Remove discipline choices associated with this package's psykerConfig
+        if (pkg.psykerConfig?.disciplineChoices) {
+            // We can't know which specific discipline was chosen for this package,
+            // so we leave user-chosen disciplines intact. They'll be cleaned up
+            // by getRemainingDisciplineChoices() returning negative count.
+        }
+    },
+
+    // Set a choice for an ascension package (e.g., Demanding Patron benefit)
+    setAscensionChoice(targetTier, choiceKey, choiceValue) {
+        const entry = (this.character.ascensions || []).find(a => a.targetTier === targetTier);
+        if (!entry) return;
+        if (!entry.choices) entry.choices = {};
+        entry.choices[choiceKey] = choiceValue;
         this.notifyListeners('ascension', targetTier);
     },
 
@@ -1214,15 +1345,52 @@ const State = {
     // Get the effective psykerConfig for the character.
     // For standard archetypes, returns the archetype's psykerConfig.
     // For custom archetypes, returns the ability archetype's psykerConfig (if any).
+    // Also merges in ascension package psyker configs (e.g., Psychic Revelations).
     getPsykerConfig() {
         const archetype = DataLoader.getArchetype(this.character.archetype?.id);
-        if (archetype?.psykerConfig) return archetype.psykerConfig;
-        // Custom archetype: check the ability archetype
-        if (this.character.archetype?.id === 'custom' && this.character.customArchetype?.abilityArchetypeId) {
+        let base = null;
+        if (archetype?.psykerConfig) {
+            base = archetype.psykerConfig;
+        } else if (this.character.archetype?.id === 'custom' && this.character.customArchetype?.abilityArchetypeId) {
             const abilityArchetype = DataLoader.getArchetype(this.character.customArchetype.abilityArchetypeId);
-            if (abilityArchetype?.psykerConfig) return abilityArchetype.psykerConfig;
+            if (abilityArchetype?.psykerConfig) base = abilityArchetype.psykerConfig;
         }
-        return null;
+
+        // Check ascension packages for psyker configs
+        const ascensionConfigs = [];
+        for (const asc of this.character.ascensions || []) {
+            if (asc.type === 'package' && asc.packageId) {
+                const pkg = DataLoader.getAscensionPackages().find(p => p.id === asc.packageId);
+                if (pkg?.psykerConfig) {
+                    ascensionConfigs.push(pkg.psykerConfig);
+                }
+            }
+        }
+
+        if (ascensionConfigs.length === 0) return base;
+
+        // Merge base config with ascension configs
+        const merged = {
+            grantedPowers: [...(base?.grantedPowers || [])],
+            freePowerChoices: [...(base?.freePowerChoices || [])],
+            unlockedDisciplines: [...(base?.unlockedDisciplines || [])],
+            disciplineChoices: base?.disciplineChoices || 0
+        };
+
+        for (const cfg of ascensionConfigs) {
+            for (const p of cfg.grantedPowers || []) {
+                if (!merged.grantedPowers.includes(p)) merged.grantedPowers.push(p);
+            }
+            for (const fpc of cfg.freePowerChoices || []) {
+                merged.freePowerChoices.push(fpc);
+            }
+            for (const d of cfg.unlockedDisciplines || []) {
+                if (!merged.unlockedDisciplines.includes(d)) merged.unlockedDisciplines.push(d);
+            }
+            merged.disciplineChoices += cfg.disciplineChoices || 0;
+        }
+
+        return merged;
     },
 
     // Get list of unlocked disciplines for the current psyker archetype
@@ -1236,6 +1404,17 @@ const State = {
         }
         for (const d of this.character.unlockedDisciplines || []) {
             if (!base.includes(d)) base.push(d);
+        }
+        // Include disciplines unlocked by ascension packages
+        for (const asc of this.character.ascensions || []) {
+            if (asc.type === 'package' && asc.packageId) {
+                const pkg = DataLoader.getAscensionPackages().find(p => p.id === asc.packageId);
+                if (pkg?.disciplinesUnlocked) {
+                    for (const d of pkg.disciplinesUnlocked) {
+                        if (!base.includes(d)) base.push(d);
+                    }
+                }
+            }
         }
         // Include disciplines unlocked by Warped Mind talent
         for (const talentEntry of this.character.talents || []) {
