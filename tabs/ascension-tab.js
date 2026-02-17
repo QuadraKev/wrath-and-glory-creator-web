@@ -224,11 +224,20 @@ const AscensionTab = {
             for (const a of archetypes) {
                 const isSelected = a.id === selectedId;
 
-                const abilities = (a.abilities || []).map(ab => ab.name).join(', ');
+                const abilities = a.abilities || [];
 
                 // Check stat prerequisites (archetype's attributeBonus/skillBonus as prereqs)
                 const statPrereqs = this.checkArchetypeAscensionPrereqs(a, character);
                 const allMet = rankMet && statPrereqs.met;
+
+                let abilitiesHtml = '';
+                if (abilities.length > 0) {
+                    abilitiesHtml = `<div class="ascension-abilities-list"><strong>Abilities:</strong>`;
+                    for (const ab of abilities) {
+                        abilitiesHtml += `<div class="ascension-ability-item"><span class="ascension-ability-name">${ab.name}:</span> ${ab.description || ''}</div>`;
+                    }
+                    abilitiesHtml += `</div>`;
+                }
 
                 const card = `
                     <div class="card ascension-card${isSelected ? ' selected' : ''}${!allMet ? ' ascension-prereq-unmet' : ''}" data-type="archetype" data-id="${a.id}" data-target-tier="${slot.targetTier}">
@@ -242,7 +251,7 @@ const AscensionTab = {
                         </div>
                         ${statPrereqs.text ? `<div class="ascension-prereqs${statPrereqs.met ? '' : ' unmet'}">${statPrereqs.text}</div>` : ''}
                         <div class="card-description">${a.description || ''}</div>
-                        ${abilities ? `<div class="ascension-benefits"><strong>Abilities:</strong> ${abilities}</div>` : ''}
+                        ${abilitiesHtml}
                     </div>
                 `;
 

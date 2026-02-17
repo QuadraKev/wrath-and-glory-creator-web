@@ -2526,6 +2526,22 @@ textarea {
     margin-bottom: 4px;
 }
 
+/* Ascension archetype ability list */
+.ascension-abilities-list {
+    font-size: 0.9em;
+    margin-top: 6px;
+}
+
+.ascension-ability-item {
+    margin: 4px 0 4px 12px;
+    line-height: 1.4;
+}
+
+.ascension-ability-name {
+    color: var(--accent-gold);
+    font-weight: bold;
+}
+
 /* Ascension stat prerequisites */
 .ascension-stat-unmet {
     color: var(--accent-red);
