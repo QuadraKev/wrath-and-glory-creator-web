@@ -2471,13 +2471,8 @@ textarea {
 
 .ascension-prereqs {
     font-size: 0.85em;
-    color: var(--text-secondary);
+    color: var(--text-primary);
     margin-bottom: 4px;
-    font-style: italic;
-}
-
-.ascension-prereqs.unmet {
-    color: var(--accent-red);
 }
 
 .ascension-benefits {
