@@ -19,7 +19,8 @@
     "keywords": [
       "BLADE"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 182
   },
   {
     "id": "psykana_mercy_blade",
@@ -42,7 +43,8 @@
       "BLADE",
       "ADEPTUS ASTRA TELEPATHICA"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 211
   },
   {
     "id": "sword",
@@ -65,7 +67,8 @@
     "keywords": [
       "BLADE"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 129
   },
   {
     "id": "chainsword",
@@ -92,7 +95,8 @@
       "IMPERIUM",
       "CHAOS"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 129
   },
   {
     "id": "power_sword",
@@ -116,7 +120,8 @@
       "IMPERIUM",
       "POWER FIELD"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 129
   },
   {
     "id": "death_cult_power_blade",
@@ -141,7 +146,8 @@
       "ADEPTUS MINISTORUM",
       "POWER FIELD"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 213
   },
   {
     "id": "power_axe",
@@ -165,7 +171,8 @@
       "IMPERIUM",
       "POWER FIELD"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 213
   },
   {
     "id": "force_stave",
@@ -191,7 +198,8 @@
       "PSYKER",
       "FORCE"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 212
   },
   {
     "id": "choppa",
@@ -215,7 +223,8 @@
     "keywords": [
       "ORK"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 213
   },
   {
     "id": "kustom_choppa",
@@ -239,7 +248,8 @@
     "keywords": [
       "ORK"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 115
   },
   {
     "id": "witchblade",
@@ -265,7 +275,8 @@
       "PSYKER",
       "FORCE"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 213
   },
   {
     "id": "omnissian_axe",
@@ -289,7 +300,8 @@
       "ADEPTUS MECHANICUS",
       "POWER FIELD"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 213
   },
   {
     "id": "chain_bayonet",
@@ -313,7 +325,8 @@
       "IMPERIUM",
       "CHAIN"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 211
   },
   {
     "id": "arc_maul",
@@ -337,7 +350,8 @@
       "ADEPTUS MECHANICUS",
       "ARC"
     ],
-    "source": "core"
+    "source": "core",
+    "page": null
   },
   {
     "id": "astartes_combat_knife",
@@ -360,7 +374,8 @@
     "keywords": [
       "ADEPTUS ASTARTES"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 211
   },
   {
     "id": "laspistol",
@@ -391,7 +406,8 @@
       "LAS",
       "IMPERIUM"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 184
   },
   {
     "id": "lasgun",
@@ -422,7 +438,8 @@
       "LAS",
       "IMPERIUM"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 217
   },
   {
     "id": "hot_shot_lasgun",
@@ -453,7 +470,8 @@
       "MILITARUM TEMPESTUS",
       "LAS"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 217
   },
   {
     "id": "hot_shot_laspistol",
@@ -484,7 +502,8 @@
       "MILITARUM TEMPESTUS",
       "LAS"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 217
   },
   {
     "id": "autopistol",
@@ -513,7 +532,8 @@
     "keywords": [
       "PROJECTILE"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 218
   },
   {
     "id": "autogun",
@@ -542,7 +562,8 @@
     "keywords": [
       "PROJECTILE"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 218
   },
   {
     "id": "bolt_pistol",
@@ -573,7 +594,8 @@
       "IMPERIUM",
       "BOLT"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 217
   },
   {
     "id": "boltgun",
@@ -604,7 +626,8 @@
       "IMPERIUM",
       "BOLT"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 182
   },
   {
     "id": "heavy_bolt_pistol",
@@ -635,7 +658,8 @@
       "PRIMARIS",
       "BOLT"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 217
   },
   {
     "id": "bolt_rifle",
@@ -666,7 +690,8 @@
       "PRIMARIS",
       "BOLT"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 217
   },
   {
     "id": "shoota",
@@ -696,7 +721,8 @@
     "keywords": [
       "ORK"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 220
   },
   {
     "id": "slugga",
@@ -726,7 +752,8 @@
     "keywords": [
       "ORK"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 220
   },
   {
     "id": "kustom_slugga",
@@ -756,7 +783,8 @@
     "keywords": [
       "ORK"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 115
   },
   {
     "id": "shuriken_pistol",
@@ -787,7 +815,8 @@
       "AELDARI",
       "SHURIKEN"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 220
   },
   {
     "id": "shuriken_catapult",
@@ -818,7 +847,8 @@
       "AELDARI",
       "SHURIKEN"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 220
   },
   {
     "id": "lasblaster",
@@ -848,7 +878,8 @@
       "AELDARI",
       "LAS"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 220
   },
   {
     "id": "ranger_long_rifle",
@@ -878,7 +909,8 @@
       "AELDARI",
       "RANGER"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 220
   },
   {
     "id": "radium_pistol",
@@ -909,7 +941,8 @@
       "ADEPTUS MECHANICUS",
       "RAD"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 219
   },
   {
     "id": "hand_cannon",
@@ -938,7 +971,8 @@
     "keywords": [
       "PROJECTILE"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 218
   },
   {
     "id": "stubber",
@@ -967,7 +1001,8 @@
     "keywords": [
       "PROJECTILE"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 182
   },
   {
     "id": "avenger_shuriken_catapult",
@@ -999,7 +1034,8 @@
       "ASURYANI",
       "SHURIKEN"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 80
   },
   {
     "id": "shuriken_rifle",
@@ -1031,7 +1067,8 @@
       "ASURYANI",
       "SHURIKEN"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 80
   },
   {
     "id": "death_spinner",
@@ -1064,7 +1101,8 @@
       "ASURYANI",
       "MONOFILAMENT"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 81
   },
   {
     "id": "dragon_fusion_gun",
@@ -1097,7 +1135,8 @@
       "ASURYANI",
       "MELTA"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 84
   },
   {
     "id": "reaper_launcher",
@@ -1129,7 +1168,8 @@
       "ASURYANI",
       "MISSILE"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 82
   },
   {
     "id": "fusion_pistol",
@@ -1161,7 +1201,8 @@
       "ASURYANI",
       "MELTA"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 84
   },
   {
     "id": "wraithcannon",
@@ -1193,7 +1234,8 @@
       "ASURYANI",
       "VORTEX"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 85
   },
   {
     "id": "splinter_rifle",
@@ -1225,7 +1267,8 @@
       "DRUKHARI",
       "SPLINTER"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 84
   },
   {
     "id": "splinter_pistol",
@@ -1257,7 +1300,8 @@
       "DRUKHARI",
       "SPLINTER"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 84
   },
   {
     "id": "shardcarbine",
@@ -1289,7 +1333,8 @@
       "DRUKHARI",
       "SPLINTER"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 84
   },
   {
     "id": "shrieker_cannon",
@@ -1322,7 +1367,8 @@
       "HARLEQUIN",
       "SHURIKEN"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 80
   },
   {
     "id": "neuro_disruptor",
@@ -1354,7 +1400,8 @@
       "AELDARI",
       "HARLEQUIN"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 85
   },
   {
     "id": "stinger_pistol",
@@ -1387,7 +1434,8 @@
       "DRUKHARI",
       "HAEMONCULUS"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 82
   },
   {
     "id": "hallucinogen_grenade_launcher",
@@ -1419,7 +1467,8 @@
       "HARLEQUIN",
       "GRENADE"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 82
   },
   {
     "id": "banshee_blade",
@@ -1445,7 +1494,8 @@
       "ASURYANI",
       "POWER FIELD"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 87
   },
   {
     "id": "scorpion_chainsword",
@@ -1472,7 +1522,8 @@
       "ASURYANI",
       "CHAIN"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 89
   },
   {
     "id": "guardian_chainsword",
@@ -1498,7 +1549,8 @@
       "ASURYANI",
       "CHAIN"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 89
   },
   {
     "id": "singing_spear",
@@ -1525,7 +1577,8 @@
       "ASURYANI",
       "FORCE"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 89
   },
   {
     "id": "ghostsword",
@@ -1550,7 +1603,8 @@
       "ASURYANI",
       "WRAITHGUARD"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 89
   },
   {
     "id": "hekatarii_blade",
@@ -1575,7 +1629,8 @@
       "DRUKHARI",
       "WYCH CULT"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 86
   },
   {
     "id": "hellglaive",
@@ -1598,7 +1653,8 @@
       "DRUKHARI",
       "HELLION"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 86
   },
   {
     "id": "agoniser",
@@ -1624,7 +1680,8 @@
       "DRUKHARI",
       "WYCH CULT"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 87
   },
   {
     "id": "klaive",
@@ -1652,7 +1709,8 @@
       "INCUBUS",
       "POWER FIELD"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 87
   },
   {
     "id": "huskblade",
@@ -1677,7 +1735,8 @@
       "AELDARI",
       "DRUKHARI"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 89
   },
   {
     "id": "archite_glaive",
@@ -1702,7 +1761,8 @@
       "DRUKHARI",
       "WYCH CULT"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 87
   },
   {
     "id": "harlequin_kiss",
@@ -1727,7 +1787,8 @@
       "HARLEQUIN",
       "MONOFILAMENT"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 89
   },
   {
     "id": "harlequin_caress",
@@ -1751,7 +1812,8 @@
       "AELDARI",
       "HARLEQUIN"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 89
   },
   {
     "id": "harlequin_embrace",
@@ -1776,7 +1838,8 @@
       "HARLEQUIN",
       "MONOFILAMENT"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 89
   },
   {
     "id": "miststave",
@@ -1803,7 +1866,8 @@
       "HARLEQUIN",
       "FORCE"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 89
   },
   {
     "id": "void_sabre",
@@ -1828,7 +1892,8 @@
       "AELDARI",
       "ANHRATHE"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 87
   },
   {
     "id": "scissorhand",
@@ -1854,7 +1919,8 @@
       "DRUKHARI",
       "HAEMONCULUS"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 89
   },
   {
     "id": "glimmersteel_blade",
@@ -1879,7 +1945,8 @@
       "DRUKHARI",
       "MANDRAKE"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 86
   },
   {
     "id": "astartes_chainsword",
@@ -1905,7 +1972,8 @@
       "IMPERIUM",
       "ADEPTUS ASTARTES"
     ],
-    "source": "voa"
+    "source": "voa",
+    "page": 62
   },
   {
     "id": "chainfist",
@@ -1932,7 +2000,8 @@
       "IMPERIUM",
       "ADEPTUS ASTARTES"
     ],
-    "source": "voa"
+    "source": "voa",
+    "page": 62
   },
   {
     "id": "crozius_arcanum",
@@ -1957,7 +2026,8 @@
       "IMPERIUM",
       "ADEPTUS ASTARTES"
     ],
-    "source": "voa"
+    "source": "voa",
+    "page": 62
   },
   {
     "id": "eviscerator",
@@ -1984,7 +2054,8 @@
       "IMPERIUM",
       "ADEPTUS ASTARTES"
     ],
-    "source": "voa"
+    "source": "voa",
+    "page": 62
   },
   {
     "id": "force_axe",
@@ -2009,7 +2080,8 @@
       "IMPERIUM",
       "ADEPTUS ASTARTES"
     ],
-    "source": "voa"
+    "source": "voa",
+    "page": 62
   },
   {
     "id": "force_sword",
@@ -2035,7 +2107,8 @@
       "IMPERIUM",
       "ADEPTUS ASTARTES"
     ],
-    "source": "voa"
+    "source": "voa",
+    "page": 62
   },
   {
     "id": "heavy_thunder_hammer",
@@ -2062,7 +2135,8 @@
       "IMPERIUM",
       "ADEPTUS ASTARTES"
     ],
-    "source": "voa"
+    "source": "voa",
+    "page": 62
   },
   {
     "id": "lightning_claws",
@@ -2088,7 +2162,8 @@
       "IMPERIUM",
       "ADEPTUS ASTARTES"
     ],
-    "source": "voa"
+    "source": "voa",
+    "page": 62
   },
   {
     "id": "power_fist",
@@ -2114,7 +2189,8 @@
       "IMPERIUM",
       "ADEPTUS ASTARTES"
     ],
-    "source": "voa"
+    "source": "voa",
+    "page": 62
   },
   {
     "id": "relic_blade",
@@ -2140,7 +2216,8 @@
       "POWER FIELD",
       "ADEPTUS ASTARTES"
     ],
-    "source": "voa"
+    "source": "voa",
+    "page": 62
   },
   {
     "id": "thunder_hammer",
@@ -2167,7 +2244,8 @@
       "IMPERIUM",
       "ADEPTUS ASTARTES"
     ],
-    "source": "voa"
+    "source": "voa",
+    "page": 62
   },
   {
     "id": "accelerator_autocannon",
@@ -2200,7 +2278,8 @@
       "IMPERIUM",
       "ADEPTUS ASTARTES"
     ],
-    "source": "voa"
+    "source": "voa",
+    "page": 67
   },
   {
     "id": "assault_bolter",
@@ -2234,7 +2313,8 @@
       "BOLT",
       "ADEPTUS ASTARTES"
     ],
-    "source": "voa"
+    "source": "voa",
+    "page": 67
   },
   {
     "id": "assault_plasma_incinerator",
@@ -2267,7 +2347,8 @@
       "IMPERIUM",
       "ADEPTUS ASTARTES"
     ],
-    "source": "voa"
+    "source": "voa",
+    "page": 67
   },
   {
     "id": "astartes_shotgun",
@@ -2300,7 +2381,8 @@
       "PROJECTILE",
       "ADEPTUS ASTARTES"
     ],
-    "source": "voa"
+    "source": "voa",
+    "page": 67
   },
   {
     "id": "auto_bolt_rifle",
@@ -2334,7 +2416,8 @@
       "BOLT",
       "ADEPTUS ASTARTES"
     ],
-    "source": "voa"
+    "source": "voa",
+    "page": 67
   },
   {
     "id": "bolt_carbine",
@@ -2368,7 +2451,8 @@
       "IMPERIUM",
       "ADEPTUS ASTARTES"
     ],
-    "source": "voa"
+    "source": "voa",
+    "page": 67
   },
   {
     "id": "bolt_sniper_rifle",
@@ -2401,7 +2485,8 @@
       "BOLT",
       "ADEPTUS ASTARTES"
     ],
-    "source": "voa"
+    "source": "voa",
+    "page": 67
   },
   {
     "id": "executor_bolt_rifle",
@@ -2435,7 +2520,8 @@
       "BOLT",
       "ADEPTUS ASTARTES"
     ],
-    "source": "voa"
+    "source": "voa",
+    "page": 67
   },
   {
     "id": "godwyn_pattern_boltgun",
@@ -2467,7 +2553,8 @@
       "BOLT",
       "ADEPTUS ASTARTES"
     ],
-    "source": "voa"
+    "source": "voa",
+    "page": 67
   },
   {
     "id": "grapnel_launcher",
@@ -2497,7 +2584,8 @@
       "IMPERIUM",
       "ADEPTUS ASTARTES"
     ],
-    "source": "voa"
+    "source": "voa",
+    "page": 67
   },
   {
     "id": "grav_cannon",
@@ -2529,7 +2617,8 @@
       "GRAV",
       "ADEPTUS ASTARTES"
     ],
-    "source": "voa"
+    "source": "voa",
+    "page": 67
   },
   {
     "id": "grav_pistol",
@@ -2561,7 +2650,8 @@
       "ADEPTUS MECHANICUS",
       "ADEPTUS ASTARTES"
     ],
-    "source": "voa"
+    "source": "voa",
+    "page": 67
   },
   {
     "id": "heavy_bolter",
@@ -2594,7 +2684,8 @@
       "BOLT",
       "ADEPTUS ASTARTES"
     ],
-    "source": "voa"
+    "source": "voa",
+    "page": 67
   },
   {
     "id": "heavy_bolt_rifle",
@@ -2627,7 +2718,8 @@
       "BOLT",
       "ADEPTUS ASTARTES"
     ],
-    "source": "voa"
+    "source": "voa",
+    "page": 67
   },
   {
     "id": "heavy_melta_rifle",
@@ -2660,7 +2752,8 @@
       "IMPERIUM",
       "ADEPTUS ASTARTES"
     ],
-    "source": "voa"
+    "source": "voa",
+    "page": 67
   },
   {
     "id": "hellstorm_bolt_rifle",
@@ -2694,7 +2787,8 @@
       "BOLT",
       "ADEPTUS ASTARTES"
     ],
-    "source": "voa"
+    "source": "voa",
+    "page": 67
   },
   {
     "id": "las_fusil",
@@ -2727,7 +2821,8 @@
       "LAS",
       "ADEPTUS ASTARTES"
     ],
-    "source": "voa"
+    "source": "voa",
+    "page": 67
   },
   {
     "id": "melta_rifle",
@@ -2760,7 +2855,8 @@
       "MELTA",
       "ADEPTUS ASTARTES"
     ],
-    "source": "voa"
+    "source": "voa",
+    "page": 67
   },
   {
     "id": "occulus_bolt_carbine",
@@ -2793,7 +2889,8 @@
       "IMPERIUM",
       "ADEPTUS ASTARTES"
     ],
-    "source": "voa"
+    "source": "voa",
+    "page": 67
   },
   {
     "id": "plasma_gun",
@@ -2824,7 +2921,8 @@
       "PLASMA",
       "ADEPTUS ASTARTES"
     ],
-    "source": "voa"
+    "source": "voa",
+    "page": 67
   },
   {
     "id": "plasma_incinerator",
@@ -2857,7 +2955,8 @@
       "IMPERIUM",
       "ADEPTUS ASTARTES"
     ],
-    "source": "voa"
+    "source": "voa",
+    "page": 67
   },
   {
     "id": "storm_bolter",
@@ -2890,7 +2989,8 @@
       "BOLT",
       "ADEPTUS ASTARTES"
     ],
-    "source": "voa"
+    "source": "voa",
+    "page": 67
   },
   {
     "id": "whip",
@@ -2914,7 +3014,8 @@
     "keywords": [
       "PRIMITIVE"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 212
   },
   {
     "id": "neural_whip",
@@ -2939,7 +3040,8 @@
       "EXOTIC",
       "ADEPTA SORORITAS"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 212
   },
   {
     "id": "shock_whip",
@@ -2964,7 +3066,8 @@
     "keywords": [
       "EXOTIC"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 212
   },
   {
     "id": "shock_maul",
@@ -2989,7 +3092,8 @@
       "EXOTIC",
       "ADEPTUS ARBITES"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 212
   },
   {
     "id": "power_maul",
@@ -3011,7 +3115,8 @@
       "IMPERIUM",
       "POWER FIELD"
     ],
-    "source": "fspg"
+    "source": "fspg",
+    "page": 121
   },
   {
     "id": "dialogus_staff",
@@ -3036,6 +3141,7 @@
       "ADEPTA SORORITAS"
     ],
     "source": "fspg",
+    "page": 120,
     "notes": "Functions as a Symbol of Authority and includes a Laud-Hailer."
   },
   {
@@ -3069,7 +3175,8 @@
       "MILITARUM AUXILLA",
       "PROJECTILE"
     ],
-    "source": "fspg"
+    "source": "fspg",
+    "page": 121
   },
   {
     "id": "frag_bombs",
@@ -3101,7 +3208,8 @@
       "MILITARUM AUXILLA",
       "GRENADE"
     ],
-    "source": "fspg"
+    "source": "fspg",
+    "page": 115
   },
   {
     "id": "kroot_rifle",
@@ -3133,6 +3241,7 @@
       "PROJECTILE"
     ],
     "source": "fspg",
+    "page": 121,
     "notes": "Can also be used as a melee weapon (S+4, 2 ED, 0 AP, Brutal)."
   },
   {
@@ -3161,7 +3270,8 @@
       "ADEPTUS MINISTORUM",
       "ADEPTA SORORITAS"
     ],
-    "source": "fspg"
+    "source": "fspg",
+    "page": 121
   },
   {
     "id": "transonic_blade",
@@ -3187,7 +3297,8 @@
       "TRANSONIC",
       "ADEPTUS MECHANICUS"
     ],
-    "source": "fspg"
+    "source": "fspg",
+    "page": 120
   },
   {
     "id": "transonic_razor",
@@ -3212,7 +3323,8 @@
       "TRANSONIC",
       "ADEPTUS MECHANICUS"
     ],
-    "source": "fspg"
+    "source": "fspg",
+    "page": 120
   },
   {
     "id": "taser_goad",
@@ -3235,7 +3347,8 @@
     "keywords": [
       "ADEPTUS MECHANICUS"
     ],
-    "source": "fspg"
+    "source": "fspg",
+    "page": 121
   },
   {
     "id": "bullgryn_maul",
@@ -3260,7 +3373,8 @@
       "ASTRA MILITARUM",
       "MILITARUM AUXILLA"
     ],
-    "source": "fspg"
+    "source": "fspg",
+    "page": 120
   },
   {
     "id": "condemnor_boltgun",
@@ -3293,7 +3407,8 @@
       "IMPERIUM",
       "ADEPTA SORORITAS"
     ],
-    "source": "fspg"
+    "source": "fspg",
+    "page": 143
   },
   {
     "id": "eradication_ray",
@@ -3323,7 +3438,8 @@
     "keywords": [
       "ADEPTUS MECHANICUS"
     ],
-    "source": "fspg"
+    "source": "fspg",
+    "page": 143
   },
   {
     "id": "flechette_blaster",
@@ -3354,7 +3470,8 @@
       "PROJECTILE",
       "ADEPTUS MECHANICUS"
     ],
-    "source": "fspg"
+    "source": "fspg",
+    "page": 143
   },
   {
     "id": "grenadier_gauntlet",
@@ -3387,7 +3504,8 @@
       "ASTRA MILITARUM",
       "MILITARUM AUXILLA"
     ],
-    "source": "fspg"
+    "source": "fspg",
+    "page": 143
   },
   {
     "id": "macrostubber",
@@ -3418,7 +3536,8 @@
       "PROJECTILE",
       "ADEPTUS MECHANICUS"
     ],
-    "source": "fspg"
+    "source": "fspg",
+    "page": 123
   },
   {
     "id": "phosphor_serpenta",
@@ -3449,7 +3568,8 @@
       "PHOSPHEX",
       "ADEPTUS MECHANICUS"
     ],
-    "source": "fspg"
+    "source": "fspg",
+    "page": 122
   },
   {
     "id": "ratling_rifle",
@@ -3482,7 +3602,8 @@
       "ASTRA MILITARUM",
       "MILITARUM AUXILLA"
     ],
-    "source": "fspg"
+    "source": "fspg",
+    "page": 123
   },
   {
     "id": "stubcarbine",
@@ -3512,7 +3633,8 @@
       "PROJECTILE",
       "ADEPTUS MECHANICUS"
     ],
-    "source": "fspg"
+    "source": "fspg",
+    "page": 122
   },
   {
     "id": "melta_bomb",
@@ -3543,7 +3665,8 @@
       "IMPERIUM",
       "GRENADE"
     ],
-    "source": "fspg"
+    "source": "fspg",
+    "page": 124
   },
   {
     "id": "mindscrambler_grenade",
@@ -3576,7 +3699,8 @@
       "ADEPTUS MECHANICUS",
       "GRENADE"
     ],
-    "source": "fspg"
+    "source": "fspg",
+    "page": 124
   },
   {
     "id": "shock_grenade",
@@ -3609,6 +3733,7 @@
       "GRENADE"
     ],
     "source": "fspg",
+    "page": 124,
     "notes": "Deals Shock Damage instead of Wounds. Targets that suffer any Shock Damage also suffer the Blinded and Vulnerable Conditions."
   },
   {
@@ -3635,7 +3760,8 @@
       "IMPERIUM",
       "ADEPTUS ASTARTES"
     ],
-    "source": "voa"
+    "source": "voa",
+    "page": 41
   },
   {
     "id": "master_crafted_void_sabre",
@@ -3661,7 +3787,8 @@
       "AELDARI",
       "ANHRATHE"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 89
   },
   {
     "id": "star_glaive",
@@ -3687,7 +3814,8 @@
       "ASURYANI",
       "AUTARCH"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 90
   },
   {
     "id": "splinter_pods",
@@ -3720,6 +3848,7 @@
       "SPLINTER"
     ],
     "source": "aeldari",
+    "page": 84,
     "notes": "Mounted on skyboards."
   },
   {
@@ -3751,7 +3880,8 @@
       "IMPERIUM",
       "PLASMA"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 218
   },
   {
     "id": "axe_aoa",
@@ -3774,7 +3904,8 @@
     "keywords": [
       "BLADE"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 329
   },
   {
     "id": "flail_aoa",
@@ -3796,7 +3927,8 @@
     "value": 3,
     "rarity": "Common",
     "keywords": [],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 329
   },
   {
     "id": "greataxe_aoa",
@@ -3822,7 +3954,8 @@
       "BLADE",
       "2-HANDED"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 329
   },
   {
     "id": "greatsword_aoa",
@@ -3847,7 +3980,8 @@
       "BLADE",
       "2-HANDED"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 329
   },
   {
     "id": "navis_hatchet_aoa",
@@ -3873,7 +4007,8 @@
       "IMPERIUM",
       "NAVIS IMPERIALIS"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 329
   },
   {
     "id": "repression_baton_aoa",
@@ -3897,7 +4032,8 @@
       "IMPERIUM",
       "ADEPTUS ARBITES"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 329
   },
   {
     "id": "spear_aoa",
@@ -3917,7 +4053,8 @@
     "value": 2,
     "rarity": "Common",
     "keywords": [],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 248
   },
   {
     "id": "force_rod_aoa",
@@ -3943,7 +4080,8 @@
       "INQUISITION",
       "AELDARI"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 330
   },
   {
     "id": "nemesis_falchion_aoa",
@@ -3970,7 +4108,8 @@
       "FORCE",
       "GREY KNIGHTS"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 330
   },
   {
     "id": "nemesis_force_halberd_aoa",
@@ -3996,7 +4135,8 @@
       "FORCE",
       "GREY KNIGHTS"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 330
   },
   {
     "id": "nemesis_force_sword_aoa",
@@ -4022,7 +4162,8 @@
       "FORCE",
       "GREY KNIGHTS"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 330
   },
   {
     "id": "nemesis_warding_stave_aoa",
@@ -4049,7 +4190,8 @@
       "FORCE",
       "GREY KNIGHTS"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 330
   },
   {
     "id": "anointed_halberd_aoa",
@@ -4074,7 +4216,8 @@
       "POWER FIELD",
       "ADEPTA SORORITAS"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 331
   },
   {
     "id": "astartes_chainsword_aoa",
@@ -4100,7 +4243,8 @@
       "IMPERIUM",
       "ADEPTUS ASTARTES"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 331
   },
   {
     "id": "chain_knife_aoa",
@@ -4126,7 +4270,8 @@
       "IMPERIUM",
       "CHAOS"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 331
   },
   {
     "id": "crozius_arcanum_aoa",
@@ -4151,7 +4296,8 @@
       "POWER FIELD",
       "ADEPTUS ASTARTES"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 331
   },
   {
     "id": "executioner_greatblade_aoa",
@@ -4178,7 +4324,8 @@
       "2-HANDED",
       "ANATHEMA PSYKANA"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 331
   },
   {
     "id": "frost_axe_aoa",
@@ -4203,7 +4350,8 @@
       "CHAIN",
       "SPACE WOLVES"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 331
   },
   {
     "id": "frost_blade_aoa",
@@ -4228,7 +4376,8 @@
       "CHAIN",
       "SPACE WOLVES"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 331
   },
   {
     "id": "guardian_spear_aoa",
@@ -4252,7 +4401,8 @@
       "2-HANDED",
       "ADEPTUS CUSTODES"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 331
   },
   {
     "id": "hallowed_mace_aoa",
@@ -4277,7 +4427,8 @@
       "POWER FIELD",
       "ADEPTA SORORITAS"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 331
   },
   {
     "id": "lightning_claw_aoa",
@@ -4302,7 +4453,8 @@
       "POWER FIELD",
       "ADEPTUS ASTARTES"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 331
   },
   {
     "id": "misericordia_aoa",
@@ -4326,7 +4478,8 @@
       "POWER FIELD",
       "ADEPTUS CUSTODES"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 331
   },
   {
     "id": "power_lance_aoa",
@@ -4350,7 +4503,8 @@
       "IMPERIUM",
       "ADEPTUS ASTARTES"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 331
   },
   {
     "id": "relic_blade_aoa",
@@ -4374,7 +4528,8 @@
       "2-HANDED",
       "ADEPTUS ASTARTES"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 331
   },
   {
     "id": "sentinel_blade_aoa",
@@ -4398,7 +4553,8 @@
       "POWER FIELD",
       "ADEPTUS CUSTODES"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 331
   },
   {
     "id": "spear_of_the_faithful_aoa",
@@ -4423,7 +4579,8 @@
       "POWER FIELD",
       "ADEPTA SORORITAS"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 331
   },
   {
     "id": "chordclaw_aoa",
@@ -4449,7 +4606,8 @@
       "ADEPTUS MECHANICUS",
       "SKITARII"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 333
   },
   {
     "id": "electroleech_staff_aoa",
@@ -4476,7 +4634,8 @@
       "2-HANDED",
       "ADEPTUS MECHANICUS"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 333
   },
   {
     "id": "electrostatic_gauntlets_aoa",
@@ -4501,7 +4660,8 @@
       "2-HANDED",
       "ADEPTUS MECHANICUS"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 333
   },
   {
     "id": "excruciator_maul_aoa",
@@ -4526,7 +4686,8 @@
       "EXOTIC",
       "ADEPTUS ARBITES"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 333
   },
   {
     "id": "honour_staff_aoa",
@@ -4549,7 +4710,8 @@
       "T'AU EMPIRE",
       "ETHEREAL CASTE"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 333
   },
   {
     "id": "hookfang_aoa",
@@ -4575,7 +4737,8 @@
       "OFFICIO ASSASSINORUM",
       "TEMPLUM VENENUM"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 333
   },
   {
     "id": "nemesii_blade_aoa",
@@ -4601,7 +4764,8 @@
       "OFFICIO ASSASSINORUM",
       "TEMPLUM ADAMUS"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 333
   },
   {
     "id": "neuro_gauntlet_aoa",
@@ -4625,7 +4789,8 @@
       "OFFICIO ASSASSINORUM",
       "TEMPLUM EVERSOR"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 333
   },
   {
     "id": "null_rod_aoa",
@@ -4652,7 +4817,8 @@
       "ADEPTA SORORITAS",
       "ADEPTUS ASTRA TELEPATHICA"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 333
   },
   {
     "id": "phase_sword_aoa",
@@ -4677,7 +4843,8 @@
       "OFFICIO ASSASSINORUM",
       "TEMPLUM CALLIDUS"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 333
   },
   {
     "id": "poisoned_blades_aoa",
@@ -4704,7 +4871,8 @@
       "OFFICIO ASSASSINORUM",
       "TEMPLUM CALLIDUS"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 333
   },
   {
     "id": "sympatic_dataspikes_aoa",
@@ -4731,7 +4899,8 @@
       "ARC",
       "TEMPLUM VANUS"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 333
   },
   {
     "id": "taser_goad_aoa",
@@ -4757,7 +4926,8 @@
       "ADEPTUS MECHANICUS",
       "SKITARII"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 333
   },
   {
     "id": "transonic_blade_aoa",
@@ -4783,7 +4953,8 @@
       "ADEPTUS MECHANICUS",
       "SKITARII"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 333
   },
   {
     "id": "transonic_razor_aoa",
@@ -4808,7 +4979,8 @@
       "ADEPTUS MECHANICUS",
       "SKITARII"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 333
   },
   {
     "id": "absolvor_bolt_pistol_aoa",
@@ -4840,7 +5012,8 @@
       "ADEPTUS ASTARTES",
       "PRIMARIS"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 346
   },
   {
     "id": "auto_bolt_rifle_aoa",
@@ -4873,7 +5046,8 @@
       "ADEPTUS ASTARTES",
       "PRIMARIS"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 346
   },
   {
     "id": "auto_boltstorm_gauntlet_aoa",
@@ -4908,7 +5082,8 @@
       "ADEPTUS ASTARTES",
       "PRIMARIS"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 346
   },
   {
     "id": "bolt_carbine_aoa",
@@ -4942,7 +5117,8 @@
       "ADEPTUS ASTARTES",
       "PRIMARIS"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 346
   },
   {
     "id": "bolt_sniper_rifle_aoa",
@@ -4975,7 +5151,8 @@
       "ADEPTUS ASTARTES",
       "PRIMARIS"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 346
   },
   {
     "id": "boltstorm_gauntlet_aoa",
@@ -5008,7 +5185,8 @@
       "ADEPTUS ASTARTES",
       "PRIMARIS"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 346
   },
   {
     "id": "executor_bolt_rifle_aoa",
@@ -5041,7 +5219,8 @@
       "ADEPTUS ASTARTES",
       "PRIMARIS"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 346
   },
   {
     "id": "executor_heavy_bolter_aoa",
@@ -5074,7 +5253,8 @@
       "ADEPTUS ASTARTES",
       "PRIMARIS"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 346
   },
   {
     "id": "hellstorm_bolt_rifle_aoa",
@@ -5108,7 +5288,8 @@
       "ADEPTUS ASTARTES",
       "PRIMARIS"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 346
   },
   {
     "id": "hellstorm_heavy_bolter_aoa",
@@ -5141,7 +5322,8 @@
       "ADEPTUS ASTARTES",
       "PRIMARIS"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 346
   },
   {
     "id": "heavy_bolt_rifle_aoa",
@@ -5174,7 +5356,8 @@
       "ADEPTUS ASTARTES",
       "PRIMARIS"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 346
   },
   {
     "id": "cos_atalan_incinerator",
@@ -5205,7 +5388,8 @@
       "FIRE",
       "IMPERIUM"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 66
   },
   {
     "id": "cos_clearance_incinerator",
@@ -5236,7 +5420,8 @@
       "FIRE",
       "IMPERIUM"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 65
   },
   {
     "id": "cos_heavy_mining_laser",
@@ -5267,7 +5452,8 @@
       "LAS",
       "IMPERIUM"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 64
   },
   {
     "id": "cos_heavy_seismic_cannon_short",
@@ -5298,7 +5484,8 @@
       "SONIC",
       "IMPERIUM"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 113
   },
   {
     "id": "cos_heavy_seismic_cannon_long",
@@ -5329,7 +5516,8 @@
       "SONIC",
       "IMPERIUM"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 113
   },
   {
     "id": "cos_mining_laser",
@@ -5360,7 +5548,8 @@
       "LAS",
       "IMPERIUM"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 64
   },
   {
     "id": "cos_battle_cannon",
@@ -5392,7 +5581,8 @@
       "IMPERIUM",
       "ASTRA MILITARUM"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 67
   },
   {
     "id": "cos_belleros_energy_cannon",
@@ -5424,7 +5614,8 @@
       "ENERGY",
       "ADEPTUS MECHANICUS"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 80
   },
   {
     "id": "cos_castigator_battle_cannon_pyre",
@@ -5456,7 +5647,8 @@
       "IMPERIUM",
       "ADEPTA SORORITAS"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 116
   },
   {
     "id": "cos_castigator_battle_cannon_sanctified",
@@ -5488,7 +5680,8 @@
       "IMPERIUM",
       "ADEPTA SORORITAS"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 116
   },
   {
     "id": "cos_castigator_autocannon",
@@ -5519,7 +5712,8 @@
       "IMPERIUM",
       "ADEPTA SORORITAS"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 67
   },
   {
     "id": "cos_chem_cannon",
@@ -5552,7 +5746,8 @@
       "IMPERIUM",
       "ASTRA MILITARUM"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 85
   },
   {
     "id": "cos_demolisher_cannon",
@@ -5583,7 +5778,8 @@
       "EXPLOSIVE",
       "IMPERIUM"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 75
   },
   {
     "id": "cos_earthshaker_cannon",
@@ -5615,7 +5811,8 @@
       "IMPERIUM",
       "ASTRA MILITARUM"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 86
   },
   {
     "id": "cos_eradication_beamer",
@@ -5647,7 +5844,8 @@
       "ENERGY",
       "ADEPTUS MECHANICUS"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 80
   },
   {
     "id": "cos_eradicator_nova_cannon",
@@ -5679,7 +5877,8 @@
       "IMPERIUM",
       "ASTRA MILITARUM"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 116
   },
   {
     "id": "cos_ferrumite_cannon",
@@ -5709,7 +5908,8 @@
       "PROJECTILE",
       "ADEPTUS MECHANICUS"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 80
   },
   {
     "id": "cos_flamestorm_cannon",
@@ -5741,7 +5941,8 @@
       "IMPERIUM",
       "ADEPTUS ASTARTES"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 70
   },
   {
     "id": "cos_heavy_laser_destroyer",
@@ -5772,7 +5973,8 @@
       "IMPERIUM",
       "ADEPTUS ASTARTES"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 78
   },
   {
     "id": "cos_heavy_onslaught_gatling_cannon",
@@ -5805,7 +6007,8 @@
       "ADEPTUS ASTARTES",
       "PRIMARIS"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 76
   },
   {
     "id": "cos_inferno_cannon",
@@ -5837,7 +6040,8 @@
       "IMPERIUM",
       "ASTRA MILITARUM"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 85
   },
   {
     "id": "cos_lancer_laser_destroyer",
@@ -5869,7 +6073,8 @@
       "ADEPTUS ASTARTES",
       "PRIMARIS"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 76
   },
   {
     "id": "cos_melta_cannon",
@@ -5902,7 +6107,8 @@
       "IMPERIUM",
       "ASTRA MILITARUM"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 85
   },
   {
     "id": "cos_neutron_laser",
@@ -5934,7 +6140,8 @@
       "ENERGY",
       "ADEPTUS MECHANICUS"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 80
   },
   {
     "id": "cos_onslaught_gatling_cannon",
@@ -5967,7 +6174,8 @@
       "ADEPTUS ASTARTES",
       "PRIMARIS"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 76
   },
   {
     "id": "cos_predator_autocannon",
@@ -5998,7 +6206,8 @@
       "IMPERIUM",
       "ADEPTUS ASTARTES"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 74
   },
   {
     "id": "cos_punisher_gatling_cannon",
@@ -6030,7 +6239,8 @@
       "IMPERIUM",
       "ASTRA MILITARUM"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 117
   },
   {
     "id": "cos_taurox_battle_cannon",
@@ -6063,7 +6273,8 @@
       "IMPERIUM",
       "ASTRA MILITARUM"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 91
   },
   {
     "id": "cos_taurox_gatling_cannon",
@@ -6095,7 +6306,8 @@
       "IMPERIUM",
       "ASTRA MILITARUM"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 117
   },
   {
     "id": "cos_vanquisher_battle_cannon",
@@ -6128,7 +6340,8 @@
       "IMPERIUM",
       "ASTRA MILITARUM"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 117
   },
   {
     "id": "cos_wyvern_quad_stormshard_mortar",
@@ -6160,7 +6373,8 @@
       "IMPERIUM",
       "ASTRA MILITARUM"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 87
   },
   {
     "id": "cos_auto_bolt_rifle",
@@ -6193,7 +6407,8 @@
       "ADEPTUS ASTARTES",
       "PRIMARIS"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 77
   },
   {
     "id": "cos_cognis_autocannon",
@@ -6225,7 +6440,8 @@
       "PROJECTILE",
       "ADEPTUS MECHANICUS"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 81
   },
   {
     "id": "cos_cognis_heavy_stubber",
@@ -6258,7 +6474,8 @@
       "IMPERIUM",
       "ADEPTUS MECHANICUS"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 79
   },
   {
     "id": "cos_cognis_lascannon",
@@ -6290,7 +6507,8 @@
       "IMPERIUM",
       "ADEPTUS MECHANICUS"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 79
   },
   {
     "id": "cos_heavy_phosphor_blaster",
@@ -6321,7 +6539,8 @@
       "PHOSPHOR",
       "ADEPTUS MECHANICUS"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 79
   },
   {
     "id": "cos_hurricane_bolter",
@@ -6353,7 +6572,8 @@
       "IMPERIUM",
       "ADEPTUS ASTARTES"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 70
   },
   {
     "id": "cos_hydra_quad_autocannon",
@@ -6385,7 +6605,8 @@
       "IMPERIUM",
       "ASTRA MILITARUM"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 86
   },
   {
     "id": "cos_icarus_autocannon",
@@ -6416,7 +6637,8 @@
       "PROJECTILE",
       "ADEPTUS MECHANICUS"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 80
   },
   {
     "id": "cos_icarus_ironhail_heavy_stubber",
@@ -6446,7 +6668,8 @@
       "PROJECTILE",
       "IMPERIUM"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 78
   },
   {
     "id": "cos_immolation_flamer",
@@ -6478,7 +6701,8 @@
       "IMPERIUM",
       "ADEPTA SORORITAS"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 68
   },
   {
     "id": "cos_ironhail_heavy_stubber",
@@ -6508,7 +6732,8 @@
       "PROJECTILE",
       "IMPERIUM"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 76
   },
   {
     "id": "cos_krakstorm_grenade_launcher",
@@ -6539,7 +6764,8 @@
       "EXPLOSIVE",
       "ADEPTUS ASTARTES"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 78
   },
   {
     "id": "cos_las_talon",
@@ -6572,7 +6798,8 @@
       "ADEPTUS ASTARTES",
       "PRIMARIS"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 76
   },
   {
     "id": "cos_lasgun_array",
@@ -6605,7 +6832,8 @@
       "IMPERIUM",
       "ASTRA MILITARUM"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 84
   },
   {
     "id": "cos_macro_plasma_incinerator",
@@ -6637,7 +6865,8 @@
       "IMPERIUM",
       "ADEPTUS ASTARTES"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 78
   },
   {
     "id": "cos_multi_laser",
@@ -6670,7 +6899,8 @@
       "IMPERIUM",
       "ASTRA MILITARUM"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 66
   },
   {
     "id": "cos_onager_heavy_phosphor_blaster",
@@ -6702,7 +6932,8 @@
       "PHOSPHOR",
       "ADEPTUS MECHANICUS"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 80
   },
   {
     "id": "cos_phosphor_blaster",
@@ -6733,7 +6964,8 @@
       "PHOSPHOR",
       "ADEPTUS MECHANICUS"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 79
   },
   {
     "id": "cos_repressor_heavy_flamer",
@@ -6765,7 +6997,8 @@
       "IMPERIUM",
       "ADEPTA SORORITAS"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 68
   },
   {
     "id": "cos_taurox_missile_launcher_frag",
@@ -6795,7 +7028,8 @@
       "EXPLOSIVE",
       "IMPERIUM"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 91
   },
   {
     "id": "cos_taurox_missile_launcher_krak",
@@ -6825,7 +7059,8 @@
       "EXPLOSIVE",
       "IMPERIUM"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 119
   },
   {
     "id": "cos_tempest_bolter",
@@ -6858,7 +7093,8 @@
       "IMPERIUM",
       "ADEPTUS ASTARTES"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 76
   },
   {
     "id": "cos_vulture_gatling_cannon",
@@ -6889,7 +7125,8 @@
       "ASTRA MILITARUM",
       "NAVIS IMPERIALIS"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 82
   },
   {
     "id": "cos_cerberus_launcher",
@@ -6920,7 +7157,8 @@
       "EXPLOSIVE",
       "ADEPTUS ASTARTES"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 72
   },
   {
     "id": "cos_daedalus_missile_launcher",
@@ -6951,7 +7189,8 @@
       "EXPLOSIVE",
       "ADEPTUS MECHANICUS"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 122
   },
   {
     "id": "cos_deathstrike_missile",
@@ -6982,7 +7221,8 @@
       "EXPLOSIVE",
       "IMPERIUM"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 86
   },
   {
     "id": "cos_disruptor_missile_launcher",
@@ -7013,7 +7253,8 @@
       "EXPLOSIVE",
       "ADEPTUS MECHANICUS"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 80
   },
   {
     "id": "cos_exorcist_conflagration_rocket_launcher",
@@ -7044,7 +7285,8 @@
       "EXPLOSIVE",
       "ADEPTA SORORITAS"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 67
   },
   {
     "id": "cos_exorcist_missile_launcher",
@@ -7075,7 +7317,8 @@
       "EXPLOSIVE",
       "ADEPTA SORORITAS"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 67
   },
   {
     "id": "cos_fragstorm_grenade_launcher",
@@ -7107,7 +7350,8 @@
       "IMPERIUM",
       "ADEPTUS ASTARTES"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 76
   },
   {
     "id": "cos_gatling_rocket_launcher",
@@ -7138,7 +7382,8 @@
       "EXPLOSIVE",
       "ADEPTUS MECHANICUS"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 80
   },
   {
     "id": "cos_heavy_mortar",
@@ -7169,7 +7414,8 @@
       "EXPLOSIVE",
       "IMPERIUM"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 64
   },
   {
     "id": "cos_hellstrike_missile",
@@ -7202,7 +7448,8 @@
       "IMPERIUM",
       "AERONAUTICA IMPERIALIS"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 84
   },
   {
     "id": "cos_hunter_killer_missile",
@@ -7234,7 +7481,8 @@
       "EXPLOSIVE",
       "IMPERIUM"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 66
   },
   {
     "id": "cos_hunter_slayer_missile",
@@ -7266,7 +7514,8 @@
       "EXPLOSIVE",
       "ADEPTUS ASTARTES"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 78
   },
   {
     "id": "cos_icarus_rocket_pod",
@@ -7299,7 +7548,8 @@
       "IMPERIUM",
       "ADEPTUS ASTARTES"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 76
   },
   {
     "id": "cos_multiple_rocket_pod",
@@ -7331,7 +7581,8 @@
       "IMPERIUM",
       "AERONAUTICA IMPERIALIS"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 82
   },
   {
     "id": "cos_storm_eagle_rocket",
@@ -7363,7 +7614,8 @@
       "IMPERIUM",
       "ASTRA MILITARUM"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 87
   },
   {
     "id": "cos_tauros_grenade_launcher_frag",
@@ -7395,7 +7647,8 @@
       "IMPERIUM",
       "ASTRA MILITARUM"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 66
   },
   {
     "id": "cos_tauros_grenade_launcher_krak",
@@ -7427,7 +7680,8 @@
       "IMPERIUM",
       "ASTRA MILITARUM"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 123
   },
   {
     "id": "cos_typhoon_missile_launcher_frag",
@@ -7458,7 +7712,8 @@
       "IMPERIUM",
       "ADEPTUS ASTARTES"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 71
   },
   {
     "id": "cos_typhoon_missile_launcher_krak",
@@ -7489,7 +7744,8 @@
       "IMPERIUM",
       "ADEPTUS ASTARTES"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 123
   },
   {
     "id": "cos_vulture_hellstrike_rack",
@@ -7522,7 +7778,8 @@
       "IMPERIUM",
       "AERONAUTICA IMPERIALIS"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 82
   },
   {
     "id": "cos_whirlwind_castellan_launcher",
@@ -7554,7 +7811,8 @@
       "EXPLOSIVE",
       "ADEPTUS ASTARTES"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 75
   },
   {
     "id": "cos_whirlwind_vengeance_launcher",
@@ -7586,7 +7844,8 @@
       "EXPLOSIVE",
       "ADEPTUS ASTARTES"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 75
   },
   {
     "id": "cos_sentinel_chainsaw",
@@ -7611,7 +7870,8 @@
       "CHAIN",
       "IMPERIUM"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 89
   },
   {
     "id": "cos_aeldari_missile_launcher_sunburst",
@@ -7643,7 +7903,8 @@
       "ASURYANI",
       "PLASMA"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 127
   },
   {
     "id": "cos_aeldari_missile_launcher_starshot",
@@ -7673,7 +7934,8 @@
       "AELDARI",
       "ASURYANI"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 127
   },
   {
     "id": "cos_bright_lance",
@@ -7706,7 +7968,8 @@
       "AELDARI",
       "ASURYANI"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 94
   },
   {
     "id": "cos_doomweaver",
@@ -7738,7 +8001,8 @@
       "AELDARI",
       "ASURYANI"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 93
   },
   {
     "id": "cos_heavy_d_scythe",
@@ -7770,7 +8034,8 @@
       "AELDARI",
       "ASURYANI"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 94
   },
   {
     "id": "cos_pulse_laser",
@@ -7802,7 +8067,8 @@
       "AELDARI",
       "ASURYANI"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 93
   },
   {
     "id": "cos_scatter_laser",
@@ -7834,7 +8100,8 @@
       "AELDARI",
       "ASURYANI"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 92
   },
   {
     "id": "cos_starcannon",
@@ -7866,7 +8133,8 @@
       "AELDARI",
       "ASURYANI"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 94
   },
   {
     "id": "cos_shuriken_cannon",
@@ -7896,7 +8164,8 @@
       "SHURIKEN",
       "AELDARI"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 92
   },
   {
     "id": "cos_prism_cannon_dispersed",
@@ -7928,7 +8197,8 @@
       "AELDARI",
       "ASURYANI"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 93
   },
   {
     "id": "cos_prism_cannon_focussed",
@@ -7959,7 +8229,8 @@
       "AELDARI",
       "ASURYANI"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 93
   },
   {
     "id": "cos_prism_cannon_lance",
@@ -7989,7 +8260,8 @@
       "AELDARI",
       "ASURYANI"
     ],
-    "source": "church"
+    "source": "church",
+    "page": null
   },
   {
     "id": "cos_havoc_launcher",
@@ -8020,7 +8292,8 @@
       "EXPLOSIVE",
       "CHAOS"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 98
   },
   {
     "id": "cos_blaster",
@@ -8048,7 +8321,8 @@
       "AELDARI",
       "DRUKHARI"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 79
   },
   {
     "id": "cos_dark_lance",
@@ -8079,7 +8353,8 @@
       "AELDARI",
       "DRUKHARI"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 99
   },
   {
     "id": "cos_disintegrator_cannon",
@@ -8109,7 +8384,8 @@
       "AELDARI",
       "DRUKHARI"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 99
   },
   {
     "id": "cos_heat_lance",
@@ -8141,7 +8417,8 @@
       "AELDARI",
       "DRUKHARI"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 100
   },
   {
     "id": "cos_phantasm_grenade_launcher",
@@ -8171,7 +8448,8 @@
       "AELDARI",
       "DRUKHARI"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 99
   },
   {
     "id": "cos_splinter_cannon",
@@ -8202,7 +8480,8 @@
       "DRUKHARI",
       "SPLINTER"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 100
   },
   {
     "id": "cos_splinter_pods",
@@ -8236,7 +8515,8 @@
       "DRUKHARI",
       "SPLINTER"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 130
   },
   {
     "id": "cos_splinter_rifle_vehicle",
@@ -8268,7 +8548,8 @@
       "DRUKHARI",
       "SPLINTER"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 100
   },
   {
     "id": "cos_bladevanes_weapon",
@@ -8293,7 +8574,8 @@
       "AELDARI",
       "DRUKHARI"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 99
   },
   {
     "id": "cos_grav_talon_weapon",
@@ -8318,7 +8600,8 @@
       "AELDARI",
       "DRUKHARI"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 100
   },
   {
     "id": "cos_gauss_blaster",
@@ -8348,7 +8631,8 @@
       "NECRON",
       "GAUSS"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 103
   },
   {
     "id": "cos_gauss_cannon",
@@ -8378,7 +8662,8 @@
       "NECRON",
       "GAUSS"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 101
   },
   {
     "id": "cos_gauss_flayer_array",
@@ -8409,7 +8694,8 @@
       "NECRON",
       "GAUSS"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 102
   },
   {
     "id": "cos_heavy_gauss_cannon",
@@ -8439,7 +8725,8 @@
       "NECRON",
       "GAUSS"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 103
   },
   {
     "id": "cos_heavy_death_ray",
@@ -8468,7 +8755,8 @@
     "keywords": [
       "NECRON"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 101
   },
   {
     "id": "cos_doomsday_cannon_high",
@@ -8498,7 +8786,8 @@
     "keywords": [
       "NECRON"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 102
   },
   {
     "id": "cos_doomsday_cannon_low",
@@ -8528,7 +8817,8 @@
     "keywords": [
       "NECRON"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 102
   },
   {
     "id": "cos_heat_ray_dispersed",
@@ -8558,7 +8848,8 @@
     "keywords": [
       "NECRON"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 103
   },
   {
     "id": "cos_heat_ray_focussed",
@@ -8588,7 +8879,8 @@
     "keywords": [
       "NECRON"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 103
   },
   {
     "id": "cos_particle_beamer",
@@ -8618,7 +8910,8 @@
     "keywords": [
       "NECRON"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 103
   },
   {
     "id": "cos_particle_shredder",
@@ -8648,7 +8941,8 @@
     "keywords": [
       "NECRON"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 103
   },
   {
     "id": "cos_stalkers_forelimbs",
@@ -8672,7 +8966,8 @@
     "keywords": [
       "NECRON"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 103
   },
   {
     "id": "cos_tesla_carbine",
@@ -8702,7 +8997,8 @@
       "NECRON",
       "TESLA"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 103
   },
   {
     "id": "cos_tesla_cannon",
@@ -8733,7 +9029,8 @@
       "NECRON",
       "TESLA"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 101
   },
   {
     "id": "cos_tesla_destructor",
@@ -8764,7 +9061,8 @@
       "NECRON",
       "TESLA"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 101
   },
   {
     "id": "cos_burna_exhaust",
@@ -8795,7 +9093,8 @@
       "FIRE",
       "ORK"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 105
   },
   {
     "id": "cos_dakkagun",
@@ -8827,7 +9126,8 @@
       "PROJECTILE",
       "ORK"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 104
   },
   {
     "id": "cos_eavy_lobba",
@@ -8858,7 +9158,8 @@
       "EXPLOSIVE",
       "ORK"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 109
   },
   {
     "id": "cos_killkannon",
@@ -8889,7 +9190,8 @@
       "EXPLOSIVE",
       "ORK"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 108
   },
   {
     "id": "cos_kopta_rokkits",
@@ -8920,7 +9222,8 @@
       "EXPLOSIVE",
       "ORK"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 110
   },
   {
     "id": "cos_kustom_mega_blasta",
@@ -8952,7 +9255,8 @@
       "ENERGY",
       "ORK"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 110
   },
   {
     "id": "cos_kustom_shokk_rifle",
@@ -8984,7 +9288,8 @@
       "ENERGY",
       "ORK"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 136
   },
   {
     "id": "cos_lobba",
@@ -9015,7 +9320,8 @@
       "EXPLOSIVE",
       "ORK"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 109
   },
   {
     "id": "cos_mek_speshul",
@@ -9047,7 +9353,8 @@
     "keywords": [
       "ORK"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 104
   },
   {
     "id": "cos_rivet_kannon",
@@ -9080,7 +9387,8 @@
       "PROJECTILE",
       "ORK"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 105
   },
   {
     "id": "cos_rokkit_kannon",
@@ -9111,7 +9419,8 @@
       "EXPLOSIVE",
       "ORK"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 106
   },
   {
     "id": "cos_skorcha_missile_rack",
@@ -9142,7 +9451,8 @@
       "FIRE",
       "ORK"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 111
   },
   {
     "id": "cos_smasha_gun",
@@ -9173,7 +9483,8 @@
     "keywords": [
       "ORK"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 108
   },
   {
     "id": "cos_stikka_kannon",
@@ -9203,7 +9514,8 @@
     "keywords": [
       "ORK"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 109
   },
   {
     "id": "cos_stikkbomb_flinga",
@@ -9234,7 +9546,8 @@
       "EXPLOSIVE",
       "ORK"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 108
   },
   {
     "id": "cos_supa_shoota",
@@ -9266,7 +9579,8 @@
       "PROJECTILE",
       "ORK"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 60
   },
   {
     "id": "cos_tellyport_mega_blasta",
@@ -9298,7 +9612,8 @@
     "keywords": [
       "ORK"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 108
   },
   {
     "id": "cos_wazbom_mega_kannon",
@@ -9330,7 +9645,8 @@
       "ENERGY",
       "ORK"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 108
   },
   {
     "id": "cos_wing_missile",
@@ -9361,7 +9677,8 @@
       "EXPLOSIVE",
       "ORK"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 106
   },
   {
     "id": "cos_wurrtower",
@@ -9390,7 +9707,8 @@
     "keywords": [
       "ORK"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 109
   },
   {
     "id": "cos_zzap_gun",
@@ -9422,7 +9740,8 @@
       "ENERGY",
       "ORK"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 109
   },
   {
     "id": "cos_kannon_frag",
@@ -9453,7 +9772,8 @@
       "EXPLOSIVE",
       "ORK"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 105
   },
   {
     "id": "cos_kannon_shell",
@@ -9484,7 +9804,8 @@
       "PROJECTILE",
       "ORK"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 105
   },
   {
     "id": "cos_killa_jet_burna",
@@ -9515,7 +9836,8 @@
       "FIRE",
       "ORK"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 105
   },
   {
     "id": "cos_killa_jet_cutta",
@@ -9546,7 +9868,8 @@
     "keywords": [
       "ORK"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 105
   },
   {
     "id": "cos_heavy_squig_launcha",
@@ -9576,7 +9899,8 @@
       "ORK",
       "SQUIG"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 107
   },
   {
     "id": "cos_bile_squig",
@@ -9607,7 +9931,8 @@
       "ORK",
       "SQUIG"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 138
   },
   {
     "id": "cos_bitey_squig",
@@ -9637,7 +9962,8 @@
       "ORK",
       "SQUIG"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 138
   },
   {
     "id": "cos_boom_squig",
@@ -9667,7 +9993,8 @@
       "ORK",
       "SQUIG"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 138
   },
   {
     "id": "cos_grabbin_klaw",
@@ -9693,7 +10020,8 @@
     "keywords": [
       "ORK"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 107
   },
   {
     "id": "cos_savage_horns_and_hooves",
@@ -9718,7 +10046,8 @@
       "ORK",
       "SQUIG"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 109
   },
   {
     "id": "cos_saw_blades",
@@ -9743,7 +10072,8 @@
     "keywords": [
       "ORK"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 106
   },
   {
     "id": "cos_spinnin_blades",
@@ -9768,7 +10098,8 @@
     "keywords": [
       "ORK"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 110
   },
   {
     "id": "cos_wreckin_ball",
@@ -9794,7 +10125,8 @@
     "keywords": [
       "ORK"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 107
   },
   {
     "id": "cos_big_bomb",
@@ -9824,7 +10156,8 @@
       "EXPLOSIVE",
       "ORK"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 110
   },
   {
     "id": "cos_boom_bomb",
@@ -9854,7 +10187,8 @@
       "EXPLOSIVE",
       "ORK"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 111
   },
   {
     "id": "cos_burna_bomb",
@@ -9884,7 +10218,8 @@
       "FIRE",
       "ORK"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 111
   },
   {
     "id": "standard_shotgun",
@@ -9916,7 +10251,8 @@
       "IMPERIUM",
       "SCUM"
     ],
-    "source": "shotguns"
+    "source": "shotguns",
+    "page": 5
   },
   {
     "id": "combat_shotgun",
@@ -9949,7 +10285,8 @@
       "IMPERIUM",
       "SCUM"
     ],
-    "source": "shotguns"
+    "source": "shotguns",
+    "page": 5
   },
   {
     "id": "artificer_shotgun",
@@ -9981,7 +10318,8 @@
       "PROJECTILE",
       "IMPERIUM"
     ],
-    "source": "shotguns"
+    "source": "shotguns",
+    "page": 5
   },
   {
     "id": "auxiliary_shotgun",
@@ -10013,7 +10351,8 @@
       "IMPERIUM",
       "ASTRA MILITARUM"
     ],
-    "source": "shotguns"
+    "source": "shotguns",
+    "page": 9
   },
   {
     "id": "varonia_honorbound_pattern_shotgun",
@@ -10046,7 +10385,8 @@
       "IMPERIUM",
       "SCUM"
     ],
-    "source": "shotguns"
+    "source": "shotguns",
+    "page": 6
   },
   {
     "id": "incisor_shotgun_pistol",
@@ -10079,7 +10419,8 @@
       "IMPERIUM",
       "SCUM"
     ],
-    "source": "shotguns"
+    "source": "shotguns",
+    "page": 6
   },
   {
     "id": "varonia_primus_pattern_shotgun",
@@ -10112,7 +10453,8 @@
       "IMPERIUM",
       "ASTRA MILITARUM"
     ],
-    "source": "shotguns"
+    "source": "shotguns",
+    "page": 6
   },
   {
     "id": "avachrus_xii_gravefiller_shotgun",
@@ -10145,7 +10487,8 @@
       "IMPERIUM",
       "ASTRA MILITARUM"
     ],
-    "source": "shotguns"
+    "source": "shotguns",
+    "page": null
   },
   {
     "id": "avachrus_iib_enochian_sanctified_shotgun",
@@ -10179,7 +10522,8 @@
       "IMPERIUM",
       "ADEPTA SORORITAS"
     ],
-    "source": "shotguns"
+    "source": "shotguns",
+    "page": 8
   },
   {
     "id": "ork_boomstikk",
@@ -10210,7 +10554,8 @@
       "PROJECTILE",
       "ORK"
     ],
-    "source": "shotguns"
+    "source": "shotguns",
+    "page": 8
   },
   {
     "id": "bright_lance",
@@ -10242,7 +10587,8 @@
       "AELDARI",
       "ASURYANI"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 79
   },
   {
     "id": "hawks_talon",
@@ -10274,7 +10620,8 @@
       "ASPECT WARRIOR",
       "ASURYANI"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 79
   },
   {
     "id": "scatter_laser",
@@ -10304,7 +10651,8 @@
       "AELDARI",
       "ASURYANI"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 79
   },
   {
     "id": "blaster",
@@ -10336,7 +10684,8 @@
       "ANHRATHE",
       "DRUKHARI"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 79
   },
   {
     "id": "blast_pistol",
@@ -10368,7 +10717,8 @@
       "ANHRATHE",
       "DRUKHARI"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 80
   },
   {
     "id": "dark_lance",
@@ -10400,7 +10750,8 @@
       "AELDARI",
       "DRUKHARI"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 80
   },
   {
     "id": "shuriken_cannon",
@@ -10431,7 +10782,8 @@
       "ASURYANI",
       "SHURIKEN"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 80
   },
   {
     "id": "clawmounted_shuriken_catapult",
@@ -10464,7 +10816,8 @@
       "ASURYANI",
       "SHURIKEN"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 81
   },
   {
     "id": "shadow_weaver",
@@ -10497,7 +10850,8 @@
       "ASURYANI",
       "MONOFILAMENT"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 81
   },
   {
     "id": "shredder",
@@ -10530,7 +10884,8 @@
       "DRUKHARI",
       "MONOFILAMENT"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 81
   },
   {
     "id": "twin_death_spinners",
@@ -10563,7 +10918,8 @@
       "ASURYANI",
       "MONOFILAMENT"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 81
   },
   {
     "id": "aeldari_flamer",
@@ -10594,7 +10950,8 @@
       "AELDARI",
       "FLAME"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 82
   },
   {
     "id": "aeldari_missile_launcher_starshot",
@@ -10625,7 +10982,8 @@
       "ASURYANI",
       "MISSILE"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 82
   },
   {
     "id": "aeldari_missile_launcher_sunburst",
@@ -10657,7 +11015,8 @@
       "ASURYANI",
       "MISSILE"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 82
   },
   {
     "id": "haywire_blaster",
@@ -10689,7 +11048,8 @@
       "AELDARI",
       "DRUKHARI"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 82
   },
   {
     "id": "phantasm_grenade_launcher",
@@ -10720,7 +11080,8 @@
       "AELDARI",
       "DRUKHARI"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 82
   },
   {
     "id": "reaper_launcher_starshot",
@@ -10752,7 +11113,8 @@
       "ASURYANI",
       "MISSILE"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 82
   },
   {
     "id": "reaper_launcher_starswarm",
@@ -10784,7 +11146,8 @@
       "ASURYANI",
       "MISSILE"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 82
   },
   {
     "id": "starcannon",
@@ -10816,7 +11179,8 @@
       "ASURYANI",
       "PLASMA"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 82
   },
   {
     "id": "swooping_hawk_grenade_pack",
@@ -10849,7 +11213,8 @@
       "ASURYANI",
       "GRENADE"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 82
   },
   {
     "id": "vibro_cannon",
@@ -10880,7 +11245,8 @@
       "AELDARI",
       "ASURYANI"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 83
   },
   {
     "id": "firepike",
@@ -10913,7 +11279,8 @@
       "ASURYANI",
       "MELTA"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 84
   },
   {
     "id": "guardian_fusion_gun",
@@ -10945,7 +11312,8 @@
       "ASURYANI",
       "MELTA"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 83
   },
   {
     "id": "splinter_cannon",
@@ -10977,7 +11345,8 @@
       "DRUKHARI",
       "SPLINTER"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 84
   },
   {
     "id": "d_cannon",
@@ -11009,7 +11378,8 @@
       "ASURYANI",
       "VORTEX"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 85
   },
   {
     "id": "d_scythe",
@@ -11041,7 +11411,8 @@
       "ASURYANI",
       "VORTEX"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 85
   },
   {
     "id": "hexrifle",
@@ -11073,7 +11444,8 @@
       "DRUKHARI",
       "HAEMONCULUS"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 85
   },
   {
     "id": "liquifier_gun",
@@ -11105,7 +11477,8 @@
       "DRUKHARI",
       "HAEMONCULUS"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 85
   },
   {
     "id": "ossefactor",
@@ -11139,7 +11512,8 @@
       "DRUKHARI",
       "HAEMONCULUS"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 85
   },
   {
     "id": "aeldari_power_sword",
@@ -11164,7 +11538,8 @@
       "ASURYANI",
       "POWER FIELD"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 86
   },
   {
     "id": "demiklaive",
@@ -11192,7 +11567,8 @@
       "INCUBUS",
       "POWER FIELD"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 87
   },
   {
     "id": "electrocorrosive_whip",
@@ -11219,7 +11595,8 @@
       "DRUKHARI",
       "WYCH CULT"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 87
   },
   {
     "id": "executioner",
@@ -11245,7 +11622,8 @@
       "ASURYANI",
       "POWER FIELD"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 87
   },
   {
     "id": "flesh_gauntlet",
@@ -11272,7 +11650,8 @@
       "DRUKHARI",
       "HAEMONCULUS"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 87
   },
   {
     "id": "ghostaxe",
@@ -11297,7 +11676,8 @@
       "ASURYANI",
       "WRAITHGUARD"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 89
   },
   {
     "id": "ghostglaive",
@@ -11323,7 +11703,8 @@
       "ASURYANI",
       "WRAITHGUARD"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 89
   },
   {
     "id": "hydra_gauntlets",
@@ -11350,7 +11731,8 @@
       "DRUKHARI",
       "WYCH CULT"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 88
   },
   {
     "id": "ichor_injector",
@@ -11376,7 +11758,8 @@
       "DRUKHARI",
       "HAEMONCULUS"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 86
   },
   {
     "id": "impaler",
@@ -11402,7 +11785,8 @@
       "DRUKHARI",
       "WYCH CULT"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 86
   },
   {
     "id": "drukhari_knife",
@@ -11424,7 +11808,8 @@
       "BLADE",
       "AELDARI"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 86
   },
   {
     "id": "razorflail_sword",
@@ -11451,7 +11836,8 @@
       "EXOTIC",
       "WYCH CULT"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 87
   },
   {
     "id": "razorflail_whip",
@@ -11479,7 +11865,8 @@
       "EXOTIC",
       "WYCH CULT"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 87
   },
   {
     "id": "shardnet",
@@ -11507,7 +11894,8 @@
       "EXOTIC",
       "WYCH CULT"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 86
   },
   {
     "id": "scorpions_claw",
@@ -11533,7 +11921,8 @@
       "ASURYANI",
       "POWER FIELD"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 89
   },
   {
     "id": "powerblade",
@@ -11559,7 +11948,8 @@
       "ASURYANI",
       "POWER FIELD"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 89
   },
   {
     "id": "powerglaive",
@@ -11584,7 +11974,8 @@
       "ASURYANI",
       "POWER FIELD"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 89
   },
   {
     "id": "mindphase_gauntlet",
@@ -11609,7 +12000,8 @@
       "DRUKHARI",
       "HAEMONCULUS"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 89
   },
   {
     "id": "jesters_blade",
@@ -11633,7 +12025,8 @@
       "AELDARI",
       "HARLEQUIN"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 88
   },
   {
     "id": "venom_blade",
@@ -11658,7 +12051,8 @@
       "AELDARI",
       "DRUKHARI"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 89
   },
   {
     "id": "witch_staff",
@@ -11685,7 +12079,8 @@
       "ASURYANI",
       "FORCE"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 89
   },
   {
     "id": "fusion_charge",
@@ -11716,7 +12111,8 @@
       "ASURYANI",
       "GRENADE"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 91
   },
   {
     "id": "hallucinogen_grenade",
@@ -11748,7 +12144,8 @@
       "HARLEQUIN",
       "GRENADE"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 82
   },
   {
     "id": "haywire_grenade",
@@ -11780,7 +12177,8 @@
       "ASURYANI",
       "GRENADE"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 91
   },
   {
     "id": "phantasm_grenade",
@@ -11812,7 +12210,8 @@
       "DRUKHARI",
       "GRENADE"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 82
   },
   {
     "id": "plasma_grenade",
@@ -11842,7 +12241,8 @@
       "AELDARI",
       "GRENADE"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 91
   },
   {
     "id": "wireweave_grenade",
@@ -11874,7 +12274,8 @@
       "ASURYANI",
       "GRENADE"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 91
   },
   {
     "id": "mono_knife",
@@ -11899,7 +12300,8 @@
       "IMPERIUM",
       "SCUM"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 211
   },
   {
     "id": "industrial_bludgeon",
@@ -11923,7 +12325,8 @@
     "keywords": [
       "ANY"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 211
   },
   {
     "id": "chainaxe",
@@ -11948,7 +12351,8 @@
       "CHAIN",
       "CHAOS"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 129
   },
   {
     "id": "chain_fist",
@@ -11976,7 +12380,8 @@
       "CHAOS",
       "ADEPTUS ASTARTES"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 212
   },
   {
     "id": "nemesis_daemon_hammer",
@@ -12005,7 +12410,8 @@
       "INQUISITION",
       "ADEPTUS ASTARTES"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 212
   },
   {
     "id": "power_klaw",
@@ -12032,7 +12438,8 @@
       "POWER FIELD",
       "ORK"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 213
   },
   {
     "id": "big_choppa",
@@ -12057,7 +12464,8 @@
       "2-HANDED",
       "ORK"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 213
   },
   {
     "id": "chain_choppa",
@@ -12082,7 +12490,8 @@
       "CHAIN",
       "ORK"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 213
   },
   {
     "id": "weirdboy_staff",
@@ -12109,7 +12518,8 @@
       "2-HANDED",
       "ORK"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 213
   },
   {
     "id": "master_crafted_laspistol",
@@ -12140,7 +12550,8 @@
       "LAS",
       "IMPERIUM"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 217
   },
   {
     "id": "hot_shot_volley_gun",
@@ -12172,7 +12583,8 @@
       "IMPERIUM",
       "ASTRA MILITARUM"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 217
   },
   {
     "id": "long_las",
@@ -12204,7 +12616,8 @@
       "IMPERIUM",
       "ASTRA MILITARUM"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 217
   },
   {
     "id": "lascannon",
@@ -12235,7 +12648,8 @@
       "LAS",
       "IMPERIUM"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 217
   },
   {
     "id": "plasma_cannon",
@@ -12266,7 +12680,8 @@
       "PLASMA",
       "IMPERIUM"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 218
   },
   {
     "id": "inferno_pistol",
@@ -12299,7 +12714,8 @@
       "ADEPTUS ASTARTES",
       "ADEPTA SORORITAS"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 218
   },
   {
     "id": "meltagun",
@@ -12330,7 +12746,8 @@
       "MELTA",
       "IMPERIUM"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 218
   },
   {
     "id": "multi_melta",
@@ -12361,7 +12778,8 @@
       "MELTA",
       "IMPERIUM"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 218
   },
   {
     "id": "needle_pistol",
@@ -12394,7 +12812,8 @@
       "NEEDLE",
       "IMPERIUM"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 218
   },
   {
     "id": "stubcannon",
@@ -12425,7 +12844,8 @@
       "IMPERIUM",
       "SCUM"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 218
   },
   {
     "id": "shotgun",
@@ -12457,7 +12877,8 @@
       "IMPERIUM",
       "SCUM"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 218
   },
   {
     "id": "heavy_stubber",
@@ -12488,7 +12909,8 @@
       "IMPERIUM",
       "SCUM"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 219
   },
   {
     "id": "needle_rifle",
@@ -12520,7 +12942,8 @@
       "NEEDLE",
       "IMPERIUM"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 218
   },
   {
     "id": "astartes_sniper_rifle",
@@ -12552,7 +12975,8 @@
       "IMPERIUM",
       "ADEPTUS ASTARTES"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 219
   },
   {
     "id": "assault_cannon",
@@ -12583,7 +13007,8 @@
       "IMPERIUM",
       "ADEPTUS ASTARTES"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 219
   },
   {
     "id": "autocannon",
@@ -12613,7 +13038,8 @@
       "PROJECTILE",
       "IMPERIUM"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 219
   },
   {
     "id": "hand_flamer",
@@ -12644,7 +13070,8 @@
       "FIRE",
       "IMPERIUM"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 219
   },
   {
     "id": "flamer",
@@ -12675,7 +13102,8 @@
       "FIRE",
       "IMPERIUM"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 219
   },
   {
     "id": "heavy_flamer",
@@ -12706,7 +13134,8 @@
       "FIRE",
       "IMPERIUM"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 219
   },
   {
     "id": "arc_pistol",
@@ -12737,7 +13166,8 @@
       "ARC",
       "ADEPTUS MECHANICUS"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 219
   },
   {
     "id": "galvanic_rifle",
@@ -12768,7 +13198,8 @@
       "PROJECTILE",
       "ADEPTUS MECHANICUS"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 219
   },
   {
     "id": "arc_rifle",
@@ -12799,7 +13230,8 @@
       "ARC",
       "ADEPTUS MECHANICUS"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 219
   },
   {
     "id": "radium_carbine",
@@ -12830,7 +13262,8 @@
       "PROJECTILE",
       "ADEPTUS MECHANICUS"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 219
   },
   {
     "id": "volkite_blaster",
@@ -12863,7 +13296,8 @@
       "ADEPTUS MECHANICUS",
       "FIRE"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 219
   },
   {
     "id": "frag_grenade",
@@ -12889,7 +13323,8 @@
       "EXPLOSIVE",
       "IMPERIUM"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 185
   },
   {
     "id": "krak_grenade",
@@ -12915,7 +13350,8 @@
       "EXPLOSIVE",
       "IMPERIUM"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 220
   },
   {
     "id": "militarum_tempestus_grenade_launcher",
@@ -12946,7 +13382,8 @@
       "IMPERIUM",
       "ASTRA MILITARUM"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 220
   },
   {
     "id": "frag_missile",
@@ -12972,7 +13409,8 @@
       "EXPLOSIVE",
       "IMPERIUM"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 208
   },
   {
     "id": "krak_missile",
@@ -12998,7 +13436,8 @@
       "EXPLOSIVE",
       "IMPERIUM"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 220
   },
   {
     "id": "missile_launcher",
@@ -13028,7 +13467,8 @@
       "EXPLOSIVE",
       "IMPERIUM"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 220
   },
   {
     "id": "cyclone_missile_launcher",
@@ -13059,7 +13499,8 @@
       "IMPERIUM",
       "ADEPTUS ASTARTES"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 220
   },
   {
     "id": "fusion_gun",
@@ -13090,7 +13531,8 @@
       "MELTA",
       "AELDARI"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 220
   },
   {
     "id": "burna",
@@ -13121,7 +13563,8 @@
       "FIRE",
       "ORK"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 220
   },
   {
     "id": "big_shoota",
@@ -13152,7 +13595,8 @@
       "PROJECTILE",
       "ORK"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 220
   },
   {
     "id": "snazzgun",
@@ -13182,7 +13626,8 @@
     "keywords": [
       "ORK"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 220
   },
   {
     "id": "rokkit_launcha",
@@ -13213,7 +13658,8 @@
       "EXPLOSIVE",
       "ORK"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 221
   },
   {
     "id": "stikkbomb",
@@ -13239,6 +13685,7 @@
       "EXPLOSIVE",
       "ORK"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 221
   }
 ]

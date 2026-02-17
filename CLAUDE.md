@@ -58,16 +58,33 @@ Each data entry has a `source` field using these lowercase identifiers:
 
 Character ascension data is stored in `character.ascensions` (array). Each entry:
 ```json
-{ "targetTier": 3, "type": "package", "packageId": "stay_the_course", "archetypeId": null }
+{ "targetTier": 3, "type": "package", "packageId": "stay_the_course", "archetypeId": null, "choices": {} }
 ```
 - `targetTier`: The tier being ascended TO
 - `type`: `"package"` or `"archetype"` (mutually exclusive per slot)
 - `packageId`: ID from `ascension-packages.json` (if type=package)
 - `archetypeId`: ID from `archetypes.json` (if type=archetype)
+- `choices`: Optional object for package choices (e.g., `{ patronBenefit: "influence" }` for Demanding Patron)
 
 **Effective tier** = starting tier + count of ascensions where `targetTier > startingTier`. Use `State.getEffectiveTier()`.
 **Starting tier** (`character.tier`) determines XP pool — ascensions cost XP, they don't add XP.
 **Old format migration**: `loadCharacter()` auto-converts old `ascensionPackages: ["id1"]` arrays to the new format.
+
+### Ascension Package Effects
+
+Packages in `ascension-packages.json` can have structured effect fields that are auto-applied when selected:
+- `talentsGranted`: Array of talent IDs — auto-added as `{ id, ascensionGranted: true }` (no XP cost, non-removable)
+- `keywordsGranted`: Array of keywords — added to character keywords via `getCharacterKeywords()` in `prerequisite.js`
+- `psykerConfig`: `{ grantedPowers, freePowerChoices, unlockedDisciplines, disciplineChoices }` — merged into `State.getPsykerConfig()`
+- `powersGranted`: Array of power IDs — auto-added to character's psychic powers
+- `disciplinesUnlocked`: Array of discipline names — included in `State.getUnlockedDisciplines()`
+- `requiresChoice` / `choiceType` / `choiceOptions`: For packages requiring player choices (e.g., Demanding Patron)
+
+Effects are applied/removed via `State._applyAscensionEffects()` / `State._removeAscensionEffects()`.
+
+### Ascension Prerequisite Gating
+
+Both packages and archetype ascensions enforce prerequisites — cards with unmet prereqs are dimmed (50% opacity, `not-allowed` cursor) and cannot be clicked. Uses `data-prereqs-met` attribute on card elements. Archetype ascension checks rank (>=3) and stat prerequisites (archetype's `attributeBonus`/`skillBonus`).
 
 ## Character Sheet Layout
 
@@ -113,6 +130,7 @@ Source material PDFs are available locally for reference:
 11. **Non-Core sourcebook review for injuries/corruption**: Checked all books -- no expanded tables or rules beyond Core Rulebook. Only individual talents/abilities that interact with existing systems.
 12. **Wide-screen character sheet layout**: 2-column body (left: stats/abilities/talents, right: wargear) on >=1400px viewports
 13. **Ascension system**: Slot-based ascension with package/archetype choice per tier, effective tier tracking, fixed XP/influence/derived stat calculations, backward compat migration from old format
+14. **Ascension enhancements**: Mechanical effects for packages (auto-grant talents/powers/keywords/disciplines), package choice UI (Demanding Patron), archetype ascension stat prereqs + ability descriptions + wargear buttons, prereq gating for both packages and archetypes
 
 ## Builder Section Order
 

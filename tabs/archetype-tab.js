@@ -124,7 +124,7 @@ const ArchetypeTab = {
                     <div class="archetype-info">
                         <div class="archetype-name">
                             ${archetype.name}
-                            ${archetype.source !== 'core' ? `<span class="card-source">${archetype.source}</span>` : ''}
+                            <span class="card-source">${DataLoader.formatSourcePage(archetype)}</span>
                         </div>
                         <div class="archetype-desc">${archetype.description || ''}</div>
                     </div>

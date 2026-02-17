@@ -486,7 +486,13 @@ textarea {
     background: var(--bg-tertiary);
     border-radius: var(--radius-sm);
     font-size: 10px;
-    text-transform: uppercase;
+}
+
+.source-ref {
+    font-size: 11px;
+    color: var(--text-muted);
+    font-style: italic;
+    margin-top: 4px;
 }
 
 /* ===== Archetype List ===== */

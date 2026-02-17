@@ -122,6 +122,7 @@ const AscensionTab = {
                     ${pkg.keywordsGained && pkg.keywordsGained.length > 0 ? `
                         <div class="ascension-keywords">Keywords Gained: ${pkg.keywordsGained.join(', ')}</div>
                     ` : ''}
+                    <div class="source-ref">${DataLoader.formatSourcePage(pkg)}</div>
                 </div>
             `;
 
@@ -252,6 +253,7 @@ const AscensionTab = {
                         ${statPrereqs.text ? `<div class="ascension-prereqs${statPrereqs.met ? '' : ' unmet'}">${statPrereqs.text}</div>` : ''}
                         <div class="card-description">${a.description || ''}</div>
                         ${abilitiesHtml}
+                        <div class="source-ref">${DataLoader.formatSourcePage(a)}</div>
                     </div>
                 `;
 

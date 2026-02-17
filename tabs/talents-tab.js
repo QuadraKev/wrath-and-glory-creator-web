@@ -324,6 +324,7 @@ const TalentsTab = {
                 </div>
                 <div class="selected-talent-effect">${talent.effect || ''}</div>
                 ${flavorHtml}
+                <div class="source-ref">${DataLoader.formatSourcePage(talent)}</div>
             `;
 
             if (!isAscensionGranted) {
@@ -435,6 +436,7 @@ const TalentsTab = {
             descRow.innerHTML = `
                 <div class="talent-desc-effect">${talent.effect || 'No description available.'}</div>
                 ${flavorHtml}
+                <div class="source-ref">${DataLoader.formatSourcePage(talent)}</div>
             `;
 
             // Add click handler for expand/collapse

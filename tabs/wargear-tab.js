@@ -414,6 +414,7 @@ const WargearTab = {
                     </div>
                     ${traitsHtml}
                     ${keywordsHtml}
+                    <div class="source-ref">${DataLoader.formatSourcePage(w)}</div>
                 </div>
             `;
         }).join('');
@@ -468,6 +469,7 @@ const WargearTab = {
                     </div>
                     ${traitsHtml}
                     ${keywordsHtml}
+                    <div class="source-ref">${DataLoader.formatSourcePage(w)}</div>
                 </div>
             `;
         }).join('');
@@ -517,6 +519,7 @@ const WargearTab = {
                     </div>
                     ${traitsHtml}
                     ${keywordsHtml}
+                    <div class="source-ref">${DataLoader.formatSourcePage(a)}</div>
                 </div>
             `;
         }).join('');
@@ -563,6 +566,7 @@ const WargearTab = {
                     </div>
                     ${effectHtml}
                     ${keywordsHtml}
+                    <div class="source-ref">${DataLoader.formatSourcePage(e)}</div>
                 </div>
             `;
         }).join('');

@@ -364,6 +364,7 @@ const PowersTab = {
                 </div>
                 <div class="power-card-effect">${power.effect || ''}</div>
                 ${potencyHtml}
+                <div class="source-ref">${DataLoader.formatSourcePage(power)}</div>
             `;
 
             card.querySelector('.btn-add').addEventListener('click', () => {

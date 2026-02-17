@@ -601,7 +601,7 @@ const CharacterSheetTab = {
                 <tbody class="sheet-weapon-group">
                     <tr>
                         ${equipCell}
-                        <td class="sheet-weapon-name" rowspan="2">${weapon.name}${rarityDisplay}${upgradesDisplay}</td>
+                        <td class="sheet-weapon-name" rowspan="2">${weapon.name}${rarityDisplay}${upgradesDisplay}<div class="source-ref">${DataLoader.formatSourcePage(weapon)}</div></td>
                         <td class="sheet-weapon-dice" rowspan="2"${diceTooltip}>${weapon.attackDice.display}</td>
                         <td class="sheet-weapon-damage" colspan="2"${damageTooltip}>${weapon.calculatedDamage.display}</td>
                         <td class="sheet-weapon-range" rowspan="2">${range}</td>
@@ -738,7 +738,7 @@ const CharacterSheetTab = {
             return `
                 <tbody class="sheet-armor-group">
                     <tr>
-                        <td class="sheet-armor-name">${armor.name}${rarityDisplay}</td>
+                        <td class="sheet-armor-name">${armor.name}${rarityDisplay}<div class="source-ref">${DataLoader.formatSourcePage(armor)}</div></td>
                         <td class="sheet-armor-ar">${armor.ar || 0}</td>
                         <td class="sheet-armor-traits">${traits}</td>
                     </tr>
@@ -811,7 +811,7 @@ const CharacterSheetTab = {
             return `
                 <tbody class="sheet-equip-group">
                     <tr>
-                        <td class="sheet-equip-name">${equip.name}${rarityDisplay}</td>
+                        <td class="sheet-equip-name">${equip.name}${rarityDisplay}<div class="source-ref">${DataLoader.formatSourcePage(equip)}</div></td>
                         <td class="sheet-equip-effect">${equip.effect || '-'}</td>
                     </tr>
                     ${descRow}
@@ -918,6 +918,7 @@ const CharacterSheetTab = {
         return `
             <div class="sheet-section">
                 <h2 class="sheet-section-title">Species Abilities</h2>
+                <div class="source-ref">${DataLoader.formatSourcePage(species)}</div>
                 ${abilitiesHtml}
             </div>
         `;
@@ -985,6 +986,7 @@ const CharacterSheetTab = {
         return `
             <div class="sheet-section">
                 <h2 class="sheet-section-title">Archetype Abilities</h2>
+                ${archetype ? `<div class="source-ref">${DataLoader.formatSourcePage(archetype)}</div>` : ''}
                 ${allAbilitiesHtml}
             </div>
         `;
@@ -1116,6 +1118,7 @@ const CharacterSheetTab = {
                     <div class="sheet-talent-content">
                         <div class="sheet-talent-effect">${effectText}</div>
                         ${flavorHtml}
+                        <div class="source-ref">${DataLoader.formatSourcePage(talent)}</div>
                     </div>
                 </div>
             `;
@@ -1141,7 +1144,7 @@ const CharacterSheetTab = {
 
             return `
                 <tr>
-                    <td class="sheet-power-name">${power.name}</td>
+                    <td class="sheet-power-name">${power.name}<div class="source-ref">${DataLoader.formatSourcePage(power)}</div></td>
                     <td class="sheet-power-dn">${power.dn || '-'}</td>
                     <td class="sheet-power-desc">${power.effect || '-'}</td>
                 </tr>

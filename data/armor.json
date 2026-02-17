@@ -13,7 +13,8 @@
     "keywords": [
       "PRIMITIVE"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 232
   },
   {
     "id": "bodyglove",
@@ -27,7 +28,8 @@
     "keywords": [
       "IMPERIUM"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 231
   },
   {
     "id": "mesh_armour",
@@ -41,7 +43,8 @@
     "keywords": [
       "IMPERIUM"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 233
   },
   {
     "id": "flak_armour",
@@ -56,7 +59,8 @@
       "IMPERIUM",
       "ASTRA MILITARUM"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 94
   },
   {
     "id": "flak_coat",
@@ -70,7 +74,8 @@
     "keywords": [
       "IMPERIUM"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 104
   },
   {
     "id": "carapace_armour",
@@ -86,7 +91,8 @@
     "keywords": [
       "IMPERIUM"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 104
   },
   {
     "id": "tempestus_carapace",
@@ -101,7 +107,8 @@
       "IMPERIUM",
       "MILITARUM TEMPESTUS"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 233
   },
   {
     "id": "skitarii_war_plate",
@@ -117,7 +124,8 @@
       "ADEPTUS MECHANICUS",
       "SKITARII"
     ],
-    "source": "core"
+    "source": "core",
+    "page": null
   },
   {
     "id": "light_power_armour",
@@ -133,7 +141,8 @@
     "keywords": [
       "IMPERIUM"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 104
   },
   {
     "id": "sororitas_power_armour",
@@ -150,7 +159,8 @@
       "IMPERIUM",
       "ADEPTA SORORITAS"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 233
   },
   {
     "id": "ignatus_power_armour",
@@ -167,7 +177,8 @@
       "IMPERIUM",
       "INQUISITION"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 116
   },
   {
     "id": "heavy_power_armour",
@@ -185,7 +196,8 @@
     "keywords": [
       "IMPERIUM"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 233
   },
   {
     "id": "scout_armour",
@@ -200,7 +212,8 @@
       "IMPERIUM",
       "ADEPTUS ASTARTES"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 233
   },
   {
     "id": "aquila_power_armour",
@@ -217,7 +230,8 @@
       "IMPERIUM",
       "ADEPTUS ASTARTES"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 235
   },
   {
     "id": "mark_x_tacticus_armour",
@@ -235,7 +249,8 @@
       "ADEPTUS ASTARTES",
       "PRIMARIS"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 235
   },
   {
     "id": "terminator_armour",
@@ -253,7 +268,8 @@
       "IMPERIUM",
       "ADEPTUS ASTARTES"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 233
   },
   {
     "id": "corsair_armour",
@@ -268,7 +284,8 @@
       "AELDARI",
       "ANHRATHE"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 233
   },
   {
     "id": "aeldari_mesh_armour",
@@ -283,7 +300,8 @@
       "AELDARI",
       "ASURYANI"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 233
   },
   {
     "id": "rune_armour",
@@ -302,7 +320,8 @@
       "PSYKER"
     ],
     "invulnerable": true,
-    "source": "core"
+    "source": "core",
+    "page": 233
   },
   {
     "id": "heavy_mesh_armour",
@@ -317,7 +336,8 @@
       "AELDARI",
       "ANHRATHE"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 233
   },
   {
     "id": "ork_flak",
@@ -331,7 +351,8 @@
     "keywords": [
       "ORK"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 233
   },
   {
     "id": "eavy_armour",
@@ -348,7 +369,8 @@
     "keywords": [
       "ORK"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 233
   },
   {
     "id": "mega_armour",
@@ -366,7 +388,8 @@
     "keywords": [
       "ORK"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 233
   },
   {
     "id": "storm_shield",
@@ -387,7 +410,8 @@
       "POWER FIELD"
     ],
     "invulnerable": true,
-    "source": "core"
+    "source": "core",
+    "page": 231
   },
   {
     "id": "refractor_field",
@@ -405,7 +429,8 @@
       "POWER FIELD"
     ],
     "invulnerable": true,
-    "source": "core"
+    "source": "core",
+    "page": 231
   },
   {
     "id": "rosarius",
@@ -425,7 +450,8 @@
       "POWER FIELD"
     ],
     "invulnerable": true,
-    "source": "core"
+    "source": "core",
+    "page": 233
   },
   {
     "id": "aspect_armour",
@@ -444,7 +470,8 @@
       "ASURYANI"
     ],
     "invulnerable": true,
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 91
   },
   {
     "id": "heavy_aspect_armour",
@@ -463,7 +490,8 @@
       "ASURYANI"
     ],
     "invulnerable": true,
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 92
   },
   {
     "id": "ghostplate_armour",
@@ -481,7 +509,8 @@
       "DRUKHARI"
     ],
     "invulnerable": true,
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 91
   },
   {
     "id": "holo_suit",
@@ -499,7 +528,8 @@
       "AELDARI",
       "HARLEQUIN"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 91
   },
   {
     "id": "incubus_warsuit",
@@ -515,7 +545,8 @@
       "DRUKHARI",
       "INCUBUS"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 91
   },
   {
     "id": "kabalite_armour",
@@ -530,7 +561,8 @@
       "AELDARI",
       "DRUKHARI"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 92
   },
   {
     "id": "mesh_implants",
@@ -548,7 +580,8 @@
       "DRUKHARI",
       "HAEMONCULUS"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 92
   },
   {
     "id": "reaper_armour",
@@ -569,7 +602,8 @@
       "ASURYANI"
     ],
     "invulnerable": true,
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 92
   },
   {
     "id": "wych_suit",
@@ -585,7 +619,8 @@
       "DRUKHARI",
       "WYCH CULT"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 92
   },
   {
     "id": "force_shield_aeldari",
@@ -604,7 +639,8 @@
       "POWER FIELD"
     ],
     "invulnerable": true,
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 91
   },
   {
     "id": "gloom_field",
@@ -622,7 +658,8 @@
       "ASURYANI",
       "RANGER"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 92
   },
   {
     "id": "mistshield",
@@ -641,7 +678,8 @@
       "POWER FIELD"
     ],
     "invulnerable": true,
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 92
   },
   {
     "id": "serpent_shield_platform",
@@ -660,7 +698,8 @@
       "POWER FIELD"
     ],
     "invulnerable": true,
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 92
   },
   {
     "id": "shadowfield",
@@ -679,7 +718,8 @@
       "POWER FIELD"
     ],
     "invulnerable": true,
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 92
   },
   {
     "id": "shimmershield",
@@ -698,7 +738,8 @@
       "POWER FIELD"
     ],
     "invulnerable": true,
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 92
   },
   {
     "id": "sicarian_battle_armour",
@@ -716,7 +757,8 @@
       "ADEPTUS MECHANICUS",
       "SKITARII"
     ],
-    "source": "fspg"
+    "source": "fspg",
+    "page": 124
   },
   {
     "id": "bullgryn_plate",
@@ -734,7 +776,8 @@
       "ASTRA MILITARUM",
       "MILITARUM AUXILLA"
     ],
-    "source": "fspg"
+    "source": "fspg",
+    "page": 116
   },
   {
     "id": "kroot_armour",
@@ -749,7 +792,8 @@
       "KROOT",
       "T'AU"
     ],
-    "source": "fspg"
+    "source": "fspg",
+    "page": 124
   },
   {
     "id": "mark_x_phobos_armour",
@@ -767,7 +811,8 @@
       "ADEPTUS ASTARTES",
       "PRIMARIS"
     ],
-    "source": "voa"
+    "source": "voa",
+    "page": 72
   },
   {
     "id": "artificer_power_armour",
@@ -784,7 +829,8 @@
       "IMPERIUM",
       "ADEPTUS ASTARTES"
     ],
-    "source": "voa"
+    "source": "voa",
+    "page": 39
   },
   {
     "id": "tactical_dreadnought_armour",
@@ -802,7 +848,8 @@
       "IMPERIUM",
       "ADEPTUS ASTARTES"
     ],
-    "source": "voa"
+    "source": "voa",
+    "page": 38
   },
   {
     "id": "wychsuit",
@@ -818,7 +865,8 @@
       "DRUKHARI",
       "WYCH CULT"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 37
   },
   {
     "id": "cloak_of_skin",
@@ -836,7 +884,8 @@
       "DRUKHARI",
       "MANDRAKE"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 41
   },
   {
     "id": "war_mask",
@@ -852,7 +901,8 @@
       "ASURYANI",
       "ASPECT WARRIOR"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 22
   },
   {
     "id": "forceshield",
@@ -872,7 +922,8 @@
       "POWER FIELD"
     ],
     "invulnerable": true,
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 33
   },
   {
     "id": "mist_shield",
@@ -892,7 +943,8 @@
       "POWER FIELD"
     ],
     "invulnerable": true,
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 56
   },
   {
     "id": "aeronautica_flight_suit_aoa",
@@ -909,7 +961,8 @@
       "IMPERIUM",
       "AERONAUTICA IMPERIALIS"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 398
   },
   {
     "id": "arbites_carapace_aoa",
@@ -924,7 +977,8 @@
       "IMPERIUM",
       "ADEPTUS ARBITES"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 398
   },
   {
     "id": "assassinorum_bodyglove_aoa",
@@ -941,7 +995,8 @@
       "IMPERIUM",
       "OFFICIO ASSASSINORUM"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 196
   },
   {
     "id": "auramite_custodian_power_armour_aoa",
@@ -958,7 +1013,8 @@
       "IMPERIUM",
       "ADEPTUS CUSTODES"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 197
   },
   {
     "id": "endurant_shield_aoa",
@@ -976,7 +1032,8 @@
       "IMPERIUM",
       "NAVIS IMPERIALIS"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 399
   },
   {
     "id": "navis_armoured_voidsuit_aoa",
@@ -993,7 +1050,8 @@
       "IMPERIUM",
       "NAVIS IMPERIALIS"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 399
   },
   {
     "id": "paragon_warsuit_aoa",
@@ -1010,7 +1068,8 @@
       "IMPERIUM",
       "ADEPTA SORORITAS"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 399
   },
   {
     "id": "riot_shield_aoa",
@@ -1026,7 +1085,8 @@
     "keywords": [
       "IMPERIUM"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 399
   },
   {
     "id": "sicarian_battle_armour_aoa",
@@ -1042,7 +1102,8 @@
       "ADEPTUS MECHANICUS",
       "SKITARII"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 396
   },
   {
     "id": "suppression_shield_aoa",
@@ -1060,7 +1121,8 @@
       "IMPERIUM",
       "ADEPTUS ARBITES"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 400
   },
   {
     "id": "vindicare_stealth_suit_aoa",
@@ -1078,7 +1140,8 @@
       "OFFICIO ASSASSINORUM",
       "TEMPLUM VINDICARE"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 400
   },
   {
     "id": "vratine_armour_aoa",
@@ -1096,7 +1159,8 @@
       "IMPERIUM",
       "ANATHEMA PSYKANA"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 400
   },
   {
     "id": "thunder_mark_i_aoa",
@@ -1114,7 +1178,8 @@
       "IMPERIUM",
       "ADEPTUS ASTARTES"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 401
   },
   {
     "id": "crusade_mark_ii_aoa",
@@ -1131,7 +1196,8 @@
       "IMPERIUM",
       "ADEPTUS ASTARTES"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 401
   },
   {
     "id": "iron_mark_iii_aoa",
@@ -1150,7 +1216,8 @@
       "IMPERIUM",
       "ADEPTUS ASTARTES"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 402
   },
   {
     "id": "maximus_mark_iv_aoa",
@@ -1167,7 +1234,8 @@
       "IMPERIUM",
       "ADEPTUS ASTARTES"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 402
   },
   {
     "id": "heresy_mark_v_aoa",
@@ -1184,7 +1252,8 @@
       "IMPERIUM",
       "ADEPTUS ASTARTES"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 402
   },
   {
     "id": "corvus_mark_vi_aoa",
@@ -1201,7 +1270,8 @@
       "IMPERIUM",
       "ADEPTUS ASTARTES"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 396
   },
   {
     "id": "errant_mark_viii_aoa",
@@ -1218,7 +1288,8 @@
       "IMPERIUM",
       "ADEPTUS ASTARTES"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 403
   },
   {
     "id": "gravis_mark_x_aoa",
@@ -1238,7 +1309,8 @@
       "ADEPTUS ASTARTES",
       "PRIMARIS"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 396
   },
   {
     "id": "phobos_mark_x_aoa",
@@ -1256,7 +1328,8 @@
       "ADEPTUS ASTARTES",
       "PRIMARIS"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 396
   },
   {
     "id": "adamantine_mantle_aoa",
@@ -1275,7 +1348,8 @@
       "ADEPTUS ASTARTES"
     ],
     "invulnerable": true,
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 403
   },
   {
     "id": "aegis_armour_aoa",
@@ -1293,7 +1367,8 @@
       "ADEPTUS ASTARTES",
       "GREY KNIGHTS"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 396
   },
   {
     "id": "artificer_armour_aoa",
@@ -1310,7 +1385,8 @@
       "IMPERIUM",
       "ADEPTUS ASTARTES"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 190
   },
   {
     "id": "cataphractii_terminator_armour_aoa",
@@ -1329,7 +1405,8 @@
       "IMPERIUM",
       "ADEPTUS ASTARTES"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 396
   },
   {
     "id": "tartaros_terminator_armour_aoa",
@@ -1347,7 +1424,8 @@
       "IMPERIUM",
       "ADEPTUS ASTARTES"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 396
   },
   {
     "id": "aegis_terminator_armour_aoa",
@@ -1366,7 +1444,8 @@
       "ADEPTUS ASTARTES",
       "GREY KNIGHTS"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 396
   },
   {
     "id": "centurion_warsuit_aoa",
@@ -1385,7 +1464,8 @@
       "IMPERIUM",
       "ADEPTUS ASTARTES"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 405
   },
   {
     "id": "boarding_shield_aoa",
@@ -1405,7 +1485,8 @@
       "ADEPTUS ASTARTES"
     ],
     "invulnerable": true,
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 399
   },
   {
     "id": "combat_shield_aoa",
@@ -1424,7 +1505,8 @@
       "ADEPTUS ASTARTES"
     ],
     "invulnerable": true,
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 406
   },
   {
     "id": "displacer_field_aoa",
@@ -1441,7 +1523,8 @@
       "IMPERIUM"
     ],
     "invulnerable": true,
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 397
   },
   {
     "id": "hexagrammic_wards_aoa",
@@ -1460,7 +1543,8 @@
       "ADEPTUS ASTRA TELEPATHICA"
     ],
     "invulnerable": true,
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 104
   },
   {
     "id": "iron_halo_aoa",
@@ -1478,7 +1562,8 @@
       "ADEPTUS ASTARTES"
     ],
     "invulnerable": true,
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 397
   },
   {
     "id": "pentagrammic_wards_aoa",
@@ -1497,7 +1582,8 @@
       "ORDO MALLEUS"
     ],
     "invulnerable": true,
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 397
   },
   {
     "id": "voidsheen_cloak_aoa",
@@ -1516,7 +1602,8 @@
       "ANATHEMA PSYKANA"
     ],
     "invulnerable": true,
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 179
   },
   {
     "id": "voltagheist_field_generator_aoa",
@@ -1535,7 +1622,8 @@
       "CULT MECHANICUS"
     ],
     "invulnerable": true,
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 110
   },
   {
     "id": "daemonic_rune_aoa",
@@ -1553,7 +1641,8 @@
       "CHAOS"
     ],
     "invulnerable": true,
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 409
   },
   {
     "id": "fleshmetal_aoa",
@@ -1570,7 +1659,8 @@
       "CHAOS",
       "HERETIC ASTARTES"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 409
   },
   {
     "id": "sigil_of_corruption_aoa",
@@ -1587,7 +1677,8 @@
       "CHAOS"
     ],
     "invulnerable": true,
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 409
   },
   {
     "id": "aura_of_dark_glory_aoa",
@@ -1604,7 +1695,8 @@
       "CHAOS"
     ],
     "invulnerable": true,
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 112
   },
   {
     "id": "aspect_armour_aoa",
@@ -1624,7 +1716,8 @@
       "ASPECT WARRIOR"
     ],
     "invulnerable": true,
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 216
   },
   {
     "id": "heavy_aspect_armour_aoa",
@@ -1645,7 +1738,8 @@
       "ASPECT WARRIOR"
     ],
     "invulnerable": true,
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 143
   },
   {
     "id": "force_shield_aeldari_aoa",
@@ -1663,7 +1757,8 @@
       "AELDARI"
     ],
     "invulnerable": true,
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 410
   },
   {
     "id": "holo_suit_aoa",
@@ -1682,7 +1777,8 @@
       "HARLEQUIN"
     ],
     "invulnerable": true,
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 203
   },
   {
     "id": "clone_field_aoa",
@@ -1697,7 +1793,8 @@
       "AELDARI",
       "DRUKHARI"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 411
   },
   {
     "id": "ghostplate_aoa",
@@ -1716,7 +1813,8 @@
       "DRUKHARI"
     ],
     "invulnerable": true,
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 193
   },
   {
     "id": "incubus_warsuit_aoa",
@@ -1731,7 +1829,8 @@
       "AELDARI",
       "DRUKHARI"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 411
   },
   {
     "id": "kabalite_armour_aoa",
@@ -1746,7 +1845,8 @@
       "AELDARI",
       "DRUKHARI"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 411
   },
   {
     "id": "shadowfield_aoa",
@@ -1764,7 +1864,8 @@
       "DRUKHARI"
     ],
     "invulnerable": true,
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 411
   },
   {
     "id": "wychsuit_aoa",
@@ -1781,7 +1882,8 @@
       "AELDARI",
       "DRUKHARI"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 411
   },
   {
     "id": "kustom_force_field_projekta_aoa",
@@ -1795,7 +1897,8 @@
     "keywords": [
       "ORK"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 412
   },
   {
     "id": "sparky_wotzitz_aoa",
@@ -1812,7 +1915,8 @@
       "ORK"
     ],
     "invulnerable": true,
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 412
   },
   {
     "id": "ancestral_ward_crest_aoa",
@@ -1829,7 +1933,8 @@
       "LEAGUES OF VOTANN"
     ],
     "invulnerable": true,
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 412
   },
   {
     "id": "bastium_void_armour_aoa",
@@ -1847,7 +1952,8 @@
       "LEAGUES OF VOTANN"
     ],
     "invulnerable": true,
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 173
   },
   {
     "id": "exo_armour_aoa",
@@ -1865,7 +1971,8 @@
     "keywords": [
       "LEAGUES OF VOTANN"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 382
   },
   {
     "id": "exo_frame_aoa",
@@ -1885,7 +1992,8 @@
       "LEAGUES OF VOTANN",
       "BRÔKHYR"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 412
   },
   {
     "id": "ram_shield_aoa",
@@ -1901,7 +2009,8 @@
     "keywords": [
       "LEAGUES OF VOTANN"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 397
   },
   {
     "id": "rampart_crest_aoa",
@@ -1918,7 +2027,8 @@
       "LEAGUES OF VOTANN"
     ],
     "invulnerable": true,
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 173
   },
   {
     "id": "weavefield_crest_aoa",
@@ -1935,7 +2045,8 @@
       "LEAGUES OF VOTANN"
     ],
     "invulnerable": true,
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 397
   },
   {
     "id": "void_armour_lov_aoa",
@@ -1951,7 +2062,8 @@
     "keywords": [
       "LEAGUES OF VOTANN"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 173
   },
   {
     "id": "void_suit_lov_aoa",
@@ -1967,7 +2079,8 @@
     "keywords": [
       "LEAGUES OF VOTANN"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 414
   },
   {
     "id": "field_relay_amplifier_aoa",
@@ -1982,7 +2095,8 @@
       "T'AU EMPIRE",
       "FIRE CASTE"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 398
   },
   {
     "id": "shield_generator_tau_aoa",
@@ -1999,7 +2113,8 @@
       "T'AU EMPIRE"
     ],
     "invulnerable": true,
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 398
   },
   {
     "id": "tau_combat_armour_aoa",
@@ -2014,7 +2129,8 @@
       "T'AU EMPIRE",
       "FIRE CASTE"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 398
   },
   {
     "id": "tau_flight_suit_aoa",
@@ -2031,7 +2147,8 @@
       "T'AU EMPIRE",
       "AIR CASTE"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 398
   },
   {
     "id": "tau_recon_armour_aoa",
@@ -2046,7 +2163,8 @@
       "T'AU EMPIRE",
       "PATHFINDER"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 398
   },
   {
     "id": "xv15_stealth_battlesuit_aoa",
@@ -2063,7 +2181,8 @@
       "T'AU EMPIRE",
       "FIRE CASTE"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 398
   },
   {
     "id": "xv25_stealth_battlesuit_aoa",
@@ -2080,7 +2199,8 @@
       "T'AU EMPIRE",
       "FIRE CASTE"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 398
   },
   {
     "id": "xv8_crisis_battlesuit_aoa",
@@ -2097,7 +2217,8 @@
       "T'AU EMPIRE",
       "FIRE CASTE"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 381
   },
   {
     "id": "xv85_enforcer_battlesuit_aoa",
@@ -2114,7 +2235,8 @@
       "T'AU EMPIRE",
       "FIRE CASTE"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 398
   },
   {
     "id": "xv86_coldstar_battlesuit_aoa",
@@ -2131,7 +2253,8 @@
       "T'AU EMPIRE",
       "FIRE CASTE"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 398
   },
   {
     "id": "xv88_broadside_battlesuit_aoa",
@@ -2149,7 +2272,8 @@
       "T'AU EMPIRE",
       "FIRE CASTE"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 398
   },
   {
     "id": "mk_x_phobos_power_armour",
@@ -2167,7 +2291,8 @@
       "ADEPTUS ASTARTES",
       "PRIMARIS"
     ],
-    "source": "fspg"
+    "source": "fspg",
+    "page": 125
   },
   {
     "id": "brute_shield",
@@ -2186,7 +2311,8 @@
       "MILITARUM AUXILLA"
     ],
     "invulnerable": true,
-    "source": "fspg"
+    "source": "fspg",
+    "page": 116
   },
   {
     "id": "slabshield",
@@ -2205,7 +2331,8 @@
       "ASTRA MILITARUM",
       "MILITARUM AUXILLA"
     ],
-    "source": "fspg"
+    "source": "fspg",
+    "page": 116
   },
   {
     "id": "voidplate_harness",
@@ -2222,6 +2349,7 @@
       "AELDARI",
       "ANHRATHE"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 233
   }
 ]

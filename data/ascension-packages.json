@@ -17,7 +17,8 @@
       "[ANY] (Faction of rescuers)"
     ],
     "influenceModifier": 0,
-    "source": "core"
+    "source": "core",
+    "page": 150
   },
   {
     "id": "demanding_patron",
@@ -42,11 +43,21 @@
     "requiresChoice": true,
     "choiceType": "patronBenefit",
     "choiceOptions": [
-      { "value": "wargear", "label": "Rare Wargear (value 3 + new Tier)" },
-      { "value": "wealth", "label": "2 Wealth" },
-      { "value": "influence", "label": "+2 Influence per Tier Ascended" }
+      {
+        "value": "wargear",
+        "label": "Rare Wargear (value 3 + new Tier)"
+      },
+      {
+        "value": "wealth",
+        "label": "2 Wealth"
+      },
+      {
+        "value": "influence",
+        "label": "+2 Influence per Tier Ascended"
+      }
     ],
-    "source": "core"
+    "source": "core",
+    "page": 151
   },
   {
     "id": "dauntless_reputation",
@@ -64,8 +75,11 @@
       "[ANY]"
     ],
     "influenceModifier": 2,
-    "talentsGranted": ["devotees"],
-    "source": "core"
+    "talentsGranted": [
+      "devotees"
+    ],
+    "source": "core",
+    "page": 151
   },
   {
     "id": "perfidious_wretch",
@@ -86,7 +100,8 @@
       "Gain [ANY], remove betrayed Keyword"
     ],
     "influenceModifier": -2,
-    "source": "core"
+    "source": "core",
+    "page": 152
   },
   {
     "id": "psychic_revelations",
@@ -104,14 +119,26 @@
       "PSYKER"
     ],
     "influenceModifier": 1,
-    "keywordsGranted": ["PSYKER"],
+    "keywordsGranted": [
+      "PSYKER"
+    ],
     "psykerConfig": {
-      "grantedPowers": ["smite"],
-      "freePowerChoices": [{ "disciplines": ["Minor"], "count": 1 }],
+      "grantedPowers": [
+        "smite"
+      ],
+      "freePowerChoices": [
+        {
+          "disciplines": [
+            "Minor"
+          ],
+          "count": 1
+        }
+      ],
       "unlockedDisciplines": [],
       "disciplineChoices": 1
     },
-    "source": "core"
+    "source": "core",
+    "page": 152
   },
   {
     "id": "stay_the_course",
@@ -127,7 +154,8 @@
     ],
     "keywordsGained": [],
     "influenceModifier": 1,
-    "source": "core"
+    "source": "core",
+    "page": 149
   },
   {
     "id": "test_of_faith_aoa",
@@ -155,7 +183,8 @@
     ],
     "keywordsGained": [],
     "influenceModifier": 1,
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 210
   },
   {
     "id": "agent_of_inquisition_aoa",
@@ -185,7 +214,8 @@
       "[ORDO]"
     ],
     "influenceModifier": 1,
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 210
   },
   {
     "id": "apocryphon_oath_aoa",
@@ -221,7 +251,8 @@
       "ORDO XENOS"
     ],
     "influenceModifier": 1,
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 211
   },
   {
     "id": "blessed_by_emperor_aoa",
@@ -250,7 +281,8 @@
     ],
     "keywordsGained": [],
     "influenceModifier": 1,
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 212
   },
   {
     "id": "crux_terminatus_aoa",
@@ -278,7 +310,8 @@
     ],
     "keywordsGained": [],
     "influenceModifier": 2,
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 188
   },
   {
     "id": "divine_revelation_aoa",
@@ -300,7 +333,8 @@
     ],
     "keywordsGained": [],
     "influenceModifier": 1,
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 214
   },
   {
     "id": "glimpse_from_beyond_aoa",
@@ -317,7 +351,8 @@
     ],
     "keywordsGained": [],
     "influenceModifier": 1,
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 215
   },
   {
     "id": "illuminated_aoa",
@@ -342,7 +377,8 @@
       "ILLUMINATI"
     ],
     "influenceModifier": 1,
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 215
   },
   {
     "id": "lost_seer_path_aoa",
@@ -378,9 +414,15 @@
       "FARSEER"
     ],
     "influenceModifier": 3,
-    "powersGranted": ["prescience", "scriers_gaze"],
-    "disciplinesUnlocked": ["Runes of Fate"],
-    "source": "apocrypha"
+    "powersGranted": [
+      "prescience",
+      "scriers_gaze"
+    ],
+    "disciplinesUnlocked": [
+      "Runes of Fate"
+    ],
+    "source": "apocrypha",
+    "page": 216
   },
   {
     "id": "lost_warrior_path_aoa",
@@ -408,7 +450,8 @@
       "EXARCH"
     ],
     "influenceModifier": 1,
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 216
   },
   {
     "id": "reborn_ynnari_aoa",
@@ -435,7 +478,8 @@
       "YNNARI"
     ],
     "influenceModifier": 0,
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 217
   },
   {
     "id": "rite_duplessence_aoa",
@@ -466,7 +510,8 @@
     ],
     "keywordsGained": [],
     "influenceModifier": 1,
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 217
   },
   {
     "id": "sanctioned_xenos_aoa",
@@ -494,7 +539,8 @@
       "IMPERIUM"
     ],
     "influenceModifier": 1,
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 218
   },
   {
     "id": "rubicon_primaris_aoa",
@@ -530,7 +576,8 @@
       "PRIMARIS"
     ],
     "influenceModifier": 1,
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 219
   },
   {
     "id": "willing_possession_aoa",
@@ -556,6 +603,7 @@
       "DAEMON"
     ],
     "influenceModifier": 3,
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 221
   }
 ]

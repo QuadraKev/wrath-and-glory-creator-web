@@ -38,7 +38,8 @@
       "sororitas_vestments",
       "rule_of_sororitas"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 90
   },
   {
     "id": "ministorum_priest",
@@ -75,7 +76,8 @@
       "ministorum_robes",
       "missionary_kit"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 92
   },
   {
     "id": "imperial_guardsman",
@@ -112,7 +114,8 @@
       "uplifting_primer",
       "ration_packs"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 93
   },
   {
     "id": "inquisitorial_acolyte",
@@ -146,7 +149,8 @@
       "symbol_of_authority"
     ],
     "wargearChoices": "Any two IMPERIUM weapons with a Value of 5 or less and a Rarity of Uncommon or lower",
-    "source": "core"
+    "source": "core",
+    "page": 21
   },
   {
     "id": "inquisitorial_sage",
@@ -185,7 +189,8 @@
       "data_slate",
       "ancient_scrolls"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 89
   },
   {
     "id": "ganger",
@@ -218,7 +223,8 @@
       "gang_colours"
     ],
     "wargearChoices": "A Knife or a Sword, and a Laspistol or Autopistol or Hand Cannon or Stubber",
-    "source": "core"
+    "source": "core",
+    "page": 87
   },
   {
     "id": "corsair",
@@ -257,7 +263,8 @@
       "plasma_grenades",
       "void_suit"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 97
   },
   {
     "id": "ork_boy",
@@ -293,7 +300,8 @@
       "choppa",
       "ripped_clothes"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 98
   },
   {
     "id": "sister_of_battle",
@@ -337,7 +345,8 @@
       "rule_of_sororitas"
     ],
     "wargearChoices": "A Boltgun or a Bolt Pistol and a Chainsword",
-    "source": "core"
+    "source": "core",
+    "page": 90
   },
   {
     "id": "sanctioned_psyker",
@@ -393,7 +402,8 @@
       "unlockedDisciplines": [],
       "disciplineChoices": 1
     },
-    "source": "core"
+    "source": "core",
+    "page": 23
   },
   {
     "id": "skitarius",
@@ -431,7 +441,8 @@
       "radium_pistol",
       "combi_tool"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 101
   },
   {
     "id": "tempestus_scion",
@@ -477,7 +488,8 @@
       "krak_grenades",
       "grav_chute"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 103
   },
   {
     "id": "rogue_trader",
@@ -519,7 +531,8 @@
       "fine_clothing",
       "warrant_of_trade"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 96
   },
   {
     "id": "scavvy",
@@ -554,7 +567,8 @@
       "knife",
       "survival_kit"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 105
   },
   {
     "id": "space_marine_scout",
@@ -603,7 +617,8 @@
       "vox_bead"
     ],
     "wargearChoices": "A Boltgun or a Bolt Pistol and Chainsword or an Astartes Shotgun or an Astartes Sniper Rifle and Cameleoline Cloak",
-    "source": "core"
+    "source": "core",
+    "page": 90
   },
   {
     "id": "ranger",
@@ -646,7 +661,8 @@
       "blanket",
       "magnocular_scope"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 107
   },
   {
     "id": "kommando",
@@ -689,7 +705,8 @@
       },
       "survival_kit"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 108
   },
   {
     "id": "tech_priest",
@@ -730,7 +747,8 @@
       "light_power_armour",
       "omnissian_sigil"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 87
   },
   {
     "id": "crusader",
@@ -767,7 +785,8 @@
       "carapace_armour",
       "rosarius"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 110
   },
   {
     "id": "imperial_commissar",
@@ -808,7 +827,8 @@
       "carapace_armour",
       "commissar_greatcoat"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 111
   },
   {
     "id": "desperado",
@@ -847,7 +867,8 @@
       "knife",
       "disguise_kit"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 112
   },
   {
     "id": "tactical_space_marine",
@@ -903,7 +924,8 @@
         "qty": 3
       }
     ],
-    "source": "core"
+    "source": "core",
+    "page": 87
   },
   {
     "id": "warlock",
@@ -961,7 +983,8 @@
       ],
       "disciplineChoices": 0
     },
-    "source": "core"
+    "source": "core",
+    "page": 114
   },
   {
     "id": "ork_nob",
@@ -996,7 +1019,8 @@
       "kustom_slugga",
       "kustom_choppa"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 115
   },
   {
     "id": "inquisitor",
@@ -1033,7 +1057,8 @@
       "inquisitorial_rosette"
     ],
     "wargearChoices": "Any two weapons with a Value of 7 or less and a Rarity of Very Rare or lower, and Flak Coat or Carapace Armour or Ignatus Power Armour or Light Power Armour",
-    "source": "core"
+    "source": "core",
+    "page": 21
   },
   {
     "id": "primaris_intercessor",
@@ -1088,7 +1113,8 @@
       },
       "ballistic_autoreliquary"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 90
   },
   {
     "id": "death_cult_assassin",
@@ -1128,7 +1154,8 @@
         "qty": 3
       }
     ],
-    "source": "core"
+    "source": "core",
+    "page": 87
   },
   {
     "id": "sister_repentia",
@@ -1174,7 +1201,8 @@
       "chaplet_ecclesiasticus",
       "rule_of_sororitas"
     ],
-    "source": "fspg"
+    "source": "fspg",
+    "page": 100
   },
   {
     "id": "dialogus",
@@ -1222,7 +1250,8 @@
       "chaplet_ecclesiasticus",
       "rule_of_sororitas"
     ],
-    "source": "fspg"
+    "source": "fspg",
+    "page": 101
   },
   {
     "id": "imagifier",
@@ -1272,7 +1301,8 @@
       "simulacrum_imperialis",
       "rule_of_sororitas"
     ],
-    "source": "fspg"
+    "source": "fspg",
+    "page": 102
   },
   {
     "id": "seraphim",
@@ -1319,7 +1349,8 @@
       "rule_of_sororitas"
     ],
     "wargearChoices": "2 Bolt Pistols or 2 Hand Flamers or 2 Inferno Pistols",
-    "source": "fspg"
+    "source": "fspg",
+    "page": 103
   },
   {
     "id": "canoness",
@@ -1367,7 +1398,8 @@
       "rule_of_sororitas"
     ],
     "wargearChoices": "A Condemnor Boltgun, or a Boltgun with the Combi Weapon upgrade combined with a Flamer, Meltagun or Plasma Gun. A Blessed Blade or a Chainsword or an Eviscerator or a Power Sword. A Bolt Pistol or a Plasma Pistol or an Inferno Pistol. A Brazier of Holy Fire or a Null Rod.",
-    "source": "fspg"
+    "source": "fspg",
+    "page": 104
   },
   {
     "id": "tech_adept",
@@ -1405,7 +1437,8 @@
       "data_slate",
       "sacred_machine_oil"
     ],
-    "source": "fspg"
+    "source": "fspg",
+    "page": 109
   },
   {
     "id": "sicarian_infiltrator",
@@ -1445,7 +1478,8 @@
       "infiltrator_headpiece"
     ],
     "wargearChoices": "Flechette Blaster and Taser Goad or Stubcarbine and Power Sword",
-    "source": "fspg"
+    "source": "fspg",
+    "page": 110
   },
   {
     "id": "sicarian_ruststalker",
@@ -1484,7 +1518,8 @@
       "augmetic_legs"
     ],
     "wargearChoices": "2 Transonic Blades or a Transonic Razor and a Chordclaw",
-    "source": "fspg"
+    "source": "fspg",
+    "page": 111
   },
   {
     "id": "tech_priest_dominus",
@@ -1527,7 +1562,8 @@
       "sacred_machine_oil"
     ],
     "wargearChoices": "Volkite Blaster or Eradication Ray. Macrostubber or Phosphor Serpenta. Any 3 Augmetics.",
-    "source": "fspg"
+    "source": "fspg",
+    "page": 112
   },
   {
     "id": "confessor",
@@ -1569,7 +1605,8 @@
       "laspistol",
       "excruciator"
     ],
-    "source": "fspg"
+    "source": "fspg",
+    "page": 113
   },
   {
     "id": "ratling_sniper",
@@ -1613,7 +1650,8 @@
       "ration_packs"
     ],
     "wargearChoices": "Ratling Rifle or Long Las",
-    "source": "fspg"
+    "source": "fspg",
+    "page": 114
   },
   {
     "id": "ogryn_warrior",
@@ -1654,7 +1692,8 @@
       "ripper_gun",
       "frag_bombs"
     ],
-    "source": "fspg"
+    "source": "fspg",
+    "page": 115
   },
   {
     "id": "bullgryn",
@@ -1701,7 +1740,8 @@
       }
     ],
     "wargearChoices": "A Slabshield and Grenadier Gauntlet or a Bullgryn Maul and Brute Shield",
-    "source": "fspg"
+    "source": "fspg",
+    "page": 116
   },
   {
     "id": "lexmechanic",
@@ -1744,7 +1784,8 @@
       "sacred_machine_oil",
       "symbol_of_authority"
     ],
-    "source": "fspg"
+    "source": "fspg",
+    "page": 117
   },
   {
     "id": "interrogator",
@@ -1786,7 +1827,8 @@
       "neural_whip"
     ],
     "wargearChoices": "Any three pieces of Wargear with the IMPERIUM Keyword of a rarity of Rare or less",
-    "source": "fspg"
+    "source": "fspg",
+    "page": 110
   },
   {
     "id": "kroot_mercenary",
@@ -1825,7 +1867,8 @@
       "kroot_rifle",
       "kroot_armour"
     ],
-    "source": "fspg"
+    "source": "fspg",
+    "page": 119
   },
   {
     "id": "astartes_apothecary",
@@ -1883,7 +1926,8 @@
       "narthecium",
       "reductor"
     ],
-    "source": "fspg"
+    "source": "fspg",
+    "page": 105
   },
   {
     "id": "astartes_chaplain",
@@ -1942,7 +1986,8 @@
         "qty": 3
       }
     ],
-    "source": "fspg"
+    "source": "fspg",
+    "page": 106
   },
   {
     "id": "astartes_librarian",
@@ -2017,7 +2062,8 @@
       ],
       "disciplineChoices": 1
     },
-    "source": "fspg"
+    "source": "fspg",
+    "page": 107
   },
   {
     "id": "primaris_reiver",
@@ -2077,7 +2123,8 @@
       },
       "grav_chute"
     ],
-    "source": "fspg"
+    "source": "fspg",
+    "page": 108
   },
   {
     "id": "first_company_veteran",
@@ -2134,7 +2181,8 @@
       }
     ],
     "wargearChoices": "Power Fist or Power Sword or Plasma Pistol or Storm Bolter",
-    "source": "voa"
+    "source": "voa",
+    "page": 29
   },
   {
     "id": "eliminator",
@@ -2188,7 +2236,8 @@
         "qty": 3
       }
     ],
-    "source": "voa"
+    "source": "voa",
+    "page": 32
   },
   {
     "id": "incursor",
@@ -2250,7 +2299,8 @@
       },
       "haywire_mine"
     ],
-    "source": "voa"
+    "source": "voa",
+    "page": 33
   },
   {
     "id": "terminator",
@@ -2297,7 +2347,8 @@
       "storm_bolter"
     ],
     "wargearChoices": "Chainfist or Power Sword; Assault Cannon or Heavy Flamer; Thunder Hammer and Storm Shield or two Lightning Claws",
-    "source": "voa"
+    "source": "voa",
+    "page": 38
   },
   {
     "id": "techmarine",
@@ -2357,7 +2408,8 @@
       "combi_tool",
       "sacred_machine_oil"
     ],
-    "source": "voa"
+    "source": "voa",
+    "page": 39
   },
   {
     "id": "primaris_lieutenant",
@@ -2412,7 +2464,8 @@
         "qty": 3
       }
     ],
-    "source": "voa"
+    "source": "voa",
+    "page": 40
   },
   {
     "id": "bladeguard_veteran",
@@ -2471,7 +2524,8 @@
         "qty": 3
       }
     ],
-    "source": "voa"
+    "source": "voa",
+    "page": 41
   },
   {
     "id": "company_ancient",
@@ -2527,7 +2581,8 @@
         "qty": 3
       }
     ],
-    "source": "voa"
+    "source": "voa",
+    "page": 42
   },
   {
     "id": "guardian",
@@ -2572,7 +2627,8 @@
       "spirit_stone"
     ],
     "wargearChoices": "Shuriken Catapult or Shuriken Pistol and Guardian Chainsword",
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 22
   },
   {
     "id": "dark_reaper",
@@ -2615,7 +2671,8 @@
       "war_mask",
       "spirit_stone"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 24
   },
   {
     "id": "dire_avenger",
@@ -2661,7 +2718,8 @@
       "war_mask",
       "spirit_stone"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 25
   },
   {
     "id": "fire_dragon",
@@ -2705,7 +2763,8 @@
       "war_mask",
       "spirit_stone"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 26
   },
   {
     "id": "howling_banshee",
@@ -2748,7 +2807,8 @@
       "shuriken_pistol",
       "spirit_stone"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 27
   },
   {
     "id": "striking_scorpion",
@@ -2794,7 +2854,8 @@
       "war_mask",
       "spirit_stone"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 28
   },
   {
     "id": "swooping_hawk",
@@ -2840,7 +2901,8 @@
       "war_mask",
       "spirit_stone"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 29
   },
   {
     "id": "warp_spider",
@@ -2885,7 +2947,8 @@
       "war_mask",
       "spirit_stone"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 30
   },
   {
     "id": "wraithguard",
@@ -2924,7 +2987,8 @@
       "wraithcannon"
     ],
     "wargearChoices": "Wraithcannon or two Ghostswords",
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 32
   },
   {
     "id": "autarch",
@@ -2971,7 +3035,8 @@
       "spirit_stone"
     ],
     "wargearChoices": "Death Spinner or Dragon Fusion Gun or Reaper Launcher or Shuriken Pistol; Banshee Blade or Scorpion Chainsword or Star Glaive; Fusion Charges or Howling Banshee Mask or Mandiblasters or Swooping Hawk Wings or Warp Spider Jump Generator or Plasma Grenades",
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 33
   },
   {
     "id": "farseer",
@@ -3038,7 +3103,8 @@
       ],
       "disciplineChoices": 0
     },
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 31
   },
   {
     "id": "kabalite_warrior",
@@ -3076,7 +3142,8 @@
       "knife",
       "hook_and_chains"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 36
   },
   {
     "id": "wych",
@@ -3115,7 +3182,8 @@
       "plasma_grenades",
       "combat_drugs"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 37
   },
   {
     "id": "hellion",
@@ -3152,7 +3220,8 @@
       "skyboard",
       "combat_drugs"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 38
   },
   {
     "id": "beastmaster",
@@ -3195,7 +3264,8 @@
       "skyboard",
       "combat_drugs"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 39
   },
   {
     "id": "incubus",
@@ -3235,7 +3305,8 @@
       "klaive",
       "tormentor"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 40
   },
   {
     "id": "mandrake",
@@ -3275,7 +3346,8 @@
       "cloak_of_skin",
       "hook_and_chains"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 41
   },
   {
     "id": "scourge",
@@ -3314,7 +3386,8 @@
       "shardcarbine",
       "plasma_grenades"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 38
   },
   {
     "id": "archon",
@@ -3360,7 +3433,8 @@
       "splinter_pistol",
       "trophy_rack"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 38
   },
   {
     "id": "haemonculus",
@@ -3405,7 +3479,8 @@
       "stinger_pistol",
       "ichor_injector"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 38
   },
   {
     "id": "succubus",
@@ -3446,7 +3521,8 @@
       "agoniser",
       "combat_drugs"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 38
   },
   {
     "id": "troupe_player",
@@ -3490,7 +3566,8 @@
       "false_face"
     ],
     "wargearChoices": "Harlequin's Blade or Harlequin's Caress or Harlequin's Embrace or Harlequin's Kiss",
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 47
   },
   {
     "id": "death_jester",
@@ -3534,7 +3611,8 @@
       "rictus_mask",
       "shrieker_cannon"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 48
   },
   {
     "id": "shadowseer",
@@ -3608,7 +3686,8 @@
       ],
       "disciplineChoices": 0
     },
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 49
   },
   {
     "id": "troupe_master",
@@ -3657,7 +3736,8 @@
       "plasma_grenades"
     ],
     "wargearChoices": "Aeldari Power Sword or Harlequin's Caress or Harlequin's Embrace or Harlequin's Kiss; Fusion Pistol or Neuro Disruptor or Shuriken Pistol",
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 50
   },
   {
     "id": "voidreaver",
@@ -3700,7 +3780,8 @@
       "spirit_stone"
     ],
     "wargearChoices": "Shuriken Rifle or Shuriken Pistol and Void Sabre",
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 52
   },
   {
     "id": "soul_weaver",
@@ -3754,7 +3835,8 @@
       "unlockedDisciplines": [],
       "disciplineChoices": 1
     },
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 54
   },
   {
     "id": "voidscarred",
@@ -3803,7 +3885,8 @@
       "spirit_stone"
     ],
     "wargearChoices": "Shuriken Rifle or Shuriken Pistol and Void Sabre",
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 52
   },
   {
     "id": "felarch",
@@ -3855,7 +3938,8 @@
       "spirit_stone"
     ],
     "wargearChoices": "Shuriken Rifle or Shuriken Pistol and Master-Crafted Void Sabre",
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 55
   },
   {
     "id": "corsair_prince",
@@ -3908,7 +3992,8 @@
       "plasma_grenades",
       "spirit_stone"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 56
   },
   {
     "id": "air_caste_messenger_aoa",
@@ -3941,7 +4026,8 @@
     ],
     "startingWargear": [],
     "wargearChoices": "Pulse Pistol, T'au Recon Armour, Vox Caster",
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 73
   },
   {
     "id": "back_alley_doc_aoa",
@@ -3972,7 +4058,8 @@
     ],
     "startingWargear": [],
     "wargearChoices": "Mono-Knife, stubber or laspistol, common clothing, medikit, 3 uses of Stimm",
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 74
   },
   {
     "id": "beastman_auxiliary_aoa",
@@ -4008,7 +4095,8 @@
     ],
     "startingWargear": [],
     "wargearChoices": "Two melee weapons each of Value 3 or less of up to Common rarity, primitive armour",
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 75
   },
   {
     "id": "chaos_cultist_aoa",
@@ -4040,7 +4128,8 @@
     ],
     "startingWargear": [],
     "wargearChoices": "Autopistol or laspistol, knife, common clothing, Chaos Icon",
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 76
   },
   {
     "id": "earth_caste_technician_aoa",
@@ -4073,7 +4162,8 @@
     ],
     "startingWargear": [],
     "wargearChoices": "Pulse Pistol, T'au Recon Armour, Combi-Tool equivalent",
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 77
   },
   {
     "id": "enforcer_aoa",
@@ -4106,7 +4196,8 @@
     ],
     "startingWargear": [],
     "wargearChoices": "Arbites Combat Shotgun, Repression Baton, Arbites Carapace, Book of Judgement (Abridged), Magnacles",
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 78
   },
   {
     "id": "frateris_militia_aoa",
@@ -4137,7 +4228,8 @@
     ],
     "startingWargear": [],
     "wargearChoices": "Improvised weapon or club, common clothing, devotional icon",
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 70
   },
   {
     "id": "fire_caste_breacher_aoa",
@@ -4171,7 +4263,8 @@
     ],
     "startingWargear": [],
     "wargearChoices": "Pulse Blaster, T'au Combat Armour, Photon Grenade x2",
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 80
   },
   {
     "id": "fire_caste_pathfinder_aoa",
@@ -4206,7 +4299,8 @@
     ],
     "startingWargear": [],
     "wargearChoices": "Pulse Carbine, Markerlight, T'au Recon Armour, Photon Grenade x2",
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 81
   },
   {
     "id": "fire_caste_warrior_aoa",
@@ -4240,7 +4334,8 @@
     ],
     "startingWargear": [],
     "wargearChoices": "Pulse Rifle, T'au Combat Armour, Photon Grenade x2, EMP Grenade",
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 82
   },
   {
     "id": "guardian_aoa",
@@ -4274,7 +4369,8 @@
     ],
     "startingWargear": [],
     "wargearChoices": "Shuriken Catapult, Mesh Armour",
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 83
   },
   {
     "id": "hearthkyn_warrior_aoa",
@@ -4307,7 +4403,8 @@
     ],
     "startingWargear": [],
     "wargearChoices": "Autoch-pattern Bolter, Void Armour, Plasma Knife",
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 84
   },
   {
     "id": "imperial_guard_medic_aoa",
@@ -4339,7 +4436,8 @@
     ],
     "startingWargear": [],
     "wargearChoices": "Lasgun, Flak Armour, Medikit, Knife",
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 70
   },
   {
     "id": "imperial_guard_officer_aoa",
@@ -4372,7 +4470,8 @@
     ],
     "startingWargear": [],
     "wargearChoices": "Laspistol, Chainsword, Flak Armour, Vox Bead",
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 70
   },
   {
     "id": "kabalite_warrior_aoa",
@@ -4405,7 +4504,8 @@
     ],
     "startingWargear": [],
     "wargearChoices": "Splinter Rifle, Kabalite Armour, Poisoned Blades",
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 87
   },
   {
     "id": "khorngor_aoa",
@@ -4436,7 +4536,8 @@
     ],
     "startingWargear": [],
     "wargearChoices": "Great weapon (axe or sword), primitive armour",
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 88
   },
   {
     "id": "pestigor_aoa",
@@ -4468,7 +4569,8 @@
     ],
     "startingWargear": [],
     "wargearChoices": "Plague Knife, primitive armour",
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 88
   },
   {
     "id": "penal_legionnaire_aoa",
@@ -4501,7 +4603,8 @@
     ],
     "startingWargear": [],
     "wargearChoices": "Lasgun, Knife, Explosive Collar, Flak Armour (worn)",
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 89
   },
   {
     "id": "sister_dialogus_polyglot_aoa",
@@ -4536,7 +4639,8 @@
     ],
     "startingWargear": [],
     "wargearChoices": "Sororitas Power Armour, Laspistol, Sororitas Vestments, Rule of the Sororitas",
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 90
   },
   {
     "id": "sister_famulous_aoa",
@@ -4572,7 +4676,8 @@
     ],
     "startingWargear": [],
     "wargearChoices": "Sororitas Power Armour, Laspistol, Sororitas Vestments, Rule of the Sororitas",
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 70
   },
   {
     "id": "sister_novitiate_aoa",
@@ -4606,7 +4711,8 @@
     ],
     "startingWargear": [],
     "wargearChoices": "Sororitas Power Armour, Bolt Pistol, Power Sword or Chainsword",
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 70
   },
   {
     "id": "slaangor_aoa",
@@ -4638,7 +4744,8 @@
     ],
     "startingWargear": [],
     "wargearChoices": "Two paired weapons, primitive armour",
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 93
   },
   {
     "id": "tzaangor_aoa",
@@ -4671,7 +4778,8 @@
     ],
     "startingWargear": [],
     "wargearChoices": "Paired weapons, primitive armour, Chaos Icon",
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 93
   },
   {
     "id": "void_reaver_aoa",
@@ -4704,7 +4812,8 @@
     ],
     "startingWargear": [],
     "wargearChoices": "Shuriken Pistol, Lasblaster, Mesh Armour",
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 94
   },
   {
     "id": "water_caste_functionary_aoa",
@@ -4737,7 +4846,8 @@
     ],
     "startingWargear": [],
     "wargearChoices": "Pulse Pistol, T'au Flight Suit, Polyglot Hedron",
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 95
   },
   {
     "id": "wrack_aoa",
@@ -4770,7 +4880,8 @@
     ],
     "startingWargear": [],
     "wargearChoices": "Wrack Blades, Haemacolyte's Tools",
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 96
   },
   {
     "id": "wych_aoa",
@@ -4803,7 +4914,8 @@
     ],
     "startingWargear": [],
     "wargearChoices": "Hekatarii Blade, Wychsuit, Splinter Pistol",
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 97
   },
   {
     "id": "wyrd_aoa",
@@ -4835,6 +4947,7 @@
     "startingWargear": [],
     "wargearChoices": "Knife, common clothing, hooded cloak",
     "source": "apocrypha",
+    "page": 12,
     "isPsyker": true,
     "psykerConfig": {
       "grantedPowers": [
@@ -4884,7 +4997,8 @@
     ],
     "startingWargear": [],
     "wargearChoices": "Laspistol, Aeronautica Flight Suit, Vox Bead",
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 99
   },
   {
     "id": "astropath_aoa",
@@ -4919,6 +5033,7 @@
     "startingWargear": [],
     "wargearChoices": "Laspistol, Psykana Mercy Blade, Robes, Psy Focus",
     "source": "apocrypha",
+    "page": 71,
     "isPsyker": true,
     "psykerConfig": {
       "grantedPowers": [
@@ -4968,7 +5083,8 @@
     ],
     "startingWargear": [],
     "wargearChoices": "Choppa, Slugga, Beast Hide Armour, Stikk Bomb x2",
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 105
   },
   {
     "id": "navigator_archetype_aoa",
@@ -5002,7 +5118,8 @@
     ],
     "startingWargear": [],
     "wargearChoices": "Laspistol or Navis Hatchet, Armoured Voidsuit, Auspex",
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 11
   },
   {
     "id": "crisis_suit_pilot_aoa",
@@ -5038,7 +5155,8 @@
     ],
     "startingWargear": [],
     "wargearChoices": "XV8 Crisis Battlesuit (with 3 weapons/support systems), Pulse Pistol",
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 111
   },
   {
     "id": "assault_space_marine_aoa",
@@ -5075,7 +5193,8 @@
     ],
     "startingWargear": [],
     "wargearChoices": "Bolt Pistol, Chainsword, Frag Grenades, Krak Grenades, Aquila Mk VII Power Armour, Jump Pack",
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 137
   },
   {
     "id": "devastator_space_marine_aoa",
@@ -5112,7 +5231,8 @@
     ],
     "startingWargear": [],
     "wargearChoices": "Heavy Bolter or Lascannon or Missile Launcher, Bolt Pistol, Frag Grenades, Krak Grenades, Aquila Mk VII Power Armour",
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 145
   },
   {
     "id": "grey_knight_space_marine_aoa",
@@ -5154,6 +5274,7 @@
     "startingWargear": [],
     "wargearChoices": "Nemesis Force Sword or Nemesis Force Halberd, Storm Bolter, Aegis Armour, Psyk-Out Grenades, Liber Daemonica",
     "source": "apocrypha",
+    "page": 170,
     "isPsyker": true,
     "psykerConfig": {
       "grantedPowers": [
@@ -5211,6 +5332,7 @@
     "startingWargear": [],
     "wargearChoices": "Force Stave or Force Sword, Bolt Pistol, Power Armour, Chaos Icon",
     "source": "apocrypha",
+    "page": 167,
     "isPsyker": true,
     "psykerConfig": {
       "grantedPowers": [
@@ -5270,7 +5392,8 @@
     ],
     "startingWargear": [],
     "wargearChoices": "Harlequin's Blade or Harlequin's Kiss, Shuriken Pistol, Holo-Suit, Flip-Belt",
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 172
   },
   {
     "id": "custodian_guard_aoa",
@@ -5310,7 +5433,8 @@
     ],
     "startingWargear": [],
     "wargearChoices": "Guardian Spear, Sentinel Blade, Auramite Custodes Power Armour, Misericordia",
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 197
   },
   {
     "id": "arbites_subductor_aoa",
@@ -5352,7 +5476,8 @@
       "magnacles",
       "Book of Judgement (abridged)"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 100
   },
   {
     "id": "arbites_vigilant_aoa",
@@ -5394,7 +5519,8 @@
       "magnacles",
       "Book of Judgement (abridged)"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 101
   },
   {
     "id": "banisher_aoa",
@@ -5439,7 +5565,8 @@
       "missionary kit",
       "symbol of authority"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 103
   },
   {
     "id": "black_sentinel_aoa",
@@ -5484,7 +5611,8 @@
       "grooming kit",
       "2 ration packs"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 104
   },
   {
     "id": "bonesinger_aoa",
@@ -5527,6 +5655,7 @@
       "Spirit Stone"
     ],
     "source": "apocrypha",
+    "page": 106,
     "isPsyker": true,
     "psykerConfig": {
       "grantedPowers": [
@@ -5577,7 +5706,8 @@
       "Ork Flak armour",
       "3 stikkbombs"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 107
   },
   {
     "id": "calculus_logi_aoa",
@@ -5618,7 +5748,8 @@
       "mesh armour",
       "laspistol"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 108
   },
   {
     "id": "chirurgeon_aoa",
@@ -5665,7 +5796,8 @@
       "chirurgeon’s tools",
       "3 doses of Stimm"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 85
   },
   {
     "id": "corpuscarius_electro_priest_aoa",
@@ -5706,7 +5838,8 @@
       "Voltagheist field generator",
       "any two augmetics"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 110
   },
   {
     "id": "demagogue_aoa",
@@ -5748,7 +5881,8 @@
       "clothing (tattered robes)",
       "blasphemous symbol of authority"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 112
   },
   {
     "id": "fulgurite_electro_priest_aoa",
@@ -5788,7 +5922,8 @@
       "Voltagheist field generator",
       "any two augmetics"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 113
   },
   {
     "id": "hernkyn_pioneer_aoa",
@@ -5832,7 +5967,8 @@
       "2 gravitic concussion grenades",
       "Magna-Coil Bike"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 114
   },
   {
     "id": "historitor_investigatus_aoa",
@@ -5874,7 +6010,8 @@
       "each with a Value of 5 or less",
       "and a rarity of Rare or better"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 115
   },
   {
     "id": "inquisitorial_storm_trooper_aoa",
@@ -5918,7 +6055,8 @@
       "Monoscope",
       "3 ration packs"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 116
   },
   {
     "id": "magistrate_aoa",
@@ -5959,7 +6097,8 @@
       "data slate",
       "Book of Judgement (abridged)"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 117
   },
   {
     "id": "mekboy_aoa",
@@ -5997,7 +6136,8 @@
       "Ork Flak armour",
       "Mek Toolz"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 107
   },
   {
     "id": "navigator_aoa",
@@ -6041,6 +6181,7 @@
       "Emperor’s Tarot deck (Psychic Focus)"
     ],
     "source": "apocrypha",
+    "page": 11,
     "isPsyker": true,
     "psykerConfig": {
       "grantedPowers": [
@@ -6090,7 +6231,8 @@
       "Navis Hatchet",
       "Apertor"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 120
   },
   {
     "id": "imperial_navy_officer_aoa",
@@ -6130,7 +6272,8 @@
       "Chainsword",
       "vox-bead"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 121
   },
   {
     "id": "novice_sister_aoa",
@@ -6171,7 +6314,8 @@
       "Bolter",
       "vox-bead"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 122
   },
   {
     "id": "painboy_aoa",
@@ -6208,7 +6352,8 @@
       "Ork Flak Armour",
       "Dok Bag"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 123
   },
   {
     "id": "reaver_aoa",
@@ -6250,7 +6395,8 @@
       "page 100)",
       "three doses of Hekatarii combat drugs"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 94
   },
   {
     "id": "rogue_psyker_aoa",
@@ -6290,12 +6436,24 @@
     ],
     "isPsyker": true,
     "psykerConfig": {
-      "grantedPowers": ["smite"],
-      "freePowerChoices": [{ "disciplines": ["Maleficarum"], "count": 1 }],
-      "unlockedDisciplines": ["Maleficarum"],
+      "grantedPowers": [
+        "smite"
+      ],
+      "freePowerChoices": [
+        {
+          "disciplines": [
+            "Maleficarum"
+          ],
+          "count": 1
+        }
+      ],
+      "unlockedDisciplines": [
+        "Maleficarum"
+      ],
       "disciplineChoices": 1
     },
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 125
   },
   {
     "id": "runtherd_aoa",
@@ -6334,7 +6492,8 @@
       "grot lash",
       "Ork Flak armour"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 126
   },
   {
     "id": "scourge_aoa",
@@ -6374,7 +6533,8 @@
       "1 Haywire Grenade",
       "Wings"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 90
   },
   {
     "id": "seeker_aoa",
@@ -6417,7 +6577,8 @@
       "dataslate",
       "monoscope or Preysense goggles"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 81
   },
   {
     "id": "sister_oblatia_aoa",
@@ -6460,7 +6621,8 @@
       "Sororitas Vestments",
       "a copy of the Rule of the Sororitas"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 129
   },
   {
     "id": "skitarius_vanguard_aoa",
@@ -6497,7 +6659,8 @@
       "data-tether",
       "Skitarii Auto-Cuirass"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 130
   },
   {
     "id": "speculor_aoa",
@@ -6538,7 +6701,8 @@
       "and a rarity of Rare or lower. Bodyglove",
       "3 disguises (clothing)"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 131
   },
   {
     "id": "speed_freek_aoa",
@@ -6575,7 +6739,8 @@
       "Ork Flak armour",
       "Ork Warbike"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 118
   },
   {
     "id": "stealth_suit_pilot_aoa",
@@ -6614,7 +6779,8 @@
     "startingWargear": [
       "XV15 Stealth Battlesuit"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 133
   },
   {
     "id": "tankbusta_aoa",
@@ -6652,7 +6818,8 @@
       "3 stikkbombs",
       "1 tankbusta bomb"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 134
   },
   {
     "id": "transmechanic_aoa",
@@ -6693,7 +6860,8 @@
       "mesh armour",
       "laspistol"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 135
   },
   {
     "id": "arch_confessor_aoa",
@@ -6735,7 +6903,8 @@
       "missionary kit",
       "symbol of authority"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 136
   },
   {
     "id": "brôkhyr_iron_master_aoa",
@@ -6779,7 +6948,8 @@
       "combi-tool",
       "one E-COG assistant"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 138
   },
   {
     "id": "cadre_fireblade_aoa",
@@ -6824,7 +6994,8 @@
       "Marker Drone",
       "or Shield Drone)"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 139
   },
   {
     "id": "chastener_aoa",
@@ -6869,7 +7040,8 @@
       "medkit",
       "Book of Judgement (abridged)"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 140
   },
   {
     "id": "crimson_hunter_aspect_warrior_aoa",
@@ -6915,7 +7087,8 @@
       "mono-knife",
       "spirit stone"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 141
   },
   {
     "id": "cthonian_beserk_aoa",
@@ -6958,7 +7131,8 @@
       "Subdermal Armour",
       "Cyberstimm Implant"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 142
   },
   {
     "id": "dark_reaper_aspect_warrior_aoa",
@@ -7000,7 +7174,8 @@
       "mono-knife",
       "spirit stone"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 143
   },
   {
     "id": "detective_aoa",
@@ -7046,7 +7221,8 @@
       "symbol of authority",
       "vox caster"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 144
   },
   {
     "id": "dire_avenger_aspect_warrior_aoa",
@@ -7090,7 +7266,8 @@
       "3 plasma grenades",
       "spirit stone"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 146
   },
   {
     "id": "einhyr_hearthguard_aoa",
@@ -7132,7 +7309,8 @@
       "Concussion Gauntlet",
       "Exo-armour"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 147
   },
   {
     "id": "ethereal_aoa",
@@ -7179,7 +7357,8 @@
       "Marker Drone",
       "or Shield Drone)"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 16
   },
   {
     "id": "fire_dragon_aspect_warrior_aoa",
@@ -7222,7 +7401,8 @@
       "mono-knife",
       "spirit stone"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 149
   },
   {
     "id": "flash_git_aoa",
@@ -7262,7 +7442,8 @@
       "3 stikkbombs",
       "ammo runt"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 150
   },
   {
     "id": "havoc_aoa",
@@ -7317,7 +7498,8 @@
       "lascannon",
       "reaper chaincannon"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 151
   },
   {
     "id": "howling_banshee_aspect_warrior_aoa",
@@ -7360,7 +7542,8 @@
       "Banshee Mask",
       "spirit stone"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 152
   },
   {
     "id": "incubus_aoa",
@@ -7399,7 +7582,8 @@
       "Klaive",
       "Tormentor"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 153
   },
   {
     "id": "legionary_aoa",
@@ -7450,7 +7634,8 @@
       "3 Krak Grenades",
       "grisly trophies"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 154
   },
   {
     "id": "null_maiden_aoa",
@@ -7494,7 +7679,8 @@
       "Witchseeker Flamer",
       "or Executioner Greatblade"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 122
   },
   {
     "id": "raptor_aoa",
@@ -7544,7 +7730,8 @@
       "3 Frag Grenades",
       "3 Krak Grenades"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 156
   },
   {
     "id": "shining_spear_aspect_warrior_aoa",
@@ -7587,7 +7774,8 @@
       "p. 92)",
       "spirit stone"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 157
   },
   {
     "id": "sicarian_infiltrator_aoa",
@@ -7631,7 +7819,8 @@
       "augmetic viscera",
       "Neurostatic projector"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 158
   },
   {
     "id": "sicarian_ruststalker_aoa",
@@ -7674,7 +7863,8 @@
       "augmetic legs",
       "augmetic viscera"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 159
   },
   {
     "id": "apothecary_aoa",
@@ -7724,7 +7914,8 @@
       "3 Frag Grenades",
       "3 Krak Grenades"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 160
   },
   {
     "id": "primaris_apothecary_aoa",
@@ -7774,7 +7965,8 @@
       "3 Frag Grenades",
       "3 Krak Grenades"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 160
   },
   {
     "id": "striking_scorpion_aspect_warrior_aoa",
@@ -7818,7 +8010,8 @@
       "3 plasma grenades",
       "Spirit Stone"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 161
   },
   {
     "id": "swooping_hawk_aspect_warrior_aoa",
@@ -7860,7 +8053,8 @@
       "Swooping Hawk Grenade Pack with 6 plasma grenades",
       "Spirit Stone"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 162
   },
   {
     "id": "verispex_adept_aoa",
@@ -7904,7 +8098,8 @@
       "Preysense goggles",
       "Memorance Implant"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 163
   },
   {
     "id": "warp_spider_aspect_warrior_aoa",
@@ -7947,7 +8142,8 @@
       "mono-knife",
       "spirit stone"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 164
   },
   {
     "id": "weirdboy_aoa",
@@ -7985,6 +8181,7 @@
       "collection of jangly baubles"
     ],
     "source": "apocrypha",
+    "page": 165,
     "isPsyker": true,
     "psykerConfig": {
       "grantedPowers": [
@@ -8049,7 +8246,8 @@
       "Writing Kit",
       "a copy of the Rule of the Sororitas"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 166
   },
   {
     "id": "dark_apostle_aoa",
@@ -8100,7 +8298,8 @@
       "3 frag and krak grenades",
       "Sigil of Corruption"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 168
   },
   {
     "id": "genetor_aoa",
@@ -8143,7 +8342,8 @@
       "light power armour",
       "and any one weapon of up to Availability 6 (Very Rare)"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 169
   },
   {
     "id": "grimnyr_aoa",
@@ -8191,6 +8391,7 @@
       "two CORVs armed with Autoch-pattern Bolters"
     ],
     "source": "apocrypha",
+    "page": 171,
     "isPsyker": true,
     "psykerConfig": {
       "grantedPowers": [
@@ -8250,7 +8451,8 @@
       "any two VOTANN weapons with a Value of 7 or less and a Rarity of Very Rare or lower. Bastium Void Armour",
       "Rampart Crest"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 147
   },
   {
     "id": "khorne_berzerker_aoa",
@@ -8299,7 +8501,8 @@
       "3 frag grenades",
       "3 krak grenades"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 174
   },
   {
     "id": "logis_aoa",
@@ -8340,7 +8543,8 @@
       "light power armour",
       "and any one weapon of up to Availability 6 (Very Rare)"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 169
   },
   {
     "id": "magos_aoa",
@@ -8382,7 +8586,8 @@
       "light power armour",
       "and any two weapons of up to Availability 7 (Unique)"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 169
   },
   {
     "id": "navis_scion_aoa",
@@ -8429,6 +8634,7 @@
       "Wealth 4"
     ],
     "source": "apocrypha",
+    "page": 177,
     "isPsyker": true,
     "psykerConfig": {
       "grantedPowers": [
@@ -8495,7 +8701,8 @@
       "3 frag grenades",
       "3 krak grenades"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 178
   },
   {
     "id": "oblivion_knight_aoa",
@@ -8544,7 +8751,8 @@
       "bolt pistol",
       "and master- crafted Executioner Greatblade"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 179
   },
   {
     "id": "nurgle_plague_marine_aoa",
@@ -8594,7 +8802,8 @@
       "3 blight grenades",
       "3 krak grenades"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 180
   },
   {
     "id": "primaris_aggressor_aoa",
@@ -8640,7 +8849,8 @@
       "Ballistic Appeasement Autoreliquary",
       "and either: Fragstorm Grenade Launcher and 2 Auto Boltstorm Gauntlets or 2 Flamestorm Gauntlets"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 181
   },
   {
     "id": "primaris_vanguard_eliminator_aoa",
@@ -8690,7 +8900,8 @@
       "3 Krak Grenades",
       "and either: a Bolt Sniper Rifle or a Las Fusil"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 182
   },
   {
     "id": "primaris_hellblaster_aoa",
@@ -8738,7 +8949,8 @@
       "3 frag grenades",
       "3 krak grenades"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 183
   },
   {
     "id": "primaris_inceptor_aoa",
@@ -8785,7 +8997,8 @@
       "Grav- Chute",
       "two Assault Bolters or two Plasma Exterminators"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 184
   },
   {
     "id": "primaris_vanguard_incursor_aoa",
@@ -8834,7 +9047,8 @@
       "3 frag grenades",
       "3 krak grenades"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 185
   },
   {
     "id": "primaris_vanguard_infiltrator_aoa",
@@ -8882,7 +9096,8 @@
       "3 frag grenades",
       "3 krak grenades"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 186
   },
   {
     "id": "primaris_reiver_aoa",
@@ -8933,7 +9148,8 @@
       "3 frag grenades",
       "3 krak grenades"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 187
   },
   {
     "id": "space_marine_chaplain_aoa",
@@ -8986,7 +9202,8 @@
       "3 Krak Grenades",
       "Rosarius"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 188
   },
   {
     "id": "primaris_chaplain_aoa",
@@ -9039,7 +9256,8 @@
       "Absolvor bolt pistol",
       "3 frag and 3 krak grenades"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 188
   },
   {
     "id": "space_marine_librarian_aoa",
@@ -9091,6 +9309,7 @@
       "Psychic Hood"
     ],
     "source": "apocrypha",
+    "page": 167,
     "isPsyker": true,
     "psykerConfig": {
       "grantedPowers": [
@@ -9161,6 +9380,7 @@
       "3 frag and 3 krak grenades"
     ],
     "source": "apocrypha",
+    "page": 189,
     "isPsyker": true,
     "psykerConfig": {
       "grantedPowers": [
@@ -9232,7 +9452,8 @@
       "Augmetic Servo-arm",
       "and any 2 augmetics"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 190
   },
   {
     "id": "space_marine_techmarine_aoa",
@@ -9285,7 +9506,8 @@
       "Augmetic Servo-arm",
       "and any 2 augmetics"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 190
   },
   {
     "id": "warpsmith_aoa",
@@ -9338,7 +9560,8 @@
       "one Mechadendrite of your choice",
       "choice of two augmetics"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 191
   },
   {
     "id": "adamus_assassin_aoa",
@@ -9385,7 +9608,8 @@
       "Needlespine Blaster",
       "Assassinorum Bodyglove"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 192
   },
   {
     "id": "archon_aoa",
@@ -9431,7 +9655,8 @@
       "Shadow Field",
       "and any two weapons of any rarity with a Value of up to 8"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 124
   },
   {
     "id": "autarch_aoa",
@@ -9487,7 +9712,8 @@
       "Warp Spider Jump Generator",
       "Aeldari Jetbike"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 194
   },
   {
     "id": "callidus_assassin_aoa",
@@ -9541,7 +9767,8 @@
       "poisoned blades",
       "Assassinorum Bodyglove"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 195
   },
   {
     "id": "culexus_assassin_aoa",
@@ -9591,7 +9818,8 @@
       "3 Psyk- Out Grenades",
       "Assassinorum Bodyglove"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 196
   },
   {
     "id": "eversor_assassin_aoa",
@@ -9648,7 +9876,8 @@
       "1 dose of Terminus)",
       "Assassinorum Bodyglove"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 198
   },
   {
     "id": "haemonculus_aoa",
@@ -9694,7 +9923,8 @@
       "Haemonculus Tools",
       "any three augmetics with the DRUKHARI keyword and a rarity of up to Very Rare"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 96
   },
   {
     "id": "harlequin_death_jester_aoa",
@@ -9742,7 +9972,8 @@
       "Master-Crafted Shuriken Cannon",
       "3 Shrieker Bio-Explosive Discs"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 200
   },
   {
     "id": "harlequin_shadowseer_aoa",
@@ -9793,6 +10024,7 @@
       "6 hallucinogen grenades"
     ],
     "source": "apocrypha",
+    "page": 201,
     "isPsyker": true,
     "psykerConfig": {
       "grantedPowers": [
@@ -9858,7 +10090,8 @@
       "Harlequin’s Caress",
       "Harlequin’s Kiss"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 202
   },
   {
     "id": "harlequin_troupe_master_aoa",
@@ -9906,7 +10139,8 @@
       "any one AELDARI melee weapon of Value 9 or less and any one pistol of Value 9 or less",
       "neither of which may have a Rarity greater than Very Rare"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 203
   },
   {
     "id": "succubus_aoa",
@@ -9951,7 +10185,8 @@
       "Agonizer",
       "three doses of Hekatarii combat drugs"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 204
   },
   {
     "id": "vanus_assassin_aoa",
@@ -10006,7 +10241,8 @@
       "Sympatic Dataspikes",
       "Vox-Disruptor Array"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 205
   },
   {
     "id": "venenum_assassin_aoa",
@@ -10054,7 +10290,8 @@
       "Hookfang Blades",
       "3 Poison Globes"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 206
   },
   {
     "id": "vindicare_assassin_aoa",
@@ -10104,7 +10341,8 @@
       "Stealth Suit",
       "Spy Mask"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 207
   },
   {
     "id": "wraithblade_aoa",
@@ -10148,7 +10386,8 @@
       "A pair of Wraithswords",
       "or a Wraithaxe and Force Shield"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 208
   },
   {
     "id": "wraithguard_aoa",
@@ -10191,6 +10430,7 @@
     "startingWargear": [
       "D-Scythe or Wraithcannon"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 208
   }
 ]

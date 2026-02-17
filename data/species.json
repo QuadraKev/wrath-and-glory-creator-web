@@ -23,6 +23,7 @@
       "IMPERIUM"
     ],
     "source": "core",
+    "page": 21,
     "subOptions": {
       "type": "homeworld",
       "label": "Homeworld (Abundance of Apocrypha)",
@@ -173,6 +174,7 @@
       "ADEPTUS ASTARTES"
     ],
     "source": "core",
+    "page": 2,
     "subOptions": {
       "type": "chapter",
       "label": "Chapter",
@@ -608,6 +610,7 @@
       "PRIMARIS"
     ],
     "source": "core",
+    "page": 25,
     "subOptions": {
       "type": "chapter",
       "label": "Chapter",
@@ -1009,6 +1012,7 @@
       "AELDARI"
     ],
     "source": "core",
+    "page": 2,
     "subOptions": {
       "type": "path",
       "label": "Asuryani Path",
@@ -1142,6 +1146,7 @@
       "PSYKER"
     ],
     "source": "core",
+    "page": null,
     "subOptions": [
       {
         "type": "path",
@@ -1310,6 +1315,7 @@
       "ORK"
     ],
     "source": "core",
+    "page": 2,
     "subOptions": {
       "type": "clan",
       "label": "Clan",
@@ -1397,7 +1403,8 @@
       "IMPERIUM",
       "ABHUMAN"
     ],
-    "source": "fspg"
+    "source": "fspg",
+    "page": 91
   },
   {
     "id": "ratling",
@@ -1437,7 +1444,8 @@
       "IMPERIUM",
       "ABHUMAN"
     ],
-    "source": "fspg"
+    "source": "fspg",
+    "page": 91
   },
   {
     "id": "kroot",
@@ -1478,6 +1486,7 @@
       "KROOT"
     ],
     "source": "fspg",
+    "page": 91,
     "subOptions": {
       "type": "mutation",
       "label": "Kroot Mutation",
@@ -1591,7 +1600,8 @@
       "AELDARI",
       "DRUKHARI"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 10
   },
   {
     "id": "wraith_construct",
@@ -1625,7 +1635,8 @@
       "AELDARI",
       "WRAITH CONSTRUCT"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 10
   },
   {
     "id": "ghost_warrior_aoa",
@@ -1679,7 +1690,8 @@
       "[CRAFTWORLD]",
       "SPIRIT"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 6
   },
   {
     "id": "custodian_aoa",
@@ -1735,6 +1747,7 @@
       "ADEPTUS CUSTODES"
     ],
     "source": "apocrypha",
+    "page": 7,
     "subOptions": {
       "type": "shield_host",
       "label": "Shield Host",
@@ -1857,6 +1870,7 @@
       "DRUKHARI"
     ],
     "source": "apocrypha",
+    "page": 8,
     "subOptions": {
       "type": "subfaction",
       "label": "Kabal/Cult/Coven",
@@ -2029,6 +2043,7 @@
       "[LEAGUE]"
     ],
     "source": "apocrypha",
+    "page": 3,
     "subOptions": {
       "type": "cloneskein",
       "label": "Cloneskein Trait",
@@ -2121,6 +2136,7 @@
       "[LEAGUE]"
     ],
     "source": "apocrypha",
+    "page": 10,
     "subOptions": {
       "type": "league",
       "label": "League",
@@ -2234,7 +2250,8 @@
       "NAVIS NOBILITE",
       "[NAVIGATOR HOUSE]"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 11
   },
   {
     "id": "pariah_aoa",
@@ -2274,7 +2291,8 @@
     "keywords": [
       "IMPERIUM"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 122
   },
   {
     "id": "perpetual_aoa",
@@ -2314,7 +2332,8 @@
     "keywords": [
       "IMPERIUM"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 168
   },
   {
     "id": "beastman_aoa",
@@ -2357,7 +2376,8 @@
     "keywords": [
       "IMPERIUM"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 14
   },
   {
     "id": "tau_shas_aoa",
@@ -2399,6 +2419,7 @@
       "[SEPT]"
     ],
     "source": "apocrypha",
+    "page": null,
     "subOptions": {
       "type": "sept",
       "label": "Sept",
@@ -2520,6 +2541,7 @@
       "[SEPT]"
     ],
     "source": "apocrypha",
+    "page": null,
     "subOptions": {
       "type": "sept",
       "label": "Sept",
@@ -2645,6 +2667,7 @@
       "[SEPT]"
     ],
     "source": "apocrypha",
+    "page": null,
     "subOptions": {
       "type": "sept",
       "label": "Sept",
@@ -2770,6 +2793,7 @@
       "[SEPT]"
     ],
     "source": "apocrypha",
+    "page": null,
     "subOptions": {
       "type": "sept",
       "label": "Sept",
@@ -2893,6 +2917,7 @@
       "[SEPT]"
     ],
     "source": "apocrypha",
+    "page": null,
     "subOptions": {
       "type": "sept",
       "label": "Sept",

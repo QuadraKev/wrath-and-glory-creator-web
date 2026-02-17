@@ -8,7 +8,8 @@
     "value": 3,
     "rarity": "Uncommon",
     "keywords": [],
-    "source": "core"
+    "source": "core",
+    "page": 112
   },
   {
     "id": "vox_bead",
@@ -19,7 +20,8 @@
     "value": 3,
     "rarity": "Uncommon",
     "keywords": [],
-    "source": "core"
+    "source": "core",
+    "page": 240
   },
   {
     "id": "vox_caster",
@@ -30,7 +32,8 @@
     "value": 3,
     "rarity": "Rare",
     "keywords": [],
-    "source": "core"
+    "source": "core",
+    "page": 239
   },
   {
     "id": "medikit",
@@ -41,7 +44,8 @@
     "value": 3,
     "rarity": "Uncommon",
     "keywords": [],
-    "source": "core"
+    "source": "core",
+    "page": 238
   },
   {
     "id": "stimm",
@@ -55,7 +59,8 @@
       "IMPERIUM",
       "SCUM"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 238
   },
   {
     "id": "chirurgeons_tools",
@@ -69,7 +74,8 @@
       "IMPERIUM",
       "ADEPTA SORORITAS"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 238
   },
   {
     "id": "auspex",
@@ -83,7 +89,8 @@
       "IMPERIUM",
       "ADEPTUS MECHANICUS"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 236
   },
   {
     "id": "data_slate",
@@ -94,7 +101,8 @@
     "value": 2,
     "rarity": "Common",
     "keywords": [],
-    "source": "core"
+    "source": "core",
+    "page": 237
   },
   {
     "id": "grav_chute",
@@ -108,7 +116,8 @@
       "IMPERIUM",
       "ASTRA MILITARUM"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 103
   },
   {
     "id": "jump_pack",
@@ -119,7 +128,8 @@
     "value": 7,
     "rarity": "Rare",
     "keywords": [],
-    "source": "core"
+    "source": "core",
+    "page": 74
   },
   {
     "id": "cameleoline_cloak",
@@ -130,7 +140,8 @@
     "value": 5,
     "rarity": "Rare",
     "keywords": [],
-    "source": "core"
+    "source": "core",
+    "page": 237
   },
   {
     "id": "preysense_goggles",
@@ -141,7 +152,8 @@
     "value": 5,
     "rarity": "Rare",
     "keywords": [],
-    "source": "core"
+    "source": "core",
+    "page": 112
   },
   {
     "id": "respirator",
@@ -152,7 +164,8 @@
     "value": 2,
     "rarity": "Uncommon",
     "keywords": [],
-    "source": "core"
+    "source": "core",
+    "page": 239
   },
   {
     "id": "void_suit",
@@ -163,7 +176,8 @@
     "value": 5,
     "rarity": "Rare",
     "keywords": [],
-    "source": "core"
+    "source": "core",
+    "page": 238
   },
   {
     "id": "auto_quill",
@@ -177,7 +191,8 @@
       "IMPERIUM",
       "ADMINISTRATUM"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 236
   },
   {
     "id": "symbol_of_authority",
@@ -188,7 +203,8 @@
     "value": 3,
     "rarity": "Uncommon",
     "keywords": [],
-    "source": "core"
+    "source": "core",
+    "page": 94
   },
   {
     "id": "chaplet_ecclesiasticus",
@@ -202,7 +218,8 @@
       "IMPERIUM",
       "ADEPTUS MINISTORUM"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 237
   },
   {
     "id": "psychic_focus",
@@ -215,7 +232,8 @@
     "keywords": [
       "PSYKER"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 239
   },
   {
     "id": "survival_kit",
@@ -226,7 +244,8 @@
     "value": 3,
     "rarity": "Uncommon",
     "keywords": [],
-    "source": "core"
+    "source": "core",
+    "page": 240
   },
   {
     "id": "missionary_kit",
@@ -240,7 +259,8 @@
       "IMPERIUM",
       "ADEPTUS MINISTORUM"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 238
   },
   {
     "id": "grooming_kit",
@@ -253,7 +273,8 @@
     "keywords": [
       "IMPERIUM"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 93
   },
   {
     "id": "ministorum_robes",
@@ -267,7 +288,8 @@
       "IMPERIUM",
       "ADEPTUS MINISTORUM"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 92
   },
   {
     "id": "administratum_robes",
@@ -281,7 +303,8 @@
       "IMPERIUM",
       "ADEPTUS ADMINISTRATUM"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 89
   },
   {
     "id": "bedroll",
@@ -292,7 +315,8 @@
     "value": 1,
     "rarity": "Common",
     "keywords": [],
-    "source": "core"
+    "source": "core",
+    "page": 96
   },
   {
     "id": "blanket",
@@ -303,7 +327,8 @@
     "value": 1,
     "rarity": "Common",
     "keywords": [],
-    "source": "core"
+    "source": "core",
+    "page": 100
   },
   {
     "id": "canteen",
@@ -314,7 +339,8 @@
     "value": 1,
     "rarity": "Common",
     "keywords": [],
-    "source": "core"
+    "source": "core",
+    "page": 238
   },
   {
     "id": "gang_colours",
@@ -327,7 +353,8 @@
     "keywords": [
       "SCUM"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 96
   },
   {
     "id": "ancient_scrolls",
@@ -341,7 +368,8 @@
       "IMPERIUM",
       "ADEPTUS ADMINISTRATUM"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 89
   },
   {
     "id": "tattered_robes",
@@ -354,7 +382,8 @@
     "keywords": [
       "SCUM"
     ],
-    "source": "core"
+    "source": "core",
+    "page": null
   },
   {
     "id": "ripped_clothes",
@@ -367,7 +396,8 @@
     "keywords": [
       "ORK"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 354
   },
   {
     "id": "rags",
@@ -378,7 +408,8 @@
     "value": 0,
     "rarity": "Common",
     "keywords": [],
-    "source": "core"
+    "source": "core",
+    "page": 111
   },
   {
     "id": "clothing_common",
@@ -389,7 +420,8 @@
     "value": 1,
     "rarity": "Common",
     "keywords": [],
-    "source": "core"
+    "source": "core",
+    "page": null
   },
   {
     "id": "clothing_uncommon",
@@ -400,7 +432,8 @@
     "value": 1,
     "rarity": "Uncommon",
     "keywords": [],
-    "source": "core"
+    "source": "core",
+    "page": null
   },
   {
     "id": "clothing_rare",
@@ -411,7 +444,8 @@
     "value": 1,
     "rarity": "Rare",
     "keywords": [],
-    "source": "core"
+    "source": "core",
+    "page": null
   },
   {
     "id": "clothing_very_rare",
@@ -422,7 +456,8 @@
     "value": 1,
     "rarity": "Very Rare",
     "keywords": [],
-    "source": "core"
+    "source": "core",
+    "page": null
   },
   {
     "id": "ration_packs",
@@ -432,7 +467,8 @@
     "value": 1,
     "rarity": "Common",
     "keywords": [],
-    "source": "core"
+    "source": "core",
+    "page": 100
   },
   {
     "id": "mess_kit",
@@ -446,7 +482,8 @@
       "IMPERIUM",
       "ASTRA MILITARUM"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 103
   },
   {
     "id": "uplifting_primer",
@@ -460,7 +497,8 @@
       "IMPERIUM",
       "ASTRA MILITARUM"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 103
   },
   {
     "id": "chrono",
@@ -471,7 +509,8 @@
     "value": 2,
     "rarity": "Common",
     "keywords": [],
-    "source": "core"
+    "source": "core",
+    "page": 237
   },
   {
     "id": "spirit_stone",
@@ -484,7 +523,8 @@
     "keywords": [
       "AELDARI"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 77
   },
   {
     "id": "wraithbone_runes",
@@ -498,7 +538,8 @@
       "AELDARI",
       "PSYKER"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 114
   },
   {
     "id": "frag_grenades",
@@ -511,7 +552,8 @@
     "keywords": [
       "IMPERIUM"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 106
   },
   {
     "id": "krak_grenades",
@@ -524,7 +566,8 @@
     "keywords": [
       "IMPERIUM"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 113
   },
   {
     "id": "plasma_grenades",
@@ -537,7 +580,8 @@
     "keywords": [
       "AELDARI"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 229
   },
   {
     "id": "stikkbombs",
@@ -550,7 +594,8 @@
     "keywords": [
       "ORK"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 108
   },
   {
     "id": "mechadendrite",
@@ -563,7 +608,8 @@
     "keywords": [
       "ADEPTUS MECHANICUS"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 244
   },
   {
     "id": "augmetic_arm",
@@ -571,11 +617,14 @@
     "category": "augmetic",
     "description": "Joints and muscles are replaced with flexible cables and servomotors for greater speed and strength.",
     "effect": "Gain +1 Strength per Augmetic Arm.",
-    "bonuses": { "strength": 1 },
+    "bonuses": {
+      "strength": 1
+    },
     "value": 4,
     "rarity": "Rare",
     "keywords": [],
-    "source": "core"
+    "source": "core",
+    "page": 243
   },
   {
     "id": "augmetic_eye",
@@ -586,7 +635,8 @@
     "value": 6,
     "rarity": "Uncommon",
     "keywords": [],
-    "source": "core"
+    "source": "core",
+    "page": 243
   },
   {
     "id": "augmetic_legs",
@@ -594,11 +644,14 @@
     "category": "augmetic",
     "description": "Metal supports and hydraulic actuators replace bone and sinew, empowering jumps and running.",
     "effect": "Gain +2 Speed and add 2 metres to any jump.",
-    "bonuses": { "speed": 2 },
+    "bonuses": {
+      "speed": 2
+    },
     "value": 4,
     "rarity": "Rare",
     "keywords": [],
-    "source": "core"
+    "source": "core",
+    "page": 243
   },
   {
     "id": "banshee_mask",
@@ -613,7 +666,8 @@
       "ASURYANI",
       "HOWLING BANSHEE"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 93
   },
   {
     "id": "beastmaster_mask",
@@ -628,7 +682,8 @@
       "BEASTMASTER",
       "DRUKHARI"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 93
   },
   {
     "id": "ghosthelm",
@@ -643,7 +698,8 @@
       "ANHRATHE",
       "ASURYANI"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 94
   },
   {
     "id": "lodestar_helm",
@@ -658,7 +714,8 @@
       "ANHRATHE",
       "ASURYANI"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 94
   },
   {
     "id": "harlequin_mask",
@@ -672,7 +729,8 @@
       "AELDARI",
       "HARLEQUIN"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 94
   },
   {
     "id": "mandiblasters",
@@ -687,7 +745,8 @@
       "ASURYANI",
       "STRIKING SCORPION"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 94
   },
   {
     "id": "mirror_mask",
@@ -701,7 +760,8 @@
       "AELDARI",
       "HARLEQUIN"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 94
   },
   {
     "id": "rictus_mask",
@@ -716,7 +776,8 @@
       "DEATH JESTER",
       "HARLEQUIN"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 94
   },
   {
     "id": "spirit_mask",
@@ -730,7 +791,8 @@
       "AELDARI",
       "ASURYANI"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 94
   },
   {
     "id": "tormentor",
@@ -745,7 +807,8 @@
       "DRUKHARI",
       "INCUBUS"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 94
   },
   {
     "id": "anti_grav_platform",
@@ -759,7 +822,8 @@
       "AELDARI",
       "ASURYANI"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 81
   },
   {
     "id": "anti_gravitic_suspensor_crystal",
@@ -772,7 +836,8 @@
     "keywords": [
       "AELDARI"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 95
   },
   {
     "id": "arena_trophy",
@@ -787,7 +852,8 @@
       "BEASTMASTER",
       "DRUKHARI"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 95
   },
   {
     "id": "aspect_shrine",
@@ -802,7 +868,8 @@
       "ASPECT SHRINE",
       "ASURYANI"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 95
   },
   {
     "id": "blink_pack",
@@ -817,7 +884,8 @@
       "ASPECT WARRIOR",
       "SHADE RUNNER"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 95
   },
   {
     "id": "bonesinger_shard",
@@ -831,7 +899,8 @@
       "AELDARI",
       "ASURYANI"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 95
   },
   {
     "id": "chains_blades_hooks",
@@ -846,7 +915,8 @@
       "DRUKHARI",
       "KABAL"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 96
   },
   {
     "id": "channeller_stones",
@@ -860,7 +930,8 @@
       "AELDARI",
       "ANHRATHE"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 96
   },
   {
     "id": "flip_belt",
@@ -874,7 +945,8 @@
       "AELDARI",
       "HARLEQUIN"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 96
   },
   {
     "id": "haemonculus_tools",
@@ -889,7 +961,8 @@
       "DRUKHARI",
       "HAEMONCULUS"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 96
   },
   {
     "id": "hunting_trophy",
@@ -904,7 +977,8 @@
       "BEASTMASTER",
       "DRUKHARI"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 96
   },
   {
     "id": "initiation_brand",
@@ -919,7 +993,8 @@
       "DRUKHARI",
       "KABAL"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 97
   },
   {
     "id": "initiation_token",
@@ -934,7 +1009,8 @@
       "DRUKHARI",
       "KABAL"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 97
   },
   {
     "id": "rangefinder",
@@ -949,7 +1025,8 @@
       "ANHRATHE",
       "ASURYANI"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 97
   },
   {
     "id": "resonator_shard",
@@ -964,7 +1041,8 @@
       "ASURYANI",
       "RANGER"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 97
   },
   {
     "id": "ritual_tools",
@@ -979,7 +1057,8 @@
       "ANHRATHE",
       "ASURYANI"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 97
   },
   {
     "id": "shrine_of_the_father",
@@ -994,7 +1073,8 @@
       "DRUKHARI",
       "INCUBUS"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 97
   },
   {
     "id": "spirit_stone_inhabited",
@@ -1007,7 +1087,8 @@
     "keywords": [
       "AELDARI"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": null
   },
   {
     "id": "skyboard",
@@ -1023,7 +1104,8 @@
       "HELLION",
       "ANTI-GRAV"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 84
   },
   {
     "id": "swooping_hawk_wings",
@@ -1038,7 +1120,8 @@
       "ASPECT WARRIOR",
       "ASURYANI"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 98
   },
   {
     "id": "terms_of_covenant",
@@ -1053,7 +1136,8 @@
       "DRUKHARI",
       "INCUBUS"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 98
   },
   {
     "id": "adrenalight",
@@ -1068,7 +1152,8 @@
       "DRUKHARI",
       "WYCH CULT"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 99
   },
   {
     "id": "grave_lotus",
@@ -1083,7 +1168,8 @@
       "DRUKHARI",
       "WYCH CULT"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 99
   },
   {
     "id": "hypex",
@@ -1098,7 +1184,8 @@
       "DRUKHARI",
       "WYCH CULT"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 99
   },
   {
     "id": "painbringer",
@@ -1113,7 +1200,8 @@
       "DRUKHARI",
       "WYCH CULT"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 99
   },
   {
     "id": "serpentin",
@@ -1128,7 +1216,8 @@
       "DRUKHARI",
       "WYCH CULT"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 99
   },
   {
     "id": "splintermind",
@@ -1143,7 +1232,8 @@
       "DRUKHARI",
       "WYCH CULT"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 99
   },
   {
     "id": "sororitas_vestments",
@@ -1157,7 +1247,8 @@
       "IMPERIUM",
       "ADEPTA SORORITAS"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 91
   },
   {
     "id": "rule_of_sororitas",
@@ -1171,7 +1262,8 @@
       "IMPERIUM",
       "ADEPTA SORORITAS"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 239
   },
   {
     "id": "purity_seal",
@@ -1184,7 +1276,8 @@
     "keywords": [
       "IMPERIUM"
     ],
-    "source": "fspg"
+    "source": "fspg",
+    "page": 127
   },
   {
     "id": "writing_kit",
@@ -1195,7 +1288,8 @@
     "value": 2,
     "rarity": "Common",
     "keywords": [],
-    "source": "core"
+    "source": "core",
+    "page": 241
   },
   {
     "id": "magnocular_scope",
@@ -1206,7 +1300,8 @@
     "value": 2,
     "rarity": "Uncommon",
     "keywords": [],
-    "source": "core"
+    "source": "core",
+    "page": 228
   },
   {
     "id": "laud_hailer",
@@ -1217,7 +1312,8 @@
     "value": 3,
     "rarity": "Common",
     "keywords": [],
-    "source": "fspg"
+    "source": "fspg",
+    "page": 67
   },
   {
     "id": "excruciator",
@@ -1232,7 +1328,8 @@
       "ADEPTUS MINISTORUM",
       "INQUISITION"
     ],
-    "source": "fspg"
+    "source": "fspg",
+    "page": 118
   },
   {
     "id": "psychic_hood",
@@ -1246,7 +1343,8 @@
       "IMPERIUM",
       "ADEPTUS ASTARTES"
     ],
-    "source": "fspg"
+    "source": "fspg",
+    "page": 127
   },
   {
     "id": "skull_helm",
@@ -1260,7 +1358,8 @@
       "IMPERIUM",
       "ADEPTUS ASTARTES"
     ],
-    "source": "voa"
+    "source": "voa",
+    "page": 75
   },
   {
     "id": "narthecium",
@@ -1274,7 +1373,8 @@
       "IMPERIUM",
       "ADEPTUS ASTARTES"
     ],
-    "source": "voa"
+    "source": "voa",
+    "page": 30
   },
   {
     "id": "reductor",
@@ -1288,7 +1388,8 @@
       "IMPERIUM",
       "ADEPTUS ASTARTES"
     ],
-    "source": "voa"
+    "source": "voa",
+    "page": 30
   },
   {
     "id": "simulacrum_imperialis",
@@ -1303,7 +1404,8 @@
       "ADEPTUS MINISTORUM",
       "ADEPTA SORORITAS"
     ],
-    "source": "fspg"
+    "source": "fspg",
+    "page": 127
   },
   {
     "id": "diagnostor_helmet",
@@ -1317,7 +1419,8 @@
       "IMPERIUM",
       "ADEPTUS ASTARTES"
     ],
-    "source": "fspg"
+    "source": "fspg",
+    "page": 126
   },
   {
     "id": "sacred_machine_oil",
@@ -1331,7 +1434,8 @@
       "IMPERIUM",
       "ADEPTUS MECHANICUS"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 239
   },
   {
     "id": "adept_robes",
@@ -1345,7 +1449,8 @@
       "IMPERIUM",
       "ADEPTUS MECHANICUS"
     ],
-    "source": "core"
+    "source": "core",
+    "page": null
   },
   {
     "id": "servo_harness",
@@ -1360,7 +1465,8 @@
       "ADEPTUS MECHANICUS",
       "ADEPTUS ASTARTES"
     ],
-    "source": "voa"
+    "source": "voa",
+    "page": 39
   },
   {
     "id": "astartes_servo_arm",
@@ -1374,7 +1480,8 @@
       "IMPERIUM",
       "ADEPTUS ASTARTES"
     ],
-    "source": "voa"
+    "source": "voa",
+    "page": 73
   },
   {
     "id": "company_standard",
@@ -1388,7 +1495,8 @@
       "IMPERIUM",
       "ADEPTUS ASTARTES"
     ],
-    "source": "voa"
+    "source": "voa",
+    "page": 42
   },
   {
     "id": "smoke_grenades",
@@ -1401,7 +1509,8 @@
     "keywords": [
       "IMPERIUM"
     ],
-    "source": "voa"
+    "source": "voa",
+    "page": 33
   },
   {
     "id": "shock_grenades",
@@ -1415,7 +1524,8 @@
       "IMPERIUM",
       "ADEPTUS ASTARTES"
     ],
-    "source": "voa"
+    "source": "voa",
+    "page": 37
   },
   {
     "id": "haywire_mine",
@@ -1429,7 +1539,8 @@
       "IMPERIUM",
       "ADEPTUS ASTARTES"
     ],
-    "source": "voa"
+    "source": "voa",
+    "page": 33
   },
   {
     "id": "combat_drugs",
@@ -1443,7 +1554,8 @@
       "AELDARI",
       "DRUKHARI"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 93
   },
   {
     "id": "fine_clothing",
@@ -1454,7 +1566,8 @@
     "value": 3,
     "rarity": "Uncommon",
     "keywords": [],
-    "source": "core"
+    "source": "core",
+    "page": null
   },
   {
     "id": "warrant_of_trade",
@@ -1468,7 +1581,8 @@
       "IMPERIUM",
       "ROGUE TRADER"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 104
   },
   {
     "id": "disguise_kit",
@@ -1479,7 +1593,8 @@
     "value": 3,
     "rarity": "Uncommon",
     "keywords": [],
-    "source": "core"
+    "source": "core",
+    "page": null
   },
   {
     "id": "commissar_greatcoat",
@@ -1494,7 +1609,8 @@
       "ASTRA MILITARUM",
       "OFFICIO PREFECTUS"
     ],
-    "source": "core"
+    "source": "core",
+    "page": null
   },
   {
     "id": "omnissian_sigil",
@@ -1508,7 +1624,8 @@
       "IMPERIUM",
       "ADEPTUS MECHANICUS"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 109
   },
   {
     "id": "inquisitorial_rosette",
@@ -1522,7 +1639,8 @@
       "IMPERIUM",
       "INQUISITION"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 116
   },
   {
     "id": "ballistic_autoreliquary",
@@ -1537,7 +1655,8 @@
       "ADEPTUS ASTARTES",
       "PRIMARIS"
     ],
-    "source": "voa"
+    "source": "voa",
+    "page": 236
   },
   {
     "id": "hook_and_chains",
@@ -1551,7 +1670,8 @@
       "AELDARI",
       "DRUKHARI"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": null
   },
   {
     "id": "trophy_rack",
@@ -1565,7 +1685,8 @@
       "AELDARI",
       "DRUKHARI"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 43
   },
   {
     "id": "false_face",
@@ -1579,7 +1700,8 @@
       "AELDARI",
       "HARLEQUIN"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 47
   },
   {
     "id": "ichor_injector",
@@ -1594,7 +1716,8 @@
       "DRUKHARI",
       "HAEMONCULUS"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 86
   },
   {
     "id": "back_banner",
@@ -1608,7 +1731,8 @@
       "AELDARI",
       "ASURYANI"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 33
   },
   {
     "id": "grenade_pack",
@@ -1623,7 +1747,8 @@
       "ASURYANI",
       "ASPECT WARRIOR"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 82
   },
   {
     "id": "warp_spider_jump_generator",
@@ -1638,7 +1763,8 @@
       "ASPECT WARRIOR",
       "ASURYANI"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 30
   },
   {
     "id": "infiltrator_headpiece",
@@ -1653,7 +1779,8 @@
       "ADEPTUS MECHANICUS",
       "SKITARII"
     ],
-    "source": "fspg"
+    "source": "fspg",
+    "page": 128
   },
   {
     "id": "fusion_charges",
@@ -1668,7 +1795,8 @@
       "ASURYANI",
       "ASPECT WARRIOR"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 26
   },
   {
     "id": "howling_banshee_mask",
@@ -1684,7 +1812,8 @@
       "ASPECT WARRIOR",
       "HOWLING BANSHEE"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 27
   },
   {
     "id": "mandiblaster",
@@ -1700,7 +1829,8 @@
       "ASPECT WARRIOR",
       "STRIKING SCORPION"
     ],
-    "source": "aeldari"
+    "source": "aeldari",
+    "page": 94
   },
   {
     "id": "null_rod",
@@ -1714,7 +1844,8 @@
       "IMPERIUM",
       "ADEPTA SORORITAS"
     ],
-    "source": "fspg"
+    "source": "fspg",
+    "page": 127
   },
   {
     "id": "augmetics",
@@ -1727,7 +1858,8 @@
     "keywords": [
       "IMPERIUM"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 129
   },
   {
     "id": "apertor_aoa",
@@ -1743,7 +1875,8 @@
       "INQUISITION",
       "ADEPTUS ARBITES"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 419
   },
   {
     "id": "auspectre_aoa",
@@ -1758,7 +1891,8 @@
       "OFFICIO ASSASSINORUM",
       "TEMPLUM VANUS"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 419
   },
   {
     "id": "auto_chastiser_aoa",
@@ -1773,7 +1907,8 @@
       "ADEPTUS MINISTORUM",
       "ADEPTA SORORITAS"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 419
   },
   {
     "id": "book_of_judgement_abridged_aoa",
@@ -1787,7 +1922,8 @@
       "IMPERIUM",
       "ADEPTUS ARBITES"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 419
   },
   {
     "id": "divinator_class_auspex_aoa",
@@ -1802,7 +1938,8 @@
       "ADEPTUS ASTARTES",
       "PRIMARIS"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 348
   },
   {
     "id": "etherium_aoa",
@@ -1817,7 +1954,8 @@
       "OFFICIO ASSASSINORUM",
       "TEMPLUM CULEXUS"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 196
   },
   {
     "id": "explosive_collar_aoa",
@@ -1831,7 +1969,8 @@
       "IMPERIUM",
       "ASTRA MILITARUM"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 419
   },
   {
     "id": "force_matrix_aoa",
@@ -1846,7 +1985,8 @@
       "OFFICIO ASSASSINORUM",
       "TEMPLUM CULEXUS"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 196
   },
   {
     "id": "grapple_gun_aoa",
@@ -1857,7 +1997,8 @@
     "value": 2,
     "rarity": "Uncommon",
     "keywords": [],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 419
   },
   {
     "id": "liber_daemonica_aoa",
@@ -1873,7 +2014,8 @@
       "ORDO MALLEUS",
       "GREY KNIGHTS"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 419
   },
   {
     "id": "magnacles_aoa",
@@ -1888,7 +2030,8 @@
       "ADEPTUS ARBITES",
       "INQUISITION"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 419
   },
   {
     "id": "narthecium_aoa",
@@ -1902,7 +2045,8 @@
       "IMPERIUM",
       "ADEPTUS ASTARTES"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 419
   },
   {
     "id": "oath_parchment_aoa",
@@ -1918,7 +2062,8 @@
       "ADEPTUS CUSTODES",
       "ANATHEMA PSYKANA"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 419
   },
   {
     "id": "psychic_hood_aoa",
@@ -1934,7 +2079,8 @@
       "INQUISITION",
       "ADEPTUS ASTRA TELEPATHICA"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 419
   },
   {
     "id": "psyocculum_aoa",
@@ -1951,7 +2097,8 @@
       "ADEPTUS ASTRA TELEPATHICA",
       "ANATHEMA PSYKANA"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 419
   },
   {
     "id": "reductor_aoa",
@@ -1965,7 +2112,8 @@
       "IMPERIUM",
       "ADEPTUS ASTARTES"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 419
   },
   {
     "id": "sainted_reliquiae_aoa",
@@ -1980,7 +2128,8 @@
       "ADEPTUS MINISTORUM",
       "ADEPTA SORORITAS"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 419
   },
   {
     "id": "sentinel_array_aoa",
@@ -1995,7 +2144,8 @@
       "OFFICIO ASSASSINORUM",
       "TEMPLUM EVERSOR"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 419
   },
   {
     "id": "strobe_lumen_aoa",
@@ -2009,7 +2159,8 @@
       "IMPERIUM",
       "ADEPTUS ARBITES"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 419
   },
   {
     "id": "vindicare_spy_mask_aoa",
@@ -2024,7 +2175,8 @@
       "OFFICIO ASSASSINORUM",
       "TEMPLUM VINDICARE"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 419
   },
   {
     "id": "vox_disruptor_array_aoa",
@@ -2039,7 +2191,8 @@
       "ADEPTUS MECHANICUS",
       "TEMPLUM VANUS"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 419
   },
   {
     "id": "adrenaline_shot_aoa",
@@ -2054,7 +2207,8 @@
       "SCUM",
       "ASTRA MILITARUM"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 425
   },
   {
     "id": "barrage_aoa",
@@ -2068,7 +2222,8 @@
       "IMPERIUM",
       "SCUM"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 351
   },
   {
     "id": "de_tox_aoa",
@@ -2081,7 +2236,8 @@
     "keywords": [
       "IMPERIUM"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 425
   },
   {
     "id": "eversor_combat_drugs_aoa",
@@ -2096,7 +2252,8 @@
       "OFFICIO ASSASSINORUM",
       "TEMPLUM EVERSOR"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 425
   },
   {
     "id": "frenzon_aoa",
@@ -2110,7 +2267,8 @@
       "IMPERIUM",
       "SCUM"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 425
   },
   {
     "id": "halo_aoa",
@@ -2124,7 +2282,8 @@
       "IMPERIUM",
       "ASTRA MILITARUM"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 397
   },
   {
     "id": "kick_aoa",
@@ -2138,7 +2297,8 @@
       "IMPERIUM",
       "ASTRA MILITARUM"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 425
   },
   {
     "id": "panimune_aoa",
@@ -2152,7 +2312,8 @@
       "IMPERIUM",
       "SCUM"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 425
   },
   {
     "id": "polymorphine_aoa",
@@ -2167,7 +2328,8 @@
       "OFFICIO ASSASSINORUM",
       "TEMPLUM CALLIDUS"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 425
   },
   {
     "id": "psychon_aoa",
@@ -2181,7 +2343,8 @@
       "IMPERIUM",
       "SCUM"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 425
   },
   {
     "id": "reflex_aoa",
@@ -2195,7 +2358,8 @@
       "IMPERIUM",
       "SCUM"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 173
   },
   {
     "id": "slaught_aoa",
@@ -2209,7 +2373,8 @@
       "IMPERIUM",
       "SCUM"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 425
   },
   {
     "id": "spur_aoa",
@@ -2223,7 +2388,8 @@
       "IMPERIUM",
       "SCUM"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 425
   },
   {
     "id": "synth_skin_aoa",
@@ -2238,7 +2404,8 @@
       "ASTRA MILITARUM",
       "OFFICIO MEDICAE"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 425
   },
   {
     "id": "torpor_aoa",
@@ -2254,7 +2421,8 @@
       "ADEPTUS ASTRA TELEPATHICA",
       "ANATHEMA PSYKANA"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 425
   },
   {
     "id": "agaith_aoa",
@@ -2268,7 +2436,8 @@
       "AELDARI",
       "HARLEQUIN"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 203
   },
   {
     "id": "anti_grav_platform_aoa",
@@ -2282,7 +2451,8 @@
       "AELDARI",
       "ASURYANI"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 434
   },
   {
     "id": "aspect_shrine_banner_aoa",
@@ -2298,7 +2468,8 @@
       "ASPECT WARRIOR",
       "EXARCH"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 434
   },
   {
     "id": "banshee_mask_aoa",
@@ -2312,7 +2483,8 @@
       "AELDARI",
       "ASURYANI"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 434
   },
   {
     "id": "celestial_shield_aoa",
@@ -2326,7 +2498,8 @@
       "AELDARI",
       "ASURYANI"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 434
   },
   {
     "id": "dark_reaper_rangefinder_aoa",
@@ -2340,7 +2513,8 @@
       "AELDARI",
       "ASURYANI"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 434
   },
   {
     "id": "dread_mask_aoa",
@@ -2354,7 +2528,8 @@
       "AELDARI",
       "HARLEQUIN"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 434
   },
   {
     "id": "flip_belt_aoa",
@@ -2368,7 +2543,8 @@
       "AELDARI",
       "HARLEQUIN"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 203
   },
   {
     "id": "ghosthelm_aoa",
@@ -2383,7 +2559,8 @@
       "ASURYANI",
       "FARSEER"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 216
   },
   {
     "id": "mandiblaster_helm_aoa",
@@ -2397,7 +2574,8 @@
       "AELDARI",
       "ASURYANI"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 434
   },
   {
     "id": "phase_field_aoa",
@@ -2411,7 +2589,8 @@
       "AELDARI",
       "ASURYANI"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 434
   },
   {
     "id": "rictus_mask_aoa",
@@ -2425,7 +2604,8 @@
       "AELDARI",
       "HARLEQUIN"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 434
   },
   {
     "id": "runes_of_warding_aoa",
@@ -2440,7 +2620,8 @@
       "ASURYANI",
       "FARSEER"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 216
   },
   {
     "id": "runes_of_witnessing_aoa",
@@ -2455,7 +2636,8 @@
       "ASURYANI",
       "FARSEER"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 216
   },
   {
     "id": "seers_spirit_stone_aoa",
@@ -2470,7 +2652,8 @@
       "ASURYANI",
       "FARSEER"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 434
   },
   {
     "id": "serpent_shield_generator_aoa",
@@ -2484,7 +2667,8 @@
       "AELDARI",
       "ASURYANI"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 434
   },
   {
     "id": "swooping_hawk_wings_aoa",
@@ -2498,7 +2682,8 @@
       "AELDARI",
       "ASURYANI"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 434
   },
   {
     "id": "targeting_vane_aoa",
@@ -2512,7 +2697,8 @@
       "AELDARI",
       "ASURYANI"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 434
   },
   {
     "id": "warp_spider_jump_generator_aoa",
@@ -2526,7 +2712,8 @@
       "AELDARI",
       "ASURYANI"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 434
   },
   {
     "id": "wraithbone_talisman_aoa",
@@ -2542,7 +2729,8 @@
       "ANHRATHE",
       "HARLEQUINS"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 434
   },
   {
     "id": "crucible_of_malediction_aoa",
@@ -2557,7 +2745,8 @@
       "DRUKHARI",
       "HAEMACOLYTE"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 439
   },
   {
     "id": "haemacolytes_tools_aoa",
@@ -2572,7 +2761,8 @@
       "DRUKHARI",
       "HAEMACOLYTE"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 96
   },
   {
     "id": "haemonculus_tools_aoa",
@@ -2587,7 +2777,8 @@
       "DRUKHARI",
       "HAEMACOLYTE"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 439
   },
   {
     "id": "hekatarii_combat_drugs_aoa",
@@ -2602,7 +2793,8 @@
       "DRUKHARI",
       "HEKATARII"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 439
   },
   {
     "id": "tormented_soul_stone_aoa",
@@ -2616,7 +2808,8 @@
       "AELDARI",
       "DRUKHARI"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 439
   },
   {
     "id": "pain_casket_aoa",
@@ -2630,7 +2823,8 @@
       "AELDARI",
       "DRUKHARI"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 439
   },
   {
     "id": "living_trophy_aoa",
@@ -2644,7 +2838,8 @@
       "AELDARI",
       "DRUKHARI"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 439
   },
   {
     "id": "soul_scent_barb_aoa",
@@ -2658,7 +2853,8 @@
       "AELDARI",
       "DRUKHARI"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 439
   },
   {
     "id": "soul_trap_aoa",
@@ -2672,7 +2868,8 @@
       "AELDARI",
       "DRUKHARI"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 439
   },
   {
     "id": "vexator_mask_aoa",
@@ -2686,7 +2883,8 @@
       "AELDARI",
       "DRUKHARI"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 439
   },
   {
     "id": "cos_armoured_cockpit",
@@ -2699,7 +2897,8 @@
     "keywords": [
       "FLYER"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 82
   },
   {
     "id": "cos_bomb_rack",
@@ -2713,7 +2912,8 @@
       "FLYER",
       "ADEPTUS MECHANICUS"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 79
   },
   {
     "id": "cos_broad_spectrum_data_tether",
@@ -2730,7 +2930,8 @@
       "RAIDER",
       "ADEPTUS MECHANICUS"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 80
   },
   {
     "id": "cos_chaff_launcher",
@@ -2744,7 +2945,8 @@
       "IMPERIUM",
       "FLYER"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 79
   },
   {
     "id": "cos_dozer_blade",
@@ -2759,7 +2961,8 @@
       "TRANSPORT",
       "RAIDER"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 65
   },
   {
     "id": "cos_dozer_ram",
@@ -2774,7 +2977,8 @@
       "TANK",
       "RAIDER"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 68
   },
   {
     "id": "cos_drilldozer_blade",
@@ -2789,7 +2993,8 @@
       "TRANSPORT",
       "RAIDER"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 65
   },
   {
     "id": "cos_emanatus_force_field",
@@ -2807,7 +3012,8 @@
       "RAIDER",
       "FLYER"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 80
   },
   {
     "id": "cos_flare_launcher",
@@ -2820,7 +3026,8 @@
     "keywords": [
       "IMPERIUM"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 64
   },
   {
     "id": "cos_gunnery_servitor",
@@ -2835,7 +3042,8 @@
       "ADEPTUS MECHANICUS",
       "SERVITOR"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 80
   },
   {
     "id": "cos_smoke_launcher",
@@ -2851,7 +3059,8 @@
       "TRANSPORT",
       "RAIDER"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 67
   },
   {
     "id": "cos_auspex_array",
@@ -2867,7 +3076,8 @@
       "TRANSPORT",
       "RAIDER"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 125
   },
   {
     "id": "cos_auto_launcher",
@@ -2883,7 +3093,8 @@
       "TRANSPORT",
       "RAIDER"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 76
   },
   {
     "id": "cos_awakened_machine_spirit",
@@ -2901,7 +3112,8 @@
       "ADEPTUS ASTARTES",
       "ADEPTUS MECHANICUS"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 70
   },
   {
     "id": "cos_combi_flamer",
@@ -2918,7 +3130,8 @@
       "ADEPTUS ASTARTES",
       "CHAOS"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 125
   },
   {
     "id": "cos_combi_grenade_launcher",
@@ -2935,7 +3148,8 @@
       "ADEPTUS ASTARTES",
       "CHAOS"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 125
   },
   {
     "id": "cos_combi_melta",
@@ -2952,7 +3166,8 @@
       "ADEPTUS ASTARTES",
       "CHAOS"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 125
   },
   {
     "id": "cos_combi_plasma",
@@ -2969,7 +3184,8 @@
       "ADEPTUS ASTARTES",
       "CHAOS"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 125
   },
   {
     "id": "cos_combi_grav",
@@ -2986,7 +3202,8 @@
       "ADEPTUS ASTARTES",
       "CHAOS"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 125
   },
   {
     "id": "cos_infernum_halo_launcher",
@@ -3001,7 +3218,8 @@
       "FLYER",
       "ADEPTUS ASTARTES"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 126
   },
   {
     "id": "cos_orbital_comms_array",
@@ -3014,7 +3232,8 @@
     "keywords": [
       "IMPERIUM"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 126
   },
   {
     "id": "cos_repulsor_field",
@@ -3031,7 +3250,8 @@
       "TANK",
       "TRANSPORT"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 77
   },
   {
     "id": "cos_shield_dome",
@@ -3048,7 +3268,8 @@
       "TRANSPORT",
       "RAIDER"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 77
   },
   {
     "id": "cos_siege_shield",
@@ -3066,7 +3287,8 @@
       "ADEPTA SORORITAS",
       "ADEPTUS ASTARTES"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 75
   },
   {
     "id": "cos_holo_field",
@@ -3083,7 +3305,8 @@
       "RAIDER",
       "TRANSPORT"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 93
   },
   {
     "id": "cos_mindshock_pod",
@@ -3097,7 +3320,8 @@
       "ASURYANI",
       "FLYER"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 94
   },
   {
     "id": "cos_power_field",
@@ -3111,7 +3335,8 @@
       "AELDARI",
       "TANK"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 96
   },
   {
     "id": "cos_vehicular_spirit_stone",
@@ -3128,7 +3353,8 @@
       "RAIDER",
       "TRANSPORT"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 94
   },
   {
     "id": "cos_daemonic_machine_spirit",
@@ -3145,7 +3371,8 @@
       "TRANSPORT",
       "RAIDER"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 98
   },
   {
     "id": "cos_bladevanes_wargear",
@@ -3162,7 +3389,8 @@
       "RAIDER",
       "TRANSPORT"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 99
   },
   {
     "id": "cos_chain_snare",
@@ -3179,7 +3407,8 @@
       "RAIDER",
       "TRANSPORT"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 99
   },
   {
     "id": "cos_cluster_caltrops",
@@ -3192,7 +3421,8 @@
     "keywords": [
       "DRUKHARI"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 100
   },
   {
     "id": "cos_grav_talon_wargear",
@@ -3209,7 +3439,8 @@
       "RAIDER",
       "TRANSPORT"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 100
   },
   {
     "id": "cos_grisly_trophies",
@@ -3226,7 +3457,8 @@
       "RAIDER",
       "TRANSPORT"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 99
   },
   {
     "id": "cos_night_shield",
@@ -3243,7 +3475,8 @@
       "RAIDER",
       "TRANSPORT"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 99
   },
   {
     "id": "cos_shock_prow",
@@ -3260,7 +3493,8 @@
       "RAIDER",
       "TRANSPORT"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 99
   },
   {
     "id": "cos_splinter_racks",
@@ -3277,7 +3511,8 @@
       "RAIDER",
       "TRANSPORT"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 99
   },
   {
     "id": "cos_living_metal",
@@ -3295,7 +3530,8 @@
       "TANK",
       "AIRCRAFT"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 58
   },
   {
     "id": "cos_nebuloscope",
@@ -3309,7 +3545,8 @@
       "NECRON",
       "RAIDER"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 134
   },
   {
     "id": "cos_quantum_shielding",
@@ -3326,7 +3563,8 @@
       "TRANSPORT",
       "RAIDER"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 101
   },
   {
     "id": "cos_shadowloom",
@@ -3340,7 +3578,8 @@
       "NECRON",
       "RAIDER"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 134
   },
   {
     "id": "cos_shield_vanes",
@@ -3354,7 +3593,8 @@
       "NECRON",
       "RAIDER"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 134
   },
   {
     "id": "cos_ard_case",
@@ -3370,7 +3610,8 @@
       "TRANSPORT",
       "RAIDER"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 108
   },
   {
     "id": "cos_blastajet_force_field",
@@ -3385,7 +3626,8 @@
       "ORK",
       "FLYER"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 108
   },
   {
     "id": "cos_deff_rolla",
@@ -3400,7 +3642,8 @@
       "TRANSPORT",
       "TANK"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 109
   },
   {
     "id": "cos_fuel_mixa_grot",
@@ -3416,7 +3659,8 @@
       "TRANSPORT",
       "RAIDER"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 105
   },
   {
     "id": "cos_grot_gunner",
@@ -3432,7 +3676,8 @@
       "TRANSPORT",
       "RAIDER"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 105
   },
   {
     "id": "cos_grot_riggers",
@@ -3448,7 +3693,8 @@
       "TRANSPORT",
       "RAIDER"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 104
   },
   {
     "id": "cos_nose_drill",
@@ -3464,7 +3710,8 @@
       "TRANSPORT",
       "RAIDER"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 106
   },
   {
     "id": "cos_squig_mine",
@@ -3479,7 +3726,8 @@
       "ORK",
       "EXPLOSIVE"
     ],
-    "source": "church"
+    "source": "church",
+    "page": 106
   },
   {
     "id": "endless_grimoire_dh",
@@ -3492,7 +3740,8 @@
     "keywords": [
       "TZEENTCH"
     ],
-    "source": "dh"
+    "source": "dh",
+    "page": 60
   },
   {
     "id": "impossible_robe_dh",
@@ -3506,7 +3755,8 @@
       "TZEENTCH",
       "FORCE FIELD"
     ],
-    "source": "dh"
+    "source": "dh",
+    "page": 60
   },
   {
     "id": "everstave_dh",
@@ -3519,7 +3769,8 @@
     "keywords": [
       "TZEENTCH"
     ],
-    "source": "dh"
+    "source": "dh",
+    "page": 61
   },
   {
     "id": "warpfire_blade_dh",
@@ -3532,7 +3783,8 @@
     "keywords": [
       "TZEENTCH"
     ],
-    "source": "dh"
+    "source": "dh",
+    "page": 61
   },
   {
     "id": "soulbane_dh",
@@ -3545,7 +3797,8 @@
     "keywords": [
       "TZEENTCH"
     ],
-    "source": "dh"
+    "source": "dh",
+    "page": 61
   },
   {
     "id": "soul_eater_stave_dh",
@@ -3558,7 +3811,8 @@
     "keywords": [
       "TZEENTCH"
     ],
-    "source": "dh"
+    "source": "dh",
+    "page": 61
   },
   {
     "id": "horn_of_nurgles_rot_dh",
@@ -3571,7 +3825,8 @@
     "keywords": [
       "NURGLE"
     ],
-    "source": "dh"
+    "source": "dh",
+    "page": 74
   },
   {
     "id": "tome_of_a_thousand_poxes_dh",
@@ -3584,7 +3839,8 @@
     "keywords": [
       "NURGLE"
     ],
-    "source": "dh"
+    "source": "dh",
+    "page": 74
   },
   {
     "id": "entropic_knell_dh",
@@ -3597,7 +3853,8 @@
     "keywords": [
       "NURGLE"
     ],
-    "source": "dh"
+    "source": "dh",
+    "page": 74
   },
   {
     "id": "corruption_dh",
@@ -3610,7 +3867,8 @@
     "keywords": [
       "NURGLE"
     ],
-    "source": "dh"
+    "source": "dh",
+    "page": 37
   },
   {
     "id": "endless_gift_dh",
@@ -3623,7 +3881,8 @@
     "keywords": [
       "NURGLE"
     ],
-    "source": "dh"
+    "source": "dh",
+    "page": 75
   },
   {
     "id": "effluvior_dh",
@@ -3636,7 +3895,8 @@
     "keywords": [
       "NURGLE"
     ],
-    "source": "dh"
+    "source": "dh",
+    "page": 75
   },
   {
     "id": "rune_of_brass_dh",
@@ -3649,7 +3909,8 @@
     "keywords": [
       "KHORNE"
     ],
-    "source": "dh"
+    "source": "dh",
+    "page": 88
   },
   {
     "id": "armour_of_scorn_dh",
@@ -3662,7 +3923,8 @@
     "keywords": [
       "KHORNE"
     ],
-    "source": "dh"
+    "source": "dh",
+    "page": 88
   },
   {
     "id": "blood_drinker_talisman_dh",
@@ -3675,7 +3937,8 @@
     "keywords": [
       "KHORNE"
     ],
-    "source": "dh"
+    "source": "dh",
+    "page": 88
   },
   {
     "id": "crimson_crown_dh",
@@ -3688,7 +3951,8 @@
     "keywords": [
       "KHORNE"
     ],
-    "source": "dh"
+    "source": "dh",
+    "page": 88
   },
   {
     "id": "argath_king_of_blades_dh",
@@ -3701,7 +3965,8 @@
     "keywords": [
       "KHORNE"
     ],
-    "source": "dh"
+    "source": "dh",
+    "page": 89
   },
   {
     "id": "skullreaver_dh",
@@ -3714,7 +3979,8 @@
     "keywords": [
       "KHORNE"
     ],
-    "source": "dh"
+    "source": "dh",
+    "page": 89
   },
   {
     "id": "forbidden_gem_dh",
@@ -3727,7 +3993,8 @@
     "keywords": [
       "SLAANESH"
     ],
-    "source": "dh"
+    "source": "dh",
+    "page": 103
   },
   {
     "id": "mark_of_excess_dh",
@@ -3740,7 +4007,8 @@
     "keywords": [
       "SLAANESH"
     ],
-    "source": "dh"
+    "source": "dh",
+    "page": 103
   },
   {
     "id": "soulstealer_dh",
@@ -3753,7 +4021,8 @@
     "keywords": [
       "SLAANESH"
     ],
-    "source": "dh"
+    "source": "dh",
+    "page": 104
   },
   {
     "id": "silverstrike_dh",
@@ -3766,7 +4035,8 @@
     "keywords": [
       "SLAANESH"
     ],
-    "source": "dh"
+    "source": "dh",
+    "page": 104
   },
   {
     "id": "slothful_claws_dh",
@@ -3779,7 +4049,8 @@
     "keywords": [
       "SLAANESH"
     ],
-    "source": "dh"
+    "source": "dh",
+    "page": 104
   },
   {
     "id": "whip_of_agony_dh",
@@ -3792,7 +4063,8 @@
     "keywords": [
       "SLAANESH"
     ],
-    "source": "dh"
+    "source": "dh",
+    "page": 104
   },
   {
     "id": "brazier_of_holy_fire",
@@ -3807,7 +4079,8 @@
       "ADEPTUS MINISTORUM",
       "ADEPTA SORORITAS"
     ],
-    "source": "fspg"
+    "source": "fspg",
+    "page": 125
   },
   {
     "id": "grapnel_launcher",
@@ -3822,7 +4095,8 @@
       "ADEPTUS ASTARTES",
       "PRIMARIS"
     ],
-    "source": "fspg"
+    "source": "fspg",
+    "page": 126
   },
   {
     "id": "infravisor",
@@ -3836,7 +4110,8 @@
       "IMPERIUM",
       "ADEPTUS MECHANICUS"
     ],
-    "source": "fspg"
+    "source": "fspg",
+    "page": 126
   },
   {
     "id": "abeyant",
@@ -3850,7 +4125,8 @@
       "IMPERIUM",
       "ADEPTUS MECHANICUS"
     ],
-    "source": "fspg"
+    "source": "fspg",
+    "page": 128
   },
   {
     "id": "b_o_n_e",
@@ -3858,14 +4134,17 @@
     "category": "augmetic",
     "description": "Though Ogryns are undeniably unintelligent as a Species, some are smarter than others. These few bright sparks that can count above three, display consistent object permanence, or can even handle basic problem solving, are marked out as suitable for the Biochemical Ogryn Neural Enhancement procedure, further improving their intelligence. These Ogryns are known as Bone'eads, utilising the boosted intelligence afforded by their cerebral implants to lead others in battle.",
     "effect": "Raises your Maximum Intellect to 3 and increases your Intellect by 1. Requirements: Ogryn Species, Leadership 1, Rank 3.",
-    "bonuses": { "intellect": 1 },
+    "bonuses": {
+      "intellect": 1
+    },
     "value": 4,
     "rarity": "Common",
     "keywords": [
       "IMPERIUM",
       "MILITARUM AUXILLA"
     ],
-    "source": "fspg"
+    "source": "fspg",
+    "page": 128
   },
   {
     "id": "chordclaw",
@@ -3879,7 +4158,8 @@
       "IMPERIUM",
       "ADEPTUS MECHANICUS"
     ],
-    "source": "fspg"
+    "source": "fspg",
+    "page": 128
   },
   {
     "id": "enhanced_ballistic_mechadendrite",
@@ -3893,7 +4173,8 @@
       "IMPERIUM",
       "ADEPTUS MECHANICUS"
     ],
-    "source": "fspg"
+    "source": "fspg",
+    "page": 128
   },
   {
     "id": "9_70_entrenching_tool",
@@ -3907,7 +4188,8 @@
       "IMPERIUM",
       "ASTRA MILITARUM"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 236
   },
   {
     "id": "diagnostor",
@@ -3918,7 +4200,8 @@
     "value": 5,
     "rarity": "Very Rare",
     "keywords": [],
-    "source": "core"
+    "source": "core",
+    "page": 237
   },
   {
     "id": "mag_boots",
@@ -3931,7 +4214,8 @@
     "keywords": [
       "NAVIS IMPERIALIS"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 238
   },
   {
     "id": "martyrs_gift_medikit",
@@ -3945,7 +4229,8 @@
       "IMPERIUM",
       "ASTRA MILITARUM"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 238
   },
   {
     "id": "monoscope",
@@ -3959,7 +4244,8 @@
       "IMPERIUM",
       "MILITARUM TEMPESTUS"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 103
   },
   {
     "id": "periculum_kit",
@@ -3972,7 +4258,8 @@
     "keywords": [
       "IMPERIUM"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 239
   },
   {
     "id": "slate_monitron",
@@ -3986,7 +4273,8 @@
       "IMPERIUM",
       "ASTRA MILITARUM"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 103
   },
   {
     "id": "webway_keystone",
@@ -3999,7 +4287,8 @@
     "keywords": [
       "AELDARI"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 241
   },
   {
     "id": "doks_toolz",
@@ -4012,7 +4301,8 @@
     "keywords": [
       "ORK"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 241
   },
   {
     "id": "mek_toolz",
@@ -4025,7 +4315,8 @@
     "keywords": [
       "ORK"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 242
   },
   {
     "id": "ammo_backpack",
@@ -4036,7 +4327,8 @@
     "value": 5,
     "rarity": "Uncommon",
     "keywords": [],
-    "source": "core"
+    "source": "core",
+    "page": 229
   },
   {
     "id": "bandolier",
@@ -4047,7 +4339,8 @@
     "value": 2,
     "rarity": "Common",
     "keywords": [],
-    "source": "core"
+    "source": "core",
+    "page": 229
   },
   {
     "id": "ammo_runt",
@@ -4060,7 +4353,8 @@
     "keywords": [
       "ORK"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 241
   },
   {
     "id": "auger_array",
@@ -4074,7 +4368,8 @@
       "IMPERIUM",
       "ADEPTUS MECHANICUS"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 244
   },
   {
     "id": "augmetic_respirator",
@@ -4085,7 +4380,8 @@
     "value": 5,
     "rarity": "Rare",
     "keywords": [],
-    "source": "core"
+    "source": "core",
+    "page": 244
   },
   {
     "id": "augmetic_viscera",
@@ -4093,11 +4389,14 @@
     "category": "augmetic",
     "description": "Colloquially known as a 'gut-job', this augmetic reroutes blood vessels, bypasses lymph ducts, and replaces tissues with superior vat-grown or mechanical substitutes.",
     "effect": "You gain +1 Toughness.",
-    "bonuses": { "toughness": 1 },
+    "bonuses": {
+      "toughness": 1
+    },
     "value": 5,
     "rarity": "Very Rare",
     "keywords": [],
-    "source": "core"
+    "source": "core",
+    "page": 244
   },
   {
     "id": "autodogmatic_cortex",
@@ -4105,7 +4404,9 @@
     "category": "augmetic",
     "description": "A small cogitator mounted on the inside of the skull feeds a constant stream of hymns, prayers, and catechisms directly into the brain to bolster faith and resolve.",
     "effect": "You gain +1 Willpower.",
-    "bonuses": { "willpower": 1 },
+    "bonuses": {
+      "willpower": 1
+    },
     "value": 6,
     "rarity": "Very Rare",
     "keywords": [
@@ -4113,7 +4414,8 @@
       "ADEPTUS MECHANICUS",
       "ADEPTUS MINISTORUM"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 244
   },
   {
     "id": "cardioproxy",
@@ -4121,11 +4423,14 @@
     "category": "augmetic",
     "description": "A biorhythmic pump and metres of sanguinary tubing replaces most of the circulatory system.",
     "effect": "You gain +1 Toughness.",
-    "bonuses": { "toughness": 1 },
+    "bonuses": {
+      "toughness": 1
+    },
     "value": 6,
     "rarity": "Unique",
     "keywords": [],
-    "source": "core"
+    "source": "core",
+    "page": 244
   },
   {
     "id": "cortex_implant",
@@ -4133,11 +4438,14 @@
     "category": "augmetic",
     "description": "A network of micro-cogitators and neural catalysts replaces a portion of the brain, correcting damage and refining thought processes.",
     "effect": "You gain +1 Intellect.",
-    "bonuses": { "intellect": 1 },
+    "bonuses": {
+      "intellect": 1
+    },
     "value": 7,
     "rarity": "Very Rare",
     "keywords": [],
-    "source": "core"
+    "source": "core",
+    "page": 244
   },
   {
     "id": "mind_impulse_unit",
@@ -4148,7 +4456,8 @@
     "value": 6,
     "rarity": "Rare",
     "keywords": [],
-    "source": "core"
+    "source": "core",
+    "page": 245
   },
   {
     "id": "neuroplastic_psychosectemy",
@@ -4156,11 +4465,16 @@
     "category": "augmetic",
     "description": "Equal parts surgery and sacred ritual, the emotional and illogical parts of the patient's brain are excised, replaced by cogitators hardwired to the cerebral cortex.",
     "effect": "You gain +1 Intellect and +1 Willpower but suffer -2 Fellowship.",
-    "bonuses": { "intellect": 1, "willpower": 1, "fellowship": -2 },
+    "bonuses": {
+      "intellect": 1,
+      "willpower": 1,
+      "fellowship": -2
+    },
     "value": 7,
     "rarity": "Unique",
     "keywords": [],
-    "source": "core"
+    "source": "core",
+    "page": 245
   },
   {
     "id": "reflex_catalyst",
@@ -4168,11 +4482,14 @@
     "category": "augmetic",
     "description": "Conductive cabling and synaptic triggers enhance the speed of the autonomic nervous system.",
     "effect": "You gain +1 Initiative.",
-    "bonuses": { "initiative": 1 },
+    "bonuses": {
+      "initiative": 1
+    },
     "value": 6,
     "rarity": "Very Rare",
     "keywords": [],
-    "source": "core"
+    "source": "core",
+    "page": 245
   },
   {
     "id": "sinew_armature",
@@ -4180,11 +4497,14 @@
     "category": "augmetic",
     "description": "Joints and major muscles are replaced with actuators, tensor cables, and vat-grown tissue.",
     "effect": "You gain +1 Strength.",
-    "bonuses": { "strength": 1 },
+    "bonuses": {
+      "strength": 1
+    },
     "value": 6,
     "rarity": "Very Rare",
     "keywords": [],
-    "source": "core"
+    "source": "core",
+    "page": 245
   },
   {
     "id": "subdermal_armour",
@@ -4192,11 +4512,14 @@
     "category": "augmetic",
     "description": "Rigid metal plates and resistant fibre weaves distort and harden skin.",
     "effect": "You gain +1 Base Resilience.",
-    "bonuses": { "resilience": 1 },
+    "bonuses": {
+      "resilience": 1
+    },
     "value": 4,
     "rarity": "Rare",
     "keywords": [],
-    "source": "core"
+    "source": "core",
+    "page": 246
   },
   {
     "id": "weapon_implant",
@@ -4207,7 +4530,8 @@
     "value": 3,
     "rarity": "Rare",
     "keywords": [],
-    "source": "core"
+    "source": "core",
+    "page": 246
   },
   {
     "id": "eyes_of_the_crone",
@@ -4220,7 +4544,8 @@
     "keywords": [
       "AELDARI"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 246
   },
   {
     "id": "heart_of_vaul",
@@ -4228,13 +4553,17 @@
     "category": "augmetic",
     "description": "Implanted just above the heart, this augmetic projects a nearly invisible refractive force field perfectly contoured to the body.",
     "effect": "You gain +1 to Defence and Armour in addition to any armour or shield you have.",
-    "bonuses": { "defence": 1, "resilience": 1 },
+    "bonuses": {
+      "defence": 1,
+      "resilience": 1
+    },
     "value": 7,
     "rarity": "Unique",
     "keywords": [
       "AELDARI"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 246
   },
   {
     "id": "iron_gob",
@@ -4242,13 +4571,16 @@
     "category": "augmetic",
     "description": "Curved slabs of jagged ceramite are crudely bolted to an Ork's jaw, providing additional protection and an intimidating profile to an already fearsome face.",
     "effect": "You gain +1 Armour (this stacks with worn Armour) and +1 bonus die to Intimidation (Wil) Tests. You can make a melee bite attack with a Damage of 6 +2 ED.",
-    "bonuses": { "resilience": 1 },
+    "bonuses": {
+      "resilience": 1
+    },
     "value": 3,
     "rarity": "Rare",
     "keywords": [
       "ORK"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 246
   },
   {
     "id": "iron_gutz",
@@ -4261,7 +4593,8 @@
     "keywords": [
       "ORK"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 247
   },
   {
     "id": "rebuilt_cranium",
@@ -4274,6 +4607,7 @@
     "keywords": [
       "ORK"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 247
   }
 ]

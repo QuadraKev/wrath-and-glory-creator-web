@@ -111,7 +111,7 @@ const SpeciesTab = {
                 ${subOptionDisplay}
                 <div class="card-meta">
                     <span>Speed: ${sp.speed || 6}</span>
-                    ${sp.source !== 'core' ? `<span class="card-source">${sp.source}</span>` : ''}
+                    <span class="card-source">${DataLoader.formatSourcePage(sp)}</span>
                 </div>
             `;
 

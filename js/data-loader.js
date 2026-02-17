@@ -258,6 +258,35 @@ const DataLoader = {
         return this.getMutations().find(m => m.id === id);
     },
 
+    // Source display name mapping
+    sourceDisplayNames: {
+        'core': 'Core Rulebook',
+        'church': 'Church of Steel',
+        'aeldari': 'Aeldari Inheritance of Embers',
+        'fspg': "Forsaken System Player's Guide",
+        'voa': 'Vow of Absolution',
+        'redacted1': 'Redacted Records I',
+        'redacted2': 'Redacted Records II',
+        'shotguns': 'Departmento Munitorum Shotguns',
+        'dh': 'Threat Assessment: Daemons & Heretics',
+        'apocrypha': 'An Abundance of Apocrypha'
+    },
+
+    // Get display name for a source ID
+    getSourceDisplayName(source) {
+        return this.sourceDisplayNames[source] || source || '';
+    },
+
+    // Format source + page for display (e.g. "Core Rulebook, p. 217")
+    formatSourcePage(item) {
+        if (!item || !item.source) return '';
+        const name = this.getSourceDisplayName(item.source);
+        if (item.page != null) {
+            return `${name}, p. ${item.page}`;
+        }
+        return name;
+    },
+
     // Get valid upgrades for a specific weapon
     getValidUpgradesForWeapon(weapon, currentUpgrades = []) {
         const allUpgrades = this.getAllWeaponUpgrades();

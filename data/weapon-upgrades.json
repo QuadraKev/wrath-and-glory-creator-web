@@ -14,7 +14,8 @@
     "restrictions": {
       "weaponType": "ranged"
     },
-    "source": "core"
+    "source": "core",
+    "page": 227
   },
   {
     "id": "autoloader",
@@ -30,7 +31,8 @@
     "restrictions": {
       "weaponType": "ranged"
     },
-    "source": "core"
+    "source": "core",
+    "page": 227
   },
   {
     "id": "bayonet_lug",
@@ -46,7 +48,8 @@
     "restrictions": {
       "weaponType": "ranged"
     },
-    "source": "core"
+    "source": "core",
+    "page": 227
   },
   {
     "id": "chain_bayonet",
@@ -63,7 +66,8 @@
     "restrictions": {
       "weaponType": "ranged"
     },
-    "source": "core"
+    "source": "core",
+    "page": 211
   },
   {
     "id": "combi_weapon",
@@ -86,7 +90,8 @@
       ],
       "requiresSecondWeapon": true
     },
-    "source": "core"
+    "source": "core",
+    "page": 227
   },
   {
     "id": "distinction",
@@ -101,7 +106,8 @@
     ],
     "restrictions": {},
     "doesNotCountTowardLimit": true,
-    "source": "core"
+    "source": "core",
+    "page": 228
   },
   {
     "id": "duelling_grip",
@@ -120,7 +126,8 @@
         "one_handed_melee"
       ]
     },
-    "source": "core"
+    "source": "core",
+    "page": 228
   },
   {
     "id": "gene_grip",
@@ -134,7 +141,8 @@
       "IMPERIUM"
     ],
     "restrictions": {},
-    "source": "core"
+    "source": "core",
+    "page": 228
   },
   {
     "id": "mastercrafted",
@@ -152,7 +160,8 @@
       "Reliable"
     ],
     "bonusDice": 2,
-    "source": "core"
+    "source": "core",
+    "page": 126
   },
   {
     "id": "megathoule_accelerator",
@@ -175,7 +184,8 @@
     "removesTraits": [
       "Reliable"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 228
   },
   {
     "id": "magnocular_scope",
@@ -191,7 +201,8 @@
     "restrictions": {
       "weaponType": "ranged"
     },
-    "source": "core"
+    "source": "core",
+    "page": 228
   },
   {
     "id": "percussive_muzzle_brake",
@@ -211,7 +222,8 @@
       ]
     },
     "bonusSalvo": 1,
-    "source": "core"
+    "source": "core",
+    "page": 228
   },
   {
     "id": "preysense_sight",
@@ -229,7 +241,8 @@
     "restrictions": {
       "weaponType": "ranged"
     },
-    "source": "core"
+    "source": "core",
+    "page": 228
   },
   {
     "id": "red_dot_sight",
@@ -247,7 +260,8 @@
       "weaponType": "ranged"
     },
     "bonusDice": 1,
-    "source": "core"
+    "source": "core",
+    "page": 228
   },
   {
     "id": "silencer",
@@ -272,7 +286,8 @@
     "addsTraits": [
       "Silent"
     ],
-    "source": "core"
+    "source": "core",
+    "page": 229
   },
   {
     "id": "aethyric_capacitor_aoa",
@@ -293,7 +308,8 @@
       ],
       "weaponType": "melee"
     },
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 386
   },
   {
     "id": "darkstar_weapon_aoa",
@@ -318,7 +334,8 @@
     "addsTraits": [
       "Mortal (1)"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 387
   },
   {
     "id": "digital_weapon_aoa",
@@ -345,7 +362,8 @@
       ],
       "weaponType": "ranged"
     },
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 386
   },
   {
     "id": "envenomed_blade_aoa",
@@ -367,7 +385,8 @@
     "addsTraits": [
       "Inflict (Poisoned 3)"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 341
   },
   {
     "id": "exterminator_cartridge_aoa",
@@ -384,7 +403,8 @@
       "ADEPTUS MINISTORUM"
     ],
     "restrictions": {},
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 386
   },
   {
     "id": "folding_stock_aoa",
@@ -407,7 +427,8 @@
     "removesTraits": [
       "Pistol"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 386
   },
   {
     "id": "foregrip_aoa",
@@ -430,7 +451,8 @@
     "addsTraits": [
       "Assault"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 386
   },
   {
     "id": "independent_weapon_mount_aoa",
@@ -446,7 +468,8 @@
     "restrictions": {
       "weaponType": "ranged"
     },
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 386
   },
   {
     "id": "matched_pair_aoa",
@@ -463,7 +486,8 @@
     "addsTraits": [
       "Paired"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 386
   },
   {
     "id": "mass_accelerator_aoa",
@@ -482,7 +506,8 @@
       ]
     },
     "bonusED": 3,
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 386
   },
   {
     "id": "overcharge_capacitor_aoa",
@@ -511,7 +536,8 @@
       "Reliable"
     ],
     "bonusSalvo": -1,
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 386
   },
   {
     "id": "powered_blade_aoa",
@@ -528,7 +554,8 @@
     "restrictions": {
       "weaponType": "ranged"
     },
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 341
   },
   {
     "id": "sanctified_aoa",
@@ -548,7 +575,8 @@
     "addsTraits": [
       "Blessed (2)"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 103
   },
   {
     "id": "suspensor_rig_aoa",
@@ -566,7 +594,8 @@
         "Heavy"
       ]
     },
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 386
   },
   {
     "id": "warp_focus_aoa",
@@ -582,7 +611,8 @@
     "restrictions": {
       "weaponType": "melee"
     },
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 389
   },
   {
     "id": "amputator_rounds_aoa",
@@ -609,7 +639,8 @@
     "addsTraits": [
       "Brutal"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 386
   },
   {
     "id": "blessed_promethium_aoa",
@@ -632,7 +663,8 @@
     "addsTraits": [
       "Blessed (2)"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 103
   },
   {
     "id": "bolt_shells_aoa",
@@ -654,7 +686,8 @@
     "removesTraits": [
       "Spread"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 386
   },
   {
     "id": "dragonfire_bolt_rounds_aoa",
@@ -679,7 +712,8 @@
     "addsKeywords": [
       "FIRE"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 386
   },
   {
     "id": "enhanced_web_chem_aoa",
@@ -698,7 +732,8 @@
       ],
       "weaponType": "ranged"
     },
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 386
   },
   {
     "id": "enriched_ammunition_aoa",
@@ -724,7 +759,8 @@
     "addsTraits": [
       "Rad (1)"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 386
   },
   {
     "id": "executioner_shells_aoa",
@@ -744,7 +780,8 @@
     "removesTraits": [
       "Spread"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 354
   },
   {
     "id": "exitus_hellfire_rounds_aoa",
@@ -765,7 +802,8 @@
       "Careful",
       "Inflict (Poisoned 5)"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 386
   },
   {
     "id": "exitus_shield_breaker_rounds_aoa",
@@ -785,7 +823,8 @@
       "Careful",
       "Warp Weapon"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 386
   },
   {
     "id": "exitus_turbo_penetrator_rounds_aoa",
@@ -806,7 +845,8 @@
       "Brutal",
       "Rending (4)"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 386
   },
   {
     "id": "flechette_rounds_aoa",
@@ -832,7 +872,8 @@
     "addsTraits": [
       "Spread"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 386
   },
   {
     "id": "hot_shot_charge_pack_aoa",
@@ -862,7 +903,8 @@
     "removesTraits": [
       "Reliable"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 386
   },
   {
     "id": "incendiary_shells_aoa",
@@ -885,7 +927,8 @@
     "addsKeywords": [
       "FIRE"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 386
   },
   {
     "id": "inferno_bolt_rounds_aoa",
@@ -910,7 +953,8 @@
     "addsKeywords": [
       "FIRE"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 386
   },
   {
     "id": "micro_blast_needles_aoa",
@@ -936,7 +980,8 @@
     "removesTraits": [
       "Inflict (Poisoned X)"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 386
   },
   {
     "id": "psybolt_bolt_rounds_aoa",
@@ -959,7 +1004,8 @@
     "addsTraits": [
       "Force"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 386
   },
   {
     "id": "shrieker_bio_explosive_discs_aoa",
@@ -982,7 +1028,8 @@
       "Careful",
       "Inflict (Poisoned 7)"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 200
   },
   {
     "id": "soulseeker_splinters_aoa",
@@ -1001,7 +1048,8 @@
       ],
       "weaponType": "ranged"
     },
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 386
   },
   {
     "id": "stalker_silenced_bolt_rounds_aoa",
@@ -1023,7 +1071,8 @@
     "addsTraits": [
       "Silent"
     ],
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 386
   },
   {
     "id": "agonite_aoa",
@@ -1042,7 +1091,8 @@
         "DRUKHARI"
       ]
     },
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 386
   },
   {
     "id": "deathbloom_aoa",
@@ -1061,7 +1111,8 @@
         "DRUKHARI"
       ]
     },
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 386
   },
   {
     "id": "essence_of_perfect_vitriol_aoa",
@@ -1080,7 +1131,8 @@
         "DRUKHARI"
       ]
     },
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 386
   },
   {
     "id": "feralex_aoa",
@@ -1099,7 +1151,8 @@
         "DRUKHARI"
       ]
     },
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 386
   },
   {
     "id": "final_breath_aoa",
@@ -1118,7 +1171,8 @@
         "DRUKHARI"
       ]
     },
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 386
   },
   {
     "id": "heartfire_aoa",
@@ -1137,7 +1191,8 @@
         "DRUKHARI"
       ]
     },
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 386
   },
   {
     "id": "icevein_aoa",
@@ -1156,7 +1211,8 @@
         "DRUKHARI"
       ]
     },
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 386
   },
   {
     "id": "liquid_agony_aoa",
@@ -1175,7 +1231,8 @@
         "DRUKHARI"
       ]
     },
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 386
   },
   {
     "id": "nerveshard_aoa",
@@ -1194,7 +1251,8 @@
         "DRUKHARI"
       ]
     },
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 386
   },
   {
     "id": "nightmare_philtre_aoa",
@@ -1213,7 +1271,8 @@
         "DRUKHARI"
       ]
     },
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 386
   },
   {
     "id": "sanguine_exodus_aoa",
@@ -1232,7 +1291,8 @@
         "DRUKHARI"
       ]
     },
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 386
   },
   {
     "id": "shattergift_aoa",
@@ -1251,7 +1311,8 @@
         "DRUKHARI"
       ]
     },
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 386
   },
   {
     "id": "vitae_rebellion_aoa",
@@ -1270,7 +1331,8 @@
         "DRUKHARI"
       ]
     },
-    "source": "apocrypha"
+    "source": "apocrypha",
+    "page": 386
   },
   {
     "id": "nethreun_penetrators",
@@ -1294,7 +1356,8 @@
     },
     "bonusAP": -2,
     "bonusED": 1,
-    "source": "shotguns"
+    "source": "shotguns",
+    "page": 10
   },
   {
     "id": "avachrun_forgeshot",
@@ -1318,7 +1381,8 @@
       "weaponType": "ranged"
     },
     "bonusAP": -2,
-    "source": "shotguns"
+    "source": "shotguns",
+    "page": 10
   },
   {
     "id": "vxii_auto_guidesys_targeting_shells",
@@ -1340,7 +1404,8 @@
       ],
       "weaponType": "ranged"
     },
-    "source": "shotguns"
+    "source": "shotguns",
+    "page": 10
   },
   {
     "id": "enochian_prayershot",
@@ -1363,7 +1428,8 @@
       ],
       "weaponType": "ranged"
     },
-    "source": "shotguns"
+    "source": "shotguns",
+    "page": 11
   },
   {
     "id": "gravedigger_shells",
@@ -1389,7 +1455,8 @@
     "addsTraits": [
       "Inflict (Blinded)"
     ],
-    "source": "shotguns"
+    "source": "shotguns",
+    "page": 11
   },
   {
     "id": "illuminator_flare_round",
@@ -1415,7 +1482,8 @@
       "Inflict (Blinded)",
       "Inflict (On Fire)"
     ],
-    "source": "shotguns"
+    "source": "shotguns",
+    "page": 12
   },
   {
     "id": "biologis_impacter_nmf76",
@@ -1441,7 +1509,8 @@
     "addsTraits": [
       "Inflict (Poisoned 2)"
     ],
-    "source": "shotguns"
+    "source": "shotguns",
+    "page": 12
   },
   {
     "id": "cryptclearer",
@@ -1464,7 +1533,8 @@
       ],
       "weaponType": "ranged"
     },
-    "source": "shotguns"
+    "source": "shotguns",
+    "page": 13
   },
   {
     "id": "xenopurge",
@@ -1489,7 +1559,8 @@
     },
     "bonusAP": -2,
     "bonusED": 2,
-    "source": "shotguns"
+    "source": "shotguns",
+    "page": 13
   },
   {
     "id": "wyrmsbreath",
@@ -1515,6 +1586,7 @@
     "addsTraits": [
       "Inflict (On Fire)"
     ],
-    "source": "shotguns"
+    "source": "shotguns",
+    "page": 13
   }
 ]
