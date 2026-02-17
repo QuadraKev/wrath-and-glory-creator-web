@@ -259,6 +259,10 @@ const Glossary = {
         // Process description to make nested terms clickable
         const processedDescription = this.processText(termData.description);
 
+        // Format source + page reference
+        const sourceRef = typeof DataLoader !== 'undefined' ? DataLoader.formatSourcePage(termData) : '';
+        const sourceRefHtml = sourceRef ? `<div class="source-ref">${sourceRef}</div>` : '';
+
         // Create popup element
         const popup = document.createElement('div');
         popup.className = 'glossary-popup';
@@ -271,6 +275,7 @@ const Glossary = {
             </div>
             <div class="glossary-popup-content">
                 ${processedDescription}
+                ${sourceRefHtml}
             </div>
         `;
 

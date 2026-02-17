@@ -55,6 +55,8 @@ const GlossaryTab = {
                         id: id,
                         name: entry.name,
                         description: entry.description,
+                        source: entry.source || null,
+                        page: entry.page != null ? entry.page : null,
                         category: cat.key,
                         categoryName: cat.name,
                         categoryPluralName: cat.pluralName
@@ -163,6 +165,8 @@ const GlossaryTab = {
 
     // Render a single entry
     renderEntry(entry) {
+        const sourceRef = DataLoader.formatSourcePage(entry);
+        const sourceRefHtml = sourceRef ? `<div class="source-ref">${sourceRef}</div>` : '';
         return `
             <div class="glossary-entry" data-entry-id="${entry.id}">
                 <div class="glossary-entry-header">
@@ -172,6 +176,7 @@ const GlossaryTab = {
                 </div>
                 <div class="glossary-entry-body hidden">
                     <div class="glossary-entry-description">${entry.description}</div>
+                    ${sourceRefHtml}
                     <button class="btn-copy" data-copy-name="${this.escapeAttr(entry.name)}" data-copy-desc="${this.escapeAttr(this.stripHtml(entry.description))}">Copy</button>
                 </div>
             </div>

@@ -946,7 +946,7 @@ const CharacterSheetTab = {
             if (asc.type === 'archetype' && asc.archetypeId) {
                 const ascArchetype = DataLoader.getArchetype(asc.archetypeId);
                 if (ascArchetype?.abilities) {
-                    abilityGroups.push({ source: ascArchetype.name, abilities: ascArchetype.abilities });
+                    abilityGroups.push({ source: ascArchetype.name, archetype: ascArchetype, abilities: ascArchetype.abilities });
                 }
             }
         }
@@ -967,6 +967,9 @@ const CharacterSheetTab = {
                 const sourceHtml = group.source
                     ? `<span class="sheet-ability-source">(from ${group.source} Ascension)</span>`
                     : '';
+                const sourceRefHtml = group.archetype
+                    ? `<div class="source-ref">${DataLoader.formatSourcePage(group.archetype)}</div>`
+                    : '';
 
                 return `
                     <div class="sheet-ability">
@@ -977,6 +980,7 @@ const CharacterSheetTab = {
                         <div class="sheet-ability-content">
                             ${effectHtml}
                             ${flavorHtml}
+                            ${sourceRefHtml}
                         </div>
                     </div>
                 `;
