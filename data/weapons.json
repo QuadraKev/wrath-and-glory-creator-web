@@ -11793,7 +11793,7 @@
     "name": "Knife",
     "type": "melee",
     "category": "Aeldari",
-    "description": "The Knife has no standalone description entry in the PDF. The 'diverse forms' text belongs to the Glimmersteel Blade entry. The upgrade rules from the Art of the Knife sidebar read: 'Drukhari may upgrade a Knife with Traits from Wrath & Glory page 208. Doing so doubles the Knife's Value and increases its Rarity one step for the purposes of Requisition Tests. A Knife cannot have more than one such upgrade, and Traits with a rating cannot exceed 1.'",
+    "description": "The Knife has no standalone description entry in the PDF. The 'diverse forms' text belongs to the Glimmersteel Blade entry. The upgrade rules from the Art of the Knife sidebar read: 'Drukhari may upgrade a Knife with Traits. Doing so doubles the Knife's Value and increases its Rarity one step for the purposes of Requisition Tests. A Knife cannot have more than one such upgrade, and Traits with a rating cannot exceed 1.'",
     "damage": {
       "base": 2,
       "attribute": "strength",

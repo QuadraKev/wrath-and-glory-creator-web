@@ -146,7 +146,7 @@
     "costMultiplier": 10,
     "prerequisites": {},
     "benefits": [
-      "If you do not have a Memorable Injury, roll on the Memorable Injury table (p.194) and decide with your GM how you received the Memorable Injury. You may choose to gain 3 Corruption points instead of, or in addition to, a Memorable Injury."
+      "If you do not have a Memorable Injury, roll on the Memorable Injury table and decide with your GM how you received the Memorable Injury. You may choose to gain 3 Corruption points instead of, or in addition to, a Memorable Injury."
     ],
     "keywordsGained": [],
     "influenceModifier": 1,
@@ -235,7 +235,7 @@
       ]
     },
     "benefits": [
-      "ORDO XENOS keyword benefit (page 64 core rulebook)",
+      "ORDO XENOS keyword benefit",
       "Access to special Deathwatch arsenals",
       "At each Regroup, select a Xenos faction keyword: add +Rank ED to all attacks vs enemies with that keyword",
       "One reload each of Dragonfire, Hellfire, Kraken, and Vengeance bolt rounds",
@@ -529,7 +529,7 @@
       "Vouched for and deemed valuable to the Imperium",
       "May live within Imperial space while in service to patron",
       "Permitted on Imperial worlds if mark is shown and patron can vouch",
-      "Do not suffer species interaction penalties (page 29 core rulebook)"
+      "Do not suffer species interaction penalties"
     ],
     "keywordsGained": [
       "IMPERIUM"

@@ -104,7 +104,7 @@
         "ADEPTUS ASTARTES"
       ]
     },
-    "effect": "When spending a point of Wrath to make a Narrative Declaration (Wrath & Glory Core Rulebook, page 164), you may roll a die if the GM approves your declaration. If this die rolls an Icon, the point of Wrath is not spent. If the die rolls an Exalted Icon, the results of the Narrative Declaration are more impressive than usual, and the Wrath point is not spent.",
+    "effect": "When spending a point of Wrath to make a Narrative Declaration, you may roll a die if the GM approves your declaration. If this die rolls an Icon, the point of Wrath is not spent. If the die rolls an Exalted Icon, the results of the Narrative Declaration are more impressive than usual, and the Wrath point is not spent.",
     "flavor": "Informed by your Chapter doctrines or the Codex Astartes, you can overcome whatever obstacles emerge on your path to victory. Your battle plans are comprehensive, and what you cannot plan for, you overcome with cunning improvisation.",
     "source": "voa",
     "page": 44
@@ -374,7 +374,7 @@
       "tier": 3,
       "other": "Not Primaris"
     },
-    "effect": "You receive a Bolt Pistol, Astartes Chainsword (page 49), Aquilla Mark VII armour, and Jump Pack, if you don't already have them. You gain additional +Rank AP on any melee weapon you wield, or any ranged weapons with the Pistol Trait. An Agent Ascending from Tier 2 to Tier 3 may purchase this Talent instead of an Ascension Package.",
+    "effect": "You receive a Bolt Pistol, Astartes Chainsword, Aquilla Mark VII armour, and Jump Pack, if you don't already have them. You gain additional +Rank AP on any melee weapon you wield, or any ranged weapons with the Pistol Trait. An Agent Ascending from Tier 2 to Tier 3 may purchase this Talent instead of an Ascension Package.",
     "flavor": "You fight at the vanguard of any advance, shrieking across the battlefield to bring the might of your Astartes physiology to bear.",
     "source": "redacted1",
     "page": 61
@@ -384,7 +384,7 @@
     "name": "Augmetic",
     "cost": 20,
     "prerequisites": {},
-    "effect": "You replace part of your biology with an augmetic, the common name for cybernetic implants in the Imperium. You may take this Talent more than once. Each time you take this Talent you may select two augmetics of Rare or lower rarity, or a single Very Rare augmetic. See p.242 for more information on Augmetics. The GM determines which augmetics are available (usually any of those designed for your Species) and who can perform the necessary installation procedure.",
+    "effect": "You replace part of your biology with an augmetic, the common name for cybernetic implants in the Imperium. You may take this Talent more than once. Each time you take this Talent you may select two augmetics of Rare or lower rarity, or a single Very Rare augmetic. The GM determines which augmetics are available (usually any of those designed for your Species) and who can perform the necessary installation procedure.",
     "flavor": "",
     "requiresChoice": true,
     "choiceType": "augmetics",
@@ -537,7 +537,7 @@
         "psychicMastery": 4
       }
     },
-    "effect": "When you successfully activate a power from the Runes of Battle Discipline (pages 72–73), you activate both of the power's listed effects, rather than just one.",
+    "effect": "When you successfully activate a power from the Runes of Battle Discipline, you activate both of the power's listed effects, rather than just one.",
     "flavor": "You have walked the Path of the Warlock long enough to balance its augmenting and destructive powers against one another.",
     "source": "aeldari",
     "page": null
@@ -881,7 +881,7 @@
         "survival": 2
       }
     },
-    "effect": "You can use Survival (Wil) instead of Medicae (Int) to remove your own Wounds, Shock, or Conditions (Wrath & Glory, page 124). You do not suffer the usual DN penalties for using this ability on yourself.",
+    "effect": "You can use Survival (Wil) instead of Medicae (Int) to remove your own Wounds, Shock, or Conditions. You do not suffer the usual DN penalties for using this ability on yourself.",
     "flavor": "You are aggressively self-reliant, substituting your culture's folk remedies for formal medical training.",
     "source": "redacted1",
     "page": 62
@@ -940,7 +940,7 @@
         "strength": 3
       }
     },
-    "effect": "Every melee weapon you wield has the Brutal Weapon Trait (p.209), including your unarmed strikes. If you make a successful melee attack with a weapon that already has the Brutal Weapon Trait, you deal an additional +1 damage. This bonus damage is applied after calculating your total damage, not to the weapon's Damage value.",
+    "effect": "Every melee weapon you wield has the Brutal Weapon Trait, including your unarmed strikes. If you make a successful melee attack with a weapon that already has the Brutal Weapon Trait, you deal an additional +1 damage. This bonus damage is applied after calculating your total damage, not to the weapon's Damage value.",
     "flavor": "You strike brutal blows regardless of the weapon you wield.",
     "source": "core",
     "page": 130
@@ -1191,7 +1191,7 @@
         "CHAOS"
       ]
     },
-    "effect": "You gain +2 Corruption. You gain a minion, a lesser daemon spawned from the Warp. It uses the Brimstone Horror profile (see p.349), but has a 1 in all Attributes. Its only Skills are Scholar (5) and Stealth (8). The daemon is fickle. To get it to take action, you must first succeed at an Opposed Persuasion or Intimidation Test. Once persuaded, the daemon goes to extreme measures to accomplish whatever task you set, to the best of its limited abilities. At the GM's discretion, if the minion sees you act against the interests of the Warp, the familiar immediately turns on you until it's destroyed or convinced of its mistake. If the familiar is slain, you must spend a Wrath Point to summon it again — which is time-consuming and requires the GM's permission.",
+    "effect": "You gain +2 Corruption. You gain a minion, a lesser daemon spawned from the Warp. It uses the Brimstone Horror profile, but has a 1 in all Attributes. Its only Skills are Scholar (5) and Stealth (8). The daemon is fickle. To get it to take action, you must first succeed at an Opposed Persuasion or Intimidation Test. Once persuaded, the daemon goes to extreme measures to accomplish whatever task you set, to the best of its limited abilities. At the GM's discretion, if the minion sees you act against the interests of the Warp, the familiar immediately turns on you until it's destroyed or convinced of its mistake. If the familiar is slain, you must spend a Wrath Point to summon it again — which is time-consuming and requires the GM's permission.",
     "flavor": "The Dark Gods have rewarded you with a minion drawn from the Warp. This malign creature revels in violence and deception, and serves as a constant reminder of your choices. Chaos familiars are unreliable, fickle, and treacherous, but they can be a powerful tool in any cultist's arsenal.",
     "source": "core",
     "page": 130
@@ -1257,7 +1257,7 @@
         "ULTRAMARINES"
       ]
     },
-    "effect": "Since the return of Roboute Guilliman, the Codex Astartes has slowly been recognised as a living document which the greatest tacticians may contribute and iterate upon. Your own studious knowledge of the Codex Astartes and years of service allow you to quickly adapt and evolve strategies on the battlefield in line with its tenets. [...] When executing a strategic plan or tactic that you helped create, you add + (Rank) dice to all Leadership (Wil) and Persuasion (Fel) Tests to guide others through the details. In addition, if you have at least one hour to plan for an upcoming encounter or mission, you receive one bonus Wrath point that can only be spent on a Narrative Declaration (Wrath & Glory Core Rulebook, page 164) relevant to your plan. This Wrath point can carry over between sessions, but you may never possess more than one bonus Wrath point from this Talent.",
+    "effect": "Since the return of Roboute Guilliman, the Codex Astartes has slowly been recognised as a living document which the greatest tacticians may contribute and iterate upon. Your own studious knowledge of the Codex Astartes and years of service allow you to quickly adapt and evolve strategies on the battlefield in line with its tenets. [...] When executing a strategic plan or tactic that you helped create, you add + (Rank) dice to all Leadership (Wil) and Persuasion (Fel) Tests to guide others through the details. In addition, if you have at least one hour to plan for an upcoming encounter or mission, you receive one bonus Wrath point that can only be spent on a Narrative Declaration relevant to your plan. This Wrath point can carry over between sessions, but you may never possess more than one bonus Wrath point from this Talent.",
     "flavor": "[AI-Generated] Like Guilliman himself, you understand that the Codex is a guide, not a cage. Adaptation is the key to victory.",
     "source": "voa",
     "page": 45
@@ -1398,7 +1398,7 @@
         "psychicMastery": 2
       }
     },
-    "effect": "You gain +Rank on Tests to Deny The Witch (Wrath & Glory, pages 267-268). Once per session, you can Deny The Witch as a Reflexive Action.",
+    "effect": "You gain +Rank on Tests to Deny The Witch. Once per session, you can Deny The Witch as a Reflexive Action.",
     "flavor": "Your allies tolerate your presence as a necessary evil, to prevent the enemy witches from thwarting their work.",
     "source": "redacted1",
     "page": 62
@@ -1476,7 +1476,7 @@
         "weaponSkill": 2
       }
     },
-    "effect": "When making a Shot To Disarm with an Unarmed Strike, you do not suffer DN penalties for a Called Shot (Wrath & Glory, pages 186-187). The DN for your opponent's Strength Test is equal to the Damage you'd have inflicted, instead of half of it.",
+    "effect": "When making a Shot To Disarm with an Unarmed Strike, you do not suffer DN penalties for a Called Shot. The DN for your opponent's Strength Test is equal to the Damage you'd have inflicted, instead of half of it.",
     "flavor": "You can disarm people with your bare hands, preventing someone you just want to talk to from making a mistake they'll regret.",
     "source": "redacted1",
     "page": 64
@@ -1505,7 +1505,7 @@
         "ballisticSkill": 2
       }
     },
-    "effect": "When you take the Aim action (p.189) and make a Called Shot (p.187) you double the bonus ED you receive.",
+    "effect": "When you take the Aim action and make a Called Shot you double the bonus ED you receive.",
     "flavor": "You are a skilled shot, trained to carefully target your enemies' weak points.",
     "source": "core",
     "page": 131
@@ -1519,7 +1519,7 @@
         "athletics": 3
       }
     },
-    "effect": "You gain +Rank bonus dice to attack Tests made from higher ground. You can climb vertically at the same Speed as horizontal Movement without an Athletics (S) Test. You can roll Determination against Mortal Wounds from falling (Wrath & Glory, page 201).",
+    "effect": "You gain +Rank bonus dice to attack Tests made from higher ground. You can climb vertically at the same Speed as horizontal Movement without an Athletics (S) Test. You can roll Determination against Mortal Wounds from falling.",
     "flavor": "You take a three-dimensional approach to every battle, searching for higher ground you can quickly scale and drop down from.",
     "source": "redacted1",
     "page": 64
@@ -1577,7 +1577,7 @@
         "toughness": 3
       }
     },
-    "effect": "Choose one environmental hazard: suffocation, extreme heat, extreme cold, radiation, poisons, or another option at the GM's discretion (Wrath & Glory, pages 201-202). You gain +Rank on Toughness Tests to resist the hazard's effects, and +Double Rank to Medicae (Int) and Survival (Wil) Tests to adapt protections against that hazard. You can purchase this Talent multiple times, choosing a different environmental hazard each time.",
+    "effect": "Choose one environmental hazard: suffocation, extreme heat, extreme cold, radiation, poisons, or another option at the GM's discretion. You gain +Rank on Toughness Tests to resist the hazard's effects, and +Double Rank to Medicae (Int) and Survival (Wil) Tests to adapt protections against that hazard. You can purchase this Talent multiple times, choosing a different environmental hazard each time.",
     "flavor": "You were raised or campaigned on one of the deadliest worlds in the Imperium, and survived only by adapting your body to resist its environmental hazards.",
     "requiresChoice": true,
     "choiceType": "freeform",
@@ -1791,7 +1791,7 @@
     "name": "Dig In Deep",
     "cost": 10,
     "prerequisites": {},
-    "effect": "When targeted by enemy attacks whilst concealed by cover, you gain +2 Defence (instead of +1) if less than half of you is concealed, and +4 Defence (instead of +2) if more than half of you is concealed. If enemies target you by Shoot Through Cover (Wrath & Glory, page 189) gain +Rank Resilience.",
+    "effect": "When targeted by enemy attacks whilst concealed by cover, you gain +2 Defence (instead of +1) if less than half of you is concealed, and +4 Defence (instead of +2) if more than half of you is concealed. If enemies target you by Shoot Through Cover gain +Rank Resilience.",
     "flavor": "You are an expert of defensive warfare, making maximum use of cover to reinforce your position.",
     "source": "redacted1",
     "page": 64
@@ -1801,7 +1801,7 @@
     "name": "Dirty Fighter",
     "cost": 20,
     "prerequisites": {},
-    "effect": "Whenever you make an Interaction Attack (p.190) and you shift 2 Exalted Icons, you can inflict your target with an additional Condition. Choose the most narratively appropriate Condition from the following options: Blinded (p.199), Prone (p.200), Restrained (p.200), Staggered (p.200).",
+    "effect": "Whenever you make an Interaction Attack and you shift 2 Exalted Icons, you can inflict your target with an additional Condition. Choose the most narratively appropriate Condition from the following options: Blinded, Prone, Restrained, Staggered.",
     "flavor": "You're proficient in the art of foul play.",
     "source": "core",
     "page": 96
@@ -1815,7 +1815,7 @@
         "intimidation": 2
       }
     },
-    "effect": "When you succeed on an Interaction Attack using Intimidation (Wrath & Glory, page 190), your enemy is Staggered, in addition to other effects.",
+    "effect": "When you succeed on an Interaction Attack using Intimidation, your enemy is Staggered, in addition to other effects.",
     "flavor": "With a few choice words, or even just a look, you can slow an enemy's charge as they think better of picking a fight with you.",
     "source": "redacted1",
     "page": 64
@@ -2010,7 +2010,7 @@
         "BLOOD ANGELS"
       ]
     },
-    "effect": "The violent and horrific death of the Blood Angels' Primarch at the hands of Warmaster Horus haunts all of Sanguinius' sons to this day. [...] You may declare you have had a vision after a Respite (Wrath & Glory Core Rulebook, page 196). If you do, ask the GM one question about events related to your mission. The GM must answer truthfully, although they do not need to tell the whole truth and may be cryptic in their response. However, after your vision, the closeness to Sanguinius' spirit haunts you. If you have the PRIMARIS Keyword, you are affected by the Blood Angels gene-seed flaw (Wrath & Glory Core Rulebook, pages 71-73) despite your refined origin. Otherwise, increase the DN of the Willpower Test to avoid becoming Frenzied to 5. This effect lasts until your next Respite.",
+    "effect": "The violent and horrific death of the Blood Angels' Primarch at the hands of Warmaster Horus haunts all of Sanguinius' sons to this day. [...] You may declare you have had a vision after a Respite. If you do, ask the GM one question about events related to your mission. The GM must answer truthfully, although they do not need to tell the whole truth and may be cryptic in their response. However, after your vision, the closeness to Sanguinius' spirit haunts you. If you have the PRIMARIS Keyword, you are affected by the Blood Angels gene-seed flaw despite your refined origin. Otherwise, increase the DN of the Willpower Test to avoid becoming Frenzied to 5. This effect lasts until your next Respite.",
     "flavor": "[AI-Generated] The blood of the Great Angel flows through your veins, granting prophetic visions—at a terrible price.",
     "source": "voa",
     "page": 46
@@ -2024,7 +2024,7 @@
         "stealth": 2
       }
     },
-    "effect": "When you have a Stealth Score (p.181) and you attack an enemy that is unaware of you, you may add your Stealth Score as ED, in addition to the bonuses received from a Surprise Attack (p.182). Any decrease to your Stealth Score is resolved after the attack.",
+    "effect": "When you have a Stealth Score and you attack an enemy that is unaware of you, you may add your Stealth Score as ED, in addition to the bonuses received from a Surprise Attack. Any decrease to your Stealth Score is resolved after the attack.",
     "flavor": "You strike from the shadows, using the element of surprise to take down your foes in one fell swoop.",
     "source": "core",
     "page": 133
@@ -2062,7 +2062,7 @@
     "name": "Escape Artist",
     "cost": 20,
     "prerequisites": {},
-    "effect": "You gain +Double Rank bonus dice to all attempts to escape any form of bondage, be it mechanical bonds or an individual Grappling you (p.188).",
+    "effect": "You gain +Double Rank bonus dice to all attempts to escape any form of bondage, be it mechanical bonds or an individual Grappling you.",
     "flavor": "Through bodily contortions, practice, or subdermally concealed equipment, you are adept at escaping any form of bondage.",
     "source": "core",
     "page": 133
@@ -2192,7 +2192,7 @@
     "name": "Familiar (Abundance of Apocrypha)",
     "cost": 5,
     "prerequisites": {},
-    "effect": "Your companion is a single Troop level Threat of Tiny or Small size, as described in Chapter 14 of the Wrath & Glory Core Rulebook. You may use the stats presented in the core rulebook or another bestiary, or use the following rules: Companion Attributes are equal to 1 + Double Rank. Companion Skills are equal to 1 + Double Rank. A companion’s Attributes and Skills cannot be higher than your own. Your familiar will stick close to you—within 3m—under most circumstances and will try to avoid combat unless ordered otherwise. If your familiar is within 3m of you, its Defence is increased by +2. A collection of custom-made familiars can be found in Chapter IV: Equipment.",
+    "effect": "Your companion is a single Troop level Threat of Tiny or Small size. You may use stats from the bestiary or use the following rules: Companion Attributes are equal to 1 + Double Rank. Companion Skills are equal to 1 + Double Rank. A companion’s Attributes and Skills cannot be higher than your own. Your familiar will stick close to you—within 3m—under most circumstances and will try to avoid combat unless ordered otherwise. If your familiar is within 3m of you, its Defence is increased by +2. A collection of custom-made familiars can be found in Chapter IV: Equipment.",
     "flavor": "You are accompanied by a small companion creature which aids and assists you.",
     "source": "apocrypha",
     "page": 86
@@ -2204,7 +2204,7 @@
     "prerequisites": {
       "other": "Wealth 2+"
     },
-    "effect": "When you requisition Clothing (Wrath & Glory, pages 236-237), you gain bonus dice on social Skill Tests equal to the Rarity of the Clothing, in situations where your appearance would make a positive impression. You only gain this benefit for the duration of a single mission — after that reappearing in the same outfit again provides no advantage, and you must requisition new Clothing to regain the bonus.",
+    "effect": "When you requisition Clothing, you gain bonus dice on social Skill Tests equal to the Rarity of the Clothing, in situations where your appearance would make a positive impression. You only gain this benefit for the duration of a single mission — after that reappearing in the same outfit again provides no advantage, and you must requisition new Clothing to regain the bonus.",
     "flavor": "You remain on the cutting edge of Gothic fashion, delighting in any opportunity to make a memorable entrance.",
     "source": "redacted1",
     "page": 65
@@ -2243,7 +2243,7 @@
         "PSYKER"
       ]
     },
-    "effect": "You may use this Talent to reroll any Perils of the Warp (p.263) result. You must accept the new result.",
+    "effect": "You may use this Talent to reroll any Perils of the Warp result. You must accept the new result.",
     "flavor": "The Warp is both dangerous and fickle, its horrors afflicting some more than others. Even those with great mental conditioning and a seeming control over psychic powers can find it turns against them.",
     "source": "core",
     "page": 133
@@ -2339,7 +2339,7 @@
         "weaponSkill": 2
       }
     },
-    "effect": "You can use Weapon Skill to make Interaction Attacks against enemies you are Engaged with (Wrath & Glory, page 190).",
+    "effect": "You can use Weapon Skill to make Interaction Attacks against enemies you are Engaged with.",
     "flavor": "You disorient enemies with distraction attacks, setting them up for follow-up hits.",
     "source": "redacted1",
     "page": 65
@@ -2396,7 +2396,7 @@
         "IMPERIUM"
       ]
     },
-    "effect": "At the start of each day, you must spend 20 minutes (Terran standard) in prayer, and inflict Wounds to yourself equal to your Tier through self-flagellation. You may not roll Determination against these Wounds or allow them to be healed by any method other than through a Respite. As long as you are wounded in this way, you gain +Rank bonus dice to your Determination and Conviction rolls and may choose to become Frenzied (p.199) as a Combat Action. If you also have the Frenzy Talent, you may become Frenzied as a Simple Action. If you fail to flagellate yourself, you are overcome with shame and take a +2 DN penalty to all Tests until you flagellate again.",
+    "effect": "At the start of each day, you must spend 20 minutes (Terran standard) in prayer, and inflict Wounds to yourself equal to your Tier through self-flagellation. You may not roll Determination against these Wounds or allow them to be healed by any method other than through a Respite. As long as you are wounded in this way, you gain +Rank bonus dice to your Determination and Conviction rolls and may choose to become Frenzied as a Combat Action. If you also have the Frenzy Talent, you may become Frenzied as a Simple Action. If you fail to flagellate yourself, you are overcome with shame and take a +2 DN penalty to all Tests until you flagellate again.",
     "flavor": "You have dedicated your pain to the service of the Emperor.",
     "source": "core",
     "page": 134
@@ -2458,7 +2458,7 @@
         "psychicMastery": 2
       }
     },
-    "effect": "You gain +Double Rank bonus dice on Willpower Tests to continue sustaining psychic powers when you suffer damage (Wrath & Glory, page 265).",
+    "effect": "You gain +Double Rank bonus dice on Willpower Tests to continue sustaining psychic powers when you suffer damage.",
     "flavor": "To those who risk their souls tangling with daemons, traumas of the flesh are a distant concern.",
     "source": "redacted1",
     "page": 65
@@ -2468,7 +2468,7 @@
     "name": "Frenzy",
     "cost": 20,
     "prerequisites": {},
-    "effect": "You can use a Combat Action to become Frenzied (p.199).",
+    "effect": "You can use a Combat Action to become Frenzied.",
     "flavor": "",
     "source": "core",
     "page": 134
@@ -2483,7 +2483,7 @@
         "weaponSkill": 2
       }
     },
-    "effect": "You gain +Rank to any melee attack you make as part of a Charge (p.188).",
+    "effect": "You gain +Rank to any melee attack you make as part of a Charge.",
     "flavor": "You have practised closing distance to a foe with speed; swinging your weapon whilst running has become second nature.",
     "source": "core",
     "page": 134
@@ -2545,7 +2545,7 @@
       ],
       "other": "Must be of the Absolvers Chapter or have extensive Gilead experience"
     },
-    "effect": "Once per encounter, when making a Narrative Declaration (Wrath & Glory Core Rulebook, p164), you do not need the GM's permission to possess routine clearance codes, briefing information, or facts about enemy disposition and numbers. This does not allow you to influence what is physically present in a scene, only to have the ability to access otherwise hidden information by virtue of your extensive experience.",
+    "effect": "Once per encounter, when making a Narrative Declaration, you do not need the GM's permission to possess routine clearance codes, briefing information, or facts about enemy disposition and numbers. This does not allow you to influence what is physically present in a scene, only to have the ability to access otherwise hidden information by virtue of your extensive experience.",
     "flavor": "You have fought across the length and breadth of the Gilead System, striking the fear of the Emperor into foes in every corner of the system.",
     "source": "voa",
     "page": 47
@@ -2630,7 +2630,7 @@
         "ADEPTUS ASTARTES"
       ]
     },
-    "effect": "When equipped with a Jump Pack (Wrath & Glory Core Rulebook, page 237), you may spend one Wrath to make any attack you make as part of a flying Charge deal Mortal Wounds for damage.",
+    "effect": "When equipped with a Jump Pack, you may spend one Wrath to make any attack you make as part of a flying Charge deal Mortal Wounds for damage.",
     "flavor": "The wargear of the Assault Companies is as familiar to you as your battle-brothers themselves, and you have mastered their use on the battlefield.",
     "source": "voa",
     "page": 47
@@ -2661,7 +2661,7 @@
         "toughness": 3
       }
     },
-    "effect": "As a Combat Action, you can make a DN 3 Toughness Test. On a failure you recover 1 Shock. On a success you recover 1 + Double Rank Shock. Each Shifted Exalted Icon recovers an additional point of Shock. Once you use this Talent, you cannot use it again until you have completed a Regroup (p.196).",
+    "effect": "As a Combat Action, you can make a DN 3 Toughness Test. On a failure you recover 1 Shock. On a success you recover 1 + Double Rank Shock. Each Shifted Exalted Icon recovers an additional point of Shock. Once you use this Talent, you cannot use it again until you have completed a Regroup.",
     "flavor": "You are innately durable or have undergone harrowing endurance training.",
     "source": "core",
     "page": 134
@@ -2798,7 +2798,7 @@
     "prerequisites": {
       "other": "Survival 2+ or Tech 2+"
     },
-    "effect": "You may make a Survival (Wil) or Tech (Int) Test to fashion a crude weapon, with a profile from the table on page 65. By default this takes 8 minutes. The DN is usually 3 for a melee weapon, or 5 for a simple firearm, but may increase depending on the availability of tools and materials. Shifts on this Test can be spent to: Half the crafting time (this option may be chosen more than once). Increase the weapon Damage by +Rank. Remove the Unwieldy Trait. Add one of the following Traits: Inflict (On Fire), Inflict (Poisoned 3), Inflict (Restrained), Parry, Pistol, Silent. This option may be chosen more than once, selecting a different Trait each time. Double all weapon Ranges (Simple Firearm only). Players should provide details about the weapon they craft, which may affect its Keywords and possibly the range of available Traits you can spend Shifts on.",
+    "effect": "You may make a Survival (Wil) or Tech (Int) Test to fashion a crude weapon, with a profile from the table. By default this takes 8 minutes. The DN is usually 3 for a melee weapon, or 5 for a simple firearm, but may increase depending on the availability of tools and materials. Shifts on this Test can be spent to: Half the crafting time (this option may be chosen more than once). Increase the weapon Damage by +Rank. Remove the Unwieldy Trait. Add one of the following Traits: Inflict (On Fire), Inflict (Poisoned 3), Inflict (Restrained), Parry, Pistol, Silent. This option may be chosen more than once, selecting a different Trait each time. Double all weapon Ranges (Simple Firearm only). Players should provide details about the weapon they craft, which may affect its Keywords and possibly the range of available Traits you can spend Shifts on.",
     "flavor": "You are never truly disarmed, as long as you have access to raw materials and crafting time.",
     "source": "redacted1",
     "page": 66
@@ -2863,7 +2863,7 @@
       ],
       "other": "Must know the secret of the Fallen"
     },
-    "effect": "As one entrusted with these secrets — perhaps by Interrogator-Chaplain Caphziel aboard the Varonius Flotilla — or who discovered the terrible truth in the field, you are prepared to face the worst forms of betrayal. Ever vigilant, you do not need to pay a point of Glory to be considered aware of an ambush (Wrath & Glory Core Rulebook, page 177), and reduce by 2 the DN of Cunning (Fel) and Scholar (Int) Tests to unearth or learn of betrayal and those who would engage in it.",
+    "effect": "As one entrusted with these secrets — perhaps by Interrogator-Chaplain Caphziel aboard the Varonius Flotilla — or who discovered the terrible truth in the field, you are prepared to face the worst forms of betrayal. Ever vigilant, you do not need to pay a point of Glory to be considered aware of an ambush, and reduce by 2 the DN of Cunning (Fel) and Scholar (Int) Tests to unearth or learn of betrayal and those who would engage in it.",
     "flavor": "The Dark Angels and their Successors sometimes cryptically refer to themselves as the 'Unforgiven,' and even the lay brethren of these Chapters do not fully understand why. It is a secret wreathed in myth and metaphor, obscured by Chapter mysteries to which only a few are privy. Those who learn the truth, or are sufficiently trusted by their superiors, are inducted into the Inner Circle and told the reality of the Legion's ancient split and fall from grace, giving them a unique perspective on fallibility and failure.",
     "source": "voa",
     "page": 47
@@ -2947,7 +2947,7 @@
     "prerequisites": {
       "other": "Rating 1+ in: Ballistic Skill, Medicae, Pilot, Scholar, Survival, Tech, or Weapon Skill"
     },
-    "effect": "When you take this Talent, you must pick which of your Skills it applies to from the list in the Requirements section above. During any social encounter you can make a Skill Test using your Jargon Skill. The DN is determined by the GM based on how friendly the target is to you. If you fail, everyone around you ignores your incoherent babbling. If you succeed and the target is interested or trained in the Skill, they are likely to become more friendly to you (see p.168). If the target doesn't share your knowledge and slang, they stand stupefied whilst you babble — they are distracted, unable to get away from your conversation for up to 20 minutes (Terran standard).",
+    "effect": "When you take this Talent, you must pick which of your Skills it applies to from the list in the Requirements section above. During any social encounter you can make a Skill Test using your Jargon Skill. The DN is determined by the GM based on how friendly the target is to you. If you fail, everyone around you ignores your incoherent babbling. If you succeed and the target is interested or trained in the Skill, they are likely to become more friendly to you. If the target doesn't share your knowledge and slang, they stand stupefied whilst you babble — they are distracted, unable to get away from your conversation for up to 20 minutes (Terran standard).",
     "flavor": "You're knowledgeable enough on a particular subject to open your mouth and let the information flow out. The mystifying slang, precise vernacular, and strange idioms are enough to stupefy the unlearned and make fast friends of strangers who share your passion.",
     "requiresChoice": true,
     "choiceType": "skill",
@@ -3032,7 +3032,7 @@
         "aeldari"
       ]
     },
-    "effect": "You no longer suffer the penalty from the Intense Emotion Species ability (p.29). The group gains +1 Glory every time you recover from Dying.",
+    "effect": "You no longer suffer the penalty from the Intense Emotion Species ability. The group gains +1 Glory every time you recover from Dying.",
     "flavor": "The long and mournful history of your people weighs upon you, sharpening your focus and emboldening your will to live.",
     "source": "core",
     "page": 135
@@ -3046,7 +3046,7 @@
         "ADEPTUS ASTARTES"
       ]
     },
-    "effect": "[Full text spans two columns on page 48 with chapter-by-chapter details. Key differences: Iron Hands reduce DN of Willpower Test by number of augmetics possessed (not 'Rank'). Salamanders can reduce DN of attack Tests with FIRE/MELTA weapons OR Determination Tests against FIRE/MELTA damage. Imperial Fists can reduce DN of Tests to attack buildings/fortifications/enemies in cover OR Tests related to architectural engineering.]",
+    "effect": "[Full text spans two columns with chapter-by-chapter details. Key differences: Iron Hands reduce DN of Willpower Test by number of augmetics possessed (not 'Rank'). Salamanders can reduce DN of attack Tests with FIRE/MELTA weapons OR Determination Tests against FIRE/MELTA damage. Imperial Fists can reduce DN of Tests to attack buildings/fortifications/enemies in cover OR Tests related to architectural engineering.]",
     "flavor": "[AI-Generated] The genetic legacy of your Primarch manifests in moments of need, granting you his particular gifts.",
     "source": "voa",
     "page": 48
@@ -3116,7 +3116,7 @@
         "agility": 4
       }
     },
-    "effect": "Once per combat, your character can Seize The Initiative (Wrath & Glory Rulebook, page 177) without spending Glory. Additionally, once per combat, when the GM spends 1 Ruin to Seize The Initiative, you can spend 1 Glory to cancel the effect. The Ruin is still spent. You can only use this option if you have not yet taken your Turn, and must now take your Turn immediately.",
+    "effect": "Once per combat, your character can Seize The Initiative without spending Glory. Additionally, once per combat, when the GM spends 1 Ruin to Seize The Initiative, you can spend 1 Glory to cancel the effect. The Ruin is still spent. You can only use this option if you have not yet taken your Turn, and must now take your Turn immediately.",
     "flavor": "You blindside enemies by leaping on opportunities the second they become available.",
     "source": "redacted2",
     "page": 64
@@ -3317,7 +3317,7 @@
         "scholar": 3
       }
     },
-    "effect": "When you take this Talent, choose a Keyword. This could be a bureau of the Imperium, a xenos species, or something esoteric (and forbidden) like daemonology. All Keyword selections are subject to GM approval. If you select another Species as the keyword, you can speak their native language as well as your own. Educational insight can have broad applications. Studying a culture's history invariably reveals information about their traditions, military prowess, and technological innovations. Whenever you make a Skill Test related to the chosen Keyword, you gain +Double Rank bonus dice. This includes Scholar Tests, but can also be relevant to any Test that involves interacting with that Keyword, including Interaction Attacks (p.190). The GM is the arbiter of what is sufficiently relevant to your selected Keyword to receive this bonus.",
+    "effect": "When you take this Talent, choose a Keyword. This could be a bureau of the Imperium, a xenos species, or something esoteric (and forbidden) like daemonology. All Keyword selections are subject to GM approval. If you select another Species as the keyword, you can speak their native language as well as your own. Educational insight can have broad applications. Studying a culture's history invariably reveals information about their traditions, military prowess, and technological innovations. Whenever you make a Skill Test related to the chosen Keyword, you gain +Double Rank bonus dice. This includes Scholar Tests, but can also be relevant to any Test that involves interacting with that Keyword, including Interaction Attacks. The GM is the arbiter of what is sufficiently relevant to your selected Keyword to receive this bonus.",
     "flavor": "You are highly educated in a specific field.",
     "requiresChoice": true,
     "choiceType": "keyword",
@@ -3602,7 +3602,7 @@
         "deception": 2
       }
     },
-    "effect": "When you make a successful Deception Interaction Attack to inflict the Vulnerable Condition (Wrath & Glory Rulebook, page 190), your target reduces their Defence by 2 instead of 1. Shifts can be spent to further reduce the Defence of your target by 2, instead of 1.",
+    "effect": "When you make a successful Deception Interaction Attack to inflict the Vulnerable Condition, your target reduces their Defence by 2 instead of 1. Shifts can be spent to further reduce the Defence of your target by 2, instead of 1.",
     "flavor": "By confusing your enemy you can set them up for a devastating attack when they least expect it.",
     "source": "redacted2",
     "page": 65
@@ -3674,7 +3674,7 @@
         "ork"
       ]
     },
-    "effect": "The Salvo value of any weapon you wield is increased by +Rank. You may want to employ an Ammo Runt (p.241) to carry extra ammunition.",
+    "effect": "The Salvo value of any weapon you wield is increased by +Rank. You may want to employ an Ammo Runt to carry extra ammunition.",
     "flavor": "You love the smell and sound of Dakka, and have a knack for expending exorbitant quantities of ammunition; this is somehow an effective tactic for you.",
     "source": "core",
     "page": 137
@@ -3692,7 +3692,7 @@
         "SALAMANDERS"
       ]
     },
-    "effect": "You reduce the DN of Fellowship-based Tests by 2 when interacting with Humans. In addition, once you have made a successful Fellowship-based Test to influence or calm someone frightened by your Infernal Inheritance Chapter Trait (Wrath & Glory Core Rulebook, page 74), you may waive future penalties when interacting with that individual.",
+    "effect": "You reduce the DN of Fellowship-based Tests by 2 when interacting with Humans. In addition, once you have made a successful Fellowship-based Test to influence or calm someone frightened by your Infernal Inheritance Chapter Trait, you may waive future penalties when interacting with that individual.",
     "flavor": "You have lived among the unaugmented Humans of Nocturne, perhaps alongside your distant kin. As such, you find it easier to relate to the ordinary citizens of the Imperium than most Astartes.",
     "source": "voa",
     "page": 49
@@ -3752,7 +3752,7 @@
         "initiative": 5
       }
     },
-    "effect": "Enemies Engaged with you cannot use the Fall Back Combat Action. Additionally, you gain +Rank bonus dice on Reflexive Attack Tests (Wrath & Glory Rulebook, page 184).",
+    "effect": "Enemies Engaged with you cannot use the Fall Back Combat Action. Additionally, you gain +Rank bonus dice on Reflexive Attack Tests.",
     "flavor": "You are extremely skilled at blocking enemies from getting past or away from you.",
     "source": "redacted2",
     "page": 65
@@ -3936,7 +3936,7 @@
         "persuasion": 4
       }
     },
-    "effect": "When you succeed on an Interaction Attack using Persuasion to inflict the Hindered Condition (Wrath & Glory Rulebook, page 190), your target suffers a DN penalty of 2 instead of 1. Any Shifts can be spent to increase the DN penalty of your target by 2, instead of 1. At the Gamemaster's discretion, this Talent only works on targets that understand the language you speak, and particularly hardened foes may require an Opposed Test against their Insight (Fel).",
+    "effect": "When you succeed on an Interaction Attack using Persuasion to inflict the Hindered Condition, your target suffers a DN penalty of 2 instead of 1. Any Shifts can be spent to increase the DN penalty of your target by 2, instead of 1. At the Gamemaster's discretion, this Talent only works on targets that understand the language you speak, and particularly hardened foes may require an Opposed Test against their Insight (Fel).",
     "flavor": "Your words are so convincing that even enemies are inclined to listen, pulling their punches as they wonder if they are on the right side.",
     "source": "redacted2",
     "page": 66
@@ -4206,7 +4206,7 @@
         "pariah"
       ]
     },
-    "effect": "You gain the ability to Deny the Witch, described on page 267 of the Wrath & Glory Core Rulebook, even though you are not a psyker. Instead of a Psychic Mastery test, you make a Willpower test with a bonus of +Double Rank.",
+    "effect": "You gain the ability to Deny the Witch even though you are not a psyker. Instead of a Psychic Mastery test, you make a Willpower test with a bonus of +Double Rank.",
     "flavor": "You can focus your mind to still disturbances in the Warp nearby.",
     "source": "apocrypha",
     "page": 179
@@ -4271,7 +4271,7 @@
         "ADEPTUS ASTARTES"
       ]
     },
-    "effect": "You can fire ranged weapons with the Assault Trait (Wrath & Glory Core Rulebook, page 208) as part of a Sprint (Wrath & Glory Core Rulebook, page 180) without an increased DN.",
+    "effect": "You can fire ranged weapons with the Assault Trait as part of a Sprint without an increased DN.",
     "flavor": "You can maintain a steady volley of fire while swiftly advancing.",
     "source": "voa",
     "page": 49
@@ -4817,7 +4817,7 @@
         "ADEPTUS MECHANICUS"
       ]
     },
-    "effect": "The range at which you can make Interaction Attacks using Tech is increased to 5 times your Intellect attribute in metres (Wrath & Glory Rulebook, page 190). Any Shifts can be spent to increase the Defence or DN penalty of your target by 2, instead of 1.",
+    "effect": "The range at which you can make Interaction Attacks using Tech is increased to 5 times your Intellect attribute in metres. Any Shifts can be spent to increase the Defence or DN penalty of your target by 2, instead of 1.",
     "flavor": "You are equipped to interact with machines at a greater distance, manipulating their spirits to startle and demoralise your foes.",
     "source": "redacted2",
     "page": 71
@@ -4841,7 +4841,7 @@
     "name": "Silent",
     "cost": 20,
     "prerequisites": {},
-    "effect": "You can move at full Speed when Moving Stealthily (p.182). Whenever your Stealth Score would be reduced, reduce it by 1 fewer.",
+    "effect": "You can move at full Speed when Moving Stealthily. Whenever your Stealth Score would be reduced, reduce it by 1 fewer.",
     "flavor": "Moving silently comes as second nature to you.",
     "source": "core",
     "page": 139
@@ -5018,7 +5018,7 @@
         "ASTRA MILITARUM"
       ]
     },
-    "effect": "...Grenade launcher (p.220). You also receive 3 frag and 3 krak grenades\nHot-Shot Volley Gun (TEMPESTUS SCION only, p.217).",
+    "effect": "...Grenade launcher. You also receive 3 frag and 3 krak grenades\nHot-Shot Volley Gun (TEMPESTUS SCION only).",
     "flavor": "Many soldiers of the Astra Militarum receive training in the use of specialty weapons on the battlefield. Often, this training includes basic chants to appease the weapon's war-spirit if it becomes obstinate or recalcitrant.",
     "requiresChoice": true,
     "choiceType": "weapon",
@@ -5046,7 +5046,7 @@
       },
       "other": "Influence 2+"
     },
-    "effect": "At any time, you may spend 1 Glory to nominate a Faction Keyword (Wrath & Glory Rulebook, pages 375–377). Subject to the GM's approval, you may detail a junior member of the Faction in your approximate vicinity. The individual does not work for you, but you have a somewhat positive professional relationship, and you know how to contact them. Your contacts may help you, if it is not too great an inconvenience, or they are provided a sufficiently powerful incentive. In addition, roll a Wrath die. On an Exalted Icon, they owe you a favour. On a Complication, you already owe them a favour.",
+    "effect": "At any time, you may spend 1 Glory to nominate a Faction Keyword. Subject to the GM's approval, you may detail a junior member of the Faction in your approximate vicinity. The individual does not work for you, but you have a somewhat positive professional relationship, and you know how to contact them. Your contacts may help you, if it is not too great an inconvenience, or they are provided a sufficiently powerful incentive. In addition, roll a Wrath die. On an Exalted Icon, they owe you a favour. On a Complication, you already owe them a favour.",
     "flavor": "Your privileged position affords you access to a myriad of contacts that may be able to aid you.",
     "source": "redacted2",
     "page": 67
@@ -5530,7 +5530,7 @@
         "ADEPTUS MECHANICUS"
       ]
     },
-    "effect": "You can use Tech (Int) instead of Medicae (Int) to remove Wounds, Shock, and Conditions from targets with the ADEPTUS MECHANICUS Keyword (Wrath & Glory Rulebook, page 124).",
+    "effect": "You can use Tech (Int) instead of Medicae (Int) to remove Wounds, Shock, and Conditions from targets with the ADEPTUS MECHANICUS Keyword.",
     "flavor": "Your skill in repairing augmetics and cyber-implants can restore servitors and the techno-faithful to functionality.",
     "source": "redacted2",
     "page": 71
@@ -5570,7 +5570,7 @@
     "name": "Tenacious",
     "cost": 30,
     "prerequisites": {},
-    "effect": "You recover 1 Shock for every Exalted Icon you roll when you roll Determination (p.196).",
+    "effect": "You recover 1 Shock for every Exalted Icon you roll when you roll Determination.",
     "flavor": "You have an uncanny knack for mental perseverance.",
     "source": "core",
     "page": 140
@@ -5580,7 +5580,7 @@
     "name": "The Flesh is Weak",
     "cost": 30,
     "prerequisites": {},
-    "effect": "You no longer need to breathe and you do not bleed. As a result, you aren't affected by Bleeding (p.199) or Suffocation (p.201). You gain +Rank bonus dice to Tech (Int) Tests and Determination rolls. You suffer +2DN to Persuasion (Fel) Tests. When you take this Talent, you may heal any Memorable or Traumatic Injuries (p.194-195).",
+    "effect": "You no longer need to breathe and you do not bleed. As a result, you aren't affected by Bleeding or Suffocation. You gain +Rank bonus dice to Tech (Int) Tests and Determination rolls. You suffer +2DN to Persuasion (Fel) Tests. When you take this Talent, you may heal any Memorable or Traumatic Injuries.",
     "flavor": "Almost all of your biology has been replaced with augmetic components. You may have taken this procedure to repair a gruesome injury, or as a personal expression of faith. The replacements are much sturdier than your former biology but have dramatically affected your appearance.",
     "source": "core",
     "page": 140
@@ -5723,7 +5723,7 @@
         "athletics": 2
       }
     },
-    "effect": "When you succeed on an Interaction Attack using Athletics (Wrath & Glory Rulebook, page 190), your enemy gains the Prone Condition, in addition to other effects. Prone enemies Engaged with you can only remove the Condition on their turn by spending a Combat Action. Allies may still help them stand with a Simple Action.",
+    "effect": "When you succeed on an Interaction Attack using Athletics, your enemy gains the Prone Condition, in addition to other effects. Prone enemies Engaged with you can only remove the Condition on their turn by spending a Combat Action. Allies may still help them stand with a Simple Action.",
     "flavor": "You employ throws and leg sweeps to keep your enemy on the ground and at your mercy.",
     "source": "redacted2",
     "page": 67
@@ -5776,7 +5776,7 @@
     "name": "Unbreakable Guard",
     "cost": 10,
     "prerequisites": {},
-    "effect": "When you benefit from a Full Defence (Wrath & Glory Rulebook, page 187), your Defence is further increased by +Rank.",
+    "effect": "When you benefit from a Full Defence, your Defence is further increased by +Rank.",
     "flavor": "Whether stalling for time, acting as a distraction, or blocking an enemy advance, you are almost untouchable when dedicated to defence.",
     "source": "redacted2",
     "page": 68
@@ -6157,7 +6157,7 @@
     "name": "White-Hot Death",
     "cost": 10,
     "prerequisites": {},
-    "effect": "When you fire a weapon using Supercharge (Wrath & Glory Rulebook, page 210) you add an additional +Rank ED.",
+    "effect": "When you fire a weapon using Supercharge you add an additional +Rank ED.",
     "flavor": "You are one of the few daredevil warriors who has lived long enough to master plasma weaponry.",
     "source": "redacted2",
     "page": 68
@@ -6181,7 +6181,7 @@
         "agility": 5
       }
     },
-    "effect": "You fly with such confidence that jump packs are like extensions of your own body. You ignore the first Complication per scene related to moving by Jump Pack (Wrath & Glory Rulebook, page 237).",
+    "effect": "You fly with such confidence that jump packs are like extensions of your own body. You ignore the first Complication per scene related to moving by Jump Pack.",
     "flavor": "You fly with such confidence that jump packs are like extensions of your own body.",
     "source": "redacted2",
     "page": 68
@@ -6215,7 +6215,7 @@
         "ADEPTUS ASTARTES"
       ]
     },
-    "effect": "You carry an air of authority and wisdom any faithful servant of the Emperor can recognise. Those who stop and listen to you are invariably impressed by insight, decreasing the DN to persuade or influence loyal Imperial citizens and soldiers when making a Leadership (Wil) Test. If using the optional NPC Attitudes rules (Wrath & Glory Core Rulebook, page 168), you can treat all Neutral NPCs as having a Helpful Attitude. In addition, your sermons carry particular weight with your Astartes brethren. When reciting a Litany of Battle (page 57), any affected targets other than yourself retain the benefits of the Litany for an additional turn after you cease to sustain the Litany. This effect stacks with any similar products from Potency.",
+    "effect": "You carry an air of authority and wisdom any faithful servant of the Emperor can recognise. Those who stop and listen to you are invariably impressed by insight, decreasing the DN to persuade or influence loyal Imperial citizens and soldiers when making a Leadership (Wil) Test. If using the optional NPC Attitudes rules, you can treat all Neutral NPCs as having a Helpful Attitude. In addition, your sermons carry particular weight with your Astartes brethren. When reciting a Litany of Battle, any affected targets other than yourself retain the benefits of the Litany for an additional turn after you cease to sustain the Litany. This effect stacks with any similar products from Potency.",
     "flavor": "You carry an air of authority and wisdom any faithful servant of the Emperor can recognise.",
     "source": "voa",
     "page": 50
@@ -6330,7 +6330,7 @@
         "CHAOS"
       ]
     },
-    "effect": "Activate this Prayer as a Simple Action to blanket you and all allies within 10m in darkness. Until the end of the Round, tests against those affected suffer vision penalties (Wrath & Glory page 191), increasing the level of darkness two steps (to a maximum of total darkness), or imposing the effects of very dim light in otherwise well-lit conditions. Favoured Effect: From the darkness you conjure shadowy doppelgangers of your allies. Any attack Tests against affected targets until the end of the Round automatically fail, unless the attacker scores at least one Icon on a Wrath Die. Gain +1 Corruption.",
+    "effect": "Activate this Prayer as a Simple Action to blanket you and all allies within 10m in darkness. Until the end of the Round, tests against those affected suffer vision penalties, increasing the level of darkness two steps (to a maximum of total darkness), or imposing the effects of very dim light in otherwise well-lit conditions. Favoured Effect: From the darkness you conjure shadowy doppelgangers of your allies. Any attack Tests against affected targets until the end of the Round automatically fail, unless the attacker scores at least one Icon on a Wrath Die. Gain +1 Corruption.",
     "flavor": "Nightmares lurk beyond the rays of sunlight; becoming one with the dark is the true path to glory. This is a Prayer to the Dark Gods, activated using Ruin.",
     "isPrayer": true,
     "source": "dh",

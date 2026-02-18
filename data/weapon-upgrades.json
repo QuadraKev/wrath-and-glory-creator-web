@@ -1159,7 +1159,7 @@
     "name": "Final Breath (Abundance of Apocrypha)",
     "type": "poison",
     "description": "A targeted paralytic agent that is derived from a plant native to a distant Death World, Final Breath causes rapid respiratory shutdown. The Drukhari first discovered the effect of the plant when a group of slaves tasked with cleaning the pen of a Clawed Fiend was discovered dying after inhaling its deadly pollen. They were most impressed by the agonising death that this humble plant had inflicted upon their slaves, and so they immediately set about finding a way to turn the plant's toxic pollen into a weapon.",
-    "effect": "The target gasps for air while Poisoned, and begins to suffocate, as described on page 201 of the Wrath & Glory rulebook.",
+    "effect": "The target gasps for air while Poisoned, and begins to suffocate.",
     "value": 5,
     "rarity": "Uncommon",
     "keywords": [

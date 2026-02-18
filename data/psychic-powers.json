@@ -378,7 +378,7 @@
     "multiTarget": false,
     "cost": 20,
     "prerequisite": "At least one other Biomancy Power",
-    "effect": "...When you activate this power, choose one of the following effects. The effect lasts until you stop Sustaining this psychic power. You assume the appearance of any individual with a roughly equivalent mass to your own. ... Alternatively, you modify your body with one of the following options. Some of these modifications are obviously visible and likely grotesque, and those who see them will likely view them as mutations. You manifest wings, allowing you to fly freely at your normal Speed. You develop gills, giving you immunity to the Suffocating Condition whilst breathing underwater. Your appendages become webbed, making water normal terrain instead of difficult terrain. Your corneas are massively altered, giving you the same benefits as Preysense Goggles (p.239). You harden your outer skin, giving you a +4 Resilience bonus.",
+    "effect": "...When you activate this power, choose one of the following effects. The effect lasts until you stop Sustaining this psychic power. You assume the appearance of any individual with a roughly equivalent mass to your own. ... Alternatively, you modify your body with one of the following options. Some of these modifications are obviously visible and likely grotesque, and those who see them will likely view them as mutations. You manifest wings, allowing you to fly freely at your normal Speed. You develop gills, giving you immunity to the Suffocating Condition whilst breathing underwater. Your appendages become webbed, making water normal terrain instead of difficult terrain. Your corneas are massively altered, giving you the same benefits as Preysense Goggles. You harden your outer skin, giving you a +4 Resilience bonus.",
     "potency": "[2] +1 bonus die to Deception Tests when emulating another individual. [3] You may select a second body modification when modifying your body.",
     "keywords": [
       "PSYCHIC"
@@ -1502,7 +1502,7 @@
     "keywords": [
       "PSYCHIC"
     ],
-    "effect": "With a word, thought, or gesture, you can command the flesh of your target to sharply contract. The target’s windpipe closes, choking them and cutting off their breath. The target begins to suffocate (see p. 201) and will fall unconscious after a number of rounds equal to twice their Toughness (Astartes characters double this). Each round they must pass a DN 3 Toughness test or suffer 1d3 Shock, falling unconscious when they reach maximum Shock. Ending the power’s effect allows the target to breathe again.",
+    "effect": "With a word, thought, or gesture, you can command the flesh of your target to sharply contract. The target’s windpipe closes, choking them and cutting off their breath. The target begins to suffocate and will fall unconscious after a number of rounds equal to twice their Toughness (Astartes characters double this). Each round they must pass a DN 3 Toughness test or suffer 1d3 Shock, falling unconscious when they reach maximum Shock. Ending the power’s effect allows the target to breathe again.",
     "potency": "[2] +1 DN to the target’s Toughness tests. [2] +1 Shock from a failed test Enhanced Senses"
   },
   {
@@ -1557,7 +1557,7 @@
       "PSYCHIC"
     ],
     "effect": "You draw poisons from the flesh. If the target has the Poisoned X condition, it is removed instantly. The target is Staggered on their next turn.",
-    "potency": "*[2] The target is not Staggered. [3] +10m range === PAGE 263 === Divination Auto-Séance"
+    "potency": "*[2] The target is not Staggered. [3] +10m range"
   },
   {
     "id": "auto_s_ance_aoa",
@@ -1611,7 +1611,7 @@
       "PSYCHIC"
     ],
     "effect": "Using this power enables you to make nearly impossible ranged shots, allowing you to strike virtually any target you can perceive. You concentrate on a single firearm or other projectile weapon in your possession, and the ammunition it carries, before casting your psychic gaze into the Warp to search down the near-infinite paths of the future. When you use this power, choose a single ranged weapon you’re carrying, which has ammunition. You fire a single shot from this weapon against a single target—no multi- targets allowed—which hits instantly if the power is successfully used, at any distance up to the weapon’s normal maximum range.",
-    "potency": "[1] The attack inflicts +1ED. [2] One ED from the attack counts as if it had rolled a 6. === PAGE 264 === Dowsing"
+    "potency": "[1] The attack inflicts +1ED. [2] One ED from the attack counts as if it had rolled a 6."
   },
   {
     "id": "dowsing_aoa",
@@ -1701,7 +1701,7 @@
       "PSYCHIC"
     ],
     "effect": "With this power, you snatch a glimpse of the future and briefly see the outcome of your actions. Through this flash of insight. If the power is successful, you may re-roll any test you attempt until the end of your next turn.",
-    "potency": "[1] The power’s duration increases by +1 Round. === PAGE 265 === Pyromancy Blinding Flash"
+    "potency": "[1] The power’s duration increases by +1 Round."
   },
   {
     "id": "blinding_flash_aoa",
@@ -1794,7 +1794,7 @@
       "PSYCHIC"
     ],
     "effect": "You instantly create an intense conflagration about your target as the air itself ignites, burning all within to cinders. You create a Blast (6) anywhere you can see within range. Creatures within that area suffer Willpower +8 +3ED damage, with the Inflict (On Fire) trait.",
-    "potency": "[1] +1ED [2] +2 to the size of the Blast === PAGE 266 === Holocaust"
+    "potency": "[1] +1ED [2] +2 to the size of the Blast"
   },
   {
     "id": "holocaust_aoa",
@@ -1889,7 +1889,7 @@
       "PSYCHIC"
     ],
     "effect": "You call upon your telekinetic abilities to lift yourself into the air. While this power remains in effect, you can lift yourself up to Willpower metres in the air. This is not true flight, only vertical movement.",
-    "potency": "[1] You lift yourself +1 metre. === PAGE 267 === Precision Telekinesis"
+    "potency": "[1] You lift yourself +1 metre."
   },
   {
     "id": "precision_telekinesis_aoa",
@@ -1965,7 +1965,7 @@
       "PSYCHIC"
     ],
     "effect": "A basic form of telekinesis, you can use your will to move inanimate objects around. You may lift and move any object you can see within range which weighs no more than your Willpower x5 kg. Lifted objects may be moved anywhere within range, but you cannot move an object fast enough to make an attack. Any objects still suspended when the power ends drop to the ground.",
-    "potency": "[1] +5m range === PAGE 268 === Telepathy Beacon"
+    "potency": "[1] +5m range"
   },
   {
     "id": "beacon_aoa",
@@ -2041,7 +2041,7 @@
       "PSYCHIC"
     ],
     "effect": "Within the Scholastica Psykana and the Adeptus Astra Telepathica, there are many exercises and meditations that are taught to Sanctioned Psykers and Astropaths to enhance their senses and their mental clarity. While this power remains in effect, you or one ally within range adds +3 bonus dice to all Intellect-based tests until the end of their next turn.",
-    "potency": "[1] The bonus increased by +1 [1] The power lasts for +1 Round. === PAGE 269 === Mind Ward"
+    "potency": "[1] The bonus increased by +1 [1] The power lasts for +1 Round."
   },
   {
     "id": "mind_ward_aoa",
@@ -2097,7 +2097,7 @@
       "PSYCHIC"
     ],
     "effect": "You erase your presence from the minds of others. This is more than mere invisibility: those affected by the power simply cannot perceive your presence. Their senses still work, but their minds will not acknowledge you. While this power is in effect, the target cannot perceive you in any way, though they will still be able to see the results of your actions. If ever a target is confronted with evidence of your presence (such as being attacked by you, or seeing a door open because of you), they may attempt a Willpower test with a DN of 3 to try and shake off this power’s effects.",
-    "potency": "[2] The target’s Willpower test DN increases by +1 [2] +10m range === PAGE 270 === Adeptus Astartes Psychic Powers This section contains psychic powers distinct to the Librarians of the Adeptus Astartes, and the sanctified daemon- slaying powers of the Grey Knights Chapter. As standard, a Librarian may only know powers from the Librarius discipline and one other discipline of their choice. An individual Librarian may replace the Librarius discipline with the Obscuration discipline or one of the Chapter- specific Disciplines in this section. SUCCESSOR CHAPTERS: Many of the following psychic disciplines can only be used by characters with a specific [CHAPTER] keyword. This can be substituted for any Chapter which is a successor to the listed Chapter. So, the Geokinesis Discipline can be used by CRIMSON FISTS characters, as they are a successor to the IMPERIAL FISTS. Sanctic Discipline Each Grey Knight is an accomplished psyker, trained to channel his mental energies into protective wards and an array of battle-sorceries. The mightiest Grey Knights of all can banish Daemons with a word, conjure psychic defences to protect their allies and unleash the destructive power of the warp itself upon their foes. GREY KNIGHTS psykers know Rites of Banishment instead of Smite. Creatures with the DAEMON keyword may not roll Determination against damage caused by a Sanctic power. Astral Aim"
+    "potency": "[2] The target’s Willpower test DN increases by +1 [2] +10m range"
   },
   {
     "id": "astral_aim_aoa",
@@ -2151,7 +2151,7 @@
       "PSYCHIC"
     ],
     "effect": "Focusing the raging power of your mind, you augment your strength to the point where your fists can crush flesh and bone with a single blow. You add +3ED to the damage of all melee attacks until the start of your next turn.",
-    "potency": "[2] +1ED to damage. === PAGE 271 === Purge Soul"
+    "potency": "[2] +1ED to damage."
   },
   {
     "id": "purge_soul_aoa",
@@ -2223,7 +2223,7 @@
       "PSYCHIC"
     ],
     "effect": "The psyker tears a rift between realspace and the Warp, condemning his foes to oblivion. The power affects all creatures in a Blast (6), dragging them into a howling vortex. Every creature within the area suffers 1d3 Mortal Wounds.",
-    "potency": "[2] +1 Mortal Wound per target. *[2] Increase the area of effect to Blast (10). *[2] Time to activate reduced to an Action. === PAGE 272 === Obscuration Discipline Those Space Marine Librarians seconded to Vanguard and reconnaissance operations are trained in the psychic arts of obscuration and illusion. They weave impenetrable cloaks of warp energy around their battle-brothers, conjure haunting visions to distract and terrify their foes, and ease the Vanguard formations’ passage through enemy territory. Any PRIMARIS Librarian may select this discipline instead of the Librarius Discipline. Hallucination"
+    "potency": "[2] +1 Mortal Wound per target. *[2] Increase the area of effect to Blast (10). *[2] Time to activate reduced to an Action."
   },
   {
     "id": "hallucination_aoa",
@@ -2299,7 +2299,7 @@
       "PSYCHIC"
     ],
     "effect": "You share your warp-sight with your brethren, causing their eyes to glow with an ethereal light. So empowered, no foe can escape their omniscient gaze: the souls of their targets flare like beacons in the dark. If successful, select a number of allies within range equal to your Willpower. While this power remains, the affected allies may re-roll any failures on their ranged attacks and ignore any Defence bonuses from cover.",
-    "potency": "[1] +1 bonus die to affected allies’ Awareness tests. === PAGE 273 === Temporal Corridor"
+    "potency": "[1] +1 bonus die to affected allies’ Awareness tests."
   },
   {
     "id": "temporal_corridor_aoa",
@@ -2335,7 +2335,7 @@
       "PSYCHIC"
     ],
     "effect": "As you twist your hand, a psychic bolt lances through the minds of your foes. As they reel from the assault, their own shadows seem to spring to malicious life, grasping and tearing with frenzied determination. The power affects all creatures in a Blast (6) within range. Affected targets suffer 1 Mortal Wound and are Staggered until the start of your next turn.",
-    "potency": "[3] Targets suffer +1 Mortal Wound. *[2] Increase the area of effect to a Blast (10). *[2] Targets are Restrained instead of Staggered. === PAGE 274 === Geokinesis Discipline Those scions of Rogal Dorn who have power over the warp are masters of stone and iron. Using aetheric energies, they can shatter fortress walls, cast the enemy into great pits in the ground or fortify themselves and their allies with strength drawn from the very bones of the earth. IMPERIAL FISTS Librarians only. Aspect of Stone"
+    "potency": "[3] Targets suffer +1 Mortal Wound. *[2] Increase the area of effect to a Blast (10). *[2] Targets are Restrained instead of Staggered."
   },
   {
     "id": "aspect_of_stone_aoa",
@@ -2371,7 +2371,7 @@
       "PSYCHIC"
     ],
     "effect": "You slam your palms together, and then pull them slowly apart. As you do, a wide chasm opens beneath the feet of your foes, and they tumble screaming into the darkness below In such a state, you are nigh- unstoppable. This power affects all creatures in a Blast (6) within range. The ground under the target area opens up, creating a sheer-walled pit with a depth equal to ten times your Willpower in metres. Any creature in the area, excluding those which can fly, may attempt an Agility test with a DN of 5 to scramble away; if they succeed, they move up to half their Speed away from the chasm. If they fail, they suffer falling damage as they plummet to the bottom. The pit remains once the power has been used. You suffer 1d3+2 Shock when you use this power, as it is draining to manifest.",
-    "potency": "*[2] Time to activate reduced to a Combat Action. *[2] Increase the area of effect to a Blast (10). === PAGE 275 === Fortify"
+    "potency": "*[2] Time to activate reduced to a Combat Action. *[2] Increase the area of effect to a Blast (10)."
   },
   {
     "id": "fortify_aoa",
@@ -2443,7 +2443,7 @@
       "PSYCHIC"
     ],
     "effect": "Reaching out with your mind, you sense every fault, hairline crack, and structural weakness in an enemy fortification, then build empyric resonance within them until the stronghold shakes itself apart. The power affects creatures in a Blast (6) that you can see within range. Roll 1d6 for each enemy in the blast who is in cover or in difficult terrain; on an Exalted Icon, they suffer a Mortal Wound and are Staggered. If the targets are within an enclosed structure, then instead roll 1d6 and each Icon inflicts 1d3 Mortal Wounds and causes them to be Restrained.",
-    "potency": "[3] Affected enemies suffer +1 Mortal Wounds. *[2] Increase the area of effect to a Blast (10). *[3] If there is a building or enclosing structure within the blast, then it begins to collapse. === PAGE 276 === Indomitus Discipline The Ultramarines Librarius is renowned for its discipline and close adherence to the strict dictates of the Codex Astartes. Ultramarines Librarians train their minds to a sharp focus, and are able to manipulate their enemy, read the premonitory echoes of their movements, or even strike directly at their victims’ psyches to devastating effect. ULTRAMARINES Librarians only. Empyric Channelling"
+    "potency": "[3] Affected enemies suffer +1 Mortal Wounds. *[2] Increase the area of effect to a Blast (10). *[3] If there is a building or enclosing structure within the blast, then it begins to collapse."
   },
   {
     "id": "empyric_channelling_aoa",
@@ -2497,7 +2497,7 @@
       "PSYCHIC"
     ],
     "effect": "You plunge into your foe’s mind, trammelling their soul and crushing their will to fight, stalling their advance in its tracks. The power affects all creatures in a Blast (6) within range. Affected targets suffer 1d3 Shock and are Staggered until the start of your next turn.",
-    "potency": "[1] +1 Shock [2] Affected enemies are Restrained instead of Staggered. *[2] Increase the area of effect to a Blast (10). Scrier’s Gaze This power is identical to the Divination power of the same name on page 275 of the Wrath & Glory core rulebook. Its presence in the Indomitus discipline allows characters to select that power without also knowing the Divination discipline. === PAGE 277 === Storm of the Emperor’s Wrath"
+    "potency": "[1] +1 Shock [2] Affected enemies are Restrained instead of Staggered. *[2] Increase the area of effect to a Blast (10). Scrier’s Gaze This power is identical to the Divination power of the same name. Its presence in the Indomitus discipline allows characters to select that power without also knowing the Divination discipline."
   },
   {
     "id": "storm_of_the_emperor_s_wrath_aoa",
@@ -2572,7 +2572,7 @@
       "PSYCHIC"
     ],
     "effect": "You inveigle your way into the minds of your foes. Subtly, you twist and heighten their fears. While this power remains in effect, all enemies within range treat all 6s on Resolve tests as 1s.",
-    "potency": "*[2] Enemies within range must also take a Fear test (DN 5), treating you as the source of their fear. === PAGE 278 === Mind Wipe"
+    "potency": "*[2] Enemies within range must also take a Fear test (DN 5), treating you as the source of their fear."
   },
   {
     "id": "mind_wipe_aoa",
@@ -2648,7 +2648,7 @@
       "PSYCHIC"
     ],
     "effect": "You gather your thoughts into a white- hot spike to plunge straight into a victim’s mind, leaving the foe’s brain matter dribbling from their ears. You target one enemy with a psychic ranged attack. If hit, the target suffers 1d3 Mortal Wounds and is exhausted until the start of its next turn.",
-    "potency": "[1] +1 Mortal Wound. === PAGE 279 === Promethean Discipline The reek of ash, the searing heat of the volcano and the terrifying visage of monsters from Nocturnean myth—these are the hallmarks of the psychic powers used by those Librarians descended from Vulkan. Channelling the Chapter’s infernal heritage, these warrior-mystics defend their battle-brothers like true Salamanders. SALAMANDERS Librarians only. Flaming Blast"
+    "potency": "[1] +1 Mortal Wound."
   },
   {
     "id": "flaming_blast_aoa",
@@ -2723,7 +2723,7 @@
       "PSYCHIC"
     ],
     "effect": "You summon a shimmering layer of translucent scales around your allies, harder even than the impervious hides of the great Drakes of Nocturne. Select an ally within Range. The ally gains +2 Resilience and +2 Determination while the power remains in effect.",
-    "potency": "[2] +1 Resilience. [2] +1 Determination. === PAGE 280 === Fury of Nocturne"
+    "potency": "[2] +1 Resilience. [2] +1 Determination."
   },
   {
     "id": "fury_of_nocturne_aoa",
@@ -2760,7 +2760,7 @@
       "PSYCHIC"
     ],
     "effect": "Summoning the wrath of the indigenous creatures of Nocturne, you take on elements of the appearance of a great fire- breathing drake. With burning eyes and flame streaming from your nostrils, you inspire dread in your foes. The power affects all creatures in a Blast (6) within range. While this power remains in effect, all enemies within 12 metres of you add +2 to the DN of all Resolve tests they attempt.",
-    "potency": "[2] +1 DN === PAGE 281 === Sanguinary Discipline The Librarians of the Blood Angels combine the deadly energies of the warp with the slivers of rage and bloodlust that lurk deep within their own psyches. They can manipulate the minds, bodies, and souls of those around them with a mere thought or conjure golden barriers and bloody weapons from thin air through sheer force of will. BLOOD ANGELS Librarians only. Blood Boil"
+    "potency": "[2] +1 DN"
   },
   {
     "id": "blood_boil_aoa",
@@ -2834,7 +2834,7 @@
       "PSYCHIC"
     ],
     "effect": "You conjure a mighty lance, infused with his innermost rage. Hefting this empyric projectile, your hurl it with all of your psychokinetic might, sending it hurtling through the enemy ranks to maim and impale. This is a psychic ranged attack, which hits all enemies along a straight line 25m long and 1m wide, running from the psyker. Each enemy along this line suffers 1d3 mortal wounds and is staggered.",
-    "potency": "[3] +1 Mortal Wound to each target. === PAGE 282 === Unleash Rage"
+    "potency": "[3] +1 Mortal Wound to each target."
   },
   {
     "id": "unleash_rage_aoa",
@@ -2871,7 +2871,7 @@
       "PSYCHIC"
     ],
     "effect": "Blood-red wings of psychic energy spring from your back, allowing you to soar across the battlefield like an avenging angel. You gain the ability to fly, with a speed equal to your normal speed plus your Psychic Mastery skill. You may immediately move as part of the action used to manifest this psychic power.",
-    "potency": "[2] Flying Speed increases by +1 === PAGE 283 === Stormspeaking Discipline White Scars Librarians are known as Stormseers, a wise and mysterious order within the Chapter who act as advisors to the khans as well as being powerful psykers. Stormseers are able to command the very elements; their foes are battered to ruin by mighty winds or beset by forked lightning from the storm-wracked skies. WHITE SCARS Librarians only. Blasting Gale"
+    "potency": "[2] Flying Speed increases by +1"
   },
   {
     "id": "blasting_gale_aoa",
@@ -2943,7 +2943,7 @@
       "PSYCHIC"
     ],
     "effect": "At your behest, the roiling clouds funnel into a furious vortex that swirls down to surround your advancing comrades. Lightning crackles around them, and leaps from their bodies to strike down the foe. If this power is successful, select a number of allies within range equal to your Willpower. If the affected allies Charge before the start of your next turn, their melee attacks gain the Inflict (Staggered) and Agonizing traits.",
-    "potency": "[2] Affect additional allies equal to your Willpower. [2] Affected allies add +1 to their Defence. === PAGE 284 === Spirits of Chogoris"
+    "potency": "[2] Affect additional allies equal to your Willpower. [2] Affected allies add +1 to their Defence."
   },
   {
     "id": "spirits_of_chogoris_aoa",
@@ -2979,7 +2979,7 @@
       "PSYCHIC"
     ],
     "effect": "Summoning a hurricane, you become the heart of a screaming cyclone. Wherever you stride, the enemy are plucked from their feet and dashed to ruin by its elemental fury. When you use this power, and at the start of each turn you sustain it, all enemies within range must attempt a DN 4 Athletics test, adding +2 DN if they are flying. Failure means that the creature is knocked Prone and hurled 3d6 metres in a random direction; if they impact any solid object in this random move, determine damage as if they had fallen.",
-    "potency": "[2] +1 DN to Athletics test. [1] Add +d6 metres to the distance hurled. === PAGE 285 === Technomancy Discipline The Librarius of the Iron Hands turn their attention to the manipulation of machines on a spiritual level. Able to commune with or attack the spirits of machines, as these warriors stride through the maelstrom of battle their foes find their weapons failing or Iron Hands war engines they thought disabled suddenly roused to fight again. IRON HANDS Librarians only. Blessing of the Machine God"
+    "potency": "[2] +1 DN to Athletics test. [1] Add +d6 metres to the distance hurled."
   },
   {
     "id": "blessing_of_the_machine_god_aoa",
@@ -3051,7 +3051,7 @@
       "PSYCHIC"
     ],
     "effect": "At your command, warp energy flows in streamers from thin air and winds itself around your allies, glowing like forge-hot steel. The flowing Psysteel coats the armour of nearby vehicles or else wraps fellow warriors in a second skin capable of turning aside bullet and blade alike. Select a number of visible allies within range equal to your Willpower, or a single allied vehicle you can see within range. The target adds +2 to Resilience while this power remains in effect.",
-    "potency": "[2] +1 Resilience [2] Affects an additional number of allies equal to Willpower, or one additional vehicle. === PAGE 286 === Reforge"
+    "potency": "[2] +1 Resilience [2] Affects an additional number of allies equal to Willpower, or one additional vehicle."
   },
   {
     "id": "reforge_aoa",
@@ -3640,7 +3640,7 @@
       "PSYCHIC"
     ],
     "effect": "By tapping into the various breaches and cracks that exist in the real world, you are able to wrap yourself within tendrils of warp energy and use them to gird yourself against harm. While this power remains in effect, an enemy who wishes to target you with a ranged attack or move within 3m of you must pass a DN 3 Willpower test; if they fail, they forgo their turn as the power holds them at bay. Further, you may roll Determination against Mortal Wounds while this power remains in effect. The effect ends instantly when you make a ranged attack.",
-    "potency": "*[2] The power affects you and all allies you can see within 5m. [1] Willpower test has +1 DN. === PAGE 296 === Seal the Breach"
+    "potency": "*[2] The power affects you and all allies you can see within 5m. [1] Willpower test has +1 DN."
   },
   {
     "id": "seal_the_breach_aoa",
@@ -4601,7 +4601,7 @@
       "PSYCHIC"
     ],
     "effect": "You scry possible futures to foresee imminent danger, then aid your allies in avoiding it. The terrors of the warp recoil from your mind, while shots pass through thin air where Asuryani warriors stood a moment before. Select a number of allies equal to your Willpower within range. Until the start of your next turn, when they roll Determination, they roll a number of dice equal to your Intellect, and each Icon rolled negates a single Wound or Mortal Wound, rather than converting Wounds into Shock.",
-    "potency": "[1] Affect one extra ally. === PAGE 314 === Guide"
+    "potency": "[1] Affect one extra ally."
   },
   {
     "id": "guide_aoa",
@@ -5158,7 +5158,7 @@
     "multiTarget": true,
     "cost": 30,
     "prerequisite": "Psyker must have the CHAOS Keyword. At least two other Maleficarum powers.",
-    "effect": "You puncture a black hole into the Warp that tears your enemies apart, flings them around the battlefield, or drags them screaming into the Immaterium. The target suffers 20 +3 ED Damage, with AP –4, and the Blast (6) and Warp Weapon Traits. Any creatures that suffer Damage from the attack but survive are Scattered 1d6 metres in a random direction (see Wrath & Glory page 186), and suffer the Restrained Condition on their next Turn.",
+    "effect": "You puncture a black hole into the Warp that tears your enemies apart, flings them around the battlefield, or drags them screaming into the Immaterium. The target suffers 20 +3 ED Damage, with AP –4, and the Blast (6) and Warp Weapon Traits. Any creatures that suffer Damage from the attack but survive are Scattered 1d6 metres in a random direction, and suffer the Restrained Condition on their next Turn.",
     "potency": "[1] +5m Range.\n[1] +1 ED Damage.",
     "keywords": [
       "CHAOS",
@@ -5178,7 +5178,7 @@
     "multiTarget": false,
     "cost": 10,
     "prerequisite": "Psyker must have the CHAOS Keyword",
-    "effect": "The power on page 117 is named 'Malefic Invitation', not 'Minor Invocation'. Its effect: The mind of a psyker is a siren call to the hostile denizens of the warp. The most foolhardy deliberately flirt with such attentions, temporarily playing host to the power of a daemonic patron... Choose a Troop-level Threat for your Tier that has the DAEMON and CHAOS Keywords. For the duration of the power, you gain access to the Threat's Bonuses and Abilities (including Daemonic Determination)...",
+    "effect": "The power is named 'Malefic Invitation', not 'Minor Invocation'. Its effect: The mind of a psyker is a siren call to the hostile denizens of the warp. The most foolhardy deliberately flirt with such attentions, temporarily playing host to the power of a daemonic patron... Choose a Troop-level Threat for your Tier that has the DAEMON and CHAOS Keywords. For the duration of the power, you gain access to the Threat's Bonuses and Abilities (including Daemonic Determination)...",
     "potency": "*[1] Select an Elite-level Threat.\n*[2] Select an Adversary-level Threat.\n[3] +1 bonus die on Conviction Test to resist permanent possession.",
     "keywords": [
       "CHAOS",
@@ -5198,7 +5198,7 @@
     "multiTarget": true,
     "cost": 25,
     "prerequisite": "Psyker must have the CHAOS Keyword. At least one other Maleficarum power.",
-    "effect": "The veil between realities thins in your presence, allowing tendrils of the Warp's power to leak into the vicinity. Any creatures within range of you are caught within the Warp Storm's boundaries, immediately gaining 2 Shock, 1 Corruption, and making a DN 3 Fear Test. Creatures who subsequently enter the Warp Storm whilst the power is active suffer the same effects. Whilst the power is ongoing, characters within the Warp Storm gain a mandatory +1 Wrath die on any Psychic Mastery (Wil) Tests, and creatures with the DAEMON Keyword gain +2 bonus dice when rolling Determination. In addition, Tests into, out of, or through the Warp Storm suffer vision penalties (Wrath & Glory page 191), increasing the level of darkness one step (to a maximum of total darkness), or imposing the effects of twilight in otherwise well-lit conditions.",
+    "effect": "The veil between realities thins in your presence, allowing tendrils of the Warp's power to leak into the vicinity. Any creatures within range of you are caught within the Warp Storm's boundaries, immediately gaining 2 Shock, 1 Corruption, and making a DN 3 Fear Test. Creatures who subsequently enter the Warp Storm whilst the power is active suffer the same effects. Whilst the power is ongoing, characters within the Warp Storm gain a mandatory +1 Wrath die on any Psychic Mastery (Wil) Tests, and creatures with the DAEMON Keyword gain +2 bonus dice when rolling Determination. In addition, Tests into, out of, or through the Warp Storm suffer vision penalties, increasing the level of darkness one step (to a maximum of total darkness), or imposing the effects of twilight in otherwise well-lit conditions.",
     "potency": "[1] +5m Range.\n[1] Increase vision penalties one additional step.\n[2] Gain +1 mandatory Wrath die on Psychic Mastery (Wil) Tests.",
     "keywords": [
       "CHAOS",
@@ -5238,7 +5238,7 @@
     "multiTarget": true,
     "cost": 20,
     "prerequisite": "Psyker must have the CHAOS Keyword",
-    "effect": "...one Agent, Elite, or Adversary who would otherwise killed by the Damage inflicted is instead irreversibly transformed into a Chaos Spawn (Wrath & Glory page 352), which attacks everyone around them in a suicidal frenzy.",
+    "effect": "...one Agent, Elite, or Adversary who would otherwise killed by the Damage inflicted is instead irreversibly transformed into a Chaos Spawn, which attacks everyone around them in a suicidal frenzy.",
     "potency": "[1] +10m Range.\n[2] +1 Corruption.\n[1] +1 ED Damage.",
     "keywords": [
       "CHAOS",

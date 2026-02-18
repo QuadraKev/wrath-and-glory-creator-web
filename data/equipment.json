@@ -124,7 +124,7 @@
     "name": "Jump Pack",
     "category": "tool",
     "description": "Gyro-stabilised rockets blast the user high into the air with enough forward momentum to swoop down upon an unwary target.",
-    "effect": "Using your Movement, you can fly at double your Speed by making a DN3 Pilot (A) Test, ignoring any terrain. If you fail the Pilot (A) Test, your movement deviates according to the Scattering (p.186) rules. A Complication triggers a crash, which deals a minimum of 1d3 Shock, plus falling damage(p.201).",
+    "effect": "Using your Movement, you can fly at double your Speed by making a DN3 Pilot (A) Test, ignoring any terrain. If you fail the Pilot (A) Test, your movement deviates according to the Scattering rules. A Complication triggers a crash, which deals a minimum of 1d3 Shock, plus falling damage.",
     "value": 7,
     "rarity": "Rare",
     "keywords": [],
@@ -211,7 +211,7 @@
     "name": "Chaplet Ecclesiasticus",
     "category": "misc",
     "description": "This religious symbol is an Adeptus Ministorum icon hung upon a cord of adamantine beads. Some orders of the Adepta Sororitas place each bead on the cord as a representation of acts of penance.",
-    "effect": "The Chaplet can be used as a Symbol of Authority (p.240) or, if necessary, a garrote.",
+    "effect": "The Chaplet can be used as a Symbol of Authority or, if necessary, a garrote.",
     "value": 3,
     "rarity": "Uncommon",
     "keywords": [
@@ -1473,7 +1473,7 @@
     "name": "Astartes Servo-Arm",
     "category": "augmetic",
     "description": "[AI-Generated] A powerful mechanical appendage that combines the strength of the Machine Spirit with blessed unguents.",
-    "effect": "You gain +5 Strength when using the Astartes Servo-Arm. The arm allows you to Brace (Wrath & Glory Core Rulebook, page 189) as a Free Action in combat. It adds +1 bonus dice to all Tech (Int) Tests to perform engineering tasks, and can be used to make unarmed strikes with the servo-arm's Strength.",
+    "effect": "You gain +5 Strength when using the Astartes Servo-Arm. The arm allows you to Brace as a Free Action in combat. It adds +1 bonus dice to all Tech (Int) Tests to perform engineering tasks, and can be used to make unarmed strikes with the servo-arm's Strength.",
     "value": 5,
     "rarity": "Uncommon",
     "keywords": [
@@ -3917,7 +3917,7 @@
     "name": "Armour of Scorn",
     "category": "relic",
     "description": "Forged aeons ago in the Brass Citadel of Khorne itself, this hellish armour is saturated with the Blood God's contempt for weakness, unworthy foes, and sorcerers. In battle, it shrugs off all but the mightiest blows, and shields the wearer with this same burning scorn against all enemies before them.",
-    "effect": "Only Greater Daemons and Daemon Princes of Khorne may don the Armour of Scorn. It has an AR of 7, and counts as Invulnerable (Wrath & Glory, p. 232) against any weapon that deals less than 14 base Damage (i.e. the weapon's Damage stat without ED, Shifted Icons etc.). In addition, whenever a psychic power would cause the wearer to suffer Wounds, roll 1d6; On a 5+, the number of Wounds taken is halved, rounding up.",
+    "effect": "Only Greater Daemons and Daemon Princes of Khorne may don the Armour of Scorn. It has an AR of 7, and counts as Invulnerable against any weapon that deals less than 14 base Damage (i.e. the weapon's Damage stat without ED, Shifted Icons etc.). In addition, whenever a psychic power would cause the wearer to suffer Wounds, roll 1d6; On a 5+, the number of Wounds taken is halved, rounding up.",
     "value": 8,
     "rarity": "Unique",
     "keywords": [
@@ -3959,7 +3959,7 @@
     "name": "A'rgath, the King of Blades",
     "category": "relic",
     "description": "Most daemons despise being bound to material objects. This cannot be said of A'rgath. Once a mortal champion of Khorne, a lifetime of butchery earned him the Blood God's favour, and A'rgath was granted daemonhood. However, so dedicated was A'rgath to slaughter and death that he refused to accept immortality as a Daemon Prince, instead choosing to take the form of a mighty blade, that he might forever spill the blood of Khorne's enemies. In battle the spirit of A'rgath guides the wielder's hand, granting them unrivalled fury and skill.",
-    "effect": "A'rgath can take the form of any bladed melee weapon, to suit the proficiencies of any disciple or daemon of Khorne. It gains the statistics of that weapon, and a +4 bonus to its base Damage and ED. It ignores the Invulnerable armour Trait (Wrath & Glory, p. 232), causes Mortal Wounds, and always inflicts 1 Mortal Wound that cannot be averted by any means on a successful strike.",
+    "effect": "A'rgath can take the form of any bladed melee weapon, to suit the proficiencies of any disciple or daemon of Khorne. It gains the statistics of that weapon, and a +4 bonus to its base Damage and ED. It ignores the Invulnerable armour Trait, causes Mortal Wounds, and always inflicts 1 Mortal Wound that cannot be averted by any means on a successful strike.",
     "value": 12,
     "rarity": "Unique",
     "keywords": [
@@ -4071,7 +4071,7 @@
     "name": "Brazier of Holy Fire",
     "category": "misc",
     "description": "The blazing zeal of the Ecclesiarchy rendered real in sacred flame, ensconced in iron wrought with the aches of priests, a Brazier of Holy Fire can only be lit by a true devotee of the Emperor, and its light bears a modicum of His magnificent power.",
-    "effect": "Anyone can attempt to light a Brazier of Holy Fire as a Combat Action. When lit, the Brazier sheds bright light for 6 metres. If a character with at least one Faith point wields the Brazier of Holy Fire, any character with the DAEMON Keyword touched by its light is Hindered. A character wielding a Brazier of Holy Fire can spend 1 Faith point to unleash the holy flames as a Reflexive Action. This attack functions in the same way as a Hand Flamer (Wrath & Glory Rulebook, p.219) but has +3 ED. If the target of this attack has the DAEMON Keyword, the attack has +6 ED instead.",
+    "effect": "Anyone can attempt to light a Brazier of Holy Fire as a Combat Action. When lit, the Brazier sheds bright light for 6 metres. If a character with at least one Faith point wields the Brazier of Holy Fire, any character with the DAEMON Keyword touched by its light is Hindered. A character wielding a Brazier of Holy Fire can spend 1 Faith point to unleash the holy flames as a Reflexive Action. This attack functions in the same way as a Hand Flamer but has +3 ED. If the target of this attack has the DAEMON Keyword, the attack has +6 ED instead.",
     "value": 5,
     "rarity": "Very Rare",
     "keywords": [
@@ -4103,7 +4103,7 @@
     "name": "Infravisor",
     "category": "tool",
     "description": "An advanced technological visor often installed into the augers and augmetic eyes of the Adeptus Mechanicus, the Infravisor allows its user to see into a wide range of spectra simultaneously, including several the Mechanicus do not truly understand.",
-    "effect": "An Infravisor functions as Preysense Goggles (Wrath & Glory Rulebook, p.239), and also allows you to detect high levels of radiation in your immediate environment.",
+    "effect": "An Infravisor functions as Preysense Goggles, and also allows you to detect high levels of radiation in your immediate environment.",
     "value": 5,
     "rarity": "Rare",
     "keywords": [
@@ -4309,7 +4309,7 @@
     "name": "Mek Toolz",
     "category": "tool",
     "description": "Steered by the mad inspiration of Ork Mekboyz, these collections of oversized hammers and spanners can bend or break existing technology to make it 'Orky'.",
-    "effect": "Functions as a Combi-Tool (p.236) for Ork technology. Mek Toolz can be used to dismantle technology and reassemble it into Ork Wargear of an equal or lesser Value and Rarity. This re-assembly requires a Tech (Int) Test with a DN equal to the Value of the Ork Wargear you are creating, and takes a number of hours equal to the Value of the Wargear you are creating.",
+    "effect": "Functions as a Combi-Tool for Ork technology. Mek Toolz can be used to dismantle technology and reassemble it into Ork Wargear of an equal or lesser Value and Rarity. This re-assembly requires a Tech (Int) Test with a DN equal to the Value of the Ork Wargear you are creating, and takes a number of hours equal to the Value of the Wargear you are creating.",
     "value": 5,
     "rarity": "Uncommon",
     "keywords": [

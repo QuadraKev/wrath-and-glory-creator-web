@@ -558,7 +558,7 @@
     "abilities": [
       {
         "name": "Mutant",
-        "description": "Your life in the unsanitary underbelly of the Imperium has mutated you. Select two Mutations from the list of Scavvy Mutations on p.287. Whenever your Rank increases, you may select another Mutation from the list."
+        "description": "Your life in the unsanitary underbelly of the Imperium has mutated you. Select two Mutations from the list of Scavvy Mutations. Whenever your Rank increases, you may select another Mutation from the list."
       }
     ],
     "startingWargear": [
@@ -1387,7 +1387,7 @@
     "abilities": [
       {
         "name": "Lead the Righteous",
-        "description": "You are an inspiring warleader and walking miracle both. You gain +Rank Faith (see page142 of Wrath & Glory Rulebook). Whenever you deal a Wound, you may spend 1 Faith to gain +1 Glory as a Free Action."
+        "description": "You are an inspiring warleader and walking miracle both. You gain +Rank Faith. Whenever you deal a Wound, you may spend 1 Faith to gain +1 Glory as a Free Action."
       }
     ],
     "startingWargear": [
@@ -2027,7 +2027,7 @@
     "abilities": [
       {
         "name": "Librarius Discipline",
-        "description": "You have the PSYKER Keyword, and are a psyker. You know the Universal Psyker Abilities Wrath & Glory Rulebook, p.267, and the Smite psychic power. You know the Librarius Discipline and one power from that Discipline of your choice, and may choose one other Psychic Discipline to learn powers from as described in Chapter 11 of the Rulebook."
+        "description": "You have the PSYKER Keyword, and are a psyker. You know the Universal Psyker Abilities, and the Smite psychic power. You know the Librarius Discipline and one power from that Discipline of your choice, and may choose one other Psychic Discipline to learn powers from."
       }
     ],
     "startingWargear": [
@@ -3653,7 +3653,7 @@
     "abilities": [
       {
         "name": "Phantasmancer",
-        "description": "You know the Universal Psyker Abilities (Wrath & Glory page 267), and the Smite psychic power. You may choose two powers you know from any of the following Disciplines (so long as you meet the prerequisites): Divination, Phantasmancy, Telepathy."
+        "description": "You know the Universal Psyker Abilities, and the Smite psychic power. You may choose two powers you know from any of the following Disciplines (so long as you meet the prerequisites): Divination, Phantasmancy, Telepathy."
       }
     ],
     "startingWargear": [
@@ -6391,8 +6391,7 @@
     "startingWargear": [
       "Wychsuit",
       "splinter pistol",
-      "Reaver Jetbike (Church of Steel",
-      "page 100)",
+      "Reaver Jetbike",
       "three doses of Hekatarii combat drugs"
     ],
     "source": "apocrypha",
@@ -6458,7 +6457,7 @@
   {
     "id": "runtherd_aoa",
     "name": "Runtherd (Abundance of Apocrypha)",
-    "description": "You are accompanied by a mob of Grots (p. 358) equal to your Rank x4. If any of your Grots die, they can be replaced between sessions at the GM’s discretion. All Grots, Snotlings, and Squigs within 10...",
+    "description": "You are accompanied by a mob of Grots equal to your Rank x4. If any of your Grots die, they can be replaced between sessions at the GM's discretion. All Grots, Snotlings, and Squigs within 10...",
     "tier": 2,
     "species": [
       "ork"
@@ -6482,7 +6481,7 @@
     "abilities": [
       {
         "name": "Slaver",
-        "description": "You are accompanied by a mob of Grots (p. 358) equal to your Rank x4. If any of your Grots die, they can be replaced between sessions at the GM’s discretion. All Grots, Snotlings, and Squigs within 10 + Rank metres of you add your Leadership to their Resolve."
+        "description": "You are accompanied by a mob of Grots equal to your Rank x4. If any of your Grots die, they can be replaced between sessions at the GM's discretion. All Grots, Snotlings, and Squigs within 10 + Rank metres of you add your Leadership to their Resolve."
       }
     ],
     "startingWargear": [
@@ -7770,8 +7769,7 @@
     "startingWargear": [
       "Heavy Aspect Armour",
       "Laser Lance",
-      "Aeldari Jetbike (Church of Steel",
-      "p. 92)",
+      "Aeldari Jetbike",
       "spirit stone"
     ],
     "source": "apocrypha",

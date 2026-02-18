@@ -704,7 +704,7 @@
       "name": "Assault",
       "source": "core",
       "page": 206,
-      "description": "Optimised for firing whilst rushing righteously towards the enemy. You can fire an Assault weapon as part of a Sprint (p.180), but take a +2 DN penalty to the attack."
+      "description": "Optimised for firing whilst rushing righteously towards the enemy. You can fire an Assault weapon as part of a Sprint, but take a +2 DN penalty to the attack."
     },
     "blessed": {
       "name": "Blessed",
@@ -2274,7 +2274,7 @@
       "cost": 10,
       "source": "apocrypha",
       "page": 273,
-      "description": "...<b>Discipline:</b> Indomitus<br><b>DN:</b> 5<br><b>XP Cost:</b> 10<br><b>Activation:</b> Action<br><b>Duration:</b> 1 round<br><b>Range:</b> 12m<br><b>Keywords:</b> PSYCHIC<br><br><b>Effect:</b> You plunge into your foe’s mind, trammelling their soul and crushing their will to fight, stalling their advance in its tracks. The power affects all creatures in a Blast (6) within range. Affected targets suffer 1d3 Shock and are Staggered until the start of your next turn.<br><br><b>Potency:</b> [1] +1 Shock [2] Affected enemies are Restrained instead of Staggered. *[2] Increase the area of effect to a Blast (10). Scrier’s Gaze This power is identical to the Divination power of the same name on page 275 of the Wrath & Glory core rulebook. Its presence in the Indomitus discipline allows characters to select that power without also knowing the Divination discipline."
+      "description": "...<b>Discipline:</b> Indomitus<br><b>DN:</b> 5<br><b>XP Cost:</b> 10<br><b>Activation:</b> Action<br><b>Duration:</b> 1 round<br><b>Range:</b> 12m<br><b>Keywords:</b> PSYCHIC<br><br><b>Effect:</b> You plunge into your foe’s mind, trammelling their soul and crushing their will to fight, stalling their advance in its tracks. The power affects all creatures in a Blast (6) within range. Affected targets suffer 1d3 Shock and are Staggered until the start of your next turn.<br><br><b>Potency:</b> [1] +1 Shock [2] Affected enemies are Restrained instead of Staggered. *[2] Increase the area of effect to a Blast (10). Scrier's Gaze This power is identical to the Divination power of the same name. Its presence in the Indomitus discipline allows characters to select that power without also knowing the Divination discipline."
     },
     "storm_of_the_emperor_s_wrath_aoa": {
       "name": "Storm of the Emperor’s Wrath (Abundance of Apocrypha)",
@@ -3165,7 +3165,7 @@
       "cost": 15,
       "source": "apocrypha",
       "page": 306,
-      "description": "...<b>Discipline:</b> Discipline of Change<br><b>DN:</b> Target’s Defence<br><b>XP Cost:</b> 15<br><b>Activation:</b> Action<br><b>Duration:</b> Instant<br><b>Range:</b> 18m<br><b>Keywords:</b> CHAOS, TZEENTCH, PSYCHIC, FIRE<br><br><b>Effect:</b> You conjure a raging storm of pink and blue fire down from the skies, that mutates your foes and leaves capering daemons that claw and bite in its wake. This targets an enemy within range and line of sight. If successful, roll nine d6. For each Icon rolled, the target suffers 1 Mortal Wound. For each Exalted Icon rolled, the target suffers 1d3 Mortal Wounds.<br><br><b>Potency:</b> *[3] Increase the number rolled on each d6 by 1 (i.e., a roll of 3 or 4 is an Icon, while a 5 or 6 is an Exalted Icon). [1] If a target is killed by damage from this power, a single Pink Horror of Tzeentch is summoned, appearing on the same spot as the slain target. Weaver of Fates This is identical to the power of the same name in the Dark Hereticus discipline, on page 302."
+      "description": "...<b>Discipline:</b> Discipline of Change<br><b>DN:</b> Target’s Defence<br><b>XP Cost:</b> 15<br><b>Activation:</b> Action<br><b>Duration:</b> Instant<br><b>Range:</b> 18m<br><b>Keywords:</b> CHAOS, TZEENTCH, PSYCHIC, FIRE<br><br><b>Effect:</b> You conjure a raging storm of pink and blue fire down from the skies, that mutates your foes and leaves capering daemons that claw and bite in its wake. This targets an enemy within range and line of sight. If successful, roll nine d6. For each Icon rolled, the target suffers 1 Mortal Wound. For each Exalted Icon rolled, the target suffers 1d3 Mortal Wounds.<br><br><b>Potency:</b> *[3] Increase the number rolled on each d6 by 1 (i.e., a roll of 3 or 4 is an Icon, while a 5 or 6 is an Exalted Icon). [1] If a target is killed by damage from this power, a single Pink Horror of Tzeentch is summoned, appearing on the same spot as the slain target. Weaver of Fates This is identical to the power of the same name in the Dark Hereticus discipline."
     },
     "crushing_orb_aoa": {
       "name": "Crushing Orb (Abundance of Apocrypha)",
@@ -3543,7 +3543,7 @@
       "cost": 30,
       "source": "dh",
       "page": 126,
-      "description": "Discipline: Maleficarum, DN: 8, XP Cost: 20, Activation: Action, Duration: Instant, Range: 10m, Keywords: CHAOS, PSYCHIC. Prerequisite: At least one other Maleficarum power. Effect per PDF page 117."
+      "description": "Discipline: Maleficarum, DN: 8, XP Cost: 20, Activation: Action, Duration: Instant, Range: 10m, Keywords: CHAOS, PSYCHIC. Prerequisite: At least one other Maleficarum power."
     },
     "warp_storm": {
       "name": "Warp Storm",
@@ -3552,7 +3552,7 @@
       "cost": 25,
       "source": "dh",
       "page": 117,
-      "description": "Discipline: Maleficarum, DN: 6, XP Cost: 20, Activation: Full-Round Action, Duration: Sustained, Range: 10m, Keywords: CHAOS, PSYCHIC. Prerequisite: At least one other Maleficarum power. Effect per PDF page 117."
+      "description": "Discipline: Maleficarum, DN: 6, XP Cost: 20, Activation: Full-Round Action, Duration: Sustained, Range: 10m, Keywords: CHAOS, PSYCHIC. Prerequisite: At least one other Maleficarum power."
     },
     "bolt_of_change": {
       "name": "Bolt of Change",
@@ -3561,7 +3561,7 @@
       "cost": 20,
       "source": "dh",
       "page": 51,
-      "description": "...who would otherwise killed...into a Chaos Spawn (Wrath & Glory page 352), which attacks..."
+      "description": "...who would otherwise killed...into a Chaos Spawn, which attacks..."
     },
     "desecration_of_worlds": {
       "name": "Desecration of Worlds",
@@ -3777,7 +3777,7 @@
       "cost": 10,
       "source": "dh",
       "page": 117,
-      "description": "The power on page 117 is 'Malefic Invitation': Discipline: Maleficarum, DN: Willpower of possessing Daemon, XP Cost: 20, Activation: Full-Round Action, Duration: Sustained, Range: Self, Keywords: CHAOS, PSYCHIC. Prerequisite: Cannot be used by psykers with the DAEMON Keyword."
+      "description": "The power is 'Malefic Invitation': Discipline: Maleficarum, DN: Willpower of possessing Daemon, XP Cost: 20, Activation: Full-Round Action, Duration: Sustained, Range: Self, Keywords: CHAOS, PSYCHIC. Prerequisite: Cannot be used by psykers with the DAEMON Keyword."
     },
     "warptime": {
       "name": "Warptime",
