@@ -734,6 +734,10 @@ textarea {
     border-bottom: 1px solid var(--border-color);
 }
 
+.stats-column h3 + .stats-list + h3 {
+    margin-top: 30px;
+}
+
 .stats-list {
     display: flex;
     flex-direction: column;
