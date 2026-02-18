@@ -8,7 +8,9 @@
     "prerequisites": {
       "story": "Must have near-death experience"
     },
-    "benefits": "Replace any lost body parts with the appropriate augmetics; you may choose an option of any Rarity the GM deems appropriate.",
+    "benefits": [
+      "Replace any lost body parts with the appropriate augmetics; you may choose an option of any Rarity the GM deems appropriate."
+    ],
     "keywordsGained": [
       "[ANY] (Faction of rescuers)"
     ],
@@ -143,7 +145,9 @@
     "cost": "10 x new Tier",
     "costMultiplier": 10,
     "prerequisites": {},
-    "benefits": "If you do not have a Memorable Injury, roll on the Memorable Injury table (p.194) and decide with your GM how you received the Memorable Injury. You may choose to gain 3 Corruption points instead of, or in addition to, a Memorable Injury.",
+    "benefits": [
+      "If you do not have a Memorable Injury, roll on the Memorable Injury table (p.194) and decide with your GM how you received the Memorable Injury. You may choose to gain 3 Corruption points instead of, or in addition to, a Memorable Injury."
+    ],
     "keywordsGained": [],
     "influenceModifier": 1,
     "source": "core",
