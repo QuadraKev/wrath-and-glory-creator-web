@@ -62,6 +62,7 @@ const WargearTab = {
         const grouped = {
             weapons: [],
             armor: [],
+            augmetics: [],
             equipment: []
         };
 
@@ -77,7 +78,12 @@ const WargearTab = {
             } else if (DataLoader.getArmor(item.id)) {
                 grouped.armor.push(entry);
             } else {
-                grouped.equipment.push(entry);
+                const equip = DataLoader.getEquipment(item.id);
+                if (equip && equip.category === 'augmetic') {
+                    grouped.augmetics.push(entry);
+                } else {
+                    grouped.equipment.push(entry);
+                }
             }
         }
 
@@ -94,6 +100,13 @@ const WargearTab = {
         if (grouped.armor.length > 0) {
             html += '<div class="wargear-group"><h4>Armor</h4>';
             html += grouped.armor.map(a => this.renderOwnedItem(a, 'armor')).join('');
+            html += '</div>';
+        }
+
+        // Augmetics
+        if (grouped.augmetics.length > 0) {
+            html += '<div class="wargear-group"><h4>Augmetics</h4>';
+            html += grouped.augmetics.map(a => this.renderOwnedItem(a, 'augmetic')).join('');
             html += '</div>';
         }
 
@@ -240,6 +253,7 @@ const WargearTab = {
                         <button class="wargear-tab-btn ${this.currentCategory === 'melee' ? 'active' : ''}" data-category="melee">Melee</button>
                         <button class="wargear-tab-btn ${this.currentCategory === 'ranged' ? 'active' : ''}" data-category="ranged">Ranged</button>
                         <button class="wargear-tab-btn ${this.currentCategory === 'armor' ? 'active' : ''}" data-category="armor">Armor</button>
+                        <button class="wargear-tab-btn ${this.currentCategory === 'augmetics' ? 'active' : ''}" data-category="augmetics">Augmetics</button>
                         <button class="wargear-tab-btn ${this.currentCategory === 'equipment' ? 'active' : ''}" data-category="equipment">Equipment</button>
                     </div>
                 </div>
@@ -357,11 +371,19 @@ const WargearTab = {
             }
         }
 
+        // Render Augmetics
+        if (this.currentCategory === 'all' || this.currentCategory === 'augmetics') {
+            const augmeticItems = filterBySearch(filterBySource(equipment.filter(e => e.category === 'augmetic')));
+            if (augmeticItems.length > 0) {
+                html += this.renderEquipmentCards(augmeticItems, ownedCounts, 'Augmetics');
+            }
+        }
+
         // Render Equipment
         if (this.currentCategory === 'all' || this.currentCategory === 'equipment') {
-            const equipmentItems = filterBySearch(filterBySource(equipment));
+            const equipmentItems = filterBySearch(filterBySource(equipment.filter(e => e.category !== 'augmetic')));
             if (equipmentItems.length > 0) {
-                html += this.renderEquipmentCards(equipmentItems, ownedCounts);
+                html += this.renderEquipmentCards(equipmentItems, ownedCounts, 'Equipment');
             }
         }
 
@@ -533,7 +555,7 @@ const WargearTab = {
     },
 
     // Render equipment cards
-    renderEquipmentCards(equipmentItems, ownedCounts) {
+    renderEquipmentCards(equipmentItems, ownedCounts, sectionTitle = 'Equipment') {
         equipmentItems.sort((a, b) => a.name.localeCompare(b.name));
 
         const cards = equipmentItems.map(e => {
@@ -573,7 +595,7 @@ const WargearTab = {
 
         return `
             <div class="wargear-table-section">
-                <h4>Equipment</h4>
+                <h4>${sectionTitle}</h4>
                 ${cards}
             </div>
         `;

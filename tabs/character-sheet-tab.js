@@ -61,6 +61,7 @@ const CharacterSheetTab = {
                 <div class="sheet-body-right">
                     ${this.renderWeapons(character)}
                     ${this.renderArmor(character)}
+                    ${this.renderAugmetics(character)}
                     ${this.renderEquipment(character)}
                 </div>
             </div>
@@ -764,6 +765,82 @@ const CharacterSheetTab = {
         `;
     },
 
+    // Render augmetics section
+    renderAugmetics(character) {
+        const augmetics = [];
+
+        for (const item of character.wargear || []) {
+            if (DataLoader.getWeapon(item.id) || DataLoader.getArmor(item.id)) continue;
+            const equip = DataLoader.getEquipment(item.id);
+            if (equip && equip.category === 'augmetic') {
+                augmetics.push({ ...equip });
+            }
+        }
+
+        if (augmetics.length === 0) return '';
+
+        const rows = augmetics.map(aug => {
+            const rarityClass = this.getRarityClass(aug.rarity);
+            const rarityDisplay = aug.rarity && aug.rarity !== 'Common'
+                ? `<span class="sheet-item-rarity ${rarityClass}">${aug.rarity}</span>`
+                : '';
+
+            // Format bonuses as stat list
+            const bonusParts = [];
+            if (aug.bonuses) {
+                for (const [key, val] of Object.entries(aug.bonuses)) {
+                    const label = key.charAt(0).toUpperCase() + key.slice(1);
+                    bonusParts.push(`${val > 0 ? '+' : ''}${val} ${label}`);
+                }
+            }
+            const bonusText = bonusParts.length > 0 ? bonusParts.join(', ') : '';
+
+            const description = aug.description || '';
+            const keywords = aug.keywords?.length > 0
+                ? aug.keywords.map(k => `<span class="sheet-mini-keyword">${k}</span>`).join(' ')
+                : '';
+            const hasDescOrKeywords = description || keywords;
+
+            const descRow = hasDescOrKeywords ? `
+                <tr class="sheet-equip-desc-row">
+                    <td colspan="3">
+                        <div class="sheet-item-details">
+                            ${description ? `<span class="sheet-item-description">${description}</span>` : ''}
+                            ${keywords ? `<span class="sheet-item-keywords">${keywords}</span>` : ''}
+                        </div>
+                    </td>
+                </tr>
+            ` : '';
+
+            return `
+                <tbody class="sheet-equip-group">
+                    <tr>
+                        <td class="sheet-equip-name">${aug.name}${rarityDisplay}<div class="source-ref">${DataLoader.formatSourcePage(aug)}</div></td>
+                        <td class="sheet-equip-effect">${aug.effect || '-'}</td>
+                        <td class="sheet-equip-bonuses">${bonusText}</td>
+                    </tr>
+                    ${descRow}
+                </tbody>
+            `;
+        }).join('');
+
+        return `
+            <div class="sheet-section">
+                <h2 class="sheet-section-title">Augmetics</h2>
+                <table class="sheet-table sheet-equipment-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Effect</th>
+                            <th>Bonuses</th>
+                        </tr>
+                    </thead>
+                    ${rows}
+                </table>
+            </div>
+        `;
+    },
+
     // Render equipment with full details
     renderEquipment(character) {
         const equipment = [];
@@ -774,7 +851,7 @@ const CharacterSheetTab = {
                 continue;
             }
             const equip = DataLoader.getEquipment(item.id);
-            if (equip) {
+            if (equip && equip.category !== 'augmetic') {
                 equipment.push({ ...equip });
             }
         }

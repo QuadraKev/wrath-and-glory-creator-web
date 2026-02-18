@@ -4609,5 +4609,551 @@
     ],
     "source": "core",
     "page": 247
+  },
+  {
+    "id": "princeps_limb_rig",
+    "name": "Princeps Limb Rig",
+    "category": "augmetic",
+    "description": "Awarded to the most logically ruthless and callously effective leaders of Sicarian killcades, a Princeps Limb Rig further enhances its beneficiary's combat abilities whilst allowing their Mechanicus masters to track them closely.",
+    "effect": "You gain an additional limb that can operate simple equipment or wield a melee weapon. During combat, you can use your additional limb to make a Tech (Int) Test, use a piece of Wargear, or make a melee attack if you have a spare melee weapon. When you use your additional limb as part of a Multi-Action or Multi-Attack, the DN penalty is decreased by 1.",
+    "value": 5,
+    "rarity": "Rare",
+    "keywords": [
+      "IMPERIUM",
+      "ADEPTUS MECHANICUS"
+    ],
+    "source": "fspg",
+    "page": 129
+  },
+  {
+    "id": "aetheric_wave_spars_aaa",
+    "name": "Aetheric Wave-Spars",
+    "category": "augmetic",
+    "description": "Grafted to the spine and affixed by thick cables to heavy metal vambraces, these metre-long poles are designed to gather and conduct psychic energy, allowing a psyker to channel more aggressively. Implants of this sort have been extensively tested by the Adeptus Astra Telepathica, but it has been found that the power they provide is dangerously unstable, and they are banned by order of the Inquisition.",
+    "effect": "When you roll a Wrath Critical on a Psychic Mastery test, you may roll one additional Wrath Die immediately (these extra dice cannot themselves generate extra dice).",
+    "value": 7,
+    "rarity": "Very Rare",
+    "keywords": [
+      "CHAOS",
+      "DARK MECHANICUM",
+      "HERETIC"
+    ],
+    "source": "apocrypha",
+    "page": 448
+  },
+  {
+    "id": "autosanguine_aaa",
+    "name": "Autosanguine",
+    "category": "augmetic",
+    "description": "Ancient and blessed technology filters and augments your blood. Handed down from generations past, this technology allows you to recover from harm more quickly.",
+    "effect": "Whenever you regain one or more Wounds, you regain one additional Wound. You also ignore the penalty for being Wounded.",
+    "value": 6,
+    "rarity": "Very Rare",
+    "keywords": [
+      "CULT MECHANICUS"
+    ],
+    "source": "apocrypha",
+    "page": 448
+  },
+  {
+    "id": "baleful_eye_aaa",
+    "name": "Baleful Eye",
+    "category": "augmetic",
+    "description": "A baleful eye is a legendary archaeotech bionic eye that incorporates a tiny las weapon, which sacrifices some of the normal abilities of a cybernetic vision implant for this device to be included. Each baleful eye has been passed from recipient to recipient across centuries or millennia, reclaimed by the Machine Cult whenever its owner dies.",
+    "effect": "A character with a Baleful Eye is considered to have a Hot-Shot Laspistol within the eye. The weapon runs from an internal power source, and never runs out of ammunition, but this also means that ammo may not be spent on the weapon's attacks.",
+    "value": 8,
+    "rarity": "Unique",
+    "keywords": [
+      "IMPERIUM",
+      "ADEPTUS MECHANICUS"
+    ],
+    "source": "apocrypha",
+    "page": 449
+  },
+  {
+    "id": "blade_tines_aaa",
+    "name": "Blade-Tines",
+    "category": "augmetic",
+    "description": "Long, thin blades are mounted within the recipient's hands, razor-sharp and useful as scalpels or other cutting implements. The hand must be completely rebuilt to accommodate this, and most versions feature long, spindly fingers that can extend past the blades to perform other dextrous tasks.",
+    "effect": "Blade-tines grant the recipient +1d on all Medicae tests, and they can be used as a Mono-Knife in melee.",
+    "value": 5,
+    "rarity": "Rare",
+    "keywords": [
+      "CHAOS",
+      "DARK MECHANICUM",
+      "DRUKHARI"
+    ],
+    "source": "apocrypha",
+    "page": 449
+  },
+  {
+    "id": "calculus_logi_implant_aaa",
+    "name": "Calculus Logi Implant",
+    "category": "augmetic",
+    "description": "These bionics are internal cogitator implants which aid in data retention and processing. The user can rapidly sift through stacked data-slates and parchments, applying intuition to vast reams of data far beyond the capabilities of a normal man.",
+    "effect": "The recipient has a +2d bonus on all Investigation and Scholar tests.",
+    "value": 6,
+    "rarity": "Very Rare",
+    "keywords": [
+      "IMPERIUM",
+      "ADEPTUS MECHANICUS"
+    ],
+    "source": "apocrypha",
+    "page": 449
+  },
+  {
+    "id": "chem_gland_aaa",
+    "name": "Chem Gland",
+    "category": "augmetic",
+    "description": "This implant is a tiny artificial organ which can produce a single drug, flooding the body with that drug on a mental command.",
+    "effect": "Select a single drug\u2014either Stimm, or a drug with the COMBAT DRUG keyword\u2014for the gland to produce. The character may administer the drug as a free action at the start of their turn. The gland produces the drug, but it takes time and nutrients, producing 3 doses at the end of each Respite.",
+    "value": 7,
+    "rarity": "Very Rare",
+    "keywords": [
+      "IMPERIUM",
+      "ADEPTUS MECHANICUS"
+    ],
+    "source": "apocrypha",
+    "page": 449
+  },
+  {
+    "id": "chem_injector_aaa",
+    "name": "Chem Injector",
+    "category": "augmetic",
+    "description": "This implant allows a dose of a drug or stimulant to be auto-injected into the recipient's body.",
+    "effect": "The injector is loaded with a single drug, either Stimm or a drug with the COMBAT DRUG keyword, and a character may have multiple chem injector implants to deliver multiple drugs. The character can administer that drug as a simple action. Some characters with this implant do not have control over them; their injectors are controlled by another character over a vox link.",
+    "value": 5,
+    "rarity": "Rare",
+    "keywords": [
+      "IMPERIUM",
+      "ADEPTUS MECHANICUS",
+      "ADEPTUS MINISTORUM"
+    ],
+    "source": "apocrypha",
+    "page": 449
+  },
+  {
+    "id": "data_tether_aaa",
+    "name": "Data-Tether",
+    "category": "augmetic",
+    "description": "This implant serves a similar function to a vox, allowing rapid communication over a distance. However, that is where the similarity ends: a data-tether transmits assorted data from the recipient's mind, implants, and other wargear in a highly compressed binaric form, understandable only by the Skitarii legions and the Tech-Priests who command them.",
+    "effect": "Characters with a data-tether may communicate silently to similarly-equipped characters within 1km, transmitting their thoughts, status, and sensory data through the implant to one another. A data-tether may be tuned to receive normal vox transmissions from non-Skitarii allies, though this is less efficient.",
+    "value": 3,
+    "rarity": "Uncommon",
+    "keywords": [
+      "ADEPTUS MECHANICUS",
+      "SKITARII"
+    ],
+    "source": "apocrypha",
+    "page": 449
+  },
+  {
+    "id": "electoo_aaa",
+    "name": "Electoo",
+    "category": "augmetic",
+    "description": "An electoo is a sophisticated subcutaneous tattoo that utilises crystalline circuit technology to allow its user to store digital information within their own body. More advanced forms have other, powerful uses, such as conducting vast amounts of bioelectric energy, but these are reserved only for the chosen amongst the Cult Mechanicus.",
+    "effect": "An Electoo can be used to store information electronically and can even adjust this information under pre-programmed conditions or when instructed by an outside source. The user has no direct control over the electoo or its contents and may not even be aware of it, unless they have the ADEPTUS MECHANICUS keyword.",
+    "value": 3,
+    "rarity": "Common",
+    "keywords": [
+      "IMPERIUM",
+      "ADEPTUS MECHANICUS"
+    ],
+    "source": "apocrypha",
+    "page": 450
+  },
+  {
+    "id": "electrograft_aaa",
+    "name": "Electrograft",
+    "category": "augmetic",
+    "description": "Electrografts are a special form of electoo engineered directly onto the recipient's cerebellum. This involves cutting away a portion of the skull and creating the electoo directly on the brain tissue before (usually) replacing the section of cranium or covering with synthetic material. An electrograft reacts with the brain to alter a creature's memory, personality and knowledge.",
+    "effect": "A character implanted with an electrograft may gain one of the effects below. A character may receive multiple electrografts, but for every electrograft after the first, the character must change one extra die on Intellect, Willpower, or Fellowship tests to a Wrath die.\n\u2022 Learn 1+ Rank additional languages.\n\u2022 +Rank dice on tests using a single skill.\n\u2022 Remove or alter a memory.",
+    "value": 5,
+    "rarity": "Uncommon",
+    "keywords": [
+      "IMPERIUM",
+      "ADEPTUS MECHANICUS"
+    ],
+    "source": "apocrypha",
+    "page": 450
+  },
+  {
+    "id": "enhanced_data_tether_aaa",
+    "name": "Enhanced Data-Tether",
+    "category": "augmetic",
+    "description": "An enhanced data-tether has a longer range and is more powerful than the common form.",
+    "effect": "The implant can send and receive data at distances of up to 100km. Further, as enhanced data-tethers are used by Tech-Priests to impart directives to their Skitarii troops, those who bear them are regarded with reverence for they speak for the Omnissiah's servants. As a result, the recipient and anyone in the group with a normal data-tether may re-roll failures on Resolve tests.",
+    "value": 5,
+    "rarity": "Rare",
+    "keywords": [
+      "ADEPTUS MECHANICUS",
+      "SKITARII"
+    ],
+    "source": "apocrypha",
+    "page": 450
+  },
+  {
+    "id": "hermetic_infusion_aaa",
+    "name": "Hermetic Infusion",
+    "category": "augmetic",
+    "description": "As another departure from the frailties of the flesh, this implant replaces human blood and blood processing organs with a more efficient biochemical serum and accompanying biomechanical organs. However, the greyish pallor of the recipient is often off-putting, and the lack of normal human anatomy makes the recipient somewhat more difficult to treat should they need a medicae.",
+    "effect": "You gain +2 bonus dice on all Toughness tests to resist poisons, diseases, and radioactivity. In addition, you automatically recover Wounds equal to your Toughness each time you take a Respite. However, anyone attempting a Medicae test on you who lacks the CULT MECHANICUS keyword adds +2 to the test's DN.",
+    "value": 8,
+    "rarity": "Very Rare",
+    "keywords": [
+      "CULT MECHANICUS"
+    ],
+    "source": "apocrypha",
+    "page": 450
+  },
+  {
+    "id": "interface_port_aaa",
+    "name": "Interface Port",
+    "category": "augmetic",
+    "description": "The recipient has a mechanical port implanted in their body, commonly in the rear of the neck, which can be connected to cogitators, data storage devices, and other advanced machines via a data cable or info-tether.",
+    "effect": "This allows the user faster and smoother access to the valuable information within, and grants a +1d bonus to Scholar, Investigation, and Tech tests while connected to a relevant mechanism or data-spool.",
+    "value": 7,
+    "rarity": "Rare",
+    "keywords": [
+      "ADEPTUS MECHANICUS"
+    ],
+    "source": "apocrypha",
+    "page": 450
+  },
+  {
+    "id": "luminen_capacitor_aaa",
+    "name": "Luminen Capacitor",
+    "category": "augmetic",
+    "description": "The recipient's internal energies are channelled into capacitors buried within their flesh and connected to their various implants. This energy can be tapped to recharge items or serve as a power source for weapons and potent attacks.",
+    "effect": "A luminen capacitor contains a number of charges equal to the recipient's Toughness. With a Toughness test, and a minute of meditative focus, the character may spend charges to power machinery. The DN of this test is 2 + charges used, and the number of charges required varies based on the system being charged.\n\n\u2022 1 charge: simple power cell, illuminator\n\u2022 2 charges: weapon charge pack, data-slate, starship bridge control shrine\n\u2022 3 charges: shuttle electronics, servo skull\n\u2022 4 charges: heavy weapon charge pack, servitor, hololithic projector\n\u2022 5 charges: cogitator core, reactor machine spirit, xenos technology\n\nIf a character would suffer Shock from using an augmetic, then they may spend charges to reduce this, suffering one fewer Shock for each charge spent.\n\nThe luminen capacitor regains its full charges during a Regroup. The character may also siphon power from powered devices and power sources, requiring a Toughness test (DN 3) and an action. Success means the character regains 1d3 charges, plus 1 for each Exalted Icon shifted.",
+    "value": 5,
+    "rarity": "Uncommon",
+    "keywords": [
+      "CULT MECHANICUS"
+    ],
+    "source": "apocrypha",
+    "page": 451
+  },
+  {
+    "id": "maglev_coils_aaa",
+    "name": "Maglev Coils",
+    "category": "augmetic",
+    "description": "Archaeotech systems of powerful gravimetric and magnetodynamic coils are implanted within the recipient's lower body, allowing them to become unshackled from gravity's grasp for short periods.",
+    "effect": "When activated, the character gains a fly speed equal to their Willpower, but they may not Run or Sprint while flying. Each turn the character remains aloft, they suffer 1 Shock. The character may also use this implant to slow themselves when falling, suffering 1d3 Shock, +1 for every 10 meters fallen, instead of the normal falling damage.",
+    "value": 8,
+    "rarity": "Very Rare",
+    "keywords": [
+      "CULT MECHANICUS"
+    ],
+    "source": "apocrypha",
+    "page": 451
+  },
+  {
+    "id": "memorance_implant_aaa",
+    "name": "Memorance Implant",
+    "category": "augmetic",
+    "description": "A neurally-linked datavault and pict-capture array is built into the recipient's brain and eyes (which are normally replaced with augmetics), which records information on people or scenes viewed. These images can later be replayed, or the implant can apply data from previous recordings as an overlay onto the present view.",
+    "effect": "The recipient always has a perfect visual record of everything they see, which may be transferred to other data storage if they have a way to connect to those devices (such as an interface port). Further, they gain a +1d bonus on any Investigation or Scholar tests based on information they have already witnessed and recorded.",
+    "value": 6,
+    "rarity": "Rare",
+    "keywords": [
+      "ADEPTUS MECHANICUS"
+    ],
+    "source": "apocrypha",
+    "page": 451
+  },
+  {
+    "id": "neuro_aethyric_inhibitor_aaa",
+    "name": "Neuro-aethyric Inhibitor",
+    "category": "augmetic",
+    "description": "Some psykers, while potent, are on the edge of being too unstable to be useful to the Imperium. While many of these are slain as a precaution, a few are implanted with inhibitors which serve to contain their power when it grows out of control. This does dampen some of the psyker's innate power, but this is for their own good.",
+    "effect": "Your Willpower is reduced by 1. When you suffer a Wrath Complication on a Psychic Mastery test, you may activate this implant: you immediately suffer 1 Mortal Wound. Then, when you roll on the Perils of the Warp table, roll 2d6, and which ever die rolls lowest is the 'tens' die.",
+    "bonuses": {
+      "willpower": -1
+    },
+    "value": 5,
+    "rarity": "Uncommon",
+    "keywords": [
+      "IMPERIUM",
+      "ADEPTUS ASTRA TELEPATHICA"
+    ],
+    "source": "apocrypha",
+    "page": 451
+  },
+  {
+    "id": "neurostatic_projector_aaa",
+    "name": "Neurostatic Projector",
+    "category": "augmetic",
+    "description": "This device, built into a replacement for the recipient's skull, projects a broad-spectrum electromagnetic field which disrupts both technological and organic senses.",
+    "effect": "Creatures within 10 metres of the character add +Rank to the DN of all Intellect tests (including Awareness) and Resolve tests, and reduce their Passive Awareness by the same amount. Allies with the ADEPTUS MECHANICUS keyword receive null-codes which render them immune to this.",
+    "value": 6,
+    "rarity": "Rare",
+    "keywords": [
+      "ADEPTUS MECHANICUS",
+      "SKITARII"
+    ],
+    "source": "apocrypha",
+    "page": 451
+  },
+  {
+    "id": "omnispex_aaa",
+    "name": "Omnispex",
+    "category": "augmetic",
+    "description": "An omnispex is a form of auspex that carries a Raptor-class machine spirit that can read heat emissions, data signatures, and other biological electromagnetic waveform emissions even at extreme range. Should it be kept focussed for an extended period, an omnispex will determine the weak points of those it scrutinises and pass them on to its master.",
+    "effect": "An omnispex functions as an auspex (page 236 of the Wrath & Glory core rulebook). In addition, if the recipient aims at an enemy, then they ignore any Defence bonuses from cover on their next ranged attack. If the recipient is equipped with a data-tether, they may share this bonus with any allies equipped with data-tethers within 10m.",
+    "value": 6,
+    "rarity": "Rare",
+    "keywords": [
+      "ADEPTUS MECHANICUS",
+      "SKITARII"
+    ],
+    "source": "apocrypha",
+    "page": 452
+  },
+  {
+    "id": "psy_booster_aaa",
+    "name": "Psy-Booster",
+    "category": "augmetic",
+    "description": "These complex neural implants reinforce and stimulate the parts of the brain that, in psykers, allow them to exert mental influence over the Immaterium. This technology is rumoured to have been developed by the same ancient Arch-Magi who aided the Emperor in construction of the Golden Throne, but no one knows for certain if this myth has any truth to it.",
+    "effect": "When you make a Psychic Mastery test, you may re-roll any dice (other than Wrath dice) which roll 1s. However, if any of those dice roll a 1 when being re-rolled, you suffer 1 Shock.",
+    "value": 7,
+    "rarity": "Rare",
+    "keywords": [
+      "IMPERIUM",
+      "INQUISITION",
+      "ADEPTUS ASTRA TELEPATHICA"
+    ],
+    "source": "apocrypha",
+    "page": 452
+  },
+  {
+    "id": "scribe_tines_aaa",
+    "name": "Scribe-Tines",
+    "category": "augmetic",
+    "description": "The hand and lower forearm are replaced with specialised and sensitive tools for page-turning, autoscribing, data-slate manipulation, and other invaluable activities for a sage. While disquieting in appearance, they are a sign of significance amongst scholars, lexmechanics, and others who must sift through ancient tomes and archive slates for lore.",
+    "effect": "The user gains a +2d bonus on Investigation tests, as they can record and retrieve information quickly.",
+    "value": 4,
+    "rarity": "Uncommon",
+    "keywords": [
+      "IMPERIUM",
+      "ADEPTUS MECHANICUS",
+      "ADEPTUS ADMINISTRATUM"
+    ],
+    "source": "apocrypha",
+    "page": 452
+  },
+  {
+    "id": "skinplant_aaa",
+    "name": "Skinplant",
+    "category": "augmetic",
+    "description": "Skinplants are sophisticated tattoos\u2014very sophisticated. Molecular-scale crystalline circuitry is embedded between layers of skin, drawing miniscule amounts of power from the recipient's body to create a tattoo that can light up, flash, or even display simple animations.",
+    "effect": "The character has an illuminated tattoo, with a design of their choosing. This may be permanently lit, or it may remain hidden until a specific trigger (pressure, contracting a muscle, or similar). These are often applied to demonstrate fervour or loyalty and add +1 dice to any Persuasion or Intimidation tests attempted (choose which skill is affected when you gain the Skinplant).",
+    "value": 2,
+    "rarity": "Common",
+    "keywords": [],
+    "source": "apocrypha",
+    "page": 452
+  },
+  {
+    "id": "subdermal_chrono_aaa",
+    "name": "Subdermal Chrono",
+    "category": "augmetic",
+    "description": "A common form of Skinplant, and less ostentatious, is the subdermal chrono. The circuit forms the display of a chrono on the wrist which appears and illuminates when light pressure is applied beside the skinplant.",
+    "effect": "This functions as a chrono, but it is permanently implanted into the character's skin.",
+    "value": 2,
+    "rarity": "Common",
+    "keywords": [],
+    "source": "apocrypha",
+    "page": 452
+  },
+  {
+    "id": "thiefs_light_aaa",
+    "name": "Thief's Light",
+    "category": "augmetic",
+    "description": "A simple skinplant with many unsavoury uses, the thief's light is a simple luminescent patch on the palm of the hand, which is nearly imperceptible until activated. When triggered\u2014usually by squeezing the hand shut for a few seconds\u2014the patch glows with a soft yellow light, enough to illuminate objects within a few centimetres clearly enough to perform intricate tasks without producing large amounts of light that would give the user's presence away.",
+    "effect": "At will, the user can generate a small amount of light from the palm of one hand.",
+    "value": 2,
+    "rarity": "Uncommon",
+    "keywords": [
+      "IMPERIUM",
+      "SCUM"
+    ],
+    "source": "apocrypha",
+    "page": 452
+  },
+  {
+    "id": "twitch_mask_aaa",
+    "name": "Twitch-mask",
+    "category": "augmetic",
+    "description": "A complex network of micro-servos and subskin synth-flesh dispensers, twitch-masks allow the user to adjust his facial features at will, altering shape and texture in a matter of moments. Rare and difficult to implant, they are nonetheless favoured by confidence tricksters and any others for whom being recognised is a liability.",
+    "effect": "You add +2 dice on all Deception tests made to pass yourself off as another person. You may increase this bonus to +4 dice by suffering 1 Shock when you assume the disguise.",
+    "value": 6,
+    "rarity": "Very Rare",
+    "keywords": [
+      "IMPERIUM",
+      "SCUM"
+    ],
+    "source": "apocrypha",
+    "page": 453
+  },
+  {
+    "id": "voidskin_aaa",
+    "name": "Voidskin",
+    "category": "augmetic",
+    "description": "Subdermal skin tissue is treated with flakweave and chemical toughening agents, such that the recipient can tolerate exposure to the void for longer before ill-effects occur. Synthetic chem-glands also help minimise tissue and pressure damage to internal tissues and absorb radiation.",
+    "effect": "The character gains a +3d bonus on all tests to resist the effects of exposure to hard vacuum, extreme cold, and radiation.",
+    "value": 4,
+    "rarity": "Uncommon",
+    "keywords": [
+      "IMPERIUM",
+      "ADEPTUS MECHANICUS",
+      "IMPERIAL NAVY"
+    ],
+    "source": "apocrypha",
+    "page": 453
+  },
+  {
+    "id": "cybork_body_aaa",
+    "name": "Cybork Body",
+    "category": "augmetic",
+    "description": "Sometimes Orks get critically injured in battle but survive to fight again later after an extensive rebuild that turns them in as much as a machine as an Ork \u2014 a Cybork. The Cybork Body is effectively a complete rebuild of the Orks body using crude cybernetics and bionic implants. Often made with built in armour plates and weaponry, this makes Orks extremely tough and able to shrug off hits that other fleshy Orks would be downed by.",
+    "effect": "Your Resilience and Determination are both increased by +2.",
+    "bonuses": {
+      "resilience": 2
+    },
+    "value": 5,
+    "rarity": "Rare",
+    "keywords": [
+      "ORK"
+    ],
+    "source": "apocrypha",
+    "page": 453
+  },
+  {
+    "id": "gyro_stabilised_monowheel_aaa",
+    "name": "Gyro-Stabilised Monowheel",
+    "category": "augmetic",
+    "description": "The Ork's legs have been entirely replaced with a single wheel, normally salvaged from a Bike or a smaller Trukk. Complex 'spinny gubbinz' allow the Ork to maintain balance upon this seemingly-precarious wheel, and the Ork will find that he can move much faster than before\u2026 so long as he doesn't run into any obstacles.",
+    "effect": "Your Speed is doubled. However, you can no longer climb ladders or stairs, and you can no longer jump without the aid of a ramp. Whenever you attempt to Run, Charge, or Sprint through Difficult Terrain, you must pass an Athletics test (DN 5) or suffer 1d3 Mortal Wounds as you crash.",
+    "value": 5,
+    "rarity": "Rare",
+    "keywords": [
+      "ORK"
+    ],
+    "source": "apocrypha",
+    "page": 453
+  },
+  {
+    "id": "spike_arm_aaa",
+    "name": "Spike Arm",
+    "category": "augmetic",
+    "description": "This appears to be a normal bionik arm\u2014by Ork standards, at least\u2014but conceals a number of retractable spikes and blades.",
+    "effect": "This is a normal Augmetic Arm, granting you +1 Strength. In addition, your unarmed attacks now deal 3+3ED damage, adding your Strength as normal to the damage rating.",
+    "bonuses": {
+      "strength": 1
+    },
+    "value": 5,
+    "rarity": "Rare",
+    "keywords": [
+      "ORK"
+    ],
+    "source": "apocrypha",
+    "page": 453
+  },
+  {
+    "id": "squig_attack_arm_aaa",
+    "name": "Squig Attack Arm",
+    "category": "augmetic",
+    "description": "This appears to be a normal bionik arm\u2014by Ork standards, at least\u2014but conceals a compartment containing a gnasher squig which is quite angry at being stuffed into a hidden compartment in a bionik arm. This can be opened quickly during a fight to surprise an opponent.",
+    "effect": "This is a normal Augmetic Arm, granting you +1 Strength. In addition, you may release the squig as free action on your turn. The squig immediately attacks the nearest creature of your choice within 1m (if there are no other creatures within 1m, it attacks you), rolling 6 dice for its Weapon Skill test. If it hits, it inflicts 8+4ED damage with the Inflict (Bleeding) trait. Whether or not it hits, the squig then flees, is killed, or skulks away with a chunk of fresh meat. You must load a new squig\u2014requiring a Survival test with a DN of 5\u2014during a Regroup or Respite to use this ability again; complications on this test may result in the squig biting you and escaping, as above.",
+    "bonuses": {
+      "strength": 1
+    },
+    "value": 5,
+    "rarity": "Rare",
+    "keywords": [
+      "ORK"
+    ],
+    "source": "apocrypha",
+    "page": 454
+  },
+  {
+    "id": "teleskopik_legz_aaa",
+    "name": "Teleskopik Legz",
+    "category": "augmetic",
+    "description": "These bionik legs conceal a mechanism of true Orky kunnin'. On command, the legs can extend a considerable distance, allowing their new owner to stride over tall obstacles or elevate himself to see over intervening terrain.",
+    "effect": "This is a normal pair of Augmetic Legs, granting you +2 Speed and +2m on any jump you perform. In addition, as a simple action, you may extend or retract the legs. When extended, the legs allow you to step over obstacles and gaps up to 2m tall or wide as part of your movement. In addition, when extended, your height is increased by 2m, which may allow you to see over tall obstacles (but may leave you exposed in turn).",
+    "bonuses": {
+      "speed": 2
+    },
+    "value": 5,
+    "rarity": "Rare",
+    "keywords": [
+      "ORK"
+    ],
+    "source": "apocrypha",
+    "page": 454
+  },
+  {
+    "id": "gnarlskin_aaa",
+    "name": "Gnarlskin",
+    "category": "augmetic",
+    "description": "Through esoteric treatments, experiments, and the sheer mass of scar tissue you have accumulated, your flesh has become tough and inured to injury.",
+    "effect": "You gain +2 Resilience.",
+    "bonuses": {
+      "resilience": 2
+    },
+    "value": 5,
+    "rarity": "Rare",
+    "keywords": [
+      "DRUKHARI"
+    ],
+    "source": "apocrypha",
+    "page": 454
+  },
+  {
+    "id": "osseous_barbs_aaa",
+    "name": "Osseous Barbs",
+    "category": "augmetic",
+    "description": "Your body is marked with razor-sharp bony growths along your limbs and spine. While normally these growths only protrude a little from your flesh, you can consciously extend them as desired.",
+    "effect": "Your unarmed attacks inflict 2 +3ED damage, adding your Strength score to the base damage as normal. In addition, when you extend the spines, you add +1 bonus die to all Intimidation tests.",
+    "value": 6,
+    "rarity": "Rare",
+    "keywords": [
+      "DRUKHARI"
+    ],
+    "source": "apocrypha",
+    "page": 454
+  },
+  {
+    "id": "vitriolic_humours_aaa",
+    "name": "Vitriolic Humours",
+    "category": "augmetic",
+    "description": "Your vital fluids have been made extremely efficient, allowing you to maintain full function even while injured. As a side effect of that, those same fluids are now extremely corrosive. Thankfully, you are immune to the corrosive effects of the ichor that now pumps through your veins.",
+    "effect": "You no longer suffer any DN increase to tests while Wounded, and your Max Wounds and Max Shock are both increased by +1. In addition, whenever you suffer damage from a melee attack, roll a d6; on an Icon, the attacker suffers a Mortal Wound from the corrosive ichor that spurts from the wound. This increases to d3 Mortal Wounds if the damage inflicted the Bleeding condition. You are also immune to the Poisoned condition and disease. As a result of this, getting any medical treatment is far more difficult and dangerous. Any Medicae Test made on you suffers a +2 DN penalty, and if a Complication occurs, you spray blood exactly as if injured.",
+    "value": 6,
+    "rarity": "Rare",
+    "keywords": [
+      "DRUKHARI"
+    ],
+    "source": "apocrypha",
+    "page": 455
+  },
+  {
+    "id": "wings_aaa",
+    "name": "Wings",
+    "category": "augmetic",
+    "description": "You have undergone the exquisite and excruciating transformation to allow you to fly. The most obvious part of this is the broad leather or feathered wings that spread from your back, but the transformation runs much deeper, with surgical, bio-alchemical, and genetic alterations that have rebuilt your entire body.",
+    "effect": "You can fly at twice your walking Speed, though you cannot fly if you are wearing armour which lacks the LIGHT keyword. However, the process of granting you flight has left your body fragile, reducing your Resilience by 1.",
+    "bonuses": {
+      "resilience": -1
+    },
+    "value": 7,
+    "rarity": "Very Rare",
+    "keywords": [
+      "DRUKHARI"
+    ],
+    "source": "apocrypha",
+    "page": 455
   }
 ]

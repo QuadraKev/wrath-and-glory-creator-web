@@ -10,6 +10,7 @@ const ReferencesTab = {
         { key: 'talents', name: 'Talent', pluralName: 'Talents' },
         { key: 'weapons', name: 'Weapon', pluralName: 'Weapons' },
         { key: 'armor', name: 'Armor', pluralName: 'Armor' },
+        { key: 'augmetics', name: 'Augmetic', pluralName: 'Augmetics' },
         { key: 'equipment', name: 'Equipment', pluralName: 'Equipment' },
         { key: 'psychicPowers', name: 'Psychic Power', pluralName: 'Psychic Powers' },
         { key: 'weaponUpgrades', name: 'Weapon Upgrade', pluralName: 'Weapon Upgrades' },
@@ -68,14 +69,22 @@ const ReferencesTab = {
             });
         }
 
-        // Equipment
+        // Augmetics & Equipment
         for (const e of DataLoader.getAllEquipment()) {
-            const catLabel = e.category ? e.category.charAt(0).toUpperCase() + e.category.slice(1) : '';
-            this.allEntries.push({
-                ...e, category: 'equipment', categoryName: 'Equipment', categoryPluralName: 'Equipment',
-                briefInfo: catLabel,
-                searchText: `${e.name} ${e.description || ''} ${e.effect || ''}`.toLowerCase()
-            });
+            if (e.category === 'augmetic') {
+                this.allEntries.push({
+                    ...e, category: 'augmetics', categoryName: 'Augmetic', categoryPluralName: 'Augmetics',
+                    briefInfo: 'Augmetic',
+                    searchText: `${e.name} ${e.description || ''} ${e.effect || ''}`.toLowerCase()
+                });
+            } else {
+                const catLabel = e.category ? e.category.charAt(0).toUpperCase() + e.category.slice(1) : '';
+                this.allEntries.push({
+                    ...e, category: 'equipment', categoryName: 'Equipment', categoryPluralName: 'Equipment',
+                    briefInfo: catLabel,
+                    searchText: `${e.name} ${e.description || ''} ${e.effect || ''}`.toLowerCase()
+                });
+            }
         }
 
         // Psychic Powers
@@ -320,6 +329,9 @@ const ReferencesTab = {
             case 'armor':
                 html += this.renderArmorBody(entry);
                 break;
+            case 'augmetics':
+                html += this.renderAugmeticBody(entry);
+                break;
             case 'equipment':
                 html += this.renderEquipmentBody(entry);
                 break;
@@ -431,6 +443,31 @@ const ReferencesTab = {
         let html = '<div class="ref-stats">';
         if (entry.effect) {
             html += `<div class="ref-stat"><span class="ref-label">Effect:</span> ${entry.effect}</div>`;
+        }
+        html += `<div class="ref-stat"><span class="ref-label">Value:</span> ${entry.value} &nbsp; <span class="ref-label">Rarity:</span> ${entry.rarity}</div>`;
+        html += '</div>';
+        if (entry.description) {
+            html += `<div class="glossary-entry-description">${entry.description}</div>`;
+        }
+        return html;
+    },
+
+    renderAugmeticBody(entry) {
+        let html = '<div class="ref-stats">';
+        if (entry.effect) {
+            html += `<div class="ref-stat"><span class="ref-label">Effect:</span> ${entry.effect}</div>`;
+        }
+        if (entry.bonuses) {
+            const parts = Object.entries(entry.bonuses).map(([key, val]) => {
+                const label = key.charAt(0).toUpperCase() + key.slice(1);
+                return `${val > 0 ? '+' : ''}${val} ${label}`;
+            });
+            if (parts.length > 0) {
+                html += `<div class="ref-stat"><span class="ref-label">Bonuses:</span> ${parts.join(', ')}</div>`;
+            }
+        }
+        if (entry.keywords?.length > 0) {
+            html += `<div class="ref-stat"><span class="ref-label">Keywords:</span> ${entry.keywords.join(', ')}</div>`;
         }
         html += `<div class="ref-stat"><span class="ref-label">Value:</span> ${entry.value} &nbsp; <span class="ref-label">Rarity:</span> ${entry.rarity}</div>`;
         html += '</div>';
