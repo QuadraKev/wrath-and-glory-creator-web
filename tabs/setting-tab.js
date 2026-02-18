@@ -1,4 +1,4 @@
-// Setting Tab - Character name, tier, rank, and source book selection
+// Setting Tab - Character name, tier, rank, and campaign settings
 
 const SettingTab = {
     init() {
@@ -26,58 +26,6 @@ const SettingTab = {
         document.getElementById('setting-desc').addEventListener('input', (e) => {
             State.setSetting(e.target.value);
         });
-
-        // Source book checkboxes
-        this.initSourceBooks();
-    },
-
-    initSourceBooks() {
-        const sourceMap = {
-            'source-core': 'core',
-            'source-forsaken': 'fspg',
-            'source-redacted1': 'redacted1',
-            'source-redacted2': 'redacted2',
-            'source-church': 'church',
-            'source-vow': 'voa',
-            'source-aeldari': 'aeldari',
-            'source-apocrypha': 'apocrypha',
-            'source-dh': 'dh',
-            'source-shotguns': 'shotguns'
-        };
-
-        for (const [elementId, sourceId] of Object.entries(sourceMap)) {
-            const checkbox = document.getElementById(elementId);
-            if (checkbox && !checkbox.disabled) {
-                checkbox.addEventListener('change', () => {
-                    this.updateEnabledSources();
-                });
-            }
-        }
-    },
-
-    updateEnabledSources() {
-        const sources = ['core']; // Core is always enabled
-
-        const sourceMap = {
-            'source-forsaken': 'fspg',
-            'source-redacted1': 'redacted1',
-            'source-redacted2': 'redacted2',
-            'source-church': 'church',
-            'source-vow': 'voa',
-            'source-aeldari': 'aeldari',
-            'source-apocrypha': 'apocrypha',
-            'source-dh': 'dh',
-            'source-shotguns': 'shotguns'
-        };
-
-        for (const [elementId, sourceId] of Object.entries(sourceMap)) {
-            const checkbox = document.getElementById(elementId);
-            if (checkbox && checkbox.checked) {
-                sources.push(sourceId);
-            }
-        }
-
-        State.setEnabledSources(sources);
     },
 
     refresh() {
@@ -89,26 +37,5 @@ const SettingTab = {
         document.getElementById('character-rank').value = character.rank || 1;
         document.getElementById('tier-select').value = character.tier || 1;
         document.getElementById('setting-desc').value = character.setting || '';
-
-        // Update source book checkboxes
-        const sources = State.enabledSources;
-        const sourceMap = {
-            'source-forsaken': 'fspg',
-            'source-redacted1': 'redacted1',
-            'source-redacted2': 'redacted2',
-            'source-church': 'church',
-            'source-vow': 'voa',
-            'source-aeldari': 'aeldari',
-            'source-apocrypha': 'apocrypha',
-            'source-dh': 'dh',
-            'source-shotguns': 'shotguns'
-        };
-
-        for (const [elementId, sourceId] of Object.entries(sourceMap)) {
-            const checkbox = document.getElementById(elementId);
-            if (checkbox) {
-                checkbox.checked = sources.includes(sourceId);
-            }
-        }
     }
 };

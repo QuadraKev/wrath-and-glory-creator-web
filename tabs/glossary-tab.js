@@ -71,11 +71,16 @@ const GlossaryTab = {
         this.renderEntries();
     },
 
-    // Filter entries based on search and category
+    // Filter entries based on search, category, and source
     getFilteredEntries() {
         return this.allEntries.filter(entry => {
             // Category filter
             if (this.currentCategory !== 'all' && entry.category !== this.currentCategory) {
+                return false;
+            }
+
+            // Source filter — entries with a source must pass; entries without source always pass
+            if (entry.source && !State.isSourceEnabled(entry.source)) {
                 return false;
             }
 

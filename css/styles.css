@@ -424,21 +424,44 @@ textarea {
     display: block;
 }
 
-.checkbox-label .source-desc {
-    font-size: 12px;
-    color: var(--text-muted);
-}
-
 .checkbox-label.inline {
     display: inline-flex;
     padding: 5px 10px;
 }
 
-/* ===== Source Books ===== */
-.source-books {
+/* ===== Filter Buttons (source book toggles) ===== */
+.filter-btn-group {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 4px;
+}
+
+.filter-btn {
+    width: 100%;
+    padding: 5px 12px;
+    text-align: left;
+    background: var(--bg-card);
+    color: var(--text-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    font-size: 12px;
+    transition: all 0.2s;
+}
+
+.filter-btn:hover {
+    border-color: var(--accent-gold);
+}
+
+.filter-btn.active {
+    background: var(--accent-gold);
+    color: var(--bg-primary);
+    border-color: var(--accent-gold);
+}
+
+/* ===== Settings Tab ===== */
+.settings-content {
+    max-width: 600px;
 }
 
 /* ===== Card Grid ===== */
@@ -4155,12 +4178,6 @@ textarea {
     .builder-section h2,
     .tab-fullwidth h2 {
         font-size: 20px;
-    }
-
-    /* Source books: smaller */
-    .source-books .checkbox-label {
-        padding: 8px;
-        font-size: 12px;
     }
 
     /* Talents/Powers: stack columns */
