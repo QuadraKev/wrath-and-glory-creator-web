@@ -137,6 +137,7 @@ Source material PDFs are available locally for reference:
 14. **Ascension enhancements**: Mechanical effects for packages (auto-grant talents/powers/keywords/disciplines), package choice UI (Demanding Patron), archetype ascension stat prereqs + ability descriptions + wargear buttons, prereq gating for both packages and archetypes
 15. **Source book + page annotations**: Every data item annotated with source book + page number. `DataLoader.formatSourcePage()` / `getSourceDisplayName()`. Glossary entries also annotated.
 16. **Mobile layout fixes**: `#app` uses `position: fixed; inset: 0` instead of `height: 100vh`. Header/tab-nav/footer use `flex-shrink: 0`. Scroll chaining prevented with `overscroll-behavior: contain`. Tab nav scrollbar hidden. Sidebar-backdrop moved inside `#app` (required for stacking context).
+17. **Comprehensive data audit**: Visual PDF audit of all 12 data files across all 10 sources (988 entries). Found and fixed 1,184 issues: 251 wrong values, 342 fabricated entries, 305 truncated texts, 286 minor wording differences. Fixes include: ability renames (49 Apocrypha + 5 Core), psychic power renames (Minor Invocation→Malefic Invitation, Warpspeed→Warptime), Kin species subOption corrections, `[AI-Generated]` annotations for entries with no source PDF text, and glossary sync to bestiary. Audit reports stored in `audit-reports-v2/`.
 
 ## Builder Section Order
 
