@@ -2052,41 +2052,31 @@
       "options": [
         {
           "id": "fortified_constitution",
-          "name": "Fortified Constitution",
+          "name": "Thermographic Vision",
           "abilities": [
             {
-              "name": "Fortified Constitution",
+              "name": "Thermographic Vision",
               "effect": "You ignore penalties or DN increases on skill tests due to visual conditions, as if you were wearing Preysense Goggles."
             }
           ]
         },
         {
           "id": "enhanced_cognition",
-          "name": "Enhanced Cognition",
+          "name": "Heightened Reflexes",
           "abilities": [
             {
-              "name": "Enhanced Cognition",
+              "name": "Heightened Reflexes",
               "effect": "In combat, each round, if you have not yet acted, your side may Keep the Initiative without spending Ruin, but only if you are the next character to act."
             }
           ]
         },
         {
           "id": "warrior_instincts",
-          "name": "Warrior Instincts",
+          "name": "Void-Hardened",
           "abilities": [
             {
-              "name": "Warrior Instincts",
+              "name": "Void-Hardened",
               "effect": "You gain +2 bonus dice on all Toughness tests to resist the effects of suffocation, extreme heat and cold, and radiation."
-            }
-          ]
-        },
-        {
-          "id": "heightened_senses",
-          "name": "Heightened Senses",
-          "abilities": [
-            {
-              "name": "Heightened Senses",
-              "effect": "You gain +1d on all Awareness tests."
             }
           ]
         }
