@@ -127,28 +127,40 @@ const ReferencesTab = {
             }
         }
 
-        // Species Abilities
+        // Species Abilities — collect then deduplicate (same chapter/path abilities
+        // appear under multiple species, e.g. Adeptus Astartes + Primaris Astartes)
+        const speciesAbilityMap = new Map();
+
         for (const sp of DataLoader.getAllSpecies()) {
+            // Direct species abilities
             if (sp.abilities) {
                 for (const ability of sp.abilities) {
                     const text = ability.effect || ability.description || '';
-                    this.allEntries.push({
-                        id: `${sp.id}_ability_${ability.name.toLowerCase().replace(/[^a-z0-9]+/g, '_')}`,
-                        name: ability.name,
-                        description: text,
-                        source: sp.source,
-                        page: sp.page,
-                        parentName: sp.name,
-                        category: 'speciesAbilities',
-                        categoryName: 'Species Ability',
-                        categoryPluralName: 'Species Abilities',
-                        briefInfo: `From: ${sp.name}`,
-                        searchText: `${ability.name} ${text} ${sp.name}`.toLowerCase()
-                    });
+                    const dedupKey = ability.name.toLowerCase() + '\n' + text.toLowerCase();
+
+                    if (speciesAbilityMap.has(dedupKey)) {
+                        const existing = speciesAbilityMap.get(dedupKey);
+                        if (!existing._parents.includes(sp.name)) {
+                            existing._parents.push(sp.name);
+                        }
+                    } else {
+                        speciesAbilityMap.set(dedupKey, {
+                            id: `${sp.id}_ability_${ability.name.toLowerCase().replace(/[^a-z0-9]+/g, '_')}`,
+                            name: ability.name,
+                            description: text,
+                            source: sp.source,
+                            page: sp.page,
+                            category: 'speciesAbilities',
+                            categoryName: 'Species Ability',
+                            categoryPluralName: 'Species Abilities',
+                            _parents: [sp.name],
+                            _subOptionName: null
+                        });
+                    }
                 }
             }
 
-            // Sub-option abilities (homeworld, chapter, etc.)
+            // Sub-option abilities (homeworld, chapter, sept, etc.)
             const subOptions = sp.subOptions;
             if (subOptions) {
                 const configs = Array.isArray(subOptions) ? subOptions : [subOptions];
@@ -158,25 +170,49 @@ const ReferencesTab = {
                             if (opt.abilities) {
                                 for (const ability of opt.abilities) {
                                     const text = ability.effect || ability.description || '';
-                                    this.allEntries.push({
-                                        id: `${sp.id}_${opt.id}_ability_${ability.name.toLowerCase().replace(/[^a-z0-9]+/g, '_')}`,
-                                        name: ability.name,
-                                        description: text,
-                                        source: sp.source,
-                                        page: sp.page,
-                                        parentName: `${sp.name} \u2014 ${opt.name}`,
-                                        category: 'speciesAbilities',
-                                        categoryName: 'Species Ability',
-                                        categoryPluralName: 'Species Abilities',
-                                        briefInfo: `From: ${opt.name}`,
-                                        searchText: `${ability.name} ${text} ${sp.name} ${opt.name}`.toLowerCase()
-                                    });
+                                    const dedupKey = ability.name.toLowerCase() + '\n' + text.toLowerCase();
+
+                                    if (speciesAbilityMap.has(dedupKey)) {
+                                        const existing = speciesAbilityMap.get(dedupKey);
+                                        if (!existing._parents.includes(sp.name)) {
+                                            existing._parents.push(sp.name);
+                                        }
+                                    } else {
+                                        speciesAbilityMap.set(dedupKey, {
+                                            id: `${sp.id}_${opt.id}_ability_${ability.name.toLowerCase().replace(/[^a-z0-9]+/g, '_')}`,
+                                            name: ability.name,
+                                            description: text,
+                                            source: sp.source,
+                                            page: sp.page,
+                                            category: 'speciesAbilities',
+                                            categoryName: 'Species Ability',
+                                            categoryPluralName: 'Species Abilities',
+                                            _parents: [sp.name],
+                                            _subOptionName: opt.name
+                                        });
+                                    }
                                 }
                             }
                         }
                     }
                 }
             }
+        }
+
+        // Finalize species abilities with merged parent names
+        for (const entry of speciesAbilityMap.values()) {
+            const parentList = entry._parents.join(', ');
+            if (entry._subOptionName) {
+                entry.parentName = `${entry._subOptionName} (${parentList})`;
+                entry.briefInfo = `From: ${entry._subOptionName}`;
+            } else {
+                entry.parentName = parentList;
+                entry.briefInfo = `From: ${parentList}`;
+            }
+            entry.searchText = `${entry.name} ${entry.description} ${entry.parentName}`.toLowerCase();
+            delete entry._parents;
+            delete entry._subOptionName;
+            this.allEntries.push(entry);
         }
 
         // Mutations
