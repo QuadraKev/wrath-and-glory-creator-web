@@ -96,6 +96,10 @@ The Character Sheet tab (`tabs/character-sheet-tab.js`) uses a responsive 2-colu
 
 On screens <1400px, `.sheet-body` is not a grid and the two divs stack vertically. The `.sheet-columns` sub-grid within the left column goes single-column at <=768px.
 
+## Mobile Layout
+
+`#app` uses `position: fixed; inset: 0` (NOT `height: 100vh`) to fill the viewport. This avoids the iOS Safari bug where `100vh` is taller than the visible area. The header, tab-nav, and footer all have `flex-shrink: 0` to prevent compression. The `.content` area uses `overscroll-behavior: contain` to prevent scroll chaining. At <=768px, the sidebar becomes a fixed drawer (`position: fixed; transform: translateX(-100%)`) toggled by the hamburger button.
+
 ## Glossary
 
 The glossary (`data/glossary.json`) should be kept in sync with the bestiary app's glossary. Both apps share identical categories: `characterTerms`, `conditions`, `combatTerms`, `terms`, `weaponTraits`, `armorTraits`, `keywords`, `psychicPowers`. If new terms are added to one app, copy them to the other.
@@ -131,6 +135,8 @@ Source material PDFs are available locally for reference:
 12. **Wide-screen character sheet layout**: 2-column body (left: stats/abilities/talents, right: wargear) on >=1400px viewports
 13. **Ascension system**: Slot-based ascension with package/archetype choice per tier, effective tier tracking, fixed XP/influence/derived stat calculations, backward compat migration from old format
 14. **Ascension enhancements**: Mechanical effects for packages (auto-grant talents/powers/keywords/disciplines), package choice UI (Demanding Patron), archetype ascension stat prereqs + ability descriptions + wargear buttons, prereq gating for both packages and archetypes
+15. **Source book + page annotations**: Every data item annotated with source book + page number. `DataLoader.formatSourcePage()` / `getSourceDisplayName()`. Glossary entries also annotated.
+16. **Mobile layout fixes**: `#app` uses `position: fixed; inset: 0` instead of `height: 100vh`. Header/tab-nav/footer use `flex-shrink: 0`. Scroll chaining prevented with `overscroll-behavior: contain`. Tab nav scrollbar hidden. Sidebar-backdrop moved inside `#app` (required for stacking context).
 
 ## Builder Section Order
 
