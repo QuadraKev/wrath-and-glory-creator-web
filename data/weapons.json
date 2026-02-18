@@ -27,7 +27,7 @@
     "name": "Psykana Mercy Blade",
     "type": "melee",
     "category": "Low-Tech",
-    "description": "Sanctioned Psykers are provided with a sharp blade, a last resort for those whose powers go beyond their control. Should the unfortunate face the tragedy of imminent daemonic possession, the blade offers them a last, merciful escape. A Psykana Mercy Blade has the same profile as a Knife, but has AP -1 and the ADEPTUS ASTRA TELEPATHICA Keyword.",
+    "description": "Sanctioned Psykers are provided with a sharp blade, a last resort for those whose powers go beyond their control. Should the unfortunate face the tragedy of imminent daemonic possession, the blade offers them a last, merciful escape. Vigilante ‘Witch Hunters’ operating across the Gilead System see these blades as a great prize, and flaunt these spoils of their hunts when in private. A Psykana Mercy Blade has the same profile as a Knife, but has AP –1 and the ADEPTUS ASTRA TELEPATHICA Keyword.",
     "damage": {
       "base": 2,
       "attribute": "strength",
@@ -75,7 +75,7 @@
     "name": "Chainsword",
     "type": "melee",
     "category": "Chain",
-    "description": "Despite their brutal appearance and distinctive rasping roar, Chainswords require training to be most effective. A duel between two trained Chainsword wielders is a sight to behold, as they alter the speed and direction of the spinning teeth to counter, parry, and ultimately overcome their opponent with savage grace.",
+    "description": "Despite their brutal appearance and distinctive rasping roar, Chainswords — sometimes referred to as ‘Chainblades’ — require training to be most effective. A duel between two trained Chainsword wielders is a sight to behold, as they alter the speed and direction of the spinning teeth to counter, parry, and ultimately overcome their opponent with savage grace.",
     "damage": {
       "base": 5,
       "attribute": "strength",
@@ -128,7 +128,7 @@
     "name": "Death Cult Power Blade",
     "type": "melee",
     "category": "Power",
-    "description": "These matched pairs of slender Power Blades are wielded by Death Cult Assassins. Each is perfectly balanced for speed and precision, allowing the wielder to strike with blinding swiftness.",
+    "description": "Carried by Death Cult assassins, these slender blades may lack the reach and weight of other power weapons, but the energy fields they project are just as capable of scything through matter.",
     "damage": {
       "base": 5,
       "attribute": "strength",
@@ -154,7 +154,7 @@
     "name": "Power Axe",
     "type": "melee",
     "category": "Power",
-    "description": "Similar in design and function to a Power Sword, the Power Axe trades the finesse of a blade for the heavy, bone-crushing impact of an axe head. The disruption field that wreathes the head allows it to cleave through armour and bone alike.",
+    "description": "A Power Axe cuts with the force of a lightning bolt, cleaving through armour and sundering limb from body like a woodcutter splitting logs.",
     "damage": {
       "base": 6,
       "attribute": "strength",
@@ -179,7 +179,7 @@
     "name": "Force Stave",
     "type": "melee",
     "category": "Force",
-    "description": "Though many Force weapons take on a similar form to their mundane counterparts, the Force Stave is designed specifically to work as a psychic conduit. When wielded by a psyker, the stave becomes an extension of their will, crackling with warp energy.",
+    "description": "Force Staves are laced with a complex psy-matrix that allows them to act as a psychic battery, storing psychic energy that can be released with brutal efficiency.",
     "damage": {
       "base": 5,
       "attribute": "strength",
@@ -206,7 +206,7 @@
     "name": "Choppa",
     "type": "melee",
     "category": "Ork",
-    "description": "A Choppa is usually little more than a chunk of metal with an edge hacked and filed into one side. Orks wield these brutal weapons with enthusiasm, making up for any lack of craftsmanship with sheer ferocity.",
+    "description": "Often the first weapon a young Ork ever wields, Choppas are simple weighty blades that combine with an Ork's natural strength to reduce enemy infantry to a grizzly pulp.",
     "damage": {
       "base": 5,
       "attribute": "strength",
@@ -231,7 +231,7 @@
     "name": "Kustom Choppa",
     "type": "melee",
     "category": "Ork",
-    "description": "A Kustom Choppa has been worked over by a Mekboy, strengthened and sharpened until it is deadlier than its more common counterparts. Some feature power fields, buzzing teeth, or other 'improvements'.",
+    "description": "[AI-Generated] A Kustom Choppa has been worked over by a Mekboy, strengthened and sharpened until it is deadlier than its more common counterparts. Some feature power fields, buzzing teeth, or other 'improvements'.",
     "damage": {
       "base": 6,
       "attribute": "strength",
@@ -256,7 +256,7 @@
     "name": "Witchblade",
     "type": "melee",
     "category": "Aeldari",
-    "description": "A Witchblade is a masterwork of Aeldari craftsmanship — a blade that resonates with the psychic power of its wielder. In the hands of a psyker, the blade's edge becomes impossibly sharp, slicing through armour as though it were gossamer.",
+    "description": "Carried by Warlocks and Farseers, Witchblades channel their wielder's psychic energies to slice through physical and Warp-born matter easily.",
     "damage": {
       "base": 5,
       "attribute": "strength",
@@ -283,7 +283,7 @@
     "name": "Omnissian Axe",
     "type": "melee",
     "category": "Power",
-    "description": "More a symbol of office than a weapon, the Omnissian Axe is nonetheless a potent tool of war. These two-handed power axes are wielded by Tech-Priests as both sacred icons of the Machine God and as formidable weapons.",
+    "description": "Symbolic of the power of the Machine God, the Omnissian Axe is emblazoned with Mechanicus icons and cogwheel iconography.",
     "damage": {
       "base": 6,
       "attribute": "strength",
@@ -308,7 +308,7 @@
     "name": "Chain Bayonet",
     "type": "melee",
     "category": "Chain",
-    "description": "Mounted beneath the barrel of a ranged weapon, a Chain Bayonet allows its user to make devastating close-range attacks. The roaring teeth tear through flesh and light armour with equal ease.",
+    "description": "At the cost of a dramatic increase in a rifle's weight, an underslung Chain Bayonet can offer a swift and gory end to any foes that close upon its wielder.",
     "damage": {
       "base": 4,
       "attribute": "strength",
@@ -382,7 +382,7 @@
     "name": "Laspistol",
     "type": "ranged",
     "category": "Las",
-    "description": "Small, easy to handle and reliable, Laspistols are the go-to sidearm for countless souls. The snapping retort of the humble Laspistol can be heard echoing across the battlefields and back alleys of the Imperium, often serving as the final holdout for the great and small.",
+    "description": "Small, easy to handle and reliable, Laspistols are the go-to sidearm for countless souls. The snapping retort of the humble Laspistol can be heard echoing across the battlefields and back alleys of the Imperium, often serving as the final holdout for the great and small. One final spark to fight back the darkness.",
     "damage": {
       "base": 7,
       "attribute": null,
@@ -446,7 +446,7 @@
     "name": "Hot-Shot Lasgun",
     "type": "ranged",
     "category": "Las",
-    "description": "Favoured by elite forces who value penetrating power over volume of fire, the Hot-Shot Lasgun trades ammunition capacity for increased damage output. The searing beams can punch through armour that would stop a regular lasgun shot.",
+    "description": "By removing several safety mechanisms and forcing a more intense stream of light through a reinforced barrel, the Hot-Shot Lasgun or 'Hellgun' is born. Hot-Shot Lasguns spout searing beams of blinding light that punch through reinforced plasteel and flesh. Yet this increased power reduces the weapon's effective range and necessitates bulky power packs. Hot-Shot Lasguns are often carried by heavily armoured shock troops, specifically tasked with storming fortified positions.",
     "damage": {
       "base": 9,
       "attribute": null,
@@ -478,7 +478,7 @@
     "name": "Hot-Shot Laspistol",
     "type": "ranged",
     "category": "Las",
-    "description": "A smaller, more compact version of the Hot-Shot Lasgun, favoured by officers and specialists who need a sidearm with genuine stopping power. Though limited in range, its armour-piercing capabilities make it a valued backup weapon.",
+    "description": "Also called 'Hellpistols', these upgraded Las weapons trade superior firepower for range and bulk. Crucially, the battery pack for a Hellpistol can be worn in a sling or belt rig. Their compact size leaving one hand free makes Hellpistols popular among officers and warriors who prefer to see the fear in their enemies eyes up close and personal.",
     "damage": {
       "base": 8,
       "attribute": null,
@@ -510,7 +510,7 @@
     "name": "Autopistol",
     "type": "ranged",
     "category": "Solid Projectile",
-    "description": "From cheap, mass-produced revolvers to sophisticated automatic pistols, Autopistols are a common sight throughout the galaxy. They fire solid slugs propelled by chemical propellants, and are valued for their simplicity and reliability.",
+    "description": "The distinctive rattling bark of an Autopistol fired in anger is an all-too-common sound in the back alleys of Imperial society. Firing smaller calibre rounds than an Autogun, one squeeze of the trigger can spray an entire magazine at an unsuspecting foe.",
     "damage": {
       "base": 7,
       "attribute": null,
@@ -540,7 +540,7 @@
     "name": "Autogun",
     "type": "ranged",
     "category": "Solid Projectile",
-    "description": "The Autogun is a solid projectile weapon that fires metal slugs from a high-capacity magazine. Though lacking the stopping power of more advanced weapons, Autoguns are cheap to produce and easy to maintain.",
+    "description": "Easy to make and simple to use, Autoguns are the weapon of choice on countless Imperial worlds. Their ruggedness and abundant ammunition make them ideal for hive gangs and other lowlife scum who delight in the noise and carnage of slinging hot lead.",
     "damage": {
       "base": 7,
       "attribute": null,
@@ -634,7 +634,7 @@
     "name": "Heavy Bolt Pistol",
     "type": "ranged",
     "category": "Bolt",
-    "description": "Wielded by Primaris Marines and other elite warriors, the Heavy Bolt Pistol fires larger, more powerful rounds than its predecessor. The increased calibre delivers devastating impact at close range.",
+    "description": "These huge handguns were forged to fit the prodigious palms of the Primaris Astartes, dwarfing other pistols in terms of size and destructive potential.",
     "damage": {
       "base": 12,
       "attribute": null,
@@ -666,7 +666,7 @@
     "name": "Bolt Rifle",
     "type": "ranged",
     "category": "Bolt",
-    "description": "The standard weapon of Primaris Intercessors, the Bolt Rifle combines extended range with the brutal stopping power of bolt weaponry. Each round is a miniature rocket that detonates within its target.",
+    "description": "Crafted by Archmagos Dominus Belisarius Cawl, the Mark II Bolt Rifle is the warforged evolution of the Astartes' most iconic armament. Firing high calibre bolts with enhanced range and armour penetration, these oversized Boltguns are already birthing legends that compete with their long-venerated ancestors.",
     "damage": {
       "base": 12,
       "attribute": null,
@@ -698,7 +698,7 @@
     "name": "Shoota",
     "type": "ranged",
     "category": "Ork",
-    "description": "Shootas are large, loud, and inaccurate weapons that make up for their lack of precision with volume of fire. The signature weapon of Ork Boyz, a Shoota spits out a hail of large-calibre rounds.",
+    "description": "The most common class of Ork firearm, these cumbersome scrap-built rifles are part club, part machinegun. They vomit walls of inaccurate, high-calibre rounds with a deafening retort often referred to as 'Dakka' by their Greenskin owners.",
     "damage": {
       "base": 8,
       "attribute": null,
@@ -729,7 +729,7 @@
     "name": "Slugga",
     "type": "ranged",
     "category": "Ork",
-    "description": "A Slugga is a simple, brutish weapon that fires solid ammunition using primitive chemical propellants. Orks favour Sluggas for their satisfying bang and the intimidating size of the rounds they fire.",
+    "description": "These large pistols are loud and crude. They fire ammunition so overstuffed with gunpowder they are nearly useless at all but point-blank range.",
     "damage": {
       "base": 8,
       "attribute": null,
@@ -760,7 +760,7 @@
     "name": "Kustom Slugga",
     "type": "ranged",
     "category": "Ork",
-    "description": "A Kustom Slugga has been modified by a Mekboy with bigger barrels, more dakka, and whatever other 'improvements' the Ork deemed necessary. The result is louder, shootier, and more likely to blow up in your face.",
+    "description": "[AI-Generated] A Kustom Slugga has been modified by a Mekboy with bigger barrels, more dakka, and whatever other 'improvements' the Ork deemed necessary. The result is louder, shootier, and more likely to blow up in your face.",
     "damage": {
       "base": 10,
       "attribute": null,
@@ -791,7 +791,7 @@
     "name": "Shuriken Pistol",
     "type": "ranged",
     "category": "Aeldari",
-    "description": "Shuriken Pistols fire volleys of razor-sharp monomolecular discs capable of slicing through flesh and armour alike. Though small, these elegant weapons are deadly in skilled hands.",
+    "description": "With their ease of use and almost non-existent recoil, Shuriken Pistols are often seen in the hands of Aeldari for whom a precision burst of close range shurikens could guarantee victory.",
     "damage": {
       "base": 8,
       "attribute": null,
@@ -823,7 +823,7 @@
     "name": "Shuriken Catapult",
     "type": "ranged",
     "category": "Aeldari",
-    "description": "The Shuriken Catapult is the primary weapon of Aeldari Guardians, firing a stream of crystalline shuriken that can slice through armour with ease. The weapon uses a gravitic accelerator to launch its deadly projectiles.",
+    "description": "These elegant rifles shear and fire hundreds of molecule-thick disks from their solid ammunition core in the blink of an eye, overwhelming foes in a storm of impossibly sharp projectiles that scythe through flesh and bone with ease.",
     "damage": {
       "base": 9,
       "attribute": null,
@@ -855,7 +855,7 @@
     "name": "Lasblaster",
     "type": "ranged",
     "category": "Aeldari",
-    "description": "Lasblasters are lightweight laser weapons used by Aeldari Corsairs and other light infantry. Though less powerful than shuriken weapons, they offer superior range and are easier to maintain.",
+    "description": "These laser-powered assault weapons use psychically attuned crystal prisms to focus brilliant beams of punishing light along their reflective barrels. When discharged, they lance clean through their targets in blood speckled display of chromatic beauty and annihilation.",
     "damage": {
       "base": 8,
       "attribute": null,
@@ -886,7 +886,7 @@
     "name": "Ranger Long Rifle",
     "type": "ranged",
     "category": "Aeldari",
-    "description": "Used by Aeldari Rangers who have chosen to walk the Path of the Outcast, these long-barrelled rifles fire a single, devastatingly accurate shot. The weapon is designed for patient hunters who prefer to kill from afar.",
+    "description": "Laboriously grown and hand-sculpted by Aeldar Bonesingers, every Long Rifle is a work of exquisite art, perfectly designed for a sole Aeldari Ranger. Gyrostatic stabilisers eliminate any recoil, and enigmatic crystal technology casts coherent beams of deadly light across the battlefield with pinpoint accuracy.",
     "damage": {
       "base": 10,
       "attribute": null,
@@ -917,7 +917,7 @@
     "name": "Radium Pistol",
     "type": "ranged",
     "category": "Rad",
-    "description": "Radium weapons fire solid shells laced with radioactive isotopes. Even a near miss can prove fatal as the radiation poisons the target over time. The weapons are as dangerous to their wielders as their targets.",
+    "description": "As beautiful and ruinous as other Radium weapons, Radium Pistols are used almost exclusively by the Skitarii forces, to whom the cancerous touch of radiation is just another of the Omnissiah's blessings.",
     "damage": {
       "base": 7,
       "attribute": null,
@@ -949,7 +949,7 @@
     "name": "Hand Cannon",
     "type": "ranged",
     "category": "Solid Projectile",
-    "description": "Hand Cannons are oversized pistols that fire heavy-calibre rounds with tremendous stopping power. Though the recoil can be punishing for untrained users, the damage they deal is devastating.",
+    "description": "Various patterns for heavy, high-calibre pistols exist throughout the Imperium. Many scum refer to such weapons as 'hand cannons', due to the deafening report and devastating brute force damage they cause.",
     "damage": {
       "base": 9,
       "attribute": null,
@@ -979,7 +979,7 @@
     "name": "Stubber",
     "type": "ranged",
     "category": "Solid Projectile",
-    "description": "Stub weapons are among the most basic solid projectile firearms. Simple, cheap, and easy to maintain, Stubbers are common sidearms for civilians, gangers, and others who lack access to military-grade hardware.",
+    "description": "These oversized cylinder-fed revolvers have existed since as early as M2. They are easy to acquire and praised by traditionalists as reliable sidearms incapable of jamming.",
     "damage": {
       "base": 7,
       "attribute": null,
@@ -1009,7 +1009,7 @@
     "name": "Avenger Shuriken Catapult",
     "type": "ranged",
     "category": "Aeldari",
-    "description": "A larger, more powerful version of the standard shuriken catapult, the Avenger variant is used exclusively by Dire Avengers. Its extended barrel and enhanced firing mechanism deliver a deadlier stream of monomolecular discs.",
+    "description": "Designed to complement the disciplined firing drills and dynamic tactics of the Dire Avengers, the Avenger Shuriken Catapult boasts a staggering rate of fire that easily scythes through enemy formations.",
     "damage": {
       "base": 10,
       "attribute": null,
@@ -1042,7 +1042,7 @@
     "name": "Shuriken Rifle",
     "type": "ranged",
     "category": "Aeldari",
-    "description": "A precision variant of shuriken weaponry, the Shuriken Rifle trades the rapid-fire capability of the catapult for extended range and improved accuracy, making it ideal for marksmen.",
+    "description": "Commonly used by Guardian squads, Shuriken Rifles and their prodigious rate of fire complement larger squad numbers, allowing them to unleash torrents of monomolecular blades.",
     "damage": {
       "base": 10,
       "attribute": null,
@@ -1075,7 +1075,7 @@
     "name": "Death Spinner",
     "type": "ranged",
     "category": "Monofilament",
-    "description": "Death Spinners project a cloud of monofilament wire that wraps around victims and slices them to ribbons. Used by Warp Spiders, these terrifying weapons leave nothing but bloody remains.",
+    "description": "Warp Spiders wield these strange rifles which fire torrents of monofilament wire to ensnare and cut targets to pieces.",
     "damage": {
       "base": 14,
       "attribute": null,
@@ -1109,7 +1109,7 @@
     "name": "Dragon Fusion Gun",
     "type": "ranged",
     "category": "Melta",
-    "description": "These short-ranged but devastatingly powerful weapons are wielded by Fire Dragons. The fusion gun fires a superheated blast capable of melting through the thickest armour in an instant.",
+    "description": "The signature weapon of the Fire Dragons is a master-crafted work of destruction capable of vaporising enemy armour in a single, devastating blast. Its power is balanced by its relatively short range, requiring the user to get close to targets.",
     "damage": {
       "base": 16,
       "attribute": null,
@@ -1143,7 +1143,7 @@
     "name": "Reaper Launcher",
     "type": "ranged",
     "category": "Aeldari",
-    "description": "A heavy missile launcher used by Dark Reapers, the Reaper Launcher fires armour-piercing missiles with unerring accuracy. Each shot is guided by the Aspect Warrior's supernatural aim.",
+    "description": "The specialised missile launcher of the Dark Reapers can fire salvoes of Starswarm Missiles or individual Starshot Missiles. Targeting matrices integrate with the heavy, stabilised armour of the Dark Reaper to ensure deadly accuracy.",
     "damage": {
       "base": 16,
       "attribute": null,
@@ -1176,7 +1176,7 @@
     "name": "Fusion Pistol",
     "type": "ranged",
     "category": "Melta",
-    "description": "A compact version of the fusion gun, the Fusion Pistol sacrifices range for portability. Despite its small size, it retains the devastating armour-melting capabilities of its larger counterpart.",
+    "description": "This pistol has a very short range, but its advanced fusion technology easily punches through heavy armour.",
     "damage": {
       "base": 15,
       "attribute": null,
@@ -1209,7 +1209,7 @@
     "name": "Wraithcannon",
     "type": "ranged",
     "category": "Vortex",
-    "description": "Wraithcannons open a brief rift into the warp, pulling the target's soul into the immaterium. Only Wraithguard constructs possess the psychic fortitude to wield these terrifying weapons.",
+    "description": "Wraithcannons are smaller versions of the D-Cannon, typically carried by Wraithguard.",
     "damage": {
       "base": 20,
       "attribute": null,
@@ -1242,7 +1242,7 @@
     "name": "Splinter Rifle",
     "type": "ranged",
     "category": "Splinter",
-    "description": "The standard weapon of Drukhari Kabalite Warriors, Splinter Rifles fire crystalline shards coated in virulent toxins. Even a minor wound can prove fatal as the poison spreads through the victim's body.",
+    "description": "Splinter Rifles are the Kabals' primary weapons, every volley of toxic ammunition inflicting excruciating pain, torment that the Drukhari can savour.",
     "damage": {
       "base": 7,
       "attribute": null,
@@ -1275,7 +1275,7 @@
     "name": "Splinter Pistol",
     "type": "ranged",
     "category": "Splinter",
-    "description": "A compact sidearm favoured by Drukhari warriors, the Splinter Pistol delivers the same toxic payload as its larger counterparts. Perfect for delivering a paralysing or lethal dose at close range.",
+    "description": "The Splinter Pistol lacks armour penetration but boasts an impressive rate of fire, and a single splinter penetrating flesh is sufficient to deliver ghastly toxins to kill or incapacitate.",
     "damage": {
       "base": 7,
       "attribute": null,
@@ -1308,7 +1308,7 @@
     "name": "Shardcarbine",
     "type": "ranged",
     "category": "Splinter",
-    "description": "An advanced variant of splinter weaponry, the Shardcarbine fires a rapid stream of toxic shards. Used by Scourges and other elite Drukhari units, it offers improved rate of fire without sacrificing lethality.",
+    "description": "More powerful than the Rifle, lighter and more manoeuvrable than the Cannon. The Shardcarbine's blend of power and handling suits many Drukhari sensibilities.",
     "damage": {
       "base": 8,
       "attribute": null,
@@ -1341,7 +1341,7 @@
     "name": "Shrieker Cannon",
     "type": "ranged",
     "category": "Aeldari",
-    "description": "Used by Harlequin Death Jesters, the Shrieker Cannon fires bio-explosive shuriken that detonate within the victim's body, causing horrific damage and a terrifying death scream.",
+    "description": "Used by the enigmatic and dangerous Death Jesters, the Shrieker Cannon is a heavily modified Shuriken Cannon that not only hits harder, but coats its monomolecular blades in a deadly toxin that reacts so violently with organics that the targets often explode spectacularly.",
     "damage": {
       "base": 14,
       "attribute": null,
@@ -1375,7 +1375,7 @@
     "name": "Neuro Disruptor",
     "type": "ranged",
     "category": "Haemonculus",
-    "description": "The Neuro Disruptor fires a beam that liquefies the victim's brain, leaving their body an empty husk. A favourite of Harlequin Shadowseers, it brings swift but agonising death.",
+    "description": "An elegant pistol grip with a long, psychocrystalline barrel. Its invisible beams sear nervous tissue. Conventional armour is little protection, and the only outward sign of a hit is a brief spasm as the target collapses.",
     "damage": {
       "base": 10,
       "attribute": null,
@@ -1408,7 +1408,7 @@
     "name": "Stinger Pistol",
     "type": "ranged",
     "category": "Haemonculus",
-    "description": "A weapon of the Haemonculi covens, the Stinger Pistol fires crystalline splinters containing exotic venoms. These toxins cause excruciating pain while keeping the victim conscious — the better to savour their suffering.",
+    "description": "A compact sidearm frequently used by Haemonculi and their servants. It fires thin glass needles filled from a reservoir of exotic plagues or poisons of the Haemonculus' own devising. Targets tear themselves apart in painful convulsions or simply explode in a fountain of gore and ossified shrapnel.",
     "damage": {
       "base": 10,
       "attribute": null,
@@ -1442,7 +1442,7 @@
     "name": "Hallucinogen Grenade Launcher",
     "type": "ranged",
     "category": "Aeldari",
-    "description": "Used by Harlequin Shadowseers, this weapon launches grenades that release psychotropic gases. Victims are overwhelmed by terrifying hallucinations, rendering them helpless with fear.",
+    "description": "Harlequin Shadowseers wear these launchers on their backs, a curved barrel looming over either shoulder. The grenades cause strong hallucinations that leave enemies in disarray.",
     "damage": {
       "base": 0,
       "attribute": null,
@@ -1475,7 +1475,7 @@
     "name": "Banshee Blade",
     "type": "melee",
     "category": "Aeldari",
-    "description": "The signature weapon of the Howling Banshees, these Power Swords are perfectly balanced for swift, deadly strikes. When combined with the Banshee's psychic scream, no armour can withstand their assault.",
+    "description": "These swords are exactingly designed to enhance the Howling Banshee's melee charges while remaining swift enough to parry counterassaults.",
     "damage": {
       "base": 5,
       "attribute": "strength",
@@ -1502,7 +1502,7 @@
     "name": "Scorpion's Chainsword",
     "type": "melee",
     "category": "Aeldari",
-    "description": "Wielded by Striking Scorpions, these chainswords are designed for close-quarters combat. The weapon's teeth are sharpened to a molecular edge, capable of shredding flesh and light armour alike.",
+    "description": "The Aeldari artistry and attention to detail in these Chainswords belie their brutal effectiveness. They rip and tear with sickening ease.",
     "damage": {
       "base": 7,
       "attribute": "strength",
@@ -1530,7 +1530,7 @@
     "name": "Guardian Chainsword",
     "type": "melee",
     "category": "Aeldari",
-    "description": "Standard close-combat weapons issued to Craftworld Guardians, these chainswords are lighter than their Imperial counterparts but no less deadly in skilled Aeldari hands.",
+    "description": "Aeldari Chainswords are similar to their Imperial counterparts, save for advanced power supplies and overall lighter, more elegant designs.",
     "damage": {
       "base": 5,
       "attribute": "strength",
@@ -1557,7 +1557,7 @@
     "name": "Singing Spear",
     "type": "melee",
     "category": "Aeldari",
-    "description": "A Singing Spear is a psychically-attuned weapon that can be hurled at the enemy and will return to its wielder's hand. The spear hums with psychic energy as it flies, hence its name.",
+    "description": "Named for the high-pitched ringing tones it emits when wielded by Asuryani Warlocks or Seers, these polearms are beautifully ornamented and viper-swift. Wraithbone circuitry channels the wielder's psychic power into every blow. It can also be thrown at a target up to 15m away, returning unerringly to its owner's hand after the attack.",
     "damage": {
       "base": 6,
       "attribute": "strength",
@@ -1585,7 +1585,7 @@
     "name": "Ghostsword",
     "type": "melee",
     "category": "Aeldari",
-    "description": "Wielded by Wraithblades, Ghostswords are massive blades that channel the spirit stone's rage into devastating strikes. The weapons are sized for the towering Wraith constructs.",
+    "description": "Wraithblade Constructs commonly stride into battle wielding a pair of Ghostswords. They balance offence and defence, parrying attacks and gliding through armour.",
     "damage": {
       "base": 13,
       "attribute": "strength",
@@ -1611,7 +1611,7 @@
     "name": "Hekatarii Blade",
     "type": "melee",
     "category": "Aeldari",
-    "description": "The weapon of choice for Wyches of the Drukhari Wych Cults, Hekatarii Blades are designed for graceful combat in the arenas of Commorragh. Speed and precision are prized over brute force.",
+    "description": "Wych training begins with mastering the Hekatarii Blade. It is a vicious, curved sword of advanced alloys. Countless variations exist, with minute changes in balance or specific serration patterns to complement the precise way a Wych desires to send the blood of their enemies dancing across the arena.",
     "damage": {
       "base": 5,
       "attribute": "strength",
@@ -1637,7 +1637,7 @@
     "name": "Hellglaive",
     "type": "melee",
     "category": "Aeldari",
-    "description": "The signature weapon of Hellion gangs, the Hellglaive is a two-handed polearm designed for swooping attacks from skyboards. Its curved blade can decapitate a victim with a single pass.",
+    "description": "Long, symmetrical polearms with cruelly hooked blades at either end, Hellglaives are popular with Hellions, who use them to maintain balance and execute high-speed acrobatics by swinging around terrain using the hooks.",
     "damage": {
       "base": 7,
       "attribute": "strength",
@@ -1661,7 +1661,7 @@
     "name": "Agoniser",
     "type": "melee",
     "category": "Aeldari",
-    "description": "Agonisers are weapons designed to inflict maximum pain while keeping the victim conscious. Each strike delivers a concentrated dose of toxins that overwhelm the nervous system with agony.",
+    "description": "The Agoniser is a powered whip containing specialised circuitry that interfaces with the nervous system of the target, inflicting phenomenal pain that can incapacitate or kill outright.",
     "damage": {
       "base": 3,
       "attribute": "strength",
@@ -1688,7 +1688,7 @@
     "name": "Klaive",
     "type": "melee",
     "category": "Aeldari",
-    "description": "The signature weapon of the Incubi, a Klaive is a two-handed power glaive of exceptional craftsmanship. Each is a masterwork, handed down through generations of these elite warriors.",
+    "description": "The Klaive is an ornate, two-handed blade with one handhold halfway along its spine. They are used exclusively by Incubi, who consider Klaives and Demiklaives the only worthy melee weapons.",
     "damage": {
       "base": 8,
       "attribute": "strength",
@@ -1717,7 +1717,7 @@
     "name": "Huskblade",
     "type": "melee",
     "category": "Aeldari",
-    "description": "A Huskblade drains the life force of its victims, leaving behind only withered husks. These terrifying weapons are prized status symbols among Drukhari Archons and Succubi.",
+    "description": "Though forged from advanced metals, this sword is the colour (and often shape) of ancient, weathered bone. A few blows reduce most enemies to little more than dust and a brittle skeleton by devouring the moisture in their bodies.",
     "damage": {
       "base": 4,
       "attribute": "strength",
@@ -1743,7 +1743,7 @@
     "name": "Archite Glaive",
     "type": "melee",
     "category": "Aeldari",
-    "description": "A massive polearm wielded by Succubi in the gladiatorial arenas of Commorragh. The Archite Glaive requires great strength to wield effectively, but its reach and power make it devastating.",
+    "description": "Similar to Asuryani glaives, an Archite Glaive is unmistakably Drukhari. These exquisitely balanced polearms end in curved, pointed blades, allowing a Wych to artfully sever a single artery or wholly bisect an enemy.",
     "damage": {
       "base": 6,
       "attribute": "strength",
@@ -1769,7 +1769,7 @@
     "name": "Harlequin's Kiss",
     "type": "melee",
     "category": "Aeldari",
-    "description": "The Harlequin's Kiss is a tube containing a monofilament wire that, when activated, unspools into the victim's body at high velocity, liquefying their internal organs in an instant.",
+    "description": "A wrist-mounted hollow spike, containing a coiled monofilament wire. When it penetrates armour, the wire rapidly uncoils inside the target, turning their innards into paste almost instantly.",
     "damage": {
       "base": 8,
       "attribute": "strength",
@@ -1795,7 +1795,7 @@
     "name": "Harlequin's Caress",
     "type": "melee",
     "category": "Aeldari",
-    "description": "The Harlequin's Caress generates a molecular disruption field that phases through armour, causing catastrophic damage to whatever lies beneath. A gentle touch can prove instantly fatal.",
+    "description": "These gauntlets partly phase the user's hand out of reality, allowing them to reach through flesh and armour and deliver grievous internal wounds. These attacks ignore armour and always deal Mortal Wounds.",
     "damage": {
       "base": 1,
       "attribute": "strength",
@@ -1820,7 +1820,7 @@
     "name": "Harlequin's Embrace",
     "type": "melee",
     "category": "Aeldari",
-    "description": "The Harlequin's Embrace wraps around the victim in coils of monofilament wire, slicing them apart as the Harlequin dances away. It is as graceful as it is deadly.",
+    "description": "Resembling the Deathspinners of the Warp Spiders, the Harlequin's Embrace is triggered just as the user engages their opponent, firing a net of monofilament wire that rapidly constricts the target, slicing them to ribbons.",
     "damage": {
       "base": 5,
       "attribute": "strength",
@@ -1846,7 +1846,7 @@
     "name": "Miststave",
     "type": "melee",
     "category": "Aeldari",
-    "description": "The weapon of Harlequin Shadowseers, the Miststave channels psychic energy to cloud the minds of enemies. Those struck find their thoughts scattered and their reactions slowed.",
+    "description": "These simple-looking weapons are as colourful and deceptive as the Harlequin Shadowseers who wield them. The Shadowseer channels their psychic might into a Miststave, augmenting its impact and flooding the target's mind with confusion, making each successive strike harder to evade.",
     "damage": {
       "base": 8,
       "attribute": "strength",
@@ -1874,7 +1874,7 @@
     "name": "Void Sabre",
     "type": "melee",
     "category": "Aeldari",
-    "description": "Favoured by Corsair Princes and other Aeldari pirates, the Void Sabre is a masterfully crafted blade designed for elegant duelling. Each is unique, often passed down through noble bloodlines.",
+    "description": "Anhrathe favour the Void Sabre for its intimidating look as much as its lethality. They are constructed from a strange, tainted wraithbone somehow connected with the dead worlds of the Ghoul Stars. The activated blade drinks light and glows with unsettling runes.",
     "damage": {
       "base": 7,
       "attribute": "strength",
@@ -1900,7 +1900,7 @@
     "name": "Scissorhand",
     "type": "melee",
     "category": "Aeldari",
-    "description": "Haemonculi often replace their hands with Scissorhands — bladed appendages dripping with virulent toxins. These surgical tools double as weapons of exquisite cruelty.",
+    "description": "The Scissorhand resembles a glove with powerful monomolecular edged blades protruding from the fingers. Vein-like tubing runs along the blades, constantly coating them in poisons. The effects vary but are usually engineered to cause such agony that victims pass out or die before the poison even begins killing the body.",
     "damage": {
       "base": 3,
       "attribute": "strength",
@@ -1927,7 +1927,7 @@
     "name": "Glimmersteel Blade",
     "type": "melee",
     "category": "Aeldari",
-    "description": "Wielded by Mandrakes, Glimmersteel Blades are forged in the shadow dimension from which these creatures emerge. The blades seem to drink the light around them.",
+    "description": "Mandrakes eschew weaponry, save for Glimmersteel Blades. These melee weapons take diverse forms, from brutal cleavers to vicious sickles and savage bonesaws. They are stained with their victims' blood, but this does not lessen their keen edge.",
     "damage": {
       "base": 3,
       "attribute": "strength",
@@ -1953,7 +1953,7 @@
     "name": "Astartes Chainsword",
     "type": "melee",
     "category": "Chain Weapons",
-    "description": "Scaled up for the enhanced physiology of Space Marines, the Astartes Chainsword features a more powerful motor and larger teeth than its standard counterpart. The weapon's roar heralds death.",
+    "description": "[AI-Generated] Scaled up for the enhanced physiology of Space Marines, the Astartes Chainsword features a more powerful motor and larger teeth than its standard counterpart. The weapon's roar heralds death.",
     "damage": {
       "base": 6,
       "attribute": "strength",
@@ -1980,7 +1980,7 @@
     "name": "Chainfist",
     "type": "melee",
     "category": "Chain Weapons",
-    "description": "A Chainfist combines the crushing grip of a Power Fist with the ripping teeth of a chainblade. Designed for breaching fortifications, it can tear through bulkheads and armoured vehicles alike.",
+    "description": "[AI-Generated] A Chainfist combines the crushing grip of a Power Fist with the ripping teeth of a chainblade. Designed for breaching fortifications, it can tear through bulkheads and armoured vehicles alike.",
     "damage": {
       "base": 7,
       "attribute": "strength",
@@ -2008,7 +2008,7 @@
     "name": "Crozius Arcanum",
     "type": "melee",
     "category": "Power Weapons",
-    "description": "The weapon of a Chaplain is also their badge of office. This skull-headed power mace is a symbol of the Chaplain's authority to enforce spiritual discipline, and a tool for crushing the Emperor's enemies.",
+    "description": "[AI-Generated] The weapon of a Chaplain is also their badge of office. This skull-headed power mace is a symbol of the Chaplain's authority to enforce spiritual discipline, and a tool for crushing the Emperor's enemies.",
     "damage": {
       "base": 5,
       "attribute": "strength",
@@ -2034,7 +2034,7 @@
     "name": "Eviscerator",
     "type": "melee",
     "category": "Chain Weapons",
-    "description": "These massive two-handed chainswords are favoured by the Ecclesiarchy and zealous warriors seeking to cleave the enemies of the Emperor in twain. The Eviscerator's oversized teeth can carve through power armour.",
+    "description": "[AI-Generated] These massive two-handed chainswords are favoured by the Ecclesiarchy and zealous warriors seeking to cleave the enemies of the Emperor in twain. The Eviscerator's oversized teeth can carve through power armour.",
     "damage": {
       "base": 6,
       "attribute": "strength",
@@ -2062,7 +2062,7 @@
     "name": "Force Axe",
     "type": "melee",
     "category": "Force Weapons",
-    "description": "A Force Axe channels the psychic might of its Librarian wielder into every swing. The weapon's blade crackles with warp energy, cleaving through armour and soul alike.",
+    "description": "[AI-Generated] A Force Axe channels the psychic might of its Librarian wielder into every swing. The weapon's blade crackles with warp energy, cleaving through armour and soul alike.",
     "damage": {
       "base": 5,
       "attribute": "strength",
@@ -2088,7 +2088,7 @@
     "name": "Force Sword",
     "type": "melee",
     "category": "Force Weapons",
-    "description": "The blade of choice for many Librarians, the Force Sword allows its wielder to channel devastating psychic energy with precision. A single strike can sunder body and spirit.",
+    "description": "[AI-Generated] The blade of choice for many Librarians, the Force Sword allows its wielder to channel devastating psychic energy with precision. A single strike can sunder body and spirit.",
     "damage": {
       "base": 5,
       "attribute": "strength",
@@ -2115,7 +2115,7 @@
     "name": "Heavy Thunder Hammer",
     "type": "melee",
     "category": "Power Weapons",
-    "description": "An oversized variant of the already-devastating Thunder Hammer, this two-handed weapon releases a thunderclap of energy upon impact. Only the strongest warriors can wield such a weapon effectively.",
+    "description": "[AI-Generated] An oversized variant of the already-devastating Thunder Hammer, this two-handed weapon releases a thunderclap of energy upon impact. Only the strongest warriors can wield such a weapon effectively.",
     "damage": {
       "base": 10,
       "attribute": "strength",
@@ -2143,7 +2143,7 @@
     "name": "Lightning Claws",
     "type": "melee",
     "category": "Power Weapons",
-    "description": "Lightning Claws are power weapons in the form of gauntlets fitted with long, razor-sharp talons. The disruption field that wraps each claw allows them to shred armour with every swipe.",
+    "description": "[AI-Generated] Lightning Claws are power weapons in the form of gauntlets fitted with long, razor-sharp talons. The disruption field that wraps each claw allows them to shred armour with every swipe.",
     "damage": {
       "base": 5,
       "attribute": "strength",
@@ -2170,7 +2170,7 @@
     "name": "Power Fist",
     "type": "melee",
     "category": "Power Weapons",
-    "description": "A Power Fist is a massive armoured gauntlet surrounded by a disruptive power field. The weapon's crushing grip can pulp a man in an instant and punch through the thickest armour plate.",
+    "description": "[AI-Generated] A Power Fist is a massive armoured gauntlet surrounded by a disruptive power field. The weapon's crushing grip can pulp a man in an instant and punch through the thickest armour plate.",
     "damage": {
       "base": 5,
       "attribute": "strength",
@@ -2197,7 +2197,7 @@
     "name": "Relic Blade",
     "type": "melee",
     "category": "Power Weapons",
-    "description": "These ancient Power Swords have been crafted to exacting standards by master artificers. Each Relic Blade is a Chapter treasure, often with a history stretching back millennia.",
+    "description": "[AI-Generated] These ancient Power Swords have been crafted to exacting standards by master artificers. Each Relic Blade is a Chapter treasure, often with a history stretching back millennia.",
     "damage": {
       "base": 6,
       "attribute": "strength",
@@ -2224,7 +2224,7 @@
     "name": "Thunder Hammer",
     "type": "melee",
     "category": "Power Weapons",
-    "description": "Thunder Hammers release a tremendous blast of energy upon impact. The explosive concussion can reduce armour to scrap and send enemies flying through the air.",
+    "description": "[AI-Generated] Thunder Hammers release a tremendous blast of energy upon impact. The explosive concussion can reduce armour to scrap and send enemies flying through the air.",
     "damage": {
       "base": 8,
       "attribute": "strength",
@@ -2252,7 +2252,7 @@
     "name": "Accelerator Autocannon",
     "type": "ranged",
     "category": "Heavy Weapons",
-    "description": "Mounted on Invictor Tactical Warsuits and other heavy platforms, the Accelerator Autocannon uses gravitic technology to fire high-calibre rounds at tremendous velocity.",
+    "description": "[AI-Generated] Mounted on Invictor Tactical Warsuits and other heavy platforms, the Accelerator Autocannon uses gravitic technology to fire high-calibre rounds at tremendous velocity.",
     "damage": {
       "base": 16,
       "attribute": null,
@@ -2286,7 +2286,7 @@
     "name": "Assault Bolter",
     "type": "ranged",
     "category": "Bolt Weapons",
-    "description": "Designed for Inceptor squads, the Assault Bolter is a compact, rapid-fire bolt weapon optimized for close-range engagements. Its high rate of fire makes it devastating against infantry.",
+    "description": "[AI-Generated] Designed for Inceptor squads, the Assault Bolter is a compact, rapid-fire bolt weapon optimized for close-range engagements. Its high rate of fire makes it devastating against infantry.",
     "damage": {
       "base": 12,
       "attribute": null,
@@ -2321,7 +2321,7 @@
     "name": "Assault Plasma Incinerator",
     "type": "ranged",
     "category": "Plasma Weapons",
-    "description": "A lighter variant of the Plasma Incinerator designed for mobile warfare. While slightly less powerful, it allows Hellblasters to maintain fire while advancing.",
+    "description": "[AI-Generated] A lighter variant of the Plasma Incinerator designed for mobile warfare. While slightly less powerful, it allows Hellblasters to maintain fire while advancing.",
     "damage": {
       "base": 12,
       "attribute": null,
@@ -2355,7 +2355,7 @@
     "name": "Astartes Shotgun",
     "type": "ranged",
     "category": "Solid Projectile Weapons",
-    "description": "Used by Space Marine Scouts for close-quarters combat, the Astartes Shotgun fires devastating solid-slug ammunition capable of tearing through light armour.",
+    "description": "[AI-Generated] Used by Space Marine Scouts for close-quarters combat, the Astartes Shotgun fires devastating solid-slug ammunition capable of tearing through light armour.",
     "damage": {
       "base": 10,
       "attribute": null,
@@ -2389,7 +2389,7 @@
     "name": "Auto Bolt Rifle",
     "type": "ranged",
     "category": "Bolt Weapons",
-    "description": "An automatic variant of the Bolt Rifle favoured by aggressive Intercessors. The Auto Bolt Rifle trades accuracy for volume of fire, laying down a storm of explosive bolts.",
+    "description": "[AI-Generated] An automatic variant of the Bolt Rifle favoured by aggressive Intercessors. The Auto Bolt Rifle trades accuracy for volume of fire, laying down a storm of explosive bolts.",
     "damage": {
       "base": 12,
       "attribute": null,
@@ -2424,7 +2424,7 @@
     "name": "Bolt Carbine",
     "type": "ranged",
     "category": "Bolt Weapons",
-    "description": "A compact bolt weapon designed for Reivers and other close-quarters specialists. The Bolt Carbine is optimised for assault operations, where manoeuvrability is paramount.",
+    "description": "[AI-Generated] A compact bolt weapon designed for Reivers and other close-quarters specialists. The Bolt Carbine is optimised for assault operations, where manoeuvrability is paramount.",
     "damage": {
       "base": 12,
       "attribute": null,
@@ -2459,7 +2459,7 @@
     "name": "Bolt Sniper Rifle",
     "type": "ranged",
     "category": "Bolt Weapons",
-    "description": "Used by Eliminators, the Bolt Sniper Rifle fires specially-crafted hyperfrag, executioner, or mortis rounds. Each shot is precisely aimed, the rifle's silencer muffling the report.",
+    "description": "[AI-Generated] Used by Eliminators, the Bolt Sniper Rifle fires specially-crafted hyperfrag, executioner, or mortis rounds. Each shot is precisely aimed, the rifle's silencer muffling the report.",
     "damage": {
       "base": 10,
       "attribute": null,
@@ -2493,7 +2493,7 @@
     "name": "Executor Bolt Rifle",
     "type": "ranged",
     "category": "Bolt Weapons",
-    "description": "A heavy variant of the Bolt Rifle that fires mass-reactive rounds with improved armour penetration. The weapon's extended range and hitting power make it ideal for eliminating priority targets.",
+    "description": "[AI-Generated] A heavy variant of the Bolt Rifle that fires mass-reactive rounds with improved armour penetration. The weapon's extended range and hitting power make it ideal for eliminating priority targets.",
     "damage": {
       "base": 12,
       "attribute": null,
@@ -2528,7 +2528,7 @@
     "name": "Godwyn Pattern Boltgun",
     "type": "ranged",
     "category": "Bolt Weapons",
-    "description": "The Godwyn Pattern is the standard issue boltgun for most Space Marine Chapters. This tried-and-true design has served the Adeptus Astartes for millennia.",
+    "description": "[AI-Generated] The Godwyn Pattern is the standard issue boltgun for most Space Marine Chapters. This tried-and-true design has served the Adeptus Astartes for millennia.",
     "damage": {
       "base": 10,
       "attribute": null,
@@ -2561,7 +2561,7 @@
     "name": "Grapnel Launcher",
     "type": "ranged",
     "category": "Exotic Weapons",
-    "description": "Primarily used by Reivers for rapid vertical movement, the Grapnel Launcher can also be used as an improvised weapon. The high-tension cable and hook can cause significant damage.",
+    "description": "[AI-Generated] Primarily used by Reivers for rapid vertical movement, the Grapnel Launcher can also be used as an improvised weapon. The high-tension cable and hook can cause significant damage.",
     "damage": {
       "base": 8,
       "attribute": null,
@@ -2592,7 +2592,7 @@
     "name": "Grav-Cannon",
     "type": "ranged",
     "category": "Grav Weapons",
-    "description": "The Grav-Cannon uses gravitic technology to crush targets under their own mass. The more heavily armoured the target, the more devastating the effect.",
+    "description": "[AI-Generated] The Grav-Cannon uses gravitic technology to crush targets under their own mass. The more heavily armoured the target, the more devastating the effect.",
     "damage": {
       "base": 10,
       "attribute": null,
@@ -2625,7 +2625,7 @@
     "name": "Grav-Pistol",
     "type": "ranged",
     "category": "Grav Weapons",
-    "description": "A compact version of grav weaponry, the Grav-Pistol is favoured by officers and specialists. Despite its small size, it can crush armoured targets with focused gravitational force.",
+    "description": "[AI-Generated] A compact version of grav weaponry, the Grav-Pistol is favoured by officers and specialists. Despite its small size, it can crush armoured targets with focused gravitational force.",
     "damage": {
       "base": 8,
       "attribute": null,
@@ -2658,7 +2658,7 @@
     "name": "Heavy Bolter",
     "type": "ranged",
     "category": "Bolt Weapons",
-    "description": "The Heavy Bolter is a belt-fed weapon that spews a relentless stream of mass-reactive rounds. Its sustained fire can suppress infantry squads and tear through light vehicles.",
+    "description": "[AI-Generated] The Heavy Bolter is a belt-fed weapon that spews a relentless stream of mass-reactive rounds. Its sustained fire can suppress infantry squads and tear through light vehicles.",
     "damage": {
       "base": 12,
       "attribute": null,
@@ -2692,7 +2692,7 @@
     "name": "Heavy Bolt Rifle",
     "type": "ranged",
     "category": "Bolt Weapons",
-    "description": "Used by Heavy Intercessors, this variant of the Bolt Rifle fires high-calibre rounds with extended range. The weapon's stopping power makes it ideal for taking down armoured targets.",
+    "description": "[AI-Generated] Used by Heavy Intercessors, this variant of the Bolt Rifle fires high-calibre rounds with extended range. The weapon's stopping power makes it ideal for taking down armoured targets.",
     "damage": {
       "base": 12,
       "attribute": null,
@@ -2726,7 +2726,7 @@
     "name": "Heavy Melta Rifle",
     "type": "ranged",
     "category": "Melta Weapons",
-    "description": "An extended-range melta weapon designed for Eradicator squads. The Heavy Melta Rifle can melt through bunker walls and vehicle armour with ease.",
+    "description": "[AI-Generated] An extended-range melta weapon designed for Eradicator squads. The Heavy Melta Rifle can melt through bunker walls and vehicle armour with ease.",
     "damage": {
       "base": 16,
       "attribute": null,
@@ -2760,7 +2760,7 @@
     "name": "Hellstorm Bolt Rifle",
     "type": "ranged",
     "category": "Bolt Weapons",
-    "description": "A variant Bolt Rifle designed for aggressive close-support fire. The Hellstorm pattern trades some accuracy for increased rate of fire and ease of use on the move.",
+    "description": "[AI-Generated] A variant Bolt Rifle designed for aggressive close-support fire. The Hellstorm pattern trades some accuracy for increased rate of fire and ease of use on the move.",
     "damage": {
       "base": 10,
       "attribute": null,
@@ -2795,7 +2795,7 @@
     "name": "Las Fusil",
     "type": "ranged",
     "category": "Las Weapons",
-    "description": "A precision las weapon used by Eliminators for silent kills. The Las Fusil fires a concentrated beam of energy that burns through targets with surgical precision.",
+    "description": "[AI-Generated] A precision las weapon used by Eliminators for silent kills. The Las Fusil fires a concentrated beam of energy that burns through targets with surgical precision.",
     "damage": {
       "base": 12,
       "attribute": null,
@@ -2829,7 +2829,7 @@
     "name": "Melta Rifle",
     "type": "ranged",
     "category": "Melta Weapons",
-    "description": "The standard melta weapon of Eradicator squads, the Melta Rifle fires a blast of superheated fusion energy. At close range, nothing can withstand its destructive power.",
+    "description": "[AI-Generated] The standard melta weapon of Eradicator squads, the Melta Rifle fires a blast of superheated fusion energy. At close range, nothing can withstand its destructive power.",
     "damage": {
       "base": 16,
       "attribute": null,
@@ -2863,7 +2863,7 @@
     "name": "Occulus Bolt Carbine",
     "type": "ranged",
     "category": "Bolt Weapons",
-    "description": "Equipped with advanced targeting systems, the Occulus Bolt Carbine allows Infiltrators to engage targets with enhanced accuracy. The integrated optics feed directly into the Marine's helm display.",
+    "description": "[AI-Generated] Equipped with advanced targeting systems, the Occulus Bolt Carbine allows Infiltrators to engage targets with enhanced accuracy. The integrated optics feed directly into the Marine's helm display.",
     "damage": {
       "base": 10,
       "attribute": null,
@@ -2897,7 +2897,7 @@
     "name": "Plasma Gun",
     "type": "ranged",
     "category": "Plasma Weapons",
-    "description": "The Plasma Gun fires bolts of superheated plasma that can melt through the heaviest armour. Though powerful, the weapon risks catastrophic overheating if pushed beyond its limits.",
+    "description": "[AI-Generated] The Plasma Gun fires bolts of superheated plasma that can melt through the heaviest armour. Though powerful, the weapon risks catastrophic overheating if pushed beyond its limits.",
     "damage": {
       "base": 15,
       "attribute": null,
@@ -2929,7 +2929,7 @@
     "name": "Plasma Incinerator",
     "type": "ranged",
     "category": "Plasma Weapons",
-    "description": "The standard weapon of Hellblaster squads, the Plasma Incinerator delivers devastating volleys of plasma fire. Its improved heat dissipation makes it safer to operate than older designs.",
+    "description": "[AI-Generated] The standard weapon of Hellblaster squads, the Plasma Incinerator delivers devastating volleys of plasma fire. Its improved heat dissipation makes it safer to operate than older designs.",
     "damage": {
       "base": 12,
       "attribute": null,
@@ -2963,7 +2963,7 @@
     "name": "Storm Bolter",
     "type": "ranged",
     "category": "Bolt Weapons",
-    "description": "Essentially two boltguns fused together, the Storm Bolter delivers twice the firepower in a compact package. Favoured by Terminators, these weapons lay down punishing suppressive fire.",
+    "description": "[AI-Generated] Essentially two boltguns fused together, the Storm Bolter delivers twice the firepower in a compact package. Favoured by Terminators, these weapons lay down punishing suppressive fire.",
     "damage": {
       "base": 10,
       "attribute": null,
@@ -2997,7 +2997,7 @@
     "name": "Whip",
     "type": "melee",
     "category": "Exotic",
-    "description": "Though rarely lethal, whips are prized for their ability to inflict pain and maintain control over prisoners or slaves. A skilled wielder can strike with unerring accuracy from a considerable distance.",
+    "description": "Made from all manner of hide, rope, or other exotic materials, the primitive Whip can be found across the universe in the hands of animal handlers and slave drivers alike.",
     "damage": {
       "base": 1,
       "attribute": "strength",
@@ -3022,7 +3022,7 @@
     "name": "Neural Whip",
     "type": "melee",
     "category": "Exotic",
-    "description": "Used by Sisters Repentia and other agents of the Ecclesiarchy, Neural Whips deliver agonising neural feedback with every strike. The lash overloads the nervous system, leaving victims writhing in pain.",
+    "description": "Made of psycho-conductive materials, these lengthy crackling whips send agonising neuronic feedback coursing through flesh, right into the pain centre of the brain.",
     "damage": {
       "base": 3,
       "attribute": "strength",
@@ -3048,7 +3048,7 @@
     "name": "Shock Whip",
     "type": "melee",
     "category": "Exotic",
-    "description": "A Shock Whip incorporates power cells that discharge a powerful electric shock upon contact. The combination of kinetic force and electrical discharge makes this weapon exceptionally painful.",
+    "description": "A length of conductive material charged by a power cell in the hilt makes a shock whip spark and crack with muscle-crippling electricity.",
     "damage": {
       "base": 4,
       "attribute": "strength",
@@ -3074,7 +3074,7 @@
     "name": "Shock Maul",
     "type": "melee",
     "category": "Exotic",
-    "description": "The standard issue weapon of the Adeptus Arbites, the Shock Maul is designed to subdue rather than kill — though it is more than capable of lethal force. Each strike discharges a powerful electric shock.",
+    "description": "The judges and enforcers of the Adeptus Arbites use these electrified bone-breaking truncheons to render suspects unconscious and break up unlawful gatherings.",
     "damage": {
       "base": 4,
       "attribute": "strength",
@@ -3100,7 +3100,7 @@
     "name": "Power Maul",
     "type": "melee",
     "category": "Power",
-    "description": "A Power Maul is a club or mace surrounded by a disruptive energy field. Popular among Adeptus Arbites and other law enforcement, these weapons can subdue or kill with equal ease.",
+    "description": "A simple mace enhanced by a power field, these weapons are valued for their utility. As the power field covers a smaller area of the weapon, its intensity can be adjusted, allowing it to deliver blows that can impact power armour or non-lethal warning taps to a Human skull.",
     "damage": {
       "base": 5,
       "attribute": "strength",
@@ -3123,7 +3123,7 @@
     "name": "Dialogus Staff",
     "type": "melee",
     "category": "Exotic",
-    "description": "Carried by Sisters Dialogus, this staff incorporates a laud-hailer that can project the voice across a battlefield. It serves as both a symbol of office and a capable weapon in close combat.",
+    "description": "These solidly built staves serve three purposes: the uniquely carved shape marks its bearer as a Sister Dialogus, the built in Laud-Hailer carries her stirring rhetoric over the din of battle, and its sturdy build makes it a potent melee weapon when paired with strength or Sororitas Power Armour.",
     "damage": {
       "base": 4,
       "attribute": "strength",
@@ -3149,7 +3149,7 @@
     "name": "Ripper Gun",
     "type": "ranged",
     "category": "Solid Projectile",
-    "description": "Designed for Ogryn auxilia, the Ripper Gun is a drum-fed weapon that can be used as a club in close combat. Its heavy rounds and automatic fire make it devastating at close range.",
+    "description": "Big, sturdy, and basic, the Ripper Gun is purpose-built to be wielded by Ogryns. Because of this, its size and solid construction ensure it is as useful as a club as a firearm. The typical stupidity and inaccuracy of an Ogryn shaped the design of the Ripper Gun, resulting in a custom trigger mechanism activated by squeezing the handle to fire a burst of shot. A burst limiter is hard wired into every Ripper Gun to ensure an excited Ogryn does not expend an entire clip the first time they squeeze the weapon's handle.",
     "damage": {
       "base": 12,
       "attribute": null,
@@ -3183,7 +3183,7 @@
     "name": "Frag Bombs",
     "type": "ranged",
     "category": "Explosive",
-    "description": "Oversized grenades designed for Ogryn, Frag Bombs are too heavy for normal humans to throw effectively. When they detonate, the blast scatters deadly shrapnel across a wide area.",
+    "description": "Purpose-built for the oversized hands of Ogryns, Frag Bombs are simply upscaled frag grenades simplified for use by blunt minds. A Frag Bomb causes a larger, more deadly explosion of shrapnel, though pressure plates must be engineered into every bomb in the eventuality that an Ogryn forgets to throw after pulling the pin.",
     "damage": {
       "base": 10,
       "attribute": null,
@@ -3216,7 +3216,7 @@
     "name": "Kroot Rifle",
     "type": "ranged",
     "category": "Solid Projectile",
-    "description": "A combination weapon used by Kroot Carnivores, the Kroot Rifle fires solid rounds and features blade attachments for close combat. It reflects the Kroot's practical approach to warfare.",
+    "description": "The Kroot created primitive, chemically-propelled slug-throwers centuries ago, and since being exposed to the T'au and other advanced Species they have altered and improved their weapons much as they modify their own biology.",
     "damage": {
       "base": 10,
       "attribute": null,
@@ -3544,7 +3544,7 @@
     "name": "Phosphor Serpenta",
     "type": "ranged",
     "category": "Exotic",
-    "description": "A chemical sidearm of antique design, a Phosphex Serpenta fires searing incendiary bolts that cause toxic conflagrations. Those struck by a salvo of vile phosphor burn quickly as it sizzles through flesh and armour, and those that survive soon find the bright explosive burst makes them an easier target for follow-up shots.",
+    "description": "...Those struck by a slavo of vile phosphor burn quickly...",
     "damage": {
       "base": 12,
       "attribute": null,
@@ -3741,7 +3741,7 @@
     "name": "Master-Crafted Power Sword",
     "type": "melee",
     "category": "Power Weapons",
-    "description": "A Power Sword of exceptional quality, forged by master artificers and blessed by Tech-Priests. These weapons are heirlooms passed down through generations of Space Marine heroes.",
+    "description": "[AI-Generated] A Power Sword of exceptional quality, forged by master artificers and blessed by Tech-Priests. These weapons are heirlooms passed down through generations of Space Marine heroes.",
     "damage": {
       "base": 6,
       "attribute": "strength",
@@ -3768,7 +3768,7 @@
     "name": "Master-Crafted Void Sabre",
     "type": "melee",
     "category": "Aeldari",
-    "description": "The finest blades of the Aeldari Corsairs, these Master-Crafted Void Sabres are legendary weapons. Each is a unique work of art, often with names and histories spanning millennia.",
+    "description": "The most ancient Void Sabres display craftsmanship few Aeldari today could hope to equal. Their edge is keener, and their balance unmatched. The sign of a true Corsair Prince is possession of one of these rare and unsettling weapons.",
     "damage": {
       "base": 8,
       "attribute": "strength",
@@ -3795,7 +3795,7 @@
     "name": "Star Glaive",
     "type": "melee",
     "category": "Aeldari",
-    "description": "A ceremonial weapon wielded by Autarchs and other Craftworld leaders, the Star Glaive is a symbol of authority as much as a weapon. Its blade gleams with captive starlight.",
+    "description": "The Star Glaive is masterfully crafted by Bonesingers and tempered by years of use on the battlefield. These storied weapons are only bequeathed to the worthiest warriors, such as the Autarchs who command Aeldari warhosts.",
     "damage": {
       "base": 6,
       "attribute": "strength",
@@ -3822,7 +3822,7 @@
     "name": "Splinter Pods",
     "type": "ranged",
     "category": "Splinter",
-    "description": "Mounted on skyboards and jetbikes, Splinter Pods fire toxic shards while the pilot focuses on manoeuvring. They provide covering fire for high-speed Drukhari attacks.",
+    "description": "This assembly is effectively a pair of twin-linked Splinter Rifles mounted on a Skyboard.",
     "damage": {
       "base": 7,
       "attribute": null,
@@ -3888,7 +3888,7 @@
     "name": "Axe (Abundance of Apocrypha)",
     "type": "melee",
     "category": "Low-Tech",
-    "description": "A hafted melee weapon with a wedge- or crescent-shaped blade, intended to apply maximum cutting power to a small cross-section.",
+    "description": "A hafted melee weapon with a wedge- or crescent-shaped blade, intended to apply maximum cutting power to a small cross-section. They're used as tools for woodcutting and similar activities across the galaxy, but they are as effective at felling foes as they are at felling trees.",
     "damage": {
       "base": 0,
       "attribute": "strength",
@@ -3912,7 +3912,7 @@
     "name": "Flail (Abundance of Apocrypha)",
     "type": "melee",
     "category": "Low-Tech",
-    "description": "A hafted melee weapon, with one or more chains attached to weighted or spiked heads.",
+    "description": "A hafted melee weapon, with one or more chains attached to weighted or spiked heads, able to batter through a foe's defences and inflict considerable damage.",
     "damage": {
       "base": 0,
       "attribute": "strength",
@@ -3935,7 +3935,7 @@
     "name": "Greataxe (Abundance of Apocrypha)",
     "type": "melee",
     "category": "Low-Tech",
-    "description": "Large, two-handed axes used both as heavy-duty cutting tools and as deadly weapons.",
+    "description": "Large, two-handed axes used both as heavy-duty cutting tools in primitive cultures, and as deadly weapons by mighty warriors. Few have the skill to wield them in battle effectively, but they are deadly in the right hands.",
     "damage": {
       "base": 0,
       "attribute": "strength",
@@ -3962,7 +3962,7 @@
     "name": "Greatsword (Abundance of Apocrypha)",
     "type": "melee",
     "category": "Low-Tech",
-    "description": "These long blades require two hands to wield effectively.",
+    "description": "Coming in a variety of forms and styles, these long blades require two hands to wield effectively, but the two-handed grip allows the wielder greater leverage, which translates into swift strikes and deadly force.",
     "damage": {
       "base": 0,
       "attribute": "strength",
@@ -3988,7 +3988,7 @@
     "name": "Navis Hatchet (Abundance of Apocrypha)",
     "type": "melee",
     "category": "Low-Tech",
-    "description": "Heavy, mono-edged hatchets favoured by the Imperial Navy's elite breacher teams.",
+    "description": "These heavy, mono-edged hatchets are a convenient tool for clearing light obstacles and enemies alike at close quarters. They're a favoured hand weapon of the Imperial Navy's elite breacher teams, giving them considerable impact when the foe is too close even for shotguns.",
     "damage": {
       "base": 0,
       "attribute": "strength",
@@ -4015,7 +4015,7 @@
     "name": "Repression Baton (Abundance of Apocrypha)",
     "type": "melee",
     "category": "Low-Tech",
-    "description": "Simple, sturdy plasteel batons used by Arbitrators.",
+    "description": "These simple, sturdy plasteel batons are the customary melee weapon of Arbitrators, used to bludgeon malcontents and 'persuade' dissidents to comply with the law.",
     "damage": {
       "base": 0,
       "attribute": "strength",
@@ -4040,7 +4040,7 @@
     "name": "Spear (Abundance of Apocrypha)",
     "type": "melee",
     "category": "Low-Tech",
-    "description": "The most common form of weapon ever devised.",
+    "description": "The most common form of weapon ever devised. A pointed head on a long haft makes for a simple weapon, but one which is nevertheless effective, able to hold opponents at a distance and extend the killing reach of their wielder.",
     "damage": {
       "base": 0,
       "attribute": "strength",
@@ -4061,7 +4061,7 @@
     "name": "Force Rod (Abundance of Apocrypha)",
     "type": "melee",
     "category": "Force",
-    "description": "Stout crystalline rods usable as weapons and to store psychic energy.",
+    "description": "These stout crystalline rods are usable as weapons to a limited degree, but they are more useful as a way to store psychic energy for later use.",
     "damage": {
       "base": 0,
       "attribute": "strength",
@@ -4088,7 +4088,7 @@
     "name": "Nemesis Falchion (Abundance of Apocrypha)",
     "type": "melee",
     "category": "Force",
-    "description": "Smaller variants of the Nemesis Force Sword, wielded in pairs.",
+    "description": "Wielded in a pair, Nemesis Falchions are smaller variants of the Nemesis Force Sword. By triggering the circuitry within each Falchion, a Grey Knight can swing the Force Weapon with incredible speed, striking several blows with pinpoint accuracy.",
     "damage": {
       "base": 0,
       "attribute": "strength",
@@ -4116,7 +4116,7 @@
     "name": "Nemesis Force Halberd (Abundance of Apocrypha)",
     "type": "melee",
     "category": "Force",
-    "description": "Two-handed weapon with a long adamantium haft and iron and silver blade.",
+    "description": "A Nemesis Halberd is a two-handed weapon that consists of a long adamantium haft with an iron and silver blade set upon the top. This extra reach often allows a Grey Knight to land a fatal blow, killing the enemy before coming within reach of its weapons.",
     "damage": {
       "base": 0,
       "attribute": "strength",
@@ -4143,7 +4143,7 @@
     "name": "Nemesis Force Sword (Abundance of Apocrypha)",
     "type": "melee",
     "category": "Force",
-    "description": "The most common weapon wielded by Grey Knights.",
+    "description": "The most common type of weapon wielded by the Grey Knights is the Nemesis Force Sword. It exemplifies the mixture of magick and science utilized by the Grey Knights. The blade is tempered iron, flecked with shards of silver and inset with ancient runes of daemon slaying. Advanced power field generators are also contained within.",
     "damage": {
       "base": 0,
       "attribute": "strength",
@@ -4170,7 +4170,7 @@
     "name": "Nemesis Warding Stave (Abundance of Apocrypha)",
     "type": "melee",
     "category": "Force",
-    "description": "Defensive Nemesis weapon with refractor field capabilities.",
+    "description": "Unlike most of the Nemesis Force Weapons used by the Grey Knights, the Nemesis Warding Stave has abilities used in defensive situations. The wielder of the stave can channel his psychic might into the haft to activate the refractor fields within. The refractor fields, once activated, then project a force field around the wielder, softening any blows and thus increasing the chance for retaliation.",
     "damage": {
       "base": 0,
       "attribute": "strength",
@@ -4198,7 +4198,7 @@
     "name": "Anointed Halberd (Abundance of Apocrypha)",
     "type": "melee",
     "category": "Power",
-    "description": "Blessed weapons of the Adepta Sororitas entrusted to elite Celestians.",
+    "description": "These blessed weapons of the Adepta Sororitas are entrusted to the hands of elite Celestians, who use them to hold back the legions of the unholy.",
     "damage": {
       "base": 0,
       "attribute": "strength",
@@ -4224,7 +4224,7 @@
     "name": "Astartes Chainsword (Abundance of Apocrypha)",
     "type": "melee",
     "category": "Chain",
-    "description": "Larger, heavier chainsword constructed to withstand Astartes strength.",
+    "description": "A larger, heavier form of chainsword, constructed to withstand the force of Astartes strength and the ferocity of a Space Marine's strikes. Made using higher-quality components, it is more effective at tearing through light armour as well.",
     "damage": {
       "base": 0,
       "attribute": "strength",
@@ -4251,7 +4251,7 @@
     "name": "Chain Knife (Abundance of Apocrypha)",
     "type": "melee",
     "category": "Chain",
-    "description": "Shorter forms of chainsword, commonly taking the forms of cleavers or machetes.",
+    "description": "More commonly found in underhive gangs and carried on some jungle death worlds, chain knives are shorter forms of chainsword, commonly taking the forms of cleavers or machetes.",
     "damage": {
       "base": 0,
       "attribute": "strength",
@@ -4278,7 +4278,7 @@
     "name": "Crozius Arcanum (Abundance of Apocrypha)",
     "type": "melee",
     "category": "Power",
-    "description": "Power mace used by Space Marine Chaplains as weapon and badge of office.",
+    "description": "A Crozius Arcanum is a mace or staff surrounded by a power field that is used as both a melee weapon and the primary badge of office of Space Marine Chaplains. This duality of purpose presents no philosophical conundrum for the Chaplains, as for them battle itself represents the most valuable form of worship of the Emperor of Mankind.",
     "damage": {
       "base": 0,
       "attribute": "strength",
@@ -4304,7 +4304,7 @@
     "name": "Executioner Greatblade (Abundance of Apocrypha)",
     "type": "melee",
     "category": "Power",
-    "description": "Large two-handed power swords used by the Silent Sisterhood.",
+    "description": "Large, expertly crafted two-handed power swords, used by the Silent Sisterhood. Each Greatblade was perfectly weighted for the martial style of its wielder and once the Sisters were schooled in their use, they could strike with the speed of a duellist combined with the killing might of a veteran executioner.",
     "damage": {
       "base": 0,
       "attribute": "strength",
@@ -4332,7 +4332,7 @@
     "name": "Frost Axe (Abundance of Apocrypha)",
     "type": "melee",
     "category": "Chain",
-    "description": "Unique chain weapons from Fenris incorporating diamond-hard ice kraken fangs.",
+    "description": "Unique to the frozen death world of Fenris, home of the Space Wolves Space Marines Chapter, Frost Blades are exceptional forms of chain weapon, incorporating the diamond-hard fangs of ice kraken, or hyperdense ice from the heart of a Fenrisian glacier. In the hands of a skilled wielder, they are deadlier than any conventional power weapon. They take the form of ornate chainswords and chain axes.",
     "damage": {
       "base": 0,
       "attribute": "strength",
@@ -4358,7 +4358,7 @@
     "name": "Frost Blade (Abundance of Apocrypha)",
     "type": "melee",
     "category": "Chain",
-    "description": "Exceptional chainsword variant from Fenris.",
+    "description": "Unique to the frozen death world of Fenris, home of the Space Wolves Space Marines Chapter, Frost Blades are exceptional forms of chain weapon, incorporating the diamond-hard fangs of ice kraken, or hyperdense ice from the heart of a Fenrisian glacier. In the hands of a skilled wielder, they are deadlier than any conventional power weapon. They take the form of ornate chainswords and chain axes.",
     "damage": {
       "base": 0,
       "attribute": "strength",
@@ -4384,7 +4384,7 @@
     "name": "Guardian Spear (Abundance of Apocrypha)",
     "type": "melee",
     "category": "Power",
-    "description": "Signature weapon of Adeptus Custodes, incorporating power blade and integrated bolter.",
+    "description": "The Guardian Spear has been the signature weapon of the Adeptus Custodes since the time of the Unification Wars in the 30th Millennium. Elegant and deadly, it is a potent and unique design incorporating a Power Blade and a highly advanced integrated Bolter weapon.",
     "damage": {
       "base": 0,
       "attribute": "strength",
@@ -4409,7 +4409,7 @@
     "name": "Hallowed Mace (Abundance of Apocrypha)",
     "type": "melee",
     "category": "Power",
-    "description": "Sacred weapons entrusted to the most devout Celestian Sisters.",
+    "description": "These sacred weapons are entrusted to only the most devout and skilled of Celestian Sisters, who use them to crush the bodies and spirits of the faithless.",
     "damage": {
       "base": 0,
       "attribute": "strength",
@@ -4435,7 +4435,7 @@
     "name": "Lightning Claw (Abundance of Apocrypha)",
     "type": "melee",
     "category": "Power",
-    "description": "Power gauntlet with crackling blades.",
+    "description": "Lightning claws consist of a power gauntlet and three or four blades that crackle with matter-disruptive energy.",
     "damage": {
       "base": 0,
       "attribute": "strength",
@@ -4461,7 +4461,7 @@
     "name": "Misericordia (Abundance of Apocrypha)",
     "type": "melee",
     "category": "Power",
-    "description": "Long dagger carried by Adeptus Custodes, symbolic of their role as executioners.",
+    "description": "The Misericordia is a long dagger or short sword carried by the Custodians of the Adeptus Custodes, symbolic of their place as the Emperor's executioners. The Misericordia was designed to deliver a single, mortal blow, and are used to deliver mercy or vengeance.",
     "damage": {
       "base": 0,
       "attribute": "strength",
@@ -4486,7 +4486,7 @@
     "name": "Power Lance (Abundance of Apocrypha)",
     "type": "melee",
     "category": "Power",
-    "description": "Power blade mounted on a long shaft.",
+    "description": "A Power Lance, also known as a Power Spear or Power Glaive, is a special type of power weapon, a power blade mounted on the end of a long shaft. Like most power weapons, it can tear through all manners of material with ease thanks to its disruptive energy field generated around the blade. They're commonly used as ceremonial weapons by honour guards, or by lancers mounted on bikes or war-beasts.",
     "damage": {
       "base": 0,
       "attribute": "strength",
@@ -4511,7 +4511,7 @@
     "name": "Relic Blade (Abundance of Apocrypha)",
     "type": "melee",
     "category": "Power",
-    "description": "Ancient and powerful two-handed melee weapon.",
+    "description": "A Relic Blade is an ancient and incredibly powerful two-handed melee weapon used by the superhuman warriors of the Adeptus Astartes that often takes the form of a master-crafted sword or axe. Only a precious handful have survived the passage of time and these are reserved for Astartes of long and faultless service who have earned the right to wield a Relic Blade.",
     "damage": {
       "base": 0,
       "attribute": "strength",
@@ -4536,7 +4536,7 @@
     "name": "Sentinel Blade (Abundance of Apocrypha)",
     "type": "melee",
     "category": "Power",
-    "description": "Broadsword with integrated bolt caster, used by Adeptus Custodes.",
+    "description": "The Sentinel Blade is a Power Weapon shaped as a broadsword of daunting size, so large its hilt is flanked with the double barrels of a Bolt Caster that can lay down a hail of short-range fire. It is a common melee weapon used by the Custodians of the Adeptus Custodes, the praetorians of the Emperor of Mankind. It is a testament to the strength of the Custodians that they can wield these powered blades one-handed.",
     "damage": {
       "base": 0,
       "attribute": "strength",
@@ -4561,7 +4561,7 @@
     "name": "Spear of the Faithful (Abundance of Apocrypha)",
     "type": "melee",
     "category": "Power",
-    "description": "Weapons entrusted only to Celestian Sisters Superior.",
+    "description": "These weapons are entrusted only to Celestian Sisters Superior. The blood or ichor of the unholy cannot mar the shining blade of these spears.",
     "damage": {
       "base": 0,
       "attribute": "strength",
@@ -4587,7 +4587,7 @@
     "name": "Chordclaw (Abundance of Apocrypha)",
     "type": "melee",
     "category": "Exotic",
-    "description": "Needle-fingered gauntlet with vibrating blades.",
+    "description": "A deadly, needle-fingered gauntlet, where each blade can be set to vibrate at the resonant frequency of anything they strike, quickly tuning themselves upon impact, tearing through flesh, bone, and armour as they destructively vibrate. A single strike can obliterate large parts of an enemy.",
     "damage": {
       "base": 0,
       "attribute": "strength",
@@ -4614,7 +4614,7 @@
     "name": "Electroleech Staff (Abundance of Apocrypha)",
     "type": "melee",
     "category": "Exotic",
-    "description": "Staff used by Electro-Priests to drain electric force.",
+    "description": "Electroleech Staves are used by some Electro-Priests. The powerful capacitors built into the length of each electroleech staff allow them to drink every iota of electric force from those they strike. This bioelectric energy is siphoned into the user's Luminen capacitor, where it can charge their implants further.",
     "damage": {
       "base": 0,
       "attribute": "strength",
@@ -4642,7 +4642,7 @@
     "name": "Electrostatic Gauntlets (Abundance of Apocrypha)",
     "type": "melee",
     "category": "Exotic",
-    "description": "Gauntlets that unleash electrical discharges.",
+    "description": "Some Electro-Priests wield a set of metal apparatus around their wrists that channel tremendous electrostatic potential from their capacitors. This can be discharged in a cascade of deadly lightning.",
     "damage": {
       "base": 0,
       "attribute": "strength",
@@ -4668,7 +4668,7 @@
     "name": "Excruciator Maul (Abundance of Apocrypha)",
     "type": "melee",
     "category": "Exotic",
-    "description": "Agonizing weapon used by Adeptus Arbites.",
+    "description": "These heavy-duty weapons are potent, high-powered versions of shock mauls, employed by the Adeptus Arbites. Their powerful shock fields and heavy impacts can deliver debilitating strikes even to resilient or armoured foes.",
     "damage": {
       "base": 0,
       "attribute": "strength",
@@ -4694,7 +4694,7 @@
     "name": "Honour Staff (Abundance of Apocrypha)",
     "type": "melee",
     "category": "Exotic",
-    "description": "Staff carried by T'au Ethereals.",
+    "description": "The Honour Staff borne by T'au Ethereals is used as a symbol of office, as ceremonial weapons, and in self-defence. While each weapon is custom-made, they all feature a broad blade fitted to a long, lightweight metallic staff.",
     "damage": {
       "base": 0,
       "attribute": "strength",
@@ -4718,7 +4718,7 @@
     "name": "Hookfang (Abundance of Apocrypha)",
     "type": "melee",
     "category": "Exotic",
-    "description": "Poisoned blade used by Venenum Assassins.",
+    "description": "The Hookfang is a type of poisoned blade used by Venenum Assassins of the Officio Assassinorum. These daggers were designed after a now-extinct apex predator of the Age of Strife and contained a neural-degenerative toxin engineered by the Grandmaster of the Clade. Even the smallest scratch is deadly, and it is said that only three individuals were able to survive the toxin during the reign of the Grandmaster during the Horus Heresy, including herself.",
     "damage": {
       "base": 0,
       "attribute": "strength",
@@ -4745,7 +4745,7 @@
     "name": "Nemesii Blade (Abundance of Apocrypha)",
     "type": "melee",
     "category": "Exotic",
-    "description": "Blade used by Adamus Assassins.",
+    "description": "Forged by the indentured tech-wrights of the Adamus Temple, each Nemesii blade is alleged to be patterned after an Ancient Terran artefact, held in stasis within the core vaults of Temple Adamus itself. Despite having no obvious force-projectors or augmentations, these weapons are possessed with an unnaturally sharp edge, able to cut through flesh and armour with impunity.",
     "damage": {
       "base": 0,
       "attribute": "strength",
@@ -4772,7 +4772,7 @@
     "name": "Neuro-Gauntlet (Abundance of Apocrypha)",
     "type": "melee",
     "category": "Exotic",
-    "description": "Poisoned gauntlet used by Eversor Assassins.",
+    "description": "The Neuro Gauntlet is a specialised weapon only used by the Eversor Assassins of the Imperium of Man's Officio Assassinorum. The weapon is a glove or gauntlet comprised of a hyper-alloy glove whose fingers end in sharp hypodermic needles that inject a potent neurotoxin into the Assassin's victim. When the glove strikes an opponent, the needles immediately inject their toxin into the person's bloodstream. The lethal effect is almost instantaneous and causes a horrifically painful death as the victim is completely paralyzed while his organ systems shut down one by one.",
     "damage": {
       "base": 0,
       "attribute": "strength",
@@ -4797,7 +4797,7 @@
     "name": "Null Rod (Abundance of Apocrypha)",
     "type": "melee",
     "category": "Exotic",
-    "description": "Anti-psychic weapon blessed against the warp.",
+    "description": "This obsidian rod perpetually crackles with psi-null energy, negating the Warp-spawned powers of psykers. Even a glancing blow from such a weapon can provoke a cataclysmic neuron failure in a sorcerer or mystic. At the end of each battle, the null rod must be drained of the energy it has absorbed, lest its captured power open a Warp rift.",
     "damage": {
       "base": 0,
       "attribute": "strength",
@@ -4825,7 +4825,7 @@
     "name": "Phase Sword (Abundance of Apocrypha)",
     "type": "melee",
     "category": "Exotic",
-    "description": "Warp-phasing blade used by Callidus Assassins.",
+    "description": "A Phase Sword—often referred to as a C’Tan Phase Sword—is a metal blade of unknown composition that, using seemingly impossible physics, is capable of phasing through any object irrespective of its physical properties. Energy shields, armour and even daemonic bodies are of no defence against a Phase Sword.",
     "damage": {
       "base": 0,
       "attribute": "strength",
@@ -4851,7 +4851,7 @@
     "name": "Poisoned Blades (Abundance of Apocrypha)",
     "type": "melee",
     "category": "Exotic",
-    "description": "Deadly poisoned blades used by Callidus Assassins.",
+    "description": "In sealed pockets across their synskin bodygloves, many Callidus Operatives keep an array of envenomed needles, each several inches long and wickedly sharp. A Callidus is an expert at slamming them point-first through eye-slits, armour joints and other weak spots to ensure their victim's swift demise.",
     "damage": {
       "base": 0,
       "attribute": "strength",
@@ -4879,7 +4879,7 @@
     "name": "Sympatic Dataspikes (Abundance of Apocrypha)",
     "type": "melee",
     "category": "Exotic",
-    "description": "Arc weapons used by Vanus Assassins.",
+    "description": "Taking the form of a pair of wrist-mounted retractable spikes, these tools are primarily intended to facilitate universal access to the data coils of cogitator banks, allowing the Infocyte to surreptitiously syphon information or to interject damaging scrap-code into enemy systems. Secondarily, their shape allows them to be driven between armour plates and through the eye-slots of even heavily-armoured foes.",
     "damage": {
       "base": 0,
       "attribute": "strength",
@@ -4907,7 +4907,7 @@
     "name": "Taser Goad (Abundance of Apocrypha)",
     "type": "melee",
     "category": "Exotic",
-    "description": "Electrical weapon used by Skitarii.",
+    "description": "Taser Goads are a type of esoteric close combat weapon utilised by the warriors of the Skitarii Legions of the Adeptus Mechanicus. Powered by hyperdynamo capacitors, a Taser Goad stores an incredible amount of potential energy. A solid impact will cause this energy to be discharged in a scorching blast.",
     "damage": {
       "base": 0,
       "attribute": "strength",
@@ -4934,7 +4934,7 @@
     "name": "Transonic Blade (Abundance of Apocrypha)",
     "type": "melee",
     "category": "Exotic",
-    "description": "Vibrating blade used by Skitarii.",
+    "description": "Used by Sicarian Ruststalkers, these long, slender blades tune themselves to destructively resonate through anything they strike. Wielded in pairs, these weapons allow a Ruststalker to scythe through foe after foe.",
     "damage": {
       "base": 0,
       "attribute": "strength",
@@ -4961,7 +4961,7 @@
     "name": "Transonic Razor (Abundance of Apocrypha)",
     "type": "melee",
     "category": "Exotic",
-    "description": "Smaller transonic weapon used by Skitarii.",
+    "description": "Slender, elegant dagger-like blades, which are often used by some Sicarian Ruststalkers as a secondary weapon. Like larger transonic weapons, they can rip through flesh, bone, and armour with terrifying ease.",
     "damage": {
       "base": 0,
       "attribute": "strength",
@@ -4987,7 +4987,7 @@
     "name": "Absolvor Bolt Pistol (Abundance of Apocrypha)",
     "type": "ranged",
     "category": "Bolt",
-    "description": "Primaris bolt pistol variant.",
+    "description": "A heavier form of bolt pistol, with far more range and stopping power, the Absolvor-pattern bolt pistol is normally used as a sidearm by officers and specialists amongst Primaris Astartes.",
     "damage": {
       "base": 12,
       "attribute": null,
@@ -5020,7 +5020,7 @@
     "name": "Auto Bolt Rifle (Abundance of Apocrypha)",
     "type": "ranged",
     "category": "Bolt",
-    "description": "Automatic bolt rifle for Primaris Marines.",
+    "description": "A variant of the Primaris' Bolt Rifles, the Auto Bolt Rifle emphasises rate of fire and mobility over penetration or range.",
     "damage": {
       "base": 10,
       "attribute": null,
@@ -5054,7 +5054,7 @@
     "name": "Auto-Boltstorm Gauntlet (Abundance of Apocrypha)",
     "type": "ranged",
     "category": "Bolt",
-    "description": "Automatic boltstorm gauntlet with power fist.",
+    "description": "Larger, and more stable than the conventional Boltstorm Gauntlet, the bolter component of these weapons allows them to sustain a higher rate of fire while on the move, compared to the close quarters burst fire of the smaller version. Auto Boltstorm Gauntlets are normally wielded in pairs by Primaris Aggressors.",
     "damage": {
       "base": 10,
       "attribute": null,
@@ -5090,7 +5090,7 @@
     "name": "Bolt Carbine (Abundance of Apocrypha)",
     "type": "ranged",
     "category": "Bolt",
-    "description": "Compact bolt weapon for Primaris Marines.",
+    "description": "A more compact version of the Bolter used by Primaris Reiver Space Marines. Bolt Carbines are easier to wield than full-size Boltguns, due to their lighter, simpler construction and recoil suppressors.",
     "damage": {
       "base": 10,
       "attribute": null,
@@ -5125,7 +5125,7 @@
     "name": "Bolt Sniper Rifle (Abundance of Apocrypha)",
     "type": "ranged",
     "category": "Bolt",
-    "description": "Long-range precision bolt weapon.",
+    "description": "A sophisticated and potent variant of bolt weapon, the Mark III Shrike-pattern Bolt Sniper Rifle is versatile and deadly. It uses advanced targeting augurs to lock in on a target before the wielder fires and can support a range of specialised ammunition suited to a variety of target profiles.",
     "damage": {
       "base": 12,
       "attribute": null,
@@ -5159,7 +5159,7 @@
     "name": "Boltstorm Gauntlet (Abundance of Apocrypha)",
     "type": "ranged",
     "category": "Bolt",
-    "description": "Power fist with integrated bolt weapon.",
+    "description": "A rapid-firing bolt pistol mounted on the underside of a power fist.",
     "damage": {
       "base": 10,
       "attribute": null,
@@ -5193,7 +5193,7 @@
     "name": "Executor Bolt Rifle (Abundance of Apocrypha)",
     "type": "ranged",
     "category": "Bolt",
-    "description": "Heavy bolt rifle for long-range engagements.",
+    "description": "A high-calibre, heavy form of the Stalker Bolt Rifle, used by Heavy Intercessors.",
     "damage": {
       "base": 12,
       "attribute": null,
@@ -5227,7 +5227,7 @@
     "name": "Executor Heavy Bolter (Abundance of Apocrypha)",
     "type": "ranged",
     "category": "Bolt",
-    "description": "Heavy bolter variant with armor-piercing rounds.",
+    "description": "Sacrificing some rate of fire for greater range and a heavier punch, these are often used alongside Executor Bolt Rifles.",
     "damage": {
       "base": 12,
       "attribute": null,
@@ -5261,7 +5261,7 @@
     "name": "Hellstorm Bolt Rifle (Abundance of Apocrypha)",
     "type": "ranged",
     "category": "Bolt",
-    "description": "High-volume bolt rifle.",
+    "description": "A high-calibre form of the Auto Bolt Rifle used to lay down heavy fire while advancing.",
     "damage": {
       "base": 12,
       "attribute": null,
@@ -5296,7 +5296,7 @@
     "name": "Hellstorm Heavy Bolter (Abundance of Apocrypha)",
     "type": "ranged",
     "category": "Bolt",
-    "description": "Heavy bolter with high rate of fire.",
+    "description": "A form of Heavy Bolter which sacrifices range and penetrative power for fire rate, used in support of Hellstorm Bolt Rifles.",
     "damage": {
       "base": 12,
       "attribute": null,
@@ -5330,7 +5330,7 @@
     "name": "Heavy Bolt Rifle (Abundance of Apocrypha)",
     "type": "ranged",
     "category": "Bolt",
-    "description": "Heavy variant of the bolt rifle.",
+    "description": "A bulkier, more powerful version of the Bolt Rifle, chambered to use Heavy Bolter shells and wielded by Heavy Intercessors.",
     "damage": {
       "base": 12,
       "attribute": null,
@@ -5364,7 +5364,7 @@
     "name": "Atalan Incinerator",
     "type": "ranged",
     "category": "Vehicle - Industrial",
-    "description": "A vehicle-mounted incinerator used by industrial and mining vehicles.",
+    "description": "This flame device is used to burn away foliage and other mining obstructions. In the hands of insurrectionists, though, it is a deadly weapon.",
     "damage": {
       "base": 12,
       "attribute": null,
@@ -5396,7 +5396,7 @@
     "name": "Clearance Incinerator",
     "type": "ranged",
     "category": "Vehicle - Industrial",
-    "description": "A heavy vehicle-mounted incinerator designed for clearing large areas.",
+    "description": "This massive, multibarrelled device is designed for melting rock as part of mining operations. As a military weapon, it can burn armour and flesh with equal ease.",
     "damage": {
       "base": 12,
       "attribute": null,
@@ -5428,7 +5428,7 @@
     "name": "Heavy Mining Laser",
     "type": "ranged",
     "category": "Vehicle - Industrial",
-    "description": "A powerful laser originally designed for mining operations, repurposed for combat.",
+    "description": "The mining laser uses practically applied laser technology to create and expand mining tunnels. However, the limiters that keep these tools safe for use by labourers are easily broken. The result is a powerful Las weapon that can penetrate armour with ease, while the Heavy version is on par with Militarum Battle Cannons.",
     "damage": {
       "base": 18,
       "attribute": null,
@@ -5524,7 +5524,7 @@
     "name": "Mining Laser",
     "type": "ranged",
     "category": "Vehicle - Industrial",
-    "description": "A laser designed for mining operations that can be wielded by infantry or mounted on vehicles.",
+    "description": "The mining laser uses practically applied laser technology to create and expand mining tunnels. However, the limiters that keep these tools safe for use by labourers are easily broken. The result is a powerful Las weapon that can penetrate armour with ease, while the Heavy version is on par with Militarum Battle Cannons.",
     "damage": {
       "base": 16,
       "attribute": null,
@@ -5556,7 +5556,7 @@
     "name": "Battle Cannon",
     "type": "ranged",
     "category": "Vehicle - Cannon",
-    "description": "The main armament of the Leman Russ, this weapon fires high-explosive shells capable of devastating infantry and armour alike.",
+    "description": "The Battle Cannon is a huge, smoothbore cannon that fires 120mm shells up to great distances. The shells are a hybrid high-explosive and armour-piercing munition that can obliterate even hardened targets within a large radius.",
     "damage": {
       "base": 16,
       "attribute": null,
@@ -5589,7 +5589,7 @@
     "name": "Belleros Energy Cannon",
     "type": "ranged",
     "category": "Vehicle - Cannon",
-    "description": "An Adeptus Mechanicus energy weapon that fires arcing blasts of energy.",
+    "description": "This cannon fires arcing bolts formed from the hyperreactive gas used to power the Skorpius tank, now superheated so each explodes violently on impact.",
     "damage": {
       "base": 11,
       "attribute": null,
@@ -5688,7 +5688,7 @@
     "name": "Castigator Autocannon",
     "type": "ranged",
     "category": "Vehicle - Cannon",
-    "description": "A rapid-firing autocannon mounted on Sororitas Castigator tanks.",
+    "description": "Designed to provide the Castigator battle tank with strong, long-rage firepower, this Autocannon variant is commonly mounted in pairs. It can easily tear apart the lightly armoured vehicles that most heretics field in combat and can even prove deadly to heavier tanks and huge daemons.",
     "damage": {
       "base": 16,
       "attribute": null,
@@ -5720,7 +5720,7 @@
     "name": "Chem Cannon",
     "type": "ranged",
     "category": "Vehicle - Cannon",
-    "description": "A short-range chemical weapon that sprays corrosive compounds.",
+    "description": "In a galaxy of war, this weapon stands out as particularly horrifying. A Chem Cannon fires a short-range jet of corrosive gas, specifically designed by Tech-Priests of the Magos Biologis to reduce Human and even the toughest of xenos flesh to bubbling masses of organic slurry.",
     "damage": {
       "base": 14,
       "attribute": null,
@@ -5754,7 +5754,7 @@
     "name": "Demolisher Cannon",
     "type": "ranged",
     "category": "Vehicle - Cannon",
-    "description": "A massive siege cannon designed to level fortifications and destroy heavy armour at close range.",
+    "description": "An aptly named siege weapon, the Demolisher Cannon fires wide, large-bore explosive shells over short range to devastating effect. Designed to bombard bunkers, reinforced walls, and other defences, the Demolisher Cannon has proven its effectiveness in smashing through enemy fortifications over tens of thousands of Imperial engagements.",
     "damage": {
       "base": 20,
       "attribute": null,
@@ -5786,7 +5786,7 @@
     "name": "Earthshaker Cannon",
     "type": "ranged",
     "category": "Vehicle - Cannon",
-    "description": "An enormous long-range artillery piece that can devastate enemy positions from extreme distance.",
+    "description": "Huge artillery cannons designed to rain heavy explosive shells in a bombardment of the Emperor's purest rage, Earthshakers are fittingly named, as the recoil from their colossal rounds rocks the ground they stand on — to say nothing of the devastation they unleash, usually leaving little but craters in their wake.",
     "damage": {
       "base": 17,
       "attribute": null,
@@ -5819,7 +5819,7 @@
     "name": "Eradication Beamer",
     "type": "ranged",
     "category": "Vehicle - Cannon",
-    "description": "An Adeptus Mechanicus weapon that fires beams of energy capable of eradicating targets.",
+    "description": "Though its technologies remain a mystery to all beyond the reticent Adeptus Mechanicus, the Eradication Beamer has a blast with well-known results — the target is simply removed from existence. Sickly amber rays burst from this weapon, widening as they travel and leaving nothing but the pulverised particles of the target behind.",
     "damage": {
       "base": 16,
       "attribute": null,
@@ -5885,7 +5885,7 @@
     "name": "Ferrumite Cannon",
     "type": "ranged",
     "category": "Vehicle - Cannon",
-    "description": "An Adeptus Mechanicus cannon firing dense metallic rounds.",
+    "description": "The Adeptus Mechanicus often deploy ancient slugthrowers that still terrorise their enemies. This is exemplified by the Ferrumite Cannon, a weapon that blasts solid shells that burst into melting-hot shrapnel on contact.",
     "damage": {
       "base": 15,
       "attribute": null,
@@ -5916,7 +5916,7 @@
     "name": "Flamestorm Cannon",
     "type": "ranged",
     "category": "Vehicle - Cannon",
-    "description": "A massive flamer weapon mounted on Land Raider Redeemers, engulfing enemies in promethium.",
+    "description": "An immense Flamer of ancient provenance, the Flamestorm Cannon spews blazing promethium from a sponson position.",
     "damage": {
       "base": 14,
       "attribute": null,
@@ -5949,7 +5949,7 @@
     "name": "Heavy Laser Destroyer",
     "type": "ranged",
     "category": "Vehicle - Cannon",
-    "description": "A devastating anti-armour laser weapon capable of destroying the heaviest targets.",
+    "description": "This devastating laser weapon emits a formidable beam of energy, greater than many battle cannons and enough to blast apart almost any tank or fortification. Its power is easily matched by its range as well, making it one of the deadliest weapons in Astartes forces.",
     "damage": {
       "base": 22,
       "attribute": null,
@@ -5981,7 +5981,7 @@
     "name": "Heavy Onslaught Gatling Cannon",
     "type": "ranged",
     "category": "Vehicle - Cannon",
-    "description": "A multi-barrelled rotary cannon that can shred infantry with a storm of bolts.",
+    "description": "A simple rotary ballistic weapon brought to its logical, colossal conclusion, the Heavy Onslaught Gatling Cannon fills the air with a squall of slugs that obliterate armour through the sheer number of bullets fired.",
     "damage": {
       "base": 12,
       "attribute": null,
@@ -6015,7 +6015,7 @@
     "name": "Inferno Cannon",
     "type": "ranged",
     "category": "Vehicle - Cannon",
-    "description": "The Hellhound's main weapon, spraying burning promethium over a wide area.",
+    "description": "A massive mounted Flamer weapon, the Inferno Cannon spews immense plumes of burning promethium.",
     "damage": {
       "base": 14,
       "attribute": null,
@@ -6048,7 +6048,7 @@
     "name": "Lancer Laser Destroyer",
     "type": "ranged",
     "category": "Vehicle - Cannon",
-    "description": "A powerful anti-armour laser mounted on the Gladiator Lancer.",
+    "description": "The main armament of the Gladiator, this heavy-hitting gun can puncture the armour of almost any enemy tank. Perhaps more vitally, it can do so at long distances to both eradicate enemy vehicles and suppress enemy advances.",
     "damage": {
       "base": 20,
       "attribute": null,
@@ -6081,7 +6081,7 @@
     "name": "Melta Cannon",
     "type": "ranged",
     "category": "Vehicle - Cannon",
-    "description": "A vehicle-mounted melta weapon that fires devastating blasts of fusion energy.",
+    "description": "Commonly used as a tank killer, a Melta Cannon acts as a rapid-firing version of the infamous Multi-Melta. This allows it to pour blasts of armour-liquifying heat on to targets before they can react, leaving only pools of cooling metal behind.",
     "damage": {
       "base": 16,
       "attribute": null,
@@ -6115,7 +6115,7 @@
     "name": "Neutron Laser",
     "type": "ranged",
     "category": "Vehicle - Cannon",
-    "description": "An Adeptus Mechanicus weapon that fires powerful neutron beams.",
+    "description": "This weapon, unique to the forces of the Machine Cult, fires a beam of coherent energy from a neutronic coil arc reactor. Almost nothing can stand against it, thus proving the superiority of the Martian Priesthood.",
     "damage": {
       "base": 19,
       "attribute": null,
@@ -6148,7 +6148,7 @@
     "name": "Onslaught Gatling Cannon",
     "type": "ranged",
     "category": "Vehicle - Cannon",
-    "description": "A rapid-firing rotary bolt weapon used on Primaris vehicles.",
+    "description": "Though less powerful than the Heavy Onslaught Gatling Cannon, this gun can still fire a prodigious number of rounds. Against foes who cannot hear its spinning barrel above the cacophony of battle, it can eliminate squads before they know they are in danger.",
     "damage": {
       "base": 11,
       "attribute": null,
@@ -6182,7 +6182,7 @@
     "name": "Predator Autocannon",
     "type": "ranged",
     "category": "Vehicle - Cannon",
-    "description": "The primary weapon of the Predator Destructor, a rapid-firing cannon effective against infantry and light vehicles.",
+    "description": "The main armament of the legendary Predator Destructor of the Adeptus Astartes, this long-range gun combines heavy firepower with lethality.",
     "damage": {
       "base": 15,
       "attribute": null,
@@ -6247,7 +6247,7 @@
     "name": "Taurox Battle Cannon",
     "type": "ranged",
     "category": "Vehicle - Cannon",
-    "description": "A compact battle cannon mounted on the Taurox Prime.",
+    "description": "A lighter version of the Imperial Battle Cannon, this weapon is mounted on the Taurox Prime to complement its fast-moving infantry transport and support role.",
     "damage": {
       "base": 15,
       "attribute": null,
@@ -6348,7 +6348,7 @@
     "name": "Wyvern Quad Stormshard Mortar",
     "type": "ranged",
     "category": "Vehicle - Cannon",
-    "description": "A quad mortar system firing stormshard rounds for suppressing infantry.",
+    "description": "Though not as powerful as some tank ordnance, this weapon offers excellent tactical support through a salvo of mortar shells. Its quad configuration means it can fire blast after blast, ensuring enemy infantry have no respite from the Emperor's Might.",
     "damage": {
       "base": 10,
       "attribute": null,
@@ -6381,7 +6381,7 @@
     "name": "Auto Bolt Rifle (Vehicle)",
     "type": "ranged",
     "category": "Vehicle - Mounted",
-    "description": "A vehicle-mounted version of the Primaris Auto Bolt Rifle.",
+    "description": "An aggressive variant of the Boltgun, the Auto Bolt Rifle has a superior rate of fire but a shorter range and lesser armour penetration. This is ideal when facing hordes on whom standard rounds would be wasteful.",
     "damage": {
       "base": 12,
       "attribute": null,
@@ -6415,7 +6415,7 @@
     "name": "Cognis Autocannon",
     "type": "ranged",
     "category": "Vehicle - Mounted",
-    "description": "An autocannon with a Cognis machine spirit that can fire autonomously.",
+    "description": "These weapons, such as the Cognis Autocannon, Cognis Heavy Stubber, and Cognis Lascannon, all have awakened Machine Spirits. This makes them even more deadly against any who would stand against the Omnissiah and the Binharic Truth, for then can control the weapon when the operator is unavailable.",
     "damage": {
       "base": 16,
       "attribute": null,
@@ -6448,7 +6448,7 @@
     "name": "Cognis Heavy Stubber",
     "type": "ranged",
     "category": "Vehicle - Mounted",
-    "description": "A heavy stubber with a Cognis machine spirit for autonomous firing.",
+    "description": "These weapons, such as the Cognis Autocannon, Cognis Heavy Stubber, and Cognis Lascannon, all have awakened Machine Spirits. This makes them even more deadly against any who would stand against the Omnissiah and the Binharic Truth, for then can control the weapon when the operator is unavailable.",
     "damage": {
       "base": 10,
       "attribute": null,
@@ -6482,7 +6482,7 @@
     "name": "Cognis Lascannon",
     "type": "ranged",
     "category": "Vehicle - Mounted",
-    "description": "A lascannon with a Cognis machine spirit for autonomous firing.",
+    "description": "These weapons, such as the Cognis Autocannon, Cognis Heavy Stubber, and Cognis Lascannon, all have awakened Machine Spirits. This makes them even more deadly against any who would stand against the Omnissiah and the Binharic Truth, for then can control the weapon when the operator is unavailable.",
     "damage": {
       "base": 18,
       "attribute": null,
@@ -6515,7 +6515,7 @@
     "name": "Heavy Phosphor Blaster",
     "type": "ranged",
     "category": "Vehicle - Mounted",
-    "description": "An Adeptus Mechanicus weapon firing searing spheres of incendiary chemicals.",
+    "description": "A more powerful version of the basic Phosphor Blaster, this is often used to provide anti-infantry fire support.",
     "damage": {
       "base": 13,
       "attribute": null,
@@ -6547,7 +6547,7 @@
     "name": "Hurricane Bolter",
     "type": "ranged",
     "category": "Vehicle - Mounted",
-    "description": "A cluster of six boltguns firing simultaneously, laying down a devastating hail of fire.",
+    "description": "A Hurricane Bolter comprises six interlinked Boltguns mounted on a single vehicle sponson, multiplying the deadly force of the Adeptus Astartes' iconic weapon.",
     "damage": {
       "base": 10,
       "attribute": null,
@@ -6580,7 +6580,7 @@
     "name": "Hydra Quad Autocannon",
     "type": "ranged",
     "category": "Vehicle - Mounted",
-    "description": "A quad-mounted anti-aircraft autocannon system.",
+    "description": "Designed for anti-aircraft use, the Hydra Quad Autocannon sends barrages of metal into the sky. Few enemy fliers can survive such a torrent of firepower.",
     "damage": {
       "base": 16,
       "attribute": null,
@@ -6613,7 +6613,7 @@
     "name": "Icarus Autocannon",
     "type": "ranged",
     "category": "Vehicle - Mounted",
-    "description": "An anti-aircraft autocannon used by the Adeptus Mechanicus.",
+    "description": "A variant of the standard Imperial Autocannon, this version is primarily designed for targeting and destroying enemy aircraft. This does not lessen its deadliness against foes on the ground, though, as many enemies of the Omnissiah have learned. If this weapon hits an aircraft, double the number of ED rolled.",
     "damage": {
       "base": 16,
       "attribute": null,
@@ -6645,7 +6645,7 @@
     "name": "Icarus Ironhail Heavy Stubber",
     "type": "ranged",
     "category": "Vehicle - Mounted",
-    "description": "An anti-aircraft variant of the Ironhail Heavy Stubber. If this weapon hits an aircraft, double the number of ED rolled.",
+    "description": "This advanced version of the Ironhail Heavy Stubber adds greater effectiveness against light enemy aircraft while still maintaining its role as an infantry suppression weapon. If this weapon hits an aircraft, double the number of ED rolled.",
     "damage": {
       "base": 10,
       "attribute": null,
@@ -6676,7 +6676,7 @@
     "name": "Immolation Flamer",
     "type": "ranged",
     "category": "Vehicle - Mounted",
-    "description": "A more powerful version of the Heavy Flamer, bringing purifying flame to all enemies.",
+    "description": "A more powerful version of the standard Heavy Flamer, an Immolation Flamer brings the purification of flame to all who would corrupt the Emperor's Light. With it, curtains of burning righteousness spread across streets and battlefields alike to pave advances with charred bones.",
     "damage": {
       "base": 12,
       "attribute": null,
@@ -6709,7 +6709,7 @@
     "name": "Ironhail Heavy Stubber",
     "type": "ranged",
     "category": "Vehicle - Mounted",
-    "description": "A more deadly and robust version of the Heavy Stubber, designed for Astartes vehicles.",
+    "description": "Designed for use by Astartes forces, the Ironhail is not only more deadly but also a more robust version of the ubiquitous Heavy Stubber. Often found on Primaris Space Marine tanks, it helps that disembarkation locations are free of enemy infantry.",
     "damage": {
       "base": 10,
       "attribute": null,
@@ -6740,7 +6740,7 @@
     "name": "Krakstorm Grenade Launcher",
     "type": "ranged",
     "category": "Vehicle - Mounted",
-    "description": "A vehicle-mounted grenade launcher firing Krak grenades in short-range patterns.",
+    "description": "Commonly mounted on vehicles fielded by Primaris Space Marines, the Krakstorm Grenade Launcher fires Krak Grenades in a short-range pattern. This is usually enough to suppress the approach of armoured enemies and to allow Astartes to disembark with impunity.",
     "damage": {
       "base": 14,
       "attribute": null,
@@ -6772,7 +6772,7 @@
     "name": "Las-Talon",
     "type": "ranged",
     "category": "Vehicle - Mounted",
-    "description": "A shorter-range version of the Lascannon that trades distance for greater rate of fire.",
+    "description": "A shorter-range version of the Lascannon, the Las-Talon trades distance for a greater rate of fire. It is often mounted on transports, where it can support infantry deployment with greater safety after Las-Talon fire has turned enemy vehicles into smoking wrecks.",
     "damage": {
       "base": 18,
       "attribute": null,
@@ -6806,7 +6806,7 @@
     "name": "Lasgun Array",
     "type": "ranged",
     "category": "Vehicle - Mounted",
-    "description": "A system of six interlinked Lasguns mounted as an anti-infantry weapon.",
+    "description": "A system of six interlinked Lasguns mounted as an anti-infantry weapon, a Lasgun Array allows a vehicle to bring its own fire support to a battle.",
     "damage": {
       "base": 7,
       "attribute": null,
@@ -6840,7 +6840,7 @@
     "name": "Macro Plasma Incinerator",
     "type": "ranged",
     "category": "Vehicle - Mounted",
-    "description": "A powerful plasma weapon firing blasts of barely controlled energy.",
+    "description": "This powerful plasma weapon fires blasts of barely controlled energy, hot enough to destroy heavily armoured infantry and vehicles alike.",
     "damage": {
       "base": 17,
       "attribute": null,
@@ -6873,7 +6873,7 @@
     "name": "Multi-Laser",
     "type": "ranged",
     "category": "Vehicle - Mounted",
-    "description": "A rapid-firing and more deadly version of the Imperial Lasgun, effective against infantry and light vehicles.",
+    "description": "A rapid-firing and more deadly version Imperial Lasgun, the Multi-Laser utilises massive amounts of energy to fire powerful lasers at high speed. It is extremely effective at dispatching massed infantry and light vehicles with searing barrages.",
     "damage": {
       "base": 12,
       "attribute": null,
@@ -6907,7 +6907,7 @@
     "name": "Onager Heavy Phosphor Blaster",
     "type": "ranged",
     "category": "Vehicle - Mounted",
-    "description": "A specialised variant of the Heavy Phosphor Blaster for the Onager Dunecrawler.",
+    "description": "A specialised variant of the standard Heavy Phosphor Blaster, this weapon gives the Dunecrawler a potent anti-infantry role.",
     "damage": {
       "base": 14,
       "attribute": null,
@@ -6940,7 +6940,7 @@
     "name": "Phosphor Blaster",
     "type": "ranged",
     "category": "Vehicle - Mounted",
-    "description": "Fires searing spheres of incendiary chemicals that burn and liquify foes.",
+    "description": "Firing searing spheres of incendiary chemicals, the Phosphor Blaster burns and liquifies its foes. A heavier variant is also available, with even greater lethality.",
     "damage": {
       "base": 8,
       "attribute": null,
@@ -6972,7 +6972,7 @@
     "name": "Repressor Heavy Flamer",
     "type": "ranged",
     "category": "Vehicle - Mounted",
-    "description": "A stronger version of the Heavy Flamer mounted on the Sororitas Repressor.",
+    "description": "A stronger version of the standard Heavy Flamer, the Repressor allows the righteous fury of the Emperor to burn down enemies with even greater fervour.",
     "damage": {
       "base": 15,
       "attribute": null,
@@ -7005,7 +7005,7 @@
     "name": "Taurox Missile Launcher (Frag)",
     "type": "ranged",
     "category": "Vehicle - Mounted",
-    "description": "A vehicle-mounted missile launcher loaded with fragmentation rockets.",
+    "description": "An upgunned version of the standard Militarum Missile Launcher, this weapon can send furious barrages of either frag or krak rounds upon enemy formations.",
     "damage": {
       "base": 12,
       "attribute": null,
@@ -7067,7 +7067,7 @@
     "name": "Tempest Bolter",
     "type": "ranged",
     "category": "Vehicle - Mounted",
-    "description": "A quad-mounted bolt weapon that can lay down a devastating hail of shells.",
+    "description": "A quad-mounted configuration of the standard Astartes weapon, the Tempest Bolter can lay down a hail of shells sufficient to decimate enemy infantry.",
     "damage": {
       "base": 10,
       "attribute": null,
@@ -7101,7 +7101,7 @@
     "name": "Vulture Gatling Cannon",
     "type": "ranged",
     "category": "Vehicle - Mounted",
-    "description": "A multi-barrelled rotary cannon for strafing wide areas of enemy infantry.",
+    "description": "This weapon allows the Vulture Gunship to eradicate huge swathes of enemy infantry in each strafing pass.",
     "damage": {
       "base": 12,
       "attribute": null,
@@ -7133,7 +7133,7 @@
     "name": "Cerberus Launcher",
     "type": "ranged",
     "category": "Vehicle - Missile",
-    "description": "A short-range missile launcher mounted on Land Speeders to soften up enemy infantry.",
+    "description": "Often mounted on Land Speeder variants, the Cerberus fires short-ranged missiles to soften up enemy infantry as part of an Astartes assault.",
     "damage": {
       "base": 12,
       "attribute": null,
@@ -7197,7 +7197,7 @@
     "name": "Deathstrike Missile",
     "type": "ranged",
     "category": "Vehicle - Missile",
-    "description": "A massive one-shot missile with the power to destroy entire formations.",
+    "description": "Each of these huge missiles has the power to destroy entire infantry formations and tank squadrons.",
     "damage": {
       "base": 20,
       "attribute": null,
@@ -7229,7 +7229,7 @@
     "name": "Disruptor Missile Launcher",
     "type": "ranged",
     "category": "Vehicle - Missile",
-    "description": "An Adeptus Mechanicus missile system devastating against massed troops and light vehicles.",
+    "description": "Firing salvoes of Disruptor Missiles, this weapon is devastating against massed enemy troops and lightly armoured vehicles.",
     "damage": {
       "base": 15,
       "attribute": null,
@@ -7261,7 +7261,7 @@
     "name": "Exorcist Conflagration Rocket Launcher",
     "type": "ranged",
     "category": "Vehicle - Missile",
-    "description": "An anti-infantry rocket launcher for the Exorcist tank, firing blessed incendiary rockets.",
+    "description": "An anti-infantry alternative weapon for the Exorcist tank, each of these blessed rockets ensures none can hide from the Emperor's Gaze.",
     "damage": {
       "base": 13,
       "attribute": null,
@@ -7293,7 +7293,7 @@
     "name": "Exorcist Missile Launcher",
     "type": "ranged",
     "category": "Vehicle - Missile",
-    "description": "The primary weapon of the Exorcist tank, providing long-range armour elimination.",
+    "description": "This platform gives the Adepta Sororitas long-range support, eliminating armoured threats before Battle Sisters descend on those found lacking in their faith.",
     "damage": {
       "base": 15,
       "attribute": null,
@@ -7325,7 +7325,7 @@
     "name": "Fragstorm Grenade Launcher",
     "type": "ranged",
     "category": "Vehicle - Missile",
-    "description": "A vehicle-mounted grenade launcher that hurls short-range frag munitions.",
+    "description": "Often mounted on tanks used by Primaris Space Marines, the Fragstorm hurls short-range munitions designed to tare apart any would-be attackers.",
     "damage": {
       "base": 10,
       "attribute": null,
@@ -7358,7 +7358,7 @@
     "name": "Gatling Rocket Launcher",
     "type": "ranged",
     "category": "Vehicle - Missile",
-    "description": "A rapid-fire rocket launcher effective against aircraft and ground targets alike.",
+    "description": "The Gatling Rocket Launcher relies on saturation fire against enemy aircraft, and few escape its metallic attention. It also offers solid effectiveness against ground-based foes, especially infantry units.",
     "damage": {
       "base": 13,
       "attribute": null,
@@ -7390,7 +7390,7 @@
     "name": "Heavy Mortar",
     "type": "ranged",
     "category": "Vehicle - Missile",
-    "description": "A vehicle-mounted mortar excellent for infantry suppression at long range.",
+    "description": "Able to hurl ammunition long distances, a mortar is an excellent infantry-suppression weapon that requires little skill to operate. The larger vehicle-mounted version, the Heavy Mortar, has found its way into many insurrectionist armies.",
     "damage": {
       "base": 11,
       "attribute": null,
@@ -7422,7 +7422,7 @@
     "name": "Hellstrike Missile",
     "type": "ranged",
     "category": "Vehicle - Missile",
-    "description": "An air-to-ground missile providing effective close air support.",
+    "description": "Similar to the Hunter-Killer Missile, the Hellstrike allows Imperial aircraft to provide effective ground support.",
     "damage": {
       "base": 14,
       "attribute": null,
@@ -7456,7 +7456,7 @@
     "name": "Hunter-Killer Missile",
     "type": "ranged",
     "category": "Vehicle - Missile",
-    "description": "A single-shot missile found across almost every Imperial faction.",
+    "description": "A venerable weapon found across almost every Faction of Imperial forces, the Hunter-Killer is a single-shot missile that can even target concealed enemies.",
     "damage": {
       "base": 19,
       "attribute": null,
@@ -7489,7 +7489,7 @@
     "name": "Hunter-Slayer Missile",
     "type": "ranged",
     "category": "Vehicle - Missile",
-    "description": "A more powerful variant of the Hunter-Killer Missile, reserved for Primaris vehicles.",
+    "description": "An even more powerful variant of the ubiquitous Hunter-Killer Missile, the Hunter-Slayer is primarily reserved for use on Primaris Adeptus Astartes vehicles.",
     "damage": {
       "base": 20,
       "attribute": null,
@@ -7522,7 +7522,7 @@
     "name": "Icarus Rocket Pod",
     "type": "ranged",
     "category": "Vehicle - Missile",
-    "description": "An anti-aircraft rocket pod. If this weapon hits an aircraft, double the number of ED rolled.",
+    "description": "This weapon fires anti-aircraft rockets and is often mounted on tanks and dreadnoughts to provide protection from airborne attacks. If this weapon hits an aircraft, double the number of ED rolled.",
     "damage": {
       "base": 14,
       "attribute": null,
@@ -7556,7 +7556,7 @@
     "name": "Multiple Rocket Pod",
     "type": "ranged",
     "category": "Vehicle - Missile",
-    "description": "A weapon firing barrages of small anti-infantry rockets for strafing and close air support.",
+    "description": "Firing barrages of small anti-infantry rockets, this weapon is commonly used on aircraft for strafing and close air support. While ineffective against armoured vehicles, it ensures enemy troops are unable to prepare for ground assaults.",
     "damage": {
       "base": 12,
       "attribute": null,
@@ -7589,7 +7589,7 @@
     "name": "Storm Eagle Rocket",
     "type": "ranged",
     "category": "Vehicle - Missile",
-    "description": "A large rocket carrying blessed high explosives released just prior to impact.",
+    "description": "Each of these venerable rockets carries a payload of sanctified high explosives that are released just prior to impact to ensure maximum carnage.",
     "damage": {
       "base": 18,
       "attribute": null,
@@ -7622,7 +7622,7 @@
     "name": "Tauros Grenade Launcher (Frag)",
     "type": "ranged",
     "category": "Vehicle - Missile",
-    "description": "A vehicle-mounted grenade launcher providing light offensive capability.",
+    "description": "A vehicle-mounted version of the standard Grenade Launcher, this weapon provides the Tauros with a light offensive capability.",
     "damage": {
       "base": 10,
       "attribute": null,
@@ -7688,7 +7688,7 @@
     "name": "Typhoon Missile Launcher (Frag)",
     "type": "ranged",
     "category": "Vehicle - Missile",
-    "description": "A missile launcher firing devastating frag barrages.",
+    "description": "This missile launcher fires devastating barrages of Frag or Krak Missiles and offers long-range capabilities against both infantry and vehicles.",
     "damage": {
       "base": 12,
       "attribute": null,
@@ -7752,7 +7752,7 @@
     "name": "Vulture Hellstrike Rack",
     "type": "ranged",
     "category": "Vehicle - Missile",
-    "description": "An air-to-ground missile rack providing potent long-range fire support.",
+    "description": "A Vulture Hellstrike Rack gives its gunship potent long-range fire support capability against dug-in infantry positions and armoured enemy vehicles.",
     "damage": {
       "base": 14,
       "attribute": null,
@@ -7786,7 +7786,7 @@
     "name": "Whirlwind Castellan Launcher",
     "type": "ranged",
     "category": "Vehicle - Missile",
-    "description": "Mass anti-infantry barrages that effectively clear areas of enemy infantry.",
+    "description": "Castellan strikes often herald the arrival of Space Marines to a position. Mass barrages from this launcher effectively clear almost any area of enemy infantry.",
     "damage": {
       "base": 14,
       "attribute": null,
@@ -7819,7 +7819,7 @@
     "name": "Whirlwind Vengeance Launcher",
     "type": "ranged",
     "category": "Vehicle - Missile",
-    "description": "The heavier Whirlwind missile variant for denying heavy infantry and light armour.",
+    "description": "The heavier of the two Whirlwind missiles, the Vengeance provides effective denial of heavy infantry and lightly armoured forces.",
     "damage": {
       "base": 15,
       "attribute": null,
@@ -7852,7 +7852,7 @@
     "name": "Sentinel Chainsaw",
     "type": "melee",
     "category": "Vehicle - Melee",
-    "description": "A large chainsaw blade originally designed to clear difficult terrain, repurposed for combat on Sentinel walkers.",
+    "description": "It took moments for the first Sentinel Pilot who saw this attachment, originally designed to clear difficult terrain, to realise it could be put to more visceral use.",
     "damage": {
       "base": 8,
       "attribute": null,
@@ -7942,7 +7942,7 @@
     "name": "Bright Lance",
     "type": "ranged",
     "category": "Vehicle - Aeldari",
-    "description": "A hyperfocussed beam of coherent light fired through psychically grown crystals, able to penetrate the thickest armour.",
+    "description": "The Aeldari Bright Lance fires a hyperfocussed beam of coherent light through psychically grown crystals. The beam is efficient and intensely powerful, able to penetrate even the thickest armour with pinpoint accuracy.",
     "damage": {
       "base": 16,
       "attribute": null,
@@ -7976,7 +7976,7 @@
     "name": "Doomweaver",
     "type": "ranged",
     "category": "Vehicle - Aeldari",
-    "description": "Fires a strangling web of razor-sharp monofilament thread that shreds flesh and metal.",
+    "description": "An esoteric weapon designed to decimate ground forces, the Doomweaver fires a strangling web of razor-sharp monofilament thread that shreds through flesh and metal with ease.",
     "damage": {
       "base": 16,
       "attribute": null,
@@ -8009,7 +8009,7 @@
     "name": "Heavy D-Scythe",
     "type": "ranged",
     "category": "Vehicle - Aeldari",
-    "description": "Distortion Scythes sever the link between soul and mortal body, banishing an enemy's essence to the Warp.",
+    "description": "Distortion Scythes sever the link between soul and mortal body, banishing an enemy's very essence to the Warp. The Aeldari view the use of such abhorrent weapons as taboo but are frequently forced to deploy them against the horrors that threaten their existence.",
     "damage": {
       "base": 24,
       "attribute": null,
@@ -8042,7 +8042,7 @@
     "name": "Pulse Laser",
     "type": "ranged",
     "category": "Vehicle - Aeldari",
-    "description": "A powerful Aeldari laser weapon mounted on grav-tanks.",
+    "description": "Spewing a pulsating fusillade of impactful lasers, the Pulse Laser is a long-range, rapid-fire alternative to the Bright Lance.",
     "damage": {
       "base": 16,
       "attribute": null,
@@ -8075,7 +8075,7 @@
     "name": "Scatter Laser",
     "type": "ranged",
     "category": "Vehicle - Aeldari",
-    "description": "A rapid-firing Aeldari laser weapon effective against infantry.",
+    "description": "A common anti-infantry weapon in Craftworld forces, the Scatter Laser fires salvoes of laser energy that demonstrate the superiority of Aeldari technology to lesser species.",
     "damage": {
       "base": 13,
       "attribute": null,
@@ -8108,7 +8108,7 @@
     "name": "Starcannon",
     "type": "ranged",
     "category": "Vehicle - Aeldari",
-    "description": "An Aeldari plasma weapon firing bolts of superheated energy.",
+    "description": "Perhaps the pinnacle of Aeldari plasma weaponry, a Starcannon combines tremendous damage with safety in usage, something current Imperial plasma devices cannot achieve.",
     "damage": {
       "base": 14,
       "attribute": null,
@@ -8141,7 +8141,7 @@
     "name": "Shuriken Cannon",
     "type": "ranged",
     "category": "Vehicle - Aeldari",
-    "description": "A heavier version of the Shuriken Catapult that fires monomolecular discs at high velocity.",
+    "description": "A larger version of the Shuriken Catapult, this weapon is found on many Aeldari vehicles, where it is deadly against infantry and light armour.",
     "damage": {
       "base": 14,
       "attribute": null,
@@ -8172,7 +8172,7 @@
     "name": "Prism Cannon (Dispersed)",
     "type": "ranged",
     "category": "Vehicle - Aeldari",
-    "description": "The Fire Prism's main weapon in dispersed mode, effective against large groups.",
+    "description": "A marvel of Aeldari military technology, a Prism Cannon fires a powerful laser through a psychoactive crystal. The refractions amplify the power of the laser and, through esoteric rotations, can modify its range and destructive potential. Each time you fire a Prism Cannon, you may choose any of the options in the Prism Cannon table.",
     "damage": {
       "base": 14,
       "attribute": null,
@@ -8205,7 +8205,7 @@
     "name": "Prism Cannon (Focussed)",
     "type": "ranged",
     "category": "Vehicle - Aeldari",
-    "description": "The Fire Prism's main weapon in focussed mode, concentrating fire on a smaller area.",
+    "description": "A marvel of Aeldari military technology, a Prism Cannon fires a powerful laser through a psychoactive crystal. The refractions amplify the power of the laser and, through esoteric rotations, can modify its range and destructive potential. Each time you fire a Prism Cannon, you may choose any of the options in the Prism Cannon table.",
     "damage": {
       "base": 18,
       "attribute": null,
@@ -8268,7 +8268,7 @@
     "name": "Havoc Launcher",
     "type": "ranged",
     "category": "Vehicle - Chaos",
-    "description": "A Chaos vehicle weapon that fires salvoes of explosive missiles.",
+    "description": "This ancient missile launcher weapon can only be found mounted on the equally ancient tanks of Chaos Space Marines. It fires barrages of munitions to prepare the way for assaults against hated foes.",
     "damage": {
       "base": 12,
       "attribute": null,
@@ -8300,7 +8300,7 @@
     "name": "Blaster (Vehicle)",
     "type": "ranged",
     "category": "Vehicle - Drukhari",
-    "description": "A Drukhari darklight weapon that fires concentrated beams of dark energy.",
+    "description": "This short-ranged weapon cruelly dispatches enemies as Drukhari forces charge forward to claim new prizes.",
     "damage": {
       "base": 16,
       "attribute": null,
@@ -8329,7 +8329,7 @@
     "name": "Dark Lance",
     "type": "ranged",
     "category": "Vehicle - Drukhari",
-    "description": "A Drukhari anti-armour weapon firing a beam of concentrated dark energy.",
+    "description": "A twisted reflection of standard laser weapons, the Dark Lance fires a blasphemous stream of dark matter that abhors the Materium. This reacts on impact with a ghastly, unreal conflagration, reconstituting whatever substance it strikes in a violent inferno.",
     "damage": {
       "base": 16,
       "attribute": null,
@@ -8361,7 +8361,7 @@
     "name": "Disintegrator Cannon",
     "type": "ranged",
     "category": "Vehicle - Drukhari",
-    "description": "A Drukhari weapon that fires bolts of energy that disintegrate targets on contact.",
+    "description": "Many plasma weapons replicate the fusion of a star, but Disintegrator Cannons go one step further, containing the harvested energies of a dying sun and directing the explosive particles in horrific plasmic beams.",
     "damage": {
       "base": 12,
       "attribute": null,
@@ -8392,7 +8392,7 @@
     "name": "Heat Lance",
     "type": "ranged",
     "category": "Vehicle - Drukhari",
-    "description": "A Drukhari thermal weapon that can melt through the thickest armour.",
+    "description": "An unholy communion of reliable, rapid-fire laser weapons and searingly powerful Meltas, the Heat Lance is a nightmarish anti-armour weapon.",
     "damage": {
       "base": 17,
       "attribute": null,
@@ -8425,7 +8425,7 @@
     "name": "Phantasm Grenade Launcher",
     "type": "ranged",
     "category": "Vehicle - Drukhari",
-    "description": "A Drukhari grenade launcher that fires hallucinogenic munitions to disorient the enemy.",
+    "description": "The Phantasm Grenade Launcher is a lightweight shock weapon that fires discs loaded with a nightmarish nerve agent that infects the mind of its target with insidiously twisted delusions. Every individual caught in the blast of a Phantasm Grenade must succeed on a DN 3 Resolve Test or suffer a Mortal Wound.",
     "damage": {
       "base": 0,
       "attribute": null,
@@ -8456,7 +8456,7 @@
     "name": "Splinter Cannon (Vehicle)",
     "type": "ranged",
     "category": "Vehicle - Drukhari",
-    "description": "A Drukhari weapon firing shards of crystal coated in virulent toxins.",
+    "description": "Spewing grotesque shards of crystallised neurotoxin, Splinter Weapons are the hallmark of the Drukhari. The minuscule splinters shred through flesh and leave behind a harrowing poison focused on causing pain, a horror the sadistic Drukhari relish.",
     "damage": {
       "base": 9,
       "attribute": null,
@@ -8523,7 +8523,7 @@
     "name": "Splinter Rifle (Vehicle)",
     "type": "ranged",
     "category": "Vehicle - Drukhari",
-    "description": "A Drukhari splinter weapon mounted on vehicles.",
+    "description": "Spewing grotesque shards of crystallised neurotoxin, Splinter Weapons are the hallmark of the Drukhari. The minuscule splinters shred through flesh and leave behind a harrowing poison focused on causing pain, a horror the sadistic Drukhari relish.",
     "damage": {
       "base": 8,
       "attribute": null,
@@ -8556,7 +8556,7 @@
     "name": "Bladevanes (Weapon)",
     "type": "melee",
     "category": "Vehicle - Drukhari",
-    "description": "Razor-sharp blades mounted on Drukhari vehicles that slash enemies during movement.",
+    "description": "Bladevanes are fierce edged weapons mounted to the hulls of Drukhari vehicles, capitalising on their murderous speed to slice through enemies as they pass.",
     "damage": {
       "base": 8,
       "attribute": null,
@@ -8582,7 +8582,7 @@
     "name": "Grav-Talon (Weapon)",
     "type": "melee",
     "category": "Vehicle - Drukhari",
-    "description": "Gravity-powered talons mounted on Drukhari vehicles for ramming attacks.",
+    "description": "This wicked device uses gravity pressure waves to smash into any unfortunate enough to be in the path of the vehicle, leaving them exposed for the kill.",
     "damage": {
       "base": 10,
       "attribute": null,
@@ -8949,7 +8949,7 @@
     "name": "Stalker's Forelimbs",
     "type": "melee",
     "category": "Vehicle - Necron",
-    "description": "The powerful forelimbs of the Triarch Stalker, capable of crushing enemies.",
+    "description": "The gargantuan spiderlike legs of an ancient Triarch Stalker are composed of the living metal Necrodermis, sharpened to intense edges that can eviscerate close-range targets with unfeeling efficiency.",
     "damage": {
       "base": 15,
       "attribute": null,
@@ -9263,7 +9263,7 @@
     "name": "Kustom Shokk Rifle",
     "type": "ranged",
     "category": "Vehicle - Ork",
-    "description": "A custom weapon that uses unstable warp energy to blast enemies.",
+    "description": "Utilising technologies so strange and violent that they could only be conceived by Ork Meks, the Kustom Shokk Rifle opens a microscopic Warp rift inside its target, consuming them from the inside out.",
     "damage": {
       "base": 13,
       "attribute": null,
@@ -9328,7 +9328,7 @@
     "name": "Mek Speshul",
     "type": "ranged",
     "category": "Vehicle - Ork",
-    "description": "A custom-built weapon unique to its Mek creator, unreliable but devastating.",
+    "description": "The pride of the Orks who control (barely) their Snazzwagons, a Mek Speshul is a huge Gatling gun that sends lethal bullets just ahead of the racing vehicle. Little is left for the Snazzwagon to run over, as the gun cuts through almost anything in the way.",
     "damage": {
       "base": 12,
       "attribute": null,
@@ -9459,7 +9459,7 @@
     "name": "Smasha Gun",
     "type": "ranged",
     "category": "Vehicle - Ork",
-    "description": "An Ork anti-tank weapon that uses powerful gravitational pulses.",
+    "description": "Utilising complex Lifta-droppa technology, the Smasha Gun captures its target in a deadly traktor field, heaving them into the air before smashing them into the ground with crushing force.",
     "damage": {
       "base": 13,
       "attribute": null,
@@ -9554,7 +9554,7 @@
     "name": "Supa-Shoota",
     "type": "ranged",
     "category": "Vehicle - Ork",
-    "description": "A large rapid-firing weapon mounted on Ork aircraft.",
+    "description": "Orks forever seek to build the largest, loudest, and most damaging Shoota. The massive Supa-Shooter is normally mounted on a large aircraft, much to the delight of Flyboyz.",
     "damage": {
       "base": 14,
       "attribute": null,
@@ -9587,7 +9587,7 @@
     "name": "Tellyport Mega-Blasta",
     "type": "ranged",
     "category": "Vehicle - Ork",
-    "description": "A teleportation-based weapon that can bypass armour entirely.",
+    "description": "Another example of the innate Ork insight into teleport technology (and the joy of spectacular destruction), this device can grab nearby enemies and spread their atoms across the sky or use opposing beams to tear them apart.",
     "damage": {
       "base": 16,
       "attribute": null,
@@ -9620,7 +9620,7 @@
     "name": "Wazbom Mega-Kannon",
     "type": "ranged",
     "category": "Vehicle - Ork",
-    "description": "A massive energy weapon mounted on the Wazbom Blastajet.",
+    "description": "Outsized Kannons mounted to Wazbom Blastajets, these colossal slugthrowers rain a calamitous cacophony of explosives.",
     "damage": {
       "base": 16,
       "attribute": null,
@@ -10028,7 +10028,7 @@
     "name": "Savage Horns and Hooves",
     "type": "melee",
     "category": "Vehicle - Ork",
-    "description": "The natural weapons of a Squiggoth or similar beast used as a battering ram.",
+    "description": "The ferocious tramplasquig used to pull each Kill Rig is a dangerous weapon itself, and few can withstand its natural weaponry.",
     "damage": {
       "base": 13,
       "attribute": null,
@@ -10080,7 +10080,7 @@
     "name": "Spinnin' Blades",
     "type": "melee",
     "category": "Vehicle - Ork",
-    "description": "Rapidly spinning blades attached to Ork aircraft for close combat.",
+    "description": "These large slabs of scrap metal are used to help keep a Deffkopta airborne. Like most Ork technology, though, they also double as brutal weapons, which in this case can tear apart anything nearby.",
     "damage": {
       "base": 10,
       "attribute": null,
@@ -10106,7 +10106,7 @@
     "name": "Wreckin' Ball",
     "type": "melee",
     "category": "Vehicle - Ork",
-    "description": "A massive ball of scrap metal swung on a chain to smash enemies.",
+    "description": "Few things exemplify the Orky love of random violence as much as a Wreckin' Ball. It might hit an enemy, it might hit the Ork vehicle, it might even hit the operator. So long as it hits something, though, all Orks aboard are thrilled.",
     "damage": {
       "base": 10,
       "attribute": null,
@@ -10326,7 +10326,7 @@
     "name": "Auxiliary Shotgun",
     "type": "ranged",
     "category": "Solid Projectile Weapons",
-    "description": "An Auxiliary Shotgun is an underfitting modification that can be attached to most standard-pattern firearms in place of a bayonet. The attachment allows for a single, brutal short-range blast. Note: this weapon requires a full action to reload after every use.",
+    "description": "An Auxiliary Shotgun is an underfitting modification that can be attached to most standard-pattern firearms in place of a bayonet. The attachment allows for a single, brutal short-range blast — a fine compliment to a weapon designed for longer-ranged engagements. Note: this weapon requires a full action to reload after every use.",
     "damage": {
       "base": 8,
       "attribute": null,
@@ -10359,7 +10359,7 @@
     "name": "Varonia Honorbound Pattern Shotgun",
     "type": "ranged",
     "category": "Solid Projectile Weapons",
-    "description": "Throughout the various vessels of the Varonius Flotilla, the \"Honorbound\" is perhaps the most commonly found variant of Shotgun-type weaponry. Made available to all crew via security-controlled defence lockers in instances of incursion, this pattern is favoured due to both the multiple functional applications of its design and its ease of use by untrained personnel. Should the user be engaged at close quarters, the weapon's stock is reinforced and contains an elongated ceramite weighted component at its base allowing for the firearm to be utilised as a simple, yet effective, bludgeoning type combat weapon.",
+    "description": "Throughout the various vessels of the Varonius Flotilla, the \"Honorbound\" is perhaps the most commonly found variant of Shotgun-type weaponry. Made available to all crew via security-controlled defence lockers in instances of incursion, this pattern is favoured due to both the multiple functional applications of its design and its ease of use by untrained personnel. Robustly constructed, the Varonia Pattern consists of a simple, magazine-fed squared body and wide-bore barrel specifically designed for the rigours of ship-board combat; at short range this weapon can be devastatingly effective in stopping an enemy advance. Should the user be engaged at close quarters, the weapon's stock is reinforced and contains an elongated ceramite weighted component at its base allowing for the firearm to be utilised as a simple, yet effective, bludgeoning type combat weapon.",
     "damage": {
       "base": 8,
       "attribute": null,
@@ -10427,7 +10427,7 @@
     "name": "Varonia Primus Pattern Shotgun",
     "type": "ranged",
     "category": "Solid Projectile Weapons",
-    "description": "The Varonia Primus is a manual pump-action single-shot non-standard variant used most notably by petty officers within the Varonius Flotilla. The body of the weapon is fully enclosed and features an internal magazine that holds eight standard shells or similar sized variant ammunition. One unique feature that differentiates the Varonia Primus from other Shotguns is that it utilises a pistol-style grip and firing mechanism which allows the weapon to be wielded single handed, however this practise is discouraged due to operator risk.",
+    "description": "The Varonia Primus is a manual pump-action single-shot non-standard variant used most notably by petty officers within the Varonius Flotilla. The body of the weapon is fully enclosed and features an internal magazine that holds eight standard shells or similar sized variant ammunition. The stock is removable, and when used in breaching or boarding actions many users prefer the shortened form as it allows for increased manoeuvrability within enclosed spaces. One unique feature that differentiates the Varonia Primus from other Shotguns commonly found in the Gilead System is that it utilises a pistol-style grip and firing mechanism which allows the weapon to be wielded single handed, however this practise is discouraged due to operator risk.",
     "damage": {
       "base": 8,
       "attribute": null,
@@ -10461,7 +10461,7 @@
     "name": "Avachrus XII 'Gravefiller' Pattern Shotgun",
     "type": "ranged",
     "category": "Solid Projectile Weapons",
-    "description": "In the illustrious manufactorums of Avachrus, the Shotgun variant known across Gilead by the rank and file of the Astra Militarum as the 'Gravefiller' is produced en masse. The Avachrus XII is a non-standard, fully automatic, drum-fed combat Shotgun, commonly carried by officers and engineers of the Gilead Gravediggers. When operated on fully automatic, its extensive magazine allows it to create a continuous hail of deadly shot which can quickly suppress enemy movement.",
+    "description": "In the illustrious manufactorums of Avachrus, the Shotgun variant known across Gilead by the rank and file of the Astra Militarum as the 'Gravefiller' is produced en masse. The Avachrus XII is a non-standard, fully automatic, drum-fed combat Shotgun, commonly carried by officers and engineers of the Gilead Gravediggers. When operated on fully automatic, its extensive magazine allows it to create a continuous hail of deadly shot which can quickly suppress enemy movement. The robust stock is fully removable and also functions as a multi-purpose entrenchment tool.",
     "damage": {
       "base": 8,
       "attribute": null,
@@ -10495,7 +10495,7 @@
     "name": "Avachrus II-B Enochian Sanctified Shotgun",
     "type": "ranged",
     "category": "Solid Projectile Weapons",
-    "description": "Carried by only a handful of bodyguards and servants who protect the hallowed priests and cardinals in the upper echelons of Enoch's many spires, the Avachrus II-B is a rare and illustrious firearm. This variant is a magazine-fed, triple barrelled Combat Shotgun enclosed in a solid adamantium casing and capable of both single and semi-automatic firing. Each completed weapon undergoes a sequence of sacred blessings and sanctification rituals, and is biometrically locked to its designated user.",
+    "description": "...Here the II-B undergoes a sequence of sacred blessings and sanctification rituals. Once blessed and purified the weapon is biometrically locked to its designated user.",
     "damage": {
       "base": 10,
       "attribute": null,
@@ -10530,7 +10530,7 @@
     "name": "Ork Boomstikk",
     "type": "ranged",
     "category": "Solid Projectile Weapons",
-    "description": "The technological fumbling of the Greenskin menace is well documented by the Magi of the Adeptus Mechanicus. While resembling a crude, oversized imitation of the Imperial Shotgun, the Ork armament is comparable in at least basic function to its vastly superior Imperial counterparts. Unlike the purposefully and stoically built weapons brought forth from the manufactorums by the blessed Adeptus Mechanicus, this foul xenos weapon appears crudely built, barely functional, and inherently defective.",
+    "description": "The technological fumbling of the Greenskin menace is well documented by the Magi of the Adeptus Mechanicus. While resembling a crude, oversized imitation of the Imperial Shotgun, the Ork armament is comparable in at least basic function to its vastly superior Imperial counterparts. The xenos weaponry shares similar design traits: it is a wide-barrelled, large calibre weapon using a solid projectile that fragments into deadly shrapnel after firing. Yet unlike the purposefully and stoically built weapons brought forth from the manufactorums by the blessed Adeptus Mechanicus, this foul xenos weapon appears crudely built, barely functional, and inherently defective.",
     "damage": {
       "base": 8,
       "attribute": null,
@@ -10790,7 +10790,7 @@
     "name": "Clawmounted Shuriken Catapult",
     "type": "ranged",
     "category": "Aeldari",
-    "description": "A shuriken catapult integrated into the Scorpion's Claw power fist, allowing Striking Scorpion Exarchs to engage at range without sacrificing melee capability.",
+    "description": "[AI-Generated] A shuriken catapult integrated into the Scorpion's Claw power fist, allowing Striking Scorpion Exarchs to engage at range without sacrificing melee capability.",
     "damage": {
       "base": 10,
       "attribute": null,
@@ -10958,7 +10958,7 @@
     "name": "Aeldari Missile Launcher: Starshot Missile",
     "type": "ranged",
     "category": "Aeldari",
-    "description": "The Aeldari Missile Launcher operates on similar principles to those of other races. A devastating anti-armour plasma warhead, the Starshot Missile can blast a hole in bunkers or tanks with equal spectacle.",
+    "description": "The Aeldari Missile Launcher operates on similar principles to those of other races. Their miniaturised warheads allow users to carry scores of missiles and switch types instantly. Starshot Missile: A devastating anti-armour plasma warhead, the Starshot Missile can blast a hole in bunkers or tanks with equal spectacle.",
     "damage": {
       "base": 16,
       "attribute": null,
@@ -10990,7 +10990,7 @@
     "name": "Aeldari Missile Launcher: Sunburst Missile",
     "type": "ranged",
     "category": "Aeldari",
-    "description": "Sunburst Missiles trade raw power for increased blast radius, incinerating troop formations and lightly-armoured vehicles.",
+    "description": "The Aeldari Missile Launcher operates on similar principles to those of other races. Their miniaturised warheads allow users to carry scores of missiles and switch types instantly. Sunburst Missile: Sunburst Missiles trade raw power for increased blast radius, incinerating troop formations and lightly-armoured vehicles.",
     "damage": {
       "base": 12,
       "attribute": null,
@@ -11088,7 +11088,7 @@
     "name": "Reaper Launcher: Starshot Missile",
     "type": "ranged",
     "category": "Aeldari",
-    "description": "The specialised missile launcher of the Dark Reapers can fire individual Starshot Missiles. Targeting matrices integrate with the heavy, stabilised armour of the Dark Reaper to ensure deadly accuracy.",
+    "description": "[AI-Generated] The specialised missile launcher of the Dark Reapers can fire individual Starshot Missiles. Targeting matrices integrate with the heavy, stabilised armour of the Dark Reaper to ensure deadly accuracy.",
     "damage": {
       "base": 16,
       "attribute": null,
@@ -11121,7 +11121,7 @@
     "name": "Reaper Launcher: Starswarm Missile",
     "type": "ranged",
     "category": "Aeldari",
-    "description": "The specialised missile launcher of the Dark Reapers can fire salvoes of Starswarm Missiles. Targeting matrices integrate with the heavy, stabilised armour of the Dark Reaper to ensure deadly accuracy.",
+    "description": "[AI-Generated] The specialised missile launcher of the Dark Reapers can fire salvoes of Starswarm Missiles. Targeting matrices integrate with the heavy, stabilised armour of the Dark Reaper to ensure deadly accuracy.",
     "damage": {
       "base": 14,
       "attribute": null,
@@ -11253,7 +11253,7 @@
     "name": "Firepike",
     "type": "ranged",
     "category": "Aeldari",
-    "description": "There is no armour a Fire Dragon Exarch cannot annihilate. They often employ the Firepike, an ornate, elongated fusion weapon with incredible destructive power and surprising range.",
+    "description": "There is no armour a Fire Dragon Exarch cannot annihilate. They often employ the Firepike — an ornate, elongated fusion weapon with incredible destructive power and surprising range.",
     "damage": {
       "base": 16,
       "attribute": null,
@@ -11386,7 +11386,7 @@
     "name": "D-Scythe",
     "type": "ranged",
     "category": "Aeldari",
-    "description": "The Distortion Scythe is a weapon steeped in taboo and suspicion among Aeldari, as it severs the link between body and soul. Souls are cast into the Immaterium, Necron engrams are scrambled beyond repair, and Tyranids can be wholly severed from the Hive Mind.",
+    "description": "The Distortion Scythe is a weapon steeped in taboo and suspicion among Aeldari, as it severs the link between body and soul. Souls are cast into the Immaterium, Necron engrams are scrambled beyond repair, and Tyranids can be wholly severed from the Hive Mind. Aeldari refer to this terrifying effect as ‘Cutting the Crone’s Cord’, believing that only Morai-Heg has the right to do such a thing. No matter how abhorrent the Aeldari find these weapons, they are nevertheless forced to deploy them when necessary to preserve their species from annihilation.",
     "damage": {
       "base": 15,
       "attribute": null,
@@ -11452,7 +11452,7 @@
     "name": "Liquifier Gun",
     "type": "ranged",
     "category": "Aeldari",
-    "description": "A ranged adaptation of the Ichor Injector, the Liquifier Gun sprays gouts of the user's own blood, rendered lethal through Haemonculus alchemy. It spews venom, inflicting Poisoned rather than On Fire.",
+    "description": "A ranged adaptation of the Ichor Injector, the Liquifier Gun sprays gouts of the user's own blood, rendered lethal through Haemonculus alchemy. It spews venom, inflicting Poisoned (5) rather than On Fire.",
     "damage": {
       "base": 10,
       "attribute": null,
@@ -11793,7 +11793,7 @@
     "name": "Knife",
     "type": "melee",
     "category": "Aeldari",
-    "description": "Drukhari knives take diverse forms, from brutal cleavers to vicious sickles and savage bonesaws. They are stained with their victims' blood, but this does not lessen their keen edge. Drukhari may upgrade a Knife with Traits, doubling the Knife's Value and increasing its Rarity one step.",
+    "description": "The Knife has no standalone description entry in the PDF. The 'diverse forms' text belongs to the Glimmersteel Blade entry. The upgrade rules from the Art of the Knife sidebar read: 'Drukhari may upgrade a Knife with Traits from Wrath & Glory page 208. Doing so doubles the Knife's Value and increases its Rarity one step for the purposes of Requisition Tests. A Knife cannot have more than one such upgrade, and Traits with a rating cannot exceed 1.'",
     "damage": {
       "base": 2,
       "attribute": "strength",
@@ -11816,7 +11816,7 @@
     "name": "Razorflail: Sword",
     "type": "melee",
     "category": "Aeldari",
-    "description": "Razorflails resemble ornate, serrated swords. With a touch from the user, the wire holding the blade segments together extends, turning the weapon into a vicious whip of razors. In sword form, it can parry attacks effectively.",
+    "description": "Razorflails resemble ornate, serrated swords. With a touch from the user, the wire holding the blade segments together extends, turning the weapon into a vicious whip of razors. In the hands of a skilled Wych, the weapon dances around defences, entangling and severing brutally.",
     "damage": {
       "base": 3,
       "attribute": "strength",
@@ -11873,7 +11873,7 @@
     "name": "Shardnet",
     "type": "melee",
     "category": "Aeldari",
-    "description": "Shardnets are weighted wire mesh covered in vicious hooks and barbs. They administer electric shocks to entangled victims, greatly impairing their ability to defend themselves, while also causing involuntary muscle spasms that cause the hooks to tear deeper. The net deals damage every Turn until the target succeeds on an Opposed Strength Test against the attacker (or DN 5, if the net was thrown), disentangling themself.",
+    "description": "...The net deals damage every Turn or until the target succeeds on an Opposed Strength Test against the attacker (or DN 5, if the net was thrown), disentangling themself.",
     "damage": {
       "base": 7,
       "attribute": null,
@@ -11982,7 +11982,7 @@
     "name": "Mindphase Gauntlet",
     "type": "melee",
     "category": "Aeldari",
-    "description": "A Mindphase Gauntlet resembles an emaciated, skeletal hand. It counts as an unarmed attack and does not deal damage conventionally. Instead, it saps strength and willpower. A character hit by a Mindphase Gauntlet must pass a DN 3 Willpower Test or lose 1 Willpower until the end of combat. Multiple hits stack.",
+    "description": "...Multiple hits stack; even a mighty Genestealer Patriarch may be rendered slack-jawed and docile by this terrifying weapon.",
     "damage": {
       "base": 0,
       "attribute": "strength",
@@ -12087,7 +12087,7 @@
     "name": "Fusion Charge",
     "type": "ranged",
     "category": "Aeldari",
-    "description": "Bulky devices used by Fire Dragons to crack the heaviest armour. The shaped charge must be attached carefully, taking a Full-Round Action, but the catastrophic damage they deliver makes the risk worthwhile. May only target vehicles and structures.",
+    "description": "Bulky devices used by Fire Dragons to crack the heaviest armour. The shaped charge must be attached carefully, taking a Full-Round Action, but the catastrophic damage they deliver makes the risk worthwhile.",
     "damage": {
       "base": 16,
       "attribute": null,
@@ -12119,7 +12119,7 @@
     "name": "Hallucinogen Grenade",
     "type": "ranged",
     "category": "Aeldari",
-    "description": "Harlequin Shadowseers employ these grenades on and off the battlefield. When performing mythic plays and stories, the psychotropic gas of these grenades fully immerses the audience in the production. In battle, the effect leaves enemies in disarray.",
+    "description": "Harlequin Shadowseers employ these grenades on and off the battlefield. When performing mythic plays and stories, the psychotropic gas of these grenades fully immerses the audience in the production, so that even the most withered Drukhari Archon weeps with joy or sorrow. In battle, the effect is identical, although the target audience rarely appreciates the irony of the moment before they die.",
     "damage": {
       "base": 0,
       "attribute": null,
@@ -12152,7 +12152,7 @@
     "name": "Haywire Grenade",
     "type": "ranged",
     "category": "Aeldari",
-    "description": "These grenades emit a massive electromagnetic blast over a short distance. Non-Asuryani vehicles are heavily damaged as unprotected electronics burn out. Organic enemies are unharmed. May only target vehicles.",
+    "description": "These grenades emit a massive electromagnetic blast over a short distance. Non-Asuryani vehicles are heavily damaged as unprotected electronics burn out. Organic enemies are unharmed.",
     "damage": {
       "base": 10,
       "attribute": null,
@@ -12388,7 +12388,7 @@
     "name": "Nemesis Daemon Hammer",
     "type": "melee",
     "category": "Force",
-    "description": "Wielded amongst the psychically-gifted Inquisitors and the enigmatic Grey Knights, these slow but mighty weapons smite with both physical and psychic energies.",
+    "description": "Wielded amongst the psychically-gifted Inquisitors of the enigmatic Grey Knights, these slow but mighty weapons smite with both physical and psychic energies.",
     "damage": {
       "base": 8,
       "attribute": "strength",
@@ -12558,7 +12558,7 @@
     "name": "Hot-Shot Volley Gun",
     "type": "ranged",
     "category": "Las",
-    "description": "Two Hellguns twin-linked with an alternating fire system, the Hot-Shot Volley Gun is a weighty, deadly weapon designed to unleash a staggering stream of unrelenting firepower. A Hot-Shot Volley Gun produces a keening howl when unleashed, ionising the air as they punch through their targets.",
+    "description": "Two Hellguns twin-linked with an alternating fire system, the Hot-Shot Volley Gun is a weighty, deadly weapon designed to unleash a staggering stream of unrelenting firepower. A Hot-Shot Volley Gun produces a keening howl when unleashed, ionising the air as they punch through their targets. Savvy wielders of these devastating weapons often wear photovisors to protect their eyesight from permanent retinal scarring.",
     "damage": {
       "base": 10,
       "attribute": null,
@@ -12917,7 +12917,7 @@
     "name": "Needle Rifle",
     "type": "ranged",
     "category": "Needle",
-    "description": "With extended barrels for greater range, these rare rifles deliver the same deadly poisons as Needle Pistols. Firing tiny darts of frozen neuro-toxin along a guiding beam of invisible laser-light, they are near whisper quiet weapons.",
+    "description": "With extended barrels for greater range, these rare rifles deliver the same deadly poisons as Needle Pistols.",
     "damage": {
       "base": 8,
       "attribute": null,
@@ -13475,7 +13475,7 @@
     "name": "Cyclone Missile Launcher",
     "type": "ranged",
     "category": "Missile",
-    "description": "Equipped with fast-loading twin ammunition racks, this missile launcher was designed for armour-clad Tactical Dreadnaught Terminators, to lay down an unrelenting barrage of explosive ruin upon enemies of the Imperium. You load this weapon with 2 missile Ammo of the same type, and fire them both as one attack.",
+    "description": "Equipped with fast-loading twin ammunition racks, this missile launcher was designed for Tactical Dreadnaught armour-clad Astartes, known as Terminators, to lay down an unrelenting barrage of explosive ruin upon enemies of the Imperium. You load this weapon with 2 missile Ammo of the same type, and fire them both as one attack. Make the Ballistic Skill (A) Test as normal against a point in range. When calculating damage, treat this as a single attack with double the Damage value and ED of a single missile.",
     "damage": {
       "base": 0,
       "attribute": null,
@@ -13603,7 +13603,7 @@
     "name": "Snazzgun",
     "type": "ranged",
     "category": "Ork",
-    "description": "A Snazzgun is a unique, custom-built weapon created by a Mekboy. No two are alike, and each one is as unpredictable as the Ork that built it.",
+    "description": "Tweaked for ramped-up rates of fire, loading ridiculous calibre rounds, or even discharging unpredictable blasts of wild energy, each Snazzgun is a unique beast created for the image-obsessed Flash Gitz and decorated with prized shiny bitz and trophies.",
     "damage": {
       "base": 12,
       "attribute": null,
@@ -13634,7 +13634,7 @@
     "name": "Rokkit Launcha",
     "type": "ranged",
     "category": "Ork",
-    "description": "Ork Rokkit Launchas are crude but effective explosive launchers. Each rokkit is a self-propelled explosive that streaks towards its target trailing smoke and sparks.",
+    "description": "Rokkit Launchas fire crude explosives with wildly inconsistent payloads.",
     "damage": {
       "base": 16,
       "attribute": null,
@@ -13666,7 +13666,7 @@
     "name": "Stikkbomb",
     "type": "ranged",
     "category": "Grenade",
-    "description": "Stikkbombs are crude Ork grenades, typically made from a tin can stuffed with explosive and nails, attached to a stick for throwing. Despite their primitive construction, they are surprisingly effective.",
+    "description": "A crude explosive with a convenient handle, Orks overtaken by a 'WAAAGH!' have been known to use these hefty grenades as clubs, to varying degrees of success.",
     "damage": {
       "base": 9,
       "attribute": null,

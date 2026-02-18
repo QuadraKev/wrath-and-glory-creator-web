@@ -12,7 +12,7 @@
         "drukhari"
       ]
     },
-    "effect": "You may spend a Soul token to add +Rank bonus dice to your next attack. Avatar of Blood",
+    "effect": "You may spend a Soul token to add +Rank bonus dice to your next attack.",
     "flavor": "When one of the Reborn sees the soul of their foes departing their bodies, they feel a renewed sense of purpose.",
     "source": "apocrypha",
     "page": 231
@@ -26,7 +26,7 @@
         "BLACK TEMPLARS"
       ]
     },
-    "effect": "Once per battle, when an enemy PSYKER is within your line of sight at the start of your turn, you may add +Double Rank to your Speed. In addition, you may re- roll all ED which roll a 1 on melee attacks made against PSYKERS. However, you add +2DN to all non-attack skill tests attempted while you can see a PSYKER. You may only have one Vow talent. During downtime, you may replace this talent with any other BLACK TEMPLARS talent marked as a Vow. Accept any Challenge, No Matter the Odds [Vow]",
+    "effect": "Once per battle, when an enemy PSYKER is within your line of sight at the start of your turn, you may add +Double Rank to your Speed. In addition, you may re-roll all ED which roll a 1 on melee attacks made against PSYKERS. However, you add +2DN to all non-attack skill tests attempted while you can see a PSYKER. You may only have one Vow talent. During downtime, you may replace this talent with any other BLACK TEMPLARS talent marked as a Vow.",
     "flavor": "Your disdain for sorcery is palpable, repelling the vile arts of wyrd and witch.",
     "source": "apocrypha",
     "page": 230
@@ -50,7 +50,7 @@
         "BLACK TEMPLARS"
       ]
     },
-    "effect": "When you’re engaged with an enemy, add +Rank bonus dice to your melee attacks, and improve the AP of your melee weapons by 1. However, you may not Fall Back. You may only have one Vow talent. During downtime, you may replace this talent with any other BLACK TEMPLARS talent marked as a Vow. Acolyte of Ynnead",
+    "effect": "When you’re engaged with an enemy, add +Rank bonus dice to your melee attacks, and improve the AP of your melee weapons by 1. However, you may not Fall Back. You may only have one Vow talent. During downtime, you may replace this talent with any other BLACK TEMPLARS talent marked as a Vow.",
     "flavor": "You cannot rest while the enemy remains breathing.",
     "source": "apocrypha",
     "page": 230
@@ -68,7 +68,7 @@
         "aeldari"
       ]
     },
-    "effect": "When you attempt a Psychic Mastery test, you may spend 1 Soul token to add +Rank bonus dice to the test. Aggressor Imperative",
+    "effect": "When you attempt a Psychic Mastery test, you may spend 1 Soul token to add +Rank bonus dice to the test.",
     "flavor": "Those psykers amongst the Ynnari hosts can use the souls of the recently dead to focus their powers.",
     "source": "apocrypha",
     "page": 230
@@ -138,8 +138,8 @@
         "SKITARII"
       ]
     },
-    "effect": "Though doctrina imperatives are normally initiated by a Tech-Priest overseeing the Skitarii in action, you have been equipped with protocols for independent action. You can engage an imperative which enhances your mobility for short periods. At the start of any of your turns, you may activate the Aggressor Imperative. This adds +Rank to your Speed but reduces your Resilience by 2. At the end of a turn in which you activate the Aggressor Imperative, you suffer 1d3+2 Shock. Alpha-level Psyker",
-    "flavor": "",
+    "effect": "At the start of any of your turns, you may activate the Aggressor Imperative. This adds +Rank to your Speed but reduces your Resilience by 2. At the end of a turn in which you activate the Aggressor Imperative, you suffer 1d3+2 Shock.",
+    "flavor": "Though doctrina imperatives are normally initiated by a Tech-Priest overseeing the Skitarii in action, you have been equipped with protocols for independent action. You can engage an imperative which enhances your mobility for short periods.",
     "source": "apocrypha",
     "page": 230
   },
@@ -158,7 +158,7 @@
         "primaris astartes"
       ]
     },
-    "effect": "When you successfully use a psychic power at the Transcendent power level, you may add up to Double Rank additional Exalted Icons to apply to the power’s Potency options. However, you add +30 to any roll on the Perils of the Warp table. You gain 3d3 Corruption when you take this talent. You may not select the Beta-level Psyker or Gamma-level Psyker talents. Anathema",
+    "effect": "When you successfully use a psychic power at the Transcendent power level, you may add up to Double Rank additional Exalted Icons to apply to the power’s Potency options. However, you add +30 to any roll on the Perils of the Warp table. You gain 3d3 Corruption when you take this talent. You may not select the Beta-level Psyker or Gamma-level Psyker talents.",
     "flavor": "Your raw power is beyond that of most psykers encountered by the Imperium, but such power is incredibly unstable.",
     "source": "apocrypha",
     "page": 179
@@ -187,7 +187,7 @@
         "pariah"
       ]
     },
-    "effect": "Whenever you succeed at a melee attack against a creature with the DAEMON or PSYKER keywords, your attack inflicts mortal wounds equal to your Rank in addition to any other damage inflicted. In addition, creatures with the DAEMON keyword within a number of metres of you equal to your Willpower may not attempt to roll Determination. And They Shall Know No Fear",
+    "effect": "Whenever you succeed at a melee attack against a creature with the DAEMON or PSYKER keywords, your attack inflicts mortal wounds equal to your Rank in addition to any other damage inflicted. In addition, creatures with the DAEMON keyword within a number of metres of you equal to your Willpower may not attempt to roll Determination.",
     "flavor": "Your mere presence is bane to daemons and psykers.",
     "source": "apocrypha",
     "page": 179
@@ -218,7 +218,7 @@
         "primaris astartes"
       ]
     },
-    "effect": "You may re-roll any failures on any Resolve test you make. Armour of Contempt",
+    "effect": "You may re-roll any failures on any Resolve test you make.",
     "flavor": "You are one of the Defenders of Humanity, a bulwark against terror forged in the furnace of war.",
     "source": "apocrypha",
     "page": 145
@@ -319,8 +319,8 @@
     "name": "Armour of Contempt (Abundance of Apocrypha)",
     "cost": 20,
     "prerequisites": {},
-    "effect": "When you roll Determination, you add +Double Rank bonus dice to the roll. Armour-Monger",
-    "flavor": "species, Toughness rating 5+ You will not yield while there is still a battle to be won, nor while an enemy of the Imperium still draws breath.",
+    "effect": "When you roll Determination, you add +Double Rank bonus dice to the roll.",
+    "flavor": "You will not yield while there is still a battle to be won, nor while an enemy of the Imperium still draws breath.",
     "source": "apocrypha",
     "page": 231
   },
@@ -333,7 +333,7 @@
         "weaponSkill": 2
       }
     },
-    "effect": "When you make a successful melee attack you can Shift Exalted Icons to reduce the target's Resilience instead of adding ED. Each Exalted Icon you Shift decreases the target's Resilience by 1. This Resilience is removed before you calculate damage from the attack. Your weapon must have one of the following Keywords: BLADE, CHAIN, FORCE, POWER FIELD.",
+    "effect": "...Your weapon must have one of the following Keywords to activate this Talent: BLADE, CHAIN, FORCE, POWER FIELD.",
     "flavor": "Your furious strikes rend armour, leaving it broken and useless.",
     "source": "core",
     "page": 129
@@ -348,7 +348,7 @@
         "CULT MECHANICUS"
       ]
     },
-    "effect": "Select a single suit of armour you possess when you choose this Talent. When you wear that armour, increase the Armour Rating by +Rank. You must be able to spend at least an hour a day maintaining and adjusting the armour in order to gain this bonus. A Taste for Death",
+    "effect": "Select a single suit of armour you possess when you choose this Talent. When you wear that armour, increase the Armour Rating by +Rank. You must be able to spend at least an hour a day maintaining and adjusting the armour in order to gain this bonus.",
     "flavor": "Your craft allows you to enhance the effectiveness of your armour.",
     "source": "apocrypha",
     "page": 231
@@ -374,7 +374,7 @@
       "tier": 3,
       "other": "Not Primaris"
     },
-    "effect": "You receive a Bolt Pistol, Astartes Chainsword, Aquilla Mark VII armour, and Jump Pack, if you don't already have them. You gain additional +Rank AP on any melee weapon you wield, or any ranged weapons with the Pistol Trait. An Agent Ascending from Tier 2 to Tier 3 may purchase this Talent instead of an Ascension Package.",
+    "effect": "You receive a Bolt Pistol, Astartes Chainsword (page 49), Aquilla Mark VII armour, and Jump Pack, if you don't already have them. You gain additional +Rank AP on any melee weapon you wield, or any ranged weapons with the Pistol Trait. An Agent Ascending from Tier 2 to Tier 3 may purchase this Talent instead of an Ascension Package.",
     "flavor": "You fight at the vanguard of any advance, shrieking across the battlefield to bring the might of your Astartes physiology to bear.",
     "source": "redacted1",
     "page": 61
@@ -402,7 +402,7 @@
         "weaponSkill": 3
       }
     },
-    "effect": "Whenever you inflict a Critical Hit with a melee attack, you immediately recover Double Rank Shock. Back from the Brink",
+    "effect": "Whenever you inflict a Critical Hit with a melee attack, you immediately recover Double Rank Shock.",
     "flavor": "Bloodshed inspires and invigorates you.",
     "source": "apocrypha",
     "page": 231
@@ -435,7 +435,7 @@
         "drukhari"
       ]
     },
-    "effect": "When you start Dying, you may immediately spend a Soul token to heal 1 Wound. Baleful Acolyte",
+    "effect": "When you start Dying, you may immediately spend a Soul token to heal 1 Wound.",
     "flavor": "Those infused with death are not easy to slay.",
     "source": "apocrypha",
     "page": 231
@@ -447,7 +447,7 @@
     "prerequisites": {
       "other": "CHAOS keyword, you may not be a PSYKER"
     },
-    "effect": "You gain the PSYKER keyword and learn the Smite psychic power. You may learn minor psychic powers, and powers from a single Chaos Discipline (any Discipline with powers with the CHAOS keyword). You rely on a focal item: a balefire tome, a ritual dagger, or similar, and can only use your powers when you have that item in hand. Battle Focus",
+    "effect": "You gain the PSYKER keyword and learn the Smite psychic power. You may learn minor psychic powers, and powers from a single Chaos Discipline (any Discipline with powers with the CHAOS keyword). You rely on a focal item: a balefire tome, a ritual dagger, or similar, and can only use your powers when you have that item in hand.",
     "flavor": "You have dabbled in sorcerous power, drawing power from vile artefacts and malign grimoires.",
     "source": "apocrypha",
     "page": 231
@@ -462,8 +462,8 @@
       ],
       "tier": 3
     },
-    "effect": "Gain Bolter Discipline, Built Tough, or Chainsaw Warrior plus another instance of Hatred. Gain +2 Influence and 1 Uncommon Wargear item.",
-    "flavor": "You have proven yourself worthy of the Battle Companies, the core of the Chapter's fighting strength.",
+    "effect": "You have battled across countless worlds and faced all manner of heretics and xenos threats. You have mastered numerous weapons and and your skills and conviction has earned you a place amongst a Battle Company of the Chapter. You gain the Bolter Discipline, Built Tough or Chainsaw Warrior talent and a further instance of the Hatred talent (against a different enemy if you already possess this talent). You gain +2 Influence, and 1 item of Uncommon Wargear.",
+    "flavor": "[AI-Generated] You have proven yourself worthy of the Battle Companies, the core of the Chapter's fighting strength.",
     "isAscension": true,
     "source": "voa",
     "page": 43
@@ -494,7 +494,7 @@
         "aeldari"
       ]
     },
-    "effect": "You do not have to move in a straight line when you sprint. Further, when you Sprint, you may make a ranged attack with any weapon as if that weapon had the Assault trait. You do not suffer the normal +2DN on the attack for doing this. This does not apply to weapons with the Heavy trait. Beta-Level Psyker",
+    "effect": "You do not have to move in a straight line when you sprint. Further, when you Sprint, you may make a ranged attack with any weapon as if that weapon had the Assault trait. You do not suffer the normal +2DN on the attack for doing this. This does not apply to weapons with the Heavy trait.",
     "flavor": "The warriors of the Craftworlds are swift and certain, able to fight on the move with startling effectiveness.",
     "source": "apocrypha",
     "page": 83
@@ -583,7 +583,7 @@
         "primaris astartes"
       ]
     },
-    "effect": "When you attempt to use a psychic power at the Transcendent power level, you may set any of the Wrath dice to a 6 rather than rolling it. If you set any Wrath die in this way, you must roll on the Perils of the Warp table and add +10 to the Perils of the Warp roll for each Wrath die set to a 6. You gain 2d3 Corruption points when you take this talent. You may not select the Alpha-level Psyker or Gamma-level Psyker talents. Bladestorm",
+    "effect": "When you attempt to use a psychic power at the Transcendent power level, you may set any of the Wrath dice to a 6 rather than rolling it. If you set any Wrath die in this way, you must roll on the Perils of the Warp table and add +10 to the Perils of the Warp roll for each Wrath die set to a 6. You gain 2d3 Corruption points when you take this talent. You may not select the Alpha-level Psyker or Gamma-level Psyker talents.",
     "flavor": "You are an exceptionally potent psyker and can draw deeply from the Warp if you’re willing to risk the consequences.",
     "source": "apocrypha",
     "page": 232
@@ -696,8 +696,8 @@
         "aeldari"
       ]
     },
-    "effect": "Well-trained Aeldari can lay down a hail of fire from their shuriken weapons, their superior reflexes allowing them to track even the most sudden movement and place every shot perfectly, When you make a shooting attack with a SHURIKEN weapon, for each exalted icon you roll, you may roll one bonus die on that attack. These additional dice cannot themselves generate bonus dice. Blood for the Blood God",
-    "flavor": "",
+    "effect": "When you make a shooting attack with a SHURIKEN weapon, for each exalted icon you roll, you may roll one bonus die on that attack. These additional dice cannot themselves generate bonus dice.",
+    "flavor": "Well-trained Aeldari can lay down a hail of fire from their shuriken weapons, their superior reflexes allowing them to track even the most sudden movement and place every shot perfectly,",
     "source": "apocrypha",
     "page": 232
   },
@@ -728,7 +728,7 @@
       "other": "Prayers to the Dark Gods"
     },
     "effect": "If this Prayer is successful, then while the Prayer remains in effect, increase your Speed by +Double Rank when advancing or charging",
-    "flavor": "You ask your beloved Prince of Pleasure to grant you the unnatural swiftness of their daemonic children. purchase this Prayer.",
+    "flavor": "You ask your beloved Prince of Pleasure to grant you the unnatural swiftness of their daemonic children.",
     "source": "apocrypha",
     "page": 257
   },
@@ -742,7 +742,7 @@
         "KHORNE"
       ]
     },
-    "effect": "You gain +1d3 Corruption. After you make a melee attack, you may spend 1 Wrath to make an additional attack. Bloodlust",
+    "effect": "You gain +1d3 Corruption. After you make a melee attack, you may spend 1 Wrath to make an additional attack.",
     "flavor": "You are a blood-soaked devotee of the Lord of Skulls, and your desire to slay cannot be sated.",
     "source": "apocrypha",
     "page": 174
@@ -771,7 +771,7 @@
         "KHORNE"
       ]
     },
-    "effect": "You gain +1d3 Corruption. Whenever an enemy makes a ranged attack against you, after the attack has been resolved, you may move up to your Speed directly towards the shooter as a Reflexive Action. Bolter Drill",
+    "effect": "You gain +1d3 Corruption. Whenever an enemy makes a ranged attack against you, after the attack has been resolved, you may move up to your Speed directly towards the shooter as a Reflexive Action.",
     "flavor": "Little can restrain your desire to close with the enemy and tear them limb from limb.",
     "source": "apocrypha",
     "page": 232
@@ -791,7 +791,7 @@
     "name": "Bloodlust (Abundance of Apocrypha)",
     "cost": 20,
     "prerequisites": {},
-    "effect": "Immediately after you kill an enemy with a melee attack, you may move up to half your Speed towards the next nearest enemy. You may make this move a number of times per round equal to your Rank. Blood Surge",
+    "effect": "Immediately after you kill an enemy with a melee attack, you may move up to half your Speed towards the next nearest enemy. You may make this move a number of times per round equal to your Rank.",
     "flavor": "Your fury has not been sated by those you have already slain… maybe the next one will quench your thirst for blood.",
     "source": "apocrypha",
     "page": 154
@@ -836,7 +836,7 @@
         "CRIMSON FISTS"
       ]
     },
-    "effect": "When you make a successful attack with a weapon with the Bolt keyword, and you roll a 6 on your Wrath die, instead of inflicting a critical hit you may choose to spend 1 ammo and make an additional attack with that weapon immediately. This additional attack may not generate any further attacks. Brawler",
+    "effect": "When you make a successful attack with a weapon with the Bolt keyword, and you roll a 6 on your Wrath die, instead of inflicting a critical hit you may choose to spend 1 ammo and make an additional attack with that weapon immediately. This additional attack may not generate any further attacks.",
     "flavor": "Your aim is guided by years, even decades, of marksmanship training, and you can unleash a devastating fusillade of bolter fire.",
     "source": "apocrypha",
     "page": 232
@@ -911,7 +911,7 @@
         "weaponSkill": 2
       }
     },
-    "effect": "Your unarmed strike inflicts (S) + Double Rank +1ED damage. In addition, when you succeed at an Athletics Interaction Attack, you may shift one Exalted Icon to inflict your unarmed strike damage to the enemy. Brotherhood of Psykers",
+    "effect": "Your unarmed strike inflicts (S) + Double Rank +1ED damage. In addition, when you succeed at an Athletics Interaction Attack, you may shift one Exalted Icon to inflict your unarmed strike damage to the enemy.",
     "flavor": "Your body is as dangerous as your weapons.",
     "source": "apocrypha",
     "page": 233
@@ -926,7 +926,7 @@
         "PSYKER"
       ]
     },
-    "effect": "When you cast a Sanctic psychic power which affects only yourself, then each GREY KNIGHT with this talent within 10m of you also receives the effects of the power. Bulging Biceps",
+    "effect": "When you cast a Sanctic psychic power which affects only yourself, then each GREY KNIGHT with this talent within 10m of you also receives the effects of the power.",
     "flavor": "Your mind is a piece of a greater weapon against the darkness, one that is only complete alongside the wills of your brothers.",
     "source": "apocrypha",
     "page": 233
@@ -969,7 +969,7 @@
         "strength": 4
       }
     },
-    "effect": "When you wield a Heavy weapon, you are no longer knocked Prone by a Complication when firing the weapon. You may wield weapons with the TWO- HANDED keyword in one hand. Bull Charge",
+    "effect": "When you wield a Heavy weapon, you are no longer knocked Prone by a Complication when firing the weapon. You may wield weapons with the TWO-HANDED keyword in one hand.",
     "flavor": "Your powerful form allows you to wield heavy weapons more easily.",
     "source": "apocrypha",
     "page": 233
@@ -983,7 +983,7 @@
         "strength": 3
       }
     },
-    "effect": "When you Charge, your melee weapons gain the Inflict (Prone) trait for that attack. This has no effect on enemies who are larger than you. Bulwark Imperative",
+    "effect": "When you Charge, your melee weapons gain the Inflict (Prone) trait for that attack. This has no effect on enemies who are larger than you.",
     "flavor": "The force of your charge is undeniable.",
     "source": "apocrypha",
     "page": 233
@@ -1007,8 +1007,8 @@
         "SKITARII"
       ]
     },
-    "effect": "Though doctrina imperatives are normally initiated by a Tech-Priest overseeing the Skitarii in action, you have been equipped with protocols for independent action. You can engage an imperative which braces you against incoming fire. At the start of any of your turns, you may activate the Bulwark Imperative. This adds +Rank to your Resilience but reduces your Speed by 3. At the end of a turn in which you activate the Bulwark Imperative, you suffer 1d3+2 Shock. Catfall",
-    "flavor": "",
+    "effect": "At the start of any of your turns, you may activate the Bulwark Imperative. This adds +Rank to your Resilience but reduces your Speed by 3. At the end of a turn in which you activate the Bulwark Imperative, you suffer 1d3+2 Shock.",
+    "flavor": "Though doctrina imperatives are normally initiated by a Tech-Priest overseeing the Skitarii in action, you have been equipped with protocols for independent action. You can engage an imperative which braces you against incoming fire.",
     "source": "apocrypha",
     "page": 233
   },
@@ -1103,8 +1103,8 @@
         "ADEPTUS ASTARTES"
       ]
     },
-    "effect": "Designate closest threat. Targets within 20m gain +2 ED on ranged attacks against that threat. Spend extra Faith: gain +3 ED instead.",
-    "flavor": "Your words mark the enemy for destruction, focusing your brothers' fire with righteous precision.",
+    "effect": "Exhorting your comrades to expend every bolt and ounce of fuel they have in the utter destruction of oncoming foes, you direct their armaments towards nearby enemies so that you might destroy a threat before it can close to melee. When you begin reciting this Litany, you designate the threat closest to you. Affected targets within 20m gain an additional +2 ED for damage for each hit applied to the designated threat when making ranged attacks. By spending an additional point of Faith, the affected targets instead gain +3ED to damage for each hit applied to the threat.",
+    "flavor": "[AI-Generated] Your words mark the enemy for destruction, focusing your brothers' fire with righteous precision.",
     "isLitany": true,
     "source": "voa",
     "page": 58
@@ -1153,7 +1153,7 @@
         "agility": 3
       }
     },
-    "effect": "When you fall, count the distance fallen as half the actual distance for determining damage. Channelled Strikes",
+    "effect": "When you fall, count the distance fallen as half the actual distance for determining damage.",
     "flavor": "You’re nimble and suffer less from the effects of falling.",
     "source": "apocrypha",
     "page": 233
@@ -1177,7 +1177,7 @@
         "PSYKER"
       ]
     },
-    "effect": "When you attack with a melee weapon with the FORCE keyword, the weapon gains the Mortal (1) trait. Codex Discipline",
+    "effect": "When you attack with a melee weapon with the FORCE keyword, the weapon gains the Mortal (1) trait.",
     "flavor": "You have honed your connection to the Immaterium, allowing you to deliver punishing warp-fuelled strikes.",
     "source": "apocrypha",
     "page": 233
@@ -1222,7 +1222,7 @@
         "ULTRAMARINES"
       ]
     },
-    "effect": "You increase your Conviction and Resolve by +Rank. Combat Driving",
+    "effect": "You increase your Conviction and Resolve by +Rank.",
     "flavor": "The tenets of the Codex Astartes are sacrosanct to you, and you lean upon their guidance to see you through the worst of times.",
     "source": "apocrypha",
     "page": 233
@@ -1239,8 +1239,8 @@
         "ADEPTUS ASTARTES"
       ]
     },
-    "effect": "When a Threat attempts to roll Determination against damage you inflict with a melee weapon, the first (Rank) Wounds inflicted require 2 Icons each on the Determination Test to eliminate.",
-    "flavor": "You have mastered the dueling forms prescribed by the Codex Astartes, striking with precision that defies defense.",
+    "effect": "You are a practitioner of one of the many duelling schools derived from the Codex Astartes teachings and the martial traditions of your Chapter. Precise movements ensure your blade arrives with maximum force and no time to dodge or brace against its killing edge. When a Threat attempts to roll Determination against damage you inflict with a melee weapon, the first (Rank) Wounds inflicted require 2 Icons each on the Determination Test to eliminate, although the Threat still only suffers 1 Shock for each Wound reduced.",
+    "flavor": "[AI-Generated] You have mastered the dueling forms prescribed by the Codex Astartes, striking with precision that defies defense.",
     "source": "voa",
     "page": 45
   },
@@ -1257,8 +1257,8 @@
         "ULTRAMARINES"
       ]
     },
-    "effect": "When executing a strategic plan you helped create, add +Rank dice to Leadership and Persuasion Tests. With 1 hour of planning, gain 1 bonus Wrath for Narrative Declarations.",
-    "flavor": "Like Guilliman himself, you understand that the Codex is a guide, not a cage. Adaptation is the key to victory.",
+    "effect": "Since the return of Roboute Guilliman, the Codex Astartes has slowly been recognised as a living document which the greatest tacticians may contribute and iterate upon. Your own studious knowledge of the Codex Astartes and years of service allow you to quickly adapt and evolve strategies on the battlefield in line with its tenets. [...] When executing a strategic plan or tactic that you helped create, you add + (Rank) dice to all Leadership (Wil) and Persuasion (Fel) Tests to guide others through the details. In addition, if you have at least one hour to plan for an upcoming encounter or mission, you receive one bonus Wrath point that can only be spent on a Narrative Declaration (Wrath & Glory Core Rulebook, page 164) relevant to your plan. This Wrath point can carry over between sessions, but you may never possess more than one bonus Wrath point from this Talent.",
+    "flavor": "[AI-Generated] Like Guilliman himself, you understand that the Codex is a guide, not a cage. Adaptation is the key to victory.",
     "source": "voa",
     "page": 45
   },
@@ -1271,7 +1271,7 @@
         "pilot": 3
       }
     },
-    "effect": "When you PILOT a vehicle that you share at least one keyword with, you may roll Determination for that vehicle when it suffers an attack. The dice pool for this is equal to your total Pilot (Agility) test or the vehicle’s Manoeuvrability score, whichever is lower, and you suffer 1 Shock for each Wound cancelled by this roll. Companion XP Cost: 10 or 20 Requirements: Leadership 2+ You’re accompanied by a loyal companion, a subordinate who will support you and follow your direction. Your companion is a single Troop level Threat, as described in Chapter 14 of the Wrath & Glory Core Rulebook. You may use the stats presented in the core rulebook or another bestiary, or use the following rules: Companion Attributes are equal to 1 + Double Rank. Companion Skills are equal to 1 + Double Rank. A companion’s Attributes and Skills cannot be higher than your own. Whenever you are hit by any form of attack, your companion may make a DN 5 Initiative Test as a Reflexive Action. If they succeed, the attack hits the companion instead of hitting you. Slain companions may be replaced for free with a new one the next time you visit a major encampment or city. Your companion may be an Elite Threat rather than a Troop Threat, but the cost of this Talent increases to 20xp. Conqueror Imperative",
+    "effect": "When you PILOT a vehicle that you share at least one keyword with, you may roll Determination for that vehicle when it suffers an attack. The dice pool for this is equal to your total Pilot (Agility) test or the vehicle’s Manoeuvrability score, whichever is lower, and you suffer 1 Shock for each Wound cancelled by this roll.",
     "flavor": "You’ve learned how to turn and manoeuvre a vehicle you’re driving to minimise the damage it receives.",
     "source": "apocrypha",
     "page": 114
@@ -1295,8 +1295,8 @@
         "SKITARII"
       ]
     },
-    "effect": "Though doctrina imperatives are normally initiated by a Tech-Priest overseeing the Skitarii in action, you have been equipped with protocols for independent action. You can engage an imperative which enhances your ferocity and aggression for short bursts. At the start of any of your turns, you may activate the Conqueror Imperative. This adds +Double Rank bonus dice to any melee attacks you attempt during that turn but increases the DN of any ranged attacks you attempt that turn by +3. At the end of a turn in which you activate the Conqueror Imperative, you suffer 1d3+2 Shock. Contagion",
-    "flavor": "",
+    "effect": "At the start of any of your turns, you may activate the Conqueror Imperative. This adds +Double Rank bonus dice to any melee attacks you attempt during that turn but increases the DN of any ranged attacks you attempt that turn by +3. At the end of a turn in which you activate the Conqueror Imperative, you suffer 1d3+2 Shock.",
+    "flavor": "Though doctrina imperatives are normally initiated by a Tech-Priest overseeing the Skitarii in action, you have been equipped with protocols for independent action. You can engage an imperative which enhances your ferocity and aggression for short bursts.",
     "source": "apocrypha",
     "page": 234
   },
@@ -1325,8 +1325,8 @@
         "NURGLE"
       ]
     },
-    "effect": "Flesh rots and metal rusts in your presence. Enemies within 1+ Double Rank metres of you reduce their Resilience by 1 and roll 1 fewer dice when they roll Determination. Coordinated Engagement",
-    "flavor": "You carry scores of virulent diseases, and when you march to war, these diseases spread.",
+    "effect": "Enemies within 1+ Double Rank metres of you reduce their Resilience by 1 and roll 1 fewer dice when they roll Determination.",
+    "flavor": "You carry scores of virulent diseases, and when you march to war, these diseases spread. Flesh rots and metal rusts in your presence.",
     "source": "apocrypha",
     "page": 234
   },
@@ -1353,7 +1353,7 @@
         "FIRE CASTE"
       ]
     },
-    "effect": "When you make a ranged attack against an enemy who has been attacked by another character with this talent since your last turn, improve the AP of your weapon by 1 (i.e., AP -1 becomes AP -2). Corpus Conversion",
+    "effect": "When you make a ranged attack against an enemy who has been attacked by another character with this talent since your last turn, improve the AP of your weapon by 1 (i.e., AP -1 becomes AP -2).",
     "flavor": "T’au strategy relies on combined arms groups working in close coordination.",
     "source": "apocrypha",
     "page": 234
@@ -1370,7 +1370,7 @@
         "human"
       ]
     },
-    "effect": "When you attempt to activate a psychic power, you may suffer 1, 2, or 3 Mortal Wounds. You may not reduce this damage in any way. For each Mortal Wound suffered, you add one Icon to your Psychic Mastery test. Death to the False Emperor",
+    "effect": "When you attempt to activate a psychic power, you may suffer 1, 2, or 3 Mortal Wounds. You may not reduce this damage in any way. For each Mortal Wound suffered, you add one Icon to your Psychic Mastery test.",
     "flavor": "You can sacrifice your life-force to fuel your powers.",
     "source": "apocrypha",
     "page": 235
@@ -1445,8 +1445,8 @@
       ],
       "keywordsAny": true
     },
-    "effect": "Begin with Terminator armour. Comes with Storm Bolter and Power Fist/Chainfist. Various weapon swaps available. Chaplains get Crozius, Librarians get Force Weapon.",
-    "flavor": "You have earned the right to wear the ancient Tactical Dreadnought Armour, becoming a walking fortress of ceramite and adamantium.",
+    "effect": "A 1st Company Veteran, Librarian, or Chaplain may begin with Terminator armour. Terminator armour comes with the following weapon combinations: Storm Bolter and Power Fist or Chainfist as standard. The Storm Bolter may be exchanged for a Heavy Flamer or Assault Cannon. Alternatively, the Powerfist/Chainfist may be exchanged for a Power Sword or Storm Shield. The Storm Bolter and Powerfist/Chainfist can both be exchanged for a pair of Lightning Claws. If worn by a Chaplain, the Powerfist/Chainfist is replaced with a Crozius Arcanum. If worn by a Librarian, the Powerfist/Chainfist is replaced with a Force Weapon.",
+    "flavor": "[AI-Generated] You have earned the right to wear the ancient Tactical Dreadnought Armour, becoming a walking fortress of ceramite and adamantium.",
     "isAscension": true,
     "source": "voa",
     "page": 43
@@ -1548,8 +1548,8 @@
         "HERETIC ASTARTES"
       ]
     },
-    "effect": "Eternal is your hate. When you make a successful melee attack against a character with the IMPERIUM keyword and roll a 6 on the Wrath die, you may choose to make an additional melee attack instead of inflicting a critical hit. This additional attack cannot be used to gain more attacks. Death Visions",
-    "flavor": "Endless is your spite.",
+    "effect": "When you make a successful melee attack against a character with the IMPERIUM keyword and roll a 6 on the Wrath die, you may choose to make an additional melee attack instead of inflicting a critical hit. This additional attack cannot be used to gain more attacks.",
+    "flavor": "Endless is your spite. Eternal is your hate.",
     "source": "apocrypha",
     "page": 156
   },
@@ -1563,7 +1563,7 @@
         "FLESH TEARERS"
       ]
     },
-    "effect": "When you charge into melee, you may add +Rank ED to the damage of that attack. However, you increase the Difficulty of any Willpower test to resist The Red Thirst by an amount equal to your Rank, and a Complication suffered in combat may cause you to hallucinate that you are Sanguinius himself, battling traitors in the Horus Heresy. Primaris Space Marines who take this talent become subject to The Red Thirst despite being Primaris. Deceptive Retreat",
+    "effect": "When you charge into melee, you may add +Rank ED to the damage of that attack. However, you increase the Difficulty of any Willpower test to resist The Red Thirst by an amount equal to your Rank, and a Complication suffered in combat may cause you to hallucinate that you are Sanguinius himself, battling traitors in the Horus Heresy. Primaris Space Marines who take this talent become subject to The Red Thirst despite being Primaris.",
     "flavor": "Your mind and soul are upon the precipice, tormented by visions of Sanguinius’ demise and barely able to slake the rage and bloodlust in your heart.",
     "source": "apocrypha",
     "page": 235
@@ -1611,7 +1611,7 @@
         "drukhari"
       ]
     },
-    "effect": "After you make a melee attack, whether successful or not, you may spend one Glory to Fall Back as a free action. Ded ‘Ard!",
+    "effect": "After you make a melee attack, whether successful or not, you may spend one Glory to Fall Back as a free action.",
     "flavor": "Aeldari in battle wield deception like a blade, slipping from the fray in feigned retreat only to follow their flight with another attack.",
     "source": "apocrypha",
     "page": 235
@@ -1628,7 +1628,7 @@
         "ork"
       ]
     },
-    "effect": "Your Resilience is increased by +Rank, and you add +Rank to the number of Traumatic Injuries you can suffer before dying. Descent of Angels",
+    "effect": "Your Resilience is increased by +Rank, and you add +Rank to the number of Traumatic Injuries you can suffer before dying.",
     "flavor": "Injuries that would slay even other Orks are mere flesh wounds to you.",
     "source": "apocrypha",
     "page": 235
@@ -1731,7 +1731,7 @@
         "FLESH TEARERS"
       ]
     },
-    "effect": "If you Charge into melee while using a Jump Pack, roll a number of dice equal to Double Rank. For each 6 rolled, you inflict a single Mortal Wound upon an enemy within 2 metres of your landing. Resolve this before making the melee attack from your Charge. Dreadful Vigour",
+    "effect": "If you Charge into melee while using a Jump Pack, roll a number of dice equal to Double Rank. For each 6 rolled, you inflict a single Mortal Wound upon an enemy within 2 metres of your landing. Resolve this before making the melee attack from your Charge.",
     "flavor": "You emulate your winged Primarch as you descend from the skies into the heart of the enemy.",
     "source": "apocrypha",
     "page": 235
@@ -1771,7 +1771,7 @@
         "leadership": 4
       }
     },
-    "effect": "Through reputation or assignment, you have gathered a number of followers that will do whatever you ask. If you are attacked, they intervene. Your devotees are a Mob of any Troop level Threat. A number of devotees equal to Double Rank +2 have decided to follow you. You may use the stats presented in Chapter 14 for each devotee, or use the following rules: Devotee Attributes are equal to 1 + Double Rank; Devotee Skills are equal to 1 + Double Rank; A devotee's Attributes and Skills cannot be higher than your own. Whenever you are hit by any form of attack, any of your devotees may make a DN5 Initiative Test as a Reflexive Action. If they succeed, the attack kills the devotee instead of hitting you. Slain devotees may be replaced for free with new devotees the next time you visit a major encampment or city. If you take this Talent more than once, you gain more devotees of the same type you already possess. If you already have followers from an archetype ability, this Talent provides additional followers of that type instead.",
+    "effect": "Your devotees are a Mob of any Troop level Threat, as described in Chapter 14: Bestiary. A number of devotees...",
     "flavor": "Through reputation or assignment, you have gathered a number of followers that will do whatever you ask. If you are attacked, they intervene.",
     "source": "core",
     "page": 132
@@ -1954,8 +1954,8 @@
         "NURGLE"
       ]
     },
-    "effect": "Your wounds knit with tumorous growths, and vile ichor bubbles forth to replace spilt blood. You gain +1d3 Corruption. As a simple action, you may spend 1 Wrath to regain 1d3+2 Wounds. Dynamic Offensive",
-    "flavor": "Grandfather Nurgle bestows life and vitality upon his children.",
+    "effect": "You gain +1d3 Corruption. As a simple action, you may spend 1 Wrath to regain 1d3+2 Wounds.",
+    "flavor": "Grandfather Nurgle bestows life and vitality upon his children. Your wounds knit with tumorous growths, and vile ichor bubbles forth to replace spilt blood.",
     "source": "apocrypha",
     "page": 235
   },
@@ -1995,7 +1995,7 @@
         "FIRE CASTE"
       ]
     },
-    "effect": "When you are operating a BATTLESUIT with the JUMP JETS keyword, and you perform the Run or Sprint action, increase your suit’s flying speed by +Rank. In addition, you ignore the DN increase for firing an Assault weapon while sprinting. Evade",
+    "effect": "When you are operating a BATTLESUIT with the JUMP JETS keyword, and you perform the Run or Sprint action, increase your suit’s flying speed by +Rank. In addition, you ignore the DN increase for firing an Assault weapon while sprinting.",
     "flavor": "Skilled battlesuit pilots can surge into battle with a blaze of fire.",
     "source": "apocrypha",
     "page": 236
@@ -2010,8 +2010,8 @@
         "BLOOD ANGELS"
       ]
     },
-    "effect": "After a Respite, declare you have had a vision. Ask the GM one question about your mission. Until next Respite, you are affected by the Blood Angels gene-seed flaw.",
-    "flavor": "The blood of the Great Angel flows through your veins, granting prophetic visions—at a terrible price.",
+    "effect": "The violent and horrific death of the Blood Angels' Primarch at the hands of Warmaster Horus haunts all of Sanguinius' sons to this day. [...] You may declare you have had a vision after a Respite (Wrath & Glory Core Rulebook, page 196). If you do, ask the GM one question about events related to your mission. The GM must answer truthfully, although they do not need to tell the whole truth and may be cryptic in their response. However, after your vision, the closeness to Sanguinius' spirit haunts you. If you have the PRIMARIS Keyword, you are affected by the Blood Angels gene-seed flaw (Wrath & Glory Core Rulebook, pages 71-73) despite your refined origin. Otherwise, increase the DN of the Willpower Test to avoid becoming Frenzied to 5. This effect lasts until your next Respite.",
+    "flavor": "[AI-Generated] The blood of the Great Angel flows through your veins, granting prophetic visions—at a terrible price.",
     "source": "voa",
     "page": 46
   },
@@ -2052,7 +2052,7 @@
         "ork"
       ]
     },
-    "effect": "When you Charge, you increase your Speed by +Rank. In addition, you gain +1 ED on your attacks when you charge. Abhor the Witch, Destroy the Witch [Vow]",
+    "effect": "When you Charge, you increase your Speed by +Rank. In addition, you gain +1 ED on your attacks when you charge.",
     "flavor": "Little can compare to the momentum of a charging Ork.",
     "source": "apocrypha",
     "page": 230
@@ -2102,8 +2102,8 @@
         "SLAANESH"
       ]
     },
-    "effect": "Your mind burns with glorious agony as you open your senses to perceive more deeply than any mortal should. You gain +1d3 Corruption. When you attempt an Awareness or Insight Test, you may choose to suffer 1, 2, or 3 Shock in order to gain that many additional dice on the Test. Exquisite Swiftness",
-    "flavor": "The Prince of Pleasure has granted you the greatest depths of awareness, to better appreciate the sensations of existence.",
+    "effect": "You gain +1d3 Corruption. When you attempt an Awareness or Insight Test, you may choose to suffer 1, 2, or 3 Shock in order to gain that many additional dice on the Test.",
+    "flavor": "The Prince of Pleasure has granted you the greatest depths of awareness, to better appreciate the sensations of existence. Your mind burns with glorious agony as you open your senses to perceive more deeply than any mortal should.",
     "source": "apocrypha",
     "page": 236
   },
@@ -2119,8 +2119,8 @@
         "frenzy"
       ]
     },
-    "effect": "Targets within 20m add +1 ED on successful melee attacks. Spend extra Faith: +1 die to melee attacks, and effect lasts an additional round.",
-    "flavor": "Your battle-cry fills your brothers with righteous fury, driving them to strike harder and faster.",
+    "effect": "Denouncing the unrighteous, you call upon your allies to face down the foes of Mankind with steel in their hearts and their hands. Affected targets within 20m add +1 ED to damage on successful melee attacks. By spending a further point of Faith, affected targets gain +1 die to melee attack Tests, and the effects of the Litany lasts for an additional round, even if the Chaplain moves out of range, or can no longer be heard.",
+    "flavor": "[AI-Generated] Your battle-cry fills your brothers with righteous fury, driving them to strike harder and faster.",
     "isLitany": true,
     "source": "voa",
     "page": 58
@@ -2167,7 +2167,7 @@
         "SLAANESH"
       ]
     },
-    "effect": "You gain +1d3 Corruption. Before the first round of combat, you may move up to your speed. Further, you may always choose to act first in each round. Fallen Angel",
+    "effect": "You gain +1d3 Corruption. Before the first round of combat, you may move up to your speed. Further, you may always choose to act first in each round.",
     "flavor": "Your wits and reflexes are heightened to an exceptional degree, to allow you to better experience life’s joys and torments.",
     "source": "apocrypha",
     "page": 236
@@ -2182,8 +2182,8 @@
         "DARK ANGELS"
       ]
     },
-    "effect": "Or perhaps he broke faith with you. Due to your ancient origins, you gain +Rank to Scholar tests regarding historical events. You gain +2 bonus dice on any melee attack made against characters with the DARK ANGELS keyword, and they gain +2 dice on melee attacks against you. You gain the FALLEN keyword. Familiar",
-    "flavor": "You broke faith with The Lion of Caliban during the Imperium’s darkest hour.",
+    "effect": "Due to your ancient origins, you gain +Rank to Scholar tests regarding historical events. You gain +2 bonus dice on any melee attack made against characters with the DARK ANGELS keyword, and they gain +2 dice on melee attacks against you. You gain the FALLEN keyword.",
+    "flavor": "You broke faith with The Lion of Caliban during the Imperium’s darkest hour. Or perhaps he broke faith with you.",
     "source": "apocrypha",
     "page": 236
   },
@@ -2192,7 +2192,7 @@
     "name": "Familiar (Abundance of Apocrypha)",
     "cost": 5,
     "prerequisites": {},
-    "effect": "Your companion is a single Troop level Threat of Tiny or Small size, as described in Chapter 14 of the Wrath & Glory Core Rulebook. You may use the stats presented in the core rulebook or another bestiary, or use the following rules: Companion Attributes are equal to 1 + Double Rank. Companion Skills are equal to 1 + Double Rank. A companion’s Attributes and Skills cannot be higher than your own. Your familiar will stick close to you—within 3m—under most circumstances and will try to avoid combat unless ordered otherwise. If your familiar is within 3m of you, its Defence is increased by +2. A collection of custom-made familiars can be found in Chapter IV: Equipment. Fix Bayonets!",
+    "effect": "Your companion is a single Troop level Threat of Tiny or Small size, as described in Chapter 14 of the Wrath & Glory Core Rulebook. You may use the stats presented in the core rulebook or another bestiary, or use the following rules: Companion Attributes are equal to 1 + Double Rank. Companion Skills are equal to 1 + Double Rank. A companion’s Attributes and Skills cannot be higher than your own. Your familiar will stick close to you—within 3m—under most circumstances and will try to avoid combat unless ordered otherwise. If your familiar is within 3m of you, its Defence is increased by +2. A collection of custom-made familiars can be found in Chapter IV: Equipment.",
     "flavor": "You are accompanied by a small companion creature which aids and assists you.",
     "source": "apocrypha",
     "page": 86
@@ -2270,8 +2270,8 @@
         "fear"
       ]
     },
-    "effect": "Make an Intimidation Test as a Reflexive Action when encountering new foes. Apply results to each enemy individually. Once per encounter per target.",
-    "flavor": "The sight of you in battle armor is enough to send lesser foes fleeing in terror.",
+    "effect": "When unleashing your wrath in battle, the fury of an Astartes warrior is written across your features. You may make an Intimidation (Wil) Test as a Reflexive Action in combat upon encountering any new foes, including at the start of a battle. Apply the results of the Test to each enemy individually (so a Test that rolls four Icons could intimidate a Cultist requiring DN 3, but not their Traitor Astartes master with a DN of 7). You can only attempt to intimidate a given character in this manner once per encounter.",
+    "flavor": "[AI-Generated] The sight of you in battle armor is enough to send lesser foes fleeing in terror.",
     "source": "voa",
     "page": 46
   },
@@ -2312,7 +2312,7 @@
       "other": "Prayers to the Dark Gods"
     },
     "effect": "If this Prayer is successful, then while the Prayer remains in effect, you add +Rank to your Toughness.",
-    "flavor": "You beg the Grandfather of Pestilence to bless your form with wondrous disease, every syllable expelling a cloud of flies. this Prayer.",
+    "flavor": "You beg the Grandfather of Pestilence to bless your form with wondrous disease, every syllable expelling a cloud of flies.",
     "source": "apocrypha",
     "page": 257
   },
@@ -2382,7 +2382,7 @@
         "ASTRA MILITARUM"
       ]
     },
-    "effect": "You increase the base damage of a bayonet you wield by +Double Rank when you charge, or when you attack an enemy who charged you since your last turn. Gamma-level Psyker",
+    "effect": "You increase the base damage of a bayonet you wield by +Double Rank when you charge, or when you attack an enemy who charged you since your last turn.",
     "flavor": "Sharp steel, with some guts behind it, is a vital part of defending the Imperium.",
     "source": "apocrypha",
     "page": 86
@@ -2513,7 +2513,7 @@
         "primaris astartes"
       ]
     },
-    "effect": "When you attempt to use a psychic power at the Unbound or Transcendent power level, for each Exalted Icon you roll, you may roll one additional die for the Psychic Mastery test. These additional dice may not themselves grant more dice. You gain 1d3 Corruption Points when you take this talent. You may not select the Alpha-level Psyker or Beta-level Psyker talents. Guardian",
+    "effect": "When you attempt to use a psychic power at the Unbound or Transcendent power level, for each Exalted Icon you roll, you may roll one additional die for the Psychic Mastery test. These additional dice may not themselves grant more dice. You gain 1d3 Corruption Points when you take this talent. You may not select the Alpha-level Psyker or Beta-level Psyker talents.",
     "flavor": "Your psychic powers are particularly potent, with an intensity that few can match.",
     "source": "apocrypha",
     "page": 232
@@ -2531,7 +2531,7 @@
       ]
     },
     "effect": "Add an automatic Icon to Tests involving physical might (like Athletics to lift debris). Such Tests take half as long as usual.",
-    "flavor": "Your gene-enhanced musculature grants you strength beyond even other Astartes.",
+    "flavor": "[AI-Generated] Your gene-enhanced musculature grants you strength beyond even other Astartes.",
     "source": "voa",
     "page": 46
   },
@@ -2585,7 +2585,7 @@
     "name": "Guardian (Abundance of Apocrypha)",
     "cost": 20,
     "prerequisites": {},
-    "effect": "Whenever an ally within Rank metres of you is the target of an attack, you may spend 1 Glory as a Reflexive Action to interpose yourself an become the target of that attack instead. You cannot use this talent if you are Restrained or otherwise have impaired movement. Gunnery Crew",
+    "effect": "Whenever an ally within Rank metres of you is the target of an attack, you may spend 1 Glory as a Reflexive Action to interpose yourself and become the target of that attack instead. You cannot use this talent if you are Restrained or otherwise have impaired movement.",
     "flavor": "You are a shield for your allies.",
     "source": "apocrypha",
     "page": 83
@@ -2599,7 +2599,7 @@
         "ballisticSkill": 2
       }
     },
-    "effect": "When you are CREW or PILOT in a vehicle, you may use the Open Fire action up to 1+Rank times as part of a Multi-Action, so long each Open Fire action fires a different one of the vehicle’s weapons. Hail of Fire",
+    "effect": "When you are CREW or PILOT in a vehicle, you may use the Open Fire action up to 1+Rank times as part of a Multi-Action, so long each Open Fire action fires a different one of the vehicle’s weapons.",
     "flavor": "You’re used to operating linked vehicle weapons in concert.",
     "source": "apocrypha",
     "page": 237
@@ -2613,7 +2613,7 @@
         "ballisticSkill": 2
       }
     },
-    "effect": "When you use a Salvo option when making a ranged attack, you add +Rank ED to the attack’s damage. Heroic Intervention",
+    "effect": "When you use a Salvo option when making a ranged attack, you add +Rank ED to the attack's damage.",
     "flavor": "On command, you can produce a veritable wall of firepower that few foes can withstand.",
     "source": "apocrypha",
     "page": 232
@@ -2685,7 +2685,7 @@
     "name": "Heroic Intervention (Abundance of Apocrypha)",
     "cost": 20,
     "prerequisites": {},
-    "effect": "When an enemy takes the Charge action and concludes their move within 6 metres of you, you may spend 1 Glory as a Reflexive Action to move up to your Speed towards that enemy to engage them and make a melee attack before the enemy makes their attack. You are considered to be charging for the purposes of your attack. Hunt from the Shadows",
+    "effect": "When an enemy takes the Charge action and concludes their move within 6 metres of you, you may spend 1 Glory as a Reflexive Action to move up to your Speed towards that enemy to engage them and make a melee attack before the enemy makes their attack. You are considered to be charging for the purposes of your attack.",
     "flavor": "",
     "source": "apocrypha",
     "page": 237
@@ -2723,7 +2723,7 @@
         "drukhari"
       ]
     },
-    "effect": "When you are targeted by a ranged attack while you are benefiting from cover, you may spend 1 Glory as a Reflexive Action to add +Rank to your Resilience until the start of your next turn. Indomitable Belief",
+    "effect": "When you are targeted by a ranged attack while you are benefiting from cover, you may spend 1 Glory as a Reflexive Action to add +Rank to your Resilience until the start of your next turn.",
     "flavor": "The denizens of Commorragh use the shadows to their advantage.",
     "source": "apocrypha",
     "page": 237
@@ -2830,7 +2830,7 @@
     "prerequisites": {
       "other": "ADEPTA SORORITAS keyword, must not possess the CHAOS keyword"
     },
-    "effect": "You, and all ADEPTA SORORITAS characters within 15m of you, add +Rank to Resilience. In addition, when you suffer damage in excess of your Maximum Wounds, you gain 1 Faith. If you die, all characters with the ADEPTUS MINISTORUM or ADEPTA SORORITAS keywords gain 2 Faith and recover +Double Rank Shock, as they are spurred on by your martyrdom. Inner Circle",
+    "effect": "You, and all ADEPTA SORORITAS characters within 15m of you, add +Rank to Resilience. In addition, when you suffer damage in excess of your Maximum Wounds, you gain 1 Faith. If you die, all characters with the ADEPTUS MINISTORUM or ADEPTA SORORITAS keywords gain 2 Faith and recover +Double Rank Shock, as they are spurred on by your martyrdom.",
     "flavor": "Your faith is such that you will not yield before the Emperor’s enemies.",
     "source": "apocrypha",
     "page": 237
@@ -2844,8 +2844,8 @@
         "DARK ANGELS"
       ]
     },
-    "effect": "You automatically pass all Fear and Terror tests. You are also immune to Interaction attacks made using Intimidation. Further, you may re-roll up to Double Rank dice when you roll Determination. Finally, you gain the DEATHWING keyword. Inspirational",
-    "flavor": "rating 5+, Tier 4 or higher You have been granted true knowledge of the Unforgiven’s quest for absolution, and you bear that burden with solemnity and furious purpose.",
+    "effect": "You automatically pass all Fear and Terror tests. You are also immune to Interaction attacks made using Intimidation. Further, you may re-roll up to Double Rank dice when you roll Determination. Finally, you gain the DEATHWING keyword.",
+    "flavor": "You have been granted true knowledge of the Unforgiven’s quest for absolution, and you bear that burden with solemnity and furious purpose.",
     "source": "apocrypha",
     "page": 237
   },
@@ -2891,7 +2891,7 @@
         "leadership": 2
       }
     },
-    "effect": "When an ally within 15+Rank metres who can see you fails a Resolve test, you may make a Leadership test as a Reflexive Action against the same DN as their Resolve test. If you succeed, then the ally is considered to have passed their Resolve test rather than failed it. Jink",
+    "effect": "When an ally within 15+Rank metres who can see you fails a Resolve test, you may make a Leadership test as a Reflexive Action against the same DN as their Resolve test. If you succeed, then the ally is considered to have passed their Resolve test rather than failed it.",
     "flavor": "Your presence bolsters and reassures your allies.",
     "source": "apocrypha",
     "page": 238
@@ -2977,7 +2977,7 @@
         "DARK ANGELS"
       ]
     },
-    "effect": "When you pilot an ASTARTES vehicle with the RAIDER or FLYER keywords, the vehicle’s Defence increases by +Rank, or by +Double Rank if you take the Evasive Manoeuvres action. In addition, you gain the RAVENWING keyword. Latent Psyker",
+    "effect": "When you pilot an ASTARTES vehicle with the RAIDER or FLYER keywords, the vehicle’s Defence increases by +Rank, or by +Double Rank if you take the Evasive Manoeuvres action. In addition, you gain the RAVENWING keyword.",
     "flavor": "You are a paragon of high-speed mounted combat, and few foes can draw a bead upon you when you’re at full speed.",
     "source": "apocrypha",
     "page": 238
@@ -3018,7 +3018,7 @@
     "prerequisites": {
       "other": "Human species, may not have PSYKER keyword"
     },
-    "effect": "You gain the PSYKER keyword, and a single minor psychic power. You cannot purchase additional psychic powers. You may only attempt to use your power at the Unbound power level. Further, whenever you suffer a complication, the GM may spend 1 Ruin to have you roll on the Perils of the Warp table, as your powers run out of control. Lie Low",
+    "effect": "You gain the PSYKER keyword, and a single minor psychic power. You cannot purchase additional psychic powers. You may only attempt to use your power at the Unbound power level. Further, whenever you suffer a complication, the GM may spend 1 Ruin to have you roll on the Perils of the Warp table, as your powers run out of control.",
     "flavor": "You possess a minor psychic talent, that you’re barely aware of and have little hope of controlling.",
     "source": "apocrypha",
     "page": 238
@@ -3046,8 +3046,8 @@
         "ADEPTUS ASTARTES"
       ]
     },
-    "effect": "Once per session, reduce DN of a specific Test by Rank based on your Chapter: Blood Angels (melee), Dark Angels (Investigation), Imperial Fists (siege), Iron Hands (Willpower w/augmetics), Raven Guard (Stealth), Salamanders (Fire/Melta), Space Wolves (Awareness), Ultramarines (any by 1), White Scars (Pilot).",
-    "flavor": "The genetic legacy of your Primarch manifests in moments of need, granting you his particular gifts.",
+    "effect": "[Full text spans two columns on page 48 with chapter-by-chapter details. Key differences: Iron Hands reduce DN of Willpower Test by number of augmetics possessed (not 'Rank'). Salamanders can reduce DN of attack Tests with FIRE/MELTA weapons OR Determination Tests against FIRE/MELTA damage. Imperial Fists can reduce DN of Tests to attack buildings/fortifications/enemies in cover OR Tests related to architectural engineering.]",
+    "flavor": "[AI-Generated] The genetic legacy of your Primarch manifests in moments of need, granting you his particular gifts.",
     "source": "voa",
     "page": 48
   },
@@ -3088,7 +3088,7 @@
         "initiative": 3
       }
     },
-    "effect": "When you are Prone, you add +Rank to your Defence against attacks from 6 or more metres away, and +Rank bonus dice on Stealth tests when you attempt to Hide. Lightning Assault",
+    "effect": "When you are Prone, you add +Rank to your Defence against attacks from 6 or more metres away, and +Rank bonus dice on Stealth tests when you attempt to Hide.",
     "flavor": "You know how to avoid attention when trouble is near.",
     "source": "apocrypha",
     "page": 238
@@ -3102,7 +3102,7 @@
         "WHITE SCARS"
       ]
     },
-    "effect": "When you take the Run or Sprint action, you increase your Speed by +Rank. Any vehicle with the RAIDER or FLYER keywords you pilot gain the Turbo-Boost (X) trait, with a rating of 2+Rank. If the vehicle already has the Turbo-Boost trait, increase the trait’s rating by +Rank. Lightning-Fast Reactions",
+    "effect": "When you take the Run or Sprint action, you increase your Speed by +Rank. Any vehicle with the RAIDER or FLYER keywords you pilot gain the Turbo-Boost (X) trait, with a rating of 2+Rank. If the vehicle already has the Turbo-Boost trait, increase the trait’s rating by +Rank.",
     "flavor": "You are a master of the hunt, and your fury is inescapable.",
     "source": "apocrypha",
     "page": 238
@@ -3131,7 +3131,7 @@
         "drukhari"
       ]
     },
-    "effect": "When you are targeted by a ranged or melee attack, you may spend 1 Glory as a Reflexive Action to increase your Defence by +Double Rank until the start of your next turn. Luminen Blast",
+    "effect": "When you are targeted by a ranged or melee attack, you may spend 1 Glory as a Reflexive Action to increase your Defence by +Double Rank until the start of your next turn.",
     "flavor": "The Aeldari process thought and emotion far faster than a human, and their physical reactions are so quick that they can slip past flickering blades and fusillades of gunfire with astonishing ease.",
     "source": "apocrypha",
     "page": 238
@@ -3190,7 +3190,7 @@
       ]
     },
     "effect": "Targets within 20m may roll Determination for Mortal Wounds as if typical damage. Spend extra Faith: may reroll a single Determination die against Mortal Wounds.",
-    "flavor": "Your prayers bolster the faith of your brothers, allowing them to endure wounds that should be fatal.",
+    "flavor": "[AI-Generated] Your prayers bolster the faith of your brothers, allowing them to endure wounds that should be fatal.",
     "isLitany": true,
     "source": "voa",
     "page": 58
@@ -3222,8 +3222,8 @@
       ],
       "other": "Gained when learning any Litany of Battle"
     },
-    "effect": "Spend 1 Faith. ADEPTUS ASTARTES within 20m may re-roll Rank dice with results of 1, 2, or 3 on melee attacks. Spend another Faith: +1 reroll die and +1 round duration.",
-    "flavor": "Your voice rings with righteous fury, driving your brothers to strike again and again.",
+    "effect": "Invoking the psycho-conditioning of your brethren, you prime the Space Marines around you to fight with zeal and fervour until their foes are nought but ruin and corpses. Spend 1 Faith to affect targets with the ADEPTUS ASTARTES Keyword within 20m range of the Chaplain. Those affected may re-roll (Chaplain's Rank) dice with a result of 1, 2, or 3 whenever making a melee attack. By spending a further point of Faith, to further enhance the effect, affected targets gain may re-roll an additional die on melee attacks, and the effect lasts for an additional round so long as the Chaplain remains in sight and can be heard.",
+    "flavor": "[AI-Generated] Your voice rings with righteous fury, driving your brothers to strike again and again.",
     "isLitany": true,
     "source": "voa",
     "page": 57
@@ -3338,7 +3338,7 @@
         "LEAGUES OF VOTANN"
       ]
     },
-    "effect": "At the start of any of your turns, you may spend 1 Wrath point to enter a defiant stance. You may not move during this turn, but you increase your Resolve, Conviction, and Determination by +Rank. Until the start of your next turn. Machine Empathy",
+    "effect": "At the start of any of your turns, you may spend 1 Wrath point to enter a defiant stance. You may not move during this turn, but you increase your Resolve, Conviction, and Determination by +Rank. Until the start of your next turn.",
     "flavor": "You believe that rightful ownership lies with whomever strives hard enough to possess the prize.",
     "source": "apocrypha",
     "page": 239
@@ -3364,7 +3364,7 @@
       ],
       "other": "ADEPTUS MECHANICUS keyword, CULT MECHANICUS keyword, Luminen Capacitor augmetic"
     },
-    "effect": "You may make a ranged attack using this talent. The attack has a range of 10m, and inflicts damage equal to twice your Willpower, plus Rank ED, with the Agonizing and Spread traits, and a Salvo rating of –. Instead of reloads, this attack uses charges from your Luminen Capacitor. Luminen Defiler",
+    "effect": "You may make a ranged attack using this talent. The attack has a range of 10m, and inflicts damage equal to twice your Willpower, plus Rank ED, with the Agonizing and Spread traits, and a Salvo rating of –. Instead of reloads, this attack uses charges from your Luminen Capacitor.",
     "flavor": "By reciting the proper litanies, you can channel the energy of your Luminen Capacitor through your electoos and other implants and direct it at your enemies.",
     "source": "apocrypha",
     "page": 238
@@ -3379,7 +3379,7 @@
       ],
       "other": " DARK MECHANICUM keyword, Luminen Capacitor augmetic"
     },
-    "effect": "You gain +1 Corruption. When you use a charge from your Luminen Capacitor, you may suffer a Mortal Wound to corrupt the energy you unleash. If you are using this to power a machine, then the machine is also tainted and corrupted, and the GM will work with you to determine the effect. If you are using that corrupted power to make an attack (using the Luminen Blast or Luminen Shock talents, or any weapons which use your Luminen Capacitor), then the attack gains the Rad (2) trait. Luminen Shock",
+    "effect": "You gain +1 Corruption. When you use a charge from your Luminen Capacitor, you may suffer a Mortal Wound to corrupt the energy you unleash. If you are using this to power a machine, then the machine is also tainted and corrupted, and the GM will work with you to determine the effect. If you are using that corrupted power to make an attack (using the Luminen Blast or Luminen Shock talents, or any weapons which use your Luminen Capacitor), then the attack gains the Rad (2) trait.",
     "flavor": "You have found ways to alter and twist the energies of your Luminen Capacitor, imbuing it with the hellish light of Chaos and your own twisted spirit.",
     "source": "apocrypha",
     "page": 239
@@ -3395,7 +3395,7 @@
       ],
       "other": "ADEPTUS MECHANICUS keyword, CULT MECHANICUS keyword, Luminen Capacitor augmetic"
     },
-    "effect": "When you make an unarmed attack, you may spend 1 charge from your Luminen Capacitor to increase the damage by your Willpower, and to gain +Rank ED. This attack gains the Agonizing trait. Luck Has. Need Keeps. Toil Earns.",
+    "effect": "When you make an unarmed attack, you may spend 1 charge from your Luminen Capacitor to increase the damage by your Willpower, and to gain +Rank ED. This attack gains the Agonizing trait.",
     "flavor": "You may channel the energy of your Luminen Capacitor into your fists.",
     "source": "apocrypha",
     "page": 239
@@ -3409,7 +3409,7 @@
         "IRON HANDS"
       ]
     },
-    "effect": "You gain a bonus to Tech tests, and to Piloting tests for vehicles with the ADEPTUS ASTARTES keyword, equal the number of augmetics you have. Master Artisan",
+    "effect": "You gain a bonus to Tech tests, and to Piloting tests for vehicles with the ADEPTUS ASTARTES keyword, equal the number of augmetics you have.",
     "flavor": "You spurn the weakness of flesh and embrace the purity of steel, forging a unique bond with the spirits of the machines you work with.",
     "source": "apocrypha",
     "page": 239
@@ -3425,7 +3425,7 @@
       ],
       "other": "ADEPTUS MECHANICUS keyword, CULT MECHANICUS keyword, Maglev Coils augmetic"
     },
-    "effect": "You may now run and sprint while using your Maglev Coils to fly, and your flying speed is increased to twice your Willpower. Mighty Leap",
+    "effect": "You may now run and sprint while using your Maglev Coils to fly, and your flying speed is increased to twice your Willpower.",
     "flavor": "You have proven your devotion to the Machine God by expanding the network of gravitic and magnetic coils throughout your flesh, allowing you to defy gravity more easily.",
     "source": "apocrypha",
     "page": 239
@@ -3470,7 +3470,7 @@
         "[MARK OF CHAOS]"
       ]
     },
-    "effect": "You gain +1 Corruption. Select one of the five options: Nurgle (+1 Toughness), Khorne (+2 bonus dice when making attacks using the All-Out Attack option, can't take this option if you have the PSYKER keyword), Slaanesh (+2 bonus dice on Awareness and Persuasion Tests), Tzeentch (gain the PSYKER keyword, or if you already possess it, you gain one minor psychic power of your choice), Undedicated (Choose one Skill from: Awareness, Cunning, Deception, Insight, Persuasion, Psychic Mastery, Stealth, or Weapon Skill. You gain +Rank bonus dice when using that Skill). Taking this Talent replaces the [MARK OF CHAOS] Keyword with the name of your chosen God. If you choose Undedicated, you do not replace the [MARK OF CHAOS] Keyword.",
+    "effect": "You gain +1 Corruption. Select one of the five options below and apply the bonus to your character sheet. Taking this Talent replaces the [MARK OF CHAOS] Keyword with the name of your chosen God. If you choose Undedicated, you do not replace the [MARK OF CHAOS] Keyword. Nurgle: Your Toughness increases by +1. Khorne: You gain +2 bonus dice when making attacks using the All-Out Attack option. You can't take this option if you have the PSYKER keyword. Slaanesh: You gain +2 bonus dice on Awareness and Persuasion Tests. Tzeentch: You gain the PSYKER keyword. If you already possess the PSYKER keyword, you gain one minor psychic power of your choice. Work with the GM to determine which powers are appropriate for your character. Undedicated: Choose one of the following Skills: Awareness, Cunning, Deception, Insight, Persuasion, Psychic Mastery, Stealth, or Weapon Skill. You gain +Rank bonus dice when using that Skill.",
     "flavor": "You have been granted the favour of the Chaos Gods. This may be from dedicating yourself to one of the named gods or to an act that venerates the entire pantheon. Occasionally, one of the Chaos Gods may grant favour out of amusement or some more inscrutable reason, rather than as a reward.",
     "requiresChoice": true,
     "choiceType": "chaos_god",
@@ -3550,7 +3550,7 @@
         "SALAMANDERS"
       ]
     },
-    "effect": "Whenever you make an attack with one of your own weapons (i.e., any weapon with which you began the current adventure), you may re-roll up to Rank dice on the attack. Maglev Transcendence",
+    "effect": "Whenever you make an attack with one of your own weapons (i.e., any weapon with which you began the current adventure), you may re-roll up to Rank dice on the attack.",
     "flavor": "The Salamanders are craftsmen of renown, and their weapons are crafted and maintained to an exceptional standard.",
     "source": "apocrypha",
     "page": 239
@@ -3617,7 +3617,7 @@
         "agility": 2
       }
     },
-    "effect": "When you make a Long Jump or High Jump, add +Rank to your Strength to determine how far or how high you can jump. Munitionsmith",
+    "effect": "When you make a Long Jump or High Jump, add +Rank to your Strength to determine how far or how high you can jump.",
     "flavor": "You’re capable of leaping considerable distances.",
     "source": "apocrypha",
     "page": 239
@@ -3706,7 +3706,7 @@
         "ADEPTUS MECHANICUS"
       ]
     },
-    "effect": "When you use a weapon with the MELTA, PLASMA, ARC, POWER, or ADEPTUS MECHANICUS keywords, you may add +Rank ED to the weapon’s damage. Not Another Step Back",
+    "effect": "When you use a weapon with the MELTA, PLASMA, ARC, POWER, or ADEPTUS MECHANICUS keywords, you may add +Rank ED to the weapon’s damage.",
     "flavor": "You are an expert in the science of weaponry, and the most advanced munitions are all the deadlier in your worthy hands.",
     "source": "apocrypha",
     "page": 240
@@ -3724,7 +3724,7 @@
       "other": "Prayers to the Dark Gods"
     },
     "effect": "If this Prayer is successful, then you instantly recover Rank Wounds. This Prayer has no ongoing duration—once the effect has occurred, the Prayer is done.",
-    "flavor": "Speaking riddles, you bargain with the Master of Fate to make your flesh flow like liquid, unmaking the harm dealt to you. this Prayer.",
+    "flavor": "Speaking riddles, you bargain with the Master of Fate to make your flesh flow like liquid, unmaking the harm dealt to you.",
     "source": "apocrypha",
     "page": 257
   },
@@ -3780,7 +3780,7 @@
         "LEAGUES OF VOTANN"
       ]
     },
-    "effect": "When you fail a Resolve test, you may suffer 1d3 Shock to count as having succeeded. Only in Death Does Duty End",
+    "effect": "When you fail a Resolve test, you may suffer 1d3 Shock to count as having succeeded.",
     "flavor": "You will not yield while there is still profit to be had, or grudges to settle.",
     "source": "apocrypha",
     "page": 240
@@ -3833,8 +3833,8 @@
     "name": "Only in Death Does Duty End (Abundance of Apocrypha)",
     "cost": 30,
     "prerequisites": {},
-    "effect": "When you are Dying, you may continue to act normally, though you continue to suffer Traumatic Wounds and additional Wrath Dice as normal for a Dying character. If ever you roll a 6 on all your Wrath dice while Dying, you immediately regain 1 Wound. Overseer",
-    "flavor": "or Custodian species, Toughness rating 5+, Willpower rating 4+ You will not allow so trivial a thing as a mortal wound interfere with delivering death to the enemies of the Imperium.",
+    "effect": "When you are Dying, you may continue to act normally, though you continue to suffer Traumatic Wounds and additional Wrath Dice as normal for a Dying character. If ever you roll a 6 on all your Wrath dice while Dying, you immediately regain 1 Wound.",
+    "flavor": "You will not allow so trivial a thing as a mortal wound interfere with delivering death to the enemies of the Imperium.",
     "source": "apocrypha",
     "page": 240
   },
@@ -3861,7 +3861,7 @@
         "leadership": 3
       }
     },
-    "effect": "As a Full Action, you may command a single ally within 15+Rank metres. That ally may immediately take Movement, a Combat Action, and a Simple Action as if it was their turn. This does not prevent the ally from taking a turn of their own later in the round. Once you have used this option, you may not do so again until after your next Regroup. Overwatch",
+    "effect": "As a Full Action, you may command a single ally within 15+Rank metres. That ally may immediately take Movement, a Combat Action, and a Simple Action as if it was their turn. This does not prevent the ally from taking a turn of their own later in the round. Once you have used this option, you may not do so again until after your next Regroup.",
     "flavor": "Allies follow your direction without hesitation, trusting your judgement in the heat of battle.",
     "source": "apocrypha",
     "page": 240
@@ -3875,7 +3875,7 @@
         "initiative": 3
       }
     },
-    "effect": "When you are Charged, you may use your Reflexive Action and spend 1 ammo to make a ranged attack against the enemy Charging you. This attack is resolved before the Charge begins, and the enemy’s receives +3 Defence against this attack. This is considered a Salvo option, so you must reload your weapon after this attack before you can fire it again. Point-Blank Fusillade",
+    "effect": "When you are Charged, you may use your Reflexive Action and spend 1 ammo to make a ranged attack against the enemy Charging you. This attack is resolved before the Charge begins, and the enemy's receives +3 Defence against this attack. This is considered a Salvo option, so you must reload your weapon after this attack before you can fire it again.",
     "flavor": "You’ve trained to be able to snap off a burst of fire at a charging foe.",
     "source": "apocrypha",
     "page": 116
@@ -3968,7 +3968,7 @@
         "LEAGUES OF VOTANN"
       ]
     },
-    "effect": "Any LEAGUES OF VOTANN ranged weapon you wield may be fired when you are engaged in melee, as if it had the Pistol trait. If the weapon also has the Heavy trait, then the DN of attacks made when engaged are increased by +2. Power Through Pain",
+    "effect": "Any LEAGUES OF VOTANN ranged weapon you wield may be fired when you are engaged in melee, as if it had the Pistol trait. If the weapon also has the Heavy trait, then the DN of attacks made when engaged are increased by +2.",
     "flavor": "You are resolute and steadfast, able to maintain a punishing rate of fire even when the enemy is at your throat.",
     "source": "apocrypha",
     "page": 240
@@ -4013,7 +4013,7 @@
         "drukhari"
       ]
     },
-    "effect": "You gain one Pain point whenever an enemy does one of the following within Willpower+Rank metres of you: a character suffers three or more Wounds from a single attack, you affect an enemy with an Intimidation interaction attack, a character fails a Resolve test, a character becomes Exhausted. You immediately recover +Rank Shock whenever you gain a Pain point. Further, you gain an increasing bonus for the number of Pain points you’ve obtained, as described on the table below. You lose all accumulated Pain points upon taking a Regroup or Respite. Pain Points Effect 1 Inured to Suffering: +1 Resilience 2 Eager to Flay: +Rank to Speed. 3 Flensing Fury: +Rank bonus dice to Weapon Skill tests. 4 Emboldened by Bloodshed: +Rank Resilience 5+ Mantle of Agony: Your Resolve increases by +Double Rank. Precision Shot",
+    "effect": "You gain one Pain point whenever an enemy does one of the following within Willpower+Rank metres of you: a character suffers three or more Wounds from a single attack, you affect an enemy with an Intimidation interaction attack, a character fails a Resolve test, a character becomes Exhausted. You immediately recover +Rank Shock whenever you gain a Pain point. Further, you gain an increasing bonus for the number of Pain points you’ve obtained, as described on the table below. You lose all accumulated Pain points upon taking a Regroup or Respite. Pain Points Effect 1 Inured to Suffering: +1 Resilience 2 Eager to Flay: +Rank to Speed. 3 Flensing Fury: +Rank bonus dice to Weapon Skill tests. 4 Emboldened by Bloodshed: +Rank Resilience 5+ Mantle of Agony: Your Resolve increases by +Double Rank.",
     "flavor": "Your soul slips away, little by little, and you replenish it by drinking deep of the anguish and despair of others.",
     "source": "apocrypha",
     "page": 241
@@ -4027,8 +4027,8 @@
         "ballisticSkill": 4
       }
     },
-    "effect": "When you make a Called Shot, you do not suffer the usual +2 DN penalty.",
-    "flavor": "Your marksmanship is so refined that targeting specific body parts is no more difficult than a center-mass shot.",
+    "effect": "[AI-Generated] When you make a Called Shot, you do not suffer the usual +2 DN penalty.",
+    "flavor": "[AI-Generated] Your marksmanship is so refined that targeting specific body parts is no more difficult than a center-mass shot.",
     "source": "core",
     "page": null
   },
@@ -4041,7 +4041,7 @@
         "ballisticSkill": 5
       }
     },
-    "effect": "When you aim and make a successful ranged attack with the Called Shot option, the weapon gains the Mortal (1) trait. Prey Upon the Weak",
+    "effect": "When you aim and make a successful ranged attack with the Called Shot option, the weapon gains the Mortal (1) trait.",
     "flavor": "Your shots are lethally precise, able to hit a target’s weak points with terrifying ease.",
     "source": "apocrypha",
     "page": 241
@@ -4058,7 +4058,7 @@
         "drukhari"
       ]
     },
-    "effect": "When you make a ranged attack against an enemy who is currently under the effects of any of the Fear, Terror, or Pinned conditions, re-roll Double Rank dice on the attack. Prismatic Blur",
+    "effect": "When you make a ranged attack against an enemy who is currently under the effects of any of the Fear, Terror, or Pinned conditions, re-roll Double Rank dice on the attack.",
     "flavor": "Your senses heighten in the presence of terrified prey.",
     "source": "apocrypha",
     "page": 241
@@ -4089,7 +4089,7 @@
         "aeldari"
       ]
     },
-    "effect": "When you Run or Sprint while wearing a holo-suit, increase your Resilience by +Double Rank. Properly Prepared",
+    "effect": "When you Run or Sprint while wearing a holo-suit, increase your Resilience by +Double Rank.",
     "flavor": "You accelerate into a lightning-fast sprint, weaving and tumbling to magnify the effects of your holo-field.",
     "source": "apocrypha",
     "page": 241
@@ -4117,8 +4117,8 @@
         "LEAGUES OF VOTANN"
       ]
     },
-    "effect": "You’re never without a few extra magazines and a back-up sidearm. You may carry up to 5 reloads as standard, rather than 3; this may be increased by equipment as normal. In addition, you may spend a Wrath point to declare that you’ve still got a back-up gun, which you immediately produce from its hiding spot. This is an Autoch-pattern Bolt Pistol with a single reload, and it’s better not to ask where you were keeping it. Prosanguine",
-    "flavor": "You can never be too prepared for the worst outcomes.",
+    "effect": "You may carry up to 5 reloads as standard, rather than 3; this may be increased by equipment as normal. In addition, you may spend a Wrath point to declare that you've still got a back-up gun, which you immediately produce from its hiding spot. This is an Autoch-pattern Bolt Pistol with a single reload, and it's better not to ask where you were keeping it.",
+    "flavor": "You can never be too prepared for the worst outcomes. You're never without a few extra magazines and a back-up sidearm.",
     "source": "apocrypha",
     "page": 241
   },
@@ -4132,7 +4132,7 @@
       ],
       "other": "ADEPTUS MECHANICUS keyword, Autosanguine augmetic"
     },
-    "effect": "You may attempt a Tech test (DN 3) to do this, and if successful, you regain 1d3+1 Wounds immediately, +1 per Exalted Icon you shift. Once you have attempted this, you cannot attempt it again until you have received a Respite. Protector Imperative",
+    "effect": "You may attempt a Tech test (DN 3) to do this, and if successful, you regain 1d3+1 Wounds immediately, +1 per Exalted Icon you shift. Once you have attempted this, you cannot attempt it again until you have received a Respite.",
     "flavor": "Between your iron will and your devotion to the Omnissiah, you are able to accelerate the effects of your Autosanguinator systems.",
     "source": "apocrypha",
     "page": 241
@@ -4146,8 +4146,8 @@
         "SKITARII"
       ]
     },
-    "effect": "Though doctrina imperatives are normally initiated by a Tech-Priest overseeing the Skitarii in action, you have been equipped with protocols for independent action. You can engage an imperative which heightens visual acuity, fine motor control, and reflexes. At the start of any of your turns, you may activate the Protector Imperative. This adds +Double Rank bonus dice to any ranged attacks you attempt during that turn but increases the DN of any melee attacks you attempt that turn by +3. At the end of a turn in which you activate the Protector Imperative, you suffer 1d3+2 Shock. Psy-Inert",
-    "flavor": "",
+    "effect": "At the start of any of your turns, you may activate the Protector Imperative. This adds +Double Rank bonus dice to any ranged attacks you attempt during that turn but increases the DN of any melee attacks you attempt that turn by +3. At the end of a turn in which you activate the Protector Imperative, you suffer 1d3+2 Shock.",
+    "flavor": "Though doctrina imperatives are normally initiated by a Tech-Priest overseeing the Skitarii in action, you have been equipped with protocols for independent action. You can engage an imperative which heightens visual acuity, fine motor control, and reflexes.",
     "source": "apocrypha",
     "page": 242
   },
@@ -4175,7 +4175,7 @@
     "prerequisites": {
       "other": "Human species, may not have PSYKER keyword"
     },
-    "effect": "The DN of any psychic power that targets you is increased by +Rank. Pulse Onslaught",
+    "effect": "The DN of any psychic power that targets you is increased by +Rank.",
     "flavor": "Your soul is dull and doesn’t react to the influence of the Warp.",
     "source": "apocrypha",
     "page": 242
@@ -4189,7 +4189,7 @@
         "FIRE CASTE"
       ]
     },
-    "effect": "When you make a ranged attack with a PULSE weapon, you may spend one Glory. If you do so, each Exalted Icon you shift for Extra Damage on that attack adds +2ED rather than 1. You cannot use this talent while wearing a BATTLESUIT. Quell the Warp",
+    "effect": "When you make a ranged attack with a PULSE weapon, you may spend one Glory. If you do so, each Exalted Icon you shift for Extra Damage on that attack adds +2ED rather than 1. You cannot use this talent while wearing a BATTLESUIT.",
     "flavor": "Rather than charge into hand-to-hand combat, T’au soldiers intensify their fire and lay waste to their foes methodically.",
     "source": "apocrypha",
     "page": 82
@@ -4206,7 +4206,7 @@
         "pariah"
       ]
     },
-    "effect": "You gain the ability to Deny the Witch, described on page 267 of the Wrath & Glory Core Rulebook, even though you are not a psyker. Instead of a Psychic Mastery test, you make a Willpower test with a bonus of +Double Rank. Reborn Together",
+    "effect": "You gain the ability to Deny the Witch, described on page 267 of the Wrath & Glory Core Rulebook, even though you are not a psyker. Instead of a Psychic Mastery test, you make a Willpower test with a bonus of +Double Rank.",
     "flavor": "You can focus your mind to still disturbances in the Warp nearby.",
     "source": "apocrypha",
     "page": 179
@@ -4304,7 +4304,7 @@
         "drukhari"
       ]
     },
-    "effect": "Add +Double Rank to your Resolve when within 10m of one or more allied Aeldari or Drukhari Saga of Majesty",
+    "effect": "Add +Double Rank to your Resolve when within 10m of one or more allied Aeldari or Drukhari",
     "flavor": "The goal of the Ynnari is to save every member of the Aeldari race, whatever their previous allegiance.",
     "source": "apocrypha",
     "page": 242
@@ -4321,8 +4321,8 @@
         "ADEPTUS ASTARTES"
       ]
     },
-    "effect": "Targets within 20m extend ranged weapon ranges by short range. Reduce cover bonus by 1 and vision penalties by 1. Spend extra Faith: reroll Rank attack dice.",
-    "flavor": "Your chanted prayers sharpen the aim of your brothers, guiding their shots to strike true.",
+    "effect": "You chant a stern and steady prayer that guides your brethren to focus and clarity, enabling their shots to hit even the most distant and mysterious foes through the chaos of the battlefield. Affected targets within 20m range extend all the ranges of their ranged weapons by their short range. Affected targets reduce the bonus due to cover conferred to a threat by 1, and reduce Vision Penalties by 1. By spending an extra point of Faith, affected targets may reroll a number of attack dice equal to your Rank, including the Wrath die.",
+    "flavor": "[AI-Generated] Your chanted prayers sharpen the aim of your brothers, guiding their shots to strike true.",
     "isLitany": true,
     "source": "voa",
     "page": 58
@@ -4526,8 +4526,8 @@
       ],
       "tier": 3
     },
-    "effect": "Gain Bolter Discipline and Built Tough. Gain PRIMARIS keyword. Gain +2 Influence and 1 Uncommon Wargear. Replace armour with Mk X Tacticus.",
-    "flavor": "You have crossed the Rubicon, undergoing the dangerous surgery to become Primaris. Many do not survive the procedure.",
+    "effect": "Few Space Marines could refuse the prospect of being remade, stronger and faster, more capable of waging war against the enemies of the Imperium. You have undergone the extensive and agonising operation required to be implanted with the three additional organs needed to join your Primaris brethren and now count yourself among those who have crossed the Rubicon Primaris. You gain the Bolter Discipline and the Built Tough talents. You gain the PRIMARIS keyword. In future, you may choose from the Primaris Assencion packages. (pg 34) You gain +2 Influence, and 1 item of Uncommon Wargear. Unless using Terminator Armour you replace your current Power Armour with Mk X Tacticus Armour - Or other variants as discussed with your GM.",
+    "flavor": "[AI-Generated] You have crossed the Rubicon, undergoing the dangerous surgery to become Primaris. Many do not survive the procedure.",
     "isAscension": true,
     "source": "voa",
     "page": 43
@@ -4571,7 +4571,7 @@
         "SPACE WOLVES"
       ]
     },
-    "effect": "When you roll Determination, you may spend Glory to reduce the amount of Shock suffered. Each point of Glory spent reduces the amount of Shock suffered by 2. Saga of the Warrior Born",
+    "effect": "When you roll Determination, you may spend Glory to reduce the amount of Shock suffered. Each point of Glory spent reduces the amount of Shock suffered by 2.",
     "flavor": "You are as massive and unyielding as the mountains of Asaheim.",
     "source": "apocrypha",
     "page": 242
@@ -4588,7 +4588,7 @@
         "SPACE WOLVES"
       ]
     },
-    "effect": "When you spend one or more Glory to add extra dice to a melee attack, each Glory you spend adds two dice rather than one. Servant of Change",
+    "effect": "When you spend one or more Glory to add extra dice to a melee attack, each Glory you spend adds two dice rather than one.",
     "flavor": "You are as deadly as you are savage, and few can stand before your blade.",
     "source": "apocrypha",
     "page": 243
@@ -4708,7 +4708,7 @@
         "CHAOS"
       ]
     },
-    "effect": "When the GM spends Ruin, you gain 1 Glory. When you would gain Glory from scoring a Wrath Critical or shifting an Exalted Icon, you may gain two Glory instead, but if you do the GM gains one Ruin. Slick Crew",
+    "effect": "When the GM spends Ruin, you gain 1 Glory. When you would gain Glory from scoring a Wrath Critical or shifting an Exalted Icon, you may gain two Glory instead, but if you do the GM gains one Ruin.",
     "flavor": "You are a willing vassal of the Changer of Ways, and you embrace the vagaries of fate in all things.",
     "source": "apocrypha",
     "page": 243
@@ -4776,7 +4776,7 @@
       ],
       "other": "Dire Avenger aspect You understand your weapons instinctively, understanding the way to make the most from every"
     },
-    "effect": "shot. When you make a ranged attack with a SHURIKEN weapon, the weapon changes its AP to -3, but loses the Rending (3) trait.",
+    "effect": "You understand your weapons instinctively, understanding the way to make the most from every shot. When you make a ranged attack with a SHURIKEN weapon, the weapon changes its AP to -3, but loses the Rending (3) trait.",
     "flavor": "",
     "source": "apocrypha",
     "page": 251
@@ -4924,7 +4924,7 @@
         "tech": 2
       }
     },
-    "effect": "You may work as a loader for a character operating a Heavy or Mounted weapon. While you are within Rank metres of the weapon’s wielder, they may fire the weapon twice, as two actions within a Multi-Action. If the weapon needs to be reloaded due to firing, you may reload it as a Reflexive Action. Spark of Divinity",
+    "effect": "You may work as a loader for a character operating a Heavy or Mounted weapon. While you are within Rank metres of the weapon’s wielder, they may fire the weapon twice, as two actions within a Multi-Action. If the weapon needs to be reloaded due to firing, you may reload it as a Reflexive Action.",
     "flavor": "You’ve got quick hands and work well with a gunner.",
     "source": "apocrypha",
     "page": 243
@@ -4954,7 +4954,7 @@
         "PSYKER"
       ]
     },
-    "effect": "Gain +1 Corruption. When you succeed at a Psychic Mastery test, you may spend a point of Wrath to gain +Rank additional Exalted Icons to shift. Soulless Shrouding",
+    "effect": "Gain +1 Corruption. When you succeed at a Psychic Mastery test, you may spend a point of Wrath to gain +Rank additional Exalted Icons to shift.",
     "flavor": "You have seen the maddening truth of the Changer of Ways and emerged with your mind intact and surging with knowledge.",
     "source": "apocrypha",
     "page": 243
@@ -4971,7 +4971,7 @@
         "pariah"
       ]
     },
-    "effect": "Whenever you have a Stealth Score, it increases by +Rank. Further, if you would not have a Stealth Score at the start of your turn, you gain a Stealth Score equal to your Rank at the start of your turn. Finally, if your Stealth Score is currently higher than a creature’s Willpower, they cannot perceive you at all— their minds refuse to acknowledge your presence. This talent ceases to work if you are Exhausted or Wounded. Strike and Fade",
+    "effect": "Whenever you have a Stealth Score, it increases by +Rank. Further, if you would not have a Stealth Score at the start of your turn, you gain a Stealth Score equal to your Rank at the start of your turn. Finally, if your Stealth Score is currently higher than a creature’s Willpower, they cannot perceive you at all— their minds refuse to acknowledge your presence. This talent ceases to work if you are Exhausted or Wounded.",
     "flavor": "Your negative aura is such that mortal minds often simply refuse to perceive you.",
     "source": "apocrypha",
     "page": 243
@@ -5001,7 +5001,7 @@
         "custodian"
       ]
     },
-    "effect": "When an enemy psyker attempts to use a Psychic Power within 25m of you, you may spend 1 Glory as a Reflexive Action to immediately attempt to Deny the Witch, as if you were a Psyker. You use your Willpower for this and add +Double Rank dice to the roll. Spring Up",
+    "effect": "When an enemy psyker attempts to use a Psychic Power within 25m of you, you may spend 1 Glory as a Reflexive Action to immediately attempt to Deny the Witch, as if you were a Psyker. You use your Willpower for this and add +Double Rank dice to the roll.",
     "flavor": "You bear a little of the Emperor’s grace within you, which can sometimes unravel the sorcerous workings of The Enemy.",
     "source": "apocrypha",
     "page": 243
@@ -5018,7 +5018,7 @@
         "ASTRA MILITARUM"
       ]
     },
-    "effect": "You may select one of the following weapons as standard Wargear, replacing your primary weapon: Combat Shotgun (p.218), Plasma Gun (p.218), Meltagun (p.218), Long Las (p.217), Flamer (p.219), Grenade launcher (p.220, also receive 3 frag and 3 krak grenades), or Hot-Shot Volley Gun (TEMPESTUS SCION only, p.217).",
+    "effect": "...Grenade launcher (p.220). You also receive 3 frag and 3 krak grenades\nHot-Shot Volley Gun (TEMPESTUS SCION only, p.217).",
     "flavor": "Many soldiers of the Astra Militarum receive training in the use of specialty weapons on the battlefield. Often, this training includes basic chants to appease the weapon's war-spirit if it becomes obstinate or recalcitrant.",
     "requiresChoice": true,
     "choiceType": "weapon",
@@ -5108,7 +5108,7 @@
         "agility": 3
       }
     },
-    "effect": "When you stand up from Prone you are not restricted in the actions or combat options you use during your turn. Sorcerous Might",
+    "effect": "When you stand up from Prone you are not restricted in the actions or combat options you use during your turn.",
     "flavor": "You can quickly regain your feet.",
     "source": "apocrypha",
     "page": 243
@@ -5227,8 +5227,8 @@
         "drukhari"
       ]
     },
-    "effect": "You fight in an elusive manner, withdrawing from battle mere moments after striking with full force, then rallying to strike once more. After making a ranged attack, whether successful or not, you may spend one Glory to move up to your Speed. Strike from The Shadows",
-    "flavor": "character equipped with JUMP JETS.",
+    "effect": "After making a ranged attack, whether successful or not, you may spend one Glory to move up to your Speed.",
+    "flavor": "You fight in an elusive manner, withdrawing from battle mere moments after striking with full force, then rallying to strike once more.",
     "source": "apocrypha",
     "page": 83
   },
@@ -5298,7 +5298,7 @@
         "FIRE CASTE"
       ]
     },
-    "effect": "When an enemy uses the Charge action to charge an ally you can see within 12m of you, you may spend 1 ammo to make a ranged attack as a Reflexive action. This ranged attack is resolved before their Charge action is completed, and the enemy’s Defence is increased by +2. This is considered a Salvo attack, and thus the weapon must be reloaded after the attack. Ta’lissera Bonding",
+    "effect": "When an enemy uses the Charge action to charge an ally you can see within 12m of you, you may spend 1 ammo to make a ranged attack as a Reflexive action. This ranged attack is resolved before their Charge action is completed, and the enemy’s Defence is increased by +2. This is considered a Salvo attack, and thus the weapon must be reloaded after the attack.",
     "flavor": "You are always ready to deliver punishing fire against those who stray too close to your allies.",
     "source": "apocrypha",
     "page": 80
@@ -5393,8 +5393,8 @@
         "weaponSkill": 4
       }
     },
-    "effect": "When making a Multi-Attack with melee weapons, you may make one additional attack.",
-    "flavor": "Your blade moves faster than the eye can follow, striking again and again in rapid succession.",
+    "effect": "[AI-Generated] When making a Multi-Attack with melee weapons, you may make one additional attack.",
+    "flavor": "[AI-Generated] Your blade moves faster than the eye can follow, striking again and again in rapid succession.",
     "source": "core",
     "page": null
   },
@@ -5455,8 +5455,8 @@
         "orthopraxy"
       ]
     },
-    "effect": "A single Astartes target within 20m inflicts Mortal Wounds equal to your Rank on their next melee hit. Spend extra Faith: sustain for another round.",
-    "flavor": "Your prayers make a brother's blade burn with righteous fury, cutting through armor as if it were nothing.",
+    "effect": "Whether reciting words only you can hear or announcing your faith in a deafening bellow, your words ring in the ears of an ally, upon them your blessing bestows them the vigour of the Emperor and His fiery wrath. A single affected target with the Astartes Keyword, within 20m, inflicts with their next melee attack, if it hits, a number of Mortal Wounds equal to your Rank. By spending a further point of Faith the effect of this Litany is sustained for a further round.",
+    "flavor": "[AI-Generated] Your prayers make a brother's blade burn with righteous fury, cutting through armor as if it were nothing.",
     "isLitany": true,
     "source": "voa",
     "page": 58
@@ -5484,8 +5484,8 @@
         "au"
       ]
     },
-    "effect": "That bond is unbreakable. When you attempt a Resolve or Conviction Test, if you roll a 6 on your Wrath die, the test is automatically successful, regardless of any other factors. Take Cover!",
-    "flavor": "You undertook the Ta’lissera rite, bonding you with your teammates in the ultimate expression of unity and respect.",
+    "effect": "When you attempt a Resolve or Conviction Test, if you roll a 6 on your Wrath die, the test is automatically successful, regardless of any other factors.",
+    "flavor": "You undertook the Ta'lissera rite, bonding you with your teammates in the ultimate expression of unity and respect. That bond is unbreakable.",
     "source": "apocrypha",
     "page": 80
   },
@@ -5530,8 +5530,8 @@
         "ADEPTUS MECHANICUS"
       ]
     },
-    "effect": "You can use Tech instead of Medicae to remove Wounds, Shock, and Conditions from targets with the ADEPTUS MECHANICUS Keyword.",
-    "flavor": "You heal the faithful of the Omnissiah by repairing their holy augmetics.",
+    "effect": "You can use Tech (Int) instead of Medicae (Int) to remove Wounds, Shock, and Conditions from targets with the ADEPTUS MECHANICUS Keyword (Wrath & Glory Rulebook, page 124).",
+    "flavor": "Your skill in repairing augmetics and cyber-implants can restore servitors and the techno-faithful to functionality.",
     "source": "redacted2",
     "page": 71
   },
@@ -5709,7 +5709,7 @@
         "survival": 3
       }
     },
-    "effect": "During a Regroup, you can Test Survival (Wil) to set a trap around your current location instead of removing Wounds. The DN is usually 3, but may increase depending on the availability of tools and materials. Success constructs a single trap. When you engage in combat around this location, you may use a Reflexive Action when an enemy moves to reveal that they have stumbled into your trap. On a successful DN 3 Survival (Wil) or Tech (Int) attack Test, the trap is activated, and inflicts damage per the profile below. If targeting a Mob, additional Icons hit additional Troops as normal. A trap can only be activated once. Trap Profile: Damage 7, ED 2, Traits: Blast (6), Brutal, Inflict (Prone).",
+    "effect": "During a Regroup, you can Test Survival (Wil) to set a trap around your current location instead of removing Wounds. The DN is usually 3, but may increase depending on the availability of tools and materials. Success constructs a single trap. When you engage in combat around this location, you may use a Reflexive Action when an enemy moves to reveal that they have stumbled into your trap. On a successful DN 3 Survival (Wil) or Tech (Int) attack Test, the trap is activated, and inflicts damage per the profile below. If targeting a Mob, additional Icons hit additional Troops as normal. A trap can only be activated once. Trap Profile: Damage 7, ED 2, AP -, Traits: Blast (6), Brutal, Inflict (Prone). Shifts on the Test to create the trap can be spent to: Increase the ED by +Rank. Incorporate a grenade you already have into the trap, replacing the weapon profile above with the profile of the grenade (ignoring Range). Add one of the following Traits: Inflict (Bleeding), Inflict (Blinded), Inflict (On Fire), Inflict (Poisoned 3), Inflict (Restrained), Silent. This option may be chosen more than once, selecting a different Trait each time. Providing detail about the trap you craft may affect what Keywords it has, and possibly expand the range of available Traits you can spend Shifts on.",
     "flavor": "When you have time to prepare for combat you can transform the battlefield into a deathtrap.",
     "source": "redacted2",
     "page": 66
@@ -5988,7 +5988,7 @@
         "ADEPTUS MINISTORUM"
       ]
     },
-    "effect": "You may sing war hymns as a simple action, and all allies with the IMPERIUM keyword within 15+Rank metres gain +Rank bonus dice on all melee attacks until the start of your next turn. War-Sage",
+    "effect": "You may sing war hymns as a simple action, and all allies with the IMPERIUM keyword within 15+Rank metres gain +Rank bonus dice on all melee attacks until the start of your next turn.",
     "flavor": "Your voice is heard above the clamour and clangour of battle, rallying the servants of the Emperor to greater heights of piety and fury.",
     "source": "apocrypha",
     "page": 103
@@ -6300,7 +6300,7 @@
       "other": "Prayers to the Dark Gods"
     },
     "effect": "If this Prayer is successful, then while the Prayer remains in effect, you add +Rank to your Strength.",
-    "flavor": "Drawing blood from your palm, you request that the Lord of Skulls impart a measure of his furious strength to you. this Prayer.",
+    "flavor": "Drawing blood from your palm, you request that the Lord of Skulls impart a measure of his furious strength to you.",
     "source": "apocrypha",
     "page": 257
   },
@@ -6330,7 +6330,7 @@
         "CHAOS"
       ]
     },
-    "effect": "Activate this Prayer as a Simple Action to blanket you and all allies within 10m in darkness. Until the end of the Round, tests against those affected suffer vision penalties, increasing the level of darkness two steps (to a maximum of total darkness), or imposing the effects of very dim light in otherwise well-lit conditions. Favoured Effect: From the darkness you conjure shadowy doppelgangers of your allies. Any attack tests against affected targets until the end of the Round automatically fail, unless the attacker scores at least one Icon on a Wrath Die. Gain +1 Corruption.",
+    "effect": "Activate this Prayer as a Simple Action to blanket you and all allies within 10m in darkness. Until the end of the Round, tests against those affected suffer vision penalties (Wrath & Glory page 191), increasing the level of darkness two steps (to a maximum of total darkness), or imposing the effects of very dim light in otherwise well-lit conditions. Favoured Effect: From the darkness you conjure shadowy doppelgangers of your allies. Any attack Tests against affected targets until the end of the Round automatically fail, unless the attacker scores at least one Icon on a Wrath Die. Gain +1 Corruption.",
     "flavor": "Nightmares lurk beyond the rays of sunlight; becoming one with the dark is the true path to glory. This is a Prayer to the Dark Gods, activated using Ruin.",
     "isPrayer": true,
     "source": "dh",

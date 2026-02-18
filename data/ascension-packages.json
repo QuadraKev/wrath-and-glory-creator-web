@@ -8,11 +8,7 @@
     "prerequisites": {
       "story": "Must have near-death experience"
     },
-    "benefits": [
-      "Roll on Memorable Injury table twice",
-      "Roll on Traumatic Injury table twice",
-      "Replace lost body parts with augmetics"
-    ],
+    "benefits": "Replace any lost body parts with the appropriate augmetics; you may choose an option of any Rarity the GM deems appropriate.",
     "keywordsGained": [
       "[ANY] (Faction of rescuers)"
     ],
@@ -23,7 +19,7 @@
   {
     "id": "demanding_patron",
     "name": "Demanding Patron",
-    "description": "Your exploits have caught the attention of someone powerful who will sponsor your future deeds, though they have demands in return.",
+    "description": "Your exploits have caught the attention of someone powerful. They will sponsor your future deeds, though they have demands in return.",
     "cost": "10 x new Tier",
     "costMultiplier": 10,
     "prerequisites": {
@@ -62,7 +58,7 @@
   {
     "id": "dauntless_reputation",
     "name": "Dauntless Reputation",
-    "description": "With a single glorious act of extraordinary merit, you gained tremendous reputation. Word of your exploits has spread, and you have gained both notoriety and disciples.",
+    "description": "With a single glorious act of extraordinary merit you gained tremendous reputation. Word of your exploits has spread, and you have gained both notoriety and disciples devoted to your cause.",
     "cost": "30 x new Tier",
     "costMultiplier": 30,
     "prerequisites": {},
@@ -84,7 +80,7 @@
   {
     "id": "perfidious_wretch",
     "name": "Perfidious Wretch",
-    "description": "You betrayed your allies to gain favour with another Faction. You may have been seduced by promises of power or material wealth.",
+    "description": "You betrayed your allies to gain favour with another Faction. You may have been seduced by promises of power or material wealth — all too common in the grim darkness of the 41st Millennium. Or you may have developed a radical mindset that no longer aligns with your Faction and better suits another.",
     "cost": "5 x new Tier",
     "costMultiplier": 5,
     "prerequisites": {
@@ -106,7 +102,7 @@
   {
     "id": "psychic_revelations",
     "name": "Psychic Revelations",
-    "description": "You are now a Psyker. Whether a spontaneous manifestation, development of latent abilities, or through unbidden exposure to Warp abnormalities.",
+    "description": "You are now a Psyker. Whether a spontaneous manifestation, the development of latent abilities, or through unbidden exposure to abnormalities of the Warp, you can now channel the occult power of the Immaterium.",
     "cost": "10 x new Tier",
     "costMultiplier": 10,
     "prerequisites": {},
@@ -147,11 +143,7 @@
     "cost": "10 x new Tier",
     "costMultiplier": 10,
     "prerequisites": {},
-    "benefits": [
-      "Roll on Memorable Injury table (or gain 3 Corruption instead)",
-      "Choose: 2 items of Rare Wargear (value 3 + new Tier)",
-      "OR: 1 item of Very Rare Wargear (value 3 + new Tier)"
-    ],
+    "benefits": "If you do not have a Memorable Injury, roll on the Memorable Injury table (p.194) and decide with your GM how you received the Memorable Injury. You may choose to gain 3 Corruption points instead of, or in addition to, a Memorable Injury.",
     "keywordsGained": [],
     "influenceModifier": 1,
     "source": "core",

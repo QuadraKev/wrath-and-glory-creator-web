@@ -45,7 +45,7 @@
     "range": "5m",
     "multiTarget": false,
     "cost": 10,
-    "effect": "You implant a simple command in the mind of a nearby creature. This command must be short (consisting of a single action), simple, and obvious, but can otherwise overcome the given creature's own interests or base instincts. Suggestions cannot make a creature perform an action that they are simply incapable of performing. The target creature must successfully pass a DN 4 Willpower Test or is compelled to obey.",
+    "effect": "You implant a simple command in the mind of a nearby creature. This command must be short (consisting of a single action), simple, and obvious, but can otherwise overcome the given creature's own interests or base instincts. Example commands include: 'drop the weapon,' 'open the door' or 'push him.' Suggestions cannot make a creature perform an action that they are simply incapable of performing — for example, you can't make a Cyber Mastiff work a cogitator. The target creature must successfully pass a DN 4 Willpower Test or is compelled to obey.",
     "potency": "[1] +1 DN to the Willpower test to resist. [2] +1 Round duration.",
     "keywords": [
       "PSYCHIC"
@@ -378,7 +378,7 @@
     "multiTarget": false,
     "cost": 20,
     "prerequisite": "At least one other Biomancy Power",
-    "effect": "Your physical form is completely mutable to your will. Through thought alone you can change your body however you wish. When you activate this power, choose one of the following effects. The effect lasts until you stop Sustaining this psychic power. You assume the appearance of any individual with a roughly equivalent mass to your own. If you are attempting to emulate a person you have met, you can alter your vocal chords to match theirs, as long as you have heard them speak. You are biologically identical to whatever you have tried to emulate, but may still be required to make Deception (Fel) Tests to convince people you are who you say and appear to be. Alternatively, you modify your body with one of the following options: You manifest wings, allowing you to fly freely at your normal Speed. You develop gills, giving you immunity to the Suffocating Condition whilst breathing underwater. Your appendages become webbed, making water normal terrain instead of difficult terrain. Your corneas are massively altered, giving you the same benefits as Preysense Goggles. You harden your outer skin, giving you a +4 Resilience bonus.",
+    "effect": "...When you activate this power, choose one of the following effects. The effect lasts until you stop Sustaining this psychic power. You assume the appearance of any individual with a roughly equivalent mass to your own. ... Alternatively, you modify your body with one of the following options. Some of these modifications are obviously visible and likely grotesque, and those who see them will likely view them as mutations. You manifest wings, allowing you to fly freely at your normal Speed. You develop gills, giving you immunity to the Suffocating Condition whilst breathing underwater. Your appendages become webbed, making water normal terrain instead of difficult terrain. Your corneas are massively altered, giving you the same benefits as Preysense Goggles (p.239). You harden your outer skin, giving you a +4 Resilience bonus.",
     "potency": "[2] +1 bonus die to Deception Tests when emulating another individual. [3] You may select a second body modification when modifying your body.",
     "keywords": [
       "PSYCHIC"
@@ -415,7 +415,7 @@
     "multiTarget": false,
     "cost": 15,
     "prerequisite": "At least one other Divination Power",
-    "effect": "You peer into the depths of the Warp and see past the glimmering possibilities rippling on the surface. Past the glamour and misleading promises of what might be, you catch glimpses and images of what really will be - at least in the near future. Once activated, Prescience allows you to reroll 1 dice (not the Wrath Dice) in any Tests you make for the remainder of the scene. In addition, you may petition the timeless beings that dwell in the Warp to answer a single question about what may come to pass. The GM chooses the being that responds to your question and privately communicates their response. The response itself may be a short phrase, a single word, an emotion, or something else entirely - the beings of the Warp are unfathomable to mortal minds, and may be helpful, unhelpful, or utterly uncaring of your question. The Immaterium, and those entities that dwell in it that concern themselves with the vagaries of time as it pertains to the mortal realms, are loathe to surrender this sort of detail regarding the future. A Psyker risks much in prying in this manner. When making the Psychic Mastery (Wil) Test for this power, the roll automatically counts as if a single 1 had been rolled on a Wrath Dice. You may not use Prescience more than once in any scene.",
+    "effect": "...the roll automatically counts as if a single 1 had been rolled on a Wrath Dice (i.e. meaning that if no 1s were rolled on a Wrath Dice of the Psychic test, it would still count as 1 Wrath Dice showing a 1 and require a roll on the Perils of the Warp table). You may not use Prescience more than once in any scene.",
     "potency": "[1] Activation reduced by 5 minutes (minimum 5). [2]* You may ask the GM an additional question about the future.",
     "keywords": [
       "PSYCHIC"
@@ -452,7 +452,7 @@
     "multiTarget": false,
     "cost": 15,
     "prerequisite": "At least one other Divination power",
-    "effect": "Intense emotions leave lasting marks on the timeless threads of the Warp. By opening your mind, you receive echoes of the past psychically emanating from a place or an object. When you use this power you are able to glimpse visions of past events in an area where an individual expressed an emotional outburst. Initially, only the psychic traces of the specific emotion enter your senses. The longer you remain in place and sustain the power, the more information you receive about the events surrounding the emotional outburst. Your senses can detect past events that happen in a 10m diameter sphere centred on yourself. 1 Hour: Though vague and indistinct, your senses can perceive the events immediately preceding, during, and after the emotional outburst. Individuals appear ghostly with impermanent, hazy forms, and all sounds are muffled, echoing whispers. 6 Hours: You can perceive the events preceding, during, and after the emotional outburst within range in clear focus. 12 Hours: You glean a deeper understanding of what took place from the Warp; you may ask the GM a single question about the event that took place. You can also use this psychic power on a specific object you are in physical contact with instead of a location. The nature of the visions you receive are the same, but the range of any visions is halved and centered on the object.",
+    "effect": "...Initially, only the psychic traces of the specific emotion enter your senses, for example the sour-steel taste of murderous rage or the pungent, decaying stench of regret. The longer you remain in place...",
     "potency": "[1] You may share your vision with any ally in range of the psychic power. [2] The range of the power is doubled. [2] Your visions take half the listed time to manifest.",
     "keywords": [
       "PSYCHIC"
@@ -1054,8 +1054,8 @@
     "multiTarget": false,
     "cost": 20,
     "prerequisite": "Psyker must have the AELDARI Keyword",
-    "effect": "Wraithbone remembers its form, to a very limited degree, and seeks to return to it. You assist it in doing so, repairing damage and reestablishing its prior state. You can also disrupt the shape of a piece of wraithbone, breaking or severely damaging it. Repair: You restore 2 Wounds to a piece of wraithbone, or a wraithbone construct such as a Wraithguard. Ruin: You inflict 2 Wounds on a piece of wraithbone.",
-    "potency": "[1] Restore or inflict +1 Wound. [3] Restore or inflict a Mortal Wound on a wraithbone construct.",
+    "effect": "Wraithbone remembers its form, to a very limited degree, and seeks to return to it. You assist it in doing so, repairing damage and reestablishing its prior state. You can also disrupt the shape of a piece of wraithbone, breaking or severely damaging it. You can achieve one of the following effects: Repair: You restore 2 Wounds to a piece of wraithbone, or a wraithbone construct such as a Wraithguard. Ruin: You inflict 2 Wounds on a piece of wraithbone.",
+    "potency": "[1] Restore or inflict +1 Wound. [3] Restore or inflict a Mortal Wound on a wraithbone construct (a Wraithguard, War Walker, etc.).",
     "keywords": [
       "AELDARI",
       "ASURYANI",
@@ -1077,7 +1077,7 @@
     "cost": 25,
     "prerequisite": "Psyker must have the AELDARI Keyword",
     "effect": "You call a simple wraithbone shape into existence. The wraithbone created by this power is approximately as strong as rockcrete (weaker than normal wraithbone, due to its rapid creation). Once called, it lasts indefinitely. You can create one of the following forms: Shield: A flat surface of wraithbone a few centimetres thick, with a diameter between half a metre and three metres. Spear: A simple but deadly spear of wraithbone between half a metre and three metres long, and up to fifteen centimetres thick. Spine: Several sharp spurs of wraithbone that emerge from the ground, approximately one metre high and covering an area of ten square meters. The affected area becomes Difficult Terrain.",
-    "potency": "[1] Increase the Range by 10m. [1] Increase the amount of wraithbone you create or the area affected by Spine by one square metre. [3] Create an additional piece of wraithbone of the same type.",
+    "potency": "[1] Increase the Range by 10m. [1] Increase the amount of wraithbone you create or the area affected by Spine by one square metre. [3] Create an additional piece of wraithbone of the same type (Shield, Spear, or Spine).",
     "keywords": [
       "AELDARI",
       "ASURYANI",
@@ -2078,7 +2078,7 @@
       "TELEPATHY",
       "PSYCHIC"
     ],
-    "effect": "You send your disembodied mind and spirit, allowing you to touch other minds from a great distance away. While this power remains in effect, you leave your physical body, and can travel thousands of kilometres in an instant. In this form, you cannot physically affect anything, and you are undetectable to anyone except people you choose… though characters with the PSYKER or DAEMON keywords may be able to sense and affect you. You can communicate freely with anyone you know well who is in the same solar system. While in this form, you are completely unaware of your physical body, which is unconscious. Every minute you sustain this power, you suffer 1 Shock. See Me Not"
+    "effect": "You send your disembodied mind and spirit, allowing you to touch other minds from a great distance away. While this power remains in effect, you leave your physical body, and can travel thousands of kilometres in an instant. In this form, you cannot physically affect anything, and you are undetectable to anyone except people you choose… though characters with the PSYKER or DAEMON keywords may be able to sense and affect you. You can communicate freely with anyone you know well who is in the same solar system. While in this form, you are completely unaware of your physical body, which is unconscious. Every minute you sustain this power, you suffer 1 Shock."
   },
   {
     "id": "see_me_not_aoa",
@@ -3088,7 +3088,7 @@
       "PSYCHIC"
     ],
     "effect": "You lash out with your mind at an enemy war machine to shred its armoured hull. The strips of razor-edged shrapnel turn from the vehicle’s iron flesh are hurled like daggers at a nearby foe. Select one enemy vehicle you can see within range. That vehicle suffers 1d6+1 Mortal Wounds. Then, for each Mortal Wound the vehicle suffered, select a single creature within 6m of the vehicle (no creature may be selected more than once for this), and roll 1d6: on an Icon, that creature suffers a Mortal Wound.",
-    "potency": "[3] The vehicle suffers +1 Mortal Wounds Tempestas Discipline The elemental powers unleashed by the Rune Priests of the Space Wolves blast their enemies with the fury of the storm, take the form of creatures from legend that fight alongside the shamans, or shroud the Sons of Russ in a cloak of roiling clouds. SPACE WOLVES Librarians only. Fury of the Wolf Spirits"
+    "potency": "[3] The vehicle suffers +1 Mortal Wounds"
   },
   {
     "id": "fury_of_the_wolf_spirits_aoa",
@@ -3106,7 +3106,7 @@
       "PSYCHIC"
     ],
     "effect": "Invoking the spirits of Freki the Fierce and Geri the Cunning, you set charcoal-black phantasms upon their foes. You create a melee weapon with the following profile: Damage 12 +4ED, AP -3, Range 3, Force, Reaping. You do not add your Strength to this weapon’s damage. You then immediately make a melee attack with that weapon as part of this action.",
-    "potency": "[1] Add +1ED to the weapon. Jaws of the World Wolf"
+    "potency": "[1] Add +1ED to the weapon."
   },
   {
     "id": "jaws_of_the_world_wolf_aoa",
@@ -3124,7 +3124,7 @@
       "PSYCHIC"
     ],
     "effect": "You implore the spirit of the world upon which you walk to open its rock-fanged maw. The power affects all creatures in a Blast (6) within range. Those affected must pass an Agility test (DN 5) or suffer 1d3+2 Mortal Wounds and be knocked prone.",
-    "potency": "[2] +1 Mortal Wound. [1] +1 DN to Agility test. *[2] Affected area is a Blast (10). === PAGE 287 === Living Lightning"
+    "potency": "[2] +1 Mortal Wound. [1] +1 DN to Agility test. *[2] Affected area is a Blast (10)."
   },
   {
     "id": "living_lightning_aoa",
@@ -3142,7 +3142,7 @@
       "PSYCHIC"
     ],
     "effect": "Sentient electricity crackles amid the brooding skies above as you call forth the elements to smite your foes. At your command, lightning arcs into the ranks of the enemy, leaving a trail of blackened corpses in its wake. The you target the nearest enemy within range with a psychic ranged attack, inflicting 1d3 Mortal Wounds. If the target is reduced to 0 Wounds by this, then the nearest enemy within 35m to the previous target also suffers 1d3 Mortal Wounds. If they in turn are reduced to 0 Wounds, then the next nearest enemy within 35m to them is affected, and so on until an enemy suffers Mortal Wounds from this power but is not reduced to 0 Wounds or there are no enemies remaining within range.",
-    "potency": "[2] +1 Mortal Wound to each target. Murderous Hurricane"
+    "potency": "[2] +1 Mortal Wound to each target."
   },
   {
     "id": "murderous_hurricane_aoa",
@@ -3160,7 +3160,7 @@
       "PSYCHIC"
     ],
     "effect": "you bellow an ancient curse, and within moments your foes are all but consumed in a hurricane of freezing shards, a thousand blades of psychically formed ice plunging into their flesh. The power affects all creatures in a Blast (6) within range. Roll 1d6 for each enemy affected: for each Icon,  one enemy takes 1 Mortal Wound and is Vulnerable until the start of your next turn.",
-    "potency": "[2] Enemies suffer 1d3 Mortal Wounds instead of 1. [1] +1 to Vulnerable effect. *[2] Affected area is a Blast (10). Storm Caller"
+    "potency": "[2] Enemies suffer 1d3 Mortal Wounds instead of 1. [1] +1 to Vulnerable effect. *[2] Affected area is a Blast (10)."
   },
   {
     "id": "storm_caller_aoa",
@@ -3178,7 +3178,7 @@
       "PSYCHIC"
     ],
     "effect": "You chant an ancient rite that builds into a terrifying howl. Roaring winds and furious blizzards rage about him in a vortex of ice and snow that obscures you from sight. You, and all allies within range, add +2 to Defence due to the wind and snow that surrounds you.",
-    "potency": "[1] +1 Defence. *[1] Enemies within the power’s range count as in difficult terrain. Tempest’s Wrath"
+    "potency": "[1] +1 Defence. *[1] Enemies within the power's range count as in difficult terrain."
   },
   {
     "id": "tempest_s_wrath_aoa",
@@ -3197,7 +3197,7 @@
       "PSYCHIC"
     ],
     "effect": "The Rune Priest brings the rage of the storm to a roaring crescendo, frost-fingered wind spirits whipping at his enemies, tearing at their eyes and snatching weapons from hands. The power affects all creatures in a Blast (6) within range. Enemies affected are Hindered (2) until the start of the psyker’s next turn.",
-    "potency": "[1] +1 to Hindered effect. *[2] Affected area is a Blast (10). === PAGE 288 === Umbramancy Discipline The Librarians of the Raven Guard are amongst the most reclusive and unfathomable warriors of their Chapter. Stalking the battlefield as half-seen spectres, they bend the very shadows to their will, sowing fear and confusion amongst the foe. RAVEN GUARD Librarians only. Umbral Form"
+    "potency": "[1] +1 to Hindered effect. *[2] Affected area is a Blast (10)."
   },
   {
     "id": "umbral_form_aoa",
@@ -3215,7 +3215,7 @@
       "PSYCHIC"
     ],
     "effect": "You summon a veil of darkness, slipping into its folds to evade the fury and firepower of the foe. While this power remains in effect, you add +2 to your Defence and gain +2 bonus dice on all Stealth tests.",
-    "potency": "[2] +1 Defence [2] +1 bonus dice to Stealth tests *[2] Activation reduced to a Simple Action Enveloping Darkness"
+    "potency": "[2] +1 Defence [2] +1 bonus dice to Stealth tests *[2] Activation reduced to a Simple Action"
   },
   {
     "id": "enveloping_darkness_aoa",
@@ -3233,7 +3233,7 @@
       "PSYCHIC"
     ],
     "effect": "At your command, the shadows cast by your enemies rise up and engulf them like a dense flock of ravens, leaving them disoriented and vulnerable to attack. This power affects all enemies in a Blast (6) you can see within range. Affected enemies suffer the Hindered 2 and Vulnerable 2 conditions until the start of your next turn.",
-    "potency": "[2] Add +1 to Hindered rating. [2] Add +1 to Vulnerable rating. *[2] Affected area is a Blast (10). Spectral Blade"
+    "potency": "[2] Add +1 to Hindered rating. [2] Add +1 to Vulnerable rating. *[2] Affected area is a Blast (10)."
   },
   {
     "id": "spectral_blade_aoa",
@@ -3252,7 +3252,7 @@
       "PSYCHIC"
     ],
     "effect": "You implant your foes with the psychosomatic suggestion that your weapon is irresistibly sharp, striking them down with the psychic feedback of their own warped perceptions. While this power remains in effect, you add half your Willpower to the base damage of all melee attacks you make (if you’re already wielding a Force Weapon, add your entire Willpower score instead, replacing both this effect and the benefit from the Force Weapon trait). In addition, if your Willpower is higher than that of your target, then the AP of your weapon is improved to -4.",
-    "potency": "[2] +1 ED to your melee weapon’s damage. *[2] Weapon gains the Inflict (Bleeding) trait. *[2] Activation reduced to a Simple Action === PAGE 289 === Shadowstep"
+    "potency": "[2] +1 ED to your melee weapon's damage. *[2] Weapon gains the Inflict (Bleeding) trait. *[2] Activation reduced to a Simple Action"
   },
   {
     "id": "shadowstep_aoa",
@@ -3270,7 +3270,7 @@
       "PSYCHIC"
     ],
     "effect": "The gloom of the battlefield coalesces into a dark passageway that allows those who use it to stalk amongst the shadows and re- emerge where the foe least expects them. Select a single ally you can see within range. That ally immediately vanishes into the shadows. At the start of the ally’s next turn, they reappear, emerging from any other patch of shadows or darkness within 100m of where they vanished, so long as that location is more than 9m from an enemy.",
-    "potency": "*[2] The ally may make a Stealth test when they appear, as a Free Action. [2] +1 Defence to the ally until the turn after they appear. The Abyss"
+    "potency": "*[2] The ally may make a Stealth test when they appear, as a Free Action. [2] +1 Defence to the ally until the turn after they appear."
   },
   {
     "id": "the_abyss_aoa",
@@ -3288,7 +3288,7 @@
       "PSYCHIC"
     ],
     "effect": "A shadowy whirlpool opens in the enemy’s midst, snatching away unfortunate warriors as it gathers terrifying momentum. Select a single point you can see within range; the power affects all enemies within 3m of that point. Roll a d6 for each enemy affected; for each Icon rolled, that enemy suffers 1d3 Mortal Wounds. Those who are slain vanish into darkness. Those in the area who suffer wounds but are not slain are Restrained. Those who suffered no wounds must pass a DN 3 Fear test, adding +1 to the DN for each creature they have seen slain. At the start of each of your subsequent turns, while this power is sustained, add +1 metre to the radius of the effect. You suffer 1 Shock each turn you sustain this power.",
-    "potency": "[3] Enemies suffer +1 Mortal Wound The Darkness Within"
+    "potency": "[3] Enemies suffer +1 Mortal Wound"
   },
   {
     "id": "the_darkness_within_aoa",
@@ -3306,7 +3306,7 @@
       "PSYCHIC"
     ],
     "effect": "You send your mind forth, calling not to the visible shadows surrounding your foes but rather to the fears and doubts that shadow their souls. Select a number of enemies that you can see within range equal to your Willpower. When this power is used, and at the start of each turn it is sustained, each selected enemy must pass a Resolve test (DN 4) or suffer 1d3+2 Shock.",
-    "potency": "[1] +1 DN to Resolve test [1] +1 Shock [2] Affect an additional number of enemies equal to your Willpower. === PAGE 290 === Imperial Psychic Disciplines These psychic disciplines are rarer and more specialised than the universal disciplines of Biomancy, Divination, Pyromancy, Telekinesis, and Telepathy, and have been developed to serve an organisation’s specific roles and responsibilities. Psykana Discipline The psykers of the Scholastica Psykana—specifically those who accompany the soldiers of the Astra Militarum— perform a variety of battlefield roles, but each one is a deadly tool of warfare. Whether channelling the energies of the Warp to protect and embolden their allies, or to confound and destroy the foe, each commands powers capable of turning the tide of battle. Only PSYKERS with the ADEPTUS ASTRA TELEPATHICA keyword may select these powers. Gaze of the Emperor"
+    "potency": "[1] +1 DN to Resolve test [1] +1 Shock [2] Affect an additional number of enemies equal to your Willpower."
   },
   {
     "id": "gaze_of_the_emperor_aoa",
@@ -3324,7 +3324,7 @@
       "PSYCHIC"
     ],
     "effect": "You cage the immense power of the Immaterium within your physical form, and your eyes blaze with the Emperor’s vengeful fury. Select one enemy you can see within range, and draw a straight line between you and them. Roll 3 d6 for each enemy touched by this line: each Icon rolled inflicts one Mortal Wound, while each Exalted Icon rolled inflicts 2 Mortal Wounds instead.",
-    "potency": "[2] Roll +1 d6 for each enemy. [1] +6m range. Mental Shackles"
+    "potency": "[2] Roll +1 d6 for each enemy. [1] +6m range."
   },
   {
     "id": "mental_shackles_aoa",
@@ -3343,7 +3343,7 @@
       "PSYCHIC"
     ],
     "effect": "You impose forbidding psychic prohibitions on the foe, causing the victims’ limbs to feel like leaden weights and miring their minds in an illusory fog. Select enemies within a Blast (6) within range. Until the start of your next turn, the affected enemies are Staggered.",
-    "potency": "*[2] Enemies are Restrained instead of Staggered. [1] Increase Blast size by +2. === PAGE 291 === Nightshroud"
+    "potency": "*[2] Enemies are Restrained instead of Staggered. [1] Increase Blast size by +2."
   },
   {
     "id": "nightshroud_aoa",
@@ -3361,7 +3361,7 @@
       "PSYCHIC"
     ],
     "effect": "Calling upon the power of the empyrean, you cloak your allies in a flowing curtain shadow, concealing them from the enemy. Select a number of IMPERIUM allies you can see within range equal to your Willpower. While this power remains in effect, affected allies add +2 to their Defence. If any ally affected attempts a Stealth test, they gain +2 bonus dice.",
-    "potency": "[2] +1 Defence. [1] Affect +1 ally. *[2] Affected allies who have a Stealth score may increase their Stealth Score by +1 at the start of each turn this power remains in effect. Psychic Barrier"
+    "potency": "[2] +1 Defence. [1] Affect +1 ally. *[2] Affected allies who have a Stealth score may increase their Stealth Score by +1 at the start of each turn this power remains in effect."
   },
   {
     "id": "psychic_barrier_aoa",
@@ -3380,7 +3380,7 @@
       "PSYCHIC"
     ],
     "effect": "You weave an aegis of pure psychic energy around your allies, against which enemy fire sparks and spatters harmlessly. Select a number of IMPERIUM allies you can see within range equal to your Willpower. While this power remains in effect, affected allies increase their Resilience by +2, and may roll Determination against Mortal Wounds.",
-    "potency": "[1] +1 Resilience. [1] Affect +1 ally. *[2] Affected allies who roll Determination while this power is in effect may roll a number of dice equal to your Willpower instead of their normal Determination. Psychic Maelstrom"
+    "potency": "[1] +1 Resilience. [1] Affect +1 ally. *[2] Affected allies who roll Determination while this power is in effect may roll a number of dice equal to your Willpower instead of their normal Determination."
   },
   {
     "id": "psychic_maelstrom_aoa",
@@ -3398,7 +3398,7 @@
       "PSYCHIC"
     ],
     "effect": "You unleash the full might of your mind, summoning a roiling psychic tempest that envelops the enemy, lifting them from the ground and wrenching them about like a rag doll. This power affects enemies within a Blast (6) you can see within range. This blast must touch the nearest enemy you can see. Each enemy must pass a Strength test with a DN of 4, and failure means they are flung 1d3 metres in a random direction and knocked Prone, suffering Mortal Wounds equal to the distance they were thrown.",
-    "potency": "[1] +1 DN [1] Blast rating is increased by +2. [2] Each target is thrown +1 metre. Terrifying Visions"
+    "potency": "[1] +1 DN [1] Blast rating is increased by +2. [2] Each target is thrown +1 metre."
   },
   {
     "id": "terrifying_visions_aoa",
@@ -3417,7 +3417,7 @@
       "PSYCHIC"
     ],
     "effect": "You fill your enemies’ minds with nightmarish images and visions of torment, eroding cohesive thought and sense of duty. This affects all enemies within a Blast (6) you can see within range. Until the start of your next turn, the affected enemies add +2 DN to all Resolve tests they’re required to make.",
-    "potency": "[2] Enemies affected are also Hindered. [1] Blast rating is increased by +2. === PAGE 292 === Telethesia Discipline Amongst the many and varied secrets of the Inquisition are highly specialised psychic techniques used to bend and disrupt the minds of the enemies of mankind. Only PSYKERS with the INQUISITION keyword can select the following powers. Psychic Fortitude"
+    "potency": "[2] Enemies affected are also Hindered. [1] Blast rating is increased by +2."
   },
   {
     "id": "psychic_fortitude_aoa",
@@ -3436,7 +3436,7 @@
       "PSYCHIC"
     ],
     "effect": "Drawing on boundless reserves of inner strength, you shield your allies’ minds from mortal fears and the threat of sorcerous assault. If successful, choose a number of allied IMPERIUM allies equal to your Willpower within range. Until the start of your next turn, affected allies add +3 to their Resolve and Conviction.",
-    "potency": "[1] +1 Resolve. [1] +1 Conviction. Terrify"
+    "potency": "[1] +1 Resolve. [1] +1 Conviction."
   },
   {
     "id": "terrify_aoa",
@@ -3474,7 +3474,7 @@
       "PSYCHIC"
     ],
     "effect": "You reach into a target’s mind and assume control over their conscious thoughts, pushing them to act as you see fit. This affects a single enemy you can see within range. While the power remains in effect, when the enemy acts, you may choose the actions they take. However, enemies affected are also Exhausted. You suffer 1 Shock each round you sustain this power.",
-    "potency": "*[3] Enemies affected may take actions freely and are not Exhausted. *[2] Instead of the normal effect, you may leave a single command within the target’s mind, which remains for a number of days equal to your Willpower. This version of the power is not Sustained. You choose a single action the target is compelled to take, and the specific conditions which they will take that action. The target will not remember being given the command until after they have performed the action. [1] +1 bonus die on a single action taken by the target. === PAGE 293 === Mental Interrogation"
+    "potency": "*[3] Enemies affected may take actions freely and are not Exhausted. *[2] Instead of the normal effect, you may leave a single command within the target's mind, which remains for a number of days equal to your Willpower. This version of the power is not Sustained. You choose a single action the target is compelled to take, and the specific conditions which they will take that action. The target will not remember being given the command until after they have performed the action. [1] +1 bonus die on a single action taken by the target."
   },
   {
     "id": "mental_interrogation_aoa",
@@ -3493,7 +3493,7 @@
       "PSYCHIC"
     ],
     "effect": "You reach into the mind of an adversary, seeking their secrets. You select a single enemy you can see within range. If the power is successful, the target is Hindered while the power remains in effect. Each round the power remains in effect, you may ask the GM  1d3 questions, which the GM must answer based on the target’s surface thoughts and recent memories (anything within a number of days equal to their Intellect). The target then suffers Shock equal to the number of questions asked that round. You must use a Full Action each round to sustain this power.",
-    "potency": "[1] If the enemy is an Adversary Threat, remove one point of their personal Ruin and gain 1 point of Glory. [1] Ask one additional question each round. *[2] Questions asked may delve into long-term memories and knowledge which is private, secret, personal, or dangerous. *[3] Questions asked may instead delve into memories the target had repressed , forgotten, or which had been forcibly hidden. These questions inflict 2 Shock each. Psychic Pursuit"
+    "potency": "[1] If the enemy is an Adversary Threat, remove one point of their personal Ruin and gain 1 point of Glory. [1] Ask one additional question each round. *[2] Questions asked may delve into long-term memories and knowledge which is private, secret, personal, or dangerous. *[3] Questions asked may instead delve into memories the target had repressed, forgotten, or which had been forcibly hidden. These questions inflict 2 Shock each."
   },
   {
     "id": "psychic_pursuit_aoa",
@@ -3512,7 +3512,7 @@
       "PSYCHIC"
     ],
     "effect": "You mark your target’s spirit within the Immaterium, allowing you to track their movements and pick them out in any crowd. Select a single enemy you can see within range. While the power remains in effect, you gain +3 bonus dice on all tests to locate or track the target. If you cannot perceive the target, you always know the general direction to them, so long as both you and they are in realspace, and this indicator grows stronger the closer you are to them. While the power remains in effect, you may use a Simple Action to confer your awareness to any allies within 6m of you, adding +2 dice to their Awareness tests and attacks against the target.",
-    "potency": "*[2] While the power remains in effect, the target is haunted by dreams of being pursued. Each day they are pursued, the target’s maximum Wounds and Shock are reduced by 1. [1] Duration increased by +1 day. Castigation"
+    "potency": "*[2] While the power remains in effect, the target is haunted by dreams of being pursued. Each day they are pursued, the target's maximum Wounds and Shock are reduced by 1. [1] Duration increased by +1 day."
   },
   {
     "id": "castigation_aoa",
@@ -3531,7 +3531,7 @@
       "PSYCHIC"
     ],
     "effect": "Your foes are wracked with intense psychic pain, due punishment for their sin of existence. Select an enemy you can see within range. If the power is successful, the target suffers 1d3+3 Shock and is knocked Prone.",
-    "potency": "[2] Enemies affected are also Hindered. [1] +1 Shock. === PAGE 294 === Scourging"
+    "potency": "[2] Enemies affected are also Hindered. [1] +1 Shock."
   },
   {
     "id": "scourging_aoa",
@@ -3550,7 +3550,7 @@
       "PSYCHIC"
     ],
     "effect": "You fashion a lash from your foe’s own guilt and uses it to flay their writhing mind. Select a single enemy you can see within range. The target is Hindered and Restrained until the start of your next turn. If the target has the PSYKER keyword, they also increase the DN of any Psychic Mastery tests they attempt by +2.",
-    "potency": "[2] The duration is increased by +1 Round. [1] The Hindered effect is increased by 1. Psychic Veil"
+    "potency": "[2] The duration is increased by +1 Round. [1] The Hindered effect is increased by 1."
   },
   {
     "id": "psychic_veil_aoa",
@@ -3568,7 +3568,7 @@
       "PSYCHIC"
     ],
     "effect": "You conjure a glamour to shield your allies from inhuman eyes. If successful, all IMPERIUM allies within range immediately gain a Stealth Score equal to your Intellect for the duration of the power.",
-    "potency": "[1] Stealth Score increased by +1 [2] The duration is increased by +1 Round. Warding Incantation"
+    "potency": "[1] Stealth Score increased by +1 [2] The duration is increased by +1 Round."
   },
   {
     "id": "warding_incantation_aoa",
@@ -3586,7 +3586,7 @@
       "PSYCHIC"
     ],
     "effect": "You chant a protective invocation, raising a wall of adjuratory empyric wards around your allies. Select a number of allies you can see within range equal to your Willpower. Until the start of your next turn, affected allies add +3 to their Resilience, and may roll Determination against Mortal Wounds.",
-    "potency": "[2] The duration is increased by +1 Round. [1] +1 Resilience. *[1] Affected allies attacked by DAEMONS may re-roll any dice which roll a 1 on their Determination rolls. === PAGE 295 === Theosophamy Discipline The subtle and rare art of manipulating the interaction between the Warp and realspace. Theosophamy can be used to seal open warp portals, or calm disquieted Warp currents. Most important to this discipline is degree of control and intricate manipulation, rather than the exertion of raw power. It is commonly studied by Astropaths, whose soul-bond with the God-Emperor sanctifies and consecrates their psychic abilities. Only PSYKERS with the ADEPTUS ASTRA TELEPATHICA keyword can select the following powers. Banishment"
+    "potency": "[2] The duration is increased by +1 Round. [1] +1 Resilience. *[1] Affected allies attacked by DAEMONS may re-roll any dice which roll a 1 on their Determination rolls."
   },
   {
     "id": "banishment_aoa",
@@ -3622,7 +3622,7 @@
       "PSYCHIC"
     ],
     "effect": "The foul mutant cannot bear to stand against he who has stood before the God- Emperor. Those who dare gaze upon him have their own imperfections reflected back upon them; only the most stalwart can stand against this. When using this technique, you open yourself up to the currents of the warp and act as a mirror, revealing to the viewer what he truly is. If this power is successful, any ABHUMAN or MUTANT character within range must take a DN 3 Fear test. They suffer 1d3 Mortal Wounds at the start of their turn if within the power’s range while suffering from Fear.",
-    "potency": "[1] +1 DN to the Fear test. [2] Targets suffer +1 Mortal Wound. Sanctuary"
+    "potency": "[1] +1 DN to the Fear test. [2] Targets suffer +1 Mortal Wound."
   },
   {
     "id": "sanctuary_theosophamy_aoa",
@@ -3658,7 +3658,7 @@
       "PSYCHIC"
     ],
     "effect": "You sever the connection between the Materium and the Immaterium. Daemons and warp entities will diminish and fade without their link to the warp, and others who draw upon the Immaterium will struggle to wield their powers. If successful, an area centred on you with a radius of your Willpower x 5m is temporarily sealed off from the Warp. This area remains fixed in place and does not move with you. DAEMONS suffer 1d3 Mortal Wounds at the start of each turn they begin within that area, and they cannot roll Determination while within the area. PSYKERS within the area can only use their powers at the Bound power level, and they add +2 DN to all Psychic Mastery tests.",
-    "potency": "[1] +1 Mortal Wound to DAEMONS [2] The area’s radius is increased to Willpower x 10m. [1] +1 DN to Psychic Mastery tests for PSYKERS. Soul of Adamantium"
+    "potency": "[1] +1 Mortal Wound to DAEMONS [2] The area's radius is increased to Willpower x 10m. [1] +1 DN to Psychic Mastery tests for PSYKERS."
   },
   {
     "id": "soul_of_adamantium_aoa",
@@ -3676,7 +3676,7 @@
       "PSYCHIC"
     ],
     "effect": "Your mind is a powerful weapon, and your faith in the Emperor makes it doubly so. With this technique, you cleave to the bond between yourself and the God-Emperor, fortifying mind, body, and soul with the certainty of faith. While this power remains in effect, you automatically pass all Resolve and Conviction tests, and you may roll Determination against Mortal Wounds.",
-    "potency": "*[2] You also regain Shock equal to your Rank +1 at the start of each of your turns while the power remains in effect. [1] +1 die when you roll Determination [1] Any effects which use your Willpower or your Resolve as their DN increase their DN by +1. Warp Weapon"
+    "potency": "*[2] You also regain Shock equal to your Rank +1 at the start of each of your turns while the power remains in effect. [1] +1 die when you roll Determination [1] Any effects which use your Willpower or your Resolve as their DN increase their DN by +1."
   },
   {
     "id": "warp_weapon_aoa",
@@ -3694,7 +3694,7 @@
       "PSYCHIC"
     ],
     "effect": "Your undying faith in the God-Emperor allows you to perform amazing feats that can normally only be performed by warp entities. By tapping into the flow of warp energy that passes through the Materium, you use your faith to imbue a single melee weapon with aethyric power. Until the end of your next turn, one melee weapon you hold in your grasp gains the Blessed (1) and Warp Weapon traits.",
-    "potency": "*[1] Increase Blessed rating to 2 [1] The power’s effects last +1 Round. === PAGE 297 === Navigator Powers Navigators have special powers derived from the unique gifts of their lineage. These powers reflect a Navigator’s mastery over their genetic gifts and their understanding of the true nature of the Warp. While Navigator powers are very much derived from the Warp, and Navigators count as PSYKERS in most regards, they are not quite the same as conventional psykers. Navigators differ from normal Psykers in the following ways: • A Navigator uses the Psychic Mastery skill with Intellect instead of Willpower. A Navigator’s powers derive from their unique ability to perceive the Warp. • Navigators do not select a power level when they use a Navigator Power. All of a Navigator’s powers are used at the Bound level. Navigators do not wield and direct the Warp as Psykers do. • Navigators do not suffer Perils of the Warp. Instead, a Wrath Complication on a Navigator Power inflicts 1d3+1 Shock but has no other effect. Some Navigator Powers are Gaze Powers. These rely on the Navigator revealing their warp eye to the target, unleashing the baleful light of the Immaterium. A target may try to avert their eyes from a gaze power as a Reflexive Action: this increases the DN of the power by +2, but the target suffers the Blinded condition until the end of their next turn as they cover their eyes. A Navigator knows The Lidless Stare instead of Smite and may select other powers from this discipline only. A Cloud in the Warp"
+    "potency": "*[1] Increase Blessed rating to 2 [1] The power's effects last +1 Round."
   },
   {
     "id": "a_cloud_in_the_warp_aoa",
@@ -3713,7 +3713,7 @@
       "PSYCHIC"
     ],
     "effect": "By understanding and perceiving the currents of the warp, you can hide your presence from any who would use the Immaterium to detect you. While this power remains in effect, you cannot by detected by the Psyniscience power, or by any form of detection or perception which relies upon the Warp, including divination. Further, creatures with the DAEMON keyword must pass an Awareness test (DN 5) to detect you.",
-    "potency": "[1] +1 DN to DAEMON Awareness tests. *[3] This power affects you and any allies within a distance equal to your Willpower in metres. Aether Doldrums"
+    "potency": "[1] +1 DN to DAEMON Awareness tests. *[3] This power affects you and any allies within a distance equal to your Willpower in metres."
   },
   {
     "id": "aether_doldrums_aoa",
@@ -3732,7 +3732,7 @@
       "PSYCHIC"
     ],
     "effect": "A skilled Navigator can mark a point of calm in even the most tumultuous Warp storm. On a smaller scale, they can also find a stillness in the flows of the Immaterium, dampening psychic powers and even repelling the daemonic. You cause an area of calm Warp centred on you, with a radius equal to your Intellect in metres, which lasts until the start of your next turn. Psychic powers used by PSYKERS within that area, or targeted within that area, increase their DN by +2. DAEMONS must pass a DN 5 Resolve test if they attempt to enter the area; if they fail, they stop at the edge and are Staggered. When this power’s effect ends, you suffer 1d3+1 Shock.",
-    "potency": "[1] +1 DN to Psychic Powers. [1] +1 DN to DAEMON Resolve tests. [2] This power lasts +1 Round. *[2] DAEMONS which fail their Resolve test also suffer 1d3 Mortal Wounds. === PAGE 298 === Baleful Watcher"
+    "potency": "[1] +1 DN to Psychic Powers. [1] +1 DN to DAEMON Resolve tests. [2] This power lasts +1 Round. *[2] DAEMONS which fail their Resolve test also suffer 1d3 Mortal Wounds."
   },
   {
     "id": "baleful_watcher_aoa",
@@ -3751,7 +3751,7 @@
       "PSYCHIC"
     ],
     "effect": "This technique is taught to Navigators to help them penetrate the densest of Warp storms and fine a safe path. Turned on an individual, it can allow a Navigator to glean secrets from the targets’ soul. Select a single enemy you can see within range. If successful, you immediately learn all the Keywords the target has, and you may ask three questions about the target. The GM may only answer Yes or No to these questions but must answer truthfully.",
-    "potency": "[1] Ask one additional question. Ebb and Flow"
+    "potency": "[1] Ask one additional question."
   },
   {
     "id": "ebb_and_flow_aoa",
@@ -3789,7 +3789,7 @@
       "PSYCHIC"
     ],
     "effect": "On many worlds, three-eyed mutants who can peer into your soul are thought of as bogey-men to scare children into obedience and people whisper that they are a tainted breed that can curse good, Emperor-fearing citizens with a glance. These legends contain a seed of truth, for techniques exist which cause their victims to attract malign entities to plague their mind and soul. Select a single enemy you can see within range. While this power remains in effect, the target is Hindered and suffers a Complication on any Wrath die which rolls 1, 2, or 3. This power lasts until the duration expires, or until the target creature spends 1 Wrath (or the GM spends 1 Ruin if the target is an NPC). You may not have more than one foe cursed by this power at any time.",
-    "potency": "[1] +1 to Hindered condition. [2] A PSYKER affected adds +10 to all rolls on the Perils of the Warp table. === PAGE 299 === Eye of Oblivion"
+    "potency": "[1] +1 to Hindered condition. [2] A PSYKER affected adds +10 to all rolls on the Perils of the Warp table."
   },
   {
     "id": "eye_of_oblivion_aoa",
@@ -3808,7 +3808,7 @@
       "PSYCHIC"
     ],
     "effect": "You snap open your Warp eye and trace the vital lines that bind a creature’s animating force to its mortal shell. By striking these places with utmost precision, you may inflict harm on your target’s very essence, and defeat foes that might otherwise seem impervious to harm. Select a single enemy you can see within range. If successful, until the end of your next turn, the next attack you make against that target inflicts an automatic Critical Hit.",
-    "potency": "[1] Increase the severity of the Critical Hit by one, as if you had spent 1 Glory. [1] Increase duration by +1 Round. *[3] The target may not roll Determination against an attack affected by this power. Foreshadowing"
+    "potency": "[1] Increase the severity of the Critical Hit by one, as if you had spent 1 Glory. [1] Increase duration by +1 Round. *[3] The target may not roll Determination against an attack affected by this power."
   },
   {
     "id": "foreshadowing_aoa",
@@ -3827,7 +3827,7 @@
       "PSYCHIC"
     ],
     "effect": "By using your eye to filter small secrets from the near future, you can choose to make slight adjustments to his actions to avoid harm and manipulate the course of events. Choosing to dig too deeply into the future for secrets may leave you vulnerable to the Warp’s deceptions, however. If the power is successful, you may draw three secrets from the future. At any point before the end of your next turn, you may spend each secret to select a single d6 that has just been rolled—by any character—and change the result to any number. However, each die which you change to a 6 allows the GM to change a single d6 roll to a 1 later in the same scene. Similarly, each die which you change to a 1 allows the GM to change a single d6 roll to a 6 later in the scene.",
-    "potency": "[1] The power lasts +1 round. [1] You draw one additional secret. === PAGE 300 === Gaze into the Abyss"
+    "potency": "[1] The power lasts +1 round. [1] You draw one additional secret."
   },
   {
     "id": "gaze_into_the_abyss_aoa",
@@ -3846,7 +3846,7 @@
       "PSYCHIC"
     ],
     "effect": "You perceive a creature or object’s reflection in the Warp and learn things that may be hidden in the Materium. This power has a variety of applications. You select a single creature or object you can see. When you use this power, you immediately learn whether the target has the CHAOS keyword, is possessed, is a DAEMON in disguise, possesses any mutations, or is otherwise corrupted by the Warp. An NPC may spend 1 Ruin to attempt to resist this effect, making a DN 4 Conviction Test.",
-    "potency": "*[1] You may mark the soul of a creature targeted and can track the creature’s presence and movements using Psyniscience within the next 24 hours. *[2] Until the end of the current scene, you can perceive major disturbances in the warp within your Intellect x 1,000 km. This includes vessels entering or leaving the warp, the presence of warp portals, and daemonic incursions. *[2] For the remainder of the scene, you are immediately aware of any use of psychic powers within a distance of your Intellect x10 metres. Held in my Gaze."
+    "potency": "*[1] You may mark the soul of a creature targeted and can track the creature's presence and movements using Psyniscience within the next 24 hours. *[2] Until the end of the current scene, you can perceive major disturbances in the warp within your Intellect x 1,000 km. This includes vessels entering or leaving the warp, the presence of warp portals, and daemonic incursions. *[2] For the remainder of the scene, you are immediately aware of any use of psychic powers within a distance of your Intellect x10 metres."
   },
   {
     "id": "held_in_my_gaze_aoa",
@@ -3865,7 +3865,7 @@
       "PSYCHIC"
     ],
     "effect": "The unflinching eye of a Navigator locks a creature in place with a gaze that pierces flesh and bone to see the immaterial essence of all things. Choose a target you can see within range. If you succeed, the target is Warp-locked. While Warp-locked, the target adds +4 to the DN of any psychic power they attempt. If the target is a DAEMON, then they also may not roll Determination against any damage inflicted against them. Each round this power is sustained, you suffer 1d3 Shock.",
-    "potency": "[1] Increase the range to 10x Intellect metres. Inward View"
+    "potency": "[1] Increase the range to 10x Intellect metres."
   },
   {
     "id": "inward_view_aoa",
@@ -3884,7 +3884,7 @@
       "PSYCHIC"
     ],
     "effect": "There are many myths about the “third eye” into the soul, their origins supposedly harking from Ancient Terra. The Navis Nobilite know that such stories are not wholly myth, and they understand that it is entirely possible to discover hidden knowledge through particular forms of introspective meditation. If this power is successful, you immediately recover 1d3+2 Shock, and add +2 bonus dice to the first Investigation or Scholar test you attempt during the power’s duration. You may use this power as part of a Regroup. Once you have used this power, you may not use it again until after you have taken a Respite.",
-    "potency": "[1] Recover +1 Shock. [1] Increase duration by +1 hour. *[2] You may use the bonus dice on Psychic Mastery tests. === PAGE 301 === Pass Unscathed"
+    "potency": "[1] Recover +1 Shock. [1] Increase duration by +1 hour. *[2] You may use the bonus dice on Psychic Mastery tests."
   },
   {
     "id": "pass_unscathed_aoa",
@@ -3903,7 +3903,7 @@
       "PSYCHIC"
     ],
     "effect": "Being so closely linked with the Warp, it is no surprise that Navigators have developed techniques to avoid its corrupting influence and those around them. With considerable effort, you can slow the insidious effects of the Warp for short durations. If the power is successful, choose a target you can see within range (this may be yourself). The target’s Conviction is increased by +3 while the power lasts.",
-    "potency": "[1] The power’s duration is increased by +1 minute. Seek the Path"
+    "potency": "[1] The power's duration is increased by +1 minute."
   },
   {
     "id": "seek_the_path_aoa",
@@ -3922,7 +3922,7 @@
       "PSYCHIC"
     ],
     "effect": "You use your pineal eye to peer through the Immaterium around you, piercing the churning clouds of the Warp to find the causeways of least resistance to your target. In this way, you guide your attacks to their target while slipping past your foe’s defences. Until the end of your next round, you add +3 bonus dice to any melee or ranged attacks you make.",
-    "potency": "[1] The power grants an additional bonus die. [1] The power lasts +1 round. The Course Untravelled"
+    "potency": "[1] The power grants an additional bonus die. [1] The power lasts +1 round."
   },
   {
     "id": "the_course_untravelled_aoa",
@@ -3941,7 +3941,7 @@
       "PSYCHIC"
     ],
     "effect": "Time is not an arrow that flies straight and true, but rather a tangled web of moments and possibilities. This technique allows you to walk this web, stepping fractionally from one moment to another, altering your position in the physical world as you step between infinitesimally different timelines, no matter the cost to yourself. If this power is successful, you instantly move to any point within twice your Intellect in metres, so long as you could have reached that location naturally. You then immediately suffer 1d3+3 Shock due to the strain on your body.",
-    "potency": "[1] Reduce the amount of Shock suffered by 1. [1] Increase the distance moved by your Intellect in metres. *[2] The power can now be activated as a Simple Action. The Lidless Stare"
+    "potency": "[1] Reduce the amount of Shock suffered by 1. [1] Increase the distance moved by your Intellect in metres. *[2] The power can now be activated as a Simple Action."
   },
   {
     "id": "the_lidless_stare_aoa",
@@ -3960,7 +3960,7 @@
       "PSYCHIC"
     ],
     "effect": "If you open your warp eye fully, anyone gazing into its depths will witness the power and mind-breaking unreality of the Warp. In an instant, they witness the chaos boiling beneath the skin of existence. For many, it is the last thing they see. Select a single enemy you can see (and who can see you) within range. This is a Gaze Power. The target immediately suffers 1d3+1 Mortal Wounds and suffers the Fear condition. After this power is used, you suffer 1d3+1 Shock.",
-    "potency": "[2] +1 Mortal Wound === PAGE 302 === Tides of Time and Space"
+    "potency": "[2] +1 Mortal Wound"
   },
   {
     "id": "tides_of_time_and_space_aoa",
@@ -3979,7 +3979,7 @@
       "PSYCHIC"
     ],
     "effect": "By examining the flow of the warp around you, you can anticipate near future actions and move outside the normal flow of events by choosing strands of reality and slipping between them. This power can be of great benefit, but it can also be extremely dangerous. If this power is successful, you may take a second turn at any point before the start of your next normal turn. After you use this power, you suffer 1d3 Shock. In addition, if you fail to use this power, you disappear from reality temporarily, reappearing at the end of your next turn.",
-    "potency": "[1] You gain +1 Speed while the power is in effect. *[2] You may Keep the Initiative without spending Glory once while this power is in effect. Tracks in the Stars"
+    "potency": "[1] You gain +1 Speed while the power is in effect. *[2] You may Keep the Initiative without spending Glory once while this power is in effect."
   },
   {
     "id": "tracks_in_the_stars_aoa",
@@ -3998,7 +3998,7 @@
       "PSYCHIC"
     ],
     "effect": "When a ship travels through either realspace or the warp it leaves a faint trail, the lingering shadow of its warp drive. Using your third eye, you can follow this trail across the stars. If this power is successful, you can perceive and follow the trail of a ship through realspace, so long as the trail is no older than a number of weeks equal to your Intellect, though at GM’s discretion especially large vessels may have a trail that lasts longer.",
-    "potency": "*[1] You may track a ship’s trail if it is no older than months equal to your Intellect. *[1] You may track a ship’s trail through the warp as well as through realspace. *[2] You may track a ship's trail if it is no older than years equal to your Intellect. Vision of Hell"
+    "potency": "*[1] You may track a ship's trail if it is no older than months equal to your Intellect. *[1] You may track a ship's trail through the warp as well as through realspace. *[2] You may track a ship's trail if it is no older than years equal to your Intellect."
   },
   {
     "id": "vision_of_hell_aoa",
@@ -4017,7 +4017,7 @@
       "PSYCHIC"
     ],
     "effect": "While many Navigators simply focus on wreaking as much destruction as possible by revealing the Warp to their foes, some Navigators prefer to act with more subtlety, training themselves to cast projections of the true, hellish face of the Warp. Select an enemy you can see, and who can see you, within range. This is a Gaze Power. If the power is successful, the target immediately suffers 1d3+2 Shock and the Terror condition. After this power is used, you suffer 1d3+2 Shock.",
-    "potency": "[1] The target suffers +1 Shock. Void Watcher"
+    "potency": "[1] The target suffers +1 Shock."
   },
   {
     "id": "void_watcher_aoa",
@@ -4036,7 +4036,7 @@
       "PSYCHIC"
     ],
     "effect": "Using this power and gazing into the void whilst aboard ship, you can learn things about space in the immediate vicinity of your vessel. This can reveal hidden dangers such as mines, void creatures, and concealed ships, as well as more mundane perils like asteroids and debris. If successful, while the power remains in effect, you can make Awareness tests to detect spaceborne objects within a distance of your Intellect x 10,000km, without the use of starship augurs.",
-    "potency": "[1] You can detect spaceborne objects within a distance of your Intellect x 20,000km. [1] You can ask a single question about a spaceborne object you’ve detected. The GM must answer this question truthfully. Warp Vigil"
+    "potency": "[1] You can detect spaceborne objects within a distance of your Intellect x 20,000km. [1] You can ask a single question about a spaceborne object you've detected. The GM must answer this question truthfully."
   },
   {
     "id": "warp_vigil_aoa",
@@ -4055,7 +4055,7 @@
       "PSYCHIC"
     ],
     "effect": "Navigators must be ever watchful for danger when guiding a vessel through the Warp and be capable of reacting at a moment’s notice to the caprices of the Immaterium. While this power remains in effect, you increase your Defence by +2, and you may take two reflexive actions per round instead of one.",
-    "potency": "[1] +1 Defence *[2] Each time an attack misses you, you may move up to your Speed as a Reflexive Action. === PAGE 304 === Chaos Sorcery This section contains psychic powers distinct to the Sorcerers, Warp-Witches, Malefic Arcanists, and Rogue Psykers who have devoted themselves to the Dark Powers of Chaos. Dark Hereticus Chaos Space Marine psykers open their minds fully to the horrors of the warp, drawing immense power from this nightmare dimension to rip apart their enemies and infuse their allies with strength. Only those already inured to the maddening taint of Chaos can wield such raw power without losing all remnants of sanity. Infernal Gaze This is identical to the power of the same name in the Maleficarum discipline, on page 281 of the Wrath & Glory rulebook. Its presence in the Dark Hereticus discipline allows characters to select that power without also knowing the Maleficarum discipline. Prescience This is identical to the power of the same name in the Divination discipline, on page 274 of the Wrath & Glory rulebook. Its presence in the Dark Hereticus discipline allows characters to select that power without also knowing the Divination discipline. Death Hex"
+    "potency": "[1] +1 Defence *[2] Each time an attack misses you, you may move up to your Speed as a Reflexive Action."
   },
   {
     "id": "death_hex_aoa",
@@ -4074,7 +4074,7 @@
       "PSYCHIC"
     ],
     "effect": "You place a dire hex upon your foes. Wards and shields flicker and fail, leaving the foe exposed. The power affects all enemies in a Blast (6) within range. Affected enemies may not roll Determination until the start of the Sorcerer’s next turn.",
-    "potency": "*[2] The area affected is a Blast (10). [1] -1 Resilience to the affected enemies. Gift of Chaos"
+    "potency": "*[2] The area affected is a Blast (10). [1] -1 Resilience to the affected enemies."
   },
   {
     "id": "gift_of_chaos_aoa",
@@ -4093,7 +4093,7 @@
       "PSYCHIC"
     ],
     "effect": "As the power of the warp surges through your victim, bones snap and flesh rips as a new form takes shape. This power targets a single creature within range. The target suffers 1d3+3 Mortal Wounds, and an equal number of Corruption points. If the target is reduced to 0 wounds by this power and subsequently dies, the target mutates into a Chaos Spawn instead of dying.",
-    "potency": "[2] +1 Mortal Wound and +1 Corruption. Diabolic Strength"
+    "potency": "[2] +1 Mortal Wound and +1 Corruption."
   },
   {
     "id": "diabolic_strength_aoa",
@@ -4112,7 +4112,7 @@
       "PSYCHIC"
     ],
     "effect": "The unholy energies of Chaos course through the recipient, swelling their frame with the strength to tear tanks asunder. Select an ally with the CHAOS keyword within range. The ally’s Strength is increased by +4, and they receive +2 bons dice on melee attacks, while this power remains in effect.",
-    "potency": "[2] +1 Strength [1] +1ED to the affected ally’s melee damage. === PAGE 305 === Warptime"
+    "potency": "[2] +1 Strength [1] +1ED to the affected ally's melee damage."
   },
   {
     "id": "warptime_aoa",
@@ -4131,7 +4131,7 @@
       "PSYCHIC"
     ],
     "effect": "The power of the immaterium bursts from you, warping time and heightening the speed of your allies. You and all allies with the CHAOS keyword within range, may immediately move up to your Speed.",
-    "potency": "[1] +1 Speed to all affected characters. Weaver of Fates"
+    "potency": "[1] +1 Speed to all affected characters."
   },
   {
     "id": "weaver_of_fates_aoa",
@@ -4151,7 +4151,7 @@
       "PSYCHIC"
     ],
     "effect": "You trace the skeins of the future to see the fates of battle. Forewarned of imminent danger, warriors dodge bullets and blades with seemingly supernatural reflexes. Select a number of allies with the TZEENTCH keyword within range equal to your Willpower. Until the start of your next turn, the affected allies add +2 to their Resilience and may roll Determination against Mortal Wounds.",
-    "potency": "*[2] Affect an additional number of affected allies equal to your Willpower [1] +1 Resilience [2] +1 bonus dice on Determination rolls. Miasma of Pestilence"
+    "potency": "*[2] Affect an additional number of affected allies equal to your Willpower [1] +1 Resilience [2] +1 bonus dice on Determination rolls."
   },
   {
     "id": "miasma_of_pestilence_aoa",
@@ -4171,7 +4171,7 @@
       "PSYCHIC"
     ],
     "effect": "As you chant in a phlegm-choked drone, a dark cloud of filth and flies shrouds your allies from view. Select a number of allies with the NURGLE keyword within range equal to your Willpower. The affected allies count as in Cover, adding +2 to their Defence, until the start of your next turn.",
-    "potency": "*[2] Affect an additional number of affected allies equal to your Willpower Delightful Agonies"
+    "potency": "*[2] Affect an additional number of affected allies equal to your Willpower"
   },
   {
     "id": "delightful_agonies_aoa",
@@ -4190,8 +4190,8 @@
       "NURGLE",
       "PSYCHIC"
     ],
-    "effect": "Those whose minds are touched by the Sorcerer’s caress are wracked by waves of exquisite pain, and the real injuries of battle are trivial by comparison. Select a number of allies with the SLAANESH keyword within range equal to your Willpower. Until the start of your next turn, the affected allies may roll Determination against Mortal Wounds, and do not suffer any Shock when they roll Determination—each Icon rolled simply negates a Wound or Mortal Wound. The victims touched by this enervating curse find themselves weakened and drained of life within moments. This targets the nearest enemy within range and line of sight. Roll seven d6: for each Icon, the target suffers 1 Shock and is Staggered. With a gesture, you gather a foul fog of contagion about your foes, granting them a blessing from Grandfather Nurgle. This affects enemies you can see within a Blast (6) within range. Each enemy hit suffers the Poisoned (4) condition. While they remain Poisoned, creatures affected increase the DN of all Strength-based tests by +2. You belch forth a wind of plague that blows through your foes, choking them and leaving only diseased, maggot-bloated corpses in its wake. This affects enemies within a Blast (6). Each enemy hit suffers 1d3 Mortal Wounds and the Poisoned (4) condition. While they remain Poisoned, creatures affected suffer 1d3 Mortal Wounds at the start of each turn. Rancorous energies surge through Nurgle’s followers, bloating their distended bodies further with fresh infections and granting them new strength. Select a number of allies with the NURGLE keyword within range equal to your Willpower. The affected allies add +2 to their Strength and Toughness until the start of your next turn.",
-    "potency": "*[2] Affect an additional number of affected allies equal to your Willpower [2] +1 bonus dice on Determination rolls. === PAGE 306 === Contagion Discipline The disgusting psychic powers unleashed by the Sorcerers of Nurgle reduce their enemies to rancid corpses, drown the foe in spewing sprays of noxious bile, and bless the Grandfather’s children with plague-ridden vitality. NURGLE HERETIC ASTARTES PSYKERS only. Curse of the Leper Points Cost: 25 [1] The target suffers +1 Shock per Icon rolled. [2] If a target becomes Exhausted, they suffer 1d3 Mortal Wounds immediately. Gift of Contagion Points Cost: 10 [1] Add +1 to the rating of the Poisoned effect. *[2] While Poisoned affected targets also add +2 DN to all melee attacks they make. Miasma of Pestilence This is identical to the power of the same name in the Dark Hereticus discipline, on page 302. Plague Wind Points Cost: 20 [1] Add +1 to the rating of the Poisoned effect. [3] Add +1 to the number of Mortal Wounds inflicted by the power’s initial effect, and each turn. Putrescent Vitality Points Cost: 20 [1] Each affected ally regains 1d3 Shock. [2] Each affected ally regains 1 Wound."
+    "effect": "Those whose minds are touched by the Sorcerer's caress are wracked by waves of exquisite pain, and the real injuries of battle are trivial by comparison. Select a number of allies with the SLAANESH keyword within range equal to your Willpower. Until the start of your next turn, the affected allies may roll Determination against Mortal Wounds, and do not suffer any Shock when they roll Determination—each Icon rolled simply negates a Wound or Mortal Wound.",
+    "potency": "*[2] Affect an additional number of affected allies equal to your Willpower [2] +1 bonus dice on Determination rolls."
   },
   {
     "id": "baleful_devolution_aoa",
@@ -4211,7 +4211,7 @@
       "PSYCHIC"
     ],
     "effect": "Transmogrifying energies erupt from your eyes, playing across the enemy’s ranks and reducing their proud warriors to mewling beasts. This power affects all enemies within a Blast (6) within range and line of sight. Affected enemies must pass a Toughness test with a DN of 5; if they fail, they are transformed into twisted, but harmless beasts while this power remains in effect. Transformed enemies retain their normal Defence, Resilience, Wounds, and Shock, but cannot take any actions of any kind, and they will transform back if they suffer any damage.",
-    "potency": "[3] Transformed enemies suffer 1 Mortal Wound when they first transform. [2] Increase the size of the Blast by +2. Cacodaemonic Curse"
+    "potency": "[3] Transformed enemies suffer 1 Mortal Wound when they first transform. [2] Increase the size of the Blast by +2."
   },
   {
     "id": "cacodaemonic_curse_aoa",
@@ -4231,7 +4231,7 @@
       "PSYCHIC"
     ],
     "effect": "With dark invocations, you summon cackling daemon imps to infest the enemy’s weapons. This targets the ranged weapons of all enemies within a Blast (6) within range and line of sight. Until the start of your next turn, the affected weapons reduce their base damage by 2.",
-    "potency": "*[1] Affected weapons roll one fewer ED than normal, to a minimum of 0ED. *[2] Affected weapons’ AP is reduced to 0. *[2] Affected weapons suffer a complication on any Wrath die roll of 1, 2, or 3. Doombolt"
+    "potency": "*[1] Affected weapons roll one fewer ED than normal, to a minimum of 0ED. *[2] Affected weapons' AP is reduced to 0. *[2] Affected weapons suffer a complication on any Wrath die roll of 1, 2, or 3."
   },
   {
     "id": "doombolt_aoa",
@@ -4251,7 +4251,7 @@
       "PSYCHIC"
     ],
     "effect": "You hurl a bolt of roiling energy that horribly twists its target into abhorrent and mutated new shapes. This is a psychic ranged attack, which targets the nearest enemy within range and line of sight and inflicts Willpower +9 +3ED damage with an AP of -2 and has the Agonizing and Corrupting traits.",
-    "potency": "[1] +1ED. === PAGE 308 === Glamour of Tzeentch"
+    "potency": "[1] +1ED."
   },
   {
     "id": "glamour_of_tzeentch_aoa",
@@ -4271,7 +4271,7 @@
       "PSYCHIC"
     ],
     "effect": "You twist and obscure the perceptions of your foes to the point that your allies become all but invisible. This power affects a number of CHAOS allies within range and line of sight equal to your Willpower. While this power remains in effect, these allies increase their Defence by +2.",
-    "potency": "[2] +1 Defence. [1] Affected allies add +1 die to all Stealth tests. Perplex"
+    "potency": "[2] +1 Defence. [1] Affected allies add +1 die to all Stealth tests."
   },
   {
     "id": "perplex_aoa",
@@ -4291,7 +4291,7 @@
       "PSYCHIC"
     ],
     "effect": "With perspective-warping illusions you obfuscate your enemies’ vision, rendering their targets fluid and indistinct. This targets enemies within Blast (6) within range and line of sight. The affected enemies cannot see enemies or make ranged attacks against targets more distant than 25m away.",
-    "potency": "[2] Increase the size of the Blast by +2. Pyric Flux"
+    "potency": "[2] Increase the size of the Blast by +2."
   },
   {
     "id": "pyric_flux_aoa",
@@ -4312,7 +4312,7 @@
       "FIRE"
     ],
     "effect": "You make yourself a bounteous font of unholy warpflame. Until the start of your next turn, all TZEENTCH FIRE weapons within range gain +2ED.",
-    "potency": "[1] Affected weapons gain an additional +1ED. Temporal Manipulation"
+    "potency": "[1] Affected weapons gain an additional +1ED."
   },
   {
     "id": "temporal_manipulation_aoa",
@@ -4332,7 +4332,7 @@
       "PSYCHIC"
     ],
     "effect": "Fashioning a pocket of dilated time around an injured ally, the psyker accelerates the rate at which their flesh reknits. Select a single CHAOS ally within range and line of sight: that ally immediately regains wounds equal to your Intellect.",
-    "potency": "[2] The ally regains +1 Wound. [1] The ally regains 1 Shock. === PAGE 309 === Tzeentch’s Firestorm"
+    "potency": "[2] The ally regains +1 Wound. [1] The ally regains 1 Shock."
   },
   {
     "id": "tzeentch_s_firestorm_aoa",
@@ -4353,7 +4353,7 @@
       "FIRE"
     ],
     "effect": "You conjure a raging storm of pink and blue fire down from the skies, that mutates your foes and leaves capering daemons that claw and bite in its wake. This targets an enemy within range and line of sight. If successful, roll nine d6. For each Icon rolled, the target suffers 1 Mortal Wound. For each Exalted Icon rolled, the target suffers 1d3 Mortal Wounds.",
-    "potency": "*[3] Increase the number rolled on each d6 by 1 (i.e., a roll of 3 or 4 is an Icon, while a 5 or 6 is an Exalted Icon). [1] If a target is killed by damage from this power, a single Pink Horror of Tzeentch is summoned, appearing on the same spot as the slain target. Weaver of Fates This is identical to the power of the same name in the Dark Hereticus discipline, on page 302. === PAGE 310 === Aeldari Psychic Powers All Aeldari can manipulate mental energies to a degree. Each is psychic to one extent or another; it is said the ancient Aeldari could read thoughts at a glance, whilst those who trained their minds for war could crush a foe's weapon with a simple narrowing of their eyes. Aeldari Psykers The Shadowseers of the Harlequins and the reborn psykers pledged to Ynnead are no less practiced and efficient with their powers than their Craftworlder kin. An Aeldari PSYKER with the HARLEQUIN or YNNARI keyword may re-roll a single Wrath Dice that rolled a complication once per Psychic Mastery Test. Runes of Fortune Those who walk the Path of the Seer can harness psychic energies to manifest a great many powers. Whilst their effects can be subtle, when applied at the correct moment, Aeldari lives may be saved and fate turned to a more favourable path. The Runes of Fortune are additional Minor Psychic Powers only available to PSYKERS with the ASURYANI, ANHRATHE, HARLEQUIN or YNNARI keywords. Crushing Orb"
+    "potency": "*[3] Increase the number rolled on each d6 by 1 (i.e., a roll of 3 or 4 is an Icon, while a 5 or 6 is an Exalted Icon). [1] If a target is killed by damage from this power, a single Pink Horror of Tzeentch is summoned, appearing on the same spot as the slain target."
   },
   {
     "id": "crushing_orb_aoa",
@@ -4372,7 +4372,7 @@
       "PSYCHIC"
     ],
     "effect": "You crush your foe in a sphere of kinetic energy. Target a single enemy within range with a psychic ranged attack, inflicting 1 Mortal Wound and the Restrained condition.",
-    "potency": "[2] +1 Mortal Wound. Fateful Divergence"
+    "potency": "[2] +1 Mortal Wound."
   },
   {
     "id": "fateful_divergence_aoa",
@@ -4391,7 +4391,7 @@
       "PSYCHIC"
     ],
     "effect": "Exerting your will upon destiny, you shift the paths of fate. Select an ally within range. Until the start of your next turn, they may re-roll a single die in any dice pool.",
-    "potency": "[1] The target may re-roll one additional die during this power’s effect. Focus Will"
+    "potency": "[1] The target may re-roll one additional die during this power's effect."
   },
   {
     "id": "focus_will_aoa",
@@ -4410,7 +4410,7 @@
       "PSYCHIC"
     ],
     "effect": "You channel your mind to aid a fellow seer. You select a single Psyker within range. Whenever the target attempts a Psychic Mastery test before the end of their next turn, they may add +1 bonus dice to their test, or +2 bonus dice if they have the ASURYANI keyword.",
-    "potency": "[1] The target may add an additional +1d to their Psychic Mastery test. === PAGE 311 === Ghostwalk"
+    "potency": "[1] The target may add an additional +1d to their Psychic Mastery test."
   },
   {
     "id": "ghostwalk_aoa",
@@ -4429,7 +4429,7 @@
       "PSYCHIC"
     ],
     "effect": "Channelling energies from your runes, you imbue your allies with ethereal speed. You select a number of allies within range equal to your Willpower. Until the start of your next turn, the targets increase their Speed by +2.",
-    "potency": "[1] Affect one additional target. [2] The targets’ Speed is increased by a further +1. Impair Senses"
+    "potency": "[1] Affect one additional target. [2] The targets' Speed is increased by a further +1."
   },
   {
     "id": "impair_senses_aoa",
@@ -4448,7 +4448,7 @@
       "PSYCHIC"
     ],
     "effect": "The psyker dims the foe’s senses. The power affects all enemies in a Blast (6) within range. Until the start of the psyker’s next turn, the affected enemies add +2DN to all Awareness tests, reduce their Passive Awareness to 0, and may only make ranged attacks at the closest target.",
-    "potency": "*[2] The area affected is a Blast (10). [1] An additional +1DN to the targets’ Awareness tests. Witch Strike"
+    "potency": "*[2] The area affected is a Blast (10). [1] An additional +1DN to the targets' Awareness tests."
   },
   {
     "id": "witch_strike_aoa",
@@ -4467,7 +4467,7 @@
       "PSYCHIC"
     ],
     "effect": "Focusing a still greater portion of your power into your weapon, each strike blasts foes with potent aetheric energies. Until the start of your next turn, you add +2ED to the damage of one melee weapon you are wielding which has the Force trait.",
-    "potency": "[2] An additional +1ED. === PAGE 312 === Runes of Shaping Discipline Bonesingers apply the psychic talents of the Aeldari in more creative ways than most, weaving telekinetic manipulation, psychosonic harmonies, and aethyric resonance into something which is equal parts art and craft, shaping the psychoreactive materials the Eldar use in their constructions with haunting melodies that are felt as much as heard. Vaul’s Song"
+    "potency": "[2] An additional +1ED."
   },
   {
     "id": "vaul_s_song_aoa",
@@ -4486,7 +4486,7 @@
       "PSYCHIC"
     ],
     "effect": "You invoke the psychosonic ringing of Vaul’s anvil, knitting together wraithbone and psychoreactive crystal in moments. Select a single AELDARI vehicle or wraith-construct within range. The target regains 1d3+1 Wounds, or repairs one system on the vehicle which had been damaged. Alternatively, target one other pieces of Aeldari technology within range: the device is repaired, and any malfunctions or jams are fixed instantly.",
-    "potency": "[1] +1 Wounds (vehicle or wraith-construct). Webway Step"
+    "potency": "[1] +1 Wounds (vehicle or wraith-construct)."
   },
   {
     "id": "webway_step_aoa",
@@ -4505,7 +4505,7 @@
       "PSYCHIC"
     ],
     "effect": "You are highly attuned to the Webway, and can slip within its reaches with ease, without the use of a gate. You vanish and reappear a few moments later at any point within range. You must reappear standing on solid ground or another object sturdy enough to support your weight.",
-    "potency": "[2] You may bring along +1 ally who is within 3m of you when the power is used. [2] Increase the range by 25m. Wraithtomb"
+    "potency": "[2] You may bring along +1 ally who is within 3m of you when the power is used. [2] Increase the range by 25m."
   },
   {
     "id": "wraithtomb_aoa",
@@ -4524,7 +4524,7 @@
       "PSYCHIC"
     ],
     "effect": "You conjure and weave a tangle of wraithvines, psychic constructs that take the form of thorny tendrils which enwrap themselves around the target. Though they will not remain coherent without wraithbone or psychocrystal to make the structure tangible, the vines are solid enough for the moment. This power targets a single creature, vehicle, or structure within range. If a creature or vehicle, the target is restrained and hindered (3) while the power remains in effect. If a structure is the target, then the wraithvines wrap themselves around and into the structure in a manner determined by the Bonesinger and the GM: it may seal over or force open doors, ensnare and shut down automated defences, create a climbable surface, or something similar.",
-    "potency": "[1] Hindered condition increases by +1 === PAGE 313 === Runes of Fate Discipline The mightiest of those who walk the Witch Path are able to perceive and influence the warp and weft of fate itself, manipulating events by discerning possible futures and the most effective ways to create or avoid them. That is not to say that they lack other, more visceral powers… indeed, a Farseer’s wrath in battle is something that few can withstand. Doom"
+    "potency": "[1] Hindered condition increases by +1"
   },
   {
     "id": "doom_aoa",
@@ -4563,7 +4563,7 @@
       "PSYCHIC"
     ],
     "effect": "You summon a swirling corona of energy that assails the foe with bolts of lightning and psychic shockwaves. Entire platoons are devastated beneath the onslaught of the roiling tempest as you channel more and more power into their storm of destruction. The power affects all enemies in a Blast (10) within range. All enemies within the affected area at the start of each of your turns, immediately take 9 +3ED damage with an AP of -2 and the Agonizing, Arc (2) and Warp Weapon traits.",
-    "potency": "[1] The size of the Blast is increased by +5. Executioner"
+    "potency": "[1] The size of the Blast is increased by +5."
   },
   {
     "id": "executioner_aoa",
@@ -4640,7 +4640,7 @@
       "PSYCHIC"
     ],
     "effect": "You reach out to attack the mind of an enemy in a desperate mental duel. Foes find their thoughts invaded by the crushing presence of their invader, whose ancient and inscrutable will triggers cascades of psychosomatic trauma and crushes the victim’s personality with terrifying ease. You make an opposed Willpower test against the target when the power is used, and at the start of each of your turns while the power is sustained. If you win an opposed test, then the target suffers 1d3 Mortal Wounds. If the target wins the opposed test, the power’s effects end immediately.",
-    "potency": "[1] +1 Mortal Wound on each successful opposed test. *[1] If the target has the PSYKER keyword, you may choose for them to lose the use of one psychic power they know (your choice) until they next Regroup. Will of Asuryan"
+    "potency": "[1] +1 Mortal Wound on each successful opposed test. *[1] If the target has the PSYKER keyword, you may choose for them to lose the use of one psychic power they know (your choice) until they next Regroup."
   },
   {
     "id": "will_of_asuryan_aoa",
@@ -4660,7 +4660,7 @@
       "PSYCHIC"
     ],
     "effect": "Sensing an approaching crux of destiny, you summon the certainty and confidence of ancient days. Doubt and fear are washed away, and those nearby gain impervious resolve from this indomitable aura. All friendly characters with the AELDARI keyword within range will automatically pass all Resolve tests and are immune to fear, terror, and intimidation-based Interaction attacks until the start of the Farseer’s next turn. In addition, you may Deny the Witch as a Reflexive Action in response to an enemy psychic power used within 25m of you once before their next turn.",
-    "potency": "*[2] Affected allies also automatically pass Conviction tests. [1] You gain +1 bonus dice on Psychic Mastery tests to Deny the Witch. === PAGE 315 === Phantasmancy Discipline The psychic abilities of the Shadowseers focus upon illusion and misdirection, the manipulation of fate and the turning of the enemy’s mind upon itself with lethal consequences. So subtle are they that many foes do not even recognise their peril. Fog of Dreams"
+    "potency": "*[2] Affected allies also automatically pass Conviction tests. [1] You gain +1 bonus dice on Psychic Mastery tests to Deny the Witch."
   },
   {
     "id": "fog_of_dreams_aoa",
@@ -4700,7 +4700,7 @@
       "PSYCHIC"
     ],
     "effect": "A maddening clash of wills consumes the victim’s mind as reality falls away. Select an enemy within range, and both you and the target roll 1d6. If you roll equal to or higher than the target, then the target suffers 1 Mortal Wound. Repeat this until either the target is reduced to 0 Wounds or they roll higher than you.",
-    "potency": "[2] If the power reduces the target to 0 Wounds, select another target within 5m of the first, and begin the process again. Each target after the first requires this potency option be selected again. Shards of Light"
+    "potency": "[2] If the power reduces the target to 0 Wounds, select another target within 5m of the first, and begin the process again. Each target after the first requires this potency option be selected again."
   },
   {
     "id": "shards_of_light_aoa",
@@ -4739,7 +4739,7 @@
       "PSYCHIC"
     ],
     "effect": "Eerie half-lit tunnels blink into existence, opening new paths of manoeuvre and attack. You and any number of allies within range may immediately move up to your Speed.",
-    "potency": "[2] +1 Speed to all affected characters. === PAGE 316 === Veil of Tears"
+    "potency": "[2] +1 Speed to all affected characters."
   },
   {
     "id": "veil_of_tears_aoa",
@@ -4778,7 +4778,7 @@
       "PSYCHIC"
     ],
     "effect": "The veil between realspace and the Webway grows thin, allowing Harlequins to jink away from danger in directions that shouldn’t exist, only to reappear unharmed moments later. Until the start of your next turn, you and any allies within range may roll Determination without suffering Shock—Icons rolled simply negate Wounds instead.",
-    "potency": "*[3] Whenever an ally rolls Determination, they may move up to half their speed afterwards. *[2] Whenever an ally rolls Determination, they may use their Agility instead of their Toughness for the roll. [2] +1 bonus dice on all Determination rolls for affected characters. === PAGE 317 === Revenant Discipline Amongst the Reborn, even those psykers who have honed their powers for centuries will find their abilities augmented by the god of death. Ancestor’s Grace"
+    "potency": "*[3] Whenever an ally rolls Determination, they may move up to half their speed afterwards. *[2] Whenever an ally rolls Determination, they may use their Agility instead of their Toughness for the roll. [2] +1 bonus dice on all Determination rolls for affected characters."
   },
   {
     "id": "ancestor_s_grace_aoa",
@@ -4797,7 +4797,7 @@
       "PSYCHIC"
     ],
     "effect": "Drawing upon the greatness that is the genetic and spiritual legacy of all Aeldari, you bolster your fellows. Select a number of allies with the AELDARI keyword equal to your Willpower within range. Until the start of your next turn, the affected Aeldari may re-roll all 1s on any skill tests they attempt.",
-    "potency": "*[2] Affect a number of allies up to twice the psyker’s Willpower. [2] Affected allies gain +1d on all skill tests. Gaze of Ynnead"
+    "potency": "*[2] Affect a number of allies up to twice the psyker's Willpower. [2] Affected allies gain +1d on all skill tests."
   },
   {
     "id": "gaze_of_ynnead_aoa",
@@ -4816,7 +4816,7 @@
       "PSYCHIC"
     ],
     "effect": "Your eyes blaze with fire as they channel the power of Ynnead. You target one enemy with a psychic ranged attack. If hit, the target suffers 1d3+2 Mortal Wounds.",
-    "potency": "[3] +1 Mortal Wound. Shield of Ynnead"
+    "potency": "[3] +1 Mortal Wound."
   },
   {
     "id": "shield_of_ynnead_aoa",
@@ -4835,7 +4835,7 @@
       "PSYCHIC"
     ],
     "effect": "You manifest a shield of spiritual energy around your allies. You and all allies within range gain +2 Defence and +2 Resilience until the start of your next turn.",
-    "potency": "[1] Affected allies gain +1 Resilience. [2] Affected allies gain +1 Defence. Storm of Whispers"
+    "potency": "[1] Affected allies gain +1 Resilience. [2] Affected allies gain +1 Defence."
   },
   {
     "id": "storm_of_whispers_aoa",
@@ -4855,7 +4855,7 @@
       "PSYCHIC"
     ],
     "effect": "Your voice joins with those of the dead to drive the foe insane. All enemies within range must make a Fear test (DN 5); enemies who fail this test suffer 1d3+1 Shock, and 1 Mortal Wound if they suffer a complication on their Fear Test.",
-    "potency": "[2] Fear test DN increased by +1 [1] Shock inflicted increased by +1 === PAGE 318 === Unbind Souls"
+    "potency": "[2] Fear test DN increased by +1 [1] Shock inflicted increased by +1"
   },
   {
     "id": "unbind_souls_aoa",
@@ -4874,7 +4874,7 @@
       "PSYCHIC"
     ],
     "effect": "You reach out with your powers to weaken the bond between soul and body. The power affects all enemies in a Blast (6) within range. Until the start of your next turn, all attacks made against the affected enemies gain +1ED and may re-roll any failures.",
-    "potency": "*[1] The area affected is a Blast (10). [1] +1ED to all attacks against the affected enemies. Word of the Phoenix"
+    "potency": "*[1] The area affected is a Blast (10). [1] +1ED to all attacks against the affected enemies."
   },
   {
     "id": "word_of_the_phoenix_aoa",
@@ -4893,7 +4893,7 @@
       "PSYCHIC"
     ],
     "effect": "You call upon the rebirthing energies of the mythical phoenix. The power affects one ally within range; that ally regains 1d3 wounds, or 1d3+2 if they have the YNNARI keyword. If you target an ally who has died since the end f your last turn, they are immediately restored to life. A character resurrected in this way has wounds and shock equal to their maximums.",
-    "potency": "[1] +1 Wound healed. === PAGE 319 === WAAAGH! Discipline Weirdboyz channel the power of the Waaagh! into glowing green blasts of psychic destruction, or else yoke those roiling energies to create crude but spectacular results—if, that is, the attempt doesn’t cause their heads to explode like they swallowed a stikkbomb. ‘Eadbanger"
+    "potency": "[1] +1 Wound healed."
   },
   {
     "id": "da_jump_aoa",
@@ -4912,7 +4912,7 @@
       "PSYCHIC"
     ],
     "effect": "You close your eyes tight and, in a storm of flashing green light, you teleport a mass of confused greenskins to another part of the battlefield. Select a number of allies with the ORK keyword equal to your Willpower within range. Those allies vanish, and then reappear moments later anywhere within 100m. They must reappear more than 9m from an enemy, and they forfeit their move in their following turn.",
-    "potency": "[2] Affect an additional number of allies equal to your Willpower. *[2] Activation reduced to an Action Da Krunch"
+    "potency": "[2] Affect an additional number of allies equal to your Willpower. *[2] Activation reduced to an Action"
   },
   {
     "id": "da_krunch_aoa",
@@ -4931,7 +4931,7 @@
       "PSYCHIC"
     ],
     "effect": "Green energies erupt from your eyes, ears, nose, and mouth, and coalesce into a roiling cloud above the enemy. That cloud then solidifies into the vast green foot of Gork (or Mork) himself, which commences to stamp down upon the foe. This power affects all enemies in a Blast (6) within range. Affected enemies take 1d3 Mortal Wounds and are knocked prone. Foes who were already prone become staggered as well. Then, roll a d6: on an Exalted Icon, repeat the power’s effects (repositioning the blast as desired) as the foot stamps down again.",
-    "potency": "[2] +1 Mortal Wound. [2] +1 on the roll to repeat the effect. [3] Roll to repeat the power’s effects an additional time. Fists of Gork"
+    "potency": "[2] +1 Mortal Wound. [2] +1 on the roll to repeat the effect. [3] Roll to repeat the power's effects an additional time."
   },
   {
     "id": "fists_of_gork_aoa",
@@ -4950,7 +4950,7 @@
       "PSYCHIC"
     ],
     "effect": "You channel Waaagh energy into your own fists or those of another Ork, providing strength enough to punch through the armour of tanks. This power affects you or one ally with the ORK keyword within range. Until the end of your next turn, the affected character’s Strength is increased by +4 and they receive +2 bonus dice on all melee attacks.",
-    "potency": "[1] +1 Strength [1] +1ED damage on melee attacks. *[2] Activation reduced to a Simple Action === PAGE 320 === Roar of Mork"
+    "potency": "[1] +1 Strength [1] +1ED damage on melee attacks. *[2] Activation reduced to a Simple Action"
   },
   {
     "id": "roar_of_mork_aoa",
@@ -4970,7 +4970,7 @@
       "PSYCHIC"
     ],
     "effect": "You open your gob impossibly wide and give vent to a bellowing roar that reverberates through your enemies’ minds. Coherent thought becomes nigh-impossible, and as the roar thunders on, panic begins to spread. While this power remains in effect, all enemies within range add +2 DN to all Resolve tests.",
-    "potency": "[1] +1 DN *[2] Enemies within range must make a Resolve test (DN 3) or become pinned. Warpath"
+    "potency": "[1] +1 DN *[2] Enemies within range must make a Resolve test (DN 3) or become pinned."
   },
   {
     "id": "warpath_aoa",
@@ -4989,7 +4989,7 @@
       "PSYCHIC"
     ],
     "effect": "You disperse the Waaagh energy coursing through your frame into the Ork warriors around you, stoking their already bellicose nature into a roaring fever pitch. Select a number of allies with the ORK keyword equal to your Willpower within range. The affected allies add +2 bonus dice to all melee attacks they attempt until the start of your next turn, and they may ignore up to 2 points of DN increase for taking the Multi-Attack or Multi-Action options.",
-    "potency": "[1] Increase DN reduction by 1. [1] +1 bonus dice to melee attacks. [2] Affect an number of additional allies equal to your Willpower. === PAGE 321 === Skeinwrought Discipline With access to barrier-tech, all Grimnyr are capable of accessing and manipulating the psychic energies of the Warp despite their species' general resistance to or inability to touch the Immaterium. Grimnyr can smite their foes with blasts of psychic energy, but also are capable of unleashing other psychic abilities as well, making use of what is known as the Skeinwrought Discipline, which takes its name from the special psychoactive cloneskeins that all Grimnyr possess when they emerge from their crucibles. Interface Echo"
+    "potency": "[1] Increase DN reduction by 1. [1] +1 bonus dice to melee attacks. [2] Affect an number of additional allies equal to your Willpower."
   },
   {
     "id": "interface_echo_aoa",
@@ -5008,7 +5008,7 @@
       "PSYCHIC"
     ],
     "effect": "You draw empyrically archived Votannic wisdom from within ward-tech augmetic neural buffers and use it to inform your comrades’ battle plan. If the power is successful, you immediately gain 1 Glory.",
-    "potency": "[2] Gain +1 Glory *[3] Gain 1 Wrath Fortify"
+    "potency": "[2] Gain +1 Glory *[3] Gain 1 Wrath"
   },
   {
     "id": "fortify_skeinwrought_aoa",
@@ -5047,7 +5047,7 @@
       "FIRE"
     ],
     "effect": "Channelling the grim hatred that all Kin believe their Ancestors hold for their foes, you transmute it into furious destructive energies. White fire leaps from your eyes, your fingertips, and your open mouth, blasting the foe to scattered ashes. This targets all enemies in a Blast (6) within range and line of sight. Enemies affected suffer 12+ 3ED damage with the Force trait. If any of the enemies affected have killed a LEAGUE OF VOTANN character in the current scene, the damage gains the Brutal trait.",
-    "potency": "[1] +1ED [2] Increase Blast size by +2. Grudgepyre"
+    "potency": "[1] +1ED [2] Increase Blast size by +2."
   },
   {
     "id": "grudgepyre_aoa",
@@ -5067,7 +5067,7 @@
       "FIRE"
     ],
     "effect": "Harnessing the Kin’s gestalt hatred for a begrudged foe, you engulfs your victim in a pillar of flame that scours them from existence. Select a single enemy within range and line of sight and make an Opposed Willpower test against them. If you succeed, the target suffers 1d3+3 Mortal Wounds.",
-    "potency": "[1] +1 Mortal Wound === PAGE 322 === Null Vortex"
+    "potency": "[1] +1 Mortal Wound"
   },
   {
     "id": "null_vortex_aoa",
@@ -5086,7 +5086,7 @@
       "PSYCHIC"
     ],
     "effect": "Unleashing the full contra-empyric power of your barrier tech, you project a null- probability field that causes enemy force shields to flicker and die, and even the most agile foes to fumble weakly in their efforts to evade harm. While this power remains in effect, enemies within range do not benefit from any Invulnerable Armour they possess.",
-    "potency": "*[3] Enemies within the power’s range cannot roll Determination. Crushing Contempt"
+    "potency": "*[3] Enemies within the power's range cannot roll Determination."
   },
   {
     "id": "crushing_contempt_aoa",
@@ -5105,7 +5105,7 @@
       "PSYCHIC"
     ],
     "effect": "Your glowering stare bores into the enemy, your manifest disdain and anger intensifying by the moment until they feel its weight as a physical force. It causes them to stagger and strain simply to keep from collapsing altogether. This targets all enemies in a Blast (6) within range and line of sight. Enemies affected suffer 1d3 Shock and must attempt a Resolve test with a DN of 5; if they fail, they are Prone and Staggered until the start of your next turn.",
-    "potency": "*[2] Enemies are Restrained instead of Staggered. [1] +1 Shock === PAGE 323 === === PAGE 324 === Chapter IV: Equipment Being a Study of the Many Weapons, Armours, and Tools Employed by the Imperium and Its Foes An Abundance of Apocrypha THOUGHT FOR THE DAY: A warrior's faith in his commander is his best armour and his strongest weapon."
+    "potency": "*[2] Enemies are Restrained instead of Staggered. [1] +1 Shock"
   },
   {
     "id": "death_hex",
@@ -5118,8 +5118,8 @@
     "multiTarget": true,
     "cost": 20,
     "prerequisite": "Psyker must have the CHAOS Keyword",
-    "effect": "A nimbus of sorcerous energy surrounds your target, its tendrils sinking into armour plates and defensive shields, disrupting their function. Whilst this power is sustained, the target halves all Armour (rounding down, to a minimum of 0). If the target also benefits from a Force Shield, the Force Shield ceases to function for as long as this power is sustained. The touch of Death Hex leaves a stain on the target long after the hex ends. Each time you sustain this power for 1 minute, the target gains 1 Corruption.",
-    "potency": "[1] +10m Range.\n[2] Target's Armour is reduced to 0 instead of halved.",
+    "effect": "You beseech the Warp to send forth its vilest curses, causing the most foolproof of protections to fail. For the duration of this combat — or the next combat the target fights — the target cannot use any effects that allow them to roll Determination against Mortal Wounds, and loses the benefit of Invulnerable armour (their Resilience is reduced by AP as usual). In addition, any attacks against the target increase their AP by +1.",
+    "potency": "[1] Attacks against target gain +1 AP.\n[1] +10m Range.",
     "keywords": [
       "CHAOS",
       "PSYCHIC"
@@ -5138,8 +5138,8 @@
     "multiTarget": true,
     "cost": 20,
     "prerequisite": "Psyker must have the CHAOS Keyword",
-    "effect": "Channelling the power of the warp into the target's muscles, they are granted appalling strength and speed. Whilst this power is sustained, the target gains +2 Strength and +1 Speed. The touch of the warp leaves its mark on the target, and the target gains +1 Corruption per minute the power is sustained.",
-    "potency": "[1] +1 Strength.\n[1] +1 Speed.\n[1] Activation reduced to an Action.",
+    "effect": "The dreadful power of the warp floods the target's muscles, imbuing them with a horrifying strength not their own. The target gains +3 bonus dice on Strength Tests, and inflicts +3 ED Damage on all melee attacks. Creatures that roll a Complication whilst benefiting from Diabolic Strength are liable to cause terrible collateral damage, as the ruinous power of Chaos surges through them.",
+    "potency": "[1] +1 bonus die on Strength Tests, and +1 ED Damage on melee attacks.\n[1] +10m Range.",
     "keywords": [
       "CHAOS",
       "PSYCHIC"
@@ -5158,8 +5158,8 @@
     "multiTarget": true,
     "cost": 30,
     "prerequisite": "Psyker must have the CHAOS Keyword. At least two other Maleficarum powers.",
-    "effect": "Screaming a dread incantation, you tear open a rift in reality. A howling vortex of Immaterium energy erupts, dragging nearby matter into the warp, possibly to be spat out somewhere else entirely. The vortex appears within range, in a Blast (4) area. Any creature in the area must make a DN 5 Strength Test or suffer 2d6 Mortal Wounds. At the start of each subsequent Turn, the vortex moves 2d6 metres in a random direction. Any creature caught in the path or area of the vortex must make the same Test. If you fail to sustain the power, or choose to end it, roll 1d6. On a 1-3, the vortex collapses harmlessly. On a 4-6, it explodes, dealing 1d6 Mortal Wounds to all creatures within 10m. You gain 1 Corruption per Round you sustain this power.",
-    "potency": "[2] +1 DN on Strength Tests.\n[2] +1d6 Mortal Wounds on explosion.",
+    "effect": "You puncture a black hole into the Warp that tears your enemies apart, flings them around the battlefield, or drags them screaming into the Immaterium. The target suffers 20 +3 ED Damage, with AP –4, and the Blast (6) and Warp Weapon Traits. Any creatures that suffer Damage from the attack but survive are Scattered 1d6 metres in a random direction (see Wrath & Glory page 186), and suffer the Restrained Condition on their next Turn.",
+    "potency": "[1] +5m Range.\n[1] +1 ED Damage.",
     "keywords": [
       "CHAOS",
       "PSYCHIC"
@@ -5168,8 +5168,8 @@
     "page": 126
   },
   {
-    "id": "minor_invocation",
-    "name": "Minor Invocation",
+    "id": "malefic_invitation",
+    "name": "Malefic Invitation",
     "discipline": "Maleficarum",
     "dn": 4,
     "activation": "Action",
@@ -5178,8 +5178,8 @@
     "multiTarget": false,
     "cost": 10,
     "prerequisite": "Psyker must have the CHAOS Keyword",
-    "effect": "You call upon the malign power of the warp to afflict a target with a minor curse. Choose one of the following effects: the target suffers 1d3+1 Shock; the target suffers 1 Mortal Wound; or the target gains the Hindered Condition until the end of their next turn. The target also gains 1 Corruption.",
-    "potency": "[1] +1 Shock or +1 Mortal Wound (as appropriate).\n[1] +5m Range.",
+    "effect": "The power on page 117 is named 'Malefic Invitation', not 'Minor Invocation'. Its effect: The mind of a psyker is a siren call to the hostile denizens of the warp. The most foolhardy deliberately flirt with such attentions, temporarily playing host to the power of a daemonic patron... Choose a Troop-level Threat for your Tier that has the DAEMON and CHAOS Keywords. For the duration of the power, you gain access to the Threat's Bonuses and Abilities (including Daemonic Determination)...",
+    "potency": "*[1] Select an Elite-level Threat.\n*[2] Select an Adversary-level Threat.\n[3] +1 bonus die on Conviction Test to resist permanent possession.",
     "keywords": [
       "CHAOS",
       "PSYCHIC"
@@ -5198,8 +5198,8 @@
     "multiTarget": true,
     "cost": 25,
     "prerequisite": "Psyker must have the CHAOS Keyword. At least one other Maleficarum power.",
-    "effect": "You call down a storm of warp energy in a Blast (6) centred on a point within range. Creatures within the area when it forms, or who enter the area whilst sustained, suffer 1d3 Mortal Wounds and 1 Corruption. At the start of each Turn whilst sustained, all creatures within the area suffer an additional 1d3 Mortal Wounds. The area counts as Difficult Terrain. You gain 1 Corruption per Round you sustain this power.",
-    "potency": "[1] +10m Range.\n[2] +1 Mortal Wound per Turn.",
+    "effect": "The veil between realities thins in your presence, allowing tendrils of the Warp's power to leak into the vicinity. Any creatures within range of you are caught within the Warp Storm's boundaries, immediately gaining 2 Shock, 1 Corruption, and making a DN 3 Fear Test. Creatures who subsequently enter the Warp Storm whilst the power is active suffer the same effects. Whilst the power is ongoing, characters within the Warp Storm gain a mandatory +1 Wrath die on any Psychic Mastery (Wil) Tests, and creatures with the DAEMON Keyword gain +2 bonus dice when rolling Determination. In addition, Tests into, out of, or through the Warp Storm suffer vision penalties (Wrath & Glory page 191), increasing the level of darkness one step (to a maximum of total darkness), or imposing the effects of twilight in otherwise well-lit conditions.",
+    "potency": "[1] +5m Range.\n[1] Increase vision penalties one additional step.\n[2] Gain +1 mandatory Wrath die on Psychic Mastery (Wil) Tests.",
     "keywords": [
       "CHAOS",
       "PSYCHIC"
@@ -5208,8 +5208,8 @@
     "page": 117
   },
   {
-    "id": "warpspeed",
-    "name": "Warpspeed",
+    "id": "warptime",
+    "name": "Warptime",
     "discipline": "Maleficarum",
     "dn": 6,
     "activation": "Full-Round Action",
@@ -5218,7 +5218,7 @@
     "multiTarget": false,
     "cost": 20,
     "prerequisite": "Psyker must have the CHAOS Keyword",
-    "effect": "You channel the warp into your own body, accelerating your reflexes to such a degree that you perceive everything else to be happening in slow motion. Whilst this power is sustained, the target doubles their Speed, and can take an extra Action each Turn. This extra Action does not impose any Multi-Action penalties, and can be used to make a second attack in one Turn. A target affected by this power suffers 1 Corruption at the end of their Turn, as their mind and body is warped by existence out-of-step with reality.",
+    "effect": "Time does not flow the same way in the warp as in reality. You weave this temporal distortion so that the target appears to move with super-human speed, as they perceive everything else to be happening in slow motion. Whilst this power is sustained, the target doubles their Speed, and can take an extra Action each Turn. This extra Action does not impose any Multi-Action penalties, and can be used to make a second attack in one Turn. A target affected by this power suffers 1 Corruption at the end of their Turn, as their mind and body is warped by existence out-of-step with reality.",
     "potency": "[1] Activation reduced to an Action.\n[1] +10m Range.",
     "keywords": [
       "CHAOS",
@@ -5238,7 +5238,7 @@
     "multiTarget": true,
     "cost": 20,
     "prerequisite": "Psyker must have the CHAOS Keyword",
-    "effect": "You unleash a strike of eldritch lightning, triggering a chain reaction of appalling mutations for those caught in the blast. The target takes 15 +9 ED Damage and 1d3 Corruption. When you activate this power, one Agent, Elite, or Adversary who would otherwise be killed by the Damage inflicted is instead irreversibly transformed into a Chaos Spawn, which attacks everyone around them in a suicidal frenzy.",
+    "effect": "...one Agent, Elite, or Adversary who would otherwise killed by the Damage inflicted is instead irreversibly transformed into a Chaos Spawn (Wrath & Glory page 352), which attacks everyone around them in a suicidal frenzy.",
     "potency": "[1] +10m Range.\n[2] +1 Corruption.\n[1] +1 ED Damage.",
     "keywords": [
       "CHAOS",

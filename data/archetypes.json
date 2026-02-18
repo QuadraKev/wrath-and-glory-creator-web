@@ -431,8 +431,8 @@
     "influenceModifier": 0,
     "abilities": [
       {
-        "name": "Blessed Redundancy",
-        "description": "You have been rebuilt with redundant organs and systems. You do not suffer any effects from the Bleeding Condition, and gain +Rank additional Wounds."
+        "name": "Heavily Augmented",
+        "description": "Your body has been redesigned to withstand the rigours of war. You do not bleed (making you immune to the Bleeding Condition) and gain +Rank bonus dice to Determination rolls."
       }
     ],
     "startingWargear": [
@@ -447,7 +447,7 @@
   {
     "id": "tempestus_scion",
     "name": "Tempestus Scion",
-    "description": "An elite stormtrooper of the Astra Militarum, you have been trained from childhood for high-risk operations.",
+    "description": "You are a highly trained elite shock trooper of the Astra Militarum.",
     "tier": 2,
     "species": [
       "human"
@@ -475,8 +475,8 @@
     "influenceModifier": 0,
     "abilities": [
       {
-        "name": "Special Operations",
-        "description": "When you spend a Glory to Seize the Initiative or for a narrative benefit related to your training, you can spend 1 Glory to give an ally with the IMPERIUM Keyword a half-action instead of having to spend 2 Glory."
+        "name": "Elite Soldier",
+        "description": "You're an expert in inflicting pain through the weapons of the Imperium. Whenever you spend Glory to increase damage when using a weapon with the ASTRA MILITARUM Keyword you can add +Rank to the final damage value."
       }
     ],
     "startingWargear": [
@@ -494,7 +494,7 @@
   {
     "id": "rogue_trader",
     "name": "Rogue Trader",
-    "description": "A licensed privateer of the Imperium, you ply the stars in search of profit, glory, and adventure.",
+    "description": "Gifted the rare freedom to explore the stars, you explore, trade, pillage, and conquer to expand the Imperium.",
     "tier": 2,
     "species": [
       "human"
@@ -521,7 +521,7 @@
     "abilities": [
       {
         "name": "Warrant of Trade",
-        "description": "You wield the authority of an ancient Warrant of Trade. You gain +Double Rank to Influence and Persuasion Tests when dealing with Imperial citizens. Once per session, you may use your Warrant to avoid punishment for a crime within the Imperium."
+        "description": "You are a master of manipulating a situation to your advantage. You gain +Rank bonus dice to all Persuasion (Fel) Tests and Influence tests to acquire goods and services."
       }
     ],
     "startingWargear": [
@@ -537,7 +537,7 @@
   {
     "id": "scavvy",
     "name": "Scavvy",
-    "description": "A wretched outcast living on the fringes of Imperial society, you survive through cunning and desperation.",
+    "description": "You are a survivor of the worst conditions of Imperial society, moulded by horrendous environments into a purposeful, determined mutant.",
     "tier": 2,
     "species": [
       "human"
@@ -557,8 +557,8 @@
     "influenceModifier": 0,
     "abilities": [
       {
-        "name": "Wretched Resilience",
-        "description": "You have adapted to survive in the harshest conditions. You gain +Rank bonus dice to Tests to resist disease, poison, or environmental hazards. You may consume rotten or contaminated food without ill effect."
+        "name": "Mutant",
+        "description": "Your life in the unsanitary underbelly of the Imperium has mutated you. Select two Mutations from the list of Scavvy Mutations on p.287. Whenever your Rank increases, you may select another Mutation from the list."
       }
     ],
     "startingWargear": [
@@ -573,7 +573,7 @@
   {
     "id": "space_marine_scout",
     "name": "Space Marine Scout",
-    "description": "A neophyte Space Marine still undergoing transformation, you infiltrate enemy lines and eliminate threats with precision.",
+    "description": "Genetically enhanced beyond Human limits, you are an initiate warrior of the Adeptus Astartes deployed to make swift, stealthy strikes.",
     "tier": 2,
     "species": [
       "astartes"
@@ -776,7 +776,7 @@
     "abilities": [
       {
         "name": "Armour of Faith",
-        "description": "Your faith is a shield against harm. You gain +Rank Resilience. Additionally, you may spend a Wrath Point to ignore the effects of a single hit for one round."
+        "description": "You gain +Double Rank bonus dice to melee attack tests against targets with the CHAOS or HERETIC Keyword. Your Resolve also increases by +Rank."
       }
     ],
     "startingWargear": [
@@ -791,7 +791,7 @@
   {
     "id": "imperial_commissar",
     "name": "Imperial Commissar",
-    "description": "A political officer of the Astra Militarum, you maintain morale and discipline through inspiration and fear.",
+    "description": "Maintaining morale through any means necessary, you are a leader amongst the Astra Militarum, ensuring soldiers do their duty by leading from the front.",
     "tier": 3,
     "species": [
       "human"
@@ -817,8 +817,8 @@
     "influenceModifier": 2,
     "abilities": [
       {
-        "name": "Summary Execution",
-        "description": "You can execute a subordinate with the IMPERIUM Keyword as a Full Action. All allies who witness this execution within 15 metres regain Shock equal to Double your Rank and gain +Rank bonus dice on their next Test. If you execute an enemy, allies gain these benefits but also +1 Glory to the party."
+        "name": "Fearsome Respect",
+        "description": "You and any allies within 15 metres of you that can see you may add +Double Rank bonus dice to Resolve Tests. You add +Double Rank bonus dice to any Intimidation (Wil) Tests, including Interaction Attacks."
       }
     ],
     "startingWargear": [
@@ -833,7 +833,7 @@
   {
     "id": "desperado",
     "name": "Desperado",
-    "description": "A dangerous outlaw skilled in deception and violence, you operate outside the law for profit or survival.",
+    "description": "A lone outlaw beyond the Imperium's control, you are a skilled mercenary free of the constraints of Faction and family.",
     "tier": 3,
     "species": [
       "human"
@@ -856,8 +856,8 @@
     "influenceModifier": 1,
     "abilities": [
       {
-        "name": "Dirty Tricks",
-        "description": "You gain +Double Rank bonus dice to Cunning Tests to set up ambushes or traps. Once per session, you may automatically succeed on a Stealth or Deception Test against a single target."
+        "name": "Valuable Prey",
+        "description": "You gain +Rank bonus dice to Cunning (Fel) Tests, and any Test made to track an individual."
       }
     ],
     "startingWargear": [
@@ -873,7 +873,7 @@
   {
     "id": "tactical_space_marine",
     "name": "Tactical Space Marine",
-    "description": "A fully-fledged battle-brother of the Adeptus Astartes, you are a versatile warrior capable of adapting to any battlefield situation.",
+    "description": "A genetically enhanced super soldier beyond a mortal Human in every way, clad in armour and deployed to destroy the Imperium's enemies.",
     "tier": 3,
     "species": [
       "astartes"
@@ -1119,7 +1119,7 @@
   {
     "id": "death_cult_assassin",
     "name": "Death Cult Assassin",
-    "description": "An extremist zealot who worships through ritual slaughter. You depend upon your swift movement and honed reflexes to avoid harm.",
+    "description": "A zealot of an extremist sect, you honour the Emperor's sacrifice for humanity through the ritual slaughter of His enemies.",
     "tier": 2,
     "species": [
       "human"
@@ -1160,7 +1160,7 @@
   {
     "id": "sister_repentia",
     "name": "Sister Repentia",
-    "description": "A fallen Sister of Battle seeking redemption through martyrdom. You crave redemption or martyrdom, fighting harder when closest to death.",
+    "description": "You are a self-flagellating zealot, condemned by your sins to seek a martyr's death or exoneration upon the field of battle.",
     "tier": 2,
     "species": [
       "human"
@@ -1256,7 +1256,7 @@
   {
     "id": "imagifier",
     "name": "Sister Imagifier",
-    "description": "A bearer of sacred relics who inspires the faithful with the deeds of martyrs and saints.",
+    "description": "You bear the image of a martyred Sister as a battle standard, loudly extolling her virtues as an inspiration to follow.",
     "tier": 3,
     "species": [
       "human"
@@ -1307,7 +1307,7 @@
   {
     "id": "seraphim",
     "name": "Seraphim",
-    "description": "A jump pack-equipped assault specialist who descends upon enemies like an avenging angel.",
+    "description": "Borne upon angelic wings of fire, you provide salvation to your allies with aerial hit-and-run attacks.",
     "tier": 3,
     "species": [
       "human"
@@ -1355,7 +1355,7 @@
   {
     "id": "canoness",
     "name": "Canoness",
-    "description": "A commander of the Adepta Sororitas, you are an inspiring warleader and walking miracle.",
+    "description": "You are a senior officer of the Orders Militant, leading the faithful by example in acts of worship and warfare.",
     "tier": 4,
     "species": [
       "human"
@@ -1387,7 +1387,7 @@
     "abilities": [
       {
         "name": "Lead the Righteous",
-        "description": "You gain +Rank Faith. Whenever you deal a Wound, you may spend 1 Faith to gain +1 Glory as a Free Action."
+        "description": "You are an inspiring warleader and walking miracle both. You gain +Rank Faith (see page142 of Wrath & Glory Rulebook). Whenever you deal a Wound, you may spend 1 Faith to gain +1 Glory as a Free Action."
       }
     ],
     "startingWargear": [
@@ -1404,7 +1404,7 @@
   {
     "id": "tech_adept",
     "name": "Tech-Adept",
-    "description": "A technical operator in service of the Priesthood of Mars, skilled at navigating and maintaining technology.",
+    "description": "You are a technical operator in service of the Priesthood of Mars, skilled at navigating and compiling digital systems.",
     "tier": 1,
     "species": [
       "human"
@@ -1443,7 +1443,7 @@
   {
     "id": "sicarian_infiltrator",
     "name": "Sicarian Infiltrator",
-    "description": "A cyber-augmented assassin who disrupts enemies with neurostatic fields.",
+    "description": "You are a mechanical soldier broadcasting a wavelength of neurostatic, inducing sensory overload in all creatures nearby.",
     "tier": 3,
     "species": [
       "human"
@@ -1524,7 +1524,7 @@
   {
     "id": "tech_priest_dominus",
     "name": "Tech-Priest Dominus",
-    "description": "A high-ranking Tech-Priest who automatically interfaces with nearby technology.",
+    "description": "You are a commander of the Adeptus Mechanicus' military forces, effortlessly splitting your consciousness between multiple technical interfaces.",
     "tier": 4,
     "species": [
       "human"
@@ -1568,7 +1568,7 @@
   {
     "id": "confessor",
     "name": "Confessor",
-    "description": "A spiritual guide who extracts confessions and administers penance to the faithful.",
+    "description": "You are a firebrand preacher of the Imperial Cult, compelling your flock to admit their failings with force of personality alone.",
     "tier": 2,
     "species": [
       "human"
@@ -1611,7 +1611,7 @@
   {
     "id": "ratling_sniper",
     "name": "Ratling Sniper",
-    "description": "A diminutive abhuman sharpshooter known for exceptional marksmanship and stealth.",
+    "description": "You are small and elusive, enlisted in the Astra Militarum as a sharpshooter and an infiltration specialist.",
     "tier": 1,
     "species": [
       "ratling"
@@ -1656,7 +1656,7 @@
   {
     "id": "ogryn_warrior",
     "name": "Ogryn Warrior",
-    "description": "A massive abhuman shock trooper whose approach to combat is simple, direct, and expends plenty of ammunition.",
+    "description": "You are a muscular titan of war, unleashed by the Astra Militarum as a blunt instrument.",
     "tier": 2,
     "species": [
       "ogryn"
@@ -1833,7 +1833,7 @@
   {
     "id": "kroot_mercenary",
     "name": "Kroot Mercenary",
-    "description": "A carnivorous xenos warrior who scours the galaxy seeking strong prey to consume, working as a mercenary to fund your travels.",
+    "description": "You are an alien sell-sword, seeking out mighty foes to devour, absorbing their strength.",
     "tier": 1,
     "species": [
       "kroot"
@@ -1873,7 +1873,7 @@
   {
     "id": "astartes_apothecary",
     "name": "Astartes Apothecary",
-    "description": "An expert combat medic specialising in treating the superhuman physiology of your battle-brothers.",
+    "description": "You are an expert combat medic specialising in Astartes physiology and the retrieval of precious genetic material.",
     "tier": 4,
     "species": [
       "astartes"
@@ -1968,7 +1968,7 @@
     "abilities": [
       {
         "name": "Chapter Cult",
-        "description": "You gain 1 Faith, and can purchase Faith Talents available to characters with the ADEPTUS MINISTORUM Keyword. As a Combat Action, you may spend 1 Faith to give an ally within hearing distance your [CHAPTER] Keyword for the rest of the scene. Any allies within 5xRank metres who share your [CHAPTER] Keyword gain +Rank to Resolve Tests."
+        "description": "You gain 1 Faith, and can purchase Faith Talents available to characters with the ADEPTUS MINISTORUM Keyword. As a Combat Action, you may spend 1 Faith to give an ally within hearing distance your [CHAPTER] Keyword for the rest of the scene, with all corresponding effects except those with the Tradition or Gene-seed title, or that provide equipment. In addition, any allies within 5xRank metres who share your [CHAPTER] Keyword gain +Rank to Resolve Tests."
       }
     ],
     "startingWargear": [
@@ -2027,7 +2027,7 @@
     "abilities": [
       {
         "name": "Librarius Discipline",
-        "description": "You have the PSYKER Keyword, and are a psyker. You know the Universal Psyker Abilities and the Smite psychic power. You know the Librarius Discipline and one power from that Discipline of your choice, and may choose one other Psychic Discipline to learn powers from."
+        "description": "You have the PSYKER Keyword, and are a psyker. You know the Universal Psyker Abilities Wrath & Glory Rulebook, p.267, and the Smite psychic power. You know the Librarius Discipline and one power from that Discipline of your choice, and may choose one other Psychic Discipline to learn powers from as described in Chapter 11 of the Rulebook."
       }
     ],
     "startingWargear": [
@@ -2187,7 +2187,7 @@
   {
     "id": "eliminator",
     "name": "Eliminator",
-    "description": "You are a dedicated marksman, patient and ruthless, eliminating high-value targets or delivering pinpoint, accurate fire support.",
+    "description": "You are a dedicated marksman, patient and ruthless, eliminating high-value targets or delivering pinpoint, accurate fire support to both demoralise and destroy the enemy.",
     "tier": 4,
     "species": [
       "primaris"
@@ -2389,7 +2389,7 @@
     "abilities": [
       {
         "name": "Blessings of the Omnissiah",
-        "description": "You are a warrior of the Omnissiah. When you succeed on a Tech (Int) Test to repair a weapon or vehicle, you gain +Rank bonus dice to the test. When you commune with a machine spirit as part of a test, you instead gain Icons equal to your rank."
+        "description": "You are a warrior of the Omnissiah. You perform your duties by tending to the weapons, vehicles and machine spirits wielded by your chapter. When you succeed on a Tech (Int) Test to repair a weapon or vehicle, you gain +Rank bonus dice to the test. When you commune with a machine spirit as part of a test, you instead gain Icons equal to your rank."
       }
     ],
     "startingWargear": [
@@ -3338,7 +3338,7 @@
     "abilities": [
       {
         "name": "Shadow Creature",
-        "description": "You are not a creature of flesh and blood, instead dwelling in a liminal state between realities. When you are not wearing armour, you gain +Rank Resilience, and can roll Determination against attacks that inflict Mortal Wounds. You always count as being in heavy fog, with all corresponding vision penalties. When you move, you ignore all obstacles between your start and end point, so long as you move from one shadow to another."
+        "description": "You are not a creature of flesh and blood, instead dwelling in a liminal state between realities. When you are not wearing armour, you gain +Rank Resilience, and can roll Determination against attacks that inflict Mortal Wounds. You always count as being in heavy fog, with all corresponding vision penalties (+3 DN to target with Awareness and Ballistic Skill Tests, +2 DN to target with Weapon Skill Tests). When you move, you ignore all obstacles between your start and end point, so long as you move from one shadow to another."
       }
     ],
     "startingWargear": [
@@ -3378,7 +3378,7 @@
     "abilities": [
       {
         "name": "Winged Strike",
-        "description": "You are grafted with wings that allow you to fly at double your normal Speed. More complicated aerial manoeuvres may require an Athletics (S) Test, with +Double Rank bonus dice. In addition, you can spend Shifts on a successful ranged attack Test to inflict the Pinned Condition on the target."
+        "description": "You are grafted with wings that allow you to fly at double your normal Speed. More complicated aerial manoeuvres may require an Athletics (S) Test, with +Double Rank bonus dice. In addition, you can spend Shifts on a successful ranged attack Test to inflict the Pinned Condition on the target. This costs a number of Shifts equal to the target's Resolve minus Rank."
       }
     ],
     "startingWargear": [
@@ -3653,7 +3653,7 @@
     "abilities": [
       {
         "name": "Phantasmancer",
-        "description": "You know the Universal Psyker Abilities and the Smite psychic power. You may choose two powers you know from any of the following Disciplines: Divination, Phantasmancy, Telepathy."
+        "description": "You know the Universal Psyker Abilities (Wrath & Glory page 267), and the Smite psychic power. You may choose two powers you know from any of the following Disciplines (so long as you meet the prerequisites): Divination, Phantasmancy, Telepathy."
       }
     ],
     "startingWargear": [
@@ -3769,7 +3769,7 @@
     "abilities": [
       {
         "name": "Raiders of the Void",
-        "description": "You are a raider, experienced at operating in the vacuum of space. You gain +Rank bonus dice to melee or ranged attacks when you Seize the Initiative. You gain a further +1 die bonus if this ability is used when fighting in zero gravity."
+        "description": "You are a raider, experienced at operating in the vacuum of space. Used to zero gravity, and engaging in lighting strike raids, you use speed and guile to your advantage in battle. You gain +Rank bonus dice to melee or ranged attacks when you Seize the Initiative. You gain a further +1 die bonus if this ability is used when fighting in zero gravity."
       }
     ],
     "startingWargear": [
@@ -4020,8 +4020,8 @@
     "influenceModifier": 0,
     "abilities": [
       {
-        "name": "Swift Messenger",
-        "description": "You gain +Rank bonus dice to Pilot tests and may reroll up to Rank dice on Initiative tests at the start of combat."
+        "name": "At Home in the Skies",
+        "description": "At Home in the Skies: When you attempt a difficult manoeuvre in an aircraft or spacecraft, reduce the DN of the action by Rank."
       }
     ],
     "startingWargear": [],
@@ -4123,7 +4123,7 @@
     "abilities": [
       {
         "name": "The Enemy Within",
-        "description": "While disguised, you gain +Rank bonus dice on all Deception tests to pass as an Imperial citizen. When no longer disguised, you gain +Rank bonus dice on all Interaction Attacks against targets with the IMPERIUM keyword."
+        "description": "The Enemy Within: While disguised, you gain +Rank bonus dice on all Deception tests to pass as an Imperial citizen. When no longer disguised, you gain +Rank bonus dice on all Interaction Attacks against IMPERIAL characters. In addition, you gain 1d3 Corruption."
       }
     ],
     "startingWargear": [],
@@ -4156,8 +4156,8 @@
     "influenceModifier": 0,
     "abilities": [
       {
-        "name": "Earth Caste Expertise",
-        "description": "You gain +Rank bonus dice on Tech tests to repair or construct T'au technology. You may make Tech tests to repair T'au equipment as a Simple Action rather than an Action."
+        "name": "State of the Art",
+        "description": "State of the Art: When you attempt to repair T'AU technology or attempt to operate a complex piece of T'AU technology using a Tech test, you may re-roll a number of dice equal to twice your Rank."
       }
     ],
     "startingWargear": [],
@@ -4190,8 +4190,8 @@
     "influenceModifier": 1,
     "abilities": [
       {
-        "name": "Imperial Authority",
-        "description": "You add +Rank bonus dice to Intimidation tests against targets with the IMPERIUM keyword. Once per scene, you may declare Imperial Law, forcing a target to make a DN 3 Resolve test or be compelled to cooperate."
+        "name": "Freeze!",
+        "description": "Freeze!: At the start of the first round of combat, before anyone has taken a turn, you may make an Intimidate Interaction Attack against a single enemy who can see and hear you."
       }
     ],
     "startingWargear": [],
@@ -4222,8 +4222,8 @@
     "influenceModifier": 0,
     "abilities": [
       {
-        "name": "Righteous Fervour",
-        "description": "When fighting enemies with the CHAOS, HERETIC, or any Xenos keyword, you gain +Rank bonus dice to Resolve tests and melee attack tests."
+        "name": "Fervour",
+        "description": "Fervour: When within hearing range of a character with the ADEPTUS MINISTORUM keyword, you increase your Resolve by +Rank. In addition, if that Adeptus Ministorum character has suffered any wounds during the current scene, your Determination is increased by +Rank while you remain within 10 metres of them."
       }
     ],
     "startingWargear": [],
@@ -4257,8 +4257,8 @@
     "influenceModifier": 0,
     "abilities": [
       {
-        "name": "Breacher Assault",
-        "description": "When making a ranged attack at Short Range, you gain +Rank bonus dice to the attack test."
+        "name": "Urban Clearance Tactics",
+        "description": "Urban Clearance Tactics: You have an efficient way of flushing enemies out of defensive positions. When you make a ranged attack against an enemy who has taken the Blinded or Pinned conditions, add +Rank ED to the attack's damage."
       }
     ],
     "startingWargear": [],
@@ -4293,8 +4293,8 @@
     "influenceModifier": 0,
     "abilities": [
       {
-        "name": "Vanguard Recon",
-        "description": "You gain +Rank bonus dice to Stealth and Awareness tests. When you successfully use a Markerlight on a target, allies gain an additional +1 bonus die on attacks against that target."
+        "name": "Vanguard",
+        "description": "Vanguard: You're practised at staying mobile while unnoticed, avoiding attention until necessary. While you have a Stealth score, increase your Speed by +Rank. Further, at the start of the first round of combat, before turn order is determined, you may make a normal move."
       }
     ],
     "startingWargear": [],
@@ -4328,8 +4328,8 @@
     "influenceModifier": 0,
     "abilities": [
       {
-        "name": "Volley Fire",
-        "description": "When making a ranged attack with a Pulse weapon at Medium or Long range, you may add +Rank to the weapon's ED."
+        "name": "Disciplined Volley",
+        "description": "Disciplined Volley: You are used to laying down consistent, deadly volleys of fire. When you make a ranged attack with a PULSE weapon, and did not move during your turn, you may increase the weapon's Salvo rating by +Rank."
       }
     ],
     "startingWargear": [],
@@ -4363,8 +4363,8 @@
     "influenceModifier": 0,
     "abilities": [
       {
-        "name": "Citizen Soldier",
-        "description": "Outside of combat, you gain +Rank bonus dice to one non-combat skill of your choice (chosen at character creation). In combat, you gain +1 to your Defence."
+        "name": "Defenders",
+        "description": "Defenders: At the start of combat, before the first turn is taken, nominate a single location on the battlefield (no bigger than 1m across) as your objective. While within 6m of this objective, you may re-roll all rolls of 1 on ranged attacks and Resolve tests you attempt."
       }
     ],
     "startingWargear": [],
@@ -4397,8 +4397,8 @@
     "influenceModifier": 0,
     "abilities": [
       {
-        "name": "Ancestral Grudge",
-        "description": "When you attack a target that has previously wounded you or an ally during this combat, you gain +Rank bonus dice to the attack test."
+        "name": "Stalwart Comrade",
+        "description": "Stalwart Comrade: When you make an attack against an enemy who has already been attacked this round, you gain +Rank bonus dice."
       }
     ],
     "startingWargear": [],
@@ -4430,8 +4430,8 @@
     "influenceModifier": 0,
     "abilities": [
       {
-        "name": "Battlefield Medic",
-        "description": "You may perform Medicae tests as a Simple Action rather than an Action in combat. When you successfully heal a Wound, the target also recovers 1d3 Shock."
+        "name": "Field Medic",
+        "description": "Field Medic: When you make a Medicae test during combat on a Dying character, add +Double Rank bonus dice."
       }
     ],
     "startingWargear": [],
@@ -4465,7 +4465,7 @@
     "abilities": [
       {
         "name": "Voice of Command",
-        "description": "As a Simple Action, you may issue an order to an ally with the ASTRA MILITARUM keyword within 12m. That ally gains +Rank bonus dice on their next test."
+        "description": "Voice of Command: As a Combat Action, you may issue an order to allies with the [REGIMENT] keyword who are able to hear you. Issuing orders requires a DN 1 Leadership test to order a single ally, adding +2 DN for each additional ally. Orders can be found on the sidebar below."
       }
     ],
     "startingWargear": [],
@@ -4498,8 +4498,8 @@
     "influenceModifier": 0,
     "abilities": [
       {
-        "name": "Raider",
-        "description": "When attacking a Surprised or Prone target, you gain +Rank ED on your attack."
+        "name": "Innate Cruelty",
+        "description": "Innate Cruelty: You add +Double Rank bonus dice to all Intimidation Interaction attacks you make."
       }
     ],
     "startingWargear": [],
@@ -4530,8 +4530,8 @@
     "influenceModifier": 0,
     "abilities": [
       {
-        "name": "Blood Frenzy",
-        "description": "When you kill an enemy in melee combat, you immediately gain +Rank bonus dice on your next melee attack test."
+        "name": "The Scent of Blood",
+        "description": "The Scent of Blood: You become Frenzied when an enemy is killed within 10 metres of you. While Frenzied, you add +Rank ED to all melee attacks you make. In addition, gain +1d3 Corruption."
       }
     ],
     "startingWargear": [],
@@ -4563,8 +4563,8 @@
     "influenceModifier": 0,
     "abilities": [
       {
-        "name": "Plague Carrier",
-        "description": "You are immune to the Poisoned condition. Enemies that wound you in melee must pass a DN 3 Toughness test or gain the Poisoned condition."
+        "name": "Inured to Suffering",
+        "description": "Inured to Suffering: You add +Rank to both your Resolve and your Determination. In addition, gain +1d3 Corruption."
       }
     ],
     "startingWargear": [],
@@ -4597,8 +4597,8 @@
     "influenceModifier": -1,
     "abilities": [
       {
-        "name": "Expendable",
-        "description": "You gain +Rank to your Determination. However, you may not refuse orders from characters with the ASTRA MILITARUM keyword of higher rank."
+        "name": "Death Sentence",
+        "description": "Death Sentence: Your life is forfeit anyway, so what is there left to fear? When you fail a Resolve Test, you may choose to suffer 1d3 Shock immediately to count as having passed that Resolve Test instead."
       }
     ],
     "startingWargear": [],
@@ -4633,8 +4633,8 @@
     "influenceModifier": 1,
     "abilities": [
       {
-        "name": "Linguistic Mastery",
-        "description": "You know additional languages equal to twice your Scholar rank. You gain +Rank bonus dice on all Scholar tests related to translation or linguistics. Once per scene, you may automatically comprehend the gist of a spoken or written passage in an unfamiliar language."
+        "name": "Sanctified Linguist",
+        "description": "Sanctified Linguist: You add +Rank bonus dice on Scholar tests relating to language, and you know Double Rank additional languages. You also gain +Rank Conviction."
       }
     ],
     "startingWargear": [],
@@ -4670,8 +4670,8 @@
     "influenceModifier": 2,
     "abilities": [
       {
-        "name": "Political Advisor",
-        "description": "You gain +Rank bonus dice on all Persuasion and Insight tests when dealing with characters with the IMPERIUM keyword. You may spend a point of Glory to gain a piece of useful information about the political or social situation in the current setting."
+        "name": "Spiritual Advisor",
+        "description": "Spiritual Advisor: You add +Rank bonus dice to Leadership and Persuasion tests when interacting with the Nobility of the Imperium. You also add +Rank to your Conviction."
       }
     ],
     "startingWargear": [],
@@ -4705,8 +4705,8 @@
     "influenceModifier": 0,
     "abilities": [
       {
-        "name": "Zealous Devotion",
-        "description": "You gain +Rank to your Resolve and Conviction. When you fail a Resolve test, you may spend 1 Glory to reroll."
+        "name": "Impetuous Fervour",
+        "description": "Impetuous Fervour: Your youthful zeal makes you quick to action, adding +Double Rank bonus dice to any skill test attempted during the first round of a combat."
       }
     ],
     "startingWargear": [],
@@ -4738,8 +4738,8 @@
     "influenceModifier": 0,
     "abilities": [
       {
-        "name": "Excess of Sensation",
-        "description": "You gain +Rank bonus dice on Initiative tests. When you inflict a Wound on an enemy, you may heal 1 Shock."
+        "name": "Distracting Musk",
+        "description": "Distracting Musk: Characters within 5 metres of you who lack the SLAANESH keyword add +Rank to the DN of all Intelligence and Willpower tests. In addition, gain +1d3 Corruption."
       }
     ],
     "startingWargear": [],
@@ -4772,8 +4772,8 @@
     "influenceModifier": 0,
     "abilities": [
       {
-        "name": "Touched by Change",
-        "description": "Once per session, you may reroll all dice on a single test. You must accept the second result, even if it is worse."
+        "name": "Aura of Change",
+        "description": "Aura of Change: Your Resilience increases by +Rank, and you make roll Determination against Mortal Wounds. In addition, gain +1d3 Corruption."
       }
     ],
     "startingWargear": [],
@@ -4806,8 +4806,8 @@
     "influenceModifier": 0,
     "abilities": [
       {
-        "name": "Void Raider",
-        "description": "You gain +Rank bonus dice on Pilot tests and all tests made in zero-gravity environments. You may reroll up to Rank dice on Initiative tests."
+        "name": "Reavers of the Void",
+        "description": "Reavers of the Void: When you make an attack, if you roll one or more Exalted Icons on the attack, then the minimum damage your attack will inflict, after deductions for your target's Resilience, is equal to the number of Exalted Icons rolled."
       }
     ],
     "startingWargear": [],
@@ -4840,8 +4840,8 @@
     "influenceModifier": 2,
     "abilities": [
       {
-        "name": "Diplomatic Envoy",
-        "description": "You gain +Rank bonus dice on all Persuasion tests. Once per scene, you may make a DN 3 Persuasion test to convince a non-hostile target to hear you out, even if they are normally hostile to your faction."
+        "name": "Careful Words",
+        "description": "Careful Words: When you attempt an Interaction Attack using Persuasion, you receive +Double Rank bonus dice. When resisting Persuasion-based Interaction Attacks, increase your Resolve by +Rank."
       }
     ],
     "startingWargear": [],
@@ -4874,8 +4874,8 @@
     "influenceModifier": 0,
     "abilities": [
       {
-        "name": "Torturer's Craft",
-        "description": "You gain +Rank bonus dice on Medicae tests and Intimidation tests. You are immune to the Fear condition when caused by grotesque or disturbing sights."
+        "name": "Insensible to Pain",
+        "description": "Insensible to Pain: Your maximum Shock is increased by +Rank. Further, when you roll Determination, you may re-roll any die which rolls a 1. You may roll Determination against Mortal Wounds. You cannot wear armour, due to your altered physiology."
       }
     ],
     "startingWargear": [],
@@ -4909,7 +4909,7 @@
     "abilities": [
       {
         "name": "Combat Drugs",
-        "description": "At the start of each combat, roll 1d6 to determine your combat drug effect: 1-2: +1 Strength, 3-4: +1 Agility, 5-6: +1 Toughness. The effect lasts for the duration of the combat."
+        "description": "Hekatarii Prowess: As long as you are not immobilised or Restrained, you may use Agility instead of Toughness when you roll Determination, and you may roll Determination against Mortal Wounds. In addition, enemies attempting to Fall Back must pass an Agility test (DN 2+ Double Rank); failure means that they cannot Fall Back this turn."
       }
     ],
     "startingWargear": [],
@@ -4941,7 +4941,7 @@
     "abilities": [
       {
         "name": "Wild Talent",
-        "description": "You know the Smite power and 2 Minor psychic powers. However, whenever you use a psychic power, if you roll a 1 on the Wrath die, the GM gains 1 additional Ruin."
+        "description": "Self-Taught Witchcraft: You are a psyker; you know a number of randomly determined Minor Psychic Powers equal to 1 +Rank, and you may learn additional Minor Powers. Each time you suffer Perils of the Warp, you lose the power you attempted to use, and must randomly generate a new minor power to replace it. You may not learn Smite or powers from any psychic discipline unless you have ascended and achieved Tier 2 or higher."
       }
     ],
     "startingWargear": [],
@@ -4992,7 +4992,7 @@
     "abilities": [
       {
         "name": "Ace Pilot",
-        "description": "You gain +Rank bonus dice to all Pilot tests. When piloting a vehicle, you may add +Rank to the vehicle's Defence."
+        "description": "Aerial Hunter: While you are PILOT of an AERONAUTICA IMPERIALIS vehicle, the vehicle's Defence is increased by +Rank while it is moving. In addition, you may re-roll up to Rank dice on attacks using the weapons of any AERONAUTICA IMPERIALIS vehicle you are PILOT or CREW of."
       }
     ],
     "startingWargear": [],
@@ -5027,7 +5027,7 @@
     "abilities": [
       {
         "name": "Soul Binding",
-        "description": "You are blind but perceive the world through psychic senses. You are immune to effects that require sight (such as gaze attacks) but suffer +2DN on all tests that normally rely on vision. You gain +Rank bonus dice on Psychic Mastery tests to communicate telepathically."
+        "description": "Soul-bound Psyker: You are a Psyker; you know the Telepathy psychic power and may purchase additional psychic powers from the Telepathy Discipline. If you purchase an access to an additional Discipline, it must be Divination or Theosophamy. You permanently have the Blinded condition, though you can perceive the world well enough as long as you can use your psychic powers. You add +Rank to your Conviction, and you may spend ten minutes entering a trance in order to use the Telepathy psychic power with a range of 1 Light Year rather than 100m. Each use of Telepathy over this distance may only communicate with other Astropaths, and it inflicts 1d3 Shock."
       }
     ],
     "startingWargear": [],
@@ -5078,7 +5078,7 @@
     "abilities": [
       {
         "name": "Monster Hunterz",
-        "description": "When attacking a target whose Size is larger than yours, you gain +Rank ED on your attack."
+        "description": "Monster Hunters: You add +Rank bonus dice to attacks made against enemy Monstrous Creature Threats and Vehicles."
       }
     ],
     "startingWargear": [],
@@ -5112,8 +5112,8 @@
     "influenceModifier": 2,
     "abilities": [
       {
-        "name": "The Lidless Stare",
-        "description": "As an Action, you may open your Warp Eye and target a creature within 12m. The target must make a DN 4 + your Rank Willpower test or suffer 1d3 Mortal Wounds. DAEMON and PSYKER targets suffer +1 Mortal Wound."
+        "name": "Warp Guide",
+        "description": "Warp Guide: You are trained to be able to guide a starship through the Warp. In addition, you are a PSYKER, and may only learn and use Navigator powers. You begin with the Lidless Stare power."
       }
     ],
     "startingWargear": [],
@@ -5150,7 +5150,7 @@
     "abilities": [
       {
         "name": "Battlesuit Ace",
-        "description": "While piloting a Battlesuit, you gain +Rank bonus dice to Ballistic Skill tests and may use the Battlesuit's jet systems to Fly as part of your movement."
+        "description": "A Multitude of Weapons: You may use a Multi-Action to make attacks with multiple weapons at once, so long as those weapons are mounted on your Battlesuit. The DN increase for this Multi-Action is reduced by your Rank."
       }
     ],
     "startingWargear": [],
@@ -5187,8 +5187,8 @@
     "influenceModifier": 1,
     "abilities": [
       {
-        "name": "Assault Doctrine",
-        "description": "When you charge, you gain +Rank ED on your melee attacks for that turn. You may use a jump pack to fly your Speed as part of a charge."
+        "name": "Hammer of Wrath",
+        "description": "Hammer of Wrath: When you charge into melee using your jump pack, all enemies 2 metres of the point where you land must pass an Agility test (DN 2 +Rank) or be knocked Prone."
       }
     ],
     "startingWargear": [],
@@ -5226,7 +5226,7 @@
     "abilities": [
       {
         "name": "Devastation Doctrine",
-        "description": "When making a ranged attack with a Heavy weapon while stationary (did not move this turn), you gain +Rank ED on the attack."
+        "description": "Unrelenting Devastation: When you sacrifice your Move to Brace a Heavy weapon, you may re-roll +Rank dice on attacks with that weapon, and +Rank ED to that weapon's damage."
       }
     ],
     "startingWargear": [],
@@ -5268,7 +5268,7 @@
     "abilities": [
       {
         "name": "Daemon Hunter",
-        "description": "You gain +Rank ED on all attacks against targets with the DAEMON keyword. You are immune to the Fear and Terror conditions when caused by DAEMON creatures. You know the Smite power and 2 Sanctic Discipline powers."
+        "description": "Daemon-Hunter: You are a Psyker; you begin play with the Rites of Banishment psychic power. You may purchase additional powers from the Sanctic discipline."
       }
     ],
     "startingWargear": [],
@@ -5326,7 +5326,7 @@
     "abilities": [
       {
         "name": "Dark Sorcery",
-        "description": "You know Smite and 3 powers from the Dark Hereticus or your god's discipline. When you manifest a psychic power, you may add +Rank bonus dice to the Psychic Mastery test by suffering 1 Corruption."
+        "description": "Sorcery: You are a psyker; you have all the Universal psyker abilities, you know the Smite psychic power. You know the Dark Hereticus discipline, and receive one power from that Discipline, and you may select one other Psychic Discipline of your choice to learn powers from. In addition, you gain 1d3x4 Corruption when you select this Archetype."
       }
     ],
     "startingWargear": [],
@@ -5387,7 +5387,7 @@
     "abilities": [
       {
         "name": "Rising Crescendo",
-        "description": "After making a melee attack, you may immediately move up to half your Speed without provoking free attacks. You gain +Rank to your Defence while in melee combat."
+        "description": "We Dance the Dance of Death: Once per round, when you are missed by an attack, you may spend 1 Glory to move up to half your Speed (round up) in any direction."
       }
     ],
     "startingWargear": [],
@@ -5427,8 +5427,8 @@
     "influenceModifier": 3,
     "abilities": [
       {
-        "name": "The Emperor's Finest",
-        "description": "You gain +Rank to your Defence and Resilience. You may reroll up to Rank dice on any test once per round. You are immune to Fear and Terror."
+        "name": "Magisterium Lex Ultima",
+        "description": "Magisterium Lex Ultima: You answer only to the Emperor. You gain +Rank bonus dice whenever you make a social Skill Test against another character with the IMPERIUM keyword. In addition, allies with the IMPERIAL keyword add +Rank to their Resolve when within 10m of you."
       }
     ],
     "startingWargear": [],

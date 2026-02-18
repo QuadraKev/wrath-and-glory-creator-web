@@ -3,7 +3,7 @@
     "id": "primitive_armour",
     "name": "Primitive Armour",
     "type": "heavy",
-    "description": "Crude but effective protection cobbled together from whatever materials are at hand. This may include scavenged metal plates, hardened leather, bone, or other improvised materials.",
+    "description": "Rarely capable of withstanding the horrors of the 41st Millennium, this can encompass anything from thick beast pelts to scaly xenos leathers to full suits of roughly hammered metal plates.",
     "ar": 2,
     "traits": [
       "Bulk (2)"
@@ -20,7 +20,7 @@
     "id": "bodyglove",
     "name": "Bodyglove",
     "type": "light",
-    "description": "A form-fitting suit of flexible synthetic materials that provides minimal protection but allows full freedom of movement. Often worn under other armour for added protection.",
+    "description": "Woven from impact-resistant micro fibres, bodygloves offer discreet protection and can be concealed under clothing or layered under heavier armour.",
     "ar": 2,
     "traits": [],
     "value": 3,
@@ -35,7 +35,7 @@
     "id": "mesh_armour",
     "name": "Mesh Armour",
     "type": "light",
-    "description": "Made from thousands of interlocking metal rings, Mesh Armour disperses the force of impacts across its surface. Light and flexible, it offers good protection without sacrificing mobility.",
+    "description": "Made from microscopic thermoplas scales, Mesh Armour is as flexible as cloth under normal circumstances, but reacts instantly to impact and heat, rigidifying and distributing the incoming force across its surface.",
     "ar": 3,
     "traits": [],
     "value": 3,
@@ -66,7 +66,7 @@
     "id": "flak_coat",
     "name": "Flak Coat",
     "type": "medium",
-    "description": "A long coat made from layers of impact-resistant materials. Popular among Imperial officers and civilians who need protection without appearing fully armoured.",
+    "description": "Commissars and other ranking officers of the Imperial Guard favour these lightweight alternatives to standard Flak Armour.",
     "ar": 3,
     "traits": [],
     "value": 4,
@@ -98,7 +98,7 @@
     "id": "tempestus_carapace",
     "name": "Tempestus Carapace",
     "type": "heavy",
-    "description": "Elite Militarum Tempestus Scions wear specially fitted Carapace Armour designed for mobility. The armour's streamlined design allows for rapid deployment from Valkyries and other aircraft.",
+    "description": "Favoured by the elite soldiers of the Militarum Tempestus, the hulking silhouette of Tempestus Carapace is both physically imposing and highly resistant to incoming damage.",
     "ar": 4,
     "traits": [],
     "value": 6,
@@ -219,7 +219,7 @@
     "id": "aquila_power_armour",
     "name": "Aquila Power Armour (Mk VII)",
     "type": "heavy",
-    "description": "Towering suits of battle-hardened Power Armour, Astartes armour is specifically designed to interface with the enhanced physique and genetically engineered organs of the transhuman warriors of the Adeptus Astartes.",
+    "description": "Perfectly fitted to its wearer, Aquila Armour is one of the longest serving patterns of Astartes armour in circulation, having proven its worth time and again in a galaxy eternally at war.",
     "ar": 5,
     "traits": [
       "Powered (3)"
@@ -237,7 +237,7 @@
     "id": "mark_x_tacticus_armour",
     "name": "Mark X Tacticus Armour",
     "type": "heavy",
-    "description": "The standard armour of Primaris Space Marines. The Mark X Tacticus represents the pinnacle of power armour design, combining the best elements of previous marks with new innovations from Cawl.",
+    "description": "The staggering proportions of the Primaris Astartes demand their own pattern of Power Armour. The Tacticus Mark X takes inspiration from ancient armour while utilising 41st Millennium advancements in ballistic deflection to forge a suit that represents the pinnacle of Astartes glory.",
     "ar": 5,
     "traits": [
       "Powered (4)"
@@ -256,7 +256,7 @@
     "id": "terminator_armour",
     "name": "Terminator Armour",
     "type": "heavy",
-    "description": "Massive suits of armour that turn their wearers into unstoppable juggernauts. Originally designed for boarding actions in the hostile environments of space hulks, Terminator Armour can withstand tremendous punishment.",
+    "description": "Tactical Dreadnought Armour was originally designed for void ship boarding actions. These relics from the early centuries of the Imperium boast incredibly thick armour plates and oversized actuators that raise the already massive Space Marines to giant-like stature. Whilst wearing this armour you are considered Large.",
     "ar": 7,
     "traits": [
       "Cumbersome",
@@ -275,7 +275,7 @@
     "id": "corsair_armour",
     "name": "Corsair Armour",
     "type": "light",
-    "description": "Lightweight armour favoured by Aeldari Corsairs who prize mobility over protection. Often decorated with the colours and symbols of the Corsair's fleet.",
+    "description": "A combination of shimmering mesh and polished wraithbone plate, the cut of this armour is as varied, intimidating, and regal as the corsairs who wear it.",
     "ar": 3,
     "traits": [],
     "value": 4,
@@ -291,7 +291,7 @@
     "id": "aeldari_mesh_armour",
     "name": "Aeldari Mesh Armour",
     "type": "light",
-    "description": "Woven from the psycho-plastic materials of the Craftworlds, Aeldari Mesh Armour is lighter and more flexible than its Imperial equivalent while offering comparable protection.",
+    "description": "Woven from microscopic wraithbone scales, this armour is similar in function but superior in action to the crude imitation that is Human-made mesh.",
     "ar": 3,
     "traits": [],
     "value": 4,
@@ -307,7 +307,7 @@
     "id": "rune_armour",
     "name": "Rune Armour",
     "type": "medium",
-    "description": "Worn by Aeldari Farseers and Warlocks, Rune Armour incorporates protective psychic runes that ward against both physical and warp-based attacks. The runes flare with power when deflecting blows.",
+    "description": "This breastplate of specially crafted wraithbone psychically moulds itself to its wearer. Drawing upon the etheric vibrations of the psychically attuned Aeldari, this armour turns away blows before they connect.",
     "ar": 4,
     "traits": [
       "Power Field"
@@ -327,7 +327,7 @@
     "id": "heavy_mesh_armour",
     "name": "Heavy Mesh Armour",
     "type": "heavy",
-    "description": "A heavier version of standard Aeldari mesh, incorporating additional layers of protective materials. Favoured by Corsair leaders who expect to face significant enemy fire.",
+    "description": "Based on standard Aeldari armour, this suit adds stiffened psycho-active plates to vulnerable areas. The resulting armour provides increased protection while only minimally limiting the wearer's agility.",
     "ar": 4,
     "traits": [],
     "value": 6,
@@ -343,7 +343,7 @@
     "id": "ork_flak",
     "name": "Ork Flak",
     "type": "light",
-    "description": "Orks cobble together whatever protection they can from scrap metal and salvage. The result is surprisingly effective, if somewhat ramshackle in appearance.",
+    "description": "Though a crude imitation of Imperial flak, Ork armour makes up for its primitive design with thick slabs of ablative material and heavy leather padding.",
     "ar": 2,
     "traits": [],
     "value": 2,
@@ -358,7 +358,7 @@
     "id": "eavy_armour",
     "name": "'Eavy Armour",
     "type": "heavy",
-    "description": "Made from thick plates of salvaged metal bolted together, 'Eavy Armour provides substantial protection. Only the biggest and toughest Orks can bear its weight.",
+    "description": "This armour may consist of heavy plates of scrap plasteel bolted together, or even simply screwed into an Ork's tough flesh. Named for its weight, the thickness of this armour makes it more durable, with a bulk that reassures its wearer and barely impinges on their combat ability.",
     "ar": 4,
     "traits": [
       "Bulk (1)",
@@ -376,7 +376,7 @@
     "id": "mega_armour",
     "name": "Mega Armour",
     "type": "heavy",
-    "description": "The heaviest armour available to Orks, Mega Armour turns its wearer into a walking fortress. Built with looted power systems and salvaged plating, each suit is unique.",
+    "description": "Worn by Meganobz, Mekz, and Warbosses, Mega Armour is about as sophisticated as Ork armour gets. Consisting of heavy metal plates powered by hissing salvaged hydraulics systems, Mega Armour is almost as loud and fearsome as those who wear it. Whilst wearing this armour you are considered Large.",
     "ar": 7,
     "traits": [
       "Cumbersome",
@@ -395,7 +395,7 @@
     "id": "storm_shield",
     "name": "Storm Shield",
     "type": "shield",
-    "description": "A large shield incorporating a power field generator that can deflect even the most devastating attacks. Storm Shields are used by elite Space Marine warriors.",
+    "description": "A Storm Shield is a heavy, slab-like shield of reinforced ceramite and armaplas, augmented by an integrated field projector that wreaths it in crackling force. They are most often wielded by designated bodyguards of high priority individuals, or Astartes close combat specialists of renown.",
     "ar": 2,
     "traits": [
       "Bulk (1)",
@@ -417,7 +417,7 @@
     "id": "refractor_field",
     "name": "Refractor Field",
     "type": "field",
-    "description": "A personal force field generator that disperses incoming attacks across a shimmering energy barrier. Common among Imperial officers and nobles who can afford such protection.",
+    "description": "Often concealed in ornate jewellery, these small field emitters remain dormant until activated, whereupon they erect a short range protective field around an individual. The Refractor Field dissipates incoming attacks with telltale dazzling bursts of multispectral light.",
     "ar": 3,
     "traits": [
       "Power Field"
@@ -436,7 +436,7 @@
     "id": "rosarius",
     "name": "Rosarius",
     "type": "field",
-    "description": "A holy symbol of the Ecclesiarchy that incorporates a potent conversion field. The Rosarius is worn by Chaplains and high-ranking members of the Adeptus Ministorum as a sign of their faith and office.",
+    "description": "A symbol of office for the Adeptus Ministorum and Chaplains of the Space Marines, the Rosarius takes the form of an Imperial Aquila or a gothic cross with a jewel or skull emblazoned at its centre. The Rosarius houses a powerful conversion field emitter, protecting the wearer from attack by converting all incoming energy into sparkling flashes of light.",
     "ar": 4,
     "traits": [
       "Power Field"
@@ -457,7 +457,7 @@
     "id": "aspect_armour",
     "name": "Aspect Armour",
     "type": "light",
-    "description": "Each Aspect Shrine maintains its own pattern of armour, designed to complement the fighting style of that Aspect. The armour incorporates psychic wards that offer protection beyond its physical form.",
+    "description": "This armour is particularly light, ensuring the wearer is not hampered in any action, while still offering respectable protection from damage.",
     "ar": 4,
     "traits": [
       "Invulnerable"
@@ -477,7 +477,7 @@
     "id": "heavy_aspect_armour",
     "name": "Heavy Aspect Armour",
     "type": "medium",
-    "description": "Worn by Aspect Warriors who favour durability over speed, Heavy Aspect Armour provides increased protection while still incorporating the psychic wards common to all Aspect equipment.",
+    "description": "Some Warrior Paths are more dangerous than others. These warriors are provided stronger armour bearing additional plating. When a blow cannot be avoided, it must be endured.",
     "ar": 5,
     "traits": [
       "Invulnerable"
@@ -497,7 +497,7 @@
     "id": "ghostplate_armour",
     "name": "Ghostplate Armour",
     "type": "medium",
-    "description": "Worn by Drukhari Archons and other high-ranking Dark Eldar, Ghostplate Armour incorporates advanced stealth and protection technologies. It can turn aside blows that would otherwise prove fatal.",
+    "description": "Favoured by Archons, these supple armour plates formed around pockets of lighter-than-air gas and incorporating a force shield, providing substantial protection while allowing impressive mobility.",
     "ar": 3,
     "traits": [
       "Invulnerable"
@@ -516,7 +516,7 @@
     "id": "holo_suit",
     "name": "Holo-Suit",
     "type": "light",
-    "description": "Worn by Harlequins, the Holo-Suit projects a constantly shifting holographic display that makes its wearer nearly impossible to target. The effect is as disorienting as it is beautiful.",
+    "description": "Holo-projectors distort the wearer's outline into a fractal kaleidoscope as they move, making them almost impossible to target. The faster the Harlequin moves, the stronger the effect. Holo-suits don't have DR; rather, they raise the wearer's Defence and Stealth by 2.",
     "ar": 0,
     "traits": [
       "+2 Defence",
@@ -535,7 +535,7 @@
     "id": "incubus_warsuit",
     "name": "Incubus Warsuit",
     "type": "medium",
-    "description": "The distinctive armour of the Incubi, these warsuits are ornate and heavily layered. Each is a work of art, reflecting the wearer's dedication to the art of killing.",
+    "description": "Like a dark reflection of Asuryani Aspect Warriors, Incubi employ expertly crafted warsuits fitted with extremely resilient protection. Although Aspect Armour is slightly more resistant, few Incubi are concerned; no armour is proof against the correct killing strike.",
     "ar": 4,
     "traits": [],
     "value": 6,
@@ -552,7 +552,7 @@
     "id": "kabalite_armour",
     "name": "Kabalite Armour",
     "type": "light",
-    "description": "The standard armour of Drukhari Kabalite Warriors, this lightweight protection allows for rapid movement. Often decorated with the colours and sigils of the wearer's Kabal.",
+    "description": "Commorrite Kabals employ extremely well-crafted armour reinforced with lightweight plates of advanced materials to allow maximum mobility.",
     "ar": 3,
     "traits": [],
     "value": 4,
@@ -568,7 +568,7 @@
     "id": "mesh_implants",
     "name": "Mesh Implants",
     "type": "light",
-    "description": "Created by the Haemonculi, Mesh Implants are protective materials woven beneath the skin. The disturbing appearance of these subcutaneous protections inspires fear in those who witness them.",
+    "description": "Haemonculi often outfit themselves or their minions with subcutaneous armour implants. Such augmentations are always hideously obvious. The recipient usually appreciates the fear their enhanced form evokes in others.",
     "ar": 3,
     "traits": [
       "Fear (2)"
@@ -587,7 +587,7 @@
     "id": "reaper_armour",
     "name": "Reaper Armour",
     "type": "heavy",
-    "description": "The heavy armour of Dark Reapers is designed for stability when firing their devastating Reaper Launchers. The suit's weight allows the wearer to brace against the weapon's recoil.",
+    "description": "The Dark Reapers' armour is bulky, partly to stabilise their weapons, and partly because their astonishing firepower makes them a priority target. An Aeldari wearing Reaper Armour always counts as Braced when firing weapons with the Heavy Trait.",
     "ar": 5,
     "traits": [
       "Cumbersome",
@@ -609,7 +609,7 @@
     "id": "wych_suit",
     "name": "Wych Suit",
     "type": "light",
-    "description": "Wyches of the Drukhari wear minimal armour, relying on speed and agility for protection. Their suits are designed to display their athletic forms while providing token physical protection.",
+    "description": "Wych Cults teach that the best way to avoid being wounded is to simply not be where the enemy strikes. Their armour is minimal, leaving large areas of skin exposed as if to taunt their opponent. Wyches prefer to rely on impeccable skill, speed, and combat drugs.",
     "ar": 1,
     "traits": [],
     "value": 5,
@@ -626,7 +626,7 @@
     "id": "force_shield_aeldari",
     "name": "Force Shield",
     "type": "field",
-    "description": "An Aeldari Force Shield projects a shimmering barrier of psychic energy. Used by Autarchs and other commanders, these shields can deflect incoming attacks through pure willpower.",
+    "description": "This miniature shield projector is similar to the Imperium's Rosarius but with superior damage resistance.",
     "ar": 3,
     "traits": [
       "Power Field"
@@ -646,7 +646,7 @@
     "id": "gloom_field",
     "name": "Gloom Field",
     "type": "field",
-    "description": "Used by Rangers and other scouts, the Gloom Field projects an area of deep shadow around the wearer. Allies within this zone benefit from the concealment it provides.",
+    "description": "When there is no cover to hide in, a Gloom Field simply creates it. Rangers within 10m of a Gloom Field always count as being in partial Cover (+1 Defence, stacks with Cameleoline Cloak bonuses).",
     "ar": 0,
     "traits": [
       "Creates partial cover within 10m"
@@ -665,7 +665,7 @@
     "id": "mistshield",
     "name": "Mistshield",
     "type": "field",
-    "description": "A Corsair Mistshield creates a shimmering field of displaced light and sound that makes its bearer difficult to target. The field flickers with iridescent colours when struck.",
+    "description": "A slightly less powerful version of the Forceshield, the Mistshield is commonly used by Aeldari Corsairs.",
     "ar": 2,
     "traits": [
       "Power Field"
@@ -685,7 +685,7 @@
     "id": "serpent_shield_platform",
     "name": "Serpent Shield Platform",
     "type": "field",
-    "description": "A larger defensive field used on Aeldari vehicles and heavy weapons platforms. The Serpent Shield can absorb significant amounts of incoming fire before failing.",
+    "description": "A shield emitter on a mobile anti-grav platform, protecting the operator and allies within 10m. It can also be overloaded to create a blast of energy: once per encounter, all enemies within 10m of the platform must make a DN 5 Agility Test. Success causes them to become Staggered, while failure knocks them Prone.",
     "ar": 1,
     "traits": [
       "Power Field"
@@ -705,7 +705,7 @@
     "id": "shadowfield",
     "name": "Shadowfield",
     "type": "field",
-    "description": "The ultimate personal protection of Drukhari Archons, the Shadowfield wraps its wearer in absolute darkness. Almost nothing can penetrate this barrier while it remains active.",
+    "description": "These Drukhari shields are beyond the ken of most mortals. Shadow Fields create a shadowy distortion around the wearer, providing considerable protection, but it collapses entirely once penetrated. The first time an attack penetrates a Shadow Field and causes at least 1 Wound, the Shadow Field breaks and requires a successful DN 4 Tech-use (Int) Test to repair before it will work again.",
     "ar": 4,
     "traits": [
       "Power Field"
@@ -725,7 +725,7 @@
     "id": "shimmershield",
     "name": "Shimmershield",
     "type": "field",
-    "description": "An advanced defensive field used by Craftworld commanders. The Shimmershield projects an area effect that can protect nearby allies from incoming fire.",
+    "description": "Primarily used by the Dire Avengers, Shining Spears, and Asuryani or Anhrathe leaders, a Shimmershield protects against incoming fire and melee attacks, the dissipating force causing the characteristic 'shimmer' effect.",
     "ar": 2,
     "traits": [
       "Power Field"
@@ -745,7 +745,7 @@
     "id": "sicarian_battle_armour",
     "name": "Sicarian Battle Armour",
     "type": "medium",
-    "description": "Worn by Sicarian Ruststalkers and Infiltrators, this armour incorporates advanced stealth systems and servo-enhanced mobility. Each suit is permanently bonded to its wearer.",
+    "description": "Installed onto the heavily augmented bodies of Sicarians, this thin, flexible armour perfectly protects the few biological parts of a killcade without limiting their crucial mobility.",
     "ar": 4,
     "traits": [
       "Powered (2)"
@@ -764,7 +764,7 @@
     "id": "bullgryn_plate",
     "name": "Bullgryn Plate",
     "type": "heavy",
-    "description": "Heavy armour designed for Bullgryns, these massive plates of carapace can turn aside heavy weapons fire. The armour must be sized for the Ogryn's immense bulk.",
+    "description": "The Departmento Munitorum discovered long ago that Ogryns were strong enough to wear recycled vehicle armour, and have since used any surplus to outfit Bullgryns in what is known as Bullgryn Plate.",
     "ar": 5,
     "traits": [
       "Cumbersome"
@@ -783,7 +783,7 @@
     "id": "kroot_armour",
     "name": "Kroot Armour",
     "type": "light",
-    "description": "Made from layered hide and chitin, Kroot Armour reflects the species' preference for natural materials. It is surprisingly effective while allowing full freedom of movement.",
+    "description": "Little more than scraps of metal strung together to protect the few vulnerable parts of Kroot biology, this armour is cobbled together with care to ensure it does not inhibit movement.",
     "ar": 2,
     "traits": [],
     "value": 3,
@@ -799,7 +799,7 @@
     "id": "mark_x_phobos_armour",
     "name": "Mark X Phobos Armour",
     "type": "heavy",
-    "description": "A lighter variant of Mark X armour designed for Vanguard units. The Phobos pattern incorporates enhanced stealth systems and is favoured by Reivers and Incursors.",
+    "description": "[AI-Generated] A lighter variant of Mark X armour designed for Vanguard units. The Phobos pattern incorporates enhanced stealth systems and is favoured by Reivers and Incursors.",
     "ar": 5,
     "traits": [
       "Powered (3)"
@@ -818,7 +818,7 @@
     "id": "artificer_power_armour",
     "name": "Artificer Power Armour",
     "type": "heavy",
-    "description": "Custom-crafted by master artificers, each suit of Artificer Armour is a unique masterwork. Worn by Captains and other heroes, this armour offers superior protection to standard patterns.",
+    "description": "[AI-Generated] Custom-crafted by master artificers, each suit of Artificer Armour is a unique masterwork. Worn by Captains and other heroes, this armour offers superior protection to standard patterns.",
     "ar": 6,
     "traits": [
       "Powered (4)"
@@ -836,7 +836,7 @@
     "id": "tactical_dreadnought_armour",
     "name": "Tactical Dreadnought Armour (Terminator)",
     "type": "heavy",
-    "description": "The mighty Terminator armour represents the pinnacle of personal protection for Space Marines. Originally designed for space hulk boarding actions, it can withstand tremendous punishment.",
+    "description": "[AI-Generated] The mighty Terminator armour represents the pinnacle of personal protection for Space Marines. Originally designed for space hulk boarding actions, it can withstand tremendous punishment.",
     "ar": 7,
     "traits": [
       "Cumbersome",
@@ -968,7 +968,7 @@
     "id": "arbites_carapace_aoa",
     "name": "Arbites Carapace (Abundance of Apocrypha)",
     "type": "heavy",
-    "description": "The appearance of the Adeptus Arbites strikes fear into the hearts of criminals and the lawless. Their armour is constructed from dense plasteel plates overlaying a synthetic polyplastic fibre weave produced by the Adeptus Mechanicus using methods they do not disclose to outsiders. The carapace armour is designed to be clipped together and worn over a light, breathable bodyglove, the armour carefully constructed and tailor-made to the proportions of the Arbitrator concerned.",
+    "description": "The appearance of the Adeptus Arbites strikes fear into the hearts of criminals and the lawless. Their armour is constructed from dense plasteel plates overlaying a synthetic polyplastic fibre weave produced by the Adeptus Mechanicus using methods they do not disclose to outsiders. The carapace armour is designed to be clipped together and worn over a light, breathable bodyglove, the armour carefully constructed and tailor-made to the proportions of the Arbitrator concerned. Given that the armour must be worn for hours at a time, often during periods of extreme physical exertion, it must be comfortable, and it succeeds surprisingly well on these fronts.",
     "ar": 4,
     "traits": [],
     "value": 6,
@@ -984,7 +984,7 @@
     "id": "assassinorum_bodyglove_aoa",
     "name": "Assassinorum Bodyglove (Abundance of Apocrypha)",
     "type": "light",
-    "description": "The Officio Assassinorum make extensive use of synskin bodygloves. Once sprayed onto the body, synskin forms a black outer skin which protects the wearer from the environment and augments the metabolism. It is bio-reactive and moulds itself to the wearer's form. It is also non-reflective and reduces the wearer's infrared profile, facilitating infiltration. The suit is completely environmentally sealed and contains sufficient oxygen for 12 hours. GAS weapons, even ones absorbed through the skin, cannot penetrate synskin.",
+    "description": "The Officio Assassinorum make extensive use of synskin bodygloves. Once sprayed onto the body, synskin forms a black outer skin which protects the wearer from the environment and augments the wearer's metabolism. It is bio-reactive and moulds itself to the wearer's form. It is also non-reflective and reduces the wearer's infrared profile, facilitating infiltration.",
     "ar": 2,
     "traits": [
       "Agile"
@@ -1166,7 +1166,7 @@
     "id": "thunder_mark_i_aoa",
     "name": "Thunder Mark I (Abundance of Apocrypha)",
     "type": "power",
-    "description": "Thunder armour was first worn by the Emperor's Thunder Warriors during the reunification wars on Terra. Neither fully enclosed nor airtight, it cannot be considered True power armour, but paved the way for future designs. It featured a powered and heavily armoured torso that gave the wearer immense upper-body strength for grappling and subduing their foes.",
+    "description": "Thunder armour was first worn by the Emperor's Thunder Warriors during the reunification wars on Terra. Neither fully enclosed nor airtight, it cannot be considered true power armour, but paved the way for future designs. It featured a powered and heavily armoured torso that gave the wearer immense upper-body strength for grappling and subduing their foes.",
     "ar": 5,
     "traits": [
       "Bulky (1)",
@@ -1185,7 +1185,7 @@
     "id": "crusade_mark_ii_aoa",
     "name": "Crusade Mark II (Abundance of Apocrypha)",
     "type": "power",
-    "description": "Following the conquest of the Sol System, the Emperor re-equipped his Space Marine Legions with Crusade armour, the first iteration of True power armour. Environmentally sealed, it could protect the wearer from the very worst battlefield conditions, even in the depths of space. It featured articulated sections of hoop-shaped armour, both on the torso and legs, giving the Space Marine unparalleled mobility, and a more efficient power system to prevent overheating.",
+    "description": "Following the conquest of the Sol System, the Emperor re-equipped his Space Marine Legions with Crusade armour, the first iteration of true power armour. Environmentally sealed, it could protect the wearer from the very worst battlefield conditions, even in the depths of space.",
     "ar": 5,
     "traits": [
       "Powered (4)"
@@ -1223,7 +1223,7 @@
     "id": "maximus_mark_iv_aoa",
     "name": "Maximus Mark IV (Abundance of Apocrypha)",
     "type": "power",
-    "description": "As the Great Crusade expanded across the galaxy, and the size of the Imperium reached what was to be its zenith, a new variant of armour was produced by the Mechanicus of Mars. The main development of the 'Maximus' suit was to abandon the use of abutting plates in favour of larger, inflexible armoured casings. These were easier to produce and maintain, with only a slight reduction in mobility.",
+    "description": "As the Great Crusade expanded across the galaxy, and the size of the Imperium reached what was to be its zenith, a new variant of armour was produced by the Mechanicus of Mars. The main development of the \"Maximus\" suit was to abandon the use of abutting plates in favour of larger, inflexible armoured casings. These were easier to produce and maintain, with only a slight reduction in mobility, and thanks to technology uncovered as the Crusade progressed, were lighter as well as being more efficient protection.",
     "ar": 5,
     "traits": [
       "Powered (3)"
@@ -1241,7 +1241,7 @@
     "id": "heresy_mark_v_aoa",
     "name": "Heresy Mark V (Abundance of Apocrypha)",
     "type": "power",
-    "description": "With the outbreak of rebellion, supply lines fell into turmoil and it became difficult to repair and maintain the advanced Mk4 suits. Mk5 was created as a stopgap, a style with the flexibility to use new or old materials depending on availability. In many cases older, heavy power cabling was used, which created a weak point on the chest. The armour was reinforced with an extra skin plate fitted over the top using molecular bonding studs, thus giving 'Heresy Armour' its distinctive appearance.",
+    "description": "With the outbreak of rebellion, supply lines fell into turmoil and it became difficult to repair and maintain the advanced Mk4 suits. Mk5 was created as a stopgap, a style with the flexibility to use new or old materials depending on availability. In many cases older, heavy power cabling was used, which created a weak point on the chest. The armour was reinforced with an extra skin plate fitted over the top using molecular bonding studs, thus giving \"Heresy Armour\" its distinctive appearance.",
     "ar": 5,
     "traits": [
       "Powered (3)"
@@ -1259,7 +1259,7 @@
     "id": "corvus_mark_vi_aoa",
     "name": "Corvus Mark VI (Abundance of Apocrypha)",
     "type": "power",
-    "description": "The Mk6 'Corvus Suit' also saw much action during the Horus Heresy. It featured dual technology circuits that allowed the replacement of rare or sophisticated parts with common or basic alternatives. It also included fail-safes such as duplicate power cabling. The left shoulder pad, which always took the brunt of enemy fire, retained the studded Mk5 construction to be easily replaced.",
+    "description": "The Mk6 \"Corvus Suit\" also saw much action during the Horus Heresy. It featured dual technology circuits that allowed the replacement of rare or sophisticated parts with common or basic alternatives. It also included fail-safes such as duplicate power cabling. The left shoulder pad, which always took the brunt of enemy fire, retained the studded Mk5 construction to be easily replaced.",
     "ar": 5,
     "traits": [
       "Powered (3)"
@@ -1277,7 +1277,7 @@
     "id": "errant_mark_viii_aoa",
     "name": "Errant Mark VIII (Abundance of Apocrypha)",
     "type": "power",
-    "description": "In the millennia between the Horus Heresy and the Indomitus Crusade, only one new mark of armour was developed, a clear demonstration of how much progress and innovation have stagnated. 'Errant' armour is a development on the Mk7 design, addressing some of the flaws and weak points of that type. It adds extra plating on the torso to further protect the energy cabling, and a high gorget, or collar, covering the weak point at the neck join.",
+    "description": "In the millennia between the Horus Heresy and the Indomitus Crusade, only one new mark of armour was developed, a clear demonstration of how much progress and innovation have stagnated. \"Errant\" armour is a development on the Mk7 design, addressing some of the flaws and weak points of that type. It adds extra plating on the torso to further protect the energy cabling, and a high gorget, or collar, covering the weak point at the neck join (the only drawback is that older helmets are not easily compatible).",
     "ar": 6,
     "traits": [
       "Powered (3)"
@@ -2338,7 +2338,7 @@
     "id": "voidplate_harness",
     "name": "Voidplate Harness",
     "type": "medium",
-    "description": "This enhanced suit of mesh features reinforced plating across vulnerable areas, a system of energy fields to screen against harmful radiation and extreme temperatures, and a gravity distortion matrix allowing the wearer to operate efficiently in zero gravity.",
+    "description": "This enhanced suit of mesh features reinforced plating across vulnerable areas, a system of energy fields to screen against harmful radiation and extreme temperatures, and a gravity distortion matrix allowing the wearer to operate efficiently in zero gravity environments. It is most often employed in Corsair boarding actions, but rarely distributed widely due to the complexity of its maintenance.",
     "ar": 5,
     "traits": [
       "Bulk (1)"

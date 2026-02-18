@@ -561,7 +561,7 @@
   {
     "id": "primaris",
     "name": "Primaris Astartes",
-    "description": "The Primaris Space Marines represent the next step in the evolution of the Emperor's Angels of Death. Created using new gene-seed technology, they are taller, stronger, and more resilient than their firstborn brothers.",
+    "description": "[AI-Generated] The Primaris Space Marines represent the next step in the evolution of the Emperor's Angels of Death. Created using new gene-seed technology, they are taller, stronger, and more resilient than their firstborn brothers.",
     "cost": 198,
     "speed": 7,
     "size": "Average",
@@ -980,7 +980,7 @@
   {
     "id": "aeldari",
     "name": "Aeldari",
-    "description": "The Aeldari are an ancient race whose empire once spanned the galaxy. Now they dwell on craftworlds, following strict paths of discipline to guard against the predations of the Chaos God Slaanesh.",
+    "description": "Ancient and inscrutable, the Aeldari are an innately psychic Species whose technologically-advanced empire once spanned the stars. Taller and slighter than Humans, their undeniably alien appearance is compounded by their eerily elegant movements. Though they have life spans millennia longer than Humans, their Species is dying and close to extinction, a pain they feel acutely with their unnaturally deep emotions.",
     "cost": 10,
     "speed": 8,
     "size": "Average",
@@ -1282,7 +1282,7 @@
   {
     "id": "ork",
     "name": "Ork",
-    "description": "Orks are brutal, warlike aliens that live for battle. Their muscular, green-skinned bodies are incredibly resilient, and their savage minds are focused entirely on fighting.",
+    "description": "The green-skinned scourge of the galaxy, Orks are brutal but cunning beasts that live to wage war; all else is secondary to their battlelust. Taller, wider, and far more muscular than any natural Human, Orks are incredibly tough, and will continue to charge into combat undeterred after losing limbs. The only strategies and tactics they employ against the Imperium are frontline assaults, using any means available to create carnage as quickly as they can.",
     "cost": 20,
     "speed": 6,
     "size": "Average",
@@ -1450,7 +1450,7 @@
   {
     "id": "kroot",
     "name": "Kroot",
-    "description": "Strange and savage xenos hailing from the fringes of the galaxy, the inscrutable Kroot are known for serving many Species as mercenaries. Their primitive warrior culture is intertwined with a unique quirk of their biology — the Kroot devour the corpses of their defeated foes and absorb their genetic traits.",
+    "description": "Strange and savage xenos hailing from the fringes of the galaxy, the inscrutable Kroot are known for serving many Species as mercenaries. Their primitive warrior culture is intertwined with a unique quirk of their biology — the Kroot devour the corpses of their defeated foes and absorb their genetic traits, evolving through consumption.",
     "cost": 22,
     "speed": 7,
     "size": "Average",
@@ -1673,15 +1673,15 @@
       },
       {
         "name": "Undead",
-        "effect": "You are immune to effects which would stun or knock out other foes. You can never suffer Shock damage. However, you are distant and disconnected from mortal existence, and thus suffer +2DN to all Interaction tests, and cannot use the Cunning or Insight skills."
+        "effect": "You are immune to effects which would stun or knock out other foes. You can never suffer Shock damage. However, you are distant and disconnected from mortal existence, and thus can never generate Glory."
       },
       {
         "name": "Wraithbone Form",
-        "effect": "You are immune to the Bleeding, Exhausted, On Fire, Poisoned, and Prone conditions. You do not need to breathe or eat. You are immune to all environmental hazards (diseases, poisons, vacuum, radiation, etc.)."
+        "effect": "Your robotic body is extremely resistant to harm. Your body naturally has an Armour Rating of 5. In addition, your Determination increases by +3d, and you are immune to the Bleeding, Exhausted, and Poisoned conditions, and cannot suffocate. You are healed using the Tech skill instead of Medicae."
       },
       {
-        "name": "Spirit Sight",
-        "effect": "The reality of the physical world is dim and unclear to you, perceived only through a psychic link. You can perceive through walls and other solid barriers to a range equal to twice your Willpower in metres. However, your Passive Awareness is always 1, and you suffer +2DN to all ranged attacks against targets more than 12m away."
+        "name": "Wraithsight",
+        "effect": "A Ghost Warrior is a PSYKER, but may not purchase any psychic powers, not even Smite. Further, you are immune to any penalties or hindrances to vision from any source other than the Warp. However, whenever you roll a Complication on any Test, you become Blinded as the Warp clouds your vision. This can only be removed by a DN 8 Willpower test as a Combat Action, or by an ASURYANI PSYKER within 10m succeeding on a DN 4 Leadership (Wil) Test."
       }
     ],
     "keywords": [
@@ -1730,16 +1730,16 @@
     "woundBonus": 0,
     "abilities": [
       {
-        "name": "Auramite Physiology",
-        "effect": "You are immune to the Bleeding and Poisoned Conditions. You gain +1 bonus die to any test related to one of the 19 Space Marine implants if the GM agrees it is appropriate (you possess superior versions of these implants)."
+        "name": "Aegis of the Emperor",
+        "effect": "A Custodian may roll Determination against Mortal Wounds."
       },
       {
-        "name": "Defender of the Emperor",
-        "effect": "Add +Rank Icons to any successful attack against a Mob. Your Resolve increases by +2."
+        "name": "Indomitable, Incorruptible",
+        "effect": "You add +2 to your Resolve, and you automatically succeed on all Corruption Tests. Your Maximum Wounds are increased by +4."
       },
       {
-        "name": "Watchers of the Throne",
-        "effect": "You have a duty to protect the Emperor and the Imperium. You suffer +2DN on all Interaction tests with Xenos, and may not willingly cooperate with characters who have the CHAOS keyword."
+        "name": "Solitary",
+        "effect": "A Custodian maintains a unique pool of Glory. They may save up to 3 points of Glory, and they cannot save points into the group pool, nor can they spend Glory generated by anyone else."
       }
     ],
     "keywords": [
@@ -1853,16 +1853,16 @@
     "woundBonus": 0,
     "abilities": [
       {
-        "name": "Power Through Pain",
-        "effect": "You thrive on the suffering of others. Whenever you inflict a Wound or Mortal Wound on another creature, you gain 1 Pain Token. You may spend Pain Tokens as follows: 1 Token: +1 bonus die to your next test. 3 Tokens: Heal 1 Wound. 5 Tokens: Gain +1 to your Speed for the remainder of the scene."
+        "name": "Blade Artist",
+        "effect": "When you make an attack with a melee weapon, increase the weapon's AP by 1 (i.e., from -1 to -2) if you shift one or more Icons on the attack. This stacks with effects such as the Rending weapon trait."
       },
       {
-        "name": "Aeldari",
-        "effect": "You may select talents which have a prerequisite of Aeldari species."
+        "name": "The Thirst",
+        "effect": "You cannot recover Shock by spending Wrath, or through the Medicae skill. However, you recover 1d3+Rank shock whenever you inflict Shock on an opponent, kill an opponent, whenever you succeed at an Intimidation interaction attack, or when an enemy fails a Resolve test. The GM gains +1 Ruin whenever you become Exhausted."
       },
       {
-        "name": "Withered Soul",
-        "effect": "You cannot gain the PSYKER keyword under any circumstances. You suffer 1 Shock at the start of each day you do not inflict suffering on another sentient creature."
+        "name": "She Who Thirsts",
+        "effect": "Reduce your Maximum Shock by an amount equal to your Corruption Level."
       }
     ],
     "keywords": [
@@ -2026,16 +2026,16 @@
     "woundBonus": 0,
     "abilities": [
       {
-        "name": "Eye of the Ancestors",
-        "effect": "Kin share judgement data on their foes. When you make a successful attack against a target, allies who can see you gain +1 bonus die on their next attack against the same target."
+        "name": "Shrouded Soul",
+        "effect": "Your Conviction increases by +2."
+      },
+      {
+        "name": "Kin-Bond",
+        "effect": "On any Interaction-based skill test with another member of your own Kindred, gain +2 bonus dice."
       },
       {
         "name": "Cloneskein",
-        "effect": "Select one Cloneskein Trait during character creation."
-      },
-      {
-        "name": "Resilient",
-        "effect": "Your Determination increases by +1."
+        "effect": "Kin receive the ABHUMAN keyword. In addition, each Kin may select a single Cloneskein Trait from the list below."
       }
     ],
     "keywords": [
@@ -2056,7 +2056,7 @@
           "abilities": [
             {
               "name": "Fortified Constitution",
-              "effect": "You gain +1 to your Toughness attribute."
+              "effect": "You ignore penalties or DN increases on skill tests due to visual conditions, as if you were wearing Preysense Goggles."
             }
           ]
         },
@@ -2066,7 +2066,7 @@
           "abilities": [
             {
               "name": "Enhanced Cognition",
-              "effect": "You gain +1 to your Intellect attribute."
+              "effect": "In combat, each round, if you have not yet acted, your side may Keep the Initiative without spending Ruin, but only if you are the next character to act."
             }
           ]
         },
@@ -2076,7 +2076,7 @@
           "abilities": [
             {
               "name": "Warrior Instincts",
-              "effect": "You gain +1 to your Initiative attribute."
+              "effect": "You gain +2 bonus dice on all Toughness tests to resist the effects of suffocation, extreme heat and cold, and radiation."
             }
           ]
         },
@@ -2119,16 +2119,16 @@
     "woundBonus": 0,
     "abilities": [
       {
+        "name": "Cerebral Unit",
+        "effect": "Your Conviction increases by +2. Further, if you are slain, your Cerebral Unit (CU) can be retrieved and a new body built for you."
+      },
+      {
+        "name": "Synthetic Emotion",
+        "effect": "You increase the DN of any interaction-based skill test with any character who lacks the LEAGUES OF VOTANN keyword by +1."
+      },
+      {
         "name": "Machine",
-        "effect": "You are immune to the Bleeding, Poisoned, and On Fire conditions. You do not need to breathe, eat, or sleep. You are immune to diseases and poisons."
-      },
-      {
-        "name": "Eye of the Ancestors",
-        "effect": "Kin share judgement data on their foes. When you make a successful attack against a target, allies who can see you gain +1 bonus die on their next attack against the same target."
-      },
-      {
-        "name": "Resilient",
-        "effect": "Your Determination increases by +1."
+        "effect": "Ironkin receive the ROBOT keyword. You are immune to the Bleeding and Poisoned conditions and cannot suffocate. You are healed using the Tech skill instead of Medicae."
       }
     ],
     "keywords": [
@@ -2233,16 +2233,16 @@
     "woundBonus": 0,
     "abilities": [
       {
-        "name": "Warp Eye",
-        "effect": "You possess a third eye that can perceive the Warp. You can use Navigator Powers. Your Warp Eye must be covered or closed at all times when not in use, as its gaze can be lethal to others."
+        "name": "Hereditary Mutations",
+        "effect": "+2DN to all Interaction tests with IMPERIAL characters."
       },
       {
-        "name": "Noble Born",
-        "effect": "You hail from a Navigator House and have considerable privilege and wealth. You gain +1 Influence."
+        "name": "Warp Eye",
+        "effect": "You are considered to be a PSYKER, though you may only select Navigator powers. When you use Psyniscience, double the range for each Exalted Icon shifted. Further, you cannot gain Corruption from looking into or being exposed to the Warp."
       },
       {
         "name": "Mutant",
-        "effect": "Navigators bear the mark of mutation. They suffer +1DN on all Fellowship-based tests when dealing with individuals who are aware of their mutant nature (outside of their own House)."
+        "effect": "Your form has been twisted and distorted by exposure to the Immaterium and by generations of inbreeding. Choose one of your attributes; any skill tests using that attribute suffer +1DN, and any derived traits from that attribute are reduced by 1."
       }
     ],
     "keywords": [
@@ -2276,16 +2276,16 @@
     "woundBonus": 0,
     "abilities": [
       {
-        "name": "Soulless",
-        "effect": "You have no presence in the Warp. You cannot be targeted by Psychic Powers, and Psychic Powers cannot affect you. You cannot gain the PSYKER keyword under any circumstances."
+        "name": "Abhorrent Presence",
+        "effect": "+2DN to all interaction tests with non-pariah characters. +4DN to interaction tests with PSYKERS. Pariahs reduce their Influence by 1."
       },
       {
-        "name": "Anathema",
-        "effect": "PSYKER characters within 6m of you suffer +2DN to all Psychic Mastery tests. DAEMON characters within 6m of you suffer +2DN to all tests."
+        "name": "Psychic Abomination",
+        "effect": "A pariah cannot be directly affected by psychic powers or other warp phenomena, whether positive or negative. A pariah can never gain the PSYKER keyword, nor can they ever gain Faith points or any other ability that requires drawing upon the Warp for power. Any psychic powers attempted or targeted within a number of metres of the Pariah equal to their Willpower increase their DN by twice the Pariah's Rank."
       },
       {
-        "name": "Unnatural Aura",
-        "effect": "You make others deeply uncomfortable. You suffer +2DN to all Fellowship-based tests. Animals will not willingly approach you."
+        "name": "Untouchable",
+        "effect": "A pariah cannot gain Corruption from warp phenomena, and they automatically succeed at Resolve tests caused by DAEMONS."
       }
     ],
     "keywords": [
@@ -2318,15 +2318,15 @@
     "abilities": [
       {
         "name": "Immortal",
-        "effect": "When you die, you return to life after a period of time determined by the GM (typically 1d6 hours for minor deaths, longer for more traumatic ones). You do not age."
+        "effect": "You cannot die, though you can still suffer injuries and enter the dying state. If you would suffer from Annihilation (suffering damage equal to twice your Maximum Wounds), you instead suffer Traumatic Injuries equal to the game's Tier +2. You automatically remove one Traumatic Injury after each Respite."
       },
       {
-        "name": "Ancient Knowledge",
-        "effect": "You have lived for centuries or millennia. You gain +Double Rank bonus dice to Scholar tests relating to history or ancient lore."
+        "name": "Clandestine Connections",
+        "effect": "You've accumulated a great many contacts across your impossibly long life. When you attempt an Influence test, you may roll additional Wrath dice equal to the game's Tier, but a Wrath Complication means that some detail of your immortal nature has reached those who would hunt you."
       },
       {
-        "name": "Hidden Nature",
-        "effect": "You must keep your immortality secret, or risk drawing unwanted attention. The Inquisition and other factions would consider you a dangerous anomaly."
+        "name": "Despised by the Unholy",
+        "effect": "If a Perpetual is present in a game, the GM's starting and maximum Ruin are increased by 1."
       }
     ],
     "keywords": [
@@ -2361,16 +2361,16 @@
     "woundBonus": 0,
     "abilities": [
       {
-        "name": "Bestial",
-        "effect": "You possess natural weapons (horns, claws, etc.) that deal Strength +1 ED damage with AP 0."
+        "name": "Reviled Abhuman",
+        "effect": "+2DN to all Interaction tests with characters who do not possess the CHAOS keyword."
       },
       {
-        "name": "Abhuman",
-        "effect": "You suffer +2DN on all Fellowship-based tests when dealing with individuals who are prejudiced against mutants."
+        "name": "Horns",
+        "effect": "You may make melee attacks with your horns ([S]+5 +2ED / AP -). Thus, you are always armed."
       },
       {
-        "name": "Sure-Footed",
-        "effect": "You ignore difficult terrain penalties when moving."
+        "name": "Bestial Savagery",
+        "effect": "+1d to all Intimidation tests."
       }
     ],
     "keywords": [
@@ -2406,7 +2406,7 @@
     "abilities": [
       {
         "name": "For the Greater Good (Shas)",
-        "effect": "When you assist an ally using Athletics, Ballistic Skill, or Survival, you may halve the number of dice you would add and add that many Icons to the test you are assisting."
+        "effect": "When you assist an ally using Awareness, Ballistic Skill, or Stealth, you may halve the number of dice you would add and add that many Icons to the test you are assisting."
       },
       {
         "name": "Dull Soul",
