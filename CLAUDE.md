@@ -11,6 +11,8 @@ Vanilla JavaScript with global object pattern (no modules/bundling). Each file d
 - `js/derived-stats.js` - Calculated stats (defence, resilience, wounds, etc.)
 - `js/xp-calculator.js` - XP cost calculations
 - `js/app.js` - Main controller, tab/section navigation
+- `tabs/settings-tab.js` - Settings tab with source book filtering (gold toggle buttons)
+- `tabs/references-tab.js` - Reference browser for all game data categories (searchable, filterable)
 - `tabs/*.js` - UI modules following `init()` / `refresh()` / `render()` pattern
 - `css/styles.css` - Unified dark theme with CSS variables
 - `index.html` - Main HTML structure with sidebar + content layout
@@ -25,7 +27,7 @@ All game data lives in `data/` as JSON:
 | `armor.json` | Armor with AR, traits, keywords |
 | `ascension-packages.json` | Ascension advancement packages |
 | `backgrounds.json` | Origins, accomplishments, goals |
-| `equipment.json` | Non-weapon, non-armor gear with effects |
+| `equipment.json` | Non-weapon, non-armor gear with effects (includes augmetics with `category: "augmetic"`) |
 | `glossary.json` | Game terms, traits, keywords for tooltip system |
 | `injuries-corruption.json` | Memorable/traumatic injuries, corruption table, mutations |
 | `psychic-powers.json` | Psychic powers, prayers, litanies |
@@ -92,7 +94,7 @@ The Character Sheet tab (`tabs/character-sheet-tab.js`) uses a responsive 2-colu
 
 - `.sheet-body` — 2-column CSS grid on wide screens, stacks on narrow
   - `.sheet-body-left` — Attributes+Traits | Skills (`.sheet-columns` 2-col sub-grid), then Psychic Powers, Species Abilities, Archetype Abilities, Ascension, Talents, Injuries & Corruption, Background, Notes
-  - `.sheet-body-right` — Weapons, Armor, Equipment
+  - `.sheet-body-right` — Weapons, Armor, Augmetics, Equipment
 
 On screens <1400px, `.sheet-body` is not a grid and the two divs stack vertically. The `.sheet-columns` sub-grid within the left column goes single-column at <=768px.
 
@@ -138,6 +140,10 @@ Source material PDFs are available locally for reference:
 15. **Source book + page annotations**: Every data item annotated with source book + page number. `DataLoader.formatSourcePage()` / `getSourceDisplayName()`. Glossary entries also annotated.
 16. **Mobile layout fixes**: `#app` uses `position: fixed; inset: 0` instead of `height: 100vh`. Header/tab-nav/footer use `flex-shrink: 0`. Scroll chaining prevented with `overscroll-behavior: contain`. Tab nav scrollbar hidden. Sidebar-backdrop moved inside `#app` (required for stacking context).
 17. **Comprehensive data audit**: Visual PDF audit of all 12 data files across all 10 sources (988 entries). Found and fixed 1,184 issues: 251 wrong values, 342 fabricated entries, 305 truncated texts, 286 minor wording differences. Fixes include: ability renames (49 Apocrypha + 5 Core), psychic power renames (Minor Invocation→Malefic Invitation, Warpspeed→Warptime), Kin species subOption corrections, `[AI-Generated]` annotations for entries with no source PDF text, and glossary sync to bestiary. Audit reports stored in `audit-reports-v2/`.
+18. **In-text reference removal**: Stripped ~117 inline page references (e.g., "(Wrath & Glory Rulebook, page 177)") from data description fields. The `source`/`page` fields are preserved — only redundant in-text citations removed.
+19. **Settings tab**: Moved source book selection from Setting builder section to dedicated Settings tab. Gold toggle buttons (matching bestiary style). Glossary tab respects source filters.
+20. **References tab**: Searchable, filterable reference browser for 10 categories: Talents, Weapons, Armor, Augmetics, Equipment, Psychic Powers, Weapon Upgrades, Ascension Packages, Archetype Abilities, Species Abilities, and Mutations. Species abilities deduplicated across variants.
+21. **Augmetics separation**: Added 36 new augmetic entries (1 Forsaken System, 35 Apocrypha v9) to equipment.json. Separated augmetics as their own wargear category with dedicated filter buttons in Wargear tab, References tab, and own section on Character Sheet (between Armor and Equipment). Augmetics with stat bonuses display bonuses in sheet and references. Total: 67 augmetic entries.
 
 ## Builder Section Order
 
