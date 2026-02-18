@@ -1,0 +1,595 @@
+// References Tab - Browse and search game options (talents, weapons, armor, etc.)
+
+const ReferencesTab = {
+    searchQuery: '',
+    currentCategory: 'all',
+    allEntries: [],
+    expandedEntries: new Set(),
+
+    CATEGORIES: [
+        { key: 'talents', name: 'Talent', pluralName: 'Talents' },
+        { key: 'weapons', name: 'Weapon', pluralName: 'Weapons' },
+        { key: 'armor', name: 'Armor', pluralName: 'Armor' },
+        { key: 'equipment', name: 'Equipment', pluralName: 'Equipment' },
+        { key: 'psychicPowers', name: 'Psychic Power', pluralName: 'Psychic Powers' },
+        { key: 'weaponUpgrades', name: 'Weapon Upgrade', pluralName: 'Weapon Upgrades' },
+        { key: 'ascensionPackages', name: 'Ascension Package', pluralName: 'Ascension Packages' },
+        { key: 'archetypeAbilities', name: 'Archetype Ability', pluralName: 'Archetype Abilities' },
+        { key: 'speciesAbilities', name: 'Species Ability', pluralName: 'Species Abilities' },
+        { key: 'mutations', name: 'Mutation', pluralName: 'Mutations' }
+    ],
+
+    init() {
+        document.getElementById('references-search').addEventListener('input', (e) => {
+            this.searchQuery = e.target.value.toLowerCase();
+            this.renderEntries();
+        });
+
+        document.querySelectorAll('.references-filter-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.references-filter-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                this.currentCategory = btn.dataset.category;
+                this.renderEntries();
+            });
+        });
+
+        this.loadEntries();
+    },
+
+    loadEntries() {
+        this.allEntries = [];
+
+        // Talents
+        for (const t of DataLoader.getAllTalents()) {
+            this.allEntries.push({
+                ...t, category: 'talents', categoryName: 'Talent', categoryPluralName: 'Talents',
+                briefInfo: `${t.cost} XP`,
+                searchText: `${t.name} ${t.effect || ''} ${t.flavor || ''}`.toLowerCase()
+            });
+        }
+
+        // Weapons
+        for (const w of DataLoader.getAllWeapons()) {
+            const typeLabel = w.type === 'melee' ? 'Melee' : 'Ranged';
+            this.allEntries.push({
+                ...w, category: 'weapons', categoryName: 'Weapon', categoryPluralName: 'Weapons',
+                briefInfo: typeLabel,
+                searchText: `${w.name} ${w.description || ''} ${(w.traits || []).join(' ')} ${(w.keywords || []).join(' ')}`.toLowerCase()
+            });
+        }
+
+        // Armor
+        for (const a of DataLoader.getAllArmor()) {
+            this.allEntries.push({
+                ...a, category: 'armor', categoryName: 'Armor', categoryPluralName: 'Armor',
+                briefInfo: `AR ${a.ar}`,
+                searchText: `${a.name} ${a.description || ''} ${(a.traits || []).join(' ')} ${(a.keywords || []).join(' ')}`.toLowerCase()
+            });
+        }
+
+        // Equipment
+        for (const e of DataLoader.getAllEquipment()) {
+            const catLabel = e.category ? e.category.charAt(0).toUpperCase() + e.category.slice(1) : '';
+            this.allEntries.push({
+                ...e, category: 'equipment', categoryName: 'Equipment', categoryPluralName: 'Equipment',
+                briefInfo: catLabel,
+                searchText: `${e.name} ${e.description || ''} ${e.effect || ''}`.toLowerCase()
+            });
+        }
+
+        // Psychic Powers
+        for (const p of DataLoader.getAllPsychicPowers()) {
+            this.allEntries.push({
+                ...p, category: 'psychicPowers', categoryName: 'Psychic Power', categoryPluralName: 'Psychic Powers',
+                briefInfo: p.discipline || '',
+                searchText: `${p.name} ${p.effect || ''} ${p.discipline || ''}`.toLowerCase()
+            });
+        }
+
+        // Weapon Upgrades
+        for (const u of DataLoader.getAllWeaponUpgrades()) {
+            const typeLabel = u.type ? u.type.charAt(0).toUpperCase() + u.type.slice(1).replace(/_/g, ' ') : '';
+            this.allEntries.push({
+                ...u, category: 'weaponUpgrades', categoryName: 'Weapon Upgrade', categoryPluralName: 'Weapon Upgrades',
+                briefInfo: typeLabel,
+                searchText: `${u.name} ${u.description || ''} ${u.effect || ''}`.toLowerCase()
+            });
+        }
+
+        // Ascension Packages
+        for (const pkg of DataLoader.getAscensionPackages()) {
+            this.allEntries.push({
+                ...pkg, category: 'ascensionPackages', categoryName: 'Ascension Package', categoryPluralName: 'Ascension Packages',
+                briefInfo: pkg.cost || '',
+                searchText: `${pkg.name} ${pkg.description || ''} ${(pkg.benefits || []).join(' ')}`.toLowerCase()
+            });
+        }
+
+        // Archetype Abilities
+        for (const arch of DataLoader.getAllArchetypes()) {
+            if (arch.abilities) {
+                for (const ability of arch.abilities) {
+                    this.allEntries.push({
+                        id: `${arch.id}_ability_${ability.name.toLowerCase().replace(/[^a-z0-9]+/g, '_')}`,
+                        name: ability.name,
+                        description: ability.description,
+                        source: arch.source,
+                        page: arch.page,
+                        parentName: arch.name,
+                        category: 'archetypeAbilities',
+                        categoryName: 'Archetype Ability',
+                        categoryPluralName: 'Archetype Abilities',
+                        briefInfo: `From: ${arch.name}`,
+                        searchText: `${ability.name} ${ability.description || ''} ${arch.name}`.toLowerCase()
+                    });
+                }
+            }
+        }
+
+        // Species Abilities
+        for (const sp of DataLoader.getAllSpecies()) {
+            if (sp.abilities) {
+                for (const ability of sp.abilities) {
+                    const text = ability.effect || ability.description || '';
+                    this.allEntries.push({
+                        id: `${sp.id}_ability_${ability.name.toLowerCase().replace(/[^a-z0-9]+/g, '_')}`,
+                        name: ability.name,
+                        description: text,
+                        source: sp.source,
+                        page: sp.page,
+                        parentName: sp.name,
+                        category: 'speciesAbilities',
+                        categoryName: 'Species Ability',
+                        categoryPluralName: 'Species Abilities',
+                        briefInfo: `From: ${sp.name}`,
+                        searchText: `${ability.name} ${text} ${sp.name}`.toLowerCase()
+                    });
+                }
+            }
+
+            // Sub-option abilities (homeworld, chapter, etc.)
+            const subOptions = sp.subOptions;
+            if (subOptions) {
+                const configs = Array.isArray(subOptions) ? subOptions : [subOptions];
+                for (const config of configs) {
+                    if (config.options) {
+                        for (const opt of config.options) {
+                            if (opt.abilities) {
+                                for (const ability of opt.abilities) {
+                                    const text = ability.effect || ability.description || '';
+                                    this.allEntries.push({
+                                        id: `${sp.id}_${opt.id}_ability_${ability.name.toLowerCase().replace(/[^a-z0-9]+/g, '_')}`,
+                                        name: ability.name,
+                                        description: text,
+                                        source: sp.source,
+                                        page: sp.page,
+                                        parentName: `${sp.name} \u2014 ${opt.name}`,
+                                        category: 'speciesAbilities',
+                                        categoryName: 'Species Ability',
+                                        categoryPluralName: 'Species Abilities',
+                                        briefInfo: `From: ${opt.name}`,
+                                        searchText: `${ability.name} ${text} ${sp.name} ${opt.name}`.toLowerCase()
+                                    });
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        // Mutations
+        for (const m of DataLoader.getMutations()) {
+            const sevLabel = m.severity ? m.severity.charAt(0).toUpperCase() + m.severity.slice(1) : '';
+            this.allEntries.push({
+                ...m, category: 'mutations', categoryName: 'Mutation', categoryPluralName: 'Mutations',
+                source: m.source || 'core',
+                briefInfo: sevLabel,
+                searchText: `${m.name} ${m.description || ''} ${m.effect || ''}`.toLowerCase()
+            });
+        }
+
+        // Sort alphabetically
+        this.allEntries.sort((a, b) => a.name.localeCompare(b.name));
+
+        this.renderEntries();
+    },
+
+    getFilteredEntries() {
+        return this.allEntries.filter(entry => {
+            if (this.currentCategory !== 'all' && entry.category !== this.currentCategory) return false;
+            if (entry.source && !State.isSourceEnabled(entry.source)) return false;
+            if (this.searchQuery && !entry.searchText.includes(this.searchQuery)) return false;
+            return true;
+        });
+    },
+
+    renderEntries() {
+        const container = document.getElementById('references-content');
+        const entries = this.getFilteredEntries();
+
+        if (entries.length === 0) {
+            container.innerHTML = `<div class="glossary-empty"><p>No entries found${this.searchQuery ? ` for "${this.searchQuery}"` : ''}.</p></div>`;
+            return;
+        }
+
+        if (this.currentCategory === 'all') {
+            const grouped = this.groupByCategory(entries);
+            container.innerHTML = grouped.map(group => `
+                <div class="glossary-group">
+                    <h3 class="glossary-group-title">${group.categoryPluralName} (${group.entries.length})</h3>
+                    <div class="glossary-entries">
+                        ${group.entries.map(entry => this.renderEntry(entry)).join('')}
+                    </div>
+                </div>
+            `).join('');
+        } else {
+            container.innerHTML = `
+                <div class="glossary-entries">
+                    ${entries.map(entry => this.renderEntry(entry)).join('')}
+                </div>
+            `;
+        }
+
+        this.bindEntryClicks(container);
+        this.enhanceDescriptions(container);
+    },
+
+    groupByCategory(entries) {
+        const groups = new Map();
+        const categoryOrder = this.CATEGORIES.map(c => c.key);
+
+        for (const entry of entries) {
+            if (!groups.has(entry.category)) {
+                groups.set(entry.category, {
+                    category: entry.category,
+                    categoryPluralName: entry.categoryPluralName,
+                    entries: []
+                });
+            }
+            groups.get(entry.category).entries.push(entry);
+        }
+
+        return categoryOrder.filter(cat => groups.has(cat)).map(cat => groups.get(cat));
+    },
+
+    renderEntry(entry) {
+        const isExpanded = this.expandedEntries.has(entry.id);
+        return `
+            <div class="glossary-entry ${isExpanded ? 'expanded' : ''}" data-entry-id="${entry.id}">
+                <div class="glossary-entry-header">
+                    <span class="glossary-entry-expand">&#9654;</span>
+                    <span class="glossary-entry-name">${this.escapeHtml(entry.name)}</span>
+                    <span class="glossary-entry-brief">${this.escapeHtml(entry.briefInfo)}</span>
+                    <span class="glossary-entry-category">${entry.categoryName}</span>
+                </div>
+                <div class="glossary-entry-body ${isExpanded ? '' : 'hidden'}">
+                    ${this.renderBody(entry)}
+                </div>
+            </div>
+        `;
+    },
+
+    renderBody(entry) {
+        let html = '';
+
+        switch (entry.category) {
+            case 'talents':
+                html += this.renderTalentBody(entry);
+                break;
+            case 'weapons':
+                html += this.renderWeaponBody(entry);
+                break;
+            case 'armor':
+                html += this.renderArmorBody(entry);
+                break;
+            case 'equipment':
+                html += this.renderEquipmentBody(entry);
+                break;
+            case 'psychicPowers':
+                html += this.renderPsychicPowerBody(entry);
+                break;
+            case 'weaponUpgrades':
+                html += this.renderWeaponUpgradeBody(entry);
+                break;
+            case 'ascensionPackages':
+                html += this.renderAscensionPackageBody(entry);
+                break;
+            case 'archetypeAbilities':
+            case 'speciesAbilities':
+                html += this.renderAbilityBody(entry);
+                break;
+            case 'mutations':
+                html += this.renderMutationBody(entry);
+                break;
+        }
+
+        // Source reference
+        const sourceRef = DataLoader.formatSourcePage(entry);
+        if (sourceRef) {
+            html += `<div class="source-ref">${sourceRef}</div>`;
+        }
+
+        // Copy button
+        const plainText = this.stripHtml(entry.description || entry.effect || '');
+        html += `<button class="btn-copy" data-copy-name="${this.escapeAttr(entry.name)}" data-copy-desc="${this.escapeAttr(plainText)}">Copy</button>`;
+
+        return html;
+    },
+
+    // ---- Category-specific body renderers ----
+
+    renderTalentBody(entry) {
+        let html = '<div class="ref-stats">';
+        html += `<div class="ref-stat"><span class="ref-label">Cost:</span> ${entry.cost} XP</div>`;
+        if (entry.prerequisites && Object.keys(entry.prerequisites).length > 0) {
+            html += `<div class="ref-stat"><span class="ref-label">Prerequisites:</span> ${this.formatPrerequisites(entry.prerequisites)}</div>`;
+        }
+        html += '</div>';
+        if (entry.effect) {
+            html += `<div class="glossary-entry-description">${entry.effect}</div>`;
+        }
+        if (entry.flavor) {
+            html += `<div class="ref-flavor">${entry.flavor}</div>`;
+        }
+        return html;
+    },
+
+    renderWeaponBody(entry) {
+        let html = '<div class="ref-stats">';
+
+        // Damage
+        const dmg = entry.damage;
+        if (dmg) {
+            const attrMap = { strength: 'S', toughness: 'T', agility: 'A', initiative: 'I', willpower: 'Wil', intellect: 'Int', fellowship: 'Fel' };
+            const attrLabel = attrMap[dmg.attribute] || dmg.attribute || '';
+            const bonusStr = dmg.bonus > 0 ? ` + ${dmg.bonus}` : dmg.bonus < 0 ? ` ${dmg.bonus}` : '';
+            html += `<div class="ref-stat"><span class="ref-label">Damage:</span> ${dmg.base} + ${attrLabel}${bonusStr}</div>`;
+        }
+
+        html += `<div class="ref-stat"><span class="ref-label">ED:</span> ${entry.ed} &nbsp; <span class="ref-label">AP:</span> ${entry.ap}</div>`;
+
+        if (entry.range != null) {
+            if (typeof entry.range === 'object') {
+                html += `<div class="ref-stat"><span class="ref-label">Range:</span> S: ${entry.range.short}m / M: ${entry.range.medium}m / L: ${entry.range.long}m</div>`;
+            } else {
+                html += `<div class="ref-stat"><span class="ref-label">Range:</span> ${entry.range}</div>`;
+            }
+        }
+
+        if (entry.traits && entry.traits.length > 0) {
+            html += `<div class="ref-stat"><span class="ref-label">Traits:</span> ${entry.traits.join(', ')}</div>`;
+        }
+        if (entry.keywords && entry.keywords.length > 0) {
+            html += `<div class="ref-stat"><span class="ref-label">Keywords:</span> ${entry.keywords.join(', ')}</div>`;
+        }
+        html += `<div class="ref-stat"><span class="ref-label">Value:</span> ${entry.value} &nbsp; <span class="ref-label">Rarity:</span> ${entry.rarity}</div>`;
+        html += '</div>';
+
+        if (entry.description) {
+            html += `<div class="glossary-entry-description">${entry.description}</div>`;
+        }
+        return html;
+    },
+
+    renderArmorBody(entry) {
+        let html = '<div class="ref-stats">';
+        html += `<div class="ref-stat"><span class="ref-label">Type:</span> ${entry.type ? entry.type.charAt(0).toUpperCase() + entry.type.slice(1) : ''}</div>`;
+        html += `<div class="ref-stat"><span class="ref-label">AR:</span> ${entry.ar}</div>`;
+        if (entry.traits && entry.traits.length > 0) {
+            html += `<div class="ref-stat"><span class="ref-label">Traits:</span> ${entry.traits.join(', ')}</div>`;
+        }
+        if (entry.keywords && entry.keywords.length > 0) {
+            html += `<div class="ref-stat"><span class="ref-label">Keywords:</span> ${entry.keywords.join(', ')}</div>`;
+        }
+        html += `<div class="ref-stat"><span class="ref-label">Value:</span> ${entry.value} &nbsp; <span class="ref-label">Rarity:</span> ${entry.rarity}</div>`;
+        html += '</div>';
+        if (entry.description) {
+            html += `<div class="glossary-entry-description">${entry.description}</div>`;
+        }
+        return html;
+    },
+
+    renderEquipmentBody(entry) {
+        let html = '<div class="ref-stats">';
+        if (entry.effect) {
+            html += `<div class="ref-stat"><span class="ref-label">Effect:</span> ${entry.effect}</div>`;
+        }
+        html += `<div class="ref-stat"><span class="ref-label">Value:</span> ${entry.value} &nbsp; <span class="ref-label">Rarity:</span> ${entry.rarity}</div>`;
+        html += '</div>';
+        if (entry.description) {
+            html += `<div class="glossary-entry-description">${entry.description}</div>`;
+        }
+        return html;
+    },
+
+    renderPsychicPowerBody(entry) {
+        let html = '<div class="ref-stats">';
+        html += `<div class="ref-stat"><span class="ref-label">Discipline:</span> ${entry.discipline}</div>`;
+        html += `<div class="ref-stat"><span class="ref-label">DN:</span> ${entry.dn} &nbsp; <span class="ref-label">Activation:</span> ${entry.activation}</div>`;
+        html += `<div class="ref-stat"><span class="ref-label">Duration:</span> ${entry.duration} &nbsp; <span class="ref-label">Range:</span> ${entry.range}</div>`;
+        html += `<div class="ref-stat"><span class="ref-label">Cost:</span> ${entry.cost} XP</div>`;
+        html += '</div>';
+        if (entry.effect) {
+            html += `<div class="glossary-entry-description">${entry.effect}</div>`;
+        }
+        if (entry.potency) {
+            html += `<div class="ref-stats" style="margin-top:8px"><div class="ref-stat"><span class="ref-label">Potency:</span> ${entry.potency}</div></div>`;
+        }
+        return html;
+    },
+
+    renderWeaponUpgradeBody(entry) {
+        let html = '<div class="ref-stats">';
+        if (entry.effect) {
+            html += `<div class="ref-stat"><span class="ref-label">Effect:</span> ${entry.effect}</div>`;
+        }
+        if (entry.restrictions) {
+            const parts = [];
+            if (entry.restrictions.weaponType) parts.push(`Weapon type: ${entry.restrictions.weaponType}`);
+            if (entry.restrictions.excludeTraits) parts.push(`Excludes traits: ${entry.restrictions.excludeTraits.join(', ')}`);
+            if (entry.restrictions.requireKeywords) parts.push(`Requires keywords: ${entry.restrictions.requireKeywords.join(', ')}`);
+            if (entry.restrictions.requireOneOf) parts.push(`Requires: ${entry.restrictions.requireOneOf.join(' or ')}`);
+            if (parts.length > 0) {
+                html += `<div class="ref-stat"><span class="ref-label">Restrictions:</span> ${parts.join('; ')}</div>`;
+            }
+        }
+        html += `<div class="ref-stat"><span class="ref-label">Value:</span> ${entry.value} &nbsp; <span class="ref-label">Rarity:</span> ${entry.rarity}</div>`;
+        html += '</div>';
+        if (entry.description) {
+            html += `<div class="glossary-entry-description">${entry.description}</div>`;
+        }
+        return html;
+    },
+
+    renderAscensionPackageBody(entry) {
+        let html = '<div class="ref-stats">';
+        html += `<div class="ref-stat"><span class="ref-label">Cost:</span> ${entry.cost}</div>`;
+        if (entry.prerequisites && Object.keys(entry.prerequisites).length > 0) {
+            html += `<div class="ref-stat"><span class="ref-label">Prerequisites:</span> ${this.formatPrerequisites(entry.prerequisites)}</div>`;
+        }
+        if (entry.benefits && entry.benefits.length > 0) {
+            html += `<div class="ref-stat"><span class="ref-label">Benefits:</span> ${entry.benefits.join('; ')}</div>`;
+        }
+        if (entry.keywordsGained && entry.keywordsGained.length > 0) {
+            html += `<div class="ref-stat"><span class="ref-label">Keywords Gained:</span> ${entry.keywordsGained.join(', ')}</div>`;
+        }
+        html += '</div>';
+        if (entry.description) {
+            html += `<div class="glossary-entry-description">${entry.description}</div>`;
+        }
+        return html;
+    },
+
+    renderAbilityBody(entry) {
+        let html = '';
+        if (entry.parentName) {
+            html += `<div class="ref-parent">From: ${this.escapeHtml(entry.parentName)}</div>`;
+        }
+        if (entry.description) {
+            html += `<div class="glossary-entry-description">${entry.description}</div>`;
+        }
+        return html;
+    },
+
+    renderMutationBody(entry) {
+        let html = '<div class="ref-stats">';
+        if (entry.severity) {
+            html += `<div class="ref-stat"><span class="ref-label">Severity:</span> ${entry.severity.charAt(0).toUpperCase() + entry.severity.slice(1)}</div>`;
+        }
+        if (entry.roll) {
+            html += `<div class="ref-stat"><span class="ref-label">Roll:</span> ${entry.roll}</div>`;
+        }
+        html += '</div>';
+        if (entry.description) {
+            html += `<div class="glossary-entry-description">${entry.description}</div>`;
+        }
+        if (entry.effect) {
+            html += `<div class="ref-stats" style="margin-top:8px"><div class="ref-stat"><span class="ref-label">Effect:</span> ${entry.effect}</div></div>`;
+        }
+        return html;
+    },
+
+    // ---- Helpers ----
+
+    formatPrerequisites(prereqs) {
+        const parts = [];
+        if (prereqs.attributes) {
+            for (const [attr, val] of Object.entries(prereqs.attributes)) {
+                parts.push(`${attr.charAt(0).toUpperCase() + attr.slice(1)} ${val}`);
+            }
+        }
+        if (prereqs.skills) {
+            for (const [skill, val] of Object.entries(prereqs.skills)) {
+                parts.push(`${skill.charAt(0).toUpperCase() + skill.slice(1)} ${val}`);
+            }
+        }
+        if (prereqs.keywords) {
+            parts.push(`Keywords: ${prereqs.keywords.join(', ')}`);
+        }
+        if (prereqs.species) {
+            parts.push(`Species: ${prereqs.species.join(', ')}`);
+        }
+        if (prereqs.talents) {
+            parts.push(`Talents: ${prereqs.talents.join(', ')}`);
+        }
+        if (prereqs.tier) {
+            parts.push(`Tier ${prereqs.tier}+`);
+        }
+        if (prereqs.story) {
+            parts.push(prereqs.story);
+        }
+        if (prereqs.other) {
+            parts.push(prereqs.other);
+        }
+        return parts.join(', ') || 'None';
+    },
+
+    enhanceDescriptions(container) {
+        if (typeof Glossary !== 'undefined' && Glossary.enhanceElement) {
+            container.querySelectorAll('.glossary-entry-description').forEach(desc => {
+                Glossary.enhanceElement(desc);
+            });
+        }
+    },
+
+    bindEntryClicks(container) {
+        container.querySelectorAll('.glossary-entry').forEach(entry => {
+            const header = entry.querySelector('.glossary-entry-header');
+            const body = entry.querySelector('.glossary-entry-body');
+
+            header.addEventListener('click', () => {
+                const entryId = entry.dataset.entryId;
+                const isExpanded = !body.classList.contains('hidden');
+                body.classList.toggle('hidden');
+                entry.classList.toggle('expanded', !isExpanded);
+
+                if (!isExpanded) {
+                    this.expandedEntries.add(entryId);
+                    history.replaceState(null, '', '#references/' + entryId);
+                } else {
+                    this.expandedEntries.delete(entryId);
+                    history.replaceState(null, '', location.pathname + location.search);
+                }
+            });
+        });
+
+        container.querySelectorAll('.btn-copy').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                const name = btn.dataset.copyName;
+                const desc = btn.dataset.copyDesc;
+                const text = `${name}: ${desc}`;
+                navigator.clipboard.writeText(text).then(() => {
+                    btn.textContent = 'Copied!';
+                    setTimeout(() => { btn.textContent = 'Copy'; }, 1500);
+                });
+            });
+        });
+    },
+
+    refresh() {
+        if (this.allEntries.length === 0) {
+            this.loadEntries();
+        } else {
+            this.renderEntries();
+        }
+    },
+
+    stripHtml(html) {
+        const div = document.createElement('div');
+        div.innerHTML = html;
+        return div.textContent || div.innerText || '';
+    },
+
+    escapeAttr(text) {
+        if (!text) return '';
+        return text.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/'/g, '&#39;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    },
+
+    escapeHtml(text) {
+        if (!text) return '';
+        return text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    }
+};

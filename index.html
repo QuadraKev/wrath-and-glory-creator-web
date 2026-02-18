@@ -6,7 +6,7 @@
     <meta name="robots" content="noindex, nofollow">
 
     <title>Wrath and Glory Character Creator</title>
-    <link rel="stylesheet" href="css/styles.css?v=46">
+    <link rel="stylesheet" href="css/styles.css?v=47">
 </head>
 <body>
     <div id="app">
@@ -42,6 +42,7 @@
                 <button class="tab-btn active" data-tab="builder">CHARACTER BUILDER</button>
                 <button class="tab-btn" data-tab="character-sheet">CHARACTER SHEET</button>
                 <button class="tab-btn" data-tab="glossary">GLOSSARY</button>
+                <button class="tab-btn" data-tab="references">REFERENCES</button>
                 <button class="tab-btn" data-tab="settings">SETTINGS</button>
             </div>
         </nav>
@@ -420,6 +421,32 @@
                 </div>
             </div>
 
+            <!-- References Tab -->
+            <div id="tab-references" class="tab-content tab-fullwidth">
+                <div class="glossary-container">
+                    <h2>References</h2>
+                    <div class="glossary-controls">
+                        <input type="text" id="references-search" placeholder="Search references..." class="search-input">
+                        <div class="glossary-filters">
+                            <button class="references-filter-btn active" data-category="all">All</button>
+                            <button class="references-filter-btn" data-category="talents">Talents</button>
+                            <button class="references-filter-btn" data-category="weapons">Weapons</button>
+                            <button class="references-filter-btn" data-category="armor">Armor</button>
+                            <button class="references-filter-btn" data-category="equipment">Equipment</button>
+                            <button class="references-filter-btn" data-category="psychicPowers">Psychic Powers</button>
+                            <button class="references-filter-btn" data-category="weaponUpgrades">Upgrades</button>
+                            <button class="references-filter-btn" data-category="ascensionPackages">Ascension</button>
+                            <button class="references-filter-btn" data-category="archetypeAbilities">Archetype Abilities</button>
+                            <button class="references-filter-btn" data-category="speciesAbilities">Species Abilities</button>
+                            <button class="references-filter-btn" data-category="mutations">Mutations</button>
+                        </div>
+                    </div>
+                    <div id="references-content">
+                        <!-- References entries populated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+
             <!-- Settings Tab -->
             <div id="tab-settings" class="tab-content tab-fullwidth">
                 <div class="settings-content">
@@ -451,27 +478,28 @@
     </script>
 
     <!-- Scripts -->
-    <script src="js/web-api.js?v=46"></script>
-    <script src="js/data-loader.js?v=46"></script>
-    <script src="js/xp-calculator.js?v=46"></script>
-    <script src="js/derived-stats.js?v=46"></script>
-    <script src="js/prerequisite.js?v=46"></script>
-    <script src="js/state.js?v=46"></script>
-    <script src="js/character-io.js?v=46"></script>
-    <script src="js/glossary.js?v=46"></script>
-    <script src="tabs/setting-tab.js?v=46"></script>
-    <script src="tabs/species-tab.js?v=46"></script>
-    <script src="tabs/archetype-tab.js?v=46"></script>
-    <script src="tabs/ascension-tab.js?v=46"></script>
-    <script src="tabs/stats-tab.js?v=46"></script>
-    <script src="tabs/talents-tab.js?v=46"></script>
-    <script src="tabs/wargear-tab.js?v=46"></script>
-    <script src="tabs/powers-tab.js?v=46"></script>
-    <script src="tabs/background-tab.js?v=46"></script>
-    <script src="tabs/injuries-tab.js?v=46"></script>
-    <script src="tabs/character-sheet-tab.js?v=46"></script>
-    <script src="tabs/glossary-tab.js?v=46"></script>
-    <script src="tabs/settings-tab.js?v=46"></script>
-    <script src="js/app.js?v=46"></script>
+    <script src="js/web-api.js?v=47"></script>
+    <script src="js/data-loader.js?v=47"></script>
+    <script src="js/xp-calculator.js?v=47"></script>
+    <script src="js/derived-stats.js?v=47"></script>
+    <script src="js/prerequisite.js?v=47"></script>
+    <script src="js/state.js?v=47"></script>
+    <script src="js/character-io.js?v=47"></script>
+    <script src="js/glossary.js?v=47"></script>
+    <script src="tabs/setting-tab.js?v=47"></script>
+    <script src="tabs/species-tab.js?v=47"></script>
+    <script src="tabs/archetype-tab.js?v=47"></script>
+    <script src="tabs/ascension-tab.js?v=47"></script>
+    <script src="tabs/stats-tab.js?v=47"></script>
+    <script src="tabs/talents-tab.js?v=47"></script>
+    <script src="tabs/wargear-tab.js?v=47"></script>
+    <script src="tabs/powers-tab.js?v=47"></script>
+    <script src="tabs/background-tab.js?v=47"></script>
+    <script src="tabs/injuries-tab.js?v=47"></script>
+    <script src="tabs/character-sheet-tab.js?v=47"></script>
+    <script src="tabs/glossary-tab.js?v=47"></script>
+    <script src="tabs/references-tab.js?v=47"></script>
+    <script src="tabs/settings-tab.js?v=47"></script>
+    <script src="js/app.js?v=47"></script>
 </body>
 </html>

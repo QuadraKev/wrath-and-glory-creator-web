@@ -3935,6 +3935,64 @@ textarea {
     margin: 12px 0 0 0;
 }
 
+/* ===== References Tab Styles ===== */
+.glossary-entry-brief {
+    font-size: 12px;
+    color: var(--text-muted);
+    white-space: nowrap;
+}
+
+.ref-stats {
+    margin-bottom: 8px;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.ref-stat {
+    margin-bottom: 2px;
+}
+
+.ref-label {
+    color: var(--accent-gold);
+    font-weight: 500;
+}
+
+.ref-flavor {
+    font-style: italic;
+    color: var(--text-muted);
+    margin-top: 6px;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.ref-parent {
+    color: var(--accent-gold);
+    font-size: 0.9em;
+    margin-bottom: 4px;
+}
+
+.references-filter-btn {
+    padding: 8px 16px;
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    color: var(--text-secondary);
+    cursor: pointer;
+    font-size: 13px;
+    transition: all 0.2s;
+}
+
+.references-filter-btn:hover {
+    background-color: var(--bg-hover);
+    color: var(--text-primary);
+}
+
+.references-filter-btn.active {
+    background-color: var(--accent-gold);
+    color: var(--bg-primary);
+    border-color: var(--accent-gold);
+}
+
 /* ===== Hamburger & Backdrop (hidden on desktop) ===== */
 .hamburger-btn {
     display: none;

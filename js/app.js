@@ -49,6 +49,7 @@ const App = {
         InjuriesTab.init();
         CharacterSheetTab.init();
         GlossaryTab.init();
+        ReferencesTab.init();
         SettingsTab.init();
 
         // Check for auto-saved state
@@ -227,7 +228,7 @@ const App = {
         });
 
         // Update body class for tab-specific CSS (e.g. hiding hamburger)
-        document.body.classList.remove('tab-builder', 'tab-character-sheet', 'tab-glossary', 'tab-settings');
+        document.body.classList.remove('tab-builder', 'tab-character-sheet', 'tab-glossary', 'tab-references', 'tab-settings');
         document.body.classList.add(`tab-${tabName}`);
 
         // Close sidebar when switching away from builder
@@ -240,6 +241,8 @@ const App = {
             CharacterSheetTab.refresh();
         } else if (tabName === 'glossary') {
             GlossaryTab.refresh();
+        } else if (tabName === 'references') {
+            ReferencesTab.refresh();
         } else if (tabName === 'settings') {
             SettingsTab.refresh();
         } else if (tabName === 'builder') {
