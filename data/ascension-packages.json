@@ -2,17 +2,21 @@
   {
     "id": "back_from_the_brink",
     "name": "Back From The Brink",
-    "description": "You are dead. Or that's what everyone thinks. Whatever horrible fate befell you didn't quite end your life, and any limbs you may have lost have been replaced by augmetics.",
+    "description": "You are dead. Or that's what everyone thinks \u2014 whatever horrible fate befell you didn't quite end your life, and any limbs you may have lost have been replaced by augmetics.",
     "cost": "10 x new Tier",
     "costMultiplier": 10,
     "prerequisites": {
       "story": "Must have near-death experience"
     },
     "benefits": [
-      "Replace any lost body parts with the appropriate augmetics; you may choose an option of any Rarity the GM deems appropriate."
+      "After a horrific encounter, you were somehow reconstructed by the marvels of holy (or unholy) technology.",
+      "Roll on the Memorable Injury table twice.",
+      "Roll on the Traumatic Injury table twice.",
+      "Replace any lost body parts with the appropriate augmetics; you may choose an option of any Rarity the GM deems appropriate.",
+      "Only the people who saved you and were responsible for your reconstitution know that you are alive. But news of your death may already have spread, and your new allies may want some form of recompense for saving your life."
     ],
     "keywordsGained": [
-      "[ANY] (Faction of rescuers)"
+      "[ANY] (the Faction of those who saved you)"
     ],
     "influenceModifier": 0,
     "source": "core",
@@ -30,12 +34,14 @@
       }
     },
     "benefits": [
-      "Choose: 1 item of Rare Wargear (value 3 + new Tier)",
-      "OR: 2 Wealth",
-      "OR: +2 Influence per Tier Ascended"
+      "You now report to a demanding patron between every adventure.",
+      "When you take this Ascension Package, choose to gain one of the following:",
+      "Immediately gain 1 item of Rare Wargear with a value of 3 + new Tier",
+      "Immediately gain 2 Wealth",
+      "Immediately gain +2 Influence per Tier Ascended"
     ],
     "keywordsGained": [
-      "[ANY] (Patron's Faction)"
+      "[ANY] (the Faction of your new patron)"
     ],
     "influenceModifier": 2,
     "requiresChoice": true,
@@ -65,9 +71,9 @@
     "costMultiplier": 30,
     "prerequisites": {},
     "benefits": [
-      "Gain the Devotees Talent (no Leadership prerequisite)",
-      "A tremendous reputation with a Faction",
-      "A nemesis"
+      "The Devotees Talent. You do not need to meet the Leadership (Wil) Skill prerequisite.",
+      "A tremendous reputation with a Faction.",
+      "A nemesis."
     ],
     "keywordsGained": [
       "[ANY]"
@@ -82,7 +88,7 @@
   {
     "id": "perfidious_wretch",
     "name": "Perfidious Wretch",
-    "description": "You betrayed your allies to gain favour with another Faction. You may have been seduced by promises of power or material wealth — all too common in the grim darkness of the 41st Millennium. Or you may have developed a radical mindset that no longer aligns with your Faction and better suits another.",
+    "description": "You betrayed your allies to gain favour with another Faction. You may have been seduced by promises of power or material wealth \u2014 all too common in the grim darkness of the 41st Millennium. Or you may have developed a radical mindset that no longer aligns with your Faction and better suits another.",
     "cost": "5 x new Tier",
     "costMultiplier": 5,
     "prerequisites": {
@@ -91,11 +97,13 @@
       }
     },
     "benefits": [
-      "3 Wealth",
-      "1 item of Wargear (value 3 + new Tier, Rare or lower)"
+      "Your new allies gift you the following:",
+      "3 Wealth.",
+      "1 item of Wargear with a value of 3 + new Tier and a Rarity of Rare or lower.",
+      "Your disloyalty has earned you the enmity of the Faction you betrayed, and curried the favour of another."
     ],
     "keywordsGained": [
-      "Gain [ANY], remove betrayed Keyword"
+      "Gain [ANY], remove the Keyword you betrayed"
     ],
     "influenceModifier": -2,
     "source": "core",
@@ -109,9 +117,9 @@
     "costMultiplier": 10,
     "prerequisites": {},
     "benefits": [
-      "Gain the Smite psychic power and Universal Psychic Powers",
-      "One Minor Psychic Power per Tier Ascended",
-      "May purchase psychic powers from one Discipline"
+      "The Smite psychic power and the Universal Psychic Powers.",
+      "One Minor Psychic Power of your choice per Tier Ascended.",
+      "You may purchase psychic powers from one Discipline of your choice."
     ],
     "keywordsGained": [
       "PSYKER"
@@ -146,17 +154,20 @@
     "costMultiplier": 10,
     "prerequisites": {},
     "benefits": [
-      "If you do not have a Memorable Injury, roll on the Memorable Injury table and decide with your GM how you received the Memorable Injury. You may choose to gain 3 Corruption points instead of, or in addition to, a Memorable Injury."
+      "If you do not have a Memorable Injury, roll on the Memorable Injury table and decide with your GM how you received the Memorable Injury. You may choose to gain 3 Corruption points instead of, or in addition to, a Memorable Injury.",
+      "Choose one of the following wargear options (these choices may include augmetics):",
+      "Gain 2 items of Rare Wargear with a value of 3 + new Tier",
+      "Gain 1 item of Very Rare Wargear with a value of 3 + new Tier"
     ],
     "keywordsGained": [],
     "influenceModifier": 1,
     "source": "core",
-    "page": 149
+    "page": 154
   },
   {
     "id": "test_of_faith_aoa",
     "name": "A Test of Faith (Abundance of Apocrypha)",
-    "description": "Your faith has always been strong, but seldom has it been tested so strenuously. You encountered some threat, danger, or catastrophe so great that your devotion to the Emperor was put into question… but when you emerged, your piety was rewarded. Strengthened by the challenge, your faith draws other faithful to you; drawn by the fire in your eyes and the conviction in your voice, and the need to have their own doubts expunged.",
+    "description": "Your faith has always been strong, but seldom has it been tested so strenuously. You encountered some threat, danger, or catastrophe so great that your devotion to the Emperor was put into question\u2026 but when you emerged, your piety was rewarded. Strengthened by the challenge, your faith draws other faithful to you; drawn by the fire in your eyes and the conviction in your voice, and the need to have their own doubts expunged.",
     "cost": "10 x new Tier",
     "costMultiplier": 10,
     "prerequisites": {
@@ -172,10 +183,8 @@
       ]
     },
     "benefits": [
-      "+1 Faith point",
-      "Conviction +1",
-      "Resolve +1",
-      "One weapon gains Blessed (1) trait"
+      "Your faith is strengthened, granting you +1 Faith point. Further, your Conviction and Resolve are both increased by +1.",
+      "Select one weapon you possess. That weapon gains the Blessed (1) trait."
     ],
     "keywordsGained": [],
     "influenceModifier": 1,
@@ -199,11 +208,9 @@
       "skillRequirement": "Insight 2+ or Awareness 2+"
     },
     "benefits": [
-      "May invoke Inquisitor's name to gain +Rank to Influence or social Skill test vs IMPERIUM characters (once per scene)",
-      "Inquisitorial Rosette",
-      "3 Corruption points",
-      "Memorable Injury",
-      "Up to two items of Rare Wargear (Value 3 + new Tier) OR one Very Rare item (Value 3 + new Tier)"
+      "You may invoke the name of your Inquisitor to gain +Rank to an Influence or social Skill test involving a character with the IMPERIUM keyword, once per scene.",
+      "You gain 3 Corruption points and a Memorable Injury.",
+      "Inquisitorial Rosette (symbol of authority), plus up to two items of Rare Wargear, or one item of Very Rare Wargear, with a Value up to 3 + the new Tier."
     ],
     "keywordsGained": [
       "INQUISITION",
@@ -235,11 +242,9 @@
       ]
     },
     "benefits": [
-      "ORDO XENOS keyword benefit",
-      "Access to special Deathwatch arsenals",
-      "At each Regroup, select a Xenos faction keyword: add +Rank ED to all attacks vs enemies with that keyword",
-      "One reload each of Dragonfire, Hellfire, Kraken, and Vengeance bolt rounds",
-      "One Weapon Upgrade (Value up to 7, Very Rare)"
+      "You join the ranks of the Deathwatch, and you are initiated into secrets that allow you to hunt Xenos more effectively. You receive the normal benefit for having the ORDO XENOS keyword and have access to special Deathwatch arsenals containing rare and specialised equipment.",
+      "Due to your specialised training, at each Regroup, you may select a single keyword which relates to a Xenos faction. You add +Rank ED to all attacks against enemies with that keyword.",
+      "One reload each of Dragonfire, Hellfire, Kraken, and Vengeance bolt rounds, and one Weapon Upgrade with a value of up to 7 (Very Rare)."
     ],
     "keywordsGained": [
       "DEATHWATCH",
@@ -266,14 +271,12 @@
       "other": "Must have at least one Faith talent"
     },
     "benefits": [
-      "Select one Trial at a time (Trial of Faith, Trial of Purity, Trial of Righteousness, Trial of Suffering)",
-      "Complete Trials to gain special abilities",
-      "If all four Trials are completed, may gain Sainthood",
-      "Trial of Faith: Boundless Faith (shift Exalted Icon to regain 1 Faith)",
-      "Trial of Purity: Blazing Soulfire (spend 2 Faith for AoE attack)",
-      "Trial of Righteousness: Righteous Wrath (spend 2 Faith for extra turn)",
-      "Trial of Suffering: Miraculous Recovery (heal Traumatic Injuries, spend 2 Faith to heal Tier Wounds)",
-      "Sainthood: Roll Faith Points as d6 on death; Icons >= 2 + times died = miraculous resurrection"
+      "You are faced with trials of faith. Each Trial requires that certain deeds be performed, but each will provide a reward once those deeds have been completed. When you select this Ascension Package, select a single one of the Trials below. When you have completed that Trial, and received the listed reward, you may select another Trial to replace it. If you manage to complete all four Trials, you may gain Sainthood.",
+      "Trial of Faith \u2014 Boundless Faith: You may shift an Exalted Icon to regain 1 Faith.",
+      "Trial of Purity \u2014 Blazing Soulfire: You may spend 2 Faith points to unleash a burst of pure Soulfire as a Simple Action. Roll 3d6 for each enemy within 6m: each enemy suffers a Mortal Wound for each Icon rolled. PSYKERS and CHAOS enemies re-roll any dice which result in a failure.",
+      "Trial of Righteousness \u2014 Righteous Wrath: You may spend 2 Faith points at the end of one of your turns. If you do so, you may take a second turn later in that round.",
+      "Trial of Suffering \u2014 Miraculous Recovery: Your Traumatic Injuries are immediately healed, and new Traumatic Injuries heal immediately upon taking a Respite. Further, you may spend 2 Faith points as a simple action to immediately heal Wounds equal to the game's Tier.",
+      "Sainthood: When you die, roll a number of d6 equal to the maximum number of Faith Points you possess. If the number of Icons rolled equals or exceeds two plus the number of times you've died, you are miraculously restored to life. If you are not restored to life, then you die permanently. However, your martyrdom means any other ADEPTA SORORITAS characters in the scene gain 1 Faith Point for each Trial you have completed."
     ],
     "keywordsGained": [],
     "influenceModifier": 1,
@@ -298,16 +301,15 @@
       ]
     },
     "benefits": [
-      "Resolve +2",
-      "On successful Weapon Skill, Ballistic Skill, or Leadership test, may shift Exalted Icon: self and ADEPTUS ASTARTES allies within 15m recover 1+Rank Shock",
-      "Terminator Armour",
-      "Choice of weapons: Storm Bolter & Power Sword, Storm Bolter & Power Fist, Thunder Hammer & Storm Shield, or Paired Lightning Claws",
-      "If not deploying in Terminator Armour, begin mission with +1 Wrath"
+      "You are an honoured veteran amongst the Adeptus Astartes, and even when not wearing Terminator Armour, you are amongst the mightiest and most dedicated warriors in the Imperium.",
+      "Your Resolve is increased by +2, and whenever you succeed at a Weapon Skill, Ballistic Skill, or Leadership test, you may shift a single exalted icon to allow yourself and all allies with the ADEPTUS ASTARTES keyword within 15m to recover 1+Rank Shock.",
+      "You gain a suit of Terminator Armour, and one of the following weapon selections: Storm Bolter and Power Sword, Storm Bolter and Power Fist, Thunder Hammer and Storm Shield, or Paired Lightning Claws.",
+      "If you choose not to deploy in your Terminator armour, or are unable to use it, you begin the mission with +1 Wrath instead."
     ],
     "keywordsGained": [],
     "influenceModifier": 2,
     "source": "apocrypha",
-    "page": 188
+    "page": 214
   },
   {
     "id": "divine_revelation_aoa",
@@ -323,9 +325,8 @@
       "keywordRequirement": "IMPERIUM or SCUM"
     },
     "benefits": [
-      "Gain 1 Faith point",
-      "May select Faith talents as if possessing ADEPTUS MINISTORUM keyword",
-      "Gain a trinket linked to divine revelation"
+      "Your newfound faith is powerful, even unshakeable, and while you may not be a true priest, your zeal is a match for any of them. You gain 1 Faith point, and you may select Faith talents as if you possessed the ADEPTUS MINISTORUM keyword.",
+      "You gain a single trinket, randomly determined from the tables in the core rulebook or created with your GM. This item is linked in some way to your divine revelation."
     ],
     "keywordsGained": [],
     "influenceModifier": 1,
@@ -340,10 +341,9 @@
     "costMultiplier": 10,
     "prerequisites": {},
     "benefits": [
-      "On Awareness (Int), Insight (Fel), Investigation (Int), or Scholar (Int) tests related to Warp/Chaos/psychic phenomena: may add +Rank Wrath dice",
-      "Each Wrath Critical = GM gives relevant information you couldn't possibly know",
-      "Each Wrath Complication = gain 1 Corruption Point",
-      "Gain a trinket linked to the experience"
+      "Your mind has been touched by something vast and damning. Whether through soul-scarring clarity or the vile artifice of an insane mind, you hold secrets that no soul should ever possess.",
+      "Whenever you attempt an Awareness (Int), Insight (Fel), Investigation (Int), or Scholar (Int) test that relates to the Warp, Chaos, psychic phenomena, or some other forbidden and profane matter, you may choose to add +Rank additional Wrath dice on that test. Each Wrath Critical you roll means the GM must give you a relevant piece of information that you couldn't possibly know by any normal means. Each Wrath Complication means you gain 1 Corruption Point.",
+      "You gain a single trinket, randomly determined from the tables in the core rulebook or created with your GM. This item is linked in some way to your experiences seeing beyond reality, and it emanates faint echoes of that event."
     ],
     "keywordsGained": [],
     "influenceModifier": 1,
@@ -365,9 +365,8 @@
       ]
     },
     "benefits": [
-      "Conviction increased by game's Tier",
-      "Can never gain Corruption Points",
-      "Gain +Double Rank bonus dice on tests/opposed tests against CHAOS enemies, powers, or effects"
+      "Your mind and soul are hardened against the powers of Chaos. Your Conviction score is increased by an amount equal to the game's Tier, and you can never gain Corruption Points.",
+      "Whenever you make a test or opposed test against a CHAOS enemy, power, or effect, you gain +Double Rank bonus dice."
     ],
     "keywordsGained": [
       "ILLUMINATI"
@@ -399,12 +398,9 @@
       ]
     },
     "benefits": [
-      "Gain Prescience and Scrier's Gaze psychic powers (or XP equal to their costs if already possessed)",
-      "May purchase psychic powers from Runes of Fate discipline",
-      "Ghosthelm",
-      "Runes of Witnessing",
-      "Runes of Warding",
-      "May use Willpower instead of Fellowship for Influence"
+      "You gain the Prescience and Scrier's Gaze psychic powers, if you did not already possess them (if you already possess them, you gain additional XP equal to their costs to spend on other powers). In addition, you may now purchase psychic powers from the Runes of Fate discipline.",
+      "You may use your Willpower instead of your Fellowship to determine your Influence.",
+      "You gain a Ghosthelm, Runes of Witnessing, and Runes of Warding."
     ],
     "keywordsGained": [
       "FARSEER"
@@ -435,12 +431,11 @@
       ]
     },
     "benefits": [
-      "LOST TO WAR: Increase DN of Interaction tests vs non-warriors by +2 (they suffer same penalty in return)",
-      "STUDENTS OF WAR: Gain Devotees talent followers (Aspect Warriors from your shrine), no Leadership requirement",
-      "MASTER OF WAR: May purchase Exarch powers (1 if Tier 4, 2 if Tier 5+)",
-      "Exarch Armour (AR 6, loses Bulky/Cumbersome)",
-      "All weapons gain Master-Crafted upgrade",
-      "May replace one weapon with any rarity weapon (Value 5 + new Tier)"
+      "You take up the armour, identity, and Aspect Shrine of an Exarch of your Aspect.",
+      "LOST TO WAR: You increase the DN of all Interaction tests against non-warriors by +2, and they suffer the same penalty in return.",
+      "STUDENTS OF WAR: You gain followers as per the Devotees talent, without needing to meet the Leadership requirement. These followers are Aspect Warriors from your shrine.",
+      "MASTER OF WAR: You may purchase Exarch powers. You may purchase one power if you are Tier 4, or two if you are Tier 5 or higher.",
+      "You replace your Aspect Armour with Exarch Armour, which provides the same functions but has an Armour Rating of 6 and loses the Bulky (X) or Cumbersome traits (if it had them). All your weapons gain the Master-Crafted upgrade, and you may replace one of your weapons with a weapon of any rarity and a Value of up to 5 + the new Tier."
     ],
     "keywordsGained": [
       "EXARCH"
@@ -463,12 +458,9 @@
       "other": "May not have HAEMACOLYTE keyword"
     },
     "benefits": [
-      "May attempt Psychic Mastery test (even if untrained) to communicate with Aeldari spirits",
-      "STRENGTH FROM DEATH: Once per round, when PC/Adversary/Elite or 3 Troops die within 15m, gain +1 Soul token",
-      "May carry Soul tokens up to Willpower",
-      "Soul tokens may be used as Glory points (by you or allied YNNARI within 10m)",
-      "Unused Soul tokens lost at Regroup/Respite",
-      "Spirit Stone: Use as Simple Action to generate 1d3+1 Soul tokens (recovers after next Respite)"
+      "You have been reborn as one of the Ynnari, and you now have a powerful connection to the spirits of the dead. You may attempt a Psychic Mastery test (even if untrained) to communicate with the spirits of Aeldari dead (contained within spirit stones, infinity circuits, Exodite world-spirits, and similar).",
+      "STRENGTH FROM DEATH: Once per round, when a player character, or an Adversary or Elite, or three Troops, dies within 15m of you, you immediately gain +1 Soul token. You may carry a number of Soul tokens up to your Willpower, and unused Soul tokens are lost when you Regroup or take a Respite. Soul tokens may be used as if they were Glory points, but only by you or allied YNNARI characters within 10m.",
+      "Spirit Stone: When carried by an YNNARI character, a Spirit Stone may be used to generate 1d3+1 Soul tokens as a Simple Action. This takes time to recover and cannot be done again until after the next Respite."
     ],
     "keywordsGained": [
       "YNNARI"
@@ -497,12 +489,8 @@
       ]
     },
     "benefits": [
-      "Gain Binary Cortex (second Tech-Priest mind implanted in body)",
-      "Binary Cortex has Intellect 5 (can be increased separately)",
-      "Binary Cortex can Help on Intellect-based tests using their Intellect",
-      "When Binary Cortex helps: replace one additional die with Wrath die",
-      "Complication if either Wrath die rolls 1",
-      "Wrath Critical only if both Wrath dice roll 6s"
+      "You gain a Binary Cortex, the mind of a second Tech-Priest implanted into your body to allow you to collaborate more closely with them. This second mind is considered to have an Intellect of 5, and this can be increased by spending XP separately from your own attributes.",
+      "The Binary Cortex can Help on any Intellect-based skill Test you attempt, using their own Intellect. However, whenever they do so, you replace one additional die in your dice pool with a Wrath die. You suffer a Complication if either Wrath die rolls a 1, but you only score a Wrath Critical if both Wrath dice roll 6s."
     ],
     "keywordsGained": [],
     "influenceModifier": 1,
@@ -512,7 +500,7 @@
   {
     "id": "sanctioned_xenos_aoa",
     "name": "Sanctioned Xenos (Abundance of Apocrypha)",
-    "description": "In the broadest of terms, no human may interact with a xenos creature in any way except violently—such creatures are inherently blasphemous against the God-Emperor and must be eliminated on sight without exception. From a young age, citizens of the Imperium are taught to fear and hate the xenos, and innumerable legions of Imperial Guardsmen are taught of the superiority of Man over all inhuman things as they are drilled in the use of lasgun and bayonet. The number of xenos who have set foot upon human worlds peacefully and survived is small indeed. But this is not always the case. Though the Imperium was founded upon a creed of intolerance towards non-humans, peaceful contact with a variety of xenos species actually happens frequently. In most instances, these are short-term alliances or matters of temporary mutual convenience. Rogue Traders, Inquisitors, and a few other individuals, have the power to do more, and do so legitimately. These men and women, freed from the normal strictures and feudal requirements of the Imperium, have the influence and authority to make peaceful contact with xenos species for trade, temporary alliance or even to hire them as mercenaries.",
+    "description": "In the broadest of terms, no human may interact with a xenos creature in any way except violently\u2014such creatures are inherently blasphemous against the God-Emperor and must be eliminated on sight without exception. From a young age, citizens of the Imperium are taught to fear and hate the xenos, and innumerable legions of Imperial Guardsmen are taught of the superiority of Man over all inhuman things as they are drilled in the use of lasgun and bayonet. The number of xenos who have set foot upon human worlds peacefully and survived is small indeed. But this is not always the case. Though the Imperium was founded upon a creed of intolerance towards non-humans, peaceful contact with a variety of xenos species actually happens frequently. In most instances, these are short-term alliances or matters of temporary mutual convenience. Rogue Traders, Inquisitors, and a few other individuals, have the power to do more, and do so legitimately. These men and women, freed from the normal strictures and feudal requirements of the Imperium, have the influence and authority to make peaceful contact with xenos species for trade, temporary alliance or even to hire them as mercenaries.",
     "cost": "5 x new Tier",
     "costMultiplier": 5,
     "prerequisites": {
@@ -526,10 +514,9 @@
       ]
     },
     "benefits": [
-      "Vouched for and deemed valuable to the Imperium",
-      "May live within Imperial space while in service to patron",
-      "Permitted on Imperial worlds if mark is shown and patron can vouch",
-      "Do not suffer species interaction penalties"
+      "You have been vouched for and deemed sufficiently valuable to the works and cause of the Imperium that you may live within Imperial space for as long as you remain in the service of your patron and the Imperium of Man.",
+      "You are permitted to set foot upon Imperial worlds, so long as your mark is clearly shown and your patron can be contacted to vouch for your Sanctioning.",
+      "You do not suffer the normal species interaction penalties."
     ],
     "keywordsGained": [
       "IMPERIUM"
@@ -559,14 +546,9 @@
       "other": "May not have PRIMARIS keyword"
     },
     "benefits": [
-      "Become a Primaris Marine",
-      "Strength +1",
-      "Toughness +1",
-      "Wounds +3",
-      "No longer suffer Gene-Seed impurities",
-      "Benefit from Primaris implants alongside original implants",
-      "May replace weapons with PRIMARIS equivalents",
-      "Replace Power Armour with Mark X (Tacticus, Phobos, or Gravis)"
+      "You become a Primaris Marine. Increase your Strength and Toughness by +1 each, and +3 Wounds.",
+      "You no longer suffer impurities in your Chapter Gene-Seed, and you benefit from the Primaris implants alongside your original Space Marine Implants.",
+      "You may replace your weapons with the nearest equivalents which have the PRIMARIS keyword, and you replace your Power Armour with a suit of Mark X Power Armour (your choice of Tacticus, Phobos, or Gravis). At the GM's discretion, unique wargear may be altered or upgraded to fit your enhanced form."
     ],
     "keywordsGained": [
       "PRIMARIS"
@@ -590,10 +572,10 @@
       ]
     },
     "benefits": [
-      "Gain 1d3 Corruption per Tier ascended",
-      "DAEMONIC: May roll Determination vs Mortal Wounds, do not suffer Shock when rolling Determination",
-      "ACCURSED VIGOUR: Select 3 attributes; as Free Action gain Tier bonus dice to those attributes. Sustain for rounds/minutes. When stopped, pass Corruption Test DN = rounds/minutes used. If Corruption Level 5 while possessed, daemon consumes soul (cease to exist)",
-      "MUTATED FORM: While using daemon power, gain Horns/Spines/Fangs/Claws minor mutation and one severe mutation"
+      "You are now possessed by a daemon of Chaos. You immediately gain 1d3 Corruption per Tier ascended.",
+      "DAEMONIC: You may roll Determination against Mortal Wounds, and you do not suffer Shock when you roll Determination.",
+      "ACCURSED VIGOUR: Select three attributes when you take this Ascension Package; as a Free Action on your turn, you may gain a number of bonus dice to those attributes equal to the campaign's Tier. You may sustain this for as many rounds as you wish (or minutes, if outside of combat), but when you stop using this ability, you must pass a Corruption Test with a DN equal to the number of rounds (or minutes) you used this ability. If your Corruption Level reaches 5 while possessed, the Daemon consumes your soul and you cease to exist.",
+      "MUTATED FORM: While using the daemon's power, you gain the Horns, Spines, Fangs, or Claws minor mutation, and a single severe mutation, determined when the character first became possessed."
     ],
     "keywordsGained": [
       "DAEMON"
