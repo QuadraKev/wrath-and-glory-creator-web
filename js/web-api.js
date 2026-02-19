@@ -126,8 +126,13 @@
             const a = document.createElement('a');
             a.href = url;
             a.download = filePath || 'character.json';
+            document.body.appendChild(a);
             a.click();
-            URL.revokeObjectURL(url);
+            // Delay cleanup so mobile browsers can finish capturing the blob
+            setTimeout(() => {
+                document.body.removeChild(a);
+                URL.revokeObjectURL(url);
+            }, 1000);
             return { success: true };
         },
 
