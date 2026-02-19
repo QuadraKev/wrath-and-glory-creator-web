@@ -5,6 +5,9 @@
     let _pendingFile = null;
     // Store file handle from File System Access API for save/overwrite
     let _saveFileHandle = null;
+    // Chrome Android supports showSaveFilePicker but its implementation is buggy
+    // (0-byte files, appends .json to custom extensions) — skip it on Android
+    const _isAndroid = /Android/i.test(navigator.userAgent);
 
     window.api = {
         // Load game data via fetch (cache-busted with version)
@@ -22,7 +25,7 @@
 
         // Show save dialog - uses File System Access API for real Save As when available
         showSaveDialog: async (defaultName) => {
-            if (window.showSaveFilePicker) {
+            if (window.showSaveFilePicker && !_isAndroid) {
                 try {
                     const handle = await window.showSaveFilePicker({
                         suggestedName: defaultName || 'character.character',
@@ -47,7 +50,7 @@
         // Show open dialog - opens file picker and stores file reference
         showOpenDialog: async () => {
             // Use File System Access API when available for handle-based open
-            if (window.showOpenFilePicker) {
+            if (window.showOpenFilePicker && !_isAndroid) {
                 try {
                     const [handle] = await window.showOpenFilePicker({
                         types: [{
