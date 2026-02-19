@@ -95,15 +95,27 @@
         exportCharacter: async (character, filePath) => {
             const json = JSON.stringify(character, null, 2);
 
+            // Safety check: ensure we have valid JSON content
+            if (!json || json.length < 2) {
+                console.error('exportCharacter: JSON.stringify produced empty/invalid output', typeof character);
+                return { success: false, error: 'Failed to serialize character data.' };
+            }
+
             // Use stored file handle from Save As dialog when available
             if (_saveFileHandle) {
+                let writable;
                 try {
-                    const writable = await _saveFileHandle.createWritable();
+                    writable = await _saveFileHandle.createWritable();
                     await writable.write(json);
                     await writable.close();
                     return { success: true };
                 } catch (e) {
-                    // Handle lost permission — clear handle and fall through to download
+                    console.error('File System Access API save failed:', e);
+                    // Abort the writable stream to prevent file corruption (0-byte files)
+                    if (writable) {
+                        try { await writable.abort(); } catch (_) {}
+                    }
+                    // Clear handle and fall through to download fallback
                     _saveFileHandle = null;
                 }
             }
