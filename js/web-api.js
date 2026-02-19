@@ -120,19 +120,32 @@
                 }
             }
 
-            // Fallback: trigger browser download
-            const blob = new Blob([json], { type: 'application/json' });
+            // Try Web Share API (works properly on mobile, avoids Chrome Android blob bugs)
+            const fileName = filePath || 'character.character';
+            if (navigator.canShare) {
+                try {
+                    const file = new File([json], fileName, { type: 'application/octet-stream' });
+                    if (navigator.canShare({ files: [file] })) {
+                        await navigator.share({ files: [file] });
+                        return { success: true };
+                    }
+                } catch (e) {
+                    if (e.name === 'AbortError') {
+                        return { success: false, error: 'Save cancelled.' };
+                    }
+                    // Fall through to blob download on other errors
+                }
+            }
+
+            // Last resort: blob download
+            const blob = new Blob([json], { type: 'application/octet-stream' });
             const url = URL.createObjectURL(blob);
             const a = document.createElement('a');
             a.href = url;
-            a.download = filePath || 'character.json';
+            a.download = fileName;
             document.body.appendChild(a);
             a.click();
-            // Delay cleanup so mobile browsers can finish capturing the blob
-            setTimeout(() => {
-                document.body.removeChild(a);
-                URL.revokeObjectURL(url);
-            }, 1000);
+            setTimeout(() => { document.body.removeChild(a); URL.revokeObjectURL(url); }, 1000);
             return { success: true };
         },
 
