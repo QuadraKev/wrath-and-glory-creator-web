@@ -9,6 +9,11 @@
     // (0-byte files, appends .json to custom extensions) — skip it on Android
     const _isAndroid = /Android/i.test(navigator.userAgent);
 
+    // iOS doesn't recognize custom file extensions (.character) in <input accept="...">
+    // — omit accept to let users browse all files
+    const _isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) ||
+        (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+
     window.api = {
         // Load game data via fetch (cache-busted with version)
         loadGameData: async (filename) => {
@@ -76,7 +81,7 @@
             return new Promise((resolve) => {
                 const input = document.createElement('input');
                 input.type = 'file';
-                input.accept = '.character,.json';
+                if (!_isIOS) input.accept = '.character,.json';
                 input.onchange = () => {
                     if (!input.files || !input.files[0]) {
                         resolve({ canceled: true });

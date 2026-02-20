@@ -5,6 +5,12 @@ const ReferencesTab = {
     currentCategory: 'all',
     allEntries: [],
     expandedEntries: new Set(),
+    _searchTimer: null,
+    _entryMap: new Map(),
+    _orderedEntries: [],
+    _renderedCount: 0,
+    _scrollHandler: null,
+    _isGrouped: false,
 
     CATEGORIES: [
         { key: 'talents', name: 'Talent', pluralName: 'Talents' },
@@ -21,9 +27,11 @@ const ReferencesTab = {
     ],
 
     init() {
+        // Search with 200ms debounce
         document.getElementById('references-search').addEventListener('input', (e) => {
             this.searchQuery = e.target.value.toLowerCase();
-            this.renderEntries();
+            clearTimeout(this._searchTimer);
+            this._searchTimer = setTimeout(() => this.renderEntries(), 200);
         });
 
         document.querySelectorAll('.references-filter-btn').forEach(btn => {
@@ -33,6 +41,27 @@ const ReferencesTab = {
                 this.currentCategory = btn.dataset.category;
                 this.renderEntries();
             });
+        });
+
+        // Event delegation on container (set up once)
+        const container = document.getElementById('references-content');
+        container.addEventListener('click', (e) => {
+            const copyBtn = e.target.closest('.btn-copy');
+            if (copyBtn) {
+                e.stopPropagation();
+                const name = copyBtn.dataset.copyName;
+                const desc = copyBtn.dataset.copyDesc;
+                navigator.clipboard.writeText(`${name}: ${desc}`).then(() => {
+                    copyBtn.textContent = 'Copied!';
+                    setTimeout(() => { copyBtn.textContent = 'Copy'; }, 1500);
+                });
+                return;
+            }
+            const header = e.target.closest('.glossary-entry-header');
+            if (header) {
+                const entry = header.closest('.glossary-entry');
+                this._toggleEntry(entry.dataset.entryId, entry);
+            }
         });
 
         this.loadEntries();
@@ -256,29 +285,43 @@ const ReferencesTab = {
 
         if (entries.length === 0) {
             container.innerHTML = `<div class="glossary-empty"><p>No entries found${this.searchQuery ? ` for "${this.searchQuery}"` : ''}.</p></div>`;
+            this._cleanupScroll();
             return;
         }
 
-        if (this.currentCategory === 'all') {
+        // Build entry map and ordered entries
+        this._entryMap = new Map();
+        this._orderedEntries = [];
+        this._isGrouped = this.currentCategory === 'all';
+
+        if (this._isGrouped) {
             const grouped = this.groupByCategory(entries);
+            // Render group skeleton (headers only)
             container.innerHTML = grouped.map(group => `
-                <div class="glossary-group">
+                <div class="glossary-group" data-group-category="${group.category}">
                     <h3 class="glossary-group-title">${group.categoryPluralName} (${group.entries.length})</h3>
-                    <div class="glossary-entries">
-                        ${group.entries.map(entry => this.renderEntry(entry)).join('')}
-                    </div>
+                    <div class="glossary-entries"></div>
                 </div>
             `).join('');
+
+            for (const group of grouped) {
+                for (const entry of group.entries) {
+                    this._entryMap.set(entry.id, entry);
+                    this._orderedEntries.push(entry);
+                }
+            }
         } else {
-            container.innerHTML = `
-                <div class="glossary-entries">
-                    ${entries.map(entry => this.renderEntry(entry)).join('')}
-                </div>
-            `;
+            container.innerHTML = '<div class="glossary-entries"></div>';
+            for (const entry of entries) {
+                this._entryMap.set(entry.id, entry);
+                this._orderedEntries.push(entry);
+            }
         }
 
-        this.bindEntryClicks(container);
-        this.enhanceDescriptions(container);
+        // Progressive rendering
+        this._renderedCount = 0;
+        this._renderNextBatch();
+        this._setupScroll();
     },
 
     groupByCategory(entries) {
@@ -299,6 +342,60 @@ const ReferencesTab = {
         return categoryOrder.filter(cat => groups.has(cat)).map(cat => groups.get(cat));
     },
 
+    _renderNextBatch() {
+        if (this._renderedCount >= this._orderedEntries.length) return;
+
+        const batch = this._orderedEntries.slice(this._renderedCount, this._renderedCount + 100);
+        if (batch.length === 0) return;
+
+        if (this._isGrouped) {
+            const byCategory = new Map();
+            for (const entry of batch) {
+                if (!byCategory.has(entry.category)) byCategory.set(entry.category, []);
+                byCategory.get(entry.category).push(entry);
+            }
+            for (const [category, catEntries] of byCategory) {
+                const groupEl = document.querySelector(`.glossary-group[data-group-category="${category}"] .glossary-entries`);
+                if (groupEl) {
+                    groupEl.insertAdjacentHTML('beforeend', catEntries.map(e => this.renderEntry(e)).join(''));
+                }
+            }
+        } else {
+            const entriesEl = document.querySelector('#references-content .glossary-entries');
+            if (entriesEl) {
+                entriesEl.insertAdjacentHTML('beforeend', batch.map(e => this.renderEntry(e)).join(''));
+            }
+        }
+
+        this._renderedCount += batch.length;
+    },
+
+    _renderAllBatches() {
+        while (this._renderedCount < this._orderedEntries.length) {
+            this._renderNextBatch();
+        }
+    },
+
+    _setupScroll() {
+        this._cleanupScroll();
+        const scrollEl = document.getElementById('tab-references');
+        if (!scrollEl) return;
+        this._scrollHandler = () => {
+            if (scrollEl.scrollTop + scrollEl.clientHeight >= scrollEl.scrollHeight - 500) {
+                this._renderNextBatch();
+            }
+        };
+        scrollEl.addEventListener('scroll', this._scrollHandler, { passive: true });
+    },
+
+    _cleanupScroll() {
+        if (this._scrollHandler) {
+            const scrollEl = document.getElementById('tab-references');
+            if (scrollEl) scrollEl.removeEventListener('scroll', this._scrollHandler);
+            this._scrollHandler = null;
+        }
+    },
+
     renderEntry(entry) {
         const isExpanded = this.expandedEntries.has(entry.id);
         return `
@@ -309,11 +406,44 @@ const ReferencesTab = {
                     <span class="glossary-entry-brief">${this.escapeHtml(entry.briefInfo)}</span>
                     <span class="glossary-entry-category">${entry.categoryName}</span>
                 </div>
-                <div class="glossary-entry-body ${isExpanded ? '' : 'hidden'}">
-                    ${this.renderBody(entry)}
+                <div class="glossary-entry-body ${isExpanded ? '' : 'hidden'}"${isExpanded ? '' : ' data-deferred'}>
+                    ${isExpanded ? this.renderBody(entry) : ''}
                 </div>
             </div>
         `;
+    },
+
+    _toggleEntry(entryId, entryElement) {
+        const body = entryElement.querySelector('.glossary-entry-body');
+
+        if (this.expandedEntries.has(entryId)) {
+            this.expandedEntries.delete(entryId);
+            entryElement.classList.remove('expanded');
+            body.classList.add('hidden');
+            history.replaceState(null, '', location.pathname + location.search);
+        } else {
+            this.expandedEntries.add(entryId);
+            entryElement.classList.add('expanded');
+            body.classList.remove('hidden');
+
+            // Materialize deferred body content
+            if (body.hasAttribute('data-deferred')) {
+                const data = this._entryMap.get(entryId);
+                if (data) body.innerHTML = this.renderBody(data);
+                body.removeAttribute('data-deferred');
+            }
+
+            // Enhance glossary terms on demand
+            const desc = body.querySelector('.glossary-entry-description');
+            if (desc && !desc.dataset.enhanced) {
+                if (typeof Glossary !== 'undefined' && Glossary.enhanceElement) {
+                    Glossary.enhanceElement(desc);
+                }
+                desc.dataset.enhanced = 'true';
+            }
+
+            history.replaceState(null, '', '#references/' + entryId);
+        }
     },
 
     renderBody(entry) {
@@ -597,49 +727,6 @@ const ReferencesTab = {
             parts.push(prereqs.other);
         }
         return parts.join(', ') || 'None';
-    },
-
-    enhanceDescriptions(container) {
-        if (typeof Glossary !== 'undefined' && Glossary.enhanceElement) {
-            container.querySelectorAll('.glossary-entry-description').forEach(desc => {
-                Glossary.enhanceElement(desc);
-            });
-        }
-    },
-
-    bindEntryClicks(container) {
-        container.querySelectorAll('.glossary-entry').forEach(entry => {
-            const header = entry.querySelector('.glossary-entry-header');
-            const body = entry.querySelector('.glossary-entry-body');
-
-            header.addEventListener('click', () => {
-                const entryId = entry.dataset.entryId;
-                const isExpanded = !body.classList.contains('hidden');
-                body.classList.toggle('hidden');
-                entry.classList.toggle('expanded', !isExpanded);
-
-                if (!isExpanded) {
-                    this.expandedEntries.add(entryId);
-                    history.replaceState(null, '', '#references/' + entryId);
-                } else {
-                    this.expandedEntries.delete(entryId);
-                    history.replaceState(null, '', location.pathname + location.search);
-                }
-            });
-        });
-
-        container.querySelectorAll('.btn-copy').forEach(btn => {
-            btn.addEventListener('click', (e) => {
-                e.stopPropagation();
-                const name = btn.dataset.copyName;
-                const desc = btn.dataset.copyDesc;
-                const text = `${name}: ${desc}`;
-                navigator.clipboard.writeText(text).then(() => {
-                    btn.textContent = 'Copied!';
-                    setTimeout(() => { btn.textContent = 'Copy'; }, 1500);
-                });
-            });
-        });
     },
 
     refresh() {
