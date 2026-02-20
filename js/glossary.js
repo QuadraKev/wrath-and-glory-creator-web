@@ -190,10 +190,11 @@ const Glossary = {
     attachHandlers(container) {
         const terms = container.querySelectorAll('.glossary-term');
         terms.forEach(term => {
-            // Remove existing handler if any
-            term.removeEventListener('click', this.handleTermClick);
-            // Add click handler (fallback for mobile / touch)
-            term.addEventListener('click', (e) => this.handleTermClick(e));
+            // Add click handler (primary for mobile / touch)
+            term.addEventListener('click', (e) => {
+                clearTimeout(this._hoverTimer);
+                this.handleTermClick(e);
+            });
 
             // Hover handlers for desktop
             term.addEventListener('mouseenter', (e) => {
@@ -222,6 +223,13 @@ const Glossary = {
         const key = termElement.dataset.termKey;
         const type = termElement.dataset.termType;
 
+        // Prevent duplicate popup for the same term (iOS fires both mouseenter and click)
+        const alreadyOpen = this.popupStack.some(popupId => {
+            const p = document.getElementById(popupId);
+            return p && p.dataset.glossaryKey === key;
+        });
+        if (alreadyOpen) return;
+
         let termData = null;
         if (type === 'condition' && this.data.conditions[key]) {
             termData = this.data.conditions[key];
@@ -240,11 +248,11 @@ const Glossary = {
         }
 
         if (termData) {
-            this.showPopup(termData, termElement, type);
+            this.showPopup(termData, termElement, type, key);
         }
     },
 
-    showPopup(termData, anchorElement, type) {
+    showPopup(termData, anchorElement, type, termKey) {
         const popupId = `glossary-popup-${this.popupIdCounter++}`;
 
         // Get type label
@@ -267,6 +275,7 @@ const Glossary = {
         const popup = document.createElement('div');
         popup.className = 'glossary-popup';
         popup.id = popupId;
+        popup.dataset.glossaryKey = termKey || '';
         popup.innerHTML = `
             <div class="glossary-popup-header">
                 <span class="glossary-popup-type">${typeLabel}</span>
