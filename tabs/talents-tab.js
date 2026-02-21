@@ -518,6 +518,11 @@ const TalentsTab = {
                 ellipsis.textContent = '...';
                 ellipsis.style.padding = '6px';
                 container.appendChild(ellipsis);
+            } else if (i === totalPages - 2 && this.currentPage < totalPages - 4) {
+                const ellipsis = document.createElement('span');
+                ellipsis.textContent = '...';
+                ellipsis.style.padding = '6px';
+                container.appendChild(ellipsis);
             }
         }
 

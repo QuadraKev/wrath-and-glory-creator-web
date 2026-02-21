@@ -5019,7 +5019,7 @@ textarea {
     line-height: 1.5;
 }
 
-.btn-add {
+.btn-add-injury {
     padding: 6px 14px;
     background: var(--accent-gold);
     color: var(--bg-primary);
@@ -5031,7 +5031,7 @@ textarea {
     white-space: nowrap;
 }
 
-.btn-add:hover {
+.btn-add-injury:hover {
     background: var(--accent-gold-dark);
 }
 

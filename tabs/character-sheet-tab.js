@@ -1496,7 +1496,7 @@ const CharacterSheetTab = {
         const effectiveTierCopy = State.getEffectiveTier();
         const tierCopyDisplay = `Tier ${effectiveTierCopy}`;
         lines.push(name);
-        lines.push(`${speciesName} | ${archetypeName} | ${tierCopyDisplay} | Rank ${character.rank}`);
+        lines.push(`${speciesName} | ${archetypeName} | ${tierCopyDisplay} | Rank ${character.rank || 1}`);
         if (keywords.length > 0) lines.push(`Keywords: ${keywords.join(', ')}`);
         lines.push('');
 
@@ -1717,14 +1717,6 @@ const CharacterSheetTab = {
         if (State.hasTalent('blood_angels_assault_squad_faith')) {
             if (weapon.type === 'melee' || hasTrait('Pistol')) {
                 apBonuses.push({ value: rank, source: 'Assault Squad' });
-            }
-        }
-
-        // Devastator Centurion: +Rank AP when using chosen heavy weapon
-        if (State.hasTalent('devastator_centurion')) {
-            const entry = State.getTalentEntry('devastator_centurion');
-            if (entry && entry.choice && weapon.name === entry.choice) {
-                apBonuses.push({ value: rank, source: 'Devastator' });
             }
         }
 
@@ -1965,7 +1957,6 @@ const CharacterSheetTab = {
         const dismiss = (evt) => {
             if (!popup.contains(evt.target) && evt.target !== el && !el.contains(evt.target)) {
                 this._closeBreakdownPopup();
-                document.removeEventListener('click', dismiss);
             }
         };
         setTimeout(() => document.addEventListener('click', dismiss), 0);
@@ -1974,15 +1965,26 @@ const CharacterSheetTab = {
         const escHandler = (evt) => {
             if (evt.key === 'Escape') {
                 this._closeBreakdownPopup();
-                document.removeEventListener('keydown', escHandler);
             }
         };
         document.addEventListener('keydown', escHandler);
+
+        // Store references for cleanup
+        this._breakdownDismiss = dismiss;
+        this._breakdownEscHandler = escHandler;
     },
 
     // Close the breakdown popup and restore title attribute
     _closeBreakdownPopup() {
         clearTimeout(this._breakdownCloseTimer);
+        if (this._breakdownDismiss) {
+            document.removeEventListener('click', this._breakdownDismiss);
+            this._breakdownDismiss = null;
+        }
+        if (this._breakdownEscHandler) {
+            document.removeEventListener('keydown', this._breakdownEscHandler);
+            this._breakdownEscHandler = null;
+        }
         const popup = document.querySelector('.breakdown-popup');
         if (popup) {
             popup.remove();

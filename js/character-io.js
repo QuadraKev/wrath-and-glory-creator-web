@@ -221,9 +221,10 @@ const CharacterIO = {
 
         if (character.talents.length > 0) {
             sheet += `\n## Talents\n`;
-            for (const talentId of character.talents) {
-                const talent = DataLoader.getTalent(talentId);
-                sheet += `- ${talent?.name || talentId}\n`;
+            for (const talentEntry of character.talents) {
+                const id = typeof talentEntry === 'string' ? talentEntry : talentEntry.id;
+                const talent = DataLoader.getTalent(id);
+                sheet += `- ${talent?.name || id}\n`;
             }
         }
 

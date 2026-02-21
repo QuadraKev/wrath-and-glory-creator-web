@@ -69,7 +69,7 @@ const InjuriesTab = {
                     <option value="">Select an injury...</option>
                     ${options}
                 </select>
-                <button class="btn-add" id="btn-add-memorable">+ Add</button>
+                <button class="btn-add-injury" id="btn-add-memorable">+ Add</button>
             </div>
             <div class="injuries-list" id="memorable-injuries-list">
                 ${list || '<p class="injuries-empty">No memorable injuries</p>'}
@@ -111,7 +111,7 @@ const InjuriesTab = {
                     <option value="Left">Left</option>
                     <option value="Right">Right</option>
                 </select>
-                <button class="btn-add" id="btn-add-traumatic">+ Add</button>
+                <button class="btn-add-injury" id="btn-add-traumatic">+ Add</button>
             </div>
             <div class="injuries-list" id="traumatic-injuries-list">
                 ${list || '<p class="injuries-empty">No traumatic injuries</p>'}
@@ -243,7 +243,7 @@ const InjuriesTab = {
                 <select id="mutation-subchoice" class="hidden">
                     <option value="">Select sub-choice...</option>
                 </select>
-                <button class="btn-add" id="btn-add-mutation">+ Add</button>
+                <button class="btn-add-injury" id="btn-add-mutation">+ Add</button>
             </div>
             <div class="mutations-list" id="mutations-list">
                 ${list || '<p class="injuries-empty">No mutations</p>'}

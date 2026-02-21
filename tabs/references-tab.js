@@ -284,7 +284,7 @@ const ReferencesTab = {
         const entries = this.getFilteredEntries();
 
         if (entries.length === 0) {
-            container.innerHTML = `<div class="glossary-empty"><p>No entries found${this.searchQuery ? ` for "${this.searchQuery}"` : ''}.</p></div>`;
+            container.innerHTML = `<div class="glossary-empty"><p>No entries found${this.searchQuery ? ` for "${this.escapeHtml(this.searchQuery)}"` : ''}.</p></div>`;
             this._cleanupScroll();
             return;
         }

@@ -419,7 +419,7 @@ const DerivedStats = {
             ed: ed,
             ap: weapon.ap || 0,
             display: `${damage} + ${ed} ED`,
-            displayWithAP: weapon.ap ? `${damage} + ${ed} ED, AP ${weapon.ap}` : `${damage} + ${ed} ED`
+            displayWithAP: weapon.ap != null && weapon.ap !== 0 ? `${damage} + ${ed} ED, AP ${weapon.ap}` : `${damage} + ${ed} ED`
         };
     },
 

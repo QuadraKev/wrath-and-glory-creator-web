@@ -431,7 +431,7 @@ const WargearTab = {
                     <div class="wargear-card-stats">
                         <div><span class="wargear-card-stat-label">Damage</span><span>${damage}</span></div>
                         <div><span class="wargear-card-stat-label">ED</span><span>${w.ed || 0}</span></div>
-                        <div><span class="wargear-card-stat-label">AP</span><span>${w.ap ? w.ap : '-'}</span></div>
+                        <div><span class="wargear-card-stat-label">AP</span><span>${w.ap != null ? w.ap : '-'}</span></div>
                         <div><span class="wargear-card-stat-label">Reach</span><span>${reach}</span></div>
                     </div>
                     ${traitsHtml}
@@ -485,7 +485,7 @@ const WargearTab = {
                     <div class="wargear-card-stats">
                         <div><span class="wargear-card-stat-label">Damage</span><span>${w.damage?.base || 0}</span></div>
                         <div><span class="wargear-card-stat-label">ED</span><span>${w.ed || 0}</span></div>
-                        <div><span class="wargear-card-stat-label">AP</span><span>${w.ap ? w.ap : '-'}</span></div>
+                        <div><span class="wargear-card-stat-label">AP</span><span>${w.ap != null ? w.ap : '-'}</span></div>
                         <div><span class="wargear-card-stat-label">Range</span><span>${range}</span></div>
                         <div><span class="wargear-card-stat-label">Salvo</span><span>${w.salvo || '-'}</span></div>
                     </div>

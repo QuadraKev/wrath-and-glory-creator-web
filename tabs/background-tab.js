@@ -231,9 +231,10 @@ const BackgroundTab = {
             } else {
                 const isFree = freeLanguages.includes(language);
                 const costLabel = isFree ? '(Free)' : '(1 XP)';
+                const escaped = this.escapeHtml(language);
                 chip.innerHTML = `
-                    ${language} <span class="language-xp-cost">${costLabel}</span>
-                    <span class="language-remove" data-lang="${language}" style="cursor: pointer; margin-left: 5px;">&times;</span>
+                    ${escaped} <span class="language-xp-cost">${costLabel}</span>
+                    <span class="language-remove" data-lang="${escaped}" style="cursor: pointer; margin-left: 5px;">&times;</span>
                 `;
 
                 const removeBtn = chip.querySelector('.language-remove');
@@ -283,5 +284,11 @@ const BackgroundTab = {
                 character.background.goal.bonusType = goal.bonusType;
             }
         }
+    },
+
+    escapeHtml(text) {
+        const div = document.createElement('div');
+        div.textContent = text;
+        return div.innerHTML;
     }
 };

@@ -133,7 +133,7 @@ const GlossaryTab = {
         if (entries.length === 0) {
             container.innerHTML = `
                 <div class="glossary-empty">
-                    <p>No entries found${this.searchQuery ? ` for "${this.searchQuery}"` : ''}.</p>
+                    <p>No entries found${this.searchQuery ? ` for "${this.escapeHtml(this.searchQuery)}"` : ''}.</p>
                 </div>
             `;
             this._cleanupScroll();
@@ -383,5 +383,11 @@ const GlossaryTab = {
         } else {
             this.renderEntries();
         }
+    },
+
+    escapeHtml(text) {
+        const div = document.createElement('div');
+        div.textContent = text;
+        return div.innerHTML;
     }
 };
