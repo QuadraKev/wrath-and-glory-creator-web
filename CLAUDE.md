@@ -12,7 +12,7 @@ Vanilla JavaScript with global object pattern (no modules/bundling). Each file d
 - `js/xp-calculator.js` - XP cost calculations
 - `js/app.js` - Main controller, tab/section navigation
 - `tabs/settings-tab.js` - Settings tab with source book filtering (gold toggle buttons)
-- `tabs/references-tab.js` - Reference browser for all game data categories (searchable, filterable)
+- `tabs/references-tab.js` - Reference browser for all game data categories (searchable, filterable, progressive rendering)
 - `tabs/*.js` - UI modules following `init()` / `refresh()` / `render()` pattern
 - `css/styles.css` - Unified dark theme with CSS variables
 - `index.html` - Main HTML structure with sidebar + content layout
@@ -144,6 +144,8 @@ Source material PDFs are available locally for reference:
 19. **Settings tab**: Moved source book selection from Setting builder section to dedicated Settings tab. Gold toggle buttons (matching bestiary style). Glossary tab respects source filters.
 20. **References tab**: Searchable, filterable reference browser for 10 categories: Talents, Weapons, Armor, Augmetics, Equipment, Psychic Powers, Weapon Upgrades, Ascension Packages, Archetype Abilities, Species Abilities, and Mutations. Species abilities deduplicated across variants.
 21. **Augmetics separation**: Added 36 new augmetic entries (1 Forsaken System, 35 Apocrypha v9) to equipment.json. Separated augmetics as their own wargear category with dedicated filter buttons in Wargear tab, References tab, and own section on Character Sheet (between Armor and Equipment). Augmetics with stat bonuses display bonuses in sheet and references. Total: 67 augmetic entries.
+22. **Glossary & References performance**: Deferred body rendering (empty body with `data-deferred`, materialized on first expand), progressive rendering (batches of 100 entries on scroll), event delegation (single click listener on container via `e.target.closest()`), and search debounce (200ms). Applies to both `glossary-tab.js` and `references-tab.js`.
+23. **iOS fixes**: File loading — omit `<input accept="...">` on iOS to avoid Safari forcing .JSON extension on custom file types (.character). Glossary tooltips — prevent double-open on tap by clearing hover timer in click handler and checking `data-glossary-key` for duplicate popups.
 
 ## Builder Section Order
 
