@@ -109,7 +109,7 @@ The glossary (`data/glossary.json`) should be kept in sync with the bestiary app
 ## Workflow Rules
 
 - **Cache busting**: When modifying CSS or JS files, bump the `?v=N` query string on ALL affected `<script>` and `<link>` tags in `index.html`. Always bump all version numbers together.
-- **GitHub Issues**: Do NOT resolve/close issues until the user confirms they are resolved.
+- **GitHub Issues**: Do NOT resolve/close issues until the user confirms they are resolved. After closing an issue, post a comment summarizing the fix/change (what was wrong, what was changed, relevant commit hash).
 - **Commits**: Push using the QuadraKev-bot PAT (stored in Claude Code auto-memory, not in this file).
 
 ## Books Available (PDF)
