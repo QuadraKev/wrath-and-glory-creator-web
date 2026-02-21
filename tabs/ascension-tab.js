@@ -179,12 +179,7 @@ const AscensionTab = {
             if (!State.isSourceEnabled(a.source)) return false;
             // Check species compatibility
             if (a.species && a.species.length > 0) {
-                const species = DataLoader.getSpecies(character.species?.id);
-                if (species) {
-                    const speciesName = species.name?.toLowerCase();
-                    const speciesMatch = a.species.some(s => s.toLowerCase() === speciesName);
-                    if (!speciesMatch) return false;
-                }
+                if (!a.species.includes(character.species?.id)) return false;
             }
             return true;
         });
