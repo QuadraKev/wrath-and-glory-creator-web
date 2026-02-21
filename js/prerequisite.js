@@ -78,7 +78,7 @@ const PrerequisiteChecker = {
         }
 
         // Check tier requirement
-        if (prereqs.tier && character.tier < prereqs.tier) {
+        if (prereqs.tier && State.getEffectiveTier() < prereqs.tier) {
             reasons.push(`Tier ${prereqs.tier}+`);
         }
 
