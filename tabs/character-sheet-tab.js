@@ -224,7 +224,7 @@ const CharacterSheetTab = {
             ? keywords.map(k => `<span class="sheet-keyword">${k}</span>`).join('')
             : '<span class="sheet-keyword">-</span>';
 
-        const tierDisplay = effectiveTier > tier ? `Tier ${effectiveTier} (base ${tier})` : `Tier ${tier}`;
+        const tierDisplay = `Tier ${effectiveTier}`;
 
         return `
             <div class="sheet-section sheet-header-section">
@@ -1136,7 +1136,7 @@ const CharacterSheetTab = {
 
         return `
             <div class="sheet-section">
-                <h2 class="sheet-section-title">Ascension${effectiveTier > startingTier ? ` (Effective Tier ${effectiveTier})` : ''}</h2>
+                <h2 class="sheet-section-title">Ascension${effectiveTier > startingTier ? ` (Tier ${effectiveTier})` : ''}</h2>
                 ${items}
             </div>
         `;
@@ -1494,7 +1494,7 @@ const CharacterSheetTab = {
             ? (character.customArchetype?.name || 'Custom Archetype')
             : (archetype?.name || '-');
         const effectiveTierCopy = State.getEffectiveTier();
-        const tierCopyDisplay = effectiveTierCopy > character.tier ? `Tier ${effectiveTierCopy} (base ${character.tier})` : `Tier ${character.tier}`;
+        const tierCopyDisplay = `Tier ${effectiveTierCopy}`;
         lines.push(name);
         lines.push(`${speciesName} | ${archetypeName} | ${tierCopyDisplay} | Rank ${character.rank}`);
         if (keywords.length > 0) lines.push(`Keywords: ${keywords.join(', ')}`);

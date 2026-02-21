@@ -343,9 +343,7 @@ const App = {
         const xpText = `${spent} / ${total} XP`;
         const effectiveTier = State.getEffectiveTier();
         const startingTier = character.tier;
-        const tierText = effectiveTier > startingTier
-            ? `Tier ${startingTier} Campaign (Effective Tier ${effectiveTier})`
-            : `Tier ${startingTier} Campaign`;
+        const tierText = `Tier ${effectiveTier} Campaign`;
 
         // Update all XP displays
         document.getElementById('xp-display').textContent = xpText;
