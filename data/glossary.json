@@ -22,7 +22,7 @@
       "name": "Fear",
       "source": "core",
       "page": 199,
-      "description": "...The penalty lasts until the end of the scene or until an ally passes a Leadership (Wil) Test of DN 2 + the source's Fear value. A being that causes Fear is immune to Fear and Intimidation Interaction Attacks."
+      "description": "You're scared. Whatever is causing your Fear might also make you anxious, or trigger physical reactions like rapid breathing, shaking, and a lack of focus. When you encounter something that causes Fear, you roll your Resolve against a DN dictated by the source of Fear. Success allows you to act normally. If you fail, you suffer +2DN to all Tests. The penalty lasts until the end of the scene or until an ally passes a Leadership (Wil) Test of DN 2 + the source's Fear value. A being that causes Fear is immune to Fear and Intimidation Interaction Attacks."
     },
     "frenzied": {
       "name": "Frenzied",
@@ -46,13 +46,13 @@
       "name": "Pinned",
       "source": "core",
       "page": 199,
-      "description": "...While Pinned, you can't leave cover, but may take other Actions as normal. You suffer a +2 DN penalty to Ballistic Skill (A) Tests when you target an enemy using a Pinning Attacks against you. You may attempt to rally Pinned comrades on your Turn by making a Leadership (Wil) Test as an Action, with a DN equal to the enemy weapon's Salvo value, adding an extra +1 DN if a Pinned character has taken any damage (Shock or Wounds) during the combat. If the Test is successful, you rally any Pinned allies within 5 metres, ending the effect."
+      "description": "You're under heavy fire, and there's a chance your Resolve will break under pressure. If you are targeted with a Pinning Attack, you may be Pinned. If someone uses a Pinning Attack against you, they make a Ballistic Skill (A) Test against your Resolve. If they succeed you are Pinned until the start of the attacker's next Turn. If you're behind cover, you hunker down. If you aren't behind cover, you immediately move to the nearest cover, using your Movement for your next Turn. While Pinned, you can't leave cover, but may take other Actions as normal. You suffer a +2 DN penalty to Ballistic Skill (A) Tests when you target an enemy using a Pinning Attacks against you. You may attempt to rally Pinned comrades on your Turn by making a Leadership (Wil) Test as an Action, with a DN equal to the enemy weapon's Salvo value, adding an extra +1 DN if a Pinned character has taken any damage (Shock or Wounds) during the combat. If the Test is successful, you rally any Pinned allies within 5 metres, ending the effect."
     },
     "poisoned": {
       "name": "Poisoned",
       "source": "core",
       "page": 200,
-      "description": "You've been inflicted with one of the galaxy's countless pathogens, plagues, or viruses. You could be suffering from neurotoxins injected into your system, alien acid splashed on you, or Nurgle's contagions. You suffer a +2 DN penalty to all Tests while Poisoned. Some poisons also inflict damage based on the poison. Some poisons may affect your ability to function instead of, or in addition to, causing damage. The Poisoned condition ends when you are treated using the Medicae Skill or you succeed on a Toughness Test (DN based on the poison) at the beginning of your Turn."
+      "description": "You've been inflicted with one of the galaxy's countless pathogens, plagues, or viruses. You could be suffering from neurotoxins injected into your system, alien acid splashed on you, or Nurgle's contagions. All of these dangers leave you Poisoned. You suffer a +2 DN penalty to all Tests while Poisoned. Some poisons also inflict damage based on the poison. Some poisons may affect your ability to function instead of, or in addition to, causing damage. The Poisoned condition ends when you are treated using the Medicae Skill or you succeed on a Toughness Test (DN based on the poison) at the beginning of your Turn."
     },
     "prone": {
       "name": "Prone",
@@ -76,7 +76,7 @@
       "name": "Terror",
       "source": "core",
       "page": 200,
-      "description": "...Terror lasts until the end of the scene or until an ally passes a Leadership (Wil) Test of DN 2 + the Terror value. Any effect that grants a bonus to Fear Tests also applies to Terror Tests. Any effect that grants immunity to Fear grants one extra Icon on your Resolve Test against Terror. A being that causes Terror is immune to Fear, Terror, and Intimidation Interaction Attacks."
+      "description": "You're overcome with a sense of intense dread and rational thought becomes impossible: this is all-consuming Terror. Make a Resolve Test against the DN of the source of Terror. If you pass, you may act normally on your Turn. If you fail, you suffer all of the effects of Fear, and you must use every action available on each of your Turns to move as far away as possible until you no longer have line of sight to the source of Terror. Terror lasts until the end of the scene or until an ally passes a Leadership (Wil) Test of DN 2 + the Terror value. Any effect that grants a bonus to Fear Tests also applies to Terror Tests. Any effect that grants immunity to Fear grants one extra Icon on your Resolve Test against Terror. A being that causes Terror is immune to Fear, Terror, and Intimidation Interaction Attacks."
     },
     "vulnerable": {
       "name": "Vulnerable",
@@ -683,17 +683,23 @@
     "ere_we_go": {
       "name": "'Ere We Go",
       "source": "core",
-      "page": 230,
+      "page": 232,
       "description": "The latent psychic power of an Ork empowers their armour, allowing them to fight harder when harmed. An Ork wearing armour with this Trait ignores the Bulk and Cumbersome Traits when Wounded."
     },
     "fear_armor": {
       "name": "Fear",
-      "source": "core",
-      "page": null,
-      "description": "Unable to verify - no page reference provided and description is marked as AI-GENERATED."
+      "source": "aeldari",
+      "page": 92,
+      "description": "Armour that inspires terror in onlookers. Enemies that can see the wearer must pass a Fear Test with a DN equal to the rating."
     }
   },
   "weaponTraits": {
+    "agonising": {
+      "name": "Agonising",
+      "source": "core",
+      "page": 208,
+      "description": "Designed to inflict maximum pain, these weapons damage mind and morale as much as body. Every Wound inflicted by an Agonising weapon also inflicts 1 Shock."
+    },
     "arc": {
       "name": "Arc",
       "source": "core",
@@ -703,7 +709,7 @@
     "assault": {
       "name": "Assault",
       "source": "core",
-      "page": 206,
+      "page": 208,
       "description": "Optimised for firing whilst rushing righteously towards the enemy. You can fire an Assault weapon as part of a Sprint, but take a +2 DN penalty to the attack."
     },
     "blessed": {
@@ -734,12 +740,12 @@
       "name": "Force",
       "source": "core",
       "page": 209,
-      "description": "Psykers can channel the power of the Warp through the etheric circuit patterns and psycho-reactive materials of these weapons. If you have the PSYKER Keyword, you may add half of your Willpower Rating to a Force weapon's Damage Value. If you don't have the PSYKER Keyword, a Force weapon's damage is decreased by 2."
+      "description": "Psykers can channel the power of the Warp through the etheric circuit patterns and psycho-reactive materials of these weapons. If you have the PSYKER Keyword, you may add half of your (Wil) Rating to a Force weapon's Damage Value. If you don't have the PSYKER Keyword, a Force weapon's damage is decreased by 2."
     },
     "gruesome": {
       "name": "Gruesome",
-      "source": "core",
-      "page": 210,
+      "source": "aeldari",
+      "page": 79,
       "description": "Drukhari weapons, especially Haemonculus weapons, don't merely kill, they torture the target and terrify onlookers to feed the Drukhari soul debt. Weapons with the Gruesome Trait cause a DN 3 Fear Test for the target and allies within 10m on a Wrath Critical."
     },
     "heavy": {
@@ -762,15 +768,15 @@
     },
     "lance": {
       "name": "Lance",
-      "source": "core",
-      "page": 209,
-      "description": "Lance weapons strike targets with beams of concentrated energy, and the vaporising blast bores through the thickest armour. Weapons with the Lance Trait ignore the Invulnerable Armour Trait. Lance weapons cause Mortal Wounds, and they always inflict 1 Mortal Wound even if the attack does not damage its target."
+      "source": "church",
+      "page": 113,
+      "description": "Lance weapons blast targets with beams of concentrated energy. The vaporised mass fuelling the blast bores through the thickest armour. Weapons with the Lance Trait ignore the Invulnerable Armour trait. Lance weapons cause Mortal Wounds, and they always inflict 1 Mortal Wound even if it does not damage its target."
     },
     "melta": {
       "name": "Melta",
       "source": "core",
       "page": 209,
-      "description": "...Results of 5 and 6 inflict 2 Damage. When you roll Extra Damage Dice for a Melta weapon fired against a vehicle or fortification at Short range: Results of 1, 2 and 3 inflict 1 Damage. Results of 4, 5 and 6 inflict 2 Damage."
+      "description": "The sub-atomic bursts that spew from these weapons melt flesh and reduce armour to slag. When you roll Extra Damage Dice for a Melta weapon fired at Short Range: Results of 1 and 2 inflict 0 Damage. Results of 3 and 4 inflict 1 Damage. Results of 5 and 6 inflict 2 Damage. When you roll Extra Damage Dice for a Melta weapon fired against a vehicle or fortification at Short range: Results of 1, 2 and 3 inflict 1 Damage. Results of 4, 5 and 6 inflict 2 Damage."
     },
     "parry": {
       "name": "Parry",
