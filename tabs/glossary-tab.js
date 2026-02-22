@@ -72,8 +72,7 @@ const GlossaryTab = {
             { key: 'terms', name: 'Game Rule', pluralName: 'Game Rules and Terms' },
             { key: 'weaponTraits', name: 'Weapon Trait', pluralName: 'Weapon Traits' },
             { key: 'armorTraits', name: 'Armor Trait', pluralName: 'Armor Traits' },
-            { key: 'keywords', name: 'Keyword', pluralName: 'Keywords' },
-            { key: 'psychicPowers', name: 'Psychic Power', pluralName: 'Psychic Powers' }
+            { key: 'keywords', name: 'Keyword', pluralName: 'Keywords' }
         ];
 
         for (const cat of categories) {
@@ -178,7 +177,7 @@ const GlossaryTab = {
     // Group entries by category
     groupByCategory(entries) {
         const groups = new Map();
-        const categoryOrder = ['characterTerms', 'conditions', 'combatTerms', 'terms', 'weaponTraits', 'armorTraits', 'keywords', 'psychicPowers'];
+        const categoryOrder = ['characterTerms', 'conditions', 'combatTerms', 'terms', 'weaponTraits', 'armorTraits', 'keywords'];
 
         for (const entry of entries) {
             if (!groups.has(entry.category)) {
