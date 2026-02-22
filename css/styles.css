@@ -3784,7 +3784,8 @@ textarea {
     padding: 20px;
 }
 
-#tab-glossary h2 {
+#tab-glossary h2,
+#tab-references h2 {
     margin-bottom: 20px;
     color: var(--accent-gold);
 }
