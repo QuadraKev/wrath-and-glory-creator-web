@@ -2727,7 +2727,7 @@
       "AELDARI",
       "ASURYANI",
       "ANHRATHE",
-      "HARLEQUINS"
+      "HARLEQUIN"
     ],
     "source": "apocrypha",
     "page": 434
@@ -4706,7 +4706,7 @@
     "name": "Chem Gland",
     "category": "augmetic",
     "description": "This implant is a tiny artificial organ which can produce a single drug, flooding the body with that drug on a mental command.",
-    "effect": "Select a single drug\u2014either Stimm, or a drug with the COMBAT DRUG keyword\u2014for the gland to produce. The character may administer the drug as a free action at the start of their turn. The gland produces the drug, but it takes time and nutrients, producing 3 doses at the end of each Respite.",
+    "effect": "Select a single drug—either Stimm, or a drug with the COMBAT DRUG keyword—for the gland to produce. The character may administer the drug as a free action at the start of their turn. The gland produces the drug, but it takes time and nutrients, producing 3 doses at the end of each Respite.",
     "value": 7,
     "rarity": "Very Rare",
     "keywords": [
@@ -4767,7 +4767,7 @@
     "name": "Electrograft",
     "category": "augmetic",
     "description": "Electrografts are a special form of electoo engineered directly onto the recipient's cerebellum. This involves cutting away a portion of the skull and creating the electoo directly on the brain tissue before (usually) replacing the section of cranium or covering with synthetic material. An electrograft reacts with the brain to alter a creature's memory, personality and knowledge.",
-    "effect": "A character implanted with an electrograft may gain one of the effects below. A character may receive multiple electrografts, but for every electrograft after the first, the character must change one extra die on Intellect, Willpower, or Fellowship tests to a Wrath die.\n\u2022 Learn 1+ Rank additional languages.\n\u2022 +Rank dice on tests using a single skill.\n\u2022 Remove or alter a memory.",
+    "effect": "A character implanted with an electrograft may gain one of the effects below. A character may receive multiple electrografts, but for every electrograft after the first, the character must change one extra die on Intellect, Willpower, or Fellowship tests to a Wrath die.\n• Learn 1+ Rank additional languages.\n• +Rank dice on tests using a single skill.\n• Remove or alter a memory.",
     "value": 5,
     "rarity": "Uncommon",
     "keywords": [
@@ -4825,7 +4825,7 @@
     "name": "Luminen Capacitor",
     "category": "augmetic",
     "description": "The recipient's internal energies are channelled into capacitors buried within their flesh and connected to their various implants. This energy can be tapped to recharge items or serve as a power source for weapons and potent attacks.",
-    "effect": "A luminen capacitor contains a number of charges equal to the recipient's Toughness. With a Toughness test, and a minute of meditative focus, the character may spend charges to power machinery. The DN of this test is 2 + charges used, and the number of charges required varies based on the system being charged.\n\n\u2022 1 charge: simple power cell, illuminator\n\u2022 2 charges: weapon charge pack, data-slate, starship bridge control shrine\n\u2022 3 charges: shuttle electronics, servo skull\n\u2022 4 charges: heavy weapon charge pack, servitor, hololithic projector\n\u2022 5 charges: cogitator core, reactor machine spirit, xenos technology\n\nIf a character would suffer Shock from using an augmetic, then they may spend charges to reduce this, suffering one fewer Shock for each charge spent.\n\nThe luminen capacitor regains its full charges during a Regroup. The character may also siphon power from powered devices and power sources, requiring a Toughness test (DN 3) and an action. Success means the character regains 1d3 charges, plus 1 for each Exalted Icon shifted.",
+    "effect": "A luminen capacitor contains a number of charges equal to the recipient's Toughness. With a Toughness test, and a minute of meditative focus, the character may spend charges to power machinery. The DN of this test is 2 + charges used, and the number of charges required varies based on the system being charged.\n\n• 1 charge: simple power cell, illuminator\n• 2 charges: weapon charge pack, data-slate, starship bridge control shrine\n• 3 charges: shuttle electronics, servo skull\n• 4 charges: heavy weapon charge pack, servitor, hololithic projector\n• 5 charges: cogitator core, reactor machine spirit, xenos technology\n\nIf a character would suffer Shock from using an augmetic, then they may spend charges to reduce this, suffering one fewer Shock for each charge spent.\n\nThe luminen capacitor regains its full charges during a Regroup. The character may also siphon power from powered devices and power sources, requiring a Toughness test (DN 3) and an action. Success means the character regains 1d3 charges, plus 1 for each Exalted Icon shifted.",
     "value": 5,
     "rarity": "Uncommon",
     "keywords": [
@@ -4946,7 +4946,7 @@
     "id": "skinplant_aaa",
     "name": "Skinplant",
     "category": "augmetic",
-    "description": "Skinplants are sophisticated tattoos\u2014very sophisticated. Molecular-scale crystalline circuitry is embedded between layers of skin, drawing miniscule amounts of power from the recipient's body to create a tattoo that can light up, flash, or even display simple animations.",
+    "description": "Skinplants are sophisticated tattoos—very sophisticated. Molecular-scale crystalline circuitry is embedded between layers of skin, drawing miniscule amounts of power from the recipient's body to create a tattoo that can light up, flash, or even display simple animations.",
     "effect": "The character has an illuminated tattoo, with a design of their choosing. This may be permanently lit, or it may remain hidden until a specific trigger (pressure, contracting a muscle, or similar). These are often applied to demonstrate fervour or loyalty and add +1 dice to any Persuasion or Intimidation tests attempted (choose which skill is affected when you gain the Skinplant).",
     "value": 2,
     "rarity": "Common",
@@ -4970,7 +4970,7 @@
     "id": "thiefs_light_aaa",
     "name": "Thief's Light",
     "category": "augmetic",
-    "description": "A simple skinplant with many unsavoury uses, the thief's light is a simple luminescent patch on the palm of the hand, which is nearly imperceptible until activated. When triggered\u2014usually by squeezing the hand shut for a few seconds\u2014the patch glows with a soft yellow light, enough to illuminate objects within a few centimetres clearly enough to perform intricate tasks without producing large amounts of light that would give the user's presence away.",
+    "description": "A simple skinplant with many unsavoury uses, the thief's light is a simple luminescent patch on the palm of the hand, which is nearly imperceptible until activated. When triggered—usually by squeezing the hand shut for a few seconds—the patch glows with a soft yellow light, enough to illuminate objects within a few centimetres clearly enough to perform intricate tasks without producing large amounts of light that would give the user's presence away.",
     "effect": "At will, the user can generate a small amount of light from the palm of one hand.",
     "value": 2,
     "rarity": "Uncommon",
@@ -5016,7 +5016,7 @@
     "id": "cybork_body_aaa",
     "name": "Cybork Body",
     "category": "augmetic",
-    "description": "Sometimes Orks get critically injured in battle but survive to fight again later after an extensive rebuild that turns them in as much as a machine as an Ork \u2014 a Cybork. The Cybork Body is effectively a complete rebuild of the Orks body using crude cybernetics and bionic implants. Often made with built in armour plates and weaponry, this makes Orks extremely tough and able to shrug off hits that other fleshy Orks would be downed by.",
+    "description": "Sometimes Orks get critically injured in battle but survive to fight again later after an extensive rebuild that turns them in as much as a machine as an Ork — a Cybork. The Cybork Body is effectively a complete rebuild of the Orks body using crude cybernetics and bionic implants. Often made with built in armour plates and weaponry, this makes Orks extremely tough and able to shrug off hits that other fleshy Orks would be downed by.",
     "effect": "Your Resilience and Determination are both increased by +2.",
     "bonuses": {
       "resilience": 2
@@ -5033,7 +5033,7 @@
     "id": "gyro_stabilised_monowheel_aaa",
     "name": "Gyro-Stabilised Monowheel",
     "category": "augmetic",
-    "description": "The Ork's legs have been entirely replaced with a single wheel, normally salvaged from a Bike or a smaller Trukk. Complex 'spinny gubbinz' allow the Ork to maintain balance upon this seemingly-precarious wheel, and the Ork will find that he can move much faster than before\u2026 so long as he doesn't run into any obstacles.",
+    "description": "The Ork's legs have been entirely replaced with a single wheel, normally salvaged from a Bike or a smaller Trukk. Complex 'spinny gubbinz' allow the Ork to maintain balance upon this seemingly-precarious wheel, and the Ork will find that he can move much faster than before… so long as he doesn't run into any obstacles.",
     "effect": "Your Speed is doubled. However, you can no longer climb ladders or stairs, and you can no longer jump without the aid of a ramp. Whenever you attempt to Run, Charge, or Sprint through Difficult Terrain, you must pass an Athletics test (DN 5) or suffer 1d3 Mortal Wounds as you crash.",
     "value": 5,
     "rarity": "Rare",
@@ -5047,7 +5047,7 @@
     "id": "spike_arm_aaa",
     "name": "Spike Arm",
     "category": "augmetic",
-    "description": "This appears to be a normal bionik arm\u2014by Ork standards, at least\u2014but conceals a number of retractable spikes and blades.",
+    "description": "This appears to be a normal bionik arm—by Ork standards, at least—but conceals a number of retractable spikes and blades.",
     "effect": "This is a normal Augmetic Arm, granting you +1 Strength. In addition, your unarmed attacks now deal 3+3ED damage, adding your Strength as normal to the damage rating.",
     "bonuses": {
       "strength": 1
@@ -5064,8 +5064,8 @@
     "id": "squig_attack_arm_aaa",
     "name": "Squig Attack Arm",
     "category": "augmetic",
-    "description": "This appears to be a normal bionik arm\u2014by Ork standards, at least\u2014but conceals a compartment containing a gnasher squig which is quite angry at being stuffed into a hidden compartment in a bionik arm. This can be opened quickly during a fight to surprise an opponent.",
-    "effect": "This is a normal Augmetic Arm, granting you +1 Strength. In addition, you may release the squig as free action on your turn. The squig immediately attacks the nearest creature of your choice within 1m (if there are no other creatures within 1m, it attacks you), rolling 6 dice for its Weapon Skill test. If it hits, it inflicts 8+4ED damage with the Inflict (Bleeding) trait. Whether or not it hits, the squig then flees, is killed, or skulks away with a chunk of fresh meat. You must load a new squig\u2014requiring a Survival test with a DN of 5\u2014during a Regroup or Respite to use this ability again; complications on this test may result in the squig biting you and escaping, as above.",
+    "description": "This appears to be a normal bionik arm—by Ork standards, at least—but conceals a compartment containing a gnasher squig which is quite angry at being stuffed into a hidden compartment in a bionik arm. This can be opened quickly during a fight to surprise an opponent.",
+    "effect": "This is a normal Augmetic Arm, granting you +1 Strength. In addition, you may release the squig as free action on your turn. The squig immediately attacks the nearest creature of your choice within 1m (if there are no other creatures within 1m, it attacks you), rolling 6 dice for its Weapon Skill test. If it hits, it inflicts 8+4ED damage with the Inflict (Bleeding) trait. Whether or not it hits, the squig then flees, is killed, or skulks away with a chunk of fresh meat. You must load a new squig—requiring a Survival test with a DN of 5—during a Regroup or Respite to use this ability again; complications on this test may result in the squig biting you and escaping, as above.",
     "bonuses": {
       "strength": 1
     },

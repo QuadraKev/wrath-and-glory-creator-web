@@ -4076,7 +4076,7 @@
       "ASTRA MILITARUM",
       "[REGIMENT]",
       "ABHUMAN",
-      "MILITARUM AUXILIA"
+      "MILITARUM AUXILLA"
     ],
     "attributeBonus": {
       "strength": 3,
@@ -5014,7 +5014,7 @@
       "IMPERIUM",
       "ADEPTUS ASTRA TELEPATHICA",
       "PSYKER",
-      "SCHOLASTICA PSYKANA"
+      "SCHOLASTIA PSYKANA"
     ],
     "attributeBonus": {
       "willpower": 4
@@ -5617,7 +5617,7 @@
   {
     "id": "bonesinger_aoa",
     "name": "Bonesinger (Abundance of Apocrypha)",
-    "description": "You are a psyker; you know the Smite and Vaul’s Song psychic powers and may purchase other powers from the Divination discipline, the Runes of Shaping discipline, and one other discipline of your choi...",
+    "description": "You are a psyker; you know the Smite and Vaul's Song psychic powers and may purchase other powers from the Divination discipline, the Runes of Shaping discipline, and one other discipline of your choi...",
     "tier": 2,
     "species": [
       "aeldari",
@@ -5644,7 +5644,7 @@
     "abilities": [
       {
         "name": "Path of the Shaper",
-        "description": "You are a psyker; you know the Smite and Vaul’s Song psychic powers and may purchase other powers from the Divination discipline, the Runes of Shaping discipline, and one other discipline of your choice."
+        "description": "You are a psyker; you know the Smite and Vaul's Song psychic powers and may purchase other powers from the Divination discipline, the Runes of Shaping discipline, and one other discipline of your choice."
       }
     ],
     "startingWargear": [
@@ -5793,7 +5793,7 @@
       "needle pistol",
       "bodyglove",
       "diagnostor",
-      "chirurgeon’s tools",
+      "chirurgeon's tools",
       "3 doses of Stimm"
     ],
     "source": "apocrypha",
@@ -5869,7 +5869,7 @@
     "influenceModifier": 2,
     "abilities": [
       {
-        "name": "Serpent’s Tongue You add +Rank bonus dice to all Persuasion and Intimidation Interaction attacks against targets with the IMPERIUM, SCUM, or HERETIC keywords. On a successful Interaction Attack, you may spend 1 Wrath to add +Rank Exalted Icons to the result.",
+        "name": "Serpent's Tongue You add +Rank bonus dice to all Persuasion and Intimidation Interaction attacks against targets with the IMPERIUM, SCUM, or HERETIC keywords. On a successful Interaction Attack, you may spend 1 Wrath to add +Rank Exalted Icons to the result.",
         "description": ""
       }
     ],
@@ -6125,7 +6125,7 @@
     "influenceModifier": 1,
     "abilities": [
       {
-        "name": "Fix it Proppa. You gain +Double Rank bonus dice on Tech tests to fix any weapon, vehicle, or other machine with the ORK keyword. In addition, during a regroup or respite, you may tinker with a weapon, vehicle, or other machine with the ORK keyword. If tinkering with a weapon, you may add your Rank from the weapon’s Range (add the same to all range categories), ED, Salvo rating, or any rated Trait the weapon already possesses. Other machines gain a bonus of the GM’s discretion. These bonuses last until the next respite, or until the machine suffers a complication, whichever comes first.",
+        "name": "Fix it Proppa. You gain +Double Rank bonus dice on Tech tests to fix any weapon, vehicle, or other machine with the ORK keyword. In addition, during a regroup or respite, you may tinker with a weapon, vehicle, or other machine with the ORK keyword. If tinkering with a weapon, you may add your Rank from the weapon's Range (add the same to all range categories), ED, Salvo rating, or any rated Trait the weapon already possesses. Other machines gain a bonus of the GM's discretion. These bonuses last until the next respite, or until the machine suffers a complication, whichever comes first.",
         "description": ""
       }
     ],
@@ -6178,7 +6178,7 @@
       "Master-Crafted Laspistol",
       "Force Stave",
       "Nobilite Robes (clothing)",
-      "Emperor’s Tarot deck (Psychic Focus)"
+      "Emperor's Tarot deck (Psychic Focus)"
     ],
     "source": "apocrypha",
     "page": 11,
@@ -6222,7 +6222,7 @@
     "abilities": [
       {
         "name": "Breach and Clear",
-        "description": "When you take your turn, you may use a Simple Action to prepare for an ally within 6m of you. If you do so, you may Keep the Initiative to allow that ally to take a turn, without needing to spend Glory. This ability does not function if the chosen ally has already taken a turn, and it does not allow you to Keep the Initiative if you normally couldn’t. You may use this a number of times each scene equal to your Rank."
+        "description": "When you take your turn, you may use a Simple Action to prepare for an ally within 6m of you. If you do so, you may Keep the Initiative to allow that ally to take a turn, without needing to spend Glory. This ability does not function if the chosen ally has already taken a turn, and it does not allow you to Keep the Initiative if you normally couldn't. You may use this a number of times each scene equal to your Rank."
       }
     ],
     "startingWargear": [
@@ -6266,7 +6266,7 @@
       }
     ],
     "startingWargear": [
-      "Navis Officer’s Uniform (clothing)",
+      "Navis Officer's Uniform (clothing)",
       "Mesh Armour",
       "Laspistol or Hand Cannon",
       "Chainsword",
@@ -6358,7 +6358,7 @@
   {
     "id": "reaver_aoa",
     "name": "Reaver (Abundance of Apocrypha)",
-    "description": "While riding a Reaver Jetbike, you may attempt to roll Determination against damage inflicted to your vehicle: roll dice equal to your Pilot dice pool, or the Jetbike’s Handling score, whichever is hi...",
+    "description": "While riding a Reaver Jetbike, you may attempt to roll Determination against damage inflicted to your vehicle: roll dice equal to your Pilot dice pool, or the Jetbike's Handling score, whichever is hi...",
     "tier": 2,
     "species": [
       "drukhari_aoa"
@@ -6385,7 +6385,7 @@
     "abilities": [
       {
         "name": "Lethal Swiftness",
-        "description": "While riding a Reaver Jetbike, you may attempt to roll Determination against damage inflicted to your vehicle: roll dice equal to your Pilot dice pool, or the Jetbike’s Handling score, whichever is higher. Each icon converts Wounds to Shock as normal. In addition, you may add +Rank ED to the damage of your Reaver Jetbike’s Bladevanes."
+        "description": "While riding a Reaver Jetbike, you may attempt to roll Determination against damage inflicted to your vehicle: roll dice equal to your Pilot dice pool, or the Jetbike's Handling score, whichever is higher. Each icon converts Wounds to Shock as normal. In addition, you may add +Rank ED to the damage of your Reaver Jetbike's Bladevanes."
       }
     ],
     "startingWargear": [
@@ -6650,7 +6650,7 @@
     "abilities": [
       {
         "name": "Irradiated and Augmented",
-        "description": "You do not bleed (making you immune to Bleeding), and gain +Rank bonus dice to Determination rolls. In addition, any living creature without the ADEPTUS MECHANICUS keyword within 2 metres of you at the start of their turn must pass a DN 3 Toughness Test or suffer the Poisoned condition. This poison is radiation poisoning, inflicting 1 Mortal Wound and Rank Shock at the start of each of the Poisoned character’s turns."
+        "description": "You do not bleed (making you immune to Bleeding), and gain +Rank bonus dice to Determination rolls. In addition, any living creature without the ADEPTUS MECHANICUS keyword within 2 metres of you at the start of their turn must pass a DN 3 Toughness Test or suffer the Poisoned condition. This poison is radiation poisoning, inflicting 1 Mortal Wound and Rank Shock at the start of each of the Poisoned character's turns."
       }
     ],
     "startingWargear": [
@@ -6908,7 +6908,7 @@
   {
     "id": "brôkhyr_iron_master_aoa",
     "name": "Brôkhyr Iron-Master (Abundance of Apocrypha)",
-    "description": "You receive +Rank on Tech tests to repair a damaged LEAGUES OF VOTANN machine, or to craft a new one. You may re-roll up to Rank dice on any skill test made to use a device you’ve personally built. Yo...",
+    "description": "You receive +Rank on Tech tests to repair a damaged LEAGUES OF VOTANN machine, or to craft a new one. You may re-roll up to Rank dice on any skill test made to use a device you've personally built. Yo...",
     "tier": 3,
     "species": [
       "kin_aoa"
@@ -6936,7 +6936,7 @@
     "abilities": [
       {
         "name": "Guild Techniques",
-        "description": "You receive +Rank on Tech tests to repair a damaged LEAGUES OF VOTANN machine, or to craft a new one. You may re-roll up to Rank dice on any skill test made to use a device you’ve personally built. You are considered to have built all of your starting wargear personally."
+        "description": "You receive +Rank on Tech tests to repair a damaged LEAGUES OF VOTANN machine, or to craft a new one. You may re-roll up to Rank dice on any skill test made to use a device you've personally built. You are considered to have built all of your starting wargear personally."
       }
     ],
     "startingWargear": [
@@ -6987,7 +6987,7 @@
     "startingWargear": [
       "Fireblade Pulse Rifle",
       "markerlight",
-      "T’au Body Armour",
+      "T'au Body Armour",
       "3 photon grenades",
       "up to two Drones (Gun Drone",
       "Marker Drone",
@@ -7207,7 +7207,7 @@
     "abilities": [
       {
         "name": "Undercover Agent",
-        "description": "You gain +Rank bonus dice on all Deception tests make to disguise yourself or present yourself as someone else. In addition, you may spend an Exalted Icon from a Deception test to grant yourself the use of a Keyword which you don’t normally possess. This keyword must relate to your current disguise or alias."
+        "description": "You gain +Rank bonus dice on all Deception tests make to disguise yourself or present yourself as someone else. In addition, you may spend an Exalted Icon from a Deception test to grant yourself the use of a Keyword which you don't normally possess. This keyword must relate to your current disguise or alias."
       }
     ],
     "startingWargear": [
@@ -7271,7 +7271,7 @@
   {
     "id": "einhyr_hearthguard_aoa",
     "name": "Einhyr Hearthguard (Abundance of Apocrypha)",
-    "description": "When an enemy makes an attack against an ally within 5m of you, then as a Reflexive Action, you may increase that ally’s Defence and Resilience by +Rank against that attack.",
+    "description": "When an enemy makes an attack against an ally within 5m of you, then as a Reflexive Action, you may increase that ally's Defence and Resilience by +Rank against that attack.",
     "tier": 3,
     "species": [
       "kin_aoa"
@@ -7299,7 +7299,7 @@
     "abilities": [
       {
         "name": "Close Protection",
-        "description": "When an enemy makes an attack against an ally within 5m of you, then as a Reflexive Action, you may increase that ally’s Defence and Resilience by +Rank against that attack."
+        "description": "When an enemy makes an attack against an ally within 5m of you, then as a Reflexive Action, you may increase that ally's Defence and Resilience by +Rank against that attack."
       }
     ],
     "startingWargear": [
@@ -7345,7 +7345,7 @@
     "influenceModifier": 4,
     "abilities": [
       {
-        "name": "Voice of the Tau’va You gain +Rank bonus dice whenever you make a social Skill Test against a T’AU EMPIRE character. This increases to +Double Rank if the character’s species is Shas T’au, Fio T’au, Por T’au, or Kor T’au.",
+        "name": "Voice of the Tau'va You gain +Rank bonus dice whenever you make a social Skill Test against a T'AU EMPIRE character. This increases to +Double Rank if the character's species is Shas T'au, Fio T'au, Por T'au, or Kor T'au.",
         "description": ""
       }
     ],
@@ -7735,7 +7735,7 @@
   {
     "id": "shining_spear_aspect_warrior_aoa",
     "name": "Shining Spear Aspect Warrior (Abundance of Apocrypha)",
-    "description": "You may reroll Double Rank dice on any Pilot test you make when operating an Aeldari Jetbike and increase the jetbike’s Defence by +Rank.",
+    "description": "You may reroll Double Rank dice on any Pilot test you make when operating an Aeldari Jetbike and increase the jetbike's Defence by +Rank.",
     "tier": 3,
     "species": [
       "aeldari",
@@ -7763,7 +7763,7 @@
     "abilities": [
       {
         "name": "Ride the Wind",
-        "description": "You may reroll Double Rank dice on any Pilot test you make when operating an Aeldari Jetbike and increase the jetbike’s Defence by +Rank."
+        "description": "You may reroll Double Rank dice on any Pilot test you make when operating an Aeldari Jetbike and increase the jetbike's Defence by +Rank."
       }
     ],
     "startingWargear": [
@@ -8083,7 +8083,7 @@
     "abilities": [
       {
         "name": "Crime Scene",
-        "description": "Investigation You have seen enough crime scenes that you can quickly identify common patterns. When you shift one or more Exalted Icons on an Investigation test, you count as having shifted +Rank additional Exalted Icons (this doesn’t affect whether you pass or fail, just the number of extra benefits you get from shifting)."
+        "description": "Investigation You have seen enough crime scenes that you can quickly identify common patterns. When you shift one or more Exalted Icons on an Investigation test, you count as having shifted +Rank additional Exalted Icons (this doesn't affect whether you pass or fail, just the number of extra benefits you get from shifting)."
       }
     ],
     "startingWargear": [
@@ -8628,7 +8628,7 @@
       "Master-Crafted Laspistol",
       "Force Stave",
       "Finest Nobilite Robes (Very Rare clothing)",
-      "Emperor’s Tarot deck (Psychic Focus)",
+      "Emperor's Tarot deck (Psychic Focus)",
       "Wealth 4"
     ],
     "source": "apocrypha",
@@ -9598,7 +9598,7 @@
     "abilities": [
       {
         "name": "Decapitation Strike",
-        "description": "When you make a melee attack against a single enemy—not as part of a multi- attack or multi-action—you gain bonus dice on your attack equal to the number of Personal Ruin that enemy possesses. Further, each Exalted Icon rolled on that melee weapon’s ED inflicts one Mortal Wound."
+        "description": "When you make a melee attack against a single enemy—not as part of a multi- attack or multi-action—you gain bonus dice on your attack equal to the number of Personal Ruin that enemy possesses. Further, each Exalted Icon rolled on that melee weapon's ED inflicts one Mortal Wound."
       }
     ],
     "startingWargear": [
@@ -9754,8 +9754,8 @@
     "influenceModifier": 0,
     "abilities": [
       {
-        "name": "Betrayal’s Blade",
-        "description": "When disguised or otherwise concealing your identity, you gain a Stealth Score based on the total of your Deception test. This score only decreases when you take actions which may reveal your true intentions (GM’s discretion)."
+        "name": "Betrayal's Blade",
+        "description": "When disguised or otherwise concealing your identity, you gain a Stealth Score based on the total of your Deception test. This score only decreases when you take actions which may reveal your true intentions (GM's discretion)."
       }
     ],
     "startingWargear": [
@@ -10085,8 +10085,8 @@
       "Holo-suit",
       "Agaith",
       "flip-belt",
-      "Harlequin’s Caress",
-      "Harlequin’s Kiss"
+      "Harlequin's Caress",
+      "Harlequin's Kiss"
     ],
     "source": "apocrypha",
     "page": 202
@@ -10421,7 +10421,7 @@
     "influenceModifier": 1,
     "abilities": [
       {
-        "name": "Cutting of the Crone’s Cord Your weapons take life so utterly and completely that it inspires abject dread in the living. When you make a ranged attack with a DISTORT weapon, enemies within 6m of a target slain by the attack must pass a DN 2+Rank Resolve test or suffer the Pinned condition.",
+        "name": "Cutting of the Crone's Cord Your weapons take life so utterly and completely that it inspires abject dread in the living. When you make a ranged attack with a DISTORT weapon, enemies within 6m of a target slain by the attack must pass a DN 2+Rank Resolve test or suffer the Pinned condition.",
         "description": ""
       }
     ],

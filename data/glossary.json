@@ -792,6 +792,12 @@
       "page": null,
       "description": "[AI-Generated] A Drukhari warrior who captures and controls exotic and dangerous beasts, unleashing them upon their enemies in the arenas and on the battlefield."
     },
+    "beasts": {
+      "name": "BEASTS",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] Creatures that are animals or beast-like in nature, lacking true sapience but often dangerous in combat."
+    },
     "black_legion": {
       "name": "BLACK LEGION",
       "source": "apocrypha",
@@ -2033,6 +2039,12 @@
       "source": "apocrypha",
       "page": null,
       "description": "[AI-Generated] An Ork who specialises in herding and controlling Gretchin and other Runts, using grabba sticks and squig hounds to keep their charges in line."
+    },
+    "runts": {
+      "name": "RUNTS",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] The smallest and weakest of Orkoid creatures, such as Gretchin and Snotlings, who serve as menial labourers and cannon fodder for larger Orks."
     },
     "saedath": {
       "name": "[SAEDATH]",
