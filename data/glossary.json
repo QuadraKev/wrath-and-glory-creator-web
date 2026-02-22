@@ -636,6 +636,12 @@
       "page": 375,
       "description": "The state church of the Imperium that propagates and maintains the worship of the God-Emperor to unite His people."
     },
+    "administratum": {
+      "name": "ADMINISTRATUM",
+      "source": "core",
+      "page": null,
+      "description": "[AI-Generated] A shortened form of Adeptus Administratum, the colossal bureaucratic organisation that governs the Imperium."
+    },
     "aeldari": {
       "name": "AELDARI",
       "source": "core",
@@ -684,6 +690,12 @@
       "page": null,
       "description": "[AI-Generated] Equipment or vehicles that use anti-gravitational technology to hover or fly."
     },
+    "any": {
+      "name": "ANY",
+      "source": "core",
+      "page": null,
+      "description": "[AI-Generated] Indicates wargear or equipment that can be used by any faction, without restriction."
+    },
     "any_keyword": {
       "name": "[ANY]",
       "source": "core",
@@ -707,6 +719,12 @@
       "source": "core",
       "page": 375,
       "description": "Asuryani that follow the Path of the Warrior devote themselves to a specific aspect of Khaine, the Aeldari God of War. These Asuryani are known as Aspect Warriors."
+    },
+    "astartes": {
+      "name": "ASTARTES",
+      "source": "dh",
+      "page": null,
+      "description": "[AI-Generated] A shortened form of Adeptus Astartes, used to identify Space Marines regardless of loyalty."
     },
     "astra_cartographica": {
       "name": "ASTRA CARTOGRAPHICA",
@@ -737,6 +755,12 @@
       "source": "aeldari",
       "page": null,
       "description": "[AI-Generated] An Asuryani leader who has walked many of the Paths, combining their diverse experience into masterful strategic and tactical command."
+    },
+    "avachrus_forge_world": {
+      "name": "AVACHRUS FORGE WORLD",
+      "source": "redacted1",
+      "page": null,
+      "description": "[AI-Generated] A Forge World of the Adeptus Mechanicus, the planet Avachrus and its manufacturing output."
     },
     "bad_moon": {
       "name": "BAD MOON",
@@ -876,6 +900,12 @@
       "page": null,
       "description": "[AI-Generated] A weapon that uses chemical agents to harm targets."
     },
+    "chieftain": {
+      "name": "CHIEFTAN",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] A tribal leader or warlord who commands through strength and authority."
+    },
     "clan": {
       "name": "[CLAN]",
       "source": "core",
@@ -912,6 +942,12 @@
       "page": null,
       "description": "[AI-Generated] The inner circle of a Drukhari Archon, consisting of exotic and dangerous retainers such as Sslyth bodyguards, Lhamaean poisoners, and Medusae."
     },
+    "coven": {
+      "name": "[COVEN]",
+      "source": "aeldari",
+      "page": null,
+      "description": "[AI-Generated] A shortened form of [HAEMONCULUS COVEN], representing a player's choice of Drukhari Haemonculus Coven."
+    },
     "craftworld": {
       "name": "[CRAFTWORLD]",
       "source": "core",
@@ -947,6 +983,12 @@
       "source": "apocrypha",
       "page": null,
       "description": "[AI-Generated] A warrior hailing from the subterranean mining world of Cthonia, known for their savage gang-fighting traditions."
+    },
+    "cult": {
+      "name": "[CULT]",
+      "source": "aeldari",
+      "page": null,
+      "description": "[AI-Generated] A shortened form of [WYCH CULT], representing a player's choice of Drukhari Wych Cult."
     },
     "cult_mechanicus": {
       "name": "CULT MECHANICUS",
@@ -1410,6 +1452,12 @@
       "page": null,
       "description": "[AI-Generated] A mysterious and rarely encountered xenos species that exudes an entropy field, causing rapid ageing and decay in everything around them."
     },
+    "imperial": {
+      "name": "IMPERIAL",
+      "source": "redacted1",
+      "page": null,
+      "description": "[AI-Generated] A broad designation for anything belonging to or aligned with the Imperium of Man."
+    },
     "imperial_fists": {
       "name": "IMPERIAL FISTS",
       "source": "voa",
@@ -1433,6 +1481,12 @@
       "source": "aeldari",
       "page": null,
       "description": "[AI-Generated] Elite Drukhari warriors who serve as bodyguards and mercenaries, clad in heavy armour and wielding massive two-handed klaives. They train in shrines dedicated to the art of killing."
+    },
+    "incubus_keyword": {
+      "name": "INCUBUS",
+      "source": "aeldari",
+      "page": null,
+      "description": "[AI-Generated] The singular form of Incubi — elite Drukhari warriors who serve as bodyguards and mercenaries, wielding massive two-handed klaives."
     },
     "inquisition": {
       "name": "INQUISITION",
@@ -1469,6 +1523,12 @@
       "source": "core",
       "page": 378,
       "description": "The majority of the Drukhari are part of an immoral Kabal, a scattered army of raiders and slavers that pillage the galaxy through use of the Webway. Each Kabal is led by an Archon with their own twisted goals. Examples: Black Heart, Flayed Skull, Poisoned Tongue, Obsidian Rose."
+    },
+    "kabal_keyword": {
+      "name": "KABAL",
+      "source": "aeldari",
+      "page": null,
+      "description": "[AI-Generated] When used as an unbracketed keyword on wargear, indicates equipment associated with Drukhari Kabals."
     },
     "kabalite": {
       "name": "KABALITE",
@@ -1596,6 +1656,12 @@
       "page": null,
       "description": "[AI-Generated] The brand of the Blood God, bestowed upon those who have earned Khorne's favour through acts of violence and bloodshed."
     },
+    "mark_of_khorne_bracket": {
+      "name": "[MARK OF KHORNE]",
+      "source": "dh",
+      "page": null,
+      "description": "[AI-Generated] The specific Mark of Chaos granted by Khorne, the Blood God. A bracketed keyword indicating a specific implementation of [MARK OF CHAOS]."
+    },
     "mark_of_nurgle": {
       "name": "MARK OF NURGLE",
       "source": "dh",
@@ -1679,6 +1745,12 @@
       "source": "core",
       "page": 376,
       "description": "Humans that have deviated from the pure, Ecclesiarchy-defined form due to the malign influence of the Warp are known as Mutants."
+    },
+    "navigator_house": {
+      "name": "[NAVIGATOR HOUSE]",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] A player's choice of Navigator House — one of the noble families of the Navis Nobilite that possess the hereditary ability to navigate the Warp."
     },
     "navis_imperialis": {
       "name": "NAVIS IMPERIALIS",
@@ -1961,6 +2033,12 @@
       "source": "apocrypha",
       "page": null,
       "description": "[AI-Generated] An Ork who specialises in herding and controlling Gretchin and other Runts, using grabba sticks and squig hounds to keep their charges in line."
+    },
+    "saedath": {
+      "name": "[SAEDATH]",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] A Harlequin Saedath is a grand narrative performance and strategic battle plan combined, each representing a different mythic cycle that defines the troupe's fighting style."
     },
     "salamanders_chapter": {
       "name": "SALAMANDERS",
@@ -2299,7 +2377,7 @@
       "description": "One of the Ruinous Powers, the Changer of Ways' domains are fate, ambition, and sorcery."
     },
     "ulthwe": {
-      "name": "ULTHWÉ",
+      "name": "ULTHWE",
       "source": "apocrypha",
       "page": null,
       "description": "[AI-Generated] An Asuryani Craftworld situated near the Eye of Terror, renowned for its powerful psykers and the Black Guardians who defend it against the constant Chaos threat."
@@ -2309,6 +2387,12 @@
       "source": "voa",
       "page": null,
       "description": "[AI-Generated] A First Founding Space Marine Chapter, paragons of discipline and adherence to the Codex Astartes, who rule the stellar realm of Ultramar."
+    },
+    "undead": {
+      "name": "UNDEAD",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] A creature that has been reanimated after death through sorcery, technology, or Warp energy."
     },
     "undivided": {
       "name": "UNDIVIDED",
@@ -2333,6 +2417,12 @@
       "source": "apocrypha",
       "page": null,
       "description": "[AI-Generated] An experienced soldier who has survived many campaigns and earned distinction through long service and proven combat skill."
+    },
+    "viorla": {
+      "name": "VIOR'LA",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] A T'au Sept known for producing aggressive and hot-blooded warriors, often at the forefront of the Empire's military campaigns."
     },
     "vortex": {
       "name": "VORTEX",
@@ -2388,6 +2478,12 @@
       "page": 378,
       "description": "The Drukhari of Commorragh flock to the nightly gladiatorial murder-shows of the Wych Cults for sustinence. They relish the displays of violence and pain as literal nourishment for their depraved souls. Each Cult uses different techniques, combat drugs, and weaponry to perform glorious slaughter. Examples: Cult of Strife, Cult of the Cursed Blade, Cult of the Red Grief."
     },
+    "wych_cult_keyword": {
+      "name": "WYCH CULT",
+      "source": "aeldari",
+      "page": null,
+      "description": "[AI-Generated] When used as an unbracketed keyword on wargear, indicates equipment associated with Drukhari Wych Cults."
+    },
     "wych_keyword": {
       "name": "WYCH",
       "source": "apocrypha",
@@ -2399,6 +2495,12 @@
       "source": "redacted1",
       "page": null,
       "description": "[AI-Generated] A broad classification for all alien species, used by the Imperium to denote any non-Human life form."
+    },
+    "xv88": {
+      "name": "XV88",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] A T'au heavy battlesuit designation, the XV88 Broadside is a fire-support platform equipped with devastating long-range weaponry."
     },
     "ynnari": {
       "name": "YNNARI",
