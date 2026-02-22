@@ -442,6 +442,18 @@
     }
   },
   "terms": {
+    "attack_tests": {
+      "name": "Attack Tests",
+      "source": "core",
+      "page": 169,
+      "description": "In the grim darkness of the 41st Millennium, there is only war. You'll likely make a lot of attacks, and to do so you'll usually make a Skill Test against your target's Defence — a number representing how difficult it is to hit someone."
+    },
+    "attribute_tests": {
+      "name": "Attribute Tests",
+      "source": "core",
+      "page": 170,
+      "description": "When you're doing something that doesn't rely on your training you make a Test using only the relevant Attribute without a complementary Skill. For example, if you want to bash open a locked door, you need to pass a Strength Test. Attribute Tests are often more difficult than other Tests as your dice pool is smaller without the addition of a Skill."
+    },
     "corruption_test": {
       "name": "Corruption Test",
       "source": "core",
@@ -472,6 +484,12 @@
       "page": 164,
       "description": "Glory is a resource you can earn and spend as a group to overcome the terrifying obstacles of the 41st Millennium. You and your party begin each session with 0 Glory in your collective pool. Any player can Shift an Exalted Icon to add 1 Glory to the pool; you can only do this once per Test. Whenever you roll a Wrath Critical on a Test, you add 1 Glory to the pool. The Glory pool has a maximum of either 6 or the number of players +2, whichever value is higher. Glory can be spent to add bonus dice to a Test, increase damage, Seize the Initiative, or increase the severity of a Critical Hit."
     },
+    "help": {
+      "name": "Help",
+      "source": "core",
+      "page": 169,
+      "description": "You can use a Skill or Attribute to help someone else succeed on a Test. Say what you are doing to Help and what Attribute or Skill you are using. If the GM agrees that would be helpful, grab a number of dice equal to the Attribute or Skill Rating you are using to Help. Your ally can use those dice as bonus dice on their Test."
+    },
     "icon": {
       "name": "Icon",
       "source": "core",
@@ -483,6 +501,12 @@
       "source": "core",
       "page": 193,
       "description": "Mortal Wounds represent damage that is particularly brutal, exotic, or otherwise incredibly dangerous. Mortal Wounds ignore your Resilience, inflicting Wounds directly. Determination rolls can't be made to negate Mortal Wounds unless a Talent, item of Wargear, or the GM states otherwise."
+    },
+    "opposed_tests": {
+      "name": "Opposed Tests",
+      "source": "core",
+      "page": 170,
+      "description": "Sometimes two characters try to perform actions that directly oppose each other — an Opposed Test. Both characters roll their respective Tests; the one who scores the greatest number of Icons is victorious. Anything that would raise the difficulty for one character is resolved as bonus dice for the opponent. If there is a tie, the victory goes to the side that initiated the Opposed Test. For example, if one character attempts to grapple another and the opposed Strength Test is a tie, the character who began the grapple is the winner. You don't need to include a Wrath Die for an Opposed Test unless you want to introduce the possibility of Complications."
     },
     "psychic_power": {
       "name": "Psychic Power",
@@ -501,6 +525,12 @@
       "source": "core",
       "page": 196,
       "description": "A Regroup is a short period of downtime lasting approximately 1 hour. Regrouping generally occurs between encounters and affords you time to check ammo, tend injuries, assess the current situation, discuss tactics, and quickly grab something to eat and drink. If you have a Medicae Rating you can heal a single character during a Regroup. They regain Wounds equal to your Medicae (Int) dice pool."
+    },
+    "resolve_tests": {
+      "name": "Resolve Tests",
+      "source": "core",
+      "page": 170,
+      "description": "When confronted by one of the many horrifying phenomena or terrifying creatures of Warhammer 40,000, you may have to resist Fear. To do so, roll a dice pool equal to your Resolve Trait."
     },
     "respite": {
       "name": "Respite",
@@ -546,137 +576,551 @@
     }
   },
   "keywords": {
-    "imperium": {
-      "name": "IMPERIUM",
+    "abhuman": {
+      "name": "ABHUMAN",
       "source": "core",
-      "page": 55,
-      "description": "The vast interstellar empire of Humanity that spans over a million worlds, led by the Emperor from Holy Terra."
-    },
-    "chaos": {
-      "name": "CHAOS",
-      "source": "core",
-      "page": 64,
-      "description": "The forces and worshippers of the Chaos Gods."
-    },
-    "aeldari": {
-      "name": "AELDARI",
-      "source": "core",
-      "page": 60,
-      "description": "An ancient xenos Species whose declining empire once spanned the galaxy. They are naturally psychic, long lived, and old enemies of the Imperium."
-    },
-    "ork": {
-      "name": "ORK",
-      "source": "core",
-      "page": 56,
-      "description": "A brutal xenos Species that crave violence and live only for war."
-    },
-    "adeptus_astartes": {
-      "name": "ADEPTUS ASTARTES",
-      "source": "core",
-      "page": 70,
-      "description": "The Space Marines: genetically enhanced transhuman super soldiers who know no fear."
-    },
-    "primaris": {
-      "name": "PRIMARIS",
-      "source": "core",
-      "page": 71,
-      "description": "Primaris Space Marines are a new generation of Adeptus Astartes created by Belisarius Cawl. They are larger, stronger, and incorporate additional gene-seed organs compared to their Firstborn brothers."
+      "page": 375,
+      "description": "Some mutated strains of Humanity, such as the muscular, oversized, impeccably loyal Ogryns, are allowed citizenship in parts of the Imperium due to their usefulness. These mutants are known as Abhumans."
     },
     "adepta_sororitas": {
       "name": "ADEPTA SORORITAS",
       "source": "core",
-      "page": 58,
+      "page": 375,
       "description": "A sect of righteous warrior-monks that form the army of the Adeptus Ministorum, waging Wars of Faith to see the God-Emperor's will done."
+    },
+    "adeptus_administratum": {
+      "name": "ADEPTUS ADMINISTRATUM",
+      "source": "core",
+      "page": 375,
+      "description": "The colossal bureaucratic organisation that governs the Imperium. They keep the records, levy the tithes, assemble the munitions, and fulfill a numberless host of other clerical duties."
+    },
+    "adeptus_astartes": {
+      "name": "ADEPTUS ASTARTES",
+      "source": "core",
+      "page": 375,
+      "description": "The Space Marines: genetically enhanced transhuman super soldiers who know no fear."
+    },
+    "adeptus_astra_telepathica": {
+      "name": "ADEPTUS ASTRA TELEPATHICA",
+      "source": "core",
+      "page": 375,
+      "description": "The organisation responsible for recruiting and training Psykers for the Imperium."
     },
     "adeptus_mechanicus": {
       "name": "ADEPTUS MECHANICUS",
       "source": "core",
-      "page": 55,
+      "page": 375,
       "description": "Adherents to the Cult Mechanicus, the Mars-based cult of the machine that supply the Imperium with its advanced technology and guard the sacred knowledge of its workings."
-    },
-    "astra_militarum": {
-      "name": "ASTRA MILITARUM",
-      "source": "core",
-      "page": 60,
-      "description": "The largest military force of the Imperium, numbering billions of mortal Humans."
-    },
-    "inquisition": {
-      "name": "INQUISITION",
-      "source": "core",
-      "page": 58,
-      "description": "A clandestine organisation given absolute power to battle the greatest threats to the Imperium: heresy, xenos, and daemons."
-    },
-    "psyker": {
-      "name": "PSYKER",
-      "source": "core",
-      "page": 255,
-      "description": "A Psyker is an individual with psychic abilities, able to manipulate the Warp. They can use Psychic Powers but risk Perils of the Warp when doing so. Characters with this Keyword can purchase Psychic Powers."
-    },
-    "power_field_keyword": {
-      "name": "POWER FIELD",
-      "source": "core",
-      "page": 209,
-      "description": "Melee weapons sheathed in matter-disrupting power fields cut through armour with ease. Weapons with this Keyword benefit from certain talents like Honed to Lethality."
     },
     "adeptus_ministorum": {
       "name": "ADEPTUS MINISTORUM",
       "source": "core",
-      "page": 58,
-      "description": "The Adeptus Ministorum, also known as the Ecclesiarchy, is the official state religion of the Imperium. They preach the Imperial Creed and maintain the faith of humanity in the God-Emperor."
+      "page": 375,
+      "description": "The state church of the Imperium that propagates and maintains the worship of the God-Emperor to unite His people."
     },
-    "rogue_trader": {
-      "name": "ROGUE TRADER",
+    "aeldari": {
+      "name": "AELDARI",
       "source": "core",
-      "page": 57,
-      "description": "Rogue Traders are unique individuals who hold a Warrant of Trade, granting them authority to explore beyond Imperial borders, trade with xenos, and operate largely outside Imperial law."
+      "page": 375,
+      "description": "An ancient xenos Species whose declining empire once spanned the galaxy. They are naturally psychic, long lived, and old enemies of the Imperium. Also a Psychic Power Keyword denoting an advanced psychic power employed only by the Aeldari Species."
     },
-    "scum": {
-      "name": "SCUM",
+    "aeronautica_imperialis": {
+      "name": "AERONAUTICA IMPERIALIS",
       "source": "core",
-      "page": 68,
-      "description": "The dregs of Imperial society operating outside of other Factions, and often the law."
-    },
-    "asuryani": {
-      "name": "ASURYANI",
-      "source": "core",
-      "page": 76,
-      "description": "The Asuryani are the Craftworld Aeldari who escaped the Fall aboard massive spacecraft called Craftworlds. They follow the Path system to control their emotions and avoid the fate of their ancestors."
-    },
-    "drukhari": {
-      "name": "DRUKHARI",
-      "source": "core",
-      "page": 76,
-      "description": "The Drukhari, or Dark Eldar, dwell in the dark city of Commorragh in the Webway. They stave off Slaanesh by feeding on the suffering of others through raids and torture."
+      "page": 375,
+      "description": "The Aeronautica Imperialis are part of the Navis Imperialis, and are responsible for Imperial in-atmosphere aviation."
     },
     "anhrathe": {
       "name": "ANHRATHE",
       "source": "core",
-      "page": 78,
-      "description": "The Anhrathe, or Corsairs, are Aeldari who have rejected both the rigid Path of the Craftworlds and the depravity of Commorragh. They live as pirates and raiders in the void."
+      "page": 375,
+      "description": "Anhrathe is the Aeldari name for the Corsairs, the piratical outcasts that form Coteries."
+    },
+    "any_keyword": {
+      "name": "[ANY]",
+      "source": "core",
+      "page": 375,
+      "description": "This Keyword can be replaced with any other Keyword of your choice. In almost all circumstances it makes the most sense to select a Faction Keyword. Discuss your choice with your GM and the group to ensure it makes sense for the narrative of your game."
+    },
+    "arc": {
+      "name": "ARC",
+      "source": "core",
+      "page": 378,
+      "description": "Ancient weapons that spew blasts of electricity that tear asunder biological nerves and mechanical systems."
+    },
+    "aspect_warrior": {
+      "name": "ASPECT WARRIOR",
+      "source": "core",
+      "page": 375,
+      "description": "Asuryani that follow the Path of the Warrior devote themselves to a specific aspect of Khaine, the Aeldari God of War. These Asuryani are known as Aspect Warriors."
+    },
+    "astra_cartographica": {
+      "name": "ASTRA CARTOGRAPHICA",
+      "source": "core",
+      "page": 375,
+      "description": "A sub-faction of the Administratum, the Astra Cartographica are tasked with mapping the vast expanse of the galaxy."
+    },
+    "astra_militarum": {
+      "name": "ASTRA MILITARUM",
+      "source": "core",
+      "page": 375,
+      "description": "The largest military force of the Imperium, numbering billions of mortal Humans."
+    },
+    "asuryani": {
+      "name": "ASURYANI",
+      "source": "core",
+      "page": 375,
+      "description": "The Aeldari name for the citizens that live disciplined lives on Craftworlds."
+    },
+    "auditory": {
+      "name": "AUDITORY",
+      "source": "core",
+      "page": 379,
+      "description": "A psychic power that has an audible effect."
+    },
+    "beast": {
+      "name": "BEAST",
+      "source": "core",
+      "page": 375,
+      "description": "Unintelligent creatures that do not possess the self-awareness and high intelligence of Humans."
+    },
+    "blade": {
+      "name": "BLADE",
+      "source": "core",
+      "page": 378,
+      "description": "A simple bladed weapon, such as a Sword or Knife."
+    },
+    "bolt": {
+      "name": "BOLT",
+      "source": "core",
+      "page": 378,
+      "description": "A firearm that fires the self-propelled, mass-reactive rounds known as Bolts, which explode when they penetrate the enemy."
+    },
+    "chain": {
+      "name": "CHAIN",
+      "source": "core",
+      "page": 379,
+      "description": "A weapon that uses sharp, motorised teeth to inflict maximum damage."
+    },
+    "chaos": {
+      "name": "CHAOS",
+      "source": "core",
+      "page": 375,
+      "description": "The forces and worshippers of the Chaos Gods. Also a Psychic Power Keyword denoting a psychic power employed only by the forces of Chaos."
+    },
+    "chapter": {
+      "name": "[CHAPTER]",
+      "source": "core",
+      "page": 377,
+      "description": "Every Space Marine belongs to a Chapter, an organisation of 1,000 Adeptus Astartes with their own strictures, cultures, traditions, and inherited gene-seed."
+    },
+    "clan": {
+      "name": "[CLAN]",
+      "source": "core",
+      "page": 377,
+      "description": "An Ork Clan is a cultural mindset or timeless philosophy that unites large gatherings of Orks. Each has their own focus on a specific part of Ork kultur, such as Brutality, Kunnin', or lootin'."
+    },
+    "coterie": {
+      "name": "[COTERIE]",
+      "source": "core",
+      "page": 377,
+      "description": "A Coterie is a collective of Aeldari Corsairs, a band of opportunistic space pirates that have each left their former lives to indulge in adventure and hedonistic pursuits. A Coterie is a loose organisation based on camaraderie and shared goals, and may include both Aeldari and Drukhari. Examples: Greensteel Corsairs, Yriel's Eldritch Raiders, Sunblitz Brotherhood, Void Dragons."
+    },
+    "craftworld": {
+      "name": "[CRAFTWORLD]",
+      "source": "core",
+      "page": 377,
+      "description": "A Craftworld is a gargantuan wraithbone voidcraft the size of a small planet housing a huge population of Asuryani Aeldari. Each Craftworld has its own unique culture, and is powered by an Infinity Circuit which houses the spirits of the Craftworld's deceased citizens. Examples: Ul-Khari, Alaitoc, Biel-Tan, Iyanden."
+    },
+    "daemon": {
+      "name": "DAEMON",
+      "source": "core",
+      "page": 375,
+      "description": "The twisted creatures native to the Immaterium are named daemons and are believed to be made of Warp energy."
+    },
+    "dark_mechanicum": {
+      "name": "DARK MECHANICUM",
+      "source": "core",
+      "page": 376,
+      "description": "Traitors and renegades formerly of the Cult Mechanicus, those of the Dark Mechanicum commit the sins of worshipping Chaos, abusing forbidden technologies, and practicing innovation, including the abject horrors of daemon-infused tech."
+    },
+    "drukhari": {
+      "name": "DRUKHARI",
+      "source": "core",
+      "page": 376,
+      "description": "Cruel and depraved, the 'Dark Eldar' are Aeldari who have succumbed utterly to their Species' bottomless hedonism. Since the fall of the Aeldari, they have lived in the foul Webway metropolis Commorragh, subsisting their twisted souls on the psychic emanations of the suffering of their many slaves."
+    },
+    "dynasty": {
+      "name": "[DYNASTY]",
+      "source": "core",
+      "page": 378,
+      "description": "The Warrant of Trade that gives a Rogue Trader their power is often subject to inheritance, with the wealth and influence of a Rogue Trader's Dynasty growing through the generations. Each Dynasty may have wildly different inherited resources, or a reputation to uphold. Examples: Varonius, Kahlixian, Armengarde."
+    },
+    "exotic": {
+      "name": "EXOTIC",
+      "source": "core",
+      "page": 379,
+      "description": "A strange or unusual weapon that defies usual categorisation."
+    },
+    "explosive_keyword": {
+      "name": "EXPLOSIVE",
+      "source": "core",
+      "page": 379,
+      "description": "A weapon that explodes or fires explosives."
+    },
+    "fire_keyword": {
+      "name": "FIRE",
+      "source": "core",
+      "page": 379,
+      "description": "As a Wargear Keyword: A weapon that shoots flames or incorporates fire. As a Psychic Power Keyword: A psychic power that manipulates heat or conjures flame."
+    },
+    "flak": {
+      "name": "FLAK",
+      "source": "core",
+      "page": 379,
+      "description": "A sturdy, lightweight, mass-produced form of armour."
+    },
+    "force_keyword": {
+      "name": "FORCE",
+      "source": "core",
+      "page": 379,
+      "description": "Psykers can channel Warp energies into a Force weapon, unnaturally amplifying the power of their blows."
+    },
+    "forge_world": {
+      "name": "[FORGE WORLD]",
+      "source": "core",
+      "page": 378,
+      "description": "The Cult Mechanicus lay claim to many Imperial planets, coveting their useful mineral resources and converting their entire surface to vast interlinked manufactorums. Each has their own particular culture, methods of worshipping the Omnissiah, and specialised manufacturing patterns. Examples: Avachrus, Mars, Ryza, Metalica."
+    },
+    "genestealer_cult": {
+      "name": "GENESTEALER CULT",
+      "source": "core",
+      "page": 376,
+      "description": "The Genestealer life cycle infects other creatures, warping their minds and bodies to serve the grotesque Tyranid as it grows in power and plans total insurrection. The brainwashed and hybridised lifeforms that worship the Genestealer Patriarch are known as Genestealer Cultists."
+    },
+    "haemonculus_coven": {
+      "name": "[HAEMONCULUS COVEN]",
+      "source": "core",
+      "page": 378,
+      "description": "Haemonculi are Drukhari that have mastered the arts of inflicting torturous pain and the reshaping of flesh through biological manipulation. They frequently gather together to pursue their twisted goals as a coven, attended by the grotesque monstrosities they create. Examples: Prophets of Flesh, Dark Creed, Coven of Twelve."
     },
     "harlequin": {
       "name": "HARLEQUIN",
       "source": "core",
-      "page": 76,
-      "description": "Harlequins are followers of the Laughing God Cegorach. They preserve Aeldari history through performance and serve as warriors, diplomats, and messengers between Aeldari factions."
+      "page": 376,
+      "description": "The inscrutable worshipers of the Laughing God Cegorach, the Harlequins are Aeldari that tour the galaxy in troupes, mounting theatrical reenactments of Aeldari history and intervening in combats with deadly efficiency."
     },
-    "skitarii": {
-      "name": "SKITARII",
+    "heavy_keyword": {
+      "name": "HEAVY",
       "source": "core",
-      "page": 70,
-      "description": "Skitarii are the cyborg soldiers of the Adeptus Mechanicus. Heavily augmented with bionics, they fight with a combination of ancient technology and religious fervor for the Machine God."
+      "page": 379,
+      "description": "A particularly weighty piece of equipment."
+    },
+    "heretic": {
+      "name": "HERETIC",
+      "source": "core",
+      "page": 376,
+      "description": "Those that have sinned, blasphemed, or turned traitorously from the light of the Emperor are known as heretics."
+    },
+    "imperium": {
+      "name": "IMPERIUM",
+      "source": "core",
+      "page": 376,
+      "description": "The vast interstellar empire of Humanity that spans over a million worlds, led by the Emperor from Holy Terra."
+    },
+    "inquisition": {
+      "name": "INQUISITION",
+      "source": "core",
+      "page": 376,
+      "description": "A clandestine organisation given absolute power to battle the greatest threats to the Imperium: heresy, xenos, and daemons."
+    },
+    "jokaero": {
+      "name": "JOKAERO",
+      "source": "core",
+      "page": 376,
+      "description": "A simian-like xenos Species with an incredible innate understanding of technology."
+    },
+    "kabal": {
+      "name": "[KABAL]",
+      "source": "core",
+      "page": 378,
+      "description": "The majority of the Drukhari are part of an immoral Kabal, a scattered army of raiders and slavers that pillage the galaxy through use of the Webway. Each Kabal is led by an Archon with their own twisted goals. Examples: Black Heart, Flayed Skull, Poisoned Tongue, Obsidian Rose."
+    },
+    "khorne": {
+      "name": "KHORNE",
+      "source": "core",
+      "page": 376,
+      "description": "One of the Ruinous Powers, the Blood God's domains are acts of violence, murder, and brutality."
+    },
+    "kinetic": {
+      "name": "KINETIC",
+      "source": "core",
+      "page": 379,
+      "description": "A psychic power that manifests kinetic force to move something in realspace."
+    },
+    "kroot": {
+      "name": "KROOT",
+      "source": "core",
+      "page": 376,
+      "description": "A mercenary xenos Species with the ability to control their evolution through the consumption of other lifeforms."
+    },
+    "las": {
+      "name": "LAS",
+      "source": "core",
+      "page": 379,
+      "description": "Mass-produced, easily maintained, and fueled by rechargeable power cells used to fire lasers, Las weapons are the mainstay weapon of the Imperium."
+    },
+    "legion": {
+      "name": "[LEGION]",
+      "source": "core",
+      "page": 378,
+      "description": "The Traitor Legions of the Chaos Space Marines each worship the Chaos Gods differently, but all are foul renegades. Some are many thousands in strength, others mere warbands united by a common goal, scattered through the galaxy and the nightmare Immaterium. Examples: Black Legion, Death Guard, Word Bearers."
+    },
+    "light_keyword": {
+      "name": "LIGHT",
+      "source": "core",
+      "page": 379,
+      "description": "As a Wargear Keyword: A particularly low-weight piece of equipment. As a Psychic Power Keyword: A psychic power that produces light."
+    },
+    "mark_of_chaos": {
+      "name": "[MARK OF CHAOS]",
+      "source": "core",
+      "page": 378,
+      "description": "Those that worship the Ruinous Powers may be gifted with a Mark of Chaos, a foul manifestation of the favor of the Dark Gods that defines a mortal as a servant of Chaos. Most of these traitors are marked with the eight-pointed star of Chaos undivided, but some focus their worship on a single god and in turn receive their specific mark."
+    },
+    "melta": {
+      "name": "MELTA",
+      "source": "core",
+      "page": 379,
+      "description": "Firing focused beams of extreme heat, these thermal firearms are powered by sub-atomic technology and make excellent anti-armour weapons."
+    },
+    "militarum_auxilla": {
+      "name": "MILITARUM AUXILLA",
+      "source": "core",
+      "page": 376,
+      "description": "A division of the Astra Militarum that consists of Abhumans."
     },
     "militarum_tempestus": {
       "name": "MILITARUM TEMPESTUS",
       "source": "core",
-      "page": 103,
-      "description": "The Militarum Tempestus are elite stormtroopers of the Astra Militarum. Trained from childhood at Schola Progenium facilities, they are superior soldiers equipped with the finest wargear."
+      "page": 376,
+      "description": "A division of the Astra Militarum that provides elite special operations soldiers."
     },
-    "kroot": {
-      "name": "KROOT",
-      "source": "apocrypha",
-      "page": 64,
-      "description": "[AI-Generated] Kroot are a species of carnivorous humanoids often employed as mercenaries by the T'au Empire. They absorb genetic material from those they eat, allowing them to evolve and adapt over generations."
+    "mutant": {
+      "name": "MUTANT",
+      "source": "core",
+      "page": 376,
+      "description": "Humans that have deviated from the pure, Ecclesiarchy-defined form due to the malign influence of the Warp are known as Mutants."
+    },
+    "navis_imperialis": {
+      "name": "NAVIS IMPERIALIS",
+      "source": "core",
+      "page": 376,
+      "description": "The Imperial organisation responsible for the operation and application of voidships. The Navis Imperialis, or Imperial Navy, ferry the Astra Militarum from one of a million battles to another, and engage in void combat with the many spacefaring enemies of the Imperium."
+    },
+    "navis_nobilite": {
+      "name": "NAVIS NOBILITE",
+      "source": "core",
+      "page": 376,
+      "description": "An ancient extended noble family of sanctioned Human mutants, all possessing the hereditary ability to navigate through the shifting tides of the Warp and guide a voidship through the seas of the Empyrean."
+    },
+    "necron": {
+      "name": "NECRON",
+      "source": "core",
+      "page": 376,
+      "description": "A prehistoric Species of deathless robotic xenos that are returning to life after a multiple millennia of slumber. The Necrons employ technology beyond any other living Species in their quest to re-conquer the galaxy."
+    },
+    "needle": {
+      "name": "NEEDLE",
+      "source": "core",
+      "page": 379,
+      "description": "These silent weapons have a two-stage firing mechanism: an invisible laser that penetrates the skin, followed by a poisonous crystalised needle of neurotoxin to ruthlessly dispatch foes at a distance."
+    },
+    "nurgle": {
+      "name": "NURGLE",
+      "source": "core",
+      "page": 376,
+      "description": "One of the Ruinous Powers, the Plague God's domains are disease, decay, and entropy."
+    },
+    "officio_assassinorum": {
+      "name": "OFFICIO ASSASSINORUM",
+      "source": "core",
+      "page": 376,
+      "description": "A clandestine Imperial organisation that trains the deadliest assassins available to Humanity."
+    },
+    "officio_prefectus": {
+      "name": "OFFICIO PREFECTUS",
+      "source": "core",
+      "page": 376,
+      "description": "The Imperial organisation that recruits and trains Commissars."
+    },
+    "order": {
+      "name": "[ORDER]",
+      "source": "core",
+      "page": 378,
+      "description": "The convents of the Adepta Sororitas train righteous servants of the God-Emperor to serve many roles, each known as an Order."
+    },
+    "ordo": {
+      "name": "[ORDO]",
+      "source": "core",
+      "page": 378,
+      "description": "The Inquisition comprises multiple Holy Ordos, each specialised to clandestinely combat the greatest threats to the Imperium."
+    },
+    "ork": {
+      "name": "ORK",
+      "source": "core",
+      "page": 376,
+      "description": "A brutal xenos Species that crave violence and live only for war."
+    },
+    "plasma": {
+      "name": "PLASMA",
+      "source": "core",
+      "page": 379,
+      "description": "Advanced firearms that shoot deadly pulses of superheated matter, these weapons revered for their destructive prowess and feared for their instability."
+    },
+    "power_field_keyword": {
+      "name": "POWER FIELD",
+      "source": "core",
+      "page": 379,
+      "description": "Melee weapons sheathed in matter-disrupting power fields cut through armour with ease."
+    },
+    "powered": {
+      "name": "POWERED",
+      "source": "core",
+      "page": 379,
+      "description": "Ceramite, adamantium, and plasteel are but a few of the super-heavy materials used to provide Imperial warriors with protection against the myriad threats of the 41st Millennium. This armour would be too heavy to use were it not for the electrically motivated fibre bundles that enhance and replicate the wearer's movements, mitigating heavy weight and increasing the strength of the wearer. Armour that can increase its wearer's strength in this way is known as Powered Armour, or Power Armour."
+    },
+    "primaris": {
+      "name": "PRIMARIS",
+      "source": "core",
+      "page": 376,
+      "description": "A new breed of transhuman Space Marines, more powerful even that their Adeptus Astartes brethren."
+    },
+    "primitive": {
+      "name": "PRIMITIVE",
+      "source": "core",
+      "page": 379,
+      "description": "Equipment that uses outdated technology."
+    },
+    "projectile": {
+      "name": "PROJECTILE",
+      "source": "core",
+      "page": 379,
+      "description": "A firearm that uses ancient gunpowder technology to launch simple metal slugs at high speeds."
+    },
+    "psyker": {
+      "name": "PSYKER",
+      "source": "core",
+      "page": 375,
+      "description": "You are a Psyker, capable of channeling the raw energies of the Warp. If you have this Keyword, you: Know the Universal Psyker Abilities. Can spend XP to learn psychic powers. Can spend XP to improve your Psychic Mastery Skill. None truly know how an individual becomes a Psyker. Some are born with this twisted gift, others are cursed through exposure to the Warp. Becoming a Psyker will dramatically change your character, making them a powerful, feared, and potentially illegal citizen of the Imperium. Talk to your GM and your group before choosing this Keyword."
+    },
+    "psychic_keyword": {
+      "name": "PSYCHIC",
+      "source": "core",
+      "page": 379,
+      "description": "A Keyword attached to every Psychic Power."
+    },
+    "questor_mechanicus": {
+      "name": "QUESTOR MECHANICUS",
+      "source": "core",
+      "page": 376,
+      "description": "The robotic combat walkers known as Imperial Knights are referred to as Questor Mechanicus in High Gothic. Laying ancient claim to the feudal Knight Worlds of the Imperium, a single Knight can turn the tide of a battle using the millennia of combat knowledge passed down through the Throne Mechanicum."
+    },
+    "regiment": {
+      "name": "[REGIMENT]",
+      "source": "core",
+      "page": 378,
+      "description": "Each of the diverse planets of the Imperium owe a tithe of warriors to the Emperor to fight His holy wars. The tremendous variety of planets — from jungle-covered Death Worlds to honourable industrial worlds — mean that every planetary Regiment is vastly different in training, technique, and equipment."
+    },
+    "rogue_trader": {
+      "name": "ROGUE TRADER",
+      "source": "core",
+      "page": 377,
+      "description": "The Holders of Warrants of Trade, Rogue Traders are empowered to explore, conquer, and trade beyond the borders of the Imperium to expand the Emperor's realm."
+    },
+    "scholastia_psykana": {
+      "name": "SCHOLASTIA PSYKANA",
+      "source": "core",
+      "page": 377,
+      "description": "A division of the Adeptus Astra Telepathica, the Scholastia Psykana are tasked with examining the Psykers that are brought to Terra by the Black Ships and training them to determine their usefulness to the Imperium."
+    },
+    "scum": {
+      "name": "SCUM",
+      "source": "core",
+      "page": 377,
+      "description": "The dregs of Imperial society operating outside of other Factions, and often the law."
+    },
+    "servitor": {
+      "name": "SERVITOR",
+      "source": "core",
+      "page": 377,
+      "description": "AI, or Abominable Intelligence, is a sin to the Cult Mechanicus. Their many technological servants, known as Servitors, are all constructed around biological brains supplemented with holy mechanisms."
+    },
+    "shuriken": {
+      "name": "SHURIKEN",
+      "source": "core",
+      "page": 379,
+      "description": "The advanced technology of the Aeldari allows them to construct monomolecular plasti-crystal ammunition that slices through flesh and armour when fired. These weapons usually utilise gravitic pulses to launch Shurikens at speeds so fast they screech through the air."
+    },
+    "skitarii": {
+      "name": "SKITARII",
+      "source": "core",
+      "page": 377,
+      "description": "The heavily augmented Humans known as Skitarii are the eternally devoted mechanised armies of the Cult Mechanicus."
+    },
+    "slaanesh": {
+      "name": "SLAANESH",
+      "source": "core",
+      "page": 377,
+      "description": "One of the Ruinous Powers, the Lord of Excess — or to the Aeldari, She Who Thirsts — claims domain over decadence, hedonism, and the pursuit of perfection."
+    },
+    "tau": {
+      "name": "T'AU",
+      "source": "core",
+      "page": 377,
+      "description": "A young but technologically advanced xenos Species, the T'au empire is rapidly spreading on the eastern fringes of the galaxy."
+    },
+    "telepathy": {
+      "name": "TELEPATHY",
+      "source": "core",
+      "page": 379,
+      "description": "A psychic power that allows the Psyker to enter the mind of another individual."
+    },
+    "two_handed": {
+      "name": "2-HANDED",
+      "source": "core",
+      "page": 378,
+      "description": "A weapon that requires two hands to wield."
+    },
+    "tyranid": {
+      "name": "TYRANID",
+      "source": "core",
+      "page": 377,
+      "description": "An extra-galactic gestalt Species of grotesque xenos solely intent on devouring all other life. Though they appear as multiple adaptive bioforms (including the dreaded Genestealers) they operate as a Hive Mind, deadly and singular in purpose and fighting with disgusting bio-tech weaponry."
+    },
+    "tzeentch": {
+      "name": "TZEENTCH",
+      "source": "core",
+      "page": 377,
+      "description": "One of the Ruinous Powers, the Changer of Ways' domains are fate, ambition, and sorcery."
+    },
+    "wraith_construct": {
+      "name": "WRAITH CONSTRUCT",
+      "source": "core",
+      "page": 377,
+      "description": "Every Asuryani carries a Spirit Stone, a device that will capture their soul when they die to protect it from the predations of She Who Thirsts. These Spirit Stones can be attached to wraithbone technology, powering it with the nascent psychic ability of the Aeldari soul. A Wraith Construct is an artificial body that can be powered by a Spirit Stone, allowing a semblance of life beyond death."
+    },
+    "wych_cult": {
+      "name": "[WYCH CULT]",
+      "source": "core",
+      "page": 378,
+      "description": "The Drukhari of Commorragh flock to the nightly gladiatorial murder-shows of the Wych Cults for sustinence. They relish the displays of violence and pain as literal nourishment for their depraved souls. Each Cult uses different techniques, combat drugs, and weaponry to perform glorious slaughter. Examples: Cult of Strife, Cult of the Cursed Blade, Cult of the Red Grief."
+    },
+    "ynnari": {
+      "name": "YNNARI",
+      "source": "core",
+      "page": 377,
+      "description": "A recently emerging religious sub-faction of the Aeldari, the Ynnari seek to unite the Asuryani, Drukhari, Harlequins, and Outcasts. Their ultimate mission is to awaken Ynnead, the Aeldari God of the Dead, so that they may defeat She Who Thirsts and reclaim their position as rulers of the galaxy."
     }
   },
   "armorTraits": {
