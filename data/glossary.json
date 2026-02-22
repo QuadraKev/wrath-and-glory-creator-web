@@ -852,6 +852,12 @@
       "page": null,
       "description": "[AI-Generated] The engineer caste of the Leagues of Votann, Brôkhyr are master craftsmen who maintain and create the advanced technology of the Kin."
     },
+    "broodmind": {
+      "name": "BROODMIND",
+      "source": "dh",
+      "page": null,
+      "description": "[AI-Generated] A psychic discipline keyword for powers that tap into the gestalt psychic consciousness of a Genestealer Cult, connecting hybrids and cultists to the will of the Patriarch."
+    },
     "cadian": {
       "name": "CADIAN",
       "source": "apocrypha",
@@ -1458,6 +1464,12 @@
       "page": null,
       "description": "[AI-Generated] A mysterious and rarely encountered xenos species that exudes an entropy field, causing rapid ageing and decay in everything around them."
     },
+    "human": {
+      "name": "HUMAN",
+      "source": "redacted2",
+      "page": null,
+      "description": "[AI-Generated] A baseline human, without the genetic modifications of Astartes, the psychic gifts of Psykers, or the mutations of Abhumans."
+    },
     "imperial": {
       "name": "IMPERIAL",
       "source": "redacted1",
@@ -1680,6 +1692,12 @@
       "page": null,
       "description": "[AI-Generated] The brand of the Lord of Excess, bestowed upon those who have devoted themselves to Slaanesh's pursuit of sensation and perfection."
     },
+    "mark_of_tzeentch": {
+      "name": "MARK OF TZEENTCH",
+      "source": "dh",
+      "page": null,
+      "description": "[AI-Generated] One of the four Marks of Chaos, denoting dedication to Tzeentch, the Changer of Ways. Warriors bearing this mark are gifted with sorcerous abilities and mutations."
+    },
     "masque": {
       "name": "[MASQUE]",
       "source": "aeldari",
@@ -1836,11 +1854,23 @@
       "page": 378,
       "description": "The Inquisition comprises multiple Holy Ordos, each specialised to clandestinely combat the greatest threats to the Imperium."
     },
+    "ordo_hereticus": {
+      "name": "ORDO HERETICUS",
+      "source": "core",
+      "page": null,
+      "description": "[AI-Generated] One of the three major Ordos of the Inquisition, dedicated to hunting heretics, witches, and rogue psykers within the Imperium."
+    },
     "ordo_malleus": {
       "name": "ORDO MALLEUS",
       "source": "apocrypha",
       "page": null,
       "description": "[AI-Generated] The Ordo Malleus is the branch of the Inquisition dedicated to combating the daemonic threat. Its Inquisitors specialise in hunting daemons and rooting out Chaos corruption."
+    },
+    "ordo_xenos": {
+      "name": "ORDO XENOS",
+      "source": "core",
+      "page": null,
+      "description": "[AI-Generated] One of the three major Ordos of the Inquisition, dedicated to studying and combating the alien threats that assail the Imperium."
     },
     "ork": {
       "name": "ORK",
