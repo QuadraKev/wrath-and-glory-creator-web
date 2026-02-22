@@ -594,6 +594,12 @@
       "page": 375,
       "description": "The colossal bureaucratic organisation that governs the Imperium. They keep the records, levy the tithes, assemble the munitions, and fulfill a numberless host of other clerical duties."
     },
+    "adeptus_arbites": {
+      "name": "ADEPTUS ARBITES",
+      "source": "core",
+      "page": null,
+      "description": "[AI-Generated] The enforcers of Imperial law, the Adeptus Arbites maintain order across the Imperium through unyielding adherence to the Lex Imperialis. They are judge, jury, and executioner."
+    },
     "adeptus_astartes": {
       "name": "ADEPTUS ASTARTES",
       "source": "core",
@@ -605,6 +611,12 @@
       "source": "core",
       "page": 375,
       "description": "The organisation responsible for recruiting and training Psykers for the Imperium."
+    },
+    "adeptus_custodes": {
+      "name": "ADEPTUS CUSTODES",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] The Emperor's personal bodyguard, the Adeptus Custodes are the mightiest warriors in the Imperium. Each Custodian is a masterwork of genetic engineering, surpassing even the Adeptus Astartes in combat prowess."
     },
     "adeptus_mechanicus": {
       "name": "ADEPTUS MECHANICUS",
@@ -629,6 +641,18 @@
       "source": "core",
       "page": 375,
       "description": "The Aeronautica Imperialis are part of the Navis Imperialis, and are responsible for Imperial in-atmosphere aviation."
+    },
+    "air_caste": {
+      "name": "AIR CASTE",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] The pilot caste of the T'au Empire, responsible for atmospheric and void operations. Air Caste T'au have adapted to life in low gravity and are expert aviators."
+    },
+    "anathema_psykana": {
+      "name": "ANATHEMA PSYKANA",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] The Sisters of Silence are the militant arm of the Anathema Psykana. These warrior-nulls are psychic blanks whose very presence disrupts the Warp, making them uniquely suited to combating psykers and daemons."
     },
     "anhrathe": {
       "name": "ANHRATHE",
@@ -714,6 +738,12 @@
       "page": 377,
       "description": "Every Space Marine belongs to a Chapter, an organisation of 1,000 Adeptus Astartes with their own strictures, cultures, traditions, and inherited gene-seed."
     },
+    "chemical": {
+      "name": "CHEMICAL",
+      "source": "church",
+      "page": null,
+      "description": "[AI-Generated] A weapon that uses chemical agents to harm targets."
+    },
     "clan": {
       "name": "[CLAN]",
       "source": "core",
@@ -731,6 +761,12 @@
       "source": "core",
       "page": 377,
       "description": "A Craftworld is a gargantuan wraithbone voidcraft the size of a small planet housing a huge population of Asuryani Aeldari. Each Craftworld has its own unique culture, and is powered by an Infinity Circuit which houses the spirits of the Craftworld's deceased citizens. Examples: Ul-Khari, Alaitoc, Biel-Tan, Iyanden."
+    },
+    "cult_mechanicus": {
+      "name": "CULT MECHANICUS",
+      "source": "core",
+      "page": null,
+      "description": "[AI-Generated] The religious order within the Adeptus Mechanicus devoted to the worship of the Omnissiah, the Machine God. Members of the Cult Mechanicus seek to unlock the mysteries of technology through faith and ritual."
     },
     "daemon": {
       "name": "DAEMON",
@@ -756,6 +792,24 @@
       "page": 378,
       "description": "The Warrant of Trade that gives a Rogue Trader their power is often subject to inheritance, with the wealth and influence of a Rogue Trader's Dynasty growing through the generations. Each Dynasty may have wildly different inherited resources, or a reputation to uphold. Examples: Varonius, Kahlixian, Armengarde."
     },
+    "earth_caste": {
+      "name": "EARTH CASTE",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] The engineer and artisan caste of the T'au Empire, responsible for construction, manufacturing, and technological innovation."
+    },
+    "energy": {
+      "name": "ENERGY",
+      "source": "church",
+      "page": null,
+      "description": "[AI-Generated] A weapon that fires directed energy blasts."
+    },
+    "ethereal_caste": {
+      "name": "ETHEREAL CASTE",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] The ruling caste of the T'au Empire. Ethereals guide T'au society through their enigmatic influence, inspiring absolute loyalty and devotion to the Greater Good."
+    },
     "exotic": {
       "name": "EXOTIC",
       "source": "core",
@@ -767,6 +821,12 @@
       "source": "core",
       "page": 379,
       "description": "A weapon that explodes or fires explosives."
+    },
+    "fire_caste": {
+      "name": "FIRE CASTE",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] The warrior caste of the T'au Empire, responsible for all military operations. Fire Caste T'au are bred for combat and trained from birth in the art of war."
     },
     "fire_keyword": {
       "name": "FIRE",
@@ -780,6 +840,18 @@
       "page": 379,
       "description": "A sturdy, lightweight, mass-produced form of armour."
     },
+    "flame": {
+      "name": "FLAME",
+      "source": "church",
+      "page": null,
+      "description": "[AI-Generated] A weapon that projects burning promethium or other incendiary substances."
+    },
+    "force_field": {
+      "name": "FORCE FIELD",
+      "source": "church",
+      "page": null,
+      "description": "[AI-Generated] Protective energy fields generated by technology or psychic power that can deflect or absorb incoming attacks."
+    },
     "force_keyword": {
       "name": "FORCE",
       "source": "core",
@@ -792,11 +864,35 @@
       "page": 378,
       "description": "The Cult Mechanicus lay claim to many Imperial planets, coveting their useful mineral resources and converting their entire surface to vast interlinked manufactorums. Each has their own particular culture, methods of worshipping the Omnissiah, and specialised manufacturing patterns. Examples: Avachrus, Mars, Ryza, Metalica."
     },
+    "gauss": {
+      "name": "GAUSS",
+      "source": "church",
+      "page": null,
+      "description": "[AI-Generated] Necron weapons that strip matter apart at a molecular level using focused energy beams."
+    },
     "genestealer_cult": {
       "name": "GENESTEALER CULT",
       "source": "core",
       "page": 376,
       "description": "The Genestealer life cycle infects other creatures, warping their minds and bodies to serve the grotesque Tyranid as it grows in power and plans total insurrection. The brainwashed and hybridised lifeforms that worship the Genestealer Patriarch are known as Genestealer Cultists."
+    },
+    "grav": {
+      "name": "GRAV",
+      "source": "church",
+      "page": null,
+      "description": "[AI-Generated] Weapons that manipulate gravitational forces to crush targets under their own weight."
+    },
+    "grenade": {
+      "name": "GRENADE",
+      "source": "core",
+      "page": null,
+      "description": "[AI-Generated] A thrown or launched explosive device."
+    },
+    "grey_knights": {
+      "name": "GREY KNIGHTS",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] A secretive Chapter of Space Marines specialising in combating daemons. Every Grey Knight is a potent psyker, and their very existence is kept hidden from the wider Imperium."
     },
     "haemonculus_coven": {
       "name": "[HAEMONCULUS COVEN]",
@@ -821,6 +917,30 @@
       "source": "core",
       "page": 376,
       "description": "Those that have sinned, blasphemed, or turned traitorously from the light of the Emperor are known as heretics."
+    },
+    "heretic_astartes": {
+      "name": "HERETIC ASTARTES",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] Space Marines who have turned from the Emperor's light and pledged themselves to the Ruinous Powers of Chaos. Also known as Chaos Space Marines, they are among the most dangerous threats to the Imperium."
+    },
+    "hive_fleet": {
+      "name": "[HIVE FLEET]",
+      "source": "core",
+      "page": null,
+      "description": "[AI-Generated] A Tyranid Hive Fleet is a vast armada of bio-ships traveling through the void, consuming all biomass in its path. Each Hive Fleet has its own distinct evolutionary adaptations and tactical tendencies."
+    },
+    "house": {
+      "name": "[HOUSE]",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] A Navigator House is one of the ancient noble families of the Navis Nobilite. Each House has its own hereditary mutations, political alliances, and traditions surrounding their role as Warp navigators."
+    },
+    "imperial_navy": {
+      "name": "IMPERIAL NAVY",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] The common name for the Navis Imperialis, the Imperial organisation responsible for void warfare and the transportation of military forces across the galaxy."
     },
     "imperium": {
       "name": "IMPERIUM",
@@ -870,6 +990,18 @@
       "page": 379,
       "description": "Mass-produced, easily maintained, and fueled by rechargeable power cells used to fire lasers, Las weapons are the mainstay weapon of the Imperium."
     },
+    "league": {
+      "name": "[LEAGUE]",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] A League of Votann is a large coalition of Kin Holds united by common interests, traditions, and Ancestor Cores. Each League has its own culture and approach to warfare and trade."
+    },
+    "leagues_of_votann": {
+      "name": "LEAGUES OF VOTANN",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] An ancient civilisation of cloned abhumans known as the Kin, who dwell in the galactic core. Their society is organised into Leagues, guided by ancient machine intelligences called Ancestor Cores."
+    },
     "legion": {
       "name": "[LEGION]",
       "source": "core",
@@ -882,11 +1014,23 @@
       "page": 379,
       "description": "As a Wargear Keyword: A particularly low-weight piece of equipment. As a Psychic Power Keyword: A psychic power that produces light."
     },
+    "luminen": {
+      "name": "LUMINEN",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] Adeptus Mechanicus weapons powered by the wielder's internal electrical charge."
+    },
     "mark_of_chaos": {
       "name": "[MARK OF CHAOS]",
       "source": "core",
       "page": 378,
       "description": "Those that worship the Ruinous Powers may be gifted with a Mark of Chaos, a foul manifestation of the favor of the Dark Gods that defines a mortal as a servant of Chaos. Most of these traitors are marked with the eight-pointed star of Chaos undivided, but some focus their worship on a single god and in turn receive their specific mark."
+    },
+    "masque": {
+      "name": "[MASQUE]",
+      "source": "aeldari",
+      "page": null,
+      "description": "[AI-Generated] A Harlequin Masque is a troupe of Harlequins united under a common purpose, performing across the galaxy and fighting with deadly grace. Each Masque has its own mythic cycle and performance traditions."
     },
     "melta": {
       "name": "MELTA",
@@ -905,6 +1049,18 @@
       "source": "core",
       "page": 376,
       "description": "A division of the Astra Militarum that provides elite special operations soldiers."
+    },
+    "missile": {
+      "name": "MISSILE",
+      "source": "core",
+      "page": null,
+      "description": "[AI-Generated] A launched explosive projectile, often with tracking or blast capability."
+    },
+    "monofilament": {
+      "name": "MONOFILAMENT",
+      "source": "aeldari",
+      "page": null,
+      "description": "[AI-Generated] Aeldari weapons that utilise incredibly thin filaments to slice through targets with molecular precision."
     },
     "mutant": {
       "name": "MUTANT",
@@ -948,6 +1104,12 @@
       "page": 376,
       "description": "A clandestine Imperial organisation that trains the deadliest assassins available to Humanity."
     },
+    "officio_medicae": {
+      "name": "OFFICIO MEDICAE",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] The Imperial organisation responsible for medical care and healthcare across the Imperium. Its members serve as battlefield medics, chirurgeons, and physicians."
+    },
     "officio_prefectus": {
       "name": "OFFICIO PREFECTUS",
       "source": "core",
@@ -966,11 +1128,35 @@
       "page": 378,
       "description": "The Inquisition comprises multiple Holy Ordos, each specialised to clandestinely combat the greatest threats to the Imperium."
     },
+    "ordo_malleus": {
+      "name": "ORDO MALLEUS",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] The Ordo Malleus is the branch of the Inquisition dedicated to combating the daemonic threat. Its Inquisitors specialise in hunting daemons and rooting out Chaos corruption."
+    },
     "ork": {
       "name": "ORK",
       "source": "core",
       "page": 376,
       "description": "A brutal xenos Species that crave violence and live only for war."
+    },
+    "phase_blade": {
+      "name": "PHASE BLADE",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] A blade that can shift partially out of realspace, allowing it to bypass physical defences."
+    },
+    "phosphex": {
+      "name": "PHOSPHEX",
+      "source": "fspg",
+      "page": null,
+      "description": "[AI-Generated] Rare and horrific incendiary munitions that burn with an almost sentient hunger, consuming everything they touch."
+    },
+    "phosphor": {
+      "name": "PHOSPHOR",
+      "source": "church",
+      "page": null,
+      "description": "[AI-Generated] Adeptus Mechanicus weapons that fire blazing rounds of white-hot phosphor that mark targets and burn fiercely."
     },
     "plasma": {
       "name": "PLASMA",
@@ -990,6 +1176,12 @@
       "page": 379,
       "description": "Ceramite, adamantium, and plasteel are but a few of the super-heavy materials used to provide Imperial warriors with protection against the myriad threats of the 41st Millennium. This armour would be too heavy to use were it not for the electrically motivated fibre bundles that enhance and replicate the wearer's movements, mitigating heavy weight and increasing the strength of the wearer. Armour that can increase its wearer's strength in this way is known as Powered Armour, or Power Armour."
     },
+    "priest": {
+      "name": "PRIEST",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] A religious leader or holy warrior who channels faith into righteous fury. Priests may serve the Imperial Creed, the Machine God, or other devotions."
+    },
     "primaris": {
       "name": "PRIMARIS",
       "source": "core",
@@ -1008,23 +1200,29 @@
       "page": 379,
       "description": "A firearm that uses ancient gunpowder technology to launch simple metal slugs at high speeds."
     },
-    "psyker": {
-      "name": "PSYKER",
-      "source": "core",
-      "page": 375,
-      "description": "You are a Psyker, capable of channeling the raw energies of the Warp. If you have this Keyword, you: Know the Universal Psyker Abilities. Can spend XP to learn psychic powers. Can spend XP to improve your Psychic Mastery Skill. None truly know how an individual becomes a Psyker. Some are born with this twisted gift, others are cursed through exposure to the Warp. Becoming a Psyker will dramatically change your character, making them a powerful, feared, and potentially illegal citizen of the Imperium. Talk to your GM and your group before choosing this Keyword."
-    },
     "psychic_keyword": {
       "name": "PSYCHIC",
       "source": "core",
       "page": 379,
       "description": "A Keyword attached to every Psychic Power."
     },
+    "psyker": {
+      "name": "PSYKER",
+      "source": "core",
+      "page": 375,
+      "description": "You are a Psyker, capable of channeling the raw energies of the Warp. If you have this Keyword, you: Know the Universal Psyker Abilities. Can spend XP to learn psychic powers. Can spend XP to improve your Psychic Mastery Skill. None truly know how an individual becomes a Psyker. Some are born with this twisted gift, others are cursed through exposure to the Warp. Becoming a Psyker will dramatically change your character, making them a powerful, feared, and potentially illegal citizen of the Imperium. Talk to your GM and your group before choosing this Keyword."
+    },
     "questor_mechanicus": {
       "name": "QUESTOR MECHANICUS",
       "source": "core",
       "page": 376,
       "description": "The robotic combat walkers known as Imperial Knights are referred to as Questor Mechanicus in High Gothic. Laying ancient claim to the feudal Knight Worlds of the Imperium, a single Knight can turn the tide of a battle using the millennia of combat knowledge passed down through the Throne Mechanicum."
+    },
+    "rad": {
+      "name": "RAD",
+      "source": "core",
+      "page": null,
+      "description": "[AI-Generated] Weapons that emit deadly radiation."
     },
     "regiment": {
       "name": "[REGIMENT]",
@@ -1050,11 +1248,23 @@
       "page": 377,
       "description": "The dregs of Imperial society operating outside of other Factions, and often the law."
     },
+    "sept": {
+      "name": "[SEPT]",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] A T'au Sept is a colonial territory of the T'au Empire, centred around a major world. Each Sept has its own distinct culture, military doctrine, and role within the wider Empire."
+    },
     "servitor": {
       "name": "SERVITOR",
       "source": "core",
       "page": 377,
       "description": "AI, or Abominable Intelligence, is a sin to the Cult Mechanicus. Their many technological servants, known as Servitors, are all constructed around biological brains supplemented with holy mechanisms."
+    },
+    "shield_host": {
+      "name": "[SHIELD HOST]",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] A Shield Host is a military formation of the Adeptus Custodes, each specialising in a particular aspect of the Emperor's defence."
     },
     "shuriken": {
       "name": "SHURIKEN",
@@ -1074,17 +1284,113 @@
       "page": 377,
       "description": "One of the Ruinous Powers, the Lord of Excess — or to the Aeldari, She Who Thirsts — claims domain over decadence, hedonism, and the pursuit of perfection."
     },
+    "sonic": {
+      "name": "SONIC",
+      "source": "church",
+      "page": null,
+      "description": "[AI-Generated] Weapons that weaponise extreme sound waves to disorient or destroy targets."
+    },
+    "splinter": {
+      "name": "SPLINTER",
+      "source": "church",
+      "page": null,
+      "description": "[AI-Generated] Drukhari weapons that fire shards of crystal laced with virulent toxins."
+    },
+    "squig": {
+      "name": "SQUIG",
+      "source": "core",
+      "page": null,
+      "description": "[AI-Generated] Ork weapons or equipment made from or involving Squigs, the bizarre fungal creatures that share the Ork ecosystem."
+    },
+    "talons_of_the_emperor": {
+      "name": "TALONS OF THE EMPEROR",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] The combined forces of the Adeptus Custodes and the Sisters of Silence, who together form the personal guardians of the Emperor of Mankind."
+    },
+    "taser": {
+      "name": "TASER",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] Adeptus Mechanicus weapons that deliver powerful electrical shocks on contact."
+    },
     "tau": {
       "name": "T'AU",
       "source": "core",
       "page": 377,
       "description": "A young but technologically advanced xenos Species, the T'au empire is rapidly spreading on the eastern fringes of the galaxy."
     },
+    "tau_empire": {
+      "name": "T'AU EMPIRE",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] The interstellar empire of the T'au, a rapidly expanding civilisation on the eastern fringes of the galaxy. The T'au Empire is organised into Septs and united by the philosophy of the Greater Good."
+    },
     "telepathy": {
       "name": "TELEPATHY",
       "source": "core",
       "page": 379,
       "description": "A psychic power that allows the Psyker to enter the mind of another individual."
+    },
+    "templum_adamus": {
+      "name": "TEMPLUM ADAMUS",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] A temple of the Officio Assassinorum that trains the Execution Force's close combat specialists."
+    },
+    "templum_callidus": {
+      "name": "TEMPLUM CALLIDUS",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] A temple of the Officio Assassinorum specialising in infiltration, disguise, and polymorphine-assisted shapeshifting to eliminate targets from within."
+    },
+    "templum_culexus": {
+      "name": "TEMPLUM CULEXUS",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] A temple of the Officio Assassinorum that trains psychic blanks as anti-psyker assassins. Their mere presence causes terror and disrupts Warp energy."
+    },
+    "templum_eversor": {
+      "name": "TEMPLUM EVERSOR",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] A temple of the Officio Assassinorum that produces berserk killing machines, sustained by combat drugs and cybernetic augmentation to unleash indiscriminate destruction."
+    },
+    "templum_vanus": {
+      "name": "TEMPLUM VANUS",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] A temple of the Officio Assassinorum specialising in information warfare, data-manipulation, and eliminating targets through orchestrated events rather than direct violence."
+    },
+    "templum_venenum": {
+      "name": "TEMPLUM VENENUM",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] A temple of the Officio Assassinorum specialising in the use of poisons, toxins, and biological agents to eliminate targets."
+    },
+    "templum_vindicare": {
+      "name": "TEMPLUM VINDICARE",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] A temple of the Officio Assassinorum that trains the deadliest long-range marksmen in the Imperium, capable of eliminating targets from extreme distances with a single shot."
+    },
+    "tesla": {
+      "name": "TESLA",
+      "source": "church",
+      "page": null,
+      "description": "[AI-Generated] Necron weapons that fire arcs of living lightning that leap between nearby targets."
+    },
+    "toxin": {
+      "name": "TOXIN",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] A weapon or upgrade that incorporates poisonous substances to debilitate or kill targets."
+    },
+    "transonic": {
+      "name": "TRANSONIC",
+      "source": "fspg",
+      "page": null,
+      "description": "[AI-Generated] Adeptus Mechanicus weapons whose blades vibrate at transonic frequencies, allowing them to phase through armour."
     },
     "two_handed": {
       "name": "2-HANDED",
@@ -1103,6 +1409,18 @@
       "source": "core",
       "page": 377,
       "description": "One of the Ruinous Powers, the Changer of Ways' domains are fate, ambition, and sorcery."
+    },
+    "vortex": {
+      "name": "VORTEX",
+      "source": "aeldari",
+      "page": null,
+      "description": "[AI-Generated] Aeldari weapons that tear open holes in the fabric of realspace, exposing anything nearby to the destructive energies of the Warp."
+    },
+    "water_caste": {
+      "name": "WATER CASTE",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] The diplomat and merchant caste of the T'au Empire, responsible for trade, negotiation, and communication with alien species."
     },
     "wraith_construct": {
       "name": "WRAITH CONSTRUCT",
