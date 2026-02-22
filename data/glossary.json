@@ -445,104 +445,104 @@
     "corruption_test": {
       "name": "Corruption Test",
       "source": "core",
-      "page": 284,
-      "description": "To make a Corruption Test, roll a dice pool of your Conviction Trait against the DN of the source of Corruption. If you fail, you gain Corruption Points equal to the difference between the number of Icons you rolled and the DN of the Test."
+      "page": 286,
+      "description": "To make a Corruption Test, roll a dice pool of your Conviction Trait against the DN of the source of Corruption. Your Corruption Level can increase the DN of the Test. If you fail a Corruption Test, the GM gains +1 Ruin, and you gain Corruption Points equal to the difference between the number of Icons you rolled and the DN of the Test. If you roll a Complication on a failed Corruption Test, you gain double the amount of Corruption Points. If you roll a Wrath Critical on a Corruption Test, the DN of the Test is reduced by 2. You may choose to spend a single Wrath to reduce the DN of the current Corruption Test by one. This can't reduce the DN below 1."
     },
     "dn": {
       "name": "DN (Difficulty Number)",
       "source": "core",
-      "page": 156,
+      "page": 160,
       "description": "The Difficulty Number (DN) is the number of Icons you need to pass a Test. If you roll equal to or greater than the DN, you've succeeded! DN 1 is Easy, DN 3 is Standard, DN 5 is Challenging, DN 7 is Difficult, and DN 9 is Extreme."
     },
     "ed": {
       "name": "ED (Extra Damage)",
       "source": "core",
-      "page": 171,
-      "description": "Extra Damage dice are rolled in addition to a weapon's base damage. Each Icon rolled on ED dice adds +1 to the total damage. Some abilities and talents add ED to attacks."
+      "page": 183,
+      "description": "Extra Damage Dice, abbreviated as ED. Circumstances and Abilities might award additional extra dice, presented as +X ED, with X being the number of Extra Damage Dice. When you deal damage, you roll any ED you have and add the total Icons (including Exalted Icons) to your total damage."
     },
     "exalted_icon": {
       "name": "Exalted Icon",
       "source": "core",
-      "page": 156,
-      "description": "An Exalted Icon is rolled when you get a 6 on a die. It counts as 2 Icons instead of 1. Exalted Icons can also be 'shifted' to activate special effects or weapon traits."
+      "page": 158,
+      "description": "Any dice that roll a 6 count as an Exalted Icon. An Exalted Icon counts as two Icons. Exalted Icons can also be used to Shift for bonuses."
     },
     "glory": {
       "name": "Glory",
       "source": "core",
       "page": 164,
-      "description": "Glory is a resource you can earn and spend as a group to overcome the terrifying obstacles of the 41st Millennium. You and your party begin each session with 0 Glory in your collective pool. Any player can Shift an Exalted Icon to add 1 Glory to the pool, and rolling a Wrath Critical adds 1 Glory. Glory can be spent to add bonus dice to a Test, Seize the Initiative, increase damage, or increase the severity of a Critical Hit."
+      "description": "Glory is a resource you can earn and spend as a group to overcome the terrifying obstacles of the 41st Millennium. You and your party begin each session with 0 Glory in your collective pool. Any player can Shift an Exalted Icon to add 1 Glory to the pool; you can only do this once per Test. Whenever you roll a Wrath Critical on a Test, you add 1 Glory to the pool. The Glory pool has a maximum of either 6 or the number of players +2, whichever value is higher. Glory can be spent to add bonus dice to a Test, increase damage, Seize the Initiative, or increase the severity of a Critical Hit."
     },
     "icon": {
       "name": "Icon",
       "source": "core",
-      "page": 156,
-      "description": "When rolling dice, a 4 or 5 counts as 1 Icon, and a 6 (Exalted Icon) counts as 2 Icons. You compare the total Icons rolled to the DN to determine success."
+      "page": 158,
+      "description": "Any dice that roll a 4 or a 5 count as one Icon. An Icon is a measure of your success; the more you get, the more likely you are to succeed."
     },
     "mortal_wound": {
       "name": "Mortal Wound",
       "source": "core",
-      "page": 191,
-      "description": "A Mortal Wound is damage that cannot be reduced by Resilience or Determination. Mortal Wounds are applied directly to your Wounds total and often come from Critical Hits, Conditions, or special abilities."
+      "page": 193,
+      "description": "Mortal Wounds represent damage that is particularly brutal, exotic, or otherwise incredibly dangerous. Mortal Wounds ignore your Resilience, inflicting Wounds directly. Determination rolls can't be made to negate Mortal Wounds unless a Talent, item of Wargear, or the GM states otherwise."
     },
     "psychic_power": {
       "name": "Psychic Power",
       "source": "core",
-      "page": 255,
-      "description": "Psychic Powers are abilities used by Psykers that manipulate the Warp. To use a power, make a Psychic Mastery (Wil) Test against the power's DN. Failing the Test may result in Perils of the Warp."
+      "page": 259,
+      "description": "To use a psychic power, assemble a dice pool for your Psychic Mastery (Wil) Skill and roll against the power's DN. If the number of Icons equals or exceeds the psychic power's DN, you've successfully cast the power. Any result of 1 on any Wrath Dice triggers a Perils of the Warp Complication, regardless of success or failure."
     },
     "rank": {
       "name": "Rank",
       "source": "core",
-      "page": 144,
-      "description": "Your Rank is a measure of your aptitude in your Tier. Some of your abilities and Talents may be modified by your Rank. Unless the GM says otherwise, you start at Rank 1. Your Rank increases every time you earn a total of 40 XP (Rank 2 at 40 XP, Rank 3 at 80 XP). Your Rank can't decrease, and can't go above the maximum of 3."
+      "page": 36,
+      "description": "Your Rank is a measure of your aptitude in your Tier. Some of your abilities and Talents may be modified by your Rank. Unless the GM says otherwise, you start at Rank 1. Your Rank increases every time you earn a total of 40 XP. Your Rank can't decrease, and can't go above the maximum of 3."
     },
     "regroup": {
       "name": "Regroup",
       "source": "core",
-      "page": 131,
+      "page": 196,
       "description": "A Regroup is a short period of downtime lasting approximately 1 hour. Regrouping generally occurs between encounters and affords you time to check ammo, tend injuries, assess the current situation, discuss tactics, and quickly grab something to eat and drink. If you have a Medicae Rating you can heal a single character during a Regroup. They regain Wounds equal to your Medicae (Int) dice pool."
     },
     "respite": {
       "name": "Respite",
       "source": "core",
-      "page": 131,
-      "description": "Respite is a long period of downtime lasting at least 6 hours. You can spend 1-2 of the hours performing light activities. If a Respite goes uninterrupted, your Shock and Wounds are reduced to zero, and your Wrath points reset to 2. You cannot gain the benefits of a Respite if you are Dying."
+      "page": 196,
+      "description": "Respite is a long period of downtime lasting at least 6 hours. You can spend 1-2 of the hours performing light activities, such as reading, eating, talking, maintaining Wargear, and standing watch over the group. If a strenuous activity that lasts for 1 hour or more interrupts the Respite, then the Respite must begin again to confer any benefit. If a Respite goes uninterrupted, your Shock and Wounds are reduced to zero, and your Wrath points reset to 2. Resetting Wrath in this way could increase or decrease your current Wrath. You cannot gain the benefits of a Respite if you are Dying."
     },
     "ruin": {
       "name": "Ruin",
       "source": "core",
-      "page": 166,
-      "description": "Ruin is the GM's resource, similar to the party's Glory. The GM gains Ruin when players roll Complications on the Wrath Die or from certain abilities. The GM spends Ruin to activate enemy abilities, add complications, or empower threats."
+      "page": 320,
+      "description": "Ruin is a currency that the GM can spend to make the 41st Millennium even more dangerous. The GM starts every session with Ruin equal to the number of players, with a maximum of twice the number of players. The GM can spend Ruin to: Reroll Failures on any Test for an NPC; Seize the Initiative; Restore 1d3+3 of an NPC's Shock; make a Determination roll for an NPC; or Activate Ruin Actions possessed by powerful enemies."
     },
     "shock": {
       "name": "Shock",
       "source": "core",
       "page": 195,
-      "description": "Your Maximum Shock represents your mental fortitude in the face of combat and potential death. You start play with 0 Shock, and certain attacks or psychological assaults can cause you to suffer Shock. If you suffer more Shock than your Maximum Shock, you are Exhausted. You may use your Combat Action and expend a point of Wrath to restore Shock equal to your Rank + your Tier."
+      "description": "Your Maximum Shock represents your mental fortitude in the face of combat and potential death. You start play with 0 Shock, and certain attacks or psychological assaults can cause you to suffer Shock. If you suffer more Shock than your Maximum Shock, you are Exhausted. If your Shock is reduced, you are no longer Exhausted and may take actions normally. You may use your Combat Action and expend a point of Wrath to restore Shock equal to your Rank + your Tier."
     },
     "shifting": {
       "name": "Shifting",
       "source": "core",
       "page": 165,
-      "description": "When there is an Exalted Icon (a result of 6 on a die) in a Test's results, you might be able to remove it for special benefits. This is called Shifting. If you can remove an Exalted Icon from the results of a Test and there are still enough Icons to meet or exceed the DN, you can Shift that Exalted Icon. There is no limit to the amount of Exalted Icons you can Shift, as long as there are still enough Icons left in the results to meet or exceed the DN. You can Shift a Wrath Critical just like any other Exalted Icon; the effects of the Wrath Critical (gaining Glory and triggering a Critical Hit) trigger even if you Shift it. Common uses for Shifting include: Shifting for Extra Damage (+1 ED per Shift on attacks), Shifting for Glory (add 1 Glory to the pool, once per Test), Gain Information (1 answer per Shift), Improve Quality (make the result better), or Improve Speed (reduce time taken)."
+      "description": "When there is an Exalted Icon (a result of 6 on a die) in a Test's results, you might be able to remove it for special benefits. This is called Shifting. If you can remove an Exalted Icon from the results of a Test and there are still enough Icons to meet or exceed the DN, you can Shift that Exalted Icon. There is no limit to the amount of Exalted Icons you can Shift, as long as there are still enough Icons left in the results to meet or exceed the DN. You can Shift a Wrath Critical just like any other Exalted Icon. The effects of the Wrath Critical — gaining Glory and triggering a Critical Hit — trigger even if you Shift it. Common uses for Shifting include: Shifting for Extra Damage (+1 ED per Shift on attacks), Shifting for Glory (add 1 Glory to the pool, once per Test), Gain Information (1 answer per Shift), Improve Quality (make the result better), or Improve Speed (reduce time taken)."
     },
     "tier": {
       "name": "Tier",
       "source": "core",
-      "page": 37,
-      "description": "Your Tier is the power level of your group. Higher Tier groups face more perilous adventures and deadlier threats. There are 4 Tiers of play in Wrath & Glory (1-4). Higher Tiers correspond to higher power levels and access to more powerful archetypes. Tier also affects Wound calculations and other derived stats."
+      "page": 19,
+      "description": "Your Tier is the power level of your group. Higher Tier groups face more perilous adventures and deadlier threats. There are 4 Tiers of play in Wrath & Glory. Higher Tiers correspond to higher power levels. Your Tier also ensures each of your characters are at the same power level and no character is overshadowed by another."
     },
     "wrath": {
       "name": "Wrath",
       "source": "core",
       "page": 164,
-      "description": "Wrath Points represent your inner fire, your will to succeed, and the Emperor's light shining on you for one lucky moment. You start every session with 2 Wrath Points. You can spend a Wrath Point to: Reroll Failures (reroll every 1, 2, and 3 in your dice pool, once per Test); Make a Narrative Declaration (add a minor narrative element to the scene); or Restore Shock (recover Shock equal to your Rank + your Tier as an Action)."
+      "description": "Wrath Points represent your inner fire, your will to succeed, and the Emperor's light shining on you for one lucky moment. You start every session with 2 Wrath Points. You can spend a Wrath Point to: Reroll Failures (reroll every 1, 2, and 3 in your dice pool, once per Test; you can't reroll a Wrath Die that rolled a Complication); Narrative Declaration (add a minor narrative element to the scene; if the GM declines, the Wrath Point is not spent); or Restore Shock (as an Action, recover Shock equal to your Rank + your Tier; you can only do this if you are conscious)."
     },
     "wrath_die": {
       "name": "Wrath Die",
       "source": "core",
-      "page": 156,
-      "description": "One die in every dice pool is the Wrath Die (usually a different color). A 6 on the Wrath Die is an Exalted Icon and triggers Critical Hits on attacks. A 1 on the Wrath Die is a Complication, which gives the GM +1 Ruin."
+      "page": 162,
+      "description": "The Wrath Die replaces one of the d6 in your dice pool. If you only have one die in your pool for a Test, it is the Wrath Die. The Wrath Die works the same as every other die in your pool when determining Icons and Exalted Icons, but also activates specific effects when it lands on a 1 or 6. When the Wrath Die lands on a 6, you've rolled a Wrath Critical. When the Wrath Die lands on a 1, you've rolled a Complication."
     }
   },
   "keywords": {
@@ -1059,32 +1059,32 @@
     "defence": {
       "name": "Defence",
       "source": "core",
-      "page": 128,
-      "description": "Defence is equal to your Initiative - 1, with a minimum of 1."
+      "page": 36,
+      "description": "Your ability to dodge blows and bullets; essentially how hard you are to hit. Your Defence is equal to your Initiative rating –1. When anyone makes an attack against you, their attack roll must equal or exceed your Defence to hit you. Defence is effectively the Difficulty Number of any attack roll."
     },
     "resilience_trait": {
       "name": "Resilience",
       "source": "core",
-      "page": 128,
-      "description": "When an enemy hits you with an attack and does more damage than your Resilience, the remaining damage is inflicted as Wounds. If the damage does not exceed your Resilience, you suffer 1 Shock instead."
+      "page": 36,
+      "description": "A representation of how well you can withstand injuries; the same attack might seriously injure one person and result in a minor flesh wound to another. Your base Resilience is your Toughness rating +1. If you are wearing any armour, add its Armour Rating to your base Resilience for your Total Resilience. When you get hit with an attack, you subtract your Resilience from any damage you take. Your enemies need to deal more damage than your Resilience when they attack in order to deal Wounds to you."
     },
     "determination_trait": {
       "name": "Determination",
       "source": "core",
-      "page": 128,
-      "description": "A Trait representing your ability to shrug off incoming damage through sheer toughness. When you suffer Wounds, you may roll Determination to reduce the damage. Roll a number of dice equal to your Toughness. Each Icon rolled reduces the Wounds suffered by 1."
+      "page": 37,
+      "description": "Your ability to continue acting despite the damage to your body, ignoring physical harm through force of will. Your Determination value is equal to your Toughness rating. Whenever you take one or more Wounds, you can choose to roll Determination to negate those Wounds at the cost of Shock."
     },
     "max_wounds": {
       "name": "Max Wounds",
       "source": "core",
-      "page": 128,
-      "description": "A Trait representing the maximum physical damage you can sustain. Calculated as (Tier x 2) + Toughness + species bonuses. When your Wounds reach your Max Wounds, you are dying."
+      "page": 37,
+      "description": "A measure of how many injuries you can suffer before you potentially die. Your Maximum Wounds Trait is equal to double your Tier plus your Toughness Rating. When your Wounds exceed your Maximum Wounds you are Dying."
     },
     "max_shock": {
       "name": "Max Shock",
       "source": "core",
-      "page": 128,
-      "description": "A Trait representing the maximum mental and physical fatigue you can endure. Calculated as Willpower + Tier. When your Shock exceeds your Max Shock, you become Exhausted and excess Shock becomes Wounds."
+      "page": 37,
+      "description": "A measure of how much mental trauma you can take before your will breaks. Your Maximum Shock is equal to your Willpower rating plus your Tier. You suffer Shock when you use Determination and when you are pushed to your psychological limits. When you suffer more Shock than your Maximum, you are Exhausted."
     },
     "speed": {
       "name": "Speed",
@@ -1095,32 +1095,32 @@
     "conviction": {
       "name": "Conviction",
       "source": "core",
-      "page": 128,
-      "description": "A Trait representing your strength of belief and mental resilience against the taint of Chaos. Equal to Willpower. Used when making Corruption Tests to resist gaining Corruption."
+      "page": 37,
+      "description": "Whenever you try to resist corruption or the forces of Chaos, you make a Corruption Test. When you make a Corruption Test, your dice pool is equal to your Conviction. Your starting Conviction is equal to your Willpower."
     },
     "resolve": {
       "name": "Resolve",
       "source": "core",
-      "page": 128,
-      "description": "A Trait representing your mental defences against Fear and Terror. Calculated as Willpower - 1. When confronted with something that causes Fear or Terror, you roll Resolve to resist the effects."
+      "page": 37,
+      "description": "Your courage and overall morale. Your starting Resolve is equal to your Willpower –1, with a minimum of 1. Resolve is used to resist Fear and other psychological conditions."
     },
     "passive_awareness": {
       "name": "Passive Awareness",
       "source": "core",
-      "page": 128,
-      "description": "A Trait representing your baseline perception when not actively searching. Calculated as the ceiling of (Intellect + Awareness) / 2. The GM uses this to determine if you notice hidden threats or subtle details without making an active Test."
+      "page": 37,
+      "description": "Your ability to notice the unusual and sense threats when you aren't actively searching your environment. Your Passive Awareness is equal to half your Awareness (Int) Skill total, rounded up if necessary."
     },
     "influence": {
       "name": "Influence",
       "source": "core",
-      "page": 128,
-      "description": "A Trait representing your social standing and ability to affect events through connections and reputation. Calculated as Fellowship - 1 + archetype modifier. Used for social interactions and can affect Requisition Tests."
+      "page": 37,
+      "description": "A measure of your societal authority and reputation. When you are in a civilised environment you can make Influence Tests to exploit authority and acquire items. Your starting Influence is equal to your Fellowship –1. Unlike your Skills, Influence is only applicable when you are dealing within the social contract of civilisation."
     },
     "wealth": {
       "name": "Wealth",
       "source": "core",
-      "page": 128,
-      "description": "A Trait representing your access to material resources and purchasing power. Equal to Tier. Used for Requisition Tests to acquire equipment and supplies."
+      "page": 38,
+      "description": "A measure of the valuable resources you own. You can use Wealth to purchase wargear and make bribes. Each point of Wealth could be a literal cache of Throne Gelt, the currency of the Imperium, or it could be something else of value; a piece of fine art, a xenos artefact, or some other rare oddity. Your starting Wealth is equal to your Tier and may be modified by your abilities or Talents."
     },
     "corruption": {
       "name": "Corruption",
