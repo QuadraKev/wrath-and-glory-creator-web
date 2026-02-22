@@ -114,7 +114,7 @@
       "name": "Interaction Attack",
       "source": "core",
       "page": 190,
-      "description": "...If your Interaction Attack Test equals or exceeds the DN, several effects are possible. You must choose to make the target Hindered or Vulnerable; this effect lasts until the start of your next turn. If multiple targets are affected by the same Interaction Attack, all targets suffer the same effect. Shifts may be used to increase the Defence or DN penalty by 1 for each Shift. Player's Call: If you Shift 3 or more Exalted Icons on an Interaction Attack, the result is a 'Player's Call'. You can negotiate with the GM to trigger an effect of your choice that is appropriate to the circumstances."
+      "description": "Wily characters can use their Skills to trick, disorient, stun, or otherwise hinder a target, leaving them vulnerable. The DN of an Interaction Attack is the foe's opposing Skill Rating or Resolve, whichever is higher. The following Skills can be used to make Interaction Attacks: Athletics to push your enemy. Deception to manipulate your enemy into a poor position. Intimidate to menace your enemy, cowing them. Persuasion to throw your enemy off balance with careful words. Tech to use nearby technology to confuse or weaken your enemy. If your Interaction Attack Test equals or exceeds the DN, several effects are possible. You must choose to make the target Hindered or Vulnerable; this effect lasts until the start of your next turn. If multiple targets are affected by the same Interaction Attack, all targets suffer the same effect. Shifts may be used to increase the Defence or DN penalty by 1 for each Shift. Player's Call: If you Shift 3 or more Exalted Icons on an Interaction Attack, the result is a 'Player's Call'. You can negotiate with the GM to trigger an effect of your choice that is appropriate to the circumstances."
     },
     "mob": {
       "name": "Mob",
@@ -150,7 +150,7 @@
       "name": "Stealth Score",
       "source": "core",
       "page": 181,
-      "description": "Table row -4: 'A sword duel. Engaging a grav-vehicle's engines. Firing a weapon with the FLAME Keyword. Shouting or screaming. Revving a weapon with the CHAIN Keyword.' Table row -5: 'Firing a weapon with the ARC, LAS, PLASMA, or PROJECTILE Keywords. Engaging a Jump Pack or a promethium-fueled vehicle's engines.'"
+      "description": "You can make a Stealth (A) Test as a Combat Action. Whenever you do this (or whenever the GM calls for a Stealth (A) Test), write down the number of Icons you roll. This is your Stealth Score for the scene. Whenever another character uses their Passive Awareness or makes an Awareness (Int) Test, they use your Stealth Score for the DN of their Test. If the enemy discovers you, you lose your Stealth Score for the scene. You can't roll Stealth (A) again until the next scene, as dictated by the GM. Your Stealth Score can be decreased through various actions, and is ultimately adjudicated by the GM.<br><br><table class='glossary-table'><caption>Stealth Score Reduction</caption><tr><th>Action</th><th>Score Reduction</th></tr><tr><td>Whispering. Readying a quiet weapon. Snapping a twig.</td><td>-1</td></tr><tr><td>Talking softly. Readying a weapon with moving parts, such as racking a Stubber. Reloading.</td><td>-2</td></tr><tr><td>Talking normally. Attacking an unaware target with a Knife. Firing a weapon with the MELTA Keyword, generating a loud hiss. Activating any Wargear that generates light.</td><td>-3</td></tr><tr><td>A sword duel. Engaging a grav-vehicle's engines. Firing a weapon with the FLAME Keyword. Shouting or screaming. Revving a weapon with the CHAIN Keyword.</td><td>-4</td></tr><tr><td>Firing a weapon with the ARC, LAS, PLASMA, or PROJECTILE Keywords. Engaging a Jump Pack or a promethium-fueled vehicle's engines.</td><td>-5</td></tr><tr><td>Firing a weapon with the BOLT Keyword. Triggering an explosive. Engaging a flying vehicle's jet engines.</td><td>-6</td></tr></table>"
     },
     "ambush": {
       "name": "Ambush",
@@ -288,7 +288,7 @@
       "name": "Area Effect Weapons",
       "source": "core",
       "page": 185,
-      "description": "...If you are targeting a Mob, the number of individuals in the Mob hit by the explosion is equal to half of the Blast rating. If you are using a theater of the mind approach, you can use this number as a shorthand to determine how many proximate targets are hit — the GM might decide a Frag Grenade hits 3 Cultists charging through the grand hall of an abbey, rather than applying the radius of the explosion. You cannot Shift to increase the damage..."
+      "description": "Area effect weapons, such as grenades, missiles, and other explosives, have the Blast (X) Trait. When you fire or throw a Blast weapon, choose any point in range (including another character!), then make a DN 3 Ballistic Skill (A) Test. Apply Range effects as normal unless you are using a thrown weapon like a grenade. If you fail the Test, the attack misses and Scatters. If you succeed, the explosion is centered on your target. If you are measuring distance, the Blast rating determines the radius of the explosion in metres. Anyone inside this radius is hit by the attack. If you are targeting a Mob, the number of individuals in the Mob hit by the explosion is equal to half of the Blast rating. If you are using a theater of the mind approach, you can use this number as a shorthand to determine how many proximate targets are hit — the GM might decide a Frag Grenade hits 3 Cultists charging through the grand hall of an abbey, rather than applying the radius of the explosion. You cannot Shift to increase the damage of a Blast weapon. If you inflict a Critical Hit with a Blast weapon, the effects apply to all targets hit by the attack."
     },
     "scattering": {
       "name": "Scattering",
@@ -336,12 +336,12 @@
       "name": "Multi-Attack",
       "source": "core",
       "page": 187,
-      "description": "...If you cannot reach a target, they are not hit by the Multi-Attack. Thrown weapons can only be used in a Multi-Attack at the GM's discretion. It may be possible to Multi-Attack with thrown weapons in some circumstances, such as throwing a spear through two people standing next to each other."
+      "description": "Multi-Attacks work similarly to Multi-Actions; every additional attack increases the Defence of every target by +2 for the purposes of the Multi-Attack. Each attack of your Multi-Attack must use the same weapon, and you cannot Shift as part of a Multi-Attack. Roll damage once, and apply the result to every target hit. If you Multi-Attack with a melee weapon, you must move into Engagement with all targets. You provoke Reflexive Attacks from any targets you leave Engagement with during this attack. If you cannot reach a target, they are not hit by the Multi-Attack. Thrown weapons can only be used in a Multi-Attack at the GM's discretion. It may be possible to Multi-Attack with thrown weapons in some circumstances, such as throwing a spear through two people standing next to each other."
     },
     "all_out_attack": {
       "name": "All-Out Attack",
       "source": "core",
-      "page": 185,
+      "page": 187,
       "description": "When making an All-Out Attack, you gain +2 bonus dice to your melee attack dice pool, but you also suffer −2 to your Defence until the start of your next Turn. You can't take a Multi-Action if you All-Out Attack. You can Multi-Attack as part of an All-Out Attack; all of your attacks gain the same bonus."
     },
     "fall_back": {
@@ -403,6 +403,42 @@
       "source": "core",
       "page": 191,
       "description": "A result of 1 on the Wrath Die during an attack results in a Complication. Complications do not, by themselves, mean that your Test failed, only that something unusual or unfortunate has occurred.<br><br><table class='glossary-table'><caption>Combat Complications</caption><tr><th>d66 Roll</th><th>Result</th><th>Summary</th></tr><tr><td>11–26</td><td>Out of Ammo</td><td>Must Reload to use again</td></tr><tr><td>31–33</td><td>Weapon Jam</td><td>DN 2 Tech (Int) Test to use again</td></tr><tr><td>34–36</td><td>Dropped Weapon</td><td>Simple Action to recover weapon</td></tr><tr><td>41–43</td><td>Weapon Malfunction</td><td>DN 4 Tech (Int) Test to use again</td></tr><tr><td>44–46</td><td>Weapon Stuck</td><td>DN 3 Strength Test to recover weapon</td></tr><tr><td>51–53</td><td>Dropped Item</td><td>Drop an item of Wargear</td></tr><tr><td>54–56</td><td>Fall Prone</td><td>You're Prone</td></tr><tr><td>61–62</td><td>Restrained</td><td>You're Restrained. DN 4 Strength Test to recover</td></tr><tr><td>63–64</td><td>Blinded</td><td>You're Blinded</td></tr><tr><td>65–66</td><td>Inconvenient Target</td><td>GM picks a new target for your attack</td></tr></table>"
+    },
+    "determination": {
+      "name": "Determination",
+      "source": "core",
+      "page": 196,
+      "description": "You can roll Determination whenever you suffer one or more Wounds to convert them into Shock. Roll a number of dice equal to your Toughness. Every Icon you roll reduces the number of Wounds you suffer by 1 and causes you to suffer 1 Shock."
+    },
+    "wounded": {
+      "name": "Wounded",
+      "source": "core",
+      "page": 193,
+      "description": "If you have suffered any Wounds, you are Wounded. Wounded characters suffer a +1 DN penalty to all Tests."
+    },
+    "dying": {
+      "name": "Dying",
+      "source": "core",
+      "page": 193,
+      "description": "If you suffer more Wounds than your Maximum Wounds, you are Dying. You are on the verge of expiration, unable to move or fight properly, and will perish if you do not receive medical attention soon. When you are Dying, you immediately suffer a Memorable Injury and fall Prone. You cannot stand up while you are Dying. Whenever you take any amount of damage that would cause you to suffer a Wound while Dying, you suffer a Traumatic Injury instead. If you suffer more Traumatic Injuries than your Tier + 1, you die. Whilst Dying, you are Wounded, and may only take one of the following Actions on your Turn: Crawl, a basic Combat Action (using no options such as Aim or Multi-Attack), or Fall Back. You may roll Determination when you take damage while Dying; if you use Determination to reduce any damage you take to 0, you do not suffer a Traumatic Injury. A Dying character can be moved by another character if they use a Combat Action to drag or lift a fallen comrade. If you recover any number of Wounds, you are no longer Dying."
+    },
+    "annihilation": {
+      "name": "Annihilation",
+      "source": "core",
+      "page": 194,
+      "description": "If you suffer damage from a single attack that inflicts more than double your Maximum Wounds, you are dead. This is known as Annihilation."
+    },
+    "falling": {
+      "name": "Falling",
+      "source": "core",
+      "page": 201,
+      "description": "When you fall a distance of 5 metres or more you suffer falling damage. You suffer 1 Mortal Wound, plus 1d3 Mortal Wounds for every extra 5 metres you fall."
+    },
+    "reducing_defence": {
+      "name": "Reducing Defence",
+      "source": "core",
+      "page": 197,
+      "description": "Defence can be reduced to a minimum of 1 and cannot be further reduced beyond that point. A character can't take an action that would voluntarily reduce their Defence below 1."
     }
   },
   "terms": {
