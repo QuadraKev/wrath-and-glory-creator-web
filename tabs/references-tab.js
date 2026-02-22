@@ -15,6 +15,7 @@ const ReferencesTab = {
     CATEGORIES: [
         { key: 'talents', name: 'Talent', pluralName: 'Talents' },
         { key: 'weapons', name: 'Weapon', pluralName: 'Weapons' },
+        { key: 'grenades', name: 'Grenade/Missile', pluralName: 'Grenades & Missiles' },
         { key: 'armor', name: 'Armor', pluralName: 'Armor' },
         { key: 'augmetics', name: 'Augmetic', pluralName: 'Augmetics' },
         { key: 'equipment', name: 'Equipment', pluralName: 'Equipment' },
@@ -79,11 +80,17 @@ const ReferencesTab = {
             });
         }
 
-        // Weapons
+        // Weapons (separate grenades & missiles into their own category)
+        const grenadeCategories = ['Grenade', 'Missile', 'Explosive'];
         for (const w of DataLoader.getAllWeapons()) {
             const typeLabel = w.type === 'melee' ? 'Melee' : 'Ranged';
+            const kws = (w.keywords || []).map(k => k.toUpperCase());
+            const isGrenade = (w.category && grenadeCategories.includes(w.category)) || kws.includes('GRENADE') || kws.includes('MISSILE');
             this.allEntries.push({
-                ...w, category: 'weapons', categoryName: 'Weapon', categoryPluralName: 'Weapons',
+                ...w,
+                category: isGrenade ? 'grenades' : 'weapons',
+                categoryName: isGrenade ? 'Grenade/Missile' : 'Weapon',
+                categoryPluralName: isGrenade ? 'Grenades & Missiles' : 'Weapons',
                 briefInfo: typeLabel,
                 searchText: `${w.name} ${w.description || ''} ${(w.traits || []).join(' ')} ${(w.keywords || []).join(' ')}`.toLowerCase()
             });
@@ -454,6 +461,7 @@ const ReferencesTab = {
                 html += this.renderTalentBody(entry);
                 break;
             case 'weapons':
+            case 'grenades':
                 html += this.renderWeaponBody(entry);
                 break;
             case 'armor':
