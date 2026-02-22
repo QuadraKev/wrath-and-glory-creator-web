@@ -252,6 +252,7 @@ const WargearTab = {
                         <button class="wargear-tab-btn ${this.currentCategory === 'all' ? 'active' : ''}" data-category="all">All</button>
                         <button class="wargear-tab-btn ${this.currentCategory === 'melee' ? 'active' : ''}" data-category="melee">Melee</button>
                         <button class="wargear-tab-btn ${this.currentCategory === 'ranged' ? 'active' : ''}" data-category="ranged">Ranged</button>
+                        <button class="wargear-tab-btn ${this.currentCategory === 'grenades' ? 'active' : ''}" data-category="grenades">Grenades & Missiles</button>
                         <button class="wargear-tab-btn ${this.currentCategory === 'armor' ? 'active' : ''}" data-category="armor">Armor</button>
                         <button class="wargear-tab-btn ${this.currentCategory === 'augmetics' ? 'active' : ''}" data-category="augmetics">Augmetics</button>
                         <button class="wargear-tab-btn ${this.currentCategory === 'equipment' ? 'active' : ''}" data-category="equipment">Equipment</button>
@@ -363,6 +364,19 @@ const WargearTab = {
             }
         }
 
+        // Render Grenades & Missiles
+        if (this.currentCategory === 'grenades') {
+            const grenadeCategories = ['Grenade', 'Missile', 'Explosive'];
+            const grenadeWeapons = filterBySearch(filterBySource(weapons.filter(w => {
+                if (w.category && grenadeCategories.includes(w.category)) return true;
+                const kws = (w.keywords || []).map(k => k.toUpperCase());
+                return kws.includes('GRENADE') || kws.includes('MISSILE');
+            })));
+            if (grenadeWeapons.length > 0) {
+                html += this.renderRangedWeaponsCards(grenadeWeapons, ownedCounts, 'Grenades & Missiles');
+            }
+        }
+
         // Render Armor
         if (this.currentCategory === 'all' || this.currentCategory === 'armor') {
             const armorItems = filterBySearch(filterBySource(armor));
@@ -450,7 +464,7 @@ const WargearTab = {
     },
 
     // Render ranged weapons cards
-    renderRangedWeaponsCards(weapons, ownedCounts) {
+    renderRangedWeaponsCards(weapons, ownedCounts, sectionTitle = 'Ranged Weapons') {
         weapons.sort((a, b) => a.name.localeCompare(b.name));
 
         const cards = weapons.map(w => {
@@ -498,7 +512,7 @@ const WargearTab = {
 
         return `
             <div class="wargear-table-section">
-                <h4>Ranged Weapons</h4>
+                <h4>${sectionTitle}</h4>
                 ${cards}
             </div>
         `;
