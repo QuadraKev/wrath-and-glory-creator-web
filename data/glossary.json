@@ -2388,6 +2388,12 @@
       "page": null,
       "description": "[AI-Generated] A vehicle designed to carry troops safely across the battlefield, providing protection and mobility."
     },
+    "transporter": {
+      "name": "TRANSPORTER",
+      "source": "church",
+      "page": null,
+      "description": "[AI-Generated] A vehicle specifically equipped to carry passengers into battle, featuring dedicated troop compartments and deployment capabilities."
+    },
     "triarch": {
       "name": "TRIARCH",
       "source": "core",
