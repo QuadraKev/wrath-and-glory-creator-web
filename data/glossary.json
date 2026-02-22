@@ -582,6 +582,12 @@
       "page": 375,
       "description": "Some mutated strains of Humanity, such as the muscular, oversized, impeccably loyal Ogryns, are allowed citizenship in parts of the Imperium due to their usefulness. These mutants are known as Abhumans."
     },
+    "absolvers_chapter": {
+      "name": "ABSOLVERS CHAPTER",
+      "source": "voa",
+      "page": null,
+      "description": "[AI-Generated] A Space Marine Chapter featured in the Vow of Absolution adventure, engaged in a penitent crusade to atone for a past failing."
+    },
     "adepta_sororitas": {
       "name": "ADEPTA SORORITAS",
       "source": "core",
@@ -648,6 +654,18 @@
       "page": null,
       "description": "[AI-Generated] The pilot caste of the T'au Empire, responsible for atmospheric and void operations. Air Caste T'au have adapted to life in low gravity and are expert aviators."
     },
+    "aircraft": {
+      "name": "AIRCRAFT",
+      "source": "church",
+      "page": null,
+      "description": "[AI-Generated] A vehicle capable of atmospheric flight."
+    },
+    "alaitoc": {
+      "name": "ALAITOC",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] An Asuryani Craftworld known for its strict adherence to the Path system and its large number of Rangers and Pathfinders who roam the galaxy."
+    },
     "anathema_psykana": {
       "name": "ANATHEMA PSYKANA",
       "source": "apocrypha",
@@ -660,6 +678,12 @@
       "page": 375,
       "description": "Anhrathe is the Aeldari name for the Corsairs, the piratical outcasts that form Coteries."
     },
+    "anti_grav": {
+      "name": "ANTI-GRAV",
+      "source": "aeldari",
+      "page": null,
+      "description": "[AI-Generated] Equipment or vehicles that use anti-gravitational technology to hover or fly."
+    },
     "any_keyword": {
       "name": "[ANY]",
       "source": "core",
@@ -671,6 +695,12 @@
       "source": "core",
       "page": 378,
       "description": "Ancient weapons that spew blasts of electricity that tear asunder biological nerves and mechanical systems."
+    },
+    "aspect_shrine": {
+      "name": "ASPECT SHRINE",
+      "source": "aeldari",
+      "page": null,
+      "description": "[AI-Generated] A temple dedicated to one of the Aspects of Khaine where Asuryani train on the Path of the Warrior, each shrine devoted to a particular style of combat."
     },
     "aspect_warrior": {
       "name": "ASPECT WARRIOR",
@@ -702,11 +732,53 @@
       "page": 379,
       "description": "A psychic power that has an audible effect."
     },
+    "autarch": {
+      "name": "AUTARCH",
+      "source": "aeldari",
+      "page": null,
+      "description": "[AI-Generated] An Asuryani leader who has walked many of the Paths, combining their diverse experience into masterful strategic and tactical command."
+    },
+    "bad_moon": {
+      "name": "BAD MOON",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] An Ork Clan known for their wealth and love of ostentatious dakka, Bad Moons grow their teeth faster than other Orks, giving them more currency to spend on the biggest guns."
+    },
+    "battlesuit": {
+      "name": "BATTLESUIT",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] An advanced T'au powered exoskeleton designed for combat, ranging from personal Crisis Suits to massive Riptide and Stormsurge platforms."
+    },
     "beast": {
       "name": "BEAST",
       "source": "core",
       "page": 375,
       "description": "Unintelligent creatures that do not possess the self-awareness and high intelligence of Humans."
+    },
+    "beast_snagga": {
+      "name": "BEAST SNAGGA",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] Orks who eschew advanced technology in favour of riding and hunting massive beasts, priding themselves on their toughness and ability to fight monsters hand-to-hand."
+    },
+    "beastmaster": {
+      "name": "BEASTMASTER",
+      "source": "aeldari",
+      "page": null,
+      "description": "[AI-Generated] A Drukhari warrior who captures and controls exotic and dangerous beasts, unleashing them upon their enemies in the arenas and on the battlefield."
+    },
+    "black_legion": {
+      "name": "BLACK LEGION",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] The largest and most powerful of the Traitor Legions, formerly the Luna Wolves and Sons of Horus, now united under the Warmaster Abaddon in their war against the Imperium."
+    },
+    "black_templars": {
+      "name": "BLACK TEMPLARS",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] A zealous successor Chapter of the Imperial Fists, the Black Templars are the largest Space Marine Chapter and are engaged in an eternal crusade to purge the enemies of the Emperor."
     },
     "blade": {
       "name": "BLADE",
@@ -714,11 +786,59 @@
       "page": 378,
       "description": "A simple bladed weapon, such as a Sword or Knife."
     },
+    "blades_for_hire": {
+      "name": "BLADES FOR HIRE",
+      "source": "aeldari",
+      "page": null,
+      "description": "[AI-Generated] Aeldari mercenaries and outcasts who sell their combat skills to the highest bidder, including Incubi, Mandrakes, and other deadly fighters."
+    },
+    "blood_angels": {
+      "name": "BLOOD ANGELS",
+      "source": "voa",
+      "page": null,
+      "description": "[AI-Generated] A noble First Founding Space Marine Chapter cursed with the genetic flaw known as the Red Thirst and the Black Rage, a psychic echo of their Primarch Sanguinius's death."
+    },
+    "blood_axe": {
+      "name": "BLOOD AXE",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] An Ork Clan regarded with suspicion by other Orks for their willingness to use cunning tactics, camouflage, and even negotiate with humans."
+    },
     "bolt": {
       "name": "BOLT",
       "source": "core",
       "page": 378,
       "description": "A firearm that fires the self-propelled, mass-reactive rounds known as Bolts, which explode when they penetrate the enemy."
+    },
+    "boss": {
+      "name": "BOSS",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] An Ork leader who has risen to command through sheer size, brutality, and force of personality. Ork society is a violent meritocracy where the biggest and meanest rule."
+    },
+    "brokhyr": {
+      "name": "BRÔKHYR",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] The engineer caste of the Leagues of Votann, Brôkhyr are master craftsmen who maintain and create the advanced technology of the Kin."
+    },
+    "cadian": {
+      "name": "CADIAN",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] Soldiers hailing from the fortress world of Cadia, renowned as the finest soldiers in the Astra Militarum and the Imperium's first line of defence against Chaos."
+    },
+    "canoptek": {
+      "name": "CANOPTEK",
+      "source": "core",
+      "page": null,
+      "description": "[AI-Generated] Autonomous robotic constructs that maintain and defend Necron tomb worlds, ranging from Scarab swarms to massive Spyders and Wraiths."
+    },
+    "catachan": {
+      "name": "CATACHAN",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] Jungle fighters from the death world of Catachan, among the toughest human warriors in the galaxy, hardened by a lifetime of surviving their lethal homeworld."
     },
     "chain": {
       "name": "CHAIN",
@@ -726,11 +846,23 @@
       "page": 379,
       "description": "A weapon that uses sharp, motorised teeth to inflict maximum damage."
     },
+    "champion": {
+      "name": "CHAMPION",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] An elite warrior who serves as the foremost fighter of their unit or warband, often bearing the finest wargear and leading from the front."
+    },
     "chaos": {
       "name": "CHAOS",
       "source": "core",
       "page": 375,
       "description": "The forces and worshippers of the Chaos Gods. Also a Psychic Power Keyword denoting a psychic power employed only by the forces of Chaos."
+    },
+    "chaplain_keyword": {
+      "name": "CHAPLAIN",
+      "source": "voa",
+      "page": null,
+      "description": "[AI-Generated] A Space Marine spiritual leader who tends to the Chapter's faith and fury, inspiring battle-brothers to righteous zeal in combat."
     },
     "chapter": {
       "name": "[CHAPTER]",
@@ -750,11 +882,35 @@
       "page": 377,
       "description": "An Ork Clan is a cultural mindset or timeless philosophy that unites large gatherings of Orks. Each has their own focus on a specific part of Ork kultur, such as Brutality, Kunnin', or lootin'."
     },
+    "cog": {
+      "name": "COG",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] A robotic construct used by the Leagues of Votann, serving various support and combat roles within Kin society."
+    },
+    "command_squad": {
+      "name": "COMMAND SQUAD",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] An elite bodyguard unit that accompanies and protects a commanding officer, typically including specialists such as medics, standard bearers, and veterans."
+    },
+    "commander_keyword": {
+      "name": "COMMANDER",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] A senior T'au military leader, typically piloting an advanced battlesuit and directing forces from the front lines."
+    },
     "coterie": {
       "name": "[COTERIE]",
       "source": "core",
       "page": 377,
       "description": "A Coterie is a collective of Aeldari Corsairs, a band of opportunistic space pirates that have each left their former lives to indulge in adventure and hedonistic pursuits. A Coterie is a loose organisation based on camaraderie and shared goals, and may include both Aeldari and Drukhari. Examples: Greensteel Corsairs, Yriel's Eldritch Raiders, Sunblitz Brotherhood, Void Dragons."
+    },
+    "court_of_the_archon": {
+      "name": "COURT OF THE ARCHON",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] The inner circle of a Drukhari Archon, consisting of exotic and dangerous retainers such as Sslyth bodyguards, Lhamaean poisoners, and Medusae."
     },
     "craftworld": {
       "name": "[CRAFTWORLD]",
@@ -762,11 +918,59 @@
       "page": 377,
       "description": "A Craftworld is a gargantuan wraithbone voidcraft the size of a small planet housing a huge population of Asuryani Aeldari. Each Craftworld has its own unique culture, and is powered by an Infinity Circuit which houses the spirits of the Craftworld's deceased citizens. Examples: Ul-Khari, Alaitoc, Biel-Tan, Iyanden."
     },
+    "creations_of_bile": {
+      "name": "CREATIONS OF BILE",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] The twisted experiments and enhanced warriors created by Fabius Bile, the renegade Apothecary who seeks to perfect and surpass the Emperor's work in creating Space Marines."
+    },
+    "crimson_fists": {
+      "name": "CRIMSON FISTS",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] A successor Chapter of the Imperial Fists known for their stoic resilience and disciplined bolter drill, nearly destroyed by an Ork WAAAGH! on their homeworld of Rynn's World."
+    },
+    "cryptek": {
+      "name": "CRYPTEK",
+      "source": "core",
+      "page": null,
+      "description": "[AI-Generated] Necron techno-sorcerers who wield arcane technologies that appear as magic, specialising in fields such as chronomancy, psychomancy, or technomancy."
+    },
+    "ctan": {
+      "name": "C'TAN",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] Ancient star-eating entities of immense power, the C'tan were once worshipped as gods by the Necrontyr. Now shattered into shards, they are enslaved as weapons by the Necron dynasties."
+    },
+    "cthonian": {
+      "name": "CTHONIAN",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] A warrior hailing from the subterranean mining world of Cthonia, known for their savage gang-fighting traditions."
+    },
     "cult_mechanicus": {
       "name": "CULT MECHANICUS",
       "source": "core",
       "page": null,
       "description": "[AI-Generated] The religious order within the Adeptus Mechanicus devoted to the worship of the Omnissiah, the Machine God. Members of the Cult Mechanicus seek to unlock the mysteries of technology through faith and ritual."
+    },
+    "cult_of_destruction": {
+      "name": "CULT OF DESTRUCTION",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] A destructive cult of Chaos devoted to annihilation and the tearing down of Imperial order."
+    },
+    "cult_of_strife": {
+      "name": "CULT OF STRIFE",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] The largest and most prestigious of the Drukhari Wych Cults, led by Lelith Hesperax, renowned for the sublime skill and savage grace of their gladiatorial performances."
+    },
+    "cultist": {
+      "name": "CULTIST",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] Mortal followers of the Ruinous Powers who serve Chaos through worship, sabotage, and rebellion against the Imperium."
     },
     "daemon": {
       "name": "DAEMON",
@@ -774,17 +978,119 @@
       "page": 375,
       "description": "The twisted creatures native to the Immaterium are named daemons and are believed to be made of Warp energy."
     },
+    "daemon_engine": {
+      "name": "DAEMON ENGINE",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] A war machine fused with a bound daemon, combining mechanical might with daemonic fury. These unholy constructs are weapons of terror on the battlefield."
+    },
+    "daemon_prince": {
+      "name": "DAEMON PRINCE",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] A mortal champion of Chaos who has been elevated to daemonhood by the Ruinous Powers as a reward for exceptional service, becoming an immortal being of immense power."
+    },
+    "daemonkin": {
+      "name": "DAEMONKIN",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] Mortal followers of Chaos whose bodies have been partially transformed by Warp energy, blurring the line between mortal and daemon."
+    },
+    "dark_angels": {
+      "name": "DARK ANGELS",
+      "source": "voa",
+      "page": null,
+      "description": "[AI-Generated] A secretive First Founding Space Marine Chapter obsessed with hunting the Fallen — traitorous members of their Legion who turned during the Horus Heresy."
+    },
+    "dark_commune": {
+      "name": "DARK COMMUNE",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] The leadership cadre of a Chaos cult, typically consisting of a Cult Demagogue and their inner circle of blessed devotees."
+    },
     "dark_mechanicum": {
       "name": "DARK MECHANICUM",
       "source": "core",
       "page": 376,
       "description": "Traitors and renegades formerly of the Cult Mechanicus, those of the Dark Mechanicum commit the sins of worshipping Chaos, abusing forbidden technologies, and practicing innovation, including the abject horrors of daemon-infused tech."
     },
+    "darkstar": {
+      "name": "DARKSTAR",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] A designation for specialised equipment associated with the Leagues of Votann Darkstar technology."
+    },
+    "death_guard": {
+      "name": "DEATH GUARD",
+      "source": "dh",
+      "page": null,
+      "description": "[AI-Generated] A Traitor Legion devoted to Nurgle, the Plague God. Bloated with disease and corruption, the Death Guard spread plague and entropy wherever they tread."
+    },
+    "death_jester_keyword": {
+      "name": "DEATH JESTER",
+      "source": "aeldari",
+      "page": null,
+      "description": "[AI-Generated] A Harlequin who embodies the role of death in their performances, wielding terrifying weapons and wearing the spirit stones of fallen Harlequins."
+    },
+    "deathskullz": {
+      "name": "DEATHSKULLZ",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] An Ork Clan known for their superstitious nature and compulsive looting, Deathskullz paint themselves blue for luck and scavenge everything they can from the battlefield."
+    },
+    "deathwatch": {
+      "name": "DEATHWATCH",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] The militant arm of the Ordo Xenos, the Deathwatch is composed of Space Marines drawn from many Chapters who specialise in combating the alien threats to the Imperium."
+    },
+    "demigod": {
+      "name": "DEMIGOD",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] A being of extraordinary power, approaching the divine in might and influence."
+    },
+    "destroyer_cult": {
+      "name": "DESTROYER CULT",
+      "source": "core",
+      "page": null,
+      "description": "[AI-Generated] An organisation of Necron Destroyers unified by their obsessive drive to eradicate all organic life from the galaxy."
+    },
+    "destroyer_keyword": {
+      "name": "DESTROYER",
+      "source": "core",
+      "page": null,
+      "description": "[AI-Generated] Necrons consumed by an insatiable hatred for all living things, who have abandoned reason and dynasty in favour of pure extermination."
+    },
+    "dok": {
+      "name": "DOK",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] An Ork Painboy — a crude surgeon who performs brutal medical procedures on other Orks using scavenged tools and a natural Orkoid instinct for anatomy."
+    },
+    "dreadnought": {
+      "name": "DREADNOUGHT",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] A walking war machine piloted by the mortally wounded remains of a Space Marine hero, interred within a sarcophagus to continue fighting beyond death."
+    },
+    "drone": {
+      "name": "DRONE",
+      "source": "core",
+      "page": null,
+      "description": "[AI-Generated] An autonomous T'au artificial intelligence unit that provides support functions such as shield projection, markerlight targeting, or direct firepower."
+    },
     "drukhari": {
       "name": "DRUKHARI",
       "source": "core",
       "page": 376,
       "description": "Cruel and depraved, the 'Dark Eldar' are Aeldari who have succumbed utterly to their Species' bottomless hedonism. Since the fall of the Aeldari, they have lived in the foul Webway metropolis Commorragh, subsisting their twisted souls on the psychic emanations of the suffering of their many slaves."
+    },
+    "dynastic_agent": {
+      "name": "DYNASTIC AGENT",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] A Necron operative who carries out the will of their dynasty's Phaeron, serving as spy, assassin, or diplomat."
     },
     "dynasty": {
       "name": "[DYNASTY]",
@@ -798,17 +1104,41 @@
       "page": null,
       "description": "[AI-Generated] The engineer and artisan caste of the T'au Empire, responsible for construction, manufacturing, and technological innovation."
     },
+    "emperors_children": {
+      "name": "EMPEROR'S CHILDREN",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] A Traitor Legion devoted to Slaanesh, the Lord of Excess. Once paragons of martial perfection, they now pursue ever greater sensory extremes."
+    },
     "energy": {
       "name": "ENERGY",
       "source": "church",
       "page": null,
       "description": "[AI-Generated] A weapon that fires directed energy blasts."
     },
+    "eshin": {
+      "name": "ESHIN",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] A Hrud clan specialising in stealth, espionage, and assassination."
+    },
     "ethereal_caste": {
       "name": "ETHEREAL CASTE",
       "source": "apocrypha",
       "page": null,
       "description": "[AI-Generated] The ruling caste of the T'au Empire. Ethereals guide T'au society through their enigmatic influence, inspiring absolute loyalty and devotion to the Greater Good."
+    },
+    "evil_sunz": {
+      "name": "EVIL SUNZ",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] An Ork Clan obsessed with speed, Evil Sunz paint their vehicles and wargear red in the belief that 'red wunz go fasta', and favour fast-moving assaults."
+    },
+    "exarch": {
+      "name": "EXARCH",
+      "source": "aeldari",
+      "page": null,
+      "description": "[AI-Generated] An Asuryani Aspect Warrior who has become trapped on the Path of the Warrior, unable to leave their shrine. Exarchs are peerless fighters who lead their Aspect's warriors in battle."
     },
     "exotic": {
       "name": "EXOTIC",
@@ -822,6 +1152,24 @@
       "page": 379,
       "description": "A weapon that explodes or fires explosives."
     },
+    "farseer_keyword": {
+      "name": "FARSEER",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] The most powerful Asuryani psykers, Farseers guide their Craftworlds by reading the skeins of fate and manipulating future events to protect their people."
+    },
+    "farsight_enclaves": {
+      "name": "FARSIGHT ENCLAVES",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] A breakaway faction of the T'au Empire led by Commander Farsight, who rejected the authority of the Ethereal Caste and established an independent military enclave."
+    },
+    "fellgor": {
+      "name": "FELLGOR",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] Beastmen corrupted by Chaos, the Fellgor are savage, goat-headed mutants who serve as shock troops in Chaos warbands."
+    },
     "fire_caste": {
       "name": "FIRE CASTE",
       "source": "apocrypha",
@@ -834,6 +1182,12 @@
       "page": 379,
       "description": "As a Wargear Keyword: A weapon that shoots flames or incorporates fire. As a Psychic Power Keyword: A psychic power that manipulates heat or conjures flame."
     },
+    "first_company_veteran": {
+      "name": "1ST COMPANY VETERAN",
+      "source": "voa",
+      "page": null,
+      "description": "[AI-Generated] An elite Space Marine who has earned a place in their Chapter's First Company, the most experienced and decorated warriors entrusted with Terminator armour and the Chapter's most vital missions."
+    },
     "flak": {
       "name": "FLAK",
       "source": "core",
@@ -845,6 +1199,24 @@
       "source": "church",
       "page": null,
       "description": "[AI-Generated] A weapon that projects burning promethium or other incendiary substances."
+    },
+    "flayer": {
+      "name": "FLAYER",
+      "source": "core",
+      "page": null,
+      "description": "[AI-Generated] A Necron afflicted by the Flayer Virus, a curse that drives them to obsessively collect the skin and flesh of the living in a grotesque mockery of their lost mortality."
+    },
+    "flesh_tearers": {
+      "name": "FLESH TEARERS",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] A savage successor Chapter of the Blood Angels, the Flesh Tearers are renowned for their ferocity in battle and their particularly strong susceptibility to the Black Rage."
+    },
+    "flyer": {
+      "name": "FLYER",
+      "source": "church",
+      "page": null,
+      "description": "[AI-Generated] A vehicle designed primarily for atmospheric flight operations."
     },
     "force_field": {
       "name": "FORCE FIELD",
@@ -864,11 +1236,29 @@
       "page": 378,
       "description": "The Cult Mechanicus lay claim to many Imperial planets, coveting their useful mineral resources and converting their entire surface to vast interlinked manufactorums. Each has their own particular culture, methods of worshipping the Omnissiah, and specialised manufacturing patterns. Examples: Avachrus, Mars, Ryza, Metalica."
     },
+    "freebooter": {
+      "name": "FREEBOOTER",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] Ork pirates and mercenaries who operate independently of the major Clans, hiring themselves out to the highest bidder or raiding voidships for plunder."
+    },
+    "gaunt": {
+      "name": "GAUNT",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] The most numerous Tyranid bioforms, Gaunts are small, fast, and expendable creatures that overwhelm enemies through sheer numbers."
+    },
     "gauss": {
       "name": "GAUSS",
       "source": "church",
       "page": null,
       "description": "[AI-Generated] Necron weapons that strip matter apart at a molecular level using focused energy beams."
+    },
+    "genestealer": {
+      "name": "GENESTEALER",
+      "source": "core",
+      "page": null,
+      "description": "[AI-Generated] A Tyranid bioform specialising in infiltration and infection, Genestealers implant their genetic material into host species to create hybrid cultists who prepare worlds for consumption."
     },
     "genestealer_cult": {
       "name": "GENESTEALER CULT",
@@ -876,11 +1266,23 @@
       "page": 376,
       "description": "The Genestealer life cycle infects other creatures, warping their minds and bodies to serve the grotesque Tyranid as it grows in power and plans total insurrection. The brainwashed and hybridised lifeforms that worship the Genestealer Patriarch are known as Genestealer Cultists."
     },
+    "goff": {
+      "name": "GOFF",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] An Ork Clan that values close combat above all else, Goffs are the toughest and most belligerent of all Orks, favouring brutal melee over shooting."
+    },
     "grav": {
       "name": "GRAV",
       "source": "church",
       "page": null,
       "description": "[AI-Generated] Weapons that manipulate gravitational forces to crush targets under their own weight."
+    },
+    "greater_daemon": {
+      "name": "GREATER DAEMON",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] The most powerful daemons of the Chaos Gods, Greater Daemons are towering entities of immense destructive capability that serve as generals and champions of their patron deity."
     },
     "grenade": {
       "name": "GRENADE",
@@ -888,17 +1290,47 @@
       "page": null,
       "description": "[AI-Generated] A thrown or launched explosive device."
     },
+    "gretchin": {
+      "name": "GRETCHIN",
+      "source": "core",
+      "page": null,
+      "description": "[AI-Generated] Small, cowardly Orkoid creatures that serve as servants, ammunition runners, and cannon fodder for their larger Ork masters. Also known as Grots."
+    },
     "grey_knights": {
       "name": "GREY KNIGHTS",
       "source": "apocrypha",
       "page": null,
       "description": "[AI-Generated] A secretive Chapter of Space Marines specialising in combating daemons. Every Grey Knight is a potent psyker, and their very existence is kept hidden from the wider Imperium."
     },
+    "grot": {
+      "name": "GROT",
+      "source": "core",
+      "page": null,
+      "description": "[AI-Generated] Another name for Gretchin — diminutive Orkoid creatures used as menial workers and living shields by the Orks."
+    },
+    "haemacolyte": {
+      "name": "HAEMACOLYTE",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] An apprentice to a Drukhari Haemonculus, learning the dark arts of flesh-sculpting and pain extraction."
+    },
     "haemonculus_coven": {
       "name": "[HAEMONCULUS COVEN]",
       "source": "core",
       "page": 378,
       "description": "Haemonculi are Drukhari that have mastered the arts of inflicting torturous pain and the reshaping of flesh through biological manipulation. They frequently gather together to pursue their twisted goals as a coven, attended by the grotesque monstrosities they create. Examples: Prophets of Flesh, Dark Creed, Coven of Twelve."
+    },
+    "haemonculus_keyword": {
+      "name": "HAEMONCULUS",
+      "source": "aeldari",
+      "page": null,
+      "description": "[AI-Generated] A Drukhari master of the flesh-craft, Haemonculi are ancient and twisted beings who sculpt living creatures into grotesque forms and hold the secret to resurrection."
+    },
+    "hand_of_the_archon": {
+      "name": "HAND OF THE ARCHON",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] Elite warriors and agents who serve directly under a Drukhari Archon, carrying out their master's will with deadly precision."
     },
     "harlequin": {
       "name": "HARLEQUIN",
@@ -912,6 +1344,30 @@
       "page": 379,
       "description": "A particularly weighty piece of equipment."
     },
+    "hekatarii": {
+      "name": "HEKATARII",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] The gladiatorial warriors of the Drukhari Wych Cults, trained in acrobatic close combat and the use of exotic combat drugs."
+    },
+    "hellion": {
+      "name": "HELLION",
+      "source": "aeldari",
+      "page": null,
+      "description": "[AI-Generated] Young Drukhari gangers who ride skyboards through the spires of Commorragh, swooping into battle with hooked blades to snatch victims from the ground."
+    },
+    "herald_keyword": {
+      "name": "HERALD",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] A lesser daemonic leader that serves as a lieutenant and messenger of a Chaos God, commanding lesser daemons in battle."
+    },
+    "heretek": {
+      "name": "HERETEK",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] A member of the Dark Mechanicum or a renegade Tech-Priest who has abandoned the orthodox teachings of the Cult Mechanicus in pursuit of forbidden knowledge."
+    },
     "heretic": {
       "name": "HERETIC",
       "source": "core",
@@ -923,6 +1379,12 @@
       "source": "apocrypha",
       "page": null,
       "description": "[AI-Generated] Space Marines who have turned from the Emperor's light and pledged themselves to the Ruinous Powers of Chaos. Also known as Chaos Space Marines, they are among the most dangerous threats to the Imperium."
+    },
+    "hernkyn": {
+      "name": "HERNKYN",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] The scouts and pioneers of the Leagues of Votann, Hernkyn range far ahead of Kin expeditions to survey new territory and identify threats."
     },
     "hive_fleet": {
       "name": "[HIVE FLEET]",
@@ -936,6 +1398,24 @@
       "page": null,
       "description": "[AI-Generated] A Navigator House is one of the ancient noble families of the Navis Nobilite. Each House has its own hereditary mutations, political alliances, and traditions surrounding their role as Warp navigators."
     },
+    "howling_banshee": {
+      "name": "HOWLING BANSHEE",
+      "source": "aeldari",
+      "page": null,
+      "description": "[AI-Generated] An Asuryani Aspect Warrior shrine devoted to close combat, whose members wear psychosonic masks that emit a terrifying scream to stun enemies before the killing blow."
+    },
+    "hrud": {
+      "name": "HRUD",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] A mysterious and rarely encountered xenos species that exudes an entropy field, causing rapid ageing and decay in everything around them."
+    },
+    "imperial_fists": {
+      "name": "IMPERIAL FISTS",
+      "source": "voa",
+      "page": null,
+      "description": "[AI-Generated] A First Founding Space Marine Chapter renowned for their expertise in siege warfare and unwavering dedication to the defence of the Imperium."
+    },
     "imperial_navy": {
       "name": "IMPERIAL NAVY",
       "source": "apocrypha",
@@ -948,11 +1428,29 @@
       "page": 376,
       "description": "The vast interstellar empire of Humanity that spans over a million worlds, led by the Emperor from Holy Terra."
     },
+    "incubi": {
+      "name": "INCUBI",
+      "source": "aeldari",
+      "page": null,
+      "description": "[AI-Generated] Elite Drukhari warriors who serve as bodyguards and mercenaries, clad in heavy armour and wielding massive two-handed klaives. They train in shrines dedicated to the art of killing."
+    },
     "inquisition": {
       "name": "INQUISITION",
       "source": "core",
       "page": 376,
       "description": "A clandestine organisation given absolute power to battle the greatest threats to the Imperium: heresy, xenos, and daemons."
+    },
+    "iron_hands": {
+      "name": "IRON HANDS",
+      "source": "voa",
+      "page": null,
+      "description": "[AI-Generated] A First Founding Space Marine Chapter with deep ties to the Adeptus Mechanicus, known for replacing their flesh with bionics in pursuit of the perceived weakness of the organic form."
+    },
+    "iyanden": {
+      "name": "IYANDEN",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] An Asuryani Craftworld devastated by a Tyranid Hive Fleet, now relying heavily on Wraith Constructs animated by the spirits of its dead to bolster its dwindling population."
     },
     "jokaero": {
       "name": "JOKAERO",
@@ -960,11 +1458,29 @@
       "page": 376,
       "description": "A simian-like xenos Species with an incredible innate understanding of technology."
     },
+    "jump_jets": {
+      "name": "JUMP JETS",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] Propulsion systems that allow T'au battlesuits and infantry to make powered leaps and short flights across the battlefield."
+    },
     "kabal": {
       "name": "[KABAL]",
       "source": "core",
       "page": 378,
       "description": "The majority of the Drukhari are part of an immoral Kabal, a scattered army of raiders and slavers that pillage the galaxy through use of the Webway. Each Kabal is led by an Archon with their own twisted goals. Examples: Black Heart, Flayed Skull, Poisoned Tongue, Obsidian Rose."
+    },
+    "kabalite": {
+      "name": "KABALITE",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] A member of a Drukhari Kabal — the most common type of Drukhari warrior, forming the rank and file of raiding parties that pillage realspace for slaves and sustenance."
+    },
+    "kan": {
+      "name": "KAN",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] A crude Ork walker built by Mekboyz, typically housing a Gretchin or Ork pilot inside a ramshackle armoured shell bristling with weapons."
     },
     "khorne": {
       "name": "KHORNE",
@@ -978,11 +1494,29 @@
       "page": 379,
       "description": "A psychic power that manifests kinetic force to move something in realspace."
     },
+    "kommando": {
+      "name": "KOMMANDO",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] Ork specialists in stealth and infiltration — at least by Ork standards — who employ crude camouflage and ambush tactics to surprise their enemies."
+    },
+    "krieg": {
+      "name": "KRIEG",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] Soldiers of the Death Korps of Krieg, fanatically devoted to the Emperor and willing to accept enormous casualties without hesitation in pursuit of atonement for their world's past heresy."
+    },
     "kroot": {
       "name": "KROOT",
       "source": "core",
       "page": 376,
       "description": "A mercenary xenos Species with the ability to control their evolution through the consumption of other lifeforms."
+    },
+    "kroxigor": {
+      "name": "KROXIGOR",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] Massive, powerful Seraphon creatures that serve as heavy labour and shock troops, towering over Saurus and wielding immense weapons."
     },
     "las": {
       "name": "LAS",
@@ -1002,11 +1536,29 @@
       "page": null,
       "description": "[AI-Generated] An ancient civilisation of cloned abhumans known as the Kin, who dwell in the galactic core. Their society is organised into Leagues, guided by ancient machine intelligences called Ancestor Cores."
     },
+    "legio_cybernetica": {
+      "name": "LEGIO CYBERNETICA",
+      "source": "redacted2",
+      "page": null,
+      "description": "[AI-Generated] A division of the Adeptus Mechanicus that controls battle-automata — powerful robotic war machines guided by doctrina wafers and the rites of the Machine God."
+    },
     "legion": {
       "name": "[LEGION]",
       "source": "core",
       "page": 378,
       "description": "The Traitor Legions of the Chaos Space Marines each worship the Chaos Gods differently, but all are foul renegades. Some are many thousands in strength, others mere warbands united by a common goal, scattered through the galaxy and the nightmare Immaterium. Examples: Black Legion, Death Guard, Word Bearers."
+    },
+    "lesser_daemon": {
+      "name": "LESSER DAEMON",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] The rank-and-file daemons of the Chaos Gods, lesser daemons are numerous and form the bulk of daemonic incursions into realspace."
+    },
+    "librarian_keyword": {
+      "name": "LIBRARIAN",
+      "source": "voa",
+      "page": null,
+      "description": "[AI-Generated] A Space Marine psyker who serves as a battle-brother, scholar, and keeper of their Chapter's lore, wielding psychic powers in service of the Emperor."
     },
     "light_keyword": {
       "name": "LIGHT",
@@ -1014,11 +1566,23 @@
       "page": 379,
       "description": "As a Wargear Keyword: A particularly low-weight piece of equipment. As a Psychic Power Keyword: A psychic power that produces light."
     },
+    "logos_historica_verita": {
+      "name": "LOGOS HISTORICA VERITA",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] A secretive Imperial organisation dedicated to uncovering and preserving the true history of the Imperium, often operating at the fringes of sanctioned knowledge."
+    },
     "luminen": {
       "name": "LUMINEN",
       "source": "apocrypha",
       "page": null,
       "description": "[AI-Generated] Adeptus Mechanicus weapons powered by the wielder's internal electrical charge."
+    },
+    "mandrake": {
+      "name": "MANDRAKE",
+      "source": "aeldari",
+      "page": null,
+      "description": "[AI-Generated] Mysterious shadow-dwelling creatures of Commorragh that can meld with darkness and strike from the shadows, trading their services as assassins in exchange for the suffering of others."
     },
     "mark_of_chaos": {
       "name": "[MARK OF CHAOS]",
@@ -1026,11 +1590,41 @@
       "page": 378,
       "description": "Those that worship the Ruinous Powers may be gifted with a Mark of Chaos, a foul manifestation of the favor of the Dark Gods that defines a mortal as a servant of Chaos. Most of these traitors are marked with the eight-pointed star of Chaos undivided, but some focus their worship on a single god and in turn receive their specific mark."
     },
+    "mark_of_khorne": {
+      "name": "MARK OF KHORNE",
+      "source": "dh",
+      "page": null,
+      "description": "[AI-Generated] The brand of the Blood God, bestowed upon those who have earned Khorne's favour through acts of violence and bloodshed."
+    },
+    "mark_of_nurgle": {
+      "name": "MARK OF NURGLE",
+      "source": "dh",
+      "page": null,
+      "description": "[AI-Generated] The brand of the Plague God, bestowed upon those who have embraced Nurgle's gifts of disease, decay, and endurance."
+    },
+    "mark_of_slaanesh": {
+      "name": "MARK OF SLAANESH",
+      "source": "dh",
+      "page": null,
+      "description": "[AI-Generated] The brand of the Lord of Excess, bestowed upon those who have devoted themselves to Slaanesh's pursuit of sensation and perfection."
+    },
     "masque": {
       "name": "[MASQUE]",
       "source": "aeldari",
       "page": null,
       "description": "[AI-Generated] A Harlequin Masque is a troupe of Harlequins united under a common purpose, performing across the galaxy and fighting with deadly grace. Each Masque has its own mythic cycle and performance traditions."
+    },
+    "masterclan": {
+      "name": "MASTERCLAN",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] The ruling council of the Hrud, consisting of the most cunning and powerful leaders."
+    },
+    "mek": {
+      "name": "MEK",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] An Ork with an innate talent for building and maintaining machinery, Mekboyz construct everything from crude shootas to massive Stompas using salvaged parts and intuition."
     },
     "melta": {
       "name": "MELTA",
@@ -1050,6 +1644,12 @@
       "page": 376,
       "description": "A division of the Astra Militarum that provides elite special operations soldiers."
     },
+    "militarum_traitoris": {
+      "name": "MILITARUM TRAITORIS",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] Renegade regiments of the Astra Militarum that have turned to the service of the Ruinous Powers, bringing their military training and equipment to bear against the Imperium."
+    },
     "missile": {
       "name": "MISSILE",
       "source": "core",
@@ -1061,6 +1661,18 @@
       "source": "aeldari",
       "page": null,
       "description": "[AI-Generated] Aeldari weapons that utilise incredibly thin filaments to slice through targets with molecular precision."
+    },
+    "monster": {
+      "name": "MONSTER",
+      "source": "core",
+      "page": null,
+      "description": "[AI-Generated] A large and powerful creature that dominates the battlefield through sheer size, strength, and ferocity."
+    },
+    "moulder": {
+      "name": "MOULDER",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] A Hrud clan specialising in the breeding and mutation of beasts for use in warfare."
     },
     "mutant": {
       "name": "MUTANT",
@@ -1092,11 +1704,29 @@
       "page": 379,
       "description": "These silent weapons have a two-stage firing mechanism: an invisible laser that penetrates the skin, followed by a poisonous crystalised needle of neurotoxin to ruthlessly dispatch foes at a distance."
     },
+    "nob": {
+      "name": "NOB",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] A larger, tougher Ork who has risen to a position of authority through violence, serving as a squad leader and enforcer among smaller Boyz."
+    },
+    "noble_keyword": {
+      "name": "NOBLE",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] A Necron of high rank within their dynasty's hierarchy, commanding legions of warriors and wielding authority over their tomb world."
+    },
     "nurgle": {
       "name": "NURGLE",
       "source": "core",
       "page": 376,
       "description": "One of the Ruinous Powers, the Plague God's domains are disease, decay, and entropy."
+    },
+    "officer": {
+      "name": "OFFICER",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] A military commander who leads troops in battle, issuing orders and coordinating tactical operations."
     },
     "officio_assassinorum": {
       "name": "OFFICIO ASSASSINORUM",
@@ -1140,11 +1770,47 @@
       "page": 376,
       "description": "A brutal xenos Species that crave violence and live only for war."
     },
+    "pain_engine": {
+      "name": "PAIN ENGINE",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] A grotesque Drukhari war construct created by the Haemonculi, animated by the agonised spirits of tortured victims and bristling with instruments of pain."
+    },
+    "pariah": {
+      "name": "PARIAH",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] A psychic blank — an individual with no presence in the Warp. Pariahs cause unease in normal humans and agony in psykers, making them invaluable anti-psyker assets."
+    },
+    "pathfinder_keyword": {
+      "name": "PATHFINDER",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] A T'au Fire Caste scout and reconnaissance specialist who operates ahead of the main force, marking targets with markerlights and gathering intelligence."
+    },
+    "pestilens": {
+      "name": "PESTILENS",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] A Hrud clan devoted to spreading plague and disease as a form of worship and warfare."
+    },
+    "phaeron": {
+      "name": "PHAERON",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] The supreme ruler of a Necron dynasty, a Phaeron commands absolute authority over all Necrons within their domain."
+    },
     "phase_blade": {
       "name": "PHASE BLADE",
       "source": "apocrypha",
       "page": null,
       "description": "[AI-Generated] A blade that can shift partially out of realspace, allowing it to bypass physical defences."
+    },
+    "phoenix_lord": {
+      "name": "PHOENIX LORD",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] The legendary founders of the Asuryani Aspect Shrines, Phoenix Lords are immortal warriors whose spirits are preserved in their armour, reborn through each successor who dons it."
     },
     "phosphex": {
       "name": "PHOSPHEX",
@@ -1157,6 +1823,12 @@
       "source": "church",
       "page": null,
       "description": "[AI-Generated] Adeptus Mechanicus weapons that fire blazing rounds of white-hot phosphor that mark targets and burn fiercely."
+    },
+    "pilot_keyword": {
+      "name": "PILOT",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] An operator of a vehicle, aircraft, or battlesuit."
     },
     "plasma": {
       "name": "PLASMA",
@@ -1181,6 +1853,12 @@
       "source": "apocrypha",
       "page": null,
       "description": "[AI-Generated] A religious leader or holy warrior who channels faith into righteous fury. Priests may serve the Imperial Creed, the Machine God, or other devotions."
+    },
+    "primarch": {
+      "name": "PRIMARCH",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] One of the twenty genetically-engineered sons of the Emperor, each created to lead a Space Marine Legion. Some remain loyal, while others have fallen to Chaos."
     },
     "primaris": {
       "name": "PRIMARIS",
@@ -1224,17 +1902,83 @@
       "page": null,
       "description": "[AI-Generated] Weapons that emit deadly radiation."
     },
+    "raider_keyword": {
+      "name": "RAIDER",
+      "source": "church",
+      "page": null,
+      "description": "[AI-Generated] A fast, lightly-armoured vehicle designed for rapid assault and hit-and-run tactics."
+    },
+    "ranger_keyword": {
+      "name": "RANGER",
+      "source": "core",
+      "page": null,
+      "description": "[AI-Generated] An Asuryani outcast who has left the structured life of a Craftworld to wander the galaxy, often serving as a scout and sniper on the fringes of Aeldari society."
+    },
+    "raven_guard": {
+      "name": "RAVEN GUARD",
+      "source": "voa",
+      "page": null,
+      "description": "[AI-Generated] A First Founding Space Marine Chapter specialising in covert operations, guerrilla warfare, and striking from the shadows."
+    },
+    "red_corsairs": {
+      "name": "RED CORSAIRS",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] A powerful Chaos warband of renegade Space Marines led by Huron Blackheart, operating from the Maelstrom as pirates and raiders."
+    },
     "regiment": {
       "name": "[REGIMENT]",
       "source": "core",
       "page": 378,
       "description": "Each of the diverse planets of the Imperium owe a tithe of warriors to the Emperor to fight His holy wars. The tremendous variety of planets — from jungle-covered Death Worlds to honourable industrial worlds — mean that every planetary Regiment is vastly different in training, technique, and equipment."
     },
+    "robot": {
+      "name": "ROBOT",
+      "source": "redacted2",
+      "page": null,
+      "description": "[AI-Generated] An autonomous or semi-autonomous mechanical construct used for warfare or labour, typically controlled by programming or the rites of the Adeptus Mechanicus."
+    },
     "rogue_trader": {
       "name": "ROGUE TRADER",
       "source": "core",
       "page": 377,
       "description": "The Holders of Warrants of Trade, Rogue Traders are empowered to explore, conquer, and trade beyond the borders of the Imperium to expand the Emperor's realm."
+    },
+    "rubricae": {
+      "name": "RUBRICAE",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] Rubric Marines of the Thousand Sons — once living warriors, now empty suits of power armour animated by sorcery after the Rubric of Ahriman destroyed their souls."
+    },
+    "runt": {
+      "name": "RUNT",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] The smallest and weakest of the Orkoid species, Runts include Snotlings and other diminutive creatures used for menial tasks."
+    },
+    "runtherd": {
+      "name": "RUNTHERD",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] An Ork who specialises in herding and controlling Gretchin and other Runts, using grabba sticks and squig hounds to keep their charges in line."
+    },
+    "salamanders_chapter": {
+      "name": "SALAMANDERS",
+      "source": "voa",
+      "page": null,
+      "description": "[AI-Generated] A First Founding Space Marine Chapter known for their affinity with fire and forge-craft, their close ties to the civilian population, and their jet-black skin and glowing red eyes."
+    },
+    "saurus": {
+      "name": "SAURUS",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] The warrior caste of the Seraphon, Saurus are powerful reptilian fighters bred for combat and fiercely loyal to their Slann masters."
+    },
+    "sautekh": {
+      "name": "SAUTEKH",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] One of the most powerful Necron dynasties, ruled by the Silent King Szarekh's chosen regent, known for their aggressive expansion and military might."
     },
     "scholastia_psykana": {
       "name": "SCHOLASTIA PSYKANA",
@@ -1254,11 +1998,29 @@
       "page": null,
       "description": "[AI-Generated] A T'au Sept is a colonial territory of the T'au Empire, centred around a major world. Each Sept has its own distinct culture, military doctrine, and role within the wider Empire."
     },
+    "seraphon": {
+      "name": "SERAPHON",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] Ancient reptilian xenos resembling lizardmen, the Seraphon are guided by their enigmatic Slann leaders and possess powerful psychic abilities."
+    },
+    "serberys": {
+      "name": "SERBERYS",
+      "source": "redacted2",
+      "page": null,
+      "description": "[AI-Generated] Skitarii cavalry mounted on cybernetic steeds, used by the Adeptus Mechanicus for reconnaissance and rapid assault."
+    },
     "servitor": {
       "name": "SERVITOR",
       "source": "core",
       "page": 377,
       "description": "AI, or Abominable Intelligence, is a sin to the Cult Mechanicus. Their many technological servants, known as Servitors, are all constructed around biological brains supplemented with holy mechanisms."
+    },
+    "shade_runner": {
+      "name": "SHADE RUNNER",
+      "source": "aeldari",
+      "page": null,
+      "description": "[AI-Generated] A Drukhari warrior specialising in rapid hit-and-run tactics using specialised wargear such as skyboards and blink packs."
     },
     "shield_host": {
       "name": "[SHIELD HOST]",
@@ -1266,11 +2028,23 @@
       "page": null,
       "description": "[AI-Generated] A Shield Host is a military formation of the Adeptus Custodes, each specialising in a particular aspect of the Emperor's defence."
     },
+    "shrouded": {
+      "name": "SHROUDED",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] A creature or warrior concealed by darkness, stealth technology, or supernatural shadow, difficult to detect or target."
+    },
     "shuriken": {
       "name": "SHURIKEN",
       "source": "core",
       "page": 379,
       "description": "The advanced technology of the Aeldari allows them to construct monomolecular plasti-crystal ammunition that slices through flesh and armour when fired. These weapons usually utilise gravitic pulses to launch Shurikens at speeds so fast they screech through the air."
+    },
+    "skink": {
+      "name": "SKINK",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] A small, agile Seraphon species that serves as scouts, artisans, and skirmishers, supporting the larger Saurus warriors."
     },
     "skitarii": {
       "name": "SKITARII",
@@ -1278,17 +2052,65 @@
       "page": 377,
       "description": "The heavily augmented Humans known as Skitarii are the eternally devoted mechanised armies of the Cult Mechanicus."
     },
+    "skryre": {
+      "name": "SKRYRE",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] A Hrud clan specialising in the creation of unstable and dangerous technology, blending science with Warp-tainted innovation."
+    },
     "slaanesh": {
       "name": "SLAANESH",
       "source": "core",
       "page": 377,
       "description": "One of the Ruinous Powers, the Lord of Excess — or to the Aeldari, She Who Thirsts — claims domain over decadence, hedonism, and the pursuit of perfection."
     },
+    "slann": {
+      "name": "SLANN",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] The ancient and powerful psychic leaders of the Seraphon, Slann are among the oldest beings in the galaxy and guide their species through visions and sorcery."
+    },
+    "slaugth": {
+      "name": "SLAUGTH",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] A horrifying xenos species composed of writhing maggot-like organisms that form a collective intelligence, known for their infiltration of human society and consumption of neural tissue."
+    },
+    "snakebite": {
+      "name": "SNAKEBITE",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] An Ork Clan that rejects most technology in favour of natural toughness and beast-riding, Snakebites are the most feral and traditionalist of the Ork Clans."
+    },
+    "snotling": {
+      "name": "SNOTLING",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] The smallest Orkoid creatures, Snotlings are tiny, dim-witted beings that swarm around in large groups, occasionally used as living projectiles or as tenders for fungus farms."
+    },
     "sonic": {
       "name": "SONIC",
       "source": "church",
       "page": null,
       "description": "[AI-Generated] Weapons that weaponise extreme sound waves to disorient or destroy targets."
+    },
+    "space_wolves": {
+      "name": "SPACE WOLVES",
+      "source": "voa",
+      "page": null,
+      "description": "[AI-Generated] A First Founding Space Marine Chapter from the death world of Fenris, known for their fierce independence, lupine gene-seed mutations, and rejection of the Codex Astartes."
+    },
+    "speed_freek": {
+      "name": "SPEED FREEK",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] Orks obsessed with velocity who ride into battle on ramshackle vehicles, buggies, and bikes, believing that going faster makes them harder to hit."
+    },
+    "spirit": {
+      "name": "SPIRIT",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] An Aeldari soul bound to a wraithbone construct, animating it with psychic energy to serve in battle or perform other functions."
     },
     "splinter": {
       "name": "SPLINTER",
@@ -1302,11 +2124,35 @@
       "page": null,
       "description": "[AI-Generated] Ork weapons or equipment made from or involving Squigs, the bizarre fungal creatures that share the Ork ecosystem."
     },
+    "sslyth": {
+      "name": "SSLYTH",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] Multi-limbed serpentine xenos mercenaries often found in the service of Drukhari Archons as loyal bodyguards."
+    },
+    "striking_scorpion": {
+      "name": "STRIKING SCORPION",
+      "source": "aeldari",
+      "page": null,
+      "description": "[AI-Generated] An Asuryani Aspect Warrior shrine devoted to close-quarters ambush tactics, equipped with chainswords, shuriken pistols, and mandiblasters."
+    },
+    "synapse": {
+      "name": "SYNAPSE",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] Tyranid organisms that serve as psychic relay nodes for the Hive Mind, broadcasting its will to lesser bioforms and maintaining control over the swarm."
+    },
     "talons_of_the_emperor": {
       "name": "TALONS OF THE EMPEROR",
       "source": "apocrypha",
       "page": null,
       "description": "[AI-Generated] The combined forces of the Adeptus Custodes and the Sisters of Silence, who together form the personal guardians of the Emperor of Mankind."
+    },
+    "tank": {
+      "name": "TANK",
+      "source": "church",
+      "page": null,
+      "description": "[AI-Generated] A heavily armoured vehicle designed to withstand enemy fire and deliver devastating firepower on the battlefield."
     },
     "taser": {
       "name": "TASER",
@@ -1320,11 +2166,23 @@
       "page": 377,
       "description": "A young but technologically advanced xenos Species, the T'au empire is rapidly spreading on the eastern fringes of the galaxy."
     },
+    "tau_auxiliaries": {
+      "name": "T'AU AUXILIARIES",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] Non-T'au species that have been incorporated into the T'au Empire and fight alongside Fire Caste warriors in the name of the Greater Good."
+    },
     "tau_empire": {
       "name": "T'AU EMPIRE",
       "source": "apocrypha",
       "page": null,
       "description": "[AI-Generated] The interstellar empire of the T'au, a rapidly expanding civilisation on the eastern fringes of the galaxy. The T'au Empire is organised into Septs and united by the philosophy of the Greater Good."
+    },
+    "tau_sept": {
+      "name": "T'AU SEPT",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] The homeworld Sept of the T'au, and the most politically significant in the Empire."
     },
     "telepathy": {
       "name": "TELEPATHY",
@@ -1374,11 +2232,23 @@
       "page": null,
       "description": "[AI-Generated] A temple of the Officio Assassinorum that trains the deadliest long-range marksmen in the Imperium, capable of eliminating targets from extreme distances with a single shot."
     },
+    "terminator": {
+      "name": "TERMINATOR",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] A Space Marine equipped with Tactical Dreadnought Armour (Terminator Armour), providing immense protection and allowing the use of the heaviest weaponry."
+    },
     "tesla": {
       "name": "TESLA",
       "source": "church",
       "page": null,
       "description": "[AI-Generated] Necron weapons that fire arcs of living lightning that leap between nearby targets."
+    },
+    "thousand_sons": {
+      "name": "THOUSAND SONS",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] A Traitor Legion devoted to Tzeentch, the Changer of Ways. Once scholars and sorcerers, their ranks now include many automaton Rubric Marines, their souls destroyed by the Rubric of Ahriman."
     },
     "toxin": {
       "name": "TOXIN",
@@ -1392,6 +2262,18 @@
       "page": null,
       "description": "[AI-Generated] Adeptus Mechanicus weapons whose blades vibrate at transonic frequencies, allowing them to phase through armour."
     },
+    "transport": {
+      "name": "TRANSPORT",
+      "source": "church",
+      "page": null,
+      "description": "[AI-Generated] A vehicle designed to carry troops safely across the battlefield, providing protection and mobility."
+    },
+    "triarch": {
+      "name": "TRIARCH",
+      "source": "core",
+      "page": null,
+      "description": "[AI-Generated] The ruling council of the Necron empire, the Triarch upholds the ancient codes and laws of the Necrontyr. Triarch Praetorians serve as enforcers of these codes across all dynasties."
+    },
     "two_handed": {
       "name": "2-HANDED",
       "source": "core",
@@ -1404,11 +2286,53 @@
       "page": 377,
       "description": "An extra-galactic gestalt Species of grotesque xenos solely intent on devouring all other life. Though they appear as multiple adaptive bioforms (including the dreaded Genestealers) they operate as a Hive Mind, deadly and singular in purpose and fighting with disgusting bio-tech weaponry."
     },
+    "tzaangor": {
+      "name": "TZAANGOR",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] Beastmen specifically mutated and blessed by Tzeentch, serving as savage warriors and sorcerous foot soldiers for the Thousand Sons."
+    },
     "tzeentch": {
       "name": "TZEENTCH",
       "source": "core",
       "page": 377,
       "description": "One of the Ruinous Powers, the Changer of Ways' domains are fate, ambition, and sorcery."
+    },
+    "ulthwe": {
+      "name": "ULTHWÉ",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] An Asuryani Craftworld situated near the Eye of Terror, renowned for its powerful psykers and the Black Guardians who defend it against the constant Chaos threat."
+    },
+    "ultramarines": {
+      "name": "ULTRAMARINES",
+      "source": "voa",
+      "page": null,
+      "description": "[AI-Generated] A First Founding Space Marine Chapter, paragons of discipline and adherence to the Codex Astartes, who rule the stellar realm of Ultramar."
+    },
+    "undivided": {
+      "name": "UNDIVIDED",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] Followers of Chaos who worship the Ruinous Powers as a pantheon rather than devoting themselves to a single Chaos God."
+    },
+    "vehicle": {
+      "name": "VEHICLE",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] A crewed or autonomous machine used for transportation and combat on the battlefield."
+    },
+    "vespid": {
+      "name": "VESPID",
+      "source": "core",
+      "page": null,
+      "description": "[AI-Generated] An insectoid xenos species allied to the T'au Empire, the Vespid are winged warriors equipped with neutron blasters who serve as fast-moving auxiliaries."
+    },
+    "veteran": {
+      "name": "VETERAN",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] An experienced soldier who has survived many campaigns and earned distinction through long service and proven combat skill."
     },
     "vortex": {
       "name": "VORTEX",
@@ -1422,17 +2346,59 @@
       "page": null,
       "description": "[AI-Generated] The diplomat and merchant caste of the T'au Empire, responsible for trade, negotiation, and communication with alien species."
     },
+    "weirdboy": {
+      "name": "WEIRDBOY",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] An Ork psyker who channels the collective psychic energy of nearby Orks, unleashing it in devastating and unpredictable blasts of Waaagh! energy."
+    },
+    "white_scars": {
+      "name": "WHITE SCARS",
+      "source": "voa",
+      "page": null,
+      "description": "[AI-Generated] A First Founding Space Marine Chapter renowned for their lightning-fast mobile warfare, drawn from the warrior traditions of their homeworld Chogoris."
+    },
+    "world_eaters": {
+      "name": "WORLD EATERS",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] A Traitor Legion devoted to Khorne, the Blood God. Driven mad by the Butcher's Nails implants, the World Eaters live only for slaughter and bloodshed."
+    },
     "wraith_construct": {
       "name": "WRAITH CONSTRUCT",
       "source": "core",
       "page": 377,
       "description": "Every Asuryani carries a Spirit Stone, a device that will capture their soul when they die to protect it from the predations of She Who Thirsts. These Spirit Stones can be attached to wraithbone technology, powering it with the nascent psychic ability of the Aeldari soul. A Wraith Construct is an artificial body that can be powered by a Spirit Stone, allowing a semblance of life beyond death."
     },
+    "wraithguard": {
+      "name": "WRAITHGUARD",
+      "source": "aeldari",
+      "page": null,
+      "description": "[AI-Generated] Asuryani Wraith Constructs piloted by the spirits of the dead, armed with devastating wraithcannons or D-scythes that tear holes in the fabric of reality."
+    },
+    "wrecka": {
+      "name": "WRECKA",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] An Ork unit or vehicle specialising in demolition and destruction, equipped with heavy close-combat weapons to tear apart enemy fortifications and armour."
+    },
     "wych_cult": {
       "name": "[WYCH CULT]",
       "source": "core",
       "page": 378,
       "description": "The Drukhari of Commorragh flock to the nightly gladiatorial murder-shows of the Wych Cults for sustinence. They relish the displays of violence and pain as literal nourishment for their depraved souls. Each Cult uses different techniques, combat drugs, and weaponry to perform glorious slaughter. Examples: Cult of Strife, Cult of the Cursed Blade, Cult of the Red Grief."
+    },
+    "wych_keyword": {
+      "name": "WYCH",
+      "source": "apocrypha",
+      "page": null,
+      "description": "[AI-Generated] A Drukhari gladiatorial fighter who performs in the arenas of Commorragh and fights in realspace raids, combining lethal acrobatics with exotic combat drugs."
+    },
+    "xenos": {
+      "name": "XENOS",
+      "source": "redacted1",
+      "page": null,
+      "description": "[AI-Generated] A broad classification for all alien species, used by the Imperium to denote any non-Human life form."
     },
     "ynnari": {
       "name": "YNNARI",
