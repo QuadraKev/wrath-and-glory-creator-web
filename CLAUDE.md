@@ -110,7 +110,7 @@ The glossary (`data/glossary.json`) should be kept in sync with the bestiary app
 
 - **Cache busting**: When modifying CSS or JS files, bump the `?v=N` query string on ALL affected `<script>` and `<link>` tags in `index.html`. Always bump all version numbers together.
 - **GitHub Issues**: Do NOT resolve/close issues until the user confirms they are resolved. After closing an issue, post a comment summarizing the fix/change (what was wrong, what was changed, relevant commit hash).
-- **Commits**: Push using the QuadraKev-bot PAT (stored in Claude Code auto-memory, not in this file).
+- **Commits**: Push using the QuadraKev PAT (triggers GitHub Pages deploys). The QuadraKev-bot PAT should only be used for issues/comments — GitHub has disabled Actions/Pages builds for that account. PAT values are stored in Claude Code auto-memory, not in this file.
 
 ## Books Available (PDF)
 
@@ -147,6 +147,10 @@ Source material PDFs are available locally for reference:
 22. **Glossary & References performance**: Deferred body rendering (empty body with `data-deferred`, materialized on first expand), progressive rendering (batches of 100 entries on scroll), event delegation (single click listener on container via `e.target.closest()`), and search debounce (200ms). Applies to both `glossary-tab.js` and `references-tab.js`.
 23. **iOS fixes**: File loading — omit `<input accept="...">` on iOS to avoid Safari forcing .JSON extension on custom file types (.character). Glossary tooltips — prevent double-open on tap by clearing hover timer in click handler and checking `data-glossary-key` for duplicate popups.
 24. **Grenades & Missiles category**: Separated grenades/missiles as own Wargear tab filter (between Ranged and Armor) and References tab category (between Weapons and Armor). Matching: category `Grenade`/`Missile`/`Explosive` OR keywords `GRENADE`/`MISSILE` (excludes `EXPLOSIVE` keyword — too broad). Uses `renderRangedWeaponsCards()` with custom section title.
+25. **Keyword audit**: Exhaustive keyword audit across all sourcebooks. Added 8 missing keywords to glossary (TRANSPORTER + 5 others). All 330 keywords verified comprehensive.
+26. **Psychic Powers removed from Glossary tab**: Moved to References tab, removed from Glossary tab categories/filters. Data retained in glossary.json for bestiary sync.
+27. **References tab header styling**: Added gold color to References tab h2 to match Glossary tab.
+28. **Interactive stat underline**: Character sheet stats with breakdown tooltips (Resilience, Defence, attributes with equipment bonuses) now show underlined names via `.sheet-trait-tappable .sheet-compact-name` for discoverability.
 
 ## Builder Section Order
 
