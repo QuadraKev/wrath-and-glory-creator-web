@@ -3197,6 +3197,12 @@ textarea {
     border-bottom-color: var(--text-muted);
 }
 
+.sheet-trait-tappable .sheet-compact-name {
+    text-decoration: underline;
+    text-decoration-color: var(--text-muted);
+    text-underline-offset: 2px;
+}
+
 .sheet-trait-tappable:hover {
     background: var(--bg-hover);
 }
