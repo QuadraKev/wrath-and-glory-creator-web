@@ -3193,8 +3193,6 @@ textarea {
 
 .sheet-trait-tappable {
     cursor: pointer;
-    border-bottom-style: dotted;
-    border-bottom-color: var(--text-muted);
 }
 
 .sheet-trait-tappable .sheet-compact-name {
