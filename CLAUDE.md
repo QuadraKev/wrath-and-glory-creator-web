@@ -2,6 +2,8 @@
 
 Web-based character creation tool for the Wrath & Glory tabletop RPG.
 
+**Style Guide**: See `../STYLE_GUIDE.md` for naming conventions, CSS patterns, JS patterns, and data file conventions shared across all Wrath & Glory projects.
+
 ## Architecture
 
 Vanilla JavaScript with global object pattern (no modules/bundling). Each file defines a global `const` object (e.g., `const InjuriesTab = {...}`). No build step -- served directly as static files.
@@ -110,7 +112,9 @@ The glossary (`data/glossary.json`) should be kept in sync with the bestiary app
 
 - **Cache busting**: When modifying CSS or JS files, bump the `?v=N` query string on ALL affected `<script>` and `<link>` tags in `index.html`. Always bump all version numbers together.
 - **GitHub Issues**: Do NOT resolve/close issues until the user confirms they are resolved. After closing an issue, post a comment summarizing the fix/change (what was wrong, what was changed, relevant commit hash).
-- **Commits**: Push using the QuadraKev PAT (triggers GitHub Pages deploys). The QuadraKev-bot PAT should only be used for issues/comments — GitHub has disabled Actions/Pages builds for that account. PAT values are stored in Claude Code auto-memory, not in this file.
+- **Commits**: Push using the QuadraKev PAT (triggers GitHub Pages deploys). Use `--author="QuadraKev-Claude <claude-quadrakev@noreply>"` on all commits to differentiate AI-assisted work from the user's personal commits.
+- **GitHub Issues/PRs/Comments**: Use the QuadraKev PAT and include a note (e.g., "Created by Claude Code") to indicate AI authorship. Do NOT use the QuadraKev-bot account — it was flagged by GitHub for TOS violation (one account per person).
+- PAT values are stored in Claude Code auto-memory, not in this file.
 
 ## Books Available (PDF)
 
