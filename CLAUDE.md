@@ -114,7 +114,7 @@ The glossary (`data/glossary.json`) should be kept in sync with the bestiary app
 - **GitHub Issues**: Do NOT resolve/close issues until the user confirms they are resolved. After closing an issue, post a comment summarizing the fix/change (what was wrong, what was changed, relevant commit hash).
 - **Commits**: Push using the QuadraKev PAT. GitHub Actions workflow (`.github/workflows/deploy.yml`) handles Pages deploys on push to main. Use `--author="QuadraKev-Claude <claude-quadrakev@noreply>"` on all commits to differentiate AI-assisted work from the user's personal commits.
 - **GitHub Issues/PRs/Comments**: Use the QuadraKev PAT and include a note (e.g., "Created by Claude Code") to indicate AI authorship. Do NOT use the QuadraKev-bot account — it was flagged by GitHub for TOS violation (one account per person).
-- PAT values are stored in Claude Code auto-memory, not in this file.
+- PAT is available in the `$GH_TOKEN` environment variable (set in `~/.bashrc`).
 
 ## Books Available (PDF)
 
