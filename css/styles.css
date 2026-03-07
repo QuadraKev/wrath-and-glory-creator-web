@@ -4161,6 +4161,13 @@ textarea {
         max-width: calc(100vw - 20px);
     }
 
+    /* Glossary/references filters: smaller */
+    .glossary-filter-btn,
+    .references-filter-btn {
+        padding: 6px 10px;
+        font-size: 11px;
+    }
+
     /* Tab buttons: smaller */
     .tab-btn {
         padding: 6px 10px;
@@ -4286,12 +4293,6 @@ textarea {
     .wargear-card-stats {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-    }
-
-    /* Glossary filters: smaller */
-    .glossary-filter-btn {
-        padding: 6px 10px;
-        font-size: 11px;
     }
 
     /* Stats */
