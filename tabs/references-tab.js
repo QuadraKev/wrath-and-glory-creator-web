@@ -22,6 +22,7 @@ const ReferencesTab = {
         { key: 'psychicPowers', name: 'Psychic Power', pluralName: 'Psychic Powers' },
         { key: 'weaponUpgrades', name: 'Weapon Upgrade', pluralName: 'Weapon Upgrades' },
         { key: 'ascensionPackages', name: 'Ascension Package', pluralName: 'Ascension Packages' },
+        { key: 'archetypes', name: 'Archetype', pluralName: 'Archetypes' },
         { key: 'archetypeAbilities', name: 'Archetype Ability', pluralName: 'Archetype Abilities' },
         { key: 'speciesAbilities', name: 'Species Ability', pluralName: 'Species Abilities' },
         { key: 'mutations', name: 'Mutation', pluralName: 'Mutations' }
@@ -148,6 +149,18 @@ const ReferencesTab = {
                 ...pkg, category: 'ascensionPackages', categoryName: 'Ascension Package', categoryPluralName: 'Ascension Packages',
                 briefInfo: pkg.cost || '',
                 searchText: `${pkg.name} ${pkg.description || ''} ${(pkg.benefits || []).join(' ')}`.toLowerCase()
+            });
+        }
+
+        // Archetypes
+        for (const arch of DataLoader.getAllArchetypes()) {
+            this.allEntries.push({
+                ...arch,
+                category: 'archetypes',
+                categoryName: 'Archetype',
+                categoryPluralName: 'Archetypes',
+                briefInfo: arch.faction ? `Tier ${arch.tier} · ${arch.faction}` : `Tier ${arch.tier}`,
+                searchText: `${arch.name} ${arch.description || ''} ${arch.faction || ''} ${(arch.keywords || []).join(' ')} ${(arch.species || []).join(' ')}`.toLowerCase()
             });
         }
 
@@ -482,6 +495,9 @@ const ReferencesTab = {
             case 'ascensionPackages':
                 html += this.renderAscensionPackageBody(entry);
                 break;
+            case 'archetypes':
+                html += this.renderArchetypeBody(entry);
+                break;
             case 'archetypeAbilities':
             case 'speciesAbilities':
                 html += this.renderAbilityBody(entry);
@@ -669,6 +685,52 @@ const ReferencesTab = {
         html += '</div>';
         if (entry.description) {
             html += `<div class="glossary-entry-description">${entry.description}</div>`;
+        }
+        return html;
+    },
+
+    renderArchetypeBody(entry) {
+        let html = '<div class="ref-stats">';
+        let tierLine = `<span class="ref-label">Tier:</span> ${entry.tier} &nbsp; <span class="ref-label">Cost:</span> ${entry.cost} XP`;
+        if (entry.influenceModifier != null && entry.influenceModifier !== 0) {
+            tierLine += ` &nbsp; <span class="ref-label">Influence:</span> ${entry.influenceModifier > 0 ? '+' : ''}${entry.influenceModifier}`;
+        }
+        html += `<div class="ref-stat">${tierLine}</div>`;
+        if (entry.species && entry.species.length > 0) {
+            const speciesList = entry.species.map(s => s.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase())).join(', ');
+            html += `<div class="ref-stat"><span class="ref-label">Species:</span> ${speciesList}</div>`;
+        }
+        if (entry.faction) {
+            html += `<div class="ref-stat"><span class="ref-label">Faction:</span> ${entry.faction}</div>`;
+        }
+        if (entry.keywords && entry.keywords.length > 0) {
+            html += `<div class="ref-stat"><span class="ref-label">Keywords:</span> ${entry.keywords.join(', ')}</div>`;
+        }
+        if (entry.attributeBonus && Object.keys(entry.attributeBonus).length > 0) {
+            const parts = Object.entries(entry.attributeBonus).map(([attr, val]) => `${attr.charAt(0).toUpperCase() + attr.slice(1)} +${val}`);
+            html += `<div class="ref-stat"><span class="ref-label">Attribute Bonuses:</span> ${parts.join(', ')}</div>`;
+        }
+        if (entry.skillBonus && Object.keys(entry.skillBonus).length > 0) {
+            const parts = Object.entries(entry.skillBonus).map(([skill, val]) => `${skill.charAt(0).toUpperCase() + skill.slice(1)} +${val}`);
+            html += `<div class="ref-stat"><span class="ref-label">Skill Bonuses:</span> ${parts.join(', ')}</div>`;
+        }
+        if (entry.startingWargear && entry.startingWargear.length > 0) {
+            const names = entry.startingWargear.map(id => {
+                const item = DataLoader.getWargearItem(id);
+                return item ? item.name : id.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+            });
+            html += `<div class="ref-stat"><span class="ref-label">Starting Wargear:</span> ${names.join(', ')}</div>`;
+        }
+        html += '</div>';
+        if (entry.description) {
+            html += `<div class="glossary-entry-description">${entry.description}</div>`;
+        }
+        if (entry.abilities && entry.abilities.length > 0) {
+            html += '<div class="ref-stats" style="margin-top:8px">';
+            for (const ab of entry.abilities) {
+                html += `<div class="ref-stat"><strong>${this.escapeHtml(ab.name)}:</strong> ${ab.description || ''}</div>`;
+            }
+            html += '</div>';
         }
         return html;
     },
