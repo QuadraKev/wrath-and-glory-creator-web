@@ -173,13 +173,14 @@ const AscensionTab = {
         const archetype = DataLoader.getArchetype(character.archetype?.id);
         const characterFaction = archetype?.faction || null;
 
-        // Filter: must be at target tier, from enabled sources
+        // Filter: must be at target tier, from enabled sources, matching species
+        const charSpeciesId = character.species?.id || null;
         const eligible = allArchetypes.filter(a => {
             if (a.tier !== slot.targetTier) return false;
             if (!State.isSourceEnabled(a.source)) return false;
-            // Check species compatibility
-            if (a.species && a.species.length > 0) {
-                if (!a.species.includes(character.species?.id)) return false;
+            // Check species compatibility — always enforce when archetype has species restrictions
+            if (Array.isArray(a.species) && a.species.length > 0) {
+                if (!charSpeciesId || !a.species.includes(charSpeciesId)) return false;
             }
             return true;
         });
