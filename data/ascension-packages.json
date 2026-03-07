@@ -749,7 +749,8 @@
         "ADEPTUS MECHANICUS",
         "ADEPTUS MINISTORUM"
       ],
-      "other": "ADEPTUS MECHANICUS or ADEPTUS MINISTORUM; plus the Keyword of the Faction holding the ceremony. If you already have the relevant Keyword, you gain an additional +1 Influence."
+      "other": "ADEPTUS MECHANICUS or ADEPTUS MINISTORUM; plus the Keyword of the Faction holding the ceremony. If you already have the relevant Keyword, you gain an additional +1 Influence.",
+      "keywordRequirement": "ADEPTUS MECHANICUS or ADEPTUS MINISTORUM"
     },
     "benefits": [
       "Work with your Gamemaster and your group to determine what exactly earned you such a reward and the details of the ceremony.",
