@@ -329,6 +329,14 @@ const AscensionTab = {
             }
         }
 
+        // Tier prerequisites
+        if (prereqs.tier) {
+            const effectiveTier = State.getEffectiveTier();
+            const met = effectiveTier >= prereqs.tier;
+            if (!met) allMet = false;
+            parts.push(`Tier ${prereqs.tier}+${met ? '' : ` (current: ${effectiveTier})`}`);
+        }
+
         // Species prerequisites
         if (prereqs.species && prereqs.species.length > 0) {
             const species = DataLoader.getSpecies(character.species?.id);

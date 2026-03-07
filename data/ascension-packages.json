@@ -825,10 +825,10 @@
     "cost": "60",
     "costMultiplier": 0,
     "prerequisites": {
-      "species": [
-        "Adeptus Astartes"
+      "keywords": [
+        "ADEPTUS ASTARTES"
       ],
-      "other": "Tier 3+"
+      "tier": 3
     },
     "benefits": [
       "You gain the Bolter Discipline, and either the Built Tough or Chainsaw Warrior talent. You also gain a further instance of the Hatred talent (against a different enemy if you already possess this talent).",
@@ -846,7 +846,10 @@
     "cost": "60",
     "costMultiplier": 0,
     "prerequisites": {
-      "other": "1ST COMPANY VETERAN, CHAPLAIN, or LIBRARIAN keyword"
+      "keywords": [
+        "ADEPTUS ASTARTES"
+      ],
+      "other": "Must be a 1st Company Veteran, Chaplain, or Librarian"
     },
     "benefits": [
       "You may begin with Terminator Armour. Terminator armour comes with Storm Bolter and Power Fist or Chainfist as standard.",
@@ -871,7 +874,7 @@
       "species": [
         "Adeptus Astartes"
       ],
-      "other": "Tier 3+"
+      "tier": 3
     },
     "benefits": [
       "You gain the Bolter Discipline and the Built Tough talents. You gain the PRIMARIS keyword. In future, you may choose from the Primaris Advancement Packages (Vow of Absolution, page 35).",
@@ -892,8 +895,9 @@
     "costMultiplier": 0,
     "prerequisites": {
       "keywords": [
-        "PRIMARIS INTERCESSOR"
-      ]
+        "PRIMARIS"
+      ],
+      "other": "Must have the Primaris Intercessor archetype"
     },
     "benefits": [
       "If you don't already have one, you receive one of the following weapons: Plasma Incinerator, Assault Plasma Incinerator, or Plasma Pistol.",
@@ -913,8 +917,9 @@
     "costMultiplier": 0,
     "prerequisites": {
       "keywords": [
-        "PRIMARIS INTERCESSOR"
-      ]
+        "PRIMARIS"
+      ],
+      "other": "Must have the Primaris Intercessor archetype"
     },
     "benefits": [
       "You receive Mk X Gravis armour if you don't already have it, and one of the following weapons: Melta Rifle or Heavy Melta Rifle.",
@@ -933,8 +938,9 @@
     "costMultiplier": 0,
     "prerequisites": {
       "keywords": [
-        "PRIMARIS INTERCESSOR"
-      ]
+        "PRIMARIS"
+      ],
+      "other": "Must have the Primaris Intercessor archetype"
     },
     "benefits": [
       "You receive Mk X Gravis armour if you don't already have it, and one of the following weapons: Heavy Bolt Rifle, Executor Bolt Rifle, or Hellstorm Bolt Rifle.",
@@ -953,8 +959,9 @@
     "costMultiplier": 0,
     "prerequisites": {
       "keywords": [
-        "PRIMARIS INTERCESSOR"
-      ]
+        "PRIMARIS"
+      ],
+      "other": "Must have the Primaris Intercessor archetype"
     },
     "benefits": [
       "You receive a Heavy Bolt Pistol and Astartes Chainsword if you don't already have them.",
