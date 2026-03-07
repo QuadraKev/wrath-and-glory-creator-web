@@ -49,8 +49,8 @@ const ArchetypeTab = {
             if (a.tier > character.tier) return false;
 
             // Check species compatibility
-            if (a.species && a.species.length > 0 && character.species?.id) {
-                if (!a.species.includes(character.species.id)) return false;
+            if (a.species && a.species.length > 0) {
+                if (!a.species.includes(character.species?.id)) return false;
             }
 
             // Check search query
