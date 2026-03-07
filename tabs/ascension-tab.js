@@ -94,8 +94,26 @@ const AscensionTab = {
 
         let html = '<div class="ascension-options">';
 
+        // Get character info for fundamental compatibility filtering
+        const charSpeciesName = (DataLoader.getSpecies(character.species?.id)?.name || '').toLowerCase();
+        const charKeywords = State.getKeywords();
+
         for (const pkg of packages) {
             if (!State.isSourceEnabled(pkg.source)) continue;
+
+            // Hide packages with fundamentally incompatible species/keyword prerequisites
+            const prereqs = pkg.prerequisites;
+            if (prereqs) {
+                // Species prerequisite — character can never change species
+                if (prereqs.species && prereqs.species.length > 0) {
+                    if (!charSpeciesName || !prereqs.species.some(s => s.toLowerCase() === charSpeciesName)) continue;
+                }
+                // Keyword prerequisite — faction keywords are innate and can't be gained
+                if (prereqs.keywords && prereqs.keywords.length > 0) {
+                    const hasAny = prereqs.keywords.some(k => charKeywords.includes(k));
+                    if (!hasAny) continue;
+                }
+            }
 
             const isSelected = pkg.id === selectedId;
             const xpCost = pkg.costMultiplier ? pkg.costMultiplier * slot.targetTier : parseInt(pkg.cost) || 0;
