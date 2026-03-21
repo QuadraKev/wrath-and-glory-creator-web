@@ -2644,6 +2644,12 @@
       "page": 209,
       "description": "Brutal weapons inflict appalling, traumatic wounds. When you roll Extra Damage Dice for a Brutal weapon: Results of 1 and 2 inflict 0 Damage. Results of 3 and 4 inflict 1 Damage. Results of 5 and 6 inflict 2 Damage."
     },
+    "cognis": {
+      "name": "Cognis",
+      "source": "church",
+      "page": 112,
+      "description": "The Machine Spirits encased in these weapons have been permanently awakened by the will of the Omnissiah through the arcane rituals of the Adeptus Mechanicus. Through a miracle of the Motive Force, these weapons possess a measure of intelligence, and act as though alive even when uncontrolled. At the end of any Round in which a Cognis weapon was not fired, any Agent can declare that the Machine Spirit of the weapon activated and attempted to fire on a random enemy, as determined by the GM. The uncontrolled Cognis weapon has a Ballistic Skill (A) dice pool of 5ds, plus the number of Glory in the group pool. Agents cannot spend Wrath or Glory on this attack."
+    },
     "flamer": {
       "name": "Flamer",
       "source": "core",
@@ -2691,6 +2697,12 @@
       "source": "core",
       "page": 209,
       "description": "The sub-atomic bursts that spew from these weapons melt flesh and reduce armour to slag. When you roll Extra Damage Dice for a Melta weapon fired at Short Range: Results of 1 and 2 inflict 0 Damage. Results of 3 and 4 inflict 1 Damage. Results of 5 and 6 inflict 2 Damage. When you roll Extra Damage Dice for a Melta weapon fired against a vehicle or fortification at Short range: Results of 1, 2 and 3 inflict 1 Damage. Results of 4, 5 and 6 inflict 2 Damage."
+    },
+    "mounted": {
+      "name": "Mounted",
+      "source": "church",
+      "page": 113,
+      "description": "Mounted weapons only function when attached to a weapons platform such as a vehicle. These weapons depend on the sophisticated machinery, excessive power, or other logistical requirement provided by a larger machine and cannot typically be handled by an individual warrior. The (X) in the Trait determines the minimum Size of vehicle the weapon must be mounted on to function."
     },
     "parry": {
       "name": "Parry",

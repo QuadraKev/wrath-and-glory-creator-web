@@ -453,10 +453,10 @@ const ReferencesTab = {
                 body.removeAttribute('data-deferred');
             }
 
-            // Enhance glossary terms on demand (whole body: traits, keywords, descriptions)
+            // Enhance glossary terms on demand (stats + description, not copy button)
             if (!body.dataset.enhanced) {
                 if (typeof Glossary !== 'undefined' && Glossary.enhanceElement) {
-                    Glossary.enhanceElement(body);
+                    body.querySelectorAll('.ref-stats, .glossary-entry-description').forEach(el => Glossary.enhanceElement(el));
                 }
                 body.dataset.enhanced = 'true';
             }
@@ -553,7 +553,10 @@ const ReferencesTab = {
 
         if (entry.range != null) {
             if (typeof entry.range === 'object') {
-                html += `<div class="ref-stat"><span class="ref-label">Range:</span> S: ${entry.range.short}m / M: ${entry.range.medium}m / L: ${entry.range.long}m</div>`;
+                const s = entry.range.short != null ? `${entry.range.short}m` : '-';
+                const m = entry.range.medium != null ? `${entry.range.medium}m` : '-';
+                const l = entry.range.long != null ? `${entry.range.long}m` : '-';
+                html += `<div class="ref-stat"><span class="ref-label">Range:</span> S: ${s} / M: ${m} / L: ${l}</div>`;
             } else {
                 html += `<div class="ref-stat"><span class="ref-label">Range:</span> ${entry.range}</div>`;
             }

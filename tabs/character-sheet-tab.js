@@ -546,7 +546,8 @@ const CharacterSheetTab = {
                 : '-';
 
             const range = weapon.type === 'ranged' && weapon.range
-                ? `${weapon.range.short}/${weapon.range.medium}/${weapon.range.long}m`
+                ? (typeof weapon.range === 'string' ? weapon.range
+                    : `${weapon.range.short ?? '-'}/${weapon.range.medium ?? '-'}/${weapon.range.long ?? '-'}m`)
                 : '-';
 
             // Build upgrade names display
