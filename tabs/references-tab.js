@@ -453,13 +453,12 @@ const ReferencesTab = {
                 body.removeAttribute('data-deferred');
             }
 
-            // Enhance glossary terms on demand
-            const desc = body.querySelector('.glossary-entry-description');
-            if (desc && !desc.dataset.enhanced) {
+            // Enhance glossary terms on demand (whole body: traits, keywords, descriptions)
+            if (!body.dataset.enhanced) {
                 if (typeof Glossary !== 'undefined' && Glossary.enhanceElement) {
-                    Glossary.enhanceElement(desc);
+                    Glossary.enhanceElement(body);
                 }
-                desc.dataset.enhanced = 'true';
+                body.dataset.enhanced = 'true';
             }
 
             history.replaceState(null, '', '#references/' + entryId);
