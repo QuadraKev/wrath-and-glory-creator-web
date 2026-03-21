@@ -1690,6 +1690,7 @@
     "startingWargear": [
       "flak_armour",
       "ripper_gun",
+      "ripper_gun_bayonet",
       "frag_bombs"
     ],
     "source": "fspg",

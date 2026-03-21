@@ -3106,14 +3106,18 @@
       "attribute": "strength",
       "bonus": 0
     },
-    "ed": 3,
+    "ed": 4,
     "ap": -1,
-    "traits": [],
-    "value": 5,
+    "traits": [
+      "Brutal"
+    ],
+    "value": 6,
     "rarity": "Rare",
     "keywords": [
+      "POWER FIELD",
       "IMPERIUM",
-      "POWER FIELD"
+      "ADEPTUS ASTARTES",
+      "ADEPTUS MINISTORUM"
     ],
     "source": "fspg",
     "page": 121
@@ -3125,19 +3129,18 @@
     "category": "Exotic",
     "description": "These solidly built staves serve three purposes: the uniquely carved shape marks its bearer as a Sister Dialogus, the built in Laud-Hailer carries her stirring rhetoric over the din of battle, and its sturdy build makes it a potent melee weapon when paired with strength or Sororitas Power Armour.",
     "damage": {
-      "base": 4,
+      "base": 3,
       "attribute": "strength",
       "bonus": 0
     },
-    "ed": 2,
+    "ed": 3,
     "ap": 0,
     "traits": [
-      "Two-Handed"
+      "Reliable"
     ],
-    "value": 4,
+    "value": 5,
     "rarity": "Uncommon",
     "keywords": [
-      "IMPERIUM",
       "ADEPTA SORORITAS"
     ],
     "source": "fspg",
@@ -3151,7 +3154,7 @@
     "category": "Solid Projectile",
     "description": "Big, sturdy, and basic, the Ripper Gun is purpose-built to be wielded by Ogryns. Because of this, its size and solid construction ensure it is as useful as a club as a firearm. The typical stupidity and inaccuracy of an Ogryn shaped the design of the Ripper Gun, resulting in a custom trigger mechanism activated by squeezing the handle to fire a burst of shot. A burst limiter is hard wired into every Ripper Gun to ensure an excited Ogryn does not expend an entire clip the first time they squeeze the weapon's handle.",
     "damage": {
-      "base": 12,
+      "base": 11,
       "attribute": null,
       "bonus": 0
     },
@@ -3162,54 +3165,77 @@
       "medium": 12,
       "long": 18
     },
-    "salvo": 3,
+    "salvo": 2,
     "traits": [
       "Assault",
-      "Spread"
+      "Brutal",
+      "Heavy (5)"
     ],
-    "value": 4,
+    "value": 5,
     "rarity": "Rare",
     "keywords": [
+      "PROJECTILE",
       "IMPERIUM",
       "ASTRA MILITARUM",
-      "MILITARUM AUXILLA",
-      "PROJECTILE"
+      "MILITARUM AUXILLA"
     ],
     "source": "fspg",
-    "page": 121
+    "page": 122
+  },
+  {
+    "id": "ripper_gun_bayonet",
+    "name": "Ripper Gun Bayonet",
+    "type": "melee",
+    "category": "Low-Tech",
+    "description": "Members of the Departmento Munitorum joke that bayonets were originally installed on Ogryn ripper guns so that their slow-witted wielders would know which part of the weapon to point at the enemy. In truth, an Ogryn charge is made that much more lethal by these large sharpened slabs of metal.",
+    "damage": {
+      "base": 3,
+      "attribute": "strength",
+      "bonus": 0
+    },
+    "ed": 3,
+    "ap": -1,
+    "traits": [
+      "Reliable"
+    ],
+    "value": 3,
+    "rarity": "Common",
+    "keywords": [
+      "BLADE",
+      "IMPERIUM",
+      "ASTRA MILITARUM",
+      "MILITARUM AUXILLA"
+    ],
+    "source": "fspg",
+    "page": 120
   },
   {
     "id": "frag_bombs",
-    "name": "Frag Bombs",
+    "name": "Frag Bomb",
     "type": "ranged",
     "category": "Explosive",
     "description": "Purpose-built for the oversized hands of Ogryns, Frag Bombs are simply upscaled frag grenades simplified for use by blunt minds. A Frag Bomb causes a larger, more deadly explosion of shrapnel, though pressure plates must be engineered into every bomb in the eventuality that an Ogryn forgets to throw after pulling the pin.",
     "damage": {
-      "base": 10,
+      "base": 12,
       "attribute": null,
       "bonus": 0
     },
-    "ed": 1,
+    "ed": 4,
     "ap": 0,
-    "range": {
-      "short": 4,
-      "medium": 8,
-      "long": 12
-    },
+    "range": "(S) x2m or as Launcher",
     "salvo": 0,
     "traits": [
-      "Blast (Medium)"
+      "Blast (8)"
     ],
-    "value": 3,
-    "rarity": "Uncommon",
+    "value": 5,
+    "rarity": "Common",
     "keywords": [
+      "EXPLOSIVE",
       "IMPERIUM",
-      "ASTRA MILITARUM",
-      "MILITARUM AUXILLA",
       "GRENADE"
     ],
     "source": "fspg",
-    "page": 115
+    "page": 124
   },
   {
     "id": "kroot_rifle",
@@ -3218,7 +3244,7 @@
     "category": "Solid Projectile",
     "description": "The Kroot created primitive, chemically-propelled slug-throwers centuries ago, and since being exposed to the T'au and other advanced Species they have altered and improved their weapons much as they modify their own biology.",
     "damage": {
-      "base": 10,
+      "base": 8,
       "attribute": null,
       "bonus": 0
     },
@@ -3229,20 +3255,20 @@
       "medium": 24,
       "long": 36
     },
-    "salvo": 1,
+    "salvo": 2,
     "traits": [
       "Rapid Fire (1)"
     ],
-    "value": 4,
+    "value": 3,
     "rarity": "Rare",
     "keywords": [
-      "KROOT",
-      "T'AU",
-      "PROJECTILE"
+      "2-HANDED",
+      "PROJECTILE",
+      "KROOT"
     ],
     "source": "fspg",
-    "page": 121,
-    "notes": "Can also be used as a melee weapon (S+4, 2 ED, 0 AP, Brutal)."
+    "page": 122,
+    "notes": "Can also be used as a melee weapon (S+4, 5 ED, 0 AP). Keywords: 2-HANDED, BLADE, KROOT, PRIMITIVE."
   },
   {
     "id": "blessed_blade",
@@ -3649,11 +3675,7 @@
     },
     "ed": 4,
     "ap": -4,
-    "range": {
-      "short": 0,
-      "medium": 0,
-      "long": 0
-    },
+    "range": "(S) x2m or as Launcher",
     "salvo": 0,
     "traits": [
       "Blast (4)"
@@ -3681,11 +3703,7 @@
     },
     "ed": 4,
     "ap": 0,
-    "range": {
-      "short": 0,
-      "medium": 0,
-      "long": 0
-    },
+    "range": "(S) x4m or as Launcher",
     "salvo": 0,
     "traits": [
       "Agonising",
@@ -3715,11 +3733,7 @@
     },
     "ed": 0,
     "ap": 0,
-    "range": {
-      "short": 0,
-      "medium": 0,
-      "long": 0
-    },
+    "range": "(S) x4m or as Launcher",
     "salvo": 0,
     "traits": [
       "Blast (6)",

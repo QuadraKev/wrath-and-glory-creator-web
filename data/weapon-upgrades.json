@@ -126,6 +126,7 @@
         "one_handed_melee"
       ]
     },
+    "bonusDice": 1,
     "source": "core",
     "page": 228
   },
