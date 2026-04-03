@@ -101,7 +101,7 @@
     "critical_hit": {
       "name": "Critical Hit",
       "source": "core",
-      "page": 183,
+      "page": 197,
       "description": "If you hit and the Wrath Die result is a 6, then the target suffers a Wrath Critical. The group also gains one point of Glory. You can spend Glory to increase the power of a Critical Hit."
     },
     "free_action": {

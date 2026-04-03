@@ -261,7 +261,10 @@
       "skills": {
         "leadership": 2,
         "survival": 2
-      }
+      },
+      "keywords": [
+        "AELDARI"
+      ]
     },
     "effect": "Choose any Threat with the BEAST Keyword that is not an Adversary at your Tier. You have tamed a single creature of that type. It follows you and attempts actions in combat as you command, taking its own slot in the Initiative Order like an Agent. It does not interact with Wrath or Ruin, unless another ability indicates otherwise. If you suffer an attack whilst the creature is within half its Speed of you, it may take a DN 5 Initiative Test as a Reflexive Action. If it succeeds, the attack is redirected onto the creature. Slain creatures may be replaced for free the next time you visit the replacement creature's habitat, or a location where it is raised in captivity.",
     "flavor": "You have tamed a creature to follow your commands and respect you as its master.",
@@ -333,7 +336,7 @@
         "weaponSkill": 2
       }
     },
-    "effect": "...Your weapon must have one of the following Keywords to activate this Talent: BLADE, CHAIN, FORCE, POWER FIELD.",
+    "effect": "When you make a successful melee attack you can Shift Exalted Icons to reduce the target's Resilience instead of adding ED. Each Exalted Icon you Shift decreases the target's Resilience by 1. This Resilience is removed before you calculate damage from the attack. Your weapon must have one of the following Keywords to activate this Talent: BLADE, CHAIN, FORCE, POWER FIELD.",
     "flavor": "Your furious strikes rend armour, leaving it broken and useless.",
     "source": "core",
     "page": 129
@@ -474,7 +477,8 @@
     "cost": 20,
     "prerequisites": {
       "keywords": [
-        "ASURYANI"
+        "ASURYANI",
+        "AELDARI"
       ]
     },
     "effect": "When you make a ranged attack, you may move up to your Speed as a Free Action. You may use this Talent up to Rank times per combat, and never more than once per Turn.",
@@ -535,7 +539,10 @@
     "prerequisites": {
       "skills": {
         "psychicMastery": 4
-      }
+      },
+      "keywords": [
+        "AELDARI"
+      ]
     },
     "effect": "When you successfully activate a power from the Runes of Battle Discipline, you activate both of the power's listed effects, rather than just one.",
     "flavor": "You have walked the Path of the Warlock long enough to balance its augmenting and destructive powers against one another.",
@@ -608,7 +615,8 @@
     "cost": 10,
     "prerequisites": {
       "keywords": [
-        "DRUKHARI"
+        "DRUKHARI",
+        "AELDARI"
       ],
       "other": "Influence 4+"
     },
@@ -640,7 +648,8 @@
         "weaponSkill": 2
       },
       "keywords": [
-        "DRUKHARI"
+        "DRUKHARI",
+        "AELDARI"
       ]
     },
     "effect": "When you use an AELDARI or DRUKHARI melee weapon, it gains the Rending (Rank) Trait. If it already has the Rending Trait, increase its Rending rating by +Rank.",
@@ -681,7 +690,11 @@
     "id": "bladestorm",
     "name": "Bladestorm",
     "cost": 20,
-    "prerequisites": {},
+    "prerequisites": {
+      "keywords": [
+        "AELDARI"
+      ]
+    },
     "effect": "When you use a SHURIKEN weapon, increase the Salvo rating by +Rank.",
     "flavor": "When outnumbered, as the Aeldari often are, you can even the odds with a hail of monomolecular-edged discs, discharged with an extraordinary rate of fire.",
     "source": "aeldari",
@@ -1016,7 +1029,11 @@
     "id": "burning_bright",
     "name": "Burning Bright",
     "cost": 10,
-    "prerequisites": {},
+    "prerequisites": {
+      "keywords": [
+        "AELDARI"
+      ]
+    },
     "effect": "You reduce the number of Traumatic Injuries required to kill you by 1 (to a minimum of 1). Your party begins each session with +1 Glory (up to the usual maximum).",
     "flavor": "The doom of your people is written in stone, but you are determined to fight till the end with fire in your heart.",
     "source": "aeldari",
@@ -2874,7 +2891,8 @@
     "cost": 10,
     "prerequisites": {
       "keywords": [
-        "DRUKHARI"
+        "DRUKHARI",
+        "AELDARI"
       ]
     },
     "effect": "You may roll Determination against attacks that deal Mortal Wounds. You do not suffer DN penalties for being Wounded, unless you have suffered more than Double Rank Wounds. When you are Dying, you do not fall Prone, and suffer no limits on the Actions you can take, unless you suffer Traumatic Injuries equal to or greater than your Rank.",
@@ -3071,7 +3089,8 @@
     "cost": 20,
     "prerequisites": {
       "keywords": [
-        "DRUKHARI"
+        "DRUKHARI",
+        "AELDARI"
       ]
     },
     "effect": "As a Simple Action, you may enhance the toxins of a weapon you handle that has the Inflict (Poisoned) Trait. The weapon gains +Double Rank ED until it is next reloaded.",
@@ -3347,7 +3366,11 @@
     "id": "luck_of_the_laughing_god",
     "name": "Luck of the Laughing God",
     "cost": 10,
-    "prerequisites": {},
+    "prerequisites": {
+      "keywords": [
+        "AELDARI"
+      ]
+    },
     "effect": "Once per Test, you may reroll a single Wrath Die. You may not reroll the die more than once (even if another effect, such as spending a Wrath Point, would make you eligible to do so), and cannot reroll a Complication.",
     "flavor": "As a favoured child of Cegorach, you often enjoy his characteristic good fortune… when not chosen to be the butt of His joke.",
     "source": "aeldari",
@@ -3979,7 +4002,8 @@
     "cost": 20,
     "prerequisites": {
       "keywords": [
-        "DRUKHARI"
+        "DRUKHARI",
+        "AELDARI"
       ]
     },
     "effect": "The first time you make a successful attack Test that kills a living creature in combat, you gain +Rank Determination. The second time you make a successful attack Test that kills a living creature in combat, you gain +Rank Speed. The third time you make a successful attack Test that kills a living creature in combat, you gain +Rank Resolve. Benefits gained from this Talent expire at the end of combat, or at the end of any combat Turn in which you do not kill a living creature.",
@@ -4438,7 +4462,8 @@
     "cost": 10,
     "prerequisites": {
       "keywords": [
-        "HARLEQUIN"
+        "HARLEQUIN",
+        "AELDARI"
       ]
     },
     "effect": "You may move up to triple your Speed when using the Charge Full-Round Action. You do not provoke Reflexive Attacks when you move out of Engagement from an enemy.",
@@ -4675,7 +4700,10 @@
     "prerequisites": {
       "skills": {
         "psychicMastery": 4
-      }
+      },
+      "keywords": [
+        "AELDARI"
+      ]
     },
     "effect": "When another Psyker within 10m of you successfully activates a psychic power, they automatically gain an extra Exalted Icon, which can be Shifted for Potency effects as normal.",
     "flavor": "You share the burden of psychic power with your allies, helping them to manifest even greater abilities.",
@@ -4828,7 +4856,8 @@
     "cost": 20,
     "prerequisites": {
       "keywords": [
-        "HARLEQUIN"
+        "HARLEQUIN",
+        "AELDARI"
       ]
     },
     "effect": "Each time you purchase this Talent, choose to master one of the three saedath types below. An Agent can only perform one saedath at a time, but can switch to a different saedath as a Simple Action. Master of Light: Whilst performing this saedath, gain +Rank bonus dice on all Interaction Attack Tests. Master of Dark: Whilst performing this saedath, increase the AP of your melee weapons by +Rank. Master of Twilight: Whilst performing this saedath, you gain +Rank bonus dice on all Tests made whilst Glory and Ruin are equal (you cannot spend Glory to gain bonus dice on these Tests).",
@@ -5734,7 +5763,8 @@
     "cost": 10,
     "prerequisites": {
       "keywords": [
-        "DRUKHARI"
+        "DRUKHARI",
+        "AELDARI"
       ]
     },
     "effect": "Any DRUKHARI weapon you requisition is delivered with its first weapon upgrade installed. You may choose any available weapon upgrades, so long as the Value and Rarity of the upgrade is not greater than the weapon's Value or Rarity.",
@@ -6017,7 +6047,8 @@
         "willpower": 4
       },
       "keywords": [
-        "YNNARI"
+        "YNNARI",
+        "AELDARI"
       ]
     },
     "effect": "During combat, you may call upon the spirits to heal you as a Combat Action. If you succeed on a DN 1 Resolve Test, you regain Rank Wounds, plus additional Wounds equal to the number of Shifted Exalted Icons.",
