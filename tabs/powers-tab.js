@@ -249,14 +249,24 @@ const PowersTab = {
 
         if (!container) return;
 
-        if (character.psychicPowers.length === 0) {
-            container.innerHTML = '';
-            return;
-        }
-
         container.innerHTML = '';
 
+        // Show universal psyker abilities first (always granted, not stored in character data)
+        if (State.isPsyker()) {
+            for (const uaId of State.UNIVERSAL_ABILITY_IDS) {
+                const power = DataLoader.getPsychicPower(uaId);
+                if (!power) continue;
+                const chip = document.createElement('span');
+                chip.className = 'power-chip';
+                chip.innerHTML = `${power.name} <span class="power-free-label">(Universal)</span>`;
+                container.appendChild(chip);
+            }
+        }
+
         for (const powerId of character.psychicPowers) {
+            // Skip universal abilities (shown above)
+            if (State.UNIVERSAL_ABILITY_IDS.includes(powerId)) continue;
+
             const power = DataLoader.getPsychicPower(powerId);
             if (!power) continue;
 
@@ -305,6 +315,9 @@ const PowersTab = {
 
         // Filter powers
         const powers = allPowers.filter(p => {
+            // Exclude universal psyker abilities (auto-granted, not purchasable)
+            if (State.UNIVERSAL_ABILITY_IDS.includes(p.id)) return false;
+
             // Check source
             if (!State.isSourceEnabled(p.source)) return false;
 

@@ -1342,6 +1342,9 @@ const State = {
         return this.getKeywords().includes('PSYKER');
     },
 
+    // Universal Psyker Abilities - auto-granted to all PSYKER characters, not purchasable
+    UNIVERSAL_ABILITY_IDS: ['psyniscience', 'deny_the_witch'],
+
     // Get the effective psykerConfig for the character.
     // For standard archetypes, returns the archetype's psykerConfig.
     // For custom archetypes, returns the ability archetype's psykerConfig (if any).
