@@ -218,6 +218,18 @@ const PrerequisiteChecker = {
             }
         }
 
+        // Ascension keyword choices (e.g., chosen [ORDO] or [ANY] values)
+        for (const asc of character.ascensions || []) {
+            if (asc.choices) {
+                for (const [key, value] of Object.entries(asc.choices)) {
+                    // Keyword choices use bracket-prefixed keys like "[ORDO]", "[ANY]"
+                    if (key.startsWith('[') && value) {
+                        keywords.add(value);
+                    }
+                }
+            }
+        }
+
         // Remove placeholder keywords if their actual value exists
         // [CHAPTER] is replaced by the actual chapter name
         if (hasChapterKeyword) {
