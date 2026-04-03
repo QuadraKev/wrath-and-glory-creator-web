@@ -42,7 +42,8 @@ const DataLoader = {
             'ascension-packages.json',
             'backgrounds.json',
             'weapon-upgrades.json',
-            'injuries-corruption.json'
+            'injuries-corruption.json',
+            'keyword-categories.json'
         ];
 
         const results = await Promise.all(files.map(f => this.loadFile(f)));
@@ -58,7 +59,8 @@ const DataLoader = {
             ascensionPackages: results[7] || [],
             backgrounds: results[8] || {},
             weaponUpgrades: results[9] || [],
-            injuriesCorruption: results[10] || {}
+            injuriesCorruption: results[10] || {},
+            keywordCategories: results[11] || {}
         };
 
         console.log('[DataLoader] All data loaded. Summary:', {
@@ -211,6 +213,17 @@ const DataLoader = {
     // Get ascension packages
     getAscensionPackages() {
         return this.cache['ascension-packages.json'] || [];
+    },
+
+    // Get keyword categories
+    getKeywordCategories() {
+        return this.cache['keyword-categories.json'] || {};
+    },
+
+    // Get a single keyword category by key
+    getKeywordCategory(categoryKey) {
+        const categories = this.getKeywordCategories();
+        return categories[categoryKey] || null;
     },
 
     // Get all weapon upgrades
