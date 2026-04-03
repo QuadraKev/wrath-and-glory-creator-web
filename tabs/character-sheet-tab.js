@@ -1216,11 +1216,25 @@ const CharacterSheetTab = {
 
     // Render psychic powers
     renderPsychicPowers(character) {
-        if (!State.isPsyker() || !character.psychicPowers || character.psychicPowers.length === 0) {
+        if (!State.isPsyker()) {
             return '';
         }
 
-        const rows = character.psychicPowers.map(powerId => {
+        // Universal psyker abilities first
+        const universalRows = State.UNIVERSAL_ABILITY_IDS.map(id => {
+            const power = DataLoader.getPsychicPower(id);
+            if (!power) return '';
+            return `
+                <tr>
+                    <td class="sheet-power-name">${power.name}<div class="source-ref">${DataLoader.formatSourcePage(power)}</div></td>
+                    <td class="sheet-power-dn">${power.dn || '-'}</td>
+                    <td class="sheet-power-desc">${power.effect || '-'}</td>
+                </tr>
+            `;
+        }).join('');
+
+        // Character's purchased/granted powers (skip universal IDs to prevent duplicates)
+        const rows = (character.psychicPowers || []).filter(id => !State.UNIVERSAL_ABILITY_IDS.includes(id)).map(powerId => {
             const power = DataLoader.getPsychicPower(powerId);
             if (!power) return '';
 
@@ -1245,7 +1259,7 @@ const CharacterSheetTab = {
                         </tr>
                     </thead>
                     <tbody>
-                        ${rows}
+                        ${universalRows}${rows}
                     </tbody>
                 </table>
             </div>
@@ -1552,9 +1566,16 @@ const CharacterSheetTab = {
         }
 
         // Psychic Powers
-        if (character.psychicPowers?.length > 0) {
+        if (State.isPsyker()) {
             lines.push('PSYCHIC POWERS');
-            for (const powerId of character.psychicPowers) {
+            // Universal abilities
+            for (const uaId of State.UNIVERSAL_ABILITY_IDS) {
+                const power = DataLoader.getPsychicPower(uaId);
+                if (power) lines.push(`  ${power.name} (DN ${power.dn || '-'}) [Universal]`);
+            }
+            // Character's powers (skip universal IDs to prevent duplicates)
+            for (const powerId of (character.psychicPowers || [])) {
+                if (State.UNIVERSAL_ABILITY_IDS.includes(powerId)) continue;
                 const power = DataLoader.getPsychicPower(powerId);
                 if (power) lines.push(`  ${power.name} (DN ${power.dn || '-'})`);
             }
