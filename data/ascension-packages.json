@@ -18,6 +18,9 @@
     "keywordsGained": [
       "[ANY] (the Faction of those who saved you)"
     ],
+    "keywordChoices": [
+      { "placeholder": "[ANY]", "category": "any", "label": "Faction of those who saved you" }
+    ],
     "influenceModifier": 0,
     "source": "core",
     "page": 150
@@ -42,6 +45,9 @@
     ],
     "keywordsGained": [
       "[ANY] (the Faction of your new patron)"
+    ],
+    "keywordChoices": [
+      { "placeholder": "[ANY]", "category": "any", "label": "Faction of your new patron" }
     ],
     "influenceModifier": 2,
     "requiresChoice": true,
@@ -78,6 +84,9 @@
     "keywordsGained": [
       "[ANY]"
     ],
+    "keywordChoices": [
+      { "placeholder": "[ANY]", "category": "any", "label": "Faction keyword" }
+    ],
     "influenceModifier": 2,
     "talentsGranted": [
       "devotees"
@@ -104,6 +113,9 @@
     ],
     "keywordsGained": [
       "Gain [ANY], remove the Keyword you betrayed"
+    ],
+    "keywordChoices": [
+      { "placeholder": "[ANY]", "category": "any", "label": "New faction keyword" }
     ],
     "influenceModifier": -2,
     "source": "core",
@@ -216,6 +228,12 @@
       "INQUISITION",
       "[ORDO]"
     ],
+    "keywordsGranted": [
+      "INQUISITION"
+    ],
+    "keywordChoices": [
+      { "placeholder": "[ORDO]", "category": "ordo", "label": "Choose your Ordo" }
+    ],
     "influenceModifier": 1,
     "source": "apocrypha",
     "page": 210
@@ -247,6 +265,11 @@
       "One reload each of Dragonfire, Hellfire, Kraken, and Vengeance bolt rounds, and one Weapon Upgrade with a value of up to 7 (Very Rare)."
     ],
     "keywordsGained": [
+      "DEATHWATCH",
+      "INQUISITION",
+      "ORDO XENOS"
+    ],
+    "keywordsGranted": [
       "DEATHWATCH",
       "INQUISITION",
       "ORDO XENOS"
@@ -371,6 +394,9 @@
     "keywordsGained": [
       "ILLUMINATI"
     ],
+    "keywordsGranted": [
+      "ILLUMINATI"
+    ],
     "influenceModifier": 1,
     "source": "apocrypha",
     "page": 215
@@ -403,6 +429,9 @@
       "You gain a Ghosthelm, Runes of Witnessing, and Runes of Warding."
     ],
     "keywordsGained": [
+      "FARSEER"
+    ],
+    "keywordsGranted": [
       "FARSEER"
     ],
     "influenceModifier": 3,
@@ -440,6 +469,9 @@
     "keywordsGained": [
       "EXARCH"
     ],
+    "keywordsGranted": [
+      "EXARCH"
+    ],
     "influenceModifier": 1,
     "source": "apocrypha",
     "page": 216
@@ -463,6 +495,9 @@
       "Spirit Stone: When carried by an YNNARI character, a Spirit Stone may be used to generate 1d3+1 Soul tokens as a Simple Action. This takes time to recover and cannot be done again until after the next Respite."
     ],
     "keywordsGained": [
+      "YNNARI"
+    ],
+    "keywordsGranted": [
       "YNNARI"
     ],
     "influenceModifier": 0,
@@ -521,6 +556,9 @@
     "keywordsGained": [
       "IMPERIUM"
     ],
+    "keywordsGranted": [
+      "IMPERIUM"
+    ],
     "influenceModifier": 1,
     "source": "apocrypha",
     "page": 218
@@ -553,6 +591,9 @@
     "keywordsGained": [
       "PRIMARIS"
     ],
+    "keywordsGranted": [
+      "PRIMARIS"
+    ],
     "influenceModifier": 1,
     "source": "apocrypha",
     "page": 219
@@ -578,6 +619,9 @@
       "MUTATED FORM: While using the daemon's power, you gain the Horns, Spines, Fangs, or Claws minor mutation, and a single severe mutation, determined when the character first became possessed."
     ],
     "keywordsGained": [
+      "DAEMON"
+    ],
+    "keywordsGranted": [
       "DAEMON"
     ],
     "influenceModifier": 3,
@@ -684,6 +728,9 @@
       "As part of this Ascension Package, you may also undergo Archetype Ascension, so long as you meet the usual prerequisites. You gain a new Rank with your Tier when doing so."
     ],
     "keywordsGained": [
+      "EXARCH"
+    ],
+    "keywordsGranted": [
       "EXARCH"
     ],
     "influenceModifier": 1,
@@ -882,6 +929,9 @@
       "You gain +2 Influence, and 1 item of Uncommon Wargear. Unless using Terminator Armour, you replace your current Power Armour with Mk X Tacticus Armour \u2014 or other variants as discussed with your GM."
     ],
     "keywordsGained": [
+      "PRIMARIS"
+    ],
+    "keywordsGranted": [
       "PRIMARIS"
     ],
     "influenceModifier": 2,
