@@ -2779,6 +2779,15 @@ textarea {
     overflow-y: auto;
 }
 
+.glossary-table-scroll {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin-top: 8px;
+}
+.glossary-table-scroll .glossary-table {
+    margin-top: 0;
+}
+
 .glossary-table {
     width: 100%;
     border-collapse: collapse;
