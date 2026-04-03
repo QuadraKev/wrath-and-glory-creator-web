@@ -18,6 +18,42 @@
     "page": 215
   },
   {
+    "id": "psyniscience",
+    "name": "Psyniscience",
+    "discipline": "Universal",
+    "dn": 3,
+    "activation": "Free Action",
+    "duration": "Instant",
+    "range": "50m",
+    "multiTarget": false,
+    "cost": 0,
+    "effect": "You can sense the presence of the Warp pressing in against the material world. Existing or imminent distortions of the barrier between Materium and Immaterium in your immediate presence may betray themselves in the flicker of shadows, a brief chill on the flesh, or in a thousand other ways.\nYou can attempt to detect the presence of Warp phenomena within range and line of sight, including sustained psychic powers, psychic powers being activated, and similar effects as decided by the GM.\nThis won't show the source of any such phenomenon, only that it is present within the restrictions, nor does it detect any Psykers. It does, however, provide enough information to activate Deny the Witch.\nIf you attempt to activate this power and fail, the mysteries of the Warp assail your mind. You are automatically under the effects of Fear.\nAs it is not considered a psychic power, Psyniscience can't trigger the Perils of the Warp.",
+    "potency": null,
+    "keywords": [
+      "PSYCHIC"
+    ],
+    "source": "core",
+    "page": 267
+  },
+  {
+    "id": "deny_the_witch",
+    "name": "Deny the Witch",
+    "discipline": "Universal",
+    "dn": "2 + DN of target power",
+    "activation": "Action",
+    "duration": "Instant",
+    "range": "50m",
+    "multiTarget": false,
+    "cost": 0,
+    "effect": "You can unravel another psyker's attempt to manipulate the Warp.\nAll characters with the PSYKER keyword can attempt to prevent the activation of a psychic power within range, or nullify an already active Sustained or timed duration psychic power. Your character must be aware that a power is being used in order to Deny the Witch.\nThe DN for Deny the Witch is 2 + the DN of the psychic power you are trying to deny. If the power you are trying to deny has increased potency from shifting an Exalted Icon, the DN is increased by +1 for each Exalted Icon shifted.\nIf Deny the Witch succeeds, the power fails to activate or immediately stops working.\nUnlike other Actions, this can be used to deny a power occurring before your Turn, but this uses your Combat Action for the Round. If you have used your Action for the Round then you can't Deny the Witch.",
+    "potency": null,
+    "keywords": [
+      "PSYCHIC"
+    ],
+    "source": "core",
+    "page": 267
+  },
+  {
     "id": "chameleon",
     "name": "Chameleon",
     "discipline": "Minor",
