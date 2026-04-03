@@ -150,6 +150,11 @@ const AscensionTab = {
             if (isSelected && pkg.requiresChoice) {
                 html += this.renderPackageChoiceUI(pkg, slot, current);
             }
+
+            // Show keyword choice UI if this package is selected and has keyword choices
+            if (isSelected && pkg.keywordChoices) {
+                html += this.renderKeywordChoiceUI(pkg, slot, current);
+            }
         }
 
         html += '</div>';
@@ -178,6 +183,50 @@ const AscensionTab = {
         }
 
         html += `</div></div>`;
+        return html;
+    },
+
+    // Render keyword choice UI for a package with keywordChoices
+    renderKeywordChoiceUI(pkg, slot, current) {
+        if (!pkg.keywordChoices || pkg.keywordChoices.length === 0) return '';
+
+        const choices = current?.choices || {};
+        let html = '';
+
+        for (const kc of pkg.keywordChoices) {
+            const currentValue = choices[kc.placeholder] || '';
+            const category = DataLoader.getKeywordCategory(kc.category);
+
+            html += `<div class="ascension-keyword-choice" data-target-tier="${slot.targetTier}" data-placeholder="${kc.placeholder}">`;
+            html += `<div class="ascension-choice-label">${kc.label}:</div>`;
+
+            if (category && category.options.length > 0) {
+                // Dropdown with predefined options + optional custom
+                const isCustom = currentValue && !category.options.some(o => o.value === currentValue);
+                html += `<select class="keyword-choice-select">`;
+                html += `<option value="">-- Select --</option>`;
+                for (const opt of category.options) {
+                    const selected = currentValue === opt.value ? ' selected' : '';
+                    const bonusText = opt.bonus ? ` (${opt.bonus})` : '';
+                    html += `<option value="${opt.value}"${selected}>${opt.label}${bonusText}</option>`;
+                }
+                if (category.allowCustom) {
+                    html += `<option value="__custom__"${isCustom ? ' selected' : ''}>${category.customLabel || 'Other'}...</option>`;
+                }
+                html += `</select>`;
+                // Custom text input (shown when "Other" is selected)
+                if (category.allowCustom) {
+                    const customDisplay = isCustom ? 'block' : 'none';
+                    html += `<input type="text" class="keyword-choice-custom" placeholder="Enter keyword (e.g., ORDO SICARIUS)" value="${isCustom ? currentValue : ''}" style="display: ${customDisplay}; margin-top: 8px;">`;
+                }
+            } else {
+                // Pure text input (for [ANY])
+                html += `<input type="text" class="keyword-choice-text" placeholder="Enter keyword (e.g., DEATH GUARD)" value="${currentValue}">`;
+            }
+
+            html += `</div>`;
+        }
+
         return html;
     },
 
@@ -488,6 +537,38 @@ const AscensionTab = {
                 const choiceType = choiceUI.dataset.choiceType;
                 const value = e.target.value;
                 State.setAscensionChoice(targetTier, choiceType, value);
+            });
+        });
+
+        // Keyword choice dropdowns
+        container.querySelectorAll('.keyword-choice-select').forEach(select => {
+            select.addEventListener('change', (e) => {
+                const choiceDiv = e.target.closest('.ascension-keyword-choice');
+                const targetTier = parseInt(choiceDiv.dataset.targetTier);
+                const placeholder = choiceDiv.dataset.placeholder;
+                const value = e.target.value;
+                const customInput = choiceDiv.querySelector('.keyword-choice-custom');
+
+                if (value === '__custom__') {
+                    if (customInput) customInput.style.display = 'block';
+                    State.setAscensionChoice(targetTier, placeholder, '');
+                } else {
+                    if (customInput) {
+                        customInput.style.display = 'none';
+                        customInput.value = '';
+                    }
+                    State.setAscensionChoice(targetTier, placeholder, value);
+                }
+            });
+        });
+
+        // Keyword choice custom text inputs
+        container.querySelectorAll('.keyword-choice-custom, .keyword-choice-text').forEach(input => {
+            input.addEventListener('input', (e) => {
+                const choiceDiv = e.target.closest('.ascension-keyword-choice');
+                const targetTier = parseInt(choiceDiv.dataset.targetTier);
+                const placeholder = choiceDiv.dataset.placeholder;
+                State.setAscensionChoice(targetTier, placeholder, e.target.value.toUpperCase());
             });
         });
     },
