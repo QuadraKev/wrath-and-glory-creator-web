@@ -1013,11 +1013,26 @@
     ],
     "source": "core",
     "page": 2,
-    "subOptions": {
-      "type": "path",
-      "label": "Asuryani Path",
-      "required": true,
-      "addKeyword": false,
+    "subOptions": [
+      {
+        "type": "psychosensitive",
+        "label": "Psychosensitive",
+        "required": false,
+        "description": "You may choose to take the PSYKER Keyword.",
+        "addKeyword": true,
+        "options": [
+          {
+            "id": "psyker",
+            "name": "Take PSYKER Keyword",
+            "keyword": "PSYKER"
+          }
+        ]
+      },
+      {
+        "type": "path",
+        "label": "Asuryani Path",
+        "required": true,
+        "addKeyword": false,
       "options": [
         {
           "id": "path_of_awakening",
@@ -1108,7 +1123,8 @@
           }
         }
       ]
-    }
+      }
+    ]
   },
   {
     "id": "ork",
