@@ -4043,20 +4043,6 @@
     "page": 241
   },
   {
-    "id": "precision_shooter",
-    "name": "Precision Shooter",
-    "cost": 30,
-    "prerequisites": {
-      "skills": {
-        "ballisticSkill": 4
-      }
-    },
-    "effect": "[AI-Generated] When you make a Called Shot, you do not suffer the usual +2 DN penalty.",
-    "flavor": "[AI-Generated] Your marksmanship is so refined that targeting specific body parts is no more difficult than a center-mass shot.",
-    "source": "core",
-    "page": null
-  },
-  {
     "id": "precision_shot_aoa",
     "name": "Precision Shot (Abundance of Apocrypha)",
     "cost": 20,
@@ -5414,20 +5400,6 @@
     "page": 252
   },
   {
-    "id": "swift_attack",
-    "name": "Swift Attack",
-    "cost": 30,
-    "prerequisites": {
-      "skills": {
-        "weaponSkill": 4
-      }
-    },
-    "effect": "[AI-Generated] When making a Multi-Attack with melee weapons, you may make one additional attack.",
-    "flavor": "[AI-Generated] Your blade moves faster than the eye can follow, striking again and again in rapid succession.",
-    "source": "core",
-    "page": null
-  },
-  {
     "id": "swiftstep_aoa",
     "name": "Swiftstep (Abundance of Apocrypha)",
     "cost": 20,
@@ -6368,8 +6340,8 @@
     "page": 126
   },
   {
-    "id": "daemonic_summoning_dh",
-    "name": "Daemonic Summoning",
+    "id": "daemonic_summons_dh",
+    "name": "Daemonic Summons",
     "cost": 30,
     "prerequisites": {
       "keywords": [
@@ -6380,7 +6352,7 @@
     "flavor": "The legions of the warp will answer the call of those who facilitate their perversion of reality. This is a Prayer to the Dark Gods, activated using Ruin.",
     "isPrayer": true,
     "source": "dh",
-    "page": null
+    "page": 114
   },
   {
     "id": "dark_zeal_dh",
@@ -6401,8 +6373,8 @@
     "page": 126
   },
   {
-    "id": "embrace_the_gods_dh",
-    "name": "Embrace the God(s)",
+    "id": "eye_of_the_gods_dh",
+    "name": "Eye of the Gods",
     "cost": 20,
     "prerequisites": {
       "keywords": [
@@ -6417,7 +6389,7 @@
     "flavor": "All burdened with attentions from the infernal pantheon shall be recognised by their Mark. This is a Prayer to the Dark Gods, activated using Ruin.",
     "isPrayer": true,
     "source": "dh",
-    "page": null
+    "page": 115
   },
   {
     "id": "litany_of_despair_dh",
@@ -6438,8 +6410,8 @@
     "page": 126
   },
   {
-    "id": "forge_the_sword_dh",
-    "name": "Forge the Sword",
+    "id": "forge_of_souls_dh",
+    "name": "Forge of Souls",
     "cost": 20,
     "prerequisites": {
       "keywords": [
@@ -6453,6 +6425,6 @@
     "flavor": "Those schooled in malevolent artifice shall wield the tools of the Arkifane as their own. This is a Prayer to the Dark Gods, activated using Ruin.",
     "isPrayer": true,
     "source": "dh",
-    "page": null
+    "page": 115
   }
 ]

@@ -372,20 +372,6 @@
     "page": 89
   },
   {
-    "id": "tattered_robes",
-    "name": "Tattered Robes",
-    "category": "clothing",
-    "description": "Worn and ragged clothing typical of the underhive or wasteland dwellers.",
-    "effect": "Basic clothing.",
-    "value": 1,
-    "rarity": "Common",
-    "keywords": [
-      "SCUM"
-    ],
-    "source": "core",
-    "page": null
-  },
-  {
     "id": "ripped_clothes",
     "name": "Ripped Clothes",
     "category": "clothing",
@@ -421,7 +407,7 @@
     "rarity": "Common",
     "keywords": [],
     "source": "core",
-    "page": null
+    "page": 237
   },
   {
     "id": "clothing_uncommon",
@@ -433,7 +419,7 @@
     "rarity": "Uncommon",
     "keywords": [],
     "source": "core",
-    "page": null
+    "page": 237
   },
   {
     "id": "clothing_rare",
@@ -445,7 +431,7 @@
     "rarity": "Rare",
     "keywords": [],
     "source": "core",
-    "page": null
+    "page": 237
   },
   {
     "id": "clothing_very_rare",
@@ -457,7 +443,7 @@
     "rarity": "Very Rare",
     "keywords": [],
     "source": "core",
-    "page": null
+    "page": 237
   },
   {
     "id": "ration_packs",
@@ -1438,21 +1424,6 @@
     "page": 239
   },
   {
-    "id": "adept_robes",
-    "name": "Adept Robes",
-    "category": "clothing",
-    "description": "Red robes worn by members of the Adeptus Mechanicus, signifying their devotion to the Machine God.",
-    "effect": "Identifies wearer as member of the Adeptus Mechanicus.",
-    "value": 2,
-    "rarity": "Uncommon",
-    "keywords": [
-      "IMPERIUM",
-      "ADEPTUS MECHANICUS"
-    ],
-    "source": "core",
-    "page": null
-  },
-  {
     "id": "servo_harness",
     "name": "Servo-Harness",
     "category": "augmetic",
@@ -1558,18 +1529,6 @@
     "page": 93
   },
   {
-    "id": "fine_clothing",
-    "name": "Fine Clothing",
-    "category": "clothing",
-    "description": "Expensive, well-made garments befitting a person of wealth and status.",
-    "effect": "+1 bonus die to social Tests when appearance matters.",
-    "value": 3,
-    "rarity": "Uncommon",
-    "keywords": [],
-    "source": "core",
-    "page": null
-  },
-  {
     "id": "warrant_of_trade",
     "name": "Warrant of Trade",
     "category": "misc",
@@ -1583,34 +1542,6 @@
     ],
     "source": "core",
     "page": 104
-  },
-  {
-    "id": "disguise_kit",
-    "name": "Disguise Kit",
-    "category": "tool",
-    "description": "A collection of wigs, makeup, prosthetics, and other materials for altering one's appearance.",
-    "effect": "+2 bonus dice to Deception (Fel) Tests when creating or maintaining a disguise.",
-    "value": 3,
-    "rarity": "Uncommon",
-    "keywords": [],
-    "source": "core",
-    "page": null
-  },
-  {
-    "id": "commissar_greatcoat",
-    "name": "Commissar Greatcoat",
-    "category": "clothing",
-    "description": "The distinctive long coat worn by Imperial Commissars, often adorned with medals and insignia of rank.",
-    "effect": "Identifies wearer as an Imperial Commissar. Functions as a Symbol of Authority with the ASTRA MILITARUM Keyword.",
-    "value": 3,
-    "rarity": "Uncommon",
-    "keywords": [
-      "IMPERIUM",
-      "ASTRA MILITARUM",
-      "OFFICIO PREFECTUS"
-    ],
-    "source": "core",
-    "page": null
   },
   {
     "id": "omnissian_sigil",

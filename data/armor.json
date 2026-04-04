@@ -111,23 +111,6 @@
     "page": 233
   },
   {
-    "id": "skitarii_war_plate",
-    "name": "Skitarii War Plate",
-    "type": "heavy",
-    "description": "Augmented with servo-motors and blessed by the Omnissiah, Skitarii War Plate is grafted directly to its wearer. The armour becomes part of the warrior's enhanced body.",
-    "ar": 4,
-    "traits": [],
-    "value": 5,
-    "rarity": "Rare",
-    "keywords": [
-      "IMPERIUM",
-      "ADEPTUS MECHANICUS",
-      "SKITARII"
-    ],
-    "source": "core",
-    "page": null
-  },
-  {
     "id": "light_power_armour",
     "name": "Light Power Armour",
     "type": "medium",

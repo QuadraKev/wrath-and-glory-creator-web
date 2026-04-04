@@ -1111,175 +1111,6 @@
     }
   },
   {
-    "id": "aeldari_psychosensitive",
-    "name": "Aeldari (Psychosensitive)",
-    "description": "Some Aeldari are particularly psychosensitive, manifesting strong psychic abilities as well as following one of the traditional Asuryani paths. These individuals often become seers or warlocks.",
-    "cost": 10,
-    "speed": 8,
-    "size": "Average",
-    "baseAttributes": {
-      "agility": 3
-    },
-    "baseSkills": {},
-    "attributeMaximums": {
-      "strength": 8,
-      "toughness": 7,
-      "agility": 12,
-      "initiative": 12,
-      "willpower": 12,
-      "intellect": 10,
-      "fellowship": 6
-    },
-    "woundBonus": 0,
-    "abilities": [
-      {
-        "name": "Intense Emotion",
-        "effect": "+1 DN to all Resolve Tests. If you fail a Willpower-based Test in a scene involving emotion, the GM gains +1 Ruin."
-      },
-      {
-        "name": "Psychosensitive",
-        "effect": "You have the PSYKER Keyword."
-      }
-    ],
-    "keywords": [
-      "AELDARI",
-      "PSYKER"
-    ],
-    "source": "core",
-    "page": null,
-    "subOptions": [
-      {
-        "type": "path",
-        "label": "Asuryani Path",
-        "required": true,
-        "addKeyword": false,
-        "options": [
-          {
-            "id": "path_of_awakening",
-            "name": "Path of Awakening",
-            "effect": "+Rank bonus dice to Awareness Tests.",
-            "bonuses": {
-              "skills": {
-                "awareness": "rank"
-              }
-            }
-          },
-          {
-            "id": "path_of_the_artisan",
-            "name": "Path of the Artisan",
-            "effect": "+Double Rank to AELDARI Scholar Tests.",
-            "bonuses": {
-              "conditionalSkills": {
-                "scholar": {
-                  "condition": "AELDARI",
-                  "bonus": "doubleRank"
-                }
-              }
-            }
-          },
-          {
-            "id": "path_of_the_bonesinger",
-            "name": "Path of the Bonesinger",
-            "effect": "+Double Rank to AELDARI Tech Tests.",
-            "bonuses": {
-              "conditionalSkills": {
-                "tech": {
-                  "condition": "AELDARI",
-                  "bonus": "doubleRank"
-                }
-              }
-            }
-          },
-          {
-            "id": "path_of_the_dreamer",
-            "name": "Path of the Dreamer",
-            "effect": "+Rank bonus dice to Corruption Tests."
-          },
-          {
-            "id": "path_of_the_healer",
-            "name": "Path of the Healer",
-            "effect": "+Double Rank to AELDARI Medicae Tests.",
-            "bonuses": {
-              "conditionalSkills": {
-                "medicae": {
-                  "condition": "AELDARI",
-                  "bonus": "doubleRank"
-                }
-              }
-            }
-          },
-          {
-            "id": "path_of_the_mariner",
-            "name": "Path of the Mariner",
-            "effect": "+Double Rank to AELDARI Pilot Tests.",
-            "bonuses": {
-              "conditionalSkills": {
-                "pilot": {
-                  "condition": "AELDARI",
-                  "bonus": "doubleRank"
-                }
-              }
-            }
-          },
-          {
-            "id": "path_of_the_mourner",
-            "name": "Path of the Mourner",
-            "effect": "+Rank Maximum Shock.",
-            "bonuses": {
-              "maxShock": "rank"
-            }
-          },
-          {
-            "id": "path_of_service",
-            "name": "Path of Service",
-            "effect": "+Double Rank to AELDARI Insight Tests.",
-            "bonuses": {
-              "conditionalSkills": {
-                "insight": {
-                  "condition": "AELDARI",
-                  "bonus": "doubleRank"
-                }
-              }
-            }
-          }
-        ]
-      },
-      {
-        "type": "discipline",
-        "label": "Psychic Discipline",
-        "required": true,
-        "addKeyword": false,
-        "options": [
-          {
-            "id": "runes_of_battle",
-            "name": "Runes of Battle",
-            "effect": "The combat disciplines of Aeldari Warlocks."
-          },
-          {
-            "id": "runes_of_fate",
-            "name": "Runes of Fate",
-            "effect": "The farseer's art of seeing and shaping destiny."
-          },
-          {
-            "id": "runes_of_fortune",
-            "name": "Runes of Fortune",
-            "effect": "Powers of luck, protection, and psychic mastery."
-          },
-          {
-            "id": "bonesinging",
-            "name": "Bonesinging",
-            "effect": "The art of shaping wraithbone."
-          },
-          {
-            "id": "phantasmancy",
-            "name": "Phantasmancy",
-            "effect": "The shadow disciplines of Harlequin Shadowseers."
-          }
-        ]
-      }
-    ]
-  },
-  {
     "id": "ork",
     "name": "Ork",
     "description": "The green-skinned scourge of the galaxy, Orks are brutal but cunning beasts that live to wage war; all else is secondary to their battlelust. Taller, wider, and far more muscular than any natural Human, Orks are incredibly tough, and will continue to charge into combat undeterred after losing limbs. The only strategies and tactics they employ against the Imperium are frontline assaults, using any means available to create carnage as quickly as they can.",
@@ -2409,7 +2240,7 @@
       "[SEPT]"
     ],
     "source": "apocrypha",
-    "page": null,
+    "page": 15,
     "subOptions": {
       "type": "sept",
       "label": "Sept",
@@ -2531,7 +2362,7 @@
       "[SEPT]"
     ],
     "source": "apocrypha",
-    "page": null,
+    "page": 15,
     "subOptions": {
       "type": "sept",
       "label": "Sept",
@@ -2657,7 +2488,7 @@
       "[SEPT]"
     ],
     "source": "apocrypha",
-    "page": null,
+    "page": 16,
     "subOptions": {
       "type": "sept",
       "label": "Sept",
@@ -2783,7 +2614,7 @@
       "[SEPT]"
     ],
     "source": "apocrypha",
-    "page": null,
+    "page": 16,
     "subOptions": {
       "type": "sept",
       "label": "Sept",
@@ -2907,7 +2738,7 @@
       "[SEPT]"
     ],
     "source": "apocrypha",
-    "page": null,
+    "page": 17,
     "subOptions": {
       "type": "sept",
       "label": "Sept",
