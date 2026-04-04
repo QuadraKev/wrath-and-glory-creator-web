@@ -45,10 +45,12 @@
                     if (e.name === 'AbortError') {
                         return { canceled: true };
                     }
-                    throw e;
+                    // Some browsers (e.g. Brave) have showSaveFilePicker but block it
+                    // with SecurityError — fall through to download fallback
+                    console.warn('showSaveFilePicker blocked, using download fallback:', e.name);
                 }
             }
-            // Fallback for browsers without File System Access API
+            // Fallback for browsers without File System Access API (or that block it)
             return { canceled: false, filePath: defaultName || 'character.character' };
         },
 
@@ -73,7 +75,8 @@
                     if (e.name === 'AbortError') {
                         return { canceled: true };
                     }
-                    throw e;
+                    // Some browsers (e.g. Brave) block the File System Access API
+                    console.warn('showOpenFilePicker blocked, using input fallback:', e.name);
                 }
             }
 
