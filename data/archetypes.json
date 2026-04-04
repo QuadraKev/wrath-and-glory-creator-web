@@ -150,7 +150,7 @@
     ],
     "wargearChoices": "Any two IMPERIUM weapons with a Value of 5 or less and a Rarity of Uncommon or lower",
     "source": "core",
-    "page": 21
+    "page": 94
   },
   {
     "id": "inquisitorial_sage",
@@ -403,7 +403,7 @@
       "disciplineChoices": 1
     },
     "source": "core",
-    "page": 23
+    "page": 100
   },
   {
     "id": "skitarius",
@@ -1058,7 +1058,7 @@
     ],
     "wargearChoices": "Any two weapons with a Value of 7 or less and a Rarity of Very Rare or lower, and Flak Coat or Carapace Armour or Ignatus Power Armour or Light Power Armour",
     "source": "core",
-    "page": 21
+    "page": 116
   },
   {
     "id": "primaris_intercessor",

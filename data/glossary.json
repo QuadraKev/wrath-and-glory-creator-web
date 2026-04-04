@@ -3026,7 +3026,7 @@
       "dn": "Target's Defence",
       "cost": 0,
       "source": "core",
-      "page": 215,
+      "page": 272,
       "description": "<b>Discipline:</b> Universal<br><b>DN:</b> Target's Defence<br><b>XP Cost:</b> 0<br><b>Activation:</b> Action<br><b>Duration:</b> Instant<br><b>Range:</b> 35m<br><b>Keywords:</b> PSYCHIC<br><br><b>Effect:</b> You concentrate destructive power through the lens of your will, summoning lethal bolts of raw psychic energy that blast your enemies into ash. Target one enemy within range and make a Psychic Mastery (Wil) Test against their Defence. If successful, the target suffers 1d3 Mortal Wounds.<br><br><b>Potency:</b> [3] +1 Mortal Wound."
     },
     "chameleon": {
@@ -3035,7 +3035,7 @@
       "dn": "5",
       "cost": 8,
       "source": "core",
-      "page": 265,
+      "page": 268,
       "description": "<b>Discipline:</b> Minor<br><b>DN:</b> 5<br><b>XP Cost:</b> 8<br><b>Activation:</b> Action<br><b>Duration:</b> Sustained<br><b>Range:</b> Self<br><b>Keywords:</b> PSYCHIC<br><br><b>Effect:</b> You bend reality just enough to cause your image to blend with your surroundings. While this power remains in effect, you gain +5 bonus dice to Stealth (A) Tests and +1 to your Defence against ranged attacks.<br><br><b>Potency:</b> [1] Stealth (A) bonus increased by +1. [3] Additional +1 bonus to Defence."
     },
     "compel": {
@@ -3044,7 +3044,7 @@
       "dn": "5",
       "cost": 10,
       "source": "core",
-      "page": 260,
+      "page": 268,
       "description": "Effect text should include: \"Example commands include: 'drop the weapon,' 'open the door' or 'push him.' Suggestions cannot make a creature perform an action that they are simply incapable of performing — for example, you can't make a Cyber Mastiff work a cogitator.\""
     },
     "conceal_phenomena": {
@@ -3116,7 +3116,7 @@
       "dn": "4",
       "cost": 7,
       "source": "core",
-      "page": 138,
+      "page": 270,
       "description": "<b>Discipline:</b> Minor<br><b>DN:</b> 4<br><b>XP Cost:</b> 7<br><b>Activation:</b> Simple Action<br><b>Duration:</b> Sustained<br><b>Range:</b> Self<br><b>Keywords:</b> PSYCHIC<br><br><b>Effect:</b> You use your force of will to unshackle your body from the constraints of gravity. You can float freely, hovering or moving slowly up or down (1/2 Speed). You are not able to truly fly, however, so must use some other means to move in any other direction. This power may be used to attempt to negate a fall.<br><br><b>Potency:</b> [1]* May move at normal Speed up or down. [2] May also affect a willing creature within 5m. The Psyker controls their vertical movement."
     },
     "psychic_torch": {
@@ -3152,7 +3152,7 @@
       "dn": "3",
       "cost": 5,
       "source": "core",
-      "page": 265,
+      "page": 271,
       "description": "<b>Discipline:</b> Minor<br><b>DN:</b> 3<br><b>XP Cost:</b> 5<br><b>Activation:</b> Action<br><b>Duration:</b> Sustained<br><b>Range:</b> 25m<br><b>Keywords:</b> AUDITORY, PSYCHIC<br><br><b>Effect:</b> You mould the cacophonous sounds of the Warp into a tool for your own purposes, causing ghostly voices or other sounds to appear from places or objects within line of sight and in range. These voices or sounds have an echoing, otherworldly quality to them, and cannot rise in volume above a typical conversational tone. These sounds are usually used to unnerve or distract others, but they can also be used to convey information to distant targets, though such communication is one-way and disturbing in nature.<br><br><b>Potency:</b> [1] Range is increased by 25m. [2]* Volume of voices and sounds increased to level of a shout."
     },
     "enfeeble": {
@@ -3215,7 +3215,7 @@
       "dn": "6",
       "cost": 15,
       "source": "core",
-      "page": 262,
+      "page": 274,
       "description": "<b>Discipline:</b> Divination<br><b>DN:</b> 6<br><b>XP Cost:</b> 15<br><b>Activation:</b> Full-Round Action<br><b>Duration:</b> 1 Combat<br><b>Range:</b> Self<br><b>Keywords:</b> PSYCHIC<br><br><b>Effect:</b> You fall into a brief reverie, peering into the immediate future to see how events of a specific encounter will unfold. You pay heed to how your enemies fight and what actions they will take, so that armed with this knowledge, you may better protect against their attacks. While activated, you may Seize the Initiative without spending Glory once during the combat you are currently engaged in or your next combat, and you gain a +1 bonus to your Defence in the combat you are currently engaged in or your next combat.<br><br><b>Potency:</b> [1]* Activation reduced to an Action. [2] +1 bonus to Defence."
     },
     "prescience": {
@@ -3233,7 +3233,7 @@
       "dn": "Target's Defence",
       "cost": 15,
       "source": "core",
-      "page": 184,
+      "page": 274,
       "description": "<b>Discipline:</b> Divination<br><b>DN:</b> Target's Defence<br><b>XP Cost:</b> 15<br><b>Activation:</b> Full-Round Action<br><b>Duration:</b> Sustained<br><b>Range:</b> 30m<br><b>Keywords:</b> PSYCHIC<br><br><b>Effect:</b> You fall into a brief reverie, peering into the immediate future of a specific enemy, and then manipulate the threads of that future so that the most awful outcomes prevail. The target immediately becomes Vulnerable (1) and Hindered (1) for as long as the power is sustained. Misfortune is mentally draining. You suffer 1 Shock for every minute you sustain the power.<br><br><b>Potency:</b> [1]* Time to Activate reduced to an Action. [2] Target has a -1 penalty to Defence. [2] Target has +1DN to ability tests."
     },
     "psychometry": {
@@ -3260,7 +3260,7 @@
       "dn": "7",
       "cost": 15,
       "source": "core",
-      "page": 259,
+      "page": 275,
       "description": "<b>Discipline:</b> Pyromancy<br><b>DN:</b> 7<br><b>XP Cost:</b> 15<br><b>Activation:</b> Action<br><b>Duration:</b> Sustained<br><b>Range:</b> Self<br><b>Keywords:</b> FIRE, PSYCHIC<br><br><b>Effect:</b> You burst into flame, your body engulfed in a roaring inferno. These flames cause no harm to you or your possessions. While this power is sustained, all creatures within 2m of you immediately take 10+1 ED damage, and take this damage again at the end of each of their own Turns they remain in range. You gain a +1 bonus to your Defence and are immune to all damage or effects with the FIRE or MELTA Keywords.<br><br><b>Potency:</b> [2] +1 ED damage. [3] +1 Defence."
     },
     "flame_breath": {
@@ -3269,7 +3269,7 @@
       "dn": "5",
       "cost": 5,
       "source": "core",
-      "page": 259,
+      "page": 276,
       "description": "<b>Discipline:</b> Pyromancy<br><b>DN:</b> 5<br><b>XP Cost:</b> 5<br><b>Activation:</b> Action<br><b>Duration:</b> Instant<br><b>Range:</b> 5m<br><b>Keywords:</b> FIRE, PSYCHIC<br><br><b>Effect:</b> You spew a gout of warpfire. Your Flaming Breath fills a line 5m in front of you and is treated as having the Flamer Trait.<br><br><b>Potency:</b> [1] +1 ED damage. [1] Arc the Flame Breath (Wil) metres."
     },
     "mindfire": {
@@ -3278,7 +3278,7 @@
       "dn": "Target's Willpower",
       "cost": 15,
       "source": "core",
-      "page": 259,
+      "page": 276,
       "description": "<b>Discipline:</b> Pyromancy<br><b>DN:</b> Target's Willpower<br><b>XP Cost:</b> 15<br><b>Activation:</b> Action<br><b>Duration:</b> Sustained<br><b>Range:</b> 100m<br><b>Keywords:</b> FIRE, PSYCHIC<br><br><b>Effect:</b> You subtly raise the internal temperature of your target's body. As the temperature rises they experience intense discomfort and their body falters. Your target must be within in line of sight to activate this power. If you succeed, you raise the target's internal temperature and they are Hindered. In order to Sustain this power you must win an Opposed Willpower Test against your target at the start of each of your turns. Whilst this power is affecting a target, the effects of extreme cold may be reduced or ignored at the GM's discretion.<br><br><b>Potency:</b> [1] Increase target's level of Hindered by 1. [3]* Target is Exhausted."
     },
     "molten_beam": {
@@ -3287,7 +3287,7 @@
       "dn": "Target's Defence",
       "cost": 20,
       "source": "core",
-      "page": 259,
+      "page": 276,
       "description": "<b>Discipline:</b> Pyromancy<br><b>DN:</b> Target's Defence<br><b>XP Cost:</b> 20<br><b>Activation:</b> Action<br><b>Duration:</b> Instant<br><b>Range:</b> 10m<br><b>Keywords:</b> FIRE, PSYCHIC<br><br><b>Effect:</b> You stretch forth your open hand and release a beam of blindingly bright energy at your foes. This extremely hot beam of raw power melts even the hardest metals to slag, and the air close to the beam's passage catches fire. The beam instantly travels along a straight line for 10m in a direction you choose. Targets struck by the beam suffer 18+2 ED damage and must pass a DN 4 Initiative Test or be set On Fire.<br><br><b>Potency:</b> [2] +1 ED damage. [1]* +10m range."
     },
     "spontaneous_combustion": {
@@ -3296,7 +3296,7 @@
       "dn": "Target's Defence",
       "cost": 10,
       "source": "core",
-      "page": 259,
+      "page": 276,
       "description": "<b>Discipline:</b> Pyromancy<br><b>DN:</b> Target's Defence<br><b>XP Cost:</b> 10<br><b>Activation:</b> Action<br><b>Duration:</b> Instant<br><b>Range:</b> 20m<br><b>Keywords:</b> FIRE, PSYCHIC<br><br><b>Effect:</b> You focus your rage, eyes glowing with Warpfire, until your enemies burst into flame. Targets hit with this power suffer 12+1 ED damage and must make a successful DN 4 Agility Test to avoid being set On Fire.<br><br><b>Potency:</b> [2] +1 ED damage. [1] +10m range."
     },
     "wall_of_flame": {
@@ -3305,7 +3305,7 @@
       "dn": "7",
       "cost": 15,
       "source": "core",
-      "page": 259,
+      "page": 277,
       "description": "<b>Discipline:</b> Pyromancy<br><b>DN:</b> 7<br><b>XP Cost:</b> 15<br><b>Activation:</b> Action<br><b>Duration:</b> Sustained<br><b>Range:</b> 20m<br><b>Keywords:</b> FIRE, PSYCHIC<br><br><b>Effect:</b> You throw your arms wide and channel the seething energies of the Warp, conjuring a wall of flames. Initially, you may freely shape this fiery wall as you please, though its dimensions have limits - up to 3m wide, 20m long and 10m high. You can summon the Wall of Flame anywhere within range and line of sight, including the space occupied by living creatures. Once the wall has been summoned, its dimensions cannot be altered, and it burns without fuel for as long as you sustain it. Creatures that attempt to pass through the Wall of Flame or that are caught inside it when it is summoned immediately take 12+1 ED damage and are On Fire. Creatures within 2m immediately take 10+1 ED damage when the wall is summoned, and again each turn they end within 2m of the wall.<br><br><b>Potency:</b> [2] +1 ED damage. [2]* You may use a Move Action to reshape the wall of flame once while it is Sustained. [1] +1m in height or length."
     },
     "assail": {
@@ -3314,7 +3314,7 @@
       "dn": "Target's Defence",
       "cost": 10,
       "source": "core",
-      "page": 259,
+      "page": 277,
       "description": "<b>Discipline:</b> Telekinesis<br><b>DN:</b> Target's Defence<br><b>XP Cost:</b> 10<br><b>Activation:</b> Action<br><b>Duration:</b> Instant<br><b>Range:</b> 20m<br><b>Keywords:</b> KINETIC, PSYCHIC<br><br><b>Effect:</b> Eyes blazing with inner light, you use nothing more than the power of your will to uproot a boulder, tree, or similarly large object in the vicinity, and smite your enemies with it. Targets hit by this power suffer 10+1 ED damage.<br><br><b>Potency:</b> [1] +1ED damage. [2] +10m range."
     },
     "crush": {
@@ -3323,7 +3323,7 @@
       "dn": "Target's Defence",
       "cost": 10,
       "source": "core",
-      "page": 198,
+      "page": 277,
       "description": "<b>Discipline:</b> Telekinesis<br><b>DN:</b> Target's Defence<br><b>XP Cost:</b> 10<br><b>Activation:</b> Action<br><b>Duration:</b> Sustained<br><b>Range:</b> 20m<br><b>Keywords:</b> KINETIC, PSYCHIC<br><br><b>Effect:</b> You clamp an invisible force around your enemy, and tighten it to crush them. If successfully activated, the target takes 10+1 ED damage and must make a successful DN 5 Strength or Willpower Test (their choice) or be Restrained. While Restrained, the target can do nothing on their turn except try to break free by again making another Strength or Willpower Test as a Full-Round Action. If the victim does not escape, they take an additional 10+1 ED at the beginning of each of your turns for as long as you Sustain the power.<br><br><b>Potency:</b> [3] +1 ED damage. The increased damage applies to the continual damage each turn. [2] +1 DN to the Strength or Willpower Test."
     },
     "levitation": {
@@ -3332,7 +3332,7 @@
       "dn": "5",
       "cost": 8,
       "source": "core",
-      "page": 259,
+      "page": 277,
       "description": "<b>Discipline:</b> Telekinesis<br><b>DN:</b> 5<br><b>XP Cost:</b> 8<br><b>Activation:</b> Action<br><b>Duration:</b> Sustained<br><b>Range:</b> Self<br><b>Keywords:</b> KINETIC, PSYCHIC<br><br><b>Effect:</b> Your hair and garments are blown fiercely by ethereal forces as you rise off the ground. You can fly freely at your normal Speed while you sustain this power. Levitation is mentally taxing. You suffer 1 Shock for every hour you sustain the power.<br><br><b>Potency:</b> [1] Flying Speed increases by 5m. [2] +1 Strength for determining what you may carry while flying."
     },
     "telekinetic_dome": {
@@ -3341,7 +3341,7 @@
       "dn": "5",
       "cost": 15,
       "source": "core",
-      "page": 259,
+      "page": 278,
       "description": "<b>Discipline:</b> Telekinesis<br><b>DN:</b> 5<br><b>XP Cost:</b> 15<br><b>Activation:</b> Full Action<br><b>Duration:</b> Sustained<br><b>Range:</b> Self<br><b>Keywords:</b> KINETIC, PSYCHIC<br><br><b>Effect:</b> You draw the inert energies floating all around you and fashion an invisible barrier of force to protect yourself from harm. You gain +2 Resilience and may roll Determination against Mortal Wounds while you sustain this power. Telekinetic Dome is mentally taxing. You suffer 1 Shock for every minute you sustain the power.<br><br><b>Potency:</b> [2]* Increase range to +Rank m, and all beings in range gain the same protection. [2] Increase bonus to Resilience by +1."
     },
     "grav_warp": {
@@ -3350,7 +3350,7 @@
       "dn": "Target's Willpower +2",
       "cost": 20,
       "source": "core",
-      "page": 259,
+      "page": 278,
       "description": "<b>Discipline:</b> Telekinesis<br><b>DN:</b> Target's Willpower +2<br><b>XP Cost:</b> 20<br><b>Activation:</b> Action<br><b>Duration:</b> Sustained<br><b>Range:</b> 50m<br><b>Keywords:</b> KINETIC, PSYCHIC<br><br><b>Effect:</b> You exploit the pressures of the Warp, exerting a force much like gravity on your target. Make an Opposed Willpower Test with a single target in line of sight to activate this power. If you succeed, you can choose to inflict one of the following effects on the target: Increase Gravity: Your target is Prone and Restrained. Change Gravity: Choose a direction; gravity now acts in that direction for the target. If you Sustain this power, you may choose another effect - such as increasing gravity after changing it - or change the direction of gravity for the target again. Whenever you stop sustaining this power or the target moves more than 50m away, the power no longer affects the target. The gravity the target is subjected to is equivalent to Terran standard. This may cause them to take damage from falling. If your target is an object, the DN is determined by the object's size and weight.<br><br><b>Potency:</b> [2] Inflict 1 Mortal Wound to the target. [3] Increase Range by +50m."
     },
     "shock_wave": {
@@ -3359,7 +3359,7 @@
       "dn": "7",
       "cost": 15,
       "source": "core",
-      "page": 261,
+      "page": 278,
       "description": "<b>Discipline:</b> Telekinesis<br><b>DN:</b> 7<br><b>XP Cost:</b> 15<br><b>Activation:</b> Action<br><b>Duration:</b> Instant<br><b>Range:</b> 5m<br><b>Keywords:</b> KINETIC, PSYCHIC<br><br><b>Effect:</b> With a mighty thrust of your fist, you unleash a burst of mental force that blasts from you in all directions. All creatures within range take 12+1 ED damage from this blast and must make a successful DN 5 Agility Test or be thrown to the ground Prone.<br><br><b>Potency:</b> [1] Range is increased by 5m. [2] +1ED damage."
     },
     "erasure": {
@@ -3368,7 +3368,7 @@
       "dn": "Target's Willpower +2",
       "cost": 15,
       "source": "core",
-      "page": 259,
+      "page": 278,
       "description": "<b>Discipline:</b> Telepathy<br><b>DN:</b> Target's Willpower +2<br><b>XP Cost:</b> 15<br><b>Activation:</b> Full Action<br><b>Duration:</b> Instant<br><b>Range:</b> 30m<br><b>Keywords:</b> TELEPATHY, PSYCHIC<br><br><b>Effect:</b> You remove a memory from your target's mind, casting it off to be lost in the Warp forever. If you successfully activate this power you may remove a recent memory from the target's mind. You may only remove a number of hours of the target's memory equal to your Rank, and cannot remove memories from more than 24 hours before this power was used. The target is aware of the gap in their recollections, but the memories have been fully removed from their psyche and cannot be recovered.<br><br><b>Potency:</b> [2] +30m range. [3] Double the length of the memory that can be removed."
     },
     "fog_the_mind": {
@@ -3377,7 +3377,7 @@
       "dn": "4",
       "cost": 15,
       "source": "core",
-      "page": 259,
+      "page": 279,
       "description": "<b>Discipline:</b> Telepathy<br><b>DN:</b> 4<br><b>XP Cost:</b> 15<br><b>Activation:</b> Full Action<br><b>Duration:</b> Sustained<br><b>Range:</b> 10m<br><b>Keywords:</b> TELEPATHY, PSYCHIC<br><br><b>Effect:</b> You reach into your enemy's mind and cloud their thoughts, slowing their cognitive processes and dulling their wits. A sense of haziness and confusion overcomes all enemies within range, and they must make a successful DN 6 Willpower Test or immediately be both Hindered (2) and Staggered. Fog the Mind is mentally draining. You suffer 1 Shock for every round you sustain the power.<br><br><b>Potency:</b> [1] +10 Range. [2]* Activation reduced to an Action."
     },
     "mind_probe": {
@@ -3386,7 +3386,7 @@
       "dn": "Target's Willpower (Opposed Test)",
       "cost": 15,
       "source": "core",
-      "page": 259,
+      "page": 279,
       "description": "<b>Discipline:</b> Telepathy<br><b>DN:</b> Target's Willpower (Opposed Test)<br><b>XP Cost:</b> 15<br><b>Activation:</b> Full Action<br><b>Duration:</b> Sustained<br><b>Range:</b> 30m<br><b>Keywords:</b> TELEPATHY, PSYCHIC<br><br><b>Effect:</b> You envelop a visible target with your mind, imposing your will on them and forcibly probing their innermost secrets. To activate this power you must win an Opposed Willpower Test with your target. If you succeed, you can probe the target's mind for secrets until the power ends or either party loses consciousness. On each of your Turns this power is active, you may ask the target one question. The GM will provide as honest an answer as possible through the target's memories and mental visualisations as they stream into your own consciousness, but be aware that this answer may be skewed by the target's personal perspective. The target suffers 1d3 Shock for each question 'answered' in this way. To Sustain this power, you must win an Opposed Willpower Test with your target at the start of each of your Turns, then may ask another question. If you fail an Opposed Test, you are expelled from the target's mind and suffer 1d3+3 Shock. You may not recover Shock while sustaining this power.<br><br><b>Potency:</b> [1] The target answers one additional question. [2]* The target suffers no Shock and is unaware of the psyker's intrusion into their mind."
     },
     "psychic_shriek": {
@@ -3395,7 +3395,7 @@
       "dn": "Target's Willpower",
       "cost": 10,
       "source": "core",
-      "page": 259,
+      "page": 279,
       "description": "<b>Discipline:</b> Telepathy<br><b>DN:</b> Target's Willpower<br><b>XP Cost:</b> 10<br><b>Activation:</b> Action<br><b>Duration:</b> Instant<br><b>Range:</b> 50m<br><b>Keywords:</b> PSYCHIC<br><br><b>Effect:</b> You unleash a blast of psychic energy to attack the mind of an enemy nearby. The target immediately takes 1d3+3 Shock and must make a successful DN 5 Willpower Test or be Staggered.<br><br><b>Potency:</b> [1] +1 Shock. [2] +1 DN to the Willpower Test."
     },
     "telepathy_power": {
@@ -3413,7 +3413,7 @@
       "dn": "5",
       "cost": 15,
       "source": "core",
-      "page": 170,
+      "page": 280,
       "description": "<b>Discipline:</b> Telepathy<br><b>DN:</b> 5<br><b>XP Cost:</b> 15<br><b>Activation:</b> Full Action<br><b>Duration:</b> Instant<br><b>Range:</b> 10m<br><b>Keywords:</b> TELEPATHY, PSYCHIC<br><br><b>Effect:</b> Reaching out with your mind, you pluck the latent fears of enemies nearby from their subconscious, and force them to the surface. A supernatural dread of you and your allies overcomes all enemies within range; they must make a DN 5 Fear Test.<br><br><b>Potency:</b> [2] Fear roll DN increased by +1. [2]* Activation reduced to an Action. [1] +10m range."
     },
     "dark_flame": {
@@ -3422,7 +3422,7 @@
       "dn": "7",
       "cost": 15,
       "source": "core",
-      "page": 259,
+      "page": 281,
       "description": "<b>Discipline:</b> Maleficarum<br><b>DN:</b> 7<br><b>XP Cost:</b> 15<br><b>Activation:</b> Action<br><b>Duration:</b> Instant<br><b>Range:</b> 20m<br><b>Keywords:</b> CHAOS, PSYCHIC<br><br><b>Effect:</b> You unleash the roiling inferno of your rage. The power affects all creatures in a 6m radius from a point in range, unholy flames burning their very souls. Affected targets suffer 1d3 + your Corruption level in Shock damage and must pass a DN 5 Toughness Test or suffer 1d3 Mortal Wounds as well.<br><br><b>Potency:</b> [2] +1 Mortal Wound. [2]* Double the blast radius."
     },
     "possession": {
@@ -3431,7 +3431,7 @@
       "dn": "Target's Willpower (Opposed Test)",
       "cost": 20,
       "source": "core",
-      "page": 206,
+      "page": 281,
       "description": "<b>Discipline:</b> Maleficarum<br><b>DN:</b> Target's Willpower (Opposed Test)<br><b>XP Cost:</b> 20<br><b>Activation:</b> Full Action<br><b>Duration:</b> Sustained<br><b>Range:</b> 30m<br><b>Keywords:</b> CHAOS, PSYCHIC<br><br><b>Effect:</b> You breach your enemy's mind, quashing its will completely, and turning their body into your puppet. You and your target make an Opposed Willpower Test. If you succeed, the target is completely dominated - they have no free will whatsoever. With a simple thought you can compel the target to perform any task you choose as long as the power is Sustained. This control has no limits, and victims do anything you command them to do without question. You immediately gain 1 Corruption on activation of this power, and the target must make a DN 6 Corruption Test when the power ends. Possession is mentally draining, as you must constantly overpower the target's persona. You suffer 1d3+1 Shock every Round you sustain the power. You may not recover Shock while sustaining this power.<br><br><b>Potency:</b> [1]* Activation reduced to an Action. [2]* May sustain the power for a minute before taking Shock."
     },
     "soul_shrivel": {
@@ -3440,7 +3440,7 @@
       "dn": "Target's Defence",
       "cost": 20,
       "source": "core",
-      "page": 259,
+      "page": 281,
       "description": "<b>Discipline:</b> Maleficarum<br><b>DN:</b> Target's Defence<br><b>XP Cost:</b> 20<br><b>Activation:</b> Action<br><b>Duration:</b> Instant<br><b>Range:</b> 20m<br><b>Keywords:</b> CHAOS, PSYCHIC<br><br><b>Effect:</b> You open a minute fissure into the Immaterium near your enemy, draining the very life energies of their spirit. The target suffers 1d3 Mortal Wounds and must make a DN 3 Corruption Test.<br><br><b>Potency:</b> [2] +1 Mortal Wound. [1] Range increased by 10m."
     },
     "touch_of_corruption": {
@@ -3449,7 +3449,7 @@
       "dn": "Target's Defence",
       "cost": 15,
       "source": "core",
-      "page": 259,
+      "page": 281,
       "description": "<b>Discipline:</b> Maleficarum<br><b>DN:</b> Target's Defence<br><b>XP Cost:</b> 15<br><b>Activation:</b> Action<br><b>Duration:</b> Sustained<br><b>Range:</b> Touch<br><b>Keywords:</b> CHAOS, PSYCHIC<br><br><b>Effect:</b> You unleash the mutable energies of the Warp to forcibly corrupt your target's flesh. The target suffers 1 Corruption and gains a random mutation from the Minor Mutation table. The resulting mutation is horrific, but temporary. The target's flesh returns to normal when the power ends. Touch of Corruption is mentally draining. You suffer 1 Shock for every minute you sustain the power. You may not recover Shock while sustaining this power.<br><br><b>Potency:</b> [1] Target suffers +2 Shock damage. [2] Target suffers 1 additional Corruption."
     },
     "infernal_gaze": {
@@ -3458,7 +3458,7 @@
       "dn": "Target's Defence",
       "cost": 10,
       "source": "core",
-      "page": 259,
+      "page": 281,
       "description": "<b>Discipline:</b> Maleficarum<br><b>DN:</b> Target's Defence<br><b>XP Cost:</b> 10<br><b>Activation:</b> Action<br><b>Duration:</b> Sustained<br><b>Range:</b> 25m<br><b>Keywords:</b> CHAOS, PSYCHIC<br><br><b>Effect:</b> You worm your way into the mind of your victim, forcing them to experience the dread things that only the Warp can unveil. The target temporarily loses 1 Intellect and must make a successful DN 7 Willpower Test or suffer intense, personal hallucinations. These hallucinations take the form of supernatural illusions that only they can see. The target immediately rolls on the Perils of the Warp table. The effects of these hallucinations continue for as long as you sustain the power, or until the Perils of the Warp run their course, whichever is longer. In certain circumstances, where the target may question why those around them are not affected by such an obvious supernatural event as determined by the roll on the table, the target may be allowed to reroll its Willpower Test. Temporary lost Intellect returns at the rate of 1 point per day. Infernal Gaze is mentally taxing. You suffer 1 Shock for every minute you sustain the power. You may not recover Shock while sustaining this power.<br><br><b>Potency:</b> [1] +1 temporary Intellect damage. [3]* Target must add the psyker's Corruption score to the first digit of their d66 roll on the Perils of the Warp table."
     },
     "conceal_reveal": {
@@ -3467,7 +3467,7 @@
       "dn": "5",
       "cost": 20,
       "source": "core",
-      "page": 282,
+      "page": 283,
       "description": "<b>Discipline:</b> Runes of Battle<br><b>DN:</b> 5<br><b>XP Cost:</b> 20<br><b>Activation:</b> Action<br><b>Duration:</b> Sustained<br><b>Range:</b> 25m<br><b>Keywords:</b> AELDARI, PSYCHIC<br><br><b>Effect:</b> You reach out with your mind and take command of the shadows, bending and shaping them to your will. Once activated, you can cause one of the following effects: Conceal: You draw the shadows in and don them like a cloak to conceal your position. While the power is sustained, you and any allies within 5m gain a +1 bonus to your Defence and +1 bonus dice to any Stealth (A) Tests you make. Reveal: You push the shadows away from a target within range, revealing them to all. Target one enemy within range as the centre point for a Blast (6) area of effect. Any enemies in that area while the power is sustained can't benefit from bonuses to Defence or Stealth tests due to cover while this power is sustained.<br><br><b>Potency:</b> [3] Conceal: Benefits improve by +1 Defence and +1d to Stealth. [2]* Reveal: Area of effect increases to Blast (10)."
     },
     "embolden_horrify": {

@@ -20,7 +20,7 @@
       "BLADE"
     ],
     "source": "core",
-    "page": 182
+    "page": 211
   },
   {
     "id": "psykana_mercy_blade",
@@ -68,7 +68,7 @@
       "BLADE"
     ],
     "source": "core",
-    "page": 129
+    "page": 211
   },
   {
     "id": "chainsword",
@@ -96,7 +96,7 @@
       "CHAOS"
     ],
     "source": "core",
-    "page": 129
+    "page": 212
   },
   {
     "id": "power_sword",
@@ -121,7 +121,7 @@
       "POWER FIELD"
     ],
     "source": "core",
-    "page": 129
+    "page": 213
   },
   {
     "id": "death_cult_power_blade",
@@ -249,7 +249,7 @@
       "ORK"
     ],
     "source": "core",
-    "page": 115
+    "page": 213
   },
   {
     "id": "witchblade",
@@ -407,7 +407,7 @@
       "IMPERIUM"
     ],
     "source": "core",
-    "page": 184
+    "page": 217
   },
   {
     "id": "lasgun",
@@ -627,7 +627,7 @@
       "BOLT"
     ],
     "source": "core",
-    "page": 182
+    "page": 217
   },
   {
     "id": "heavy_bolt_pistol",
@@ -784,7 +784,7 @@
       "ORK"
     ],
     "source": "core",
-    "page": 115
+    "page": 220
   },
   {
     "id": "shuriken_pistol",
@@ -1002,7 +1002,7 @@
       "PROJECTILE"
     ],
     "source": "core",
-    "page": 182
+    "page": 218
   },
   {
     "id": "avenger_shuriken_catapult",
@@ -12366,7 +12366,7 @@
       "CHAOS"
     ],
     "source": "core",
-    "page": 129
+    "page": 212
   },
   {
     "id": "chain_fist",
@@ -13338,7 +13338,7 @@
       "IMPERIUM"
     ],
     "source": "core",
-    "page": 185
+    "page": 220
   },
   {
     "id": "krak_grenade",

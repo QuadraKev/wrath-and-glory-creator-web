@@ -394,7 +394,7 @@
     "choiceLabel": "Augmetic Selection",
     "choiceDescription": "Choose augmetics (two Rare or lower, or one Very Rare)",
     "source": "core",
-    "page": 90
+    "page": 129
   },
   {
     "id": "avatar_of_blood_aoa",
@@ -1674,7 +1674,7 @@
     "effect": "As a Simple Action, you may use this Talent to make an Intellect-based Skill Test to recall or notice something about a target. The target can be anything, from a mag-locked door with a cantankerous machine spirit to an inscrutable Planetary Governor. If you pass the Test, the GM may give you information based on the Skill you used to make the Test. You also gain +Rank bonus dice to any Test made against that target that utilises this information. You may give this bonus to an ally if you communicate what you have learned.",
     "flavor": "Your studious mind can pick apart a problem (or person) with ease.",
     "source": "core",
-    "page": 90
+    "page": 132
   },
   {
     "id": "deductive_genius",
@@ -1801,7 +1801,7 @@
     "effect": "When you suffer more Wounds than your Maximum Wounds, you are not Dying. Roll once on the Memorable Injuries table and heal 1 Wound. You may not use this Talent again until you complete a Regroup.",
     "flavor": "You're hard to kill.",
     "source": "core",
-    "page": 99
+    "page": 132
   },
   {
     "id": "dig_in_deep",
@@ -1821,7 +1821,7 @@
     "effect": "Whenever you make an Interaction Attack and you shift 2 Exalted Icons, you can inflict your target with an additional Condition. Choose the most narratively appropriate Condition from the following options: Blinded, Prone, Restrained, Staggered.",
     "flavor": "You're proficient in the art of foul play.",
     "source": "core",
-    "page": 96
+    "page": 132
   },
   {
     "id": "disarming_stare",
@@ -2719,7 +2719,7 @@
     "effect": "You gain +Rank bonus dice to any Stealth (A) or Survival (Wil) Tests when moving through urban environments.",
     "flavor": "You are experienced at navigating the urban environments of the Imperium.",
     "source": "core",
-    "page": 96
+    "page": 135
   },
   {
     "id": "honed_to_lethality",
@@ -3873,7 +3873,7 @@
     "effect": "As a Simple Action you can begin mentally reciting Ecclesiastical liturgies. As long as you sacrifice your Simple Action in this way, you gain +1 bonus Willpower, for a maximum of Double Rank Rounds. You can't use this Talent again until you complete a Respite.",
     "flavor": "The litanies of His holy word have burned themselves deep in your memory. You can recite hymns and prayers to the Emperor by rote, and can use them to bolster your mind.",
     "source": "core",
-    "page": 99
+    "page": 137
   },
   {
     "id": "overseer_aoa",
@@ -4417,7 +4417,7 @@
     "flavor": "The righteousness of your indignation rings in the ears of those true to the Imperial Cult.",
     "isFaithTalent": true,
     "source": "core",
-    "page": 99
+    "page": 144
   },
   {
     "id": "righteous_suffering",
@@ -4792,7 +4792,7 @@
     "flavor": "Your indomitable belief steels your mind against Warp-witchery.",
     "isFaithTalent": true,
     "source": "core",
-    "page": 99
+    "page": 144
   },
   {
     "id": "shredding_fire_aoa",
@@ -5316,7 +5316,7 @@
     "effect": "You gain +Rank bonus dice whenever you are appealing to one of your social betters, such as a planetary governor or a superior officer. If your behaviour in any way deviates from the accepted social norms of the Imperium, your GM may refuse this bonus.",
     "flavor": "You know your place and how to work Imperial feudalism to your advantage.",
     "source": "core",
-    "page": 90
+    "page": 140
   },
   {
     "id": "supporting_fire_aoa",
@@ -5917,7 +5917,7 @@
     "effect": "Characters of a higher social class with the IMPERIUM keyword, such as planetary governors, Imperial nobility, or manufactorum owners, ignore you completely unless you attract undue attention to yourself. Anyone attempting to notice or track you in a crowded area, or trying to remember your face, suffers +2DN.",
     "flavor": "You are forgettable and blend into crowds easily.",
     "source": "core",
-    "page": 96
+    "page": 141
   },
   {
     "id": "unshakable_vengeance",

@@ -60,7 +60,7 @@
       "ASTRA MILITARUM"
     ],
     "source": "core",
-    "page": 94
+    "page": 234
   },
   {
     "id": "flak_coat",
@@ -75,7 +75,7 @@
       "IMPERIUM"
     ],
     "source": "core",
-    "page": 104
+    "page": 234
   },
   {
     "id": "carapace_armour",
@@ -92,7 +92,7 @@
       "IMPERIUM"
     ],
     "source": "core",
-    "page": 104
+    "page": 234
   },
   {
     "id": "tempestus_carapace",
@@ -142,7 +142,7 @@
       "IMPERIUM"
     ],
     "source": "core",
-    "page": 104
+    "page": 234
   },
   {
     "id": "sororitas_power_armour",
@@ -178,7 +178,7 @@
       "INQUISITION"
     ],
     "source": "core",
-    "page": 116
+    "page": 234
   },
   {
     "id": "heavy_power_armour",
