@@ -547,7 +547,7 @@
     "effect": "When you successfully activate a power from the Runes of Battle Discipline, you activate both of the power's listed effects, rather than just one.",
     "flavor": "You have walked the Path of the Warlock long enough to balance its augmenting and destructive powers against one another.",
     "source": "aeldari",
-    "page": null
+    "page": 60
   },
   {
     "id": "benediction_of_darkness_aoa",
@@ -5713,7 +5713,7 @@
     "effect": "When an attack deals less than (Rank) Wounds to you, you may immediately choose to convert them to Shock as if you had automatically received (Rank) Icons while rolling Determination. In addition, when converting Wounds to Shock through this method or with standard Determination rolls, you receive one less Shock per instance of conversion, to a minimum of 1.",
     "flavor": "Your constitution is such that no blade, bolt, or other weapon can keep you down for long.",
     "source": "voa",
-    "page": 27
+    "page": 50
   },
   {
     "id": "transhuman_physiology_aoa",

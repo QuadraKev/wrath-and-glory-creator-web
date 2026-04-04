@@ -3434,7 +3434,7 @@
       "ADEPTA SORORITAS"
     ],
     "source": "fspg",
-    "page": 143
+    "page": 122
   },
   {
     "id": "eradication_ray",
@@ -3465,7 +3465,7 @@
       "ADEPTUS MECHANICUS"
     ],
     "source": "fspg",
-    "page": 143
+    "page": 122
   },
   {
     "id": "flechette_blaster",
@@ -3497,7 +3497,7 @@
       "ADEPTUS MECHANICUS"
     ],
     "source": "fspg",
-    "page": 143
+    "page": 122
   },
   {
     "id": "grenadier_gauntlet",
@@ -3531,7 +3531,7 @@
       "MILITARUM AUXILLA"
     ],
     "source": "fspg",
-    "page": 143
+    "page": 122
   },
   {
     "id": "macrostubber",
@@ -3775,7 +3775,7 @@
       "ADEPTUS ASTARTES"
     ],
     "source": "voa",
-    "page": 41
+    "page": 62
   },
   {
     "id": "master_crafted_void_sabre",
@@ -8275,7 +8275,7 @@
       "ASURYANI"
     ],
     "source": "church",
-    "page": null
+    "page": 127
   },
   {
     "id": "cos_havoc_launcher",
@@ -10502,7 +10502,7 @@
       "ASTRA MILITARUM"
     ],
     "source": "shotguns",
-    "page": null
+    "page": 7
   },
   {
     "id": "avachrus_iib_enochian_sanctified_shotgun",

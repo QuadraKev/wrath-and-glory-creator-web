@@ -1088,7 +1088,7 @@
       "AELDARI"
     ],
     "source": "aeldari",
-    "page": null
+    "page": 98
   },
   {
     "id": "skyboard",
@@ -1313,7 +1313,7 @@
     "rarity": "Common",
     "keywords": [],
     "source": "fspg",
-    "page": 67
+    "page": 126
   },
   {
     "id": "excruciator",
@@ -1329,7 +1329,7 @@
       "INQUISITION"
     ],
     "source": "fspg",
-    "page": 118
+    "page": 126
   },
   {
     "id": "psychic_hood",
@@ -1656,7 +1656,7 @@
       "PRIMARIS"
     ],
     "source": "voa",
-    "page": 236
+    "page": 34
   },
   {
     "id": "hook_and_chains",
@@ -1671,7 +1671,7 @@
       "DRUKHARI"
     ],
     "source": "aeldari",
-    "page": null
+    "page": 96
   },
   {
     "id": "trophy_rack",
@@ -1764,7 +1764,7 @@
       "ASURYANI"
     ],
     "source": "aeldari",
-    "page": 30
+    "page": 95
   },
   {
     "id": "infiltrator_headpiece",
@@ -1796,7 +1796,7 @@
       "ASPECT WARRIOR"
     ],
     "source": "aeldari",
-    "page": 26
+    "page": 91
   },
   {
     "id": "howling_banshee_mask",
@@ -1813,7 +1813,7 @@
       "HOWLING BANSHEE"
     ],
     "source": "aeldari",
-    "page": 27
+    "page": 93
   },
   {
     "id": "mandiblaster",

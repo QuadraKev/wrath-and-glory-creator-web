@@ -866,7 +866,7 @@
       "WYCH CULT"
     ],
     "source": "aeldari",
-    "page": 37
+    "page": 92
   },
   {
     "id": "cloak_of_skin",
@@ -902,7 +902,7 @@
       "ASPECT WARRIOR"
     ],
     "source": "aeldari",
-    "page": 22
+    "page": 93
   },
   {
     "id": "forceshield",
@@ -923,7 +923,7 @@
     ],
     "invulnerable": true,
     "source": "aeldari",
-    "page": 33
+    "page": 92
   },
   {
     "id": "mist_shield",
@@ -944,7 +944,7 @@
     ],
     "invulnerable": true,
     "source": "aeldari",
-    "page": 56
+    "page": 92
   },
   {
     "id": "aeronautica_flight_suit_aoa",
