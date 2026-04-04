@@ -86,7 +86,7 @@ const TalentsTab = {
         // Get dynamic options based on choice type
         const options = this.getChoiceOptions(talent);
 
-        if (talent.choiceType === 'freeform') {
+        if (talent.choiceType === 'freeform' || talent.choiceType === 'keyword') {
             // Freeform text input
             optionsContainer.classList.add('hidden');
             freeformContainer.classList.remove('hidden');
