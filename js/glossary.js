@@ -6,6 +6,7 @@ const Glossary = {
     popupIdCounter: 0,
     _hoverTimer: null,
     _closeTimer: null,
+    _pinned: false,
 
     async init() {
         // Load glossary data
@@ -190,9 +191,16 @@ const Glossary = {
     attachHandlers(container) {
         const terms = container.querySelectorAll('.glossary-term');
         terms.forEach(term => {
-            // Add click handler (primary for mobile / touch)
+            // Click handler — pins the popup so it stays open
             term.addEventListener('click', (e) => {
                 clearTimeout(this._hoverTimer);
+                clearTimeout(this._closeTimer);
+                // If hover popup is open, pin it instead of opening a new one
+                if (this.popupStack.length > 0 && !this._pinned) {
+                    this._pinned = true;
+                    return;
+                }
+                this._pinned = true;
                 this.handleTermClick(e);
             });
 
@@ -200,8 +208,8 @@ const Glossary = {
             term.addEventListener('mouseenter', (e) => {
                 clearTimeout(this._closeTimer);
                 this._hoverTimer = setTimeout(() => {
-                    // Only show hover popup if no popups are open (avoid conflict with click)
-                    if (this.popupStack.length === 0) {
+                    // Only show hover popup if no popups are pinned or open
+                    if (this.popupStack.length === 0 && !this._pinned) {
                         this.handleTermClick(e);
                     }
                 }, 300);
@@ -209,9 +217,12 @@ const Glossary = {
 
             term.addEventListener('mouseleave', () => {
                 clearTimeout(this._hoverTimer);
-                this._closeTimer = setTimeout(() => {
-                    this.closeAllPopups();
-                }, 200);
+                // Only auto-close if popup is not pinned
+                if (!this._pinned) {
+                    this._closeTimer = setTimeout(() => {
+                        this.closeAllPopups();
+                    }, 200);
+                }
             });
         });
     },
@@ -304,9 +315,12 @@ const Glossary = {
             clearTimeout(this._closeTimer);
         });
         popup.addEventListener('mouseleave', () => {
-            this._closeTimer = setTimeout(() => {
-                this.closeAllPopups();
-            }, 200);
+            // Only auto-close if popup is not pinned
+            if (!this._pinned) {
+                this._closeTimer = setTimeout(() => {
+                    this.closeAllPopups();
+                }, 200);
+            }
         });
 
         // Add to document
@@ -362,6 +376,7 @@ const Glossary = {
             popup.remove();
             this.popupStack = this.popupStack.filter(id => id !== popupId);
         }
+        if (this.popupStack.length === 0) this._pinned = false;
     },
 
     closeTopPopup() {
@@ -372,6 +387,7 @@ const Glossary = {
                 popup.remove();
             }
         }
+        if (this.popupStack.length === 0) this._pinned = false;
     },
 
     closeAllPopups() {
@@ -382,6 +398,7 @@ const Glossary = {
             }
         }
         this.popupStack = [];
+        this._pinned = false;
     },
 
     // Utility method to process and attach handlers to an element
