@@ -3835,8 +3835,8 @@
     "page": 257
   },
   {
-    "id": "one_or_more_allied_aeldari_or_drukhari_saga_of_majesty_aoa",
-    "name": "one or more allied Aeldari or Drukhari Saga of Majesty (Abundance of Apocrypha)",
+    "id": "saga_of_majesty_aoa",
+    "name": "Saga of Majesty (Abundance of Apocrypha)",
     "cost": 20,
     "prerequisites": {
       "attributes": {
@@ -3846,10 +3846,10 @@
         "SPACE WOLVES"
       ]
     },
-    "effect": "You may spend a point of Wrath to immediately pass a Resolve test. In addition, when you pass a Resolve test, you may spend one or more Glory to rally and inspire others: all characters with the IMPERIUM keyword within 15m heal Shock equal to twice the amount of Glory spent. Saga of the Bear",
+    "effect": "You may spend a point of Wrath to immediately pass a Resolve test. In addition, when you pass a Resolve test, you may spend one or more Glory to rally and inspire others: all characters with the IMPERIUM keyword within 15m heal Shock equal to twice the amount of Glory spent.",
     "flavor": "You are like the warrior-kings of Fenris, wise and mighty, inspiring others to acts of valour and greatness.",
     "source": "apocrypha",
-    "page": null
+    "page": 242
   },
   {
     "id": "only_in_death_does_duty_end_aoa",
