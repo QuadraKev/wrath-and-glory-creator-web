@@ -5709,7 +5709,7 @@
       "cost": 10,
       "source": "dh",
       "page": 117,
-      "description": "The power is named 'Malefic Invitation', not 'Minor Invocation'. Its effect: The mind of a psyker is a siren call to the hostile denizens of the warp. The most foolhardy deliberately flirt with such attentions, temporarily playing host to the power of a daemonic patron... Choose a Troop-level Threat for your Tier that has the DAEMON and CHAOS Keywords. For the duration of the power, you gain access to the Threat's Bonuses and Abilities (including Daemonic Determination)..."
+      "description": "The mind of a psyker is a siren call to the hostile denizens of the warp. The most foolhardy deliberately flirt with such attentions, temporarily playing host to the power of a daemonic patron. Not every Daemon is willing to leave the Materium once their host is done with them.\nChoose a Troop-level Threat for your Tier that has the DAEMON and CHAOS Keywords. For the duration of the power, you gain access to the Threat's Bonuses and Abilities (including Daemonic Determination). You cannot use effects that require you to spend Ruin, or use equipment you do not have, and use your own stats for any Tests required to activate the Daemon's powers. When the power ends, make a Conviction Test, with a DN equal to the possessing Daemon's Willpower. If you fail, the Daemon makes a permanent home in your body, per the Dark Passenger Perils of the Warp effect."
     },
     "warptime": {
       "name": "Warptime",

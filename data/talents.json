@@ -1788,7 +1788,7 @@
         "leadership": 4
       }
     },
-    "effect": "Your devotees are a Mob of any Troop level Threat, as described in Chapter 14: Bestiary. A number of devotees...",
+    "effect": "Through reputation or assignment, you have gathered a number of followers that will do whatever you ask. If you are attacked, they intervene.\nYour devotees are a Mob of any Troop level Threat, as described in Chapter 14: Bestiary. A number of devotees equal to Double Rank +2 have decided to follow you. You may use the stats presented in Chapter 14 for each devotee, or use the following rules:\nDevotee Attributes are equal to 1 + Double Rank. Devotee Skills are equal to 1 + Double Rank. A devotee's Attributes and Skills cannot be higher than your own.\nWhenever you are hit by any form of attack, any of your devotees may make a DN5 Initiative Test as a Reflexive Action. If they succeed, the attack kills the devotee instead of hitting you.\nSlain devotees may be replaced for free with new devotees the next time you visit a major encampment or city.\nIf you take this Talent more than once, you gain more devotees of the same type you already possess.\nIf you already have followers from an archetype ability, this Talent provides additional followers of that type instead.",
     "flavor": "Through reputation or assignment, you have gathered a number of followers that will do whatever you ask. If you are attacked, they intervene.",
     "source": "core",
     "page": 132
@@ -5033,7 +5033,7 @@
         "ASTRA MILITARUM"
       ]
     },
-    "effect": "...Grenade launcher. You also receive 3 frag and 3 krak grenades\nHot-Shot Volley Gun (TEMPESTUS SCION only).",
+    "effect": "Many soldiers of the Astra Militarum receive training in the use of specialty weapons on the battlefield. Often, this training includes basic chants to appease the weapon's war-spirit if it becomes obstinate or recalcitrant.\nYou may select one of the following weapons as standard Wargear, replacing your primary weapon:\nCombat Shotgun, Plasma Gun, Meltagun, Long Las, Flamer, Grenade launcher (you also receive 5 frag and 3 krak grenades), or Hot-Shot Volley Gun (TEMPESTUS SCION only).",
     "flavor": "Many soldiers of the Astra Militarum receive training in the use of specialty weapons on the battlefield. Often, this training includes basic chants to appease the weapon's war-spirit if it becomes obstinate or recalcitrant.",
     "requiresChoice": true,
     "choiceType": "weapon",

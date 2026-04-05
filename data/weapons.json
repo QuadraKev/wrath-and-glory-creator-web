@@ -3570,7 +3570,7 @@
     "name": "Phosphor Serpenta",
     "type": "ranged",
     "category": "Exotic",
-    "description": "...Those struck by a slavo of vile phosphor burn quickly...",
+    "description": "A chemical sidearm of antique design, a Phosphex Serpenta fires searing incendiary bolts that cause toxic conflagrations. Those struck by a salvo of vile phosphor burn quickly as it sizzles through flesh and armour, and those that survive soon find the bright explosive burst makes them an easier target for follow-up shots.",
     "damage": {
       "base": 12,
       "attribute": null,
@@ -10475,7 +10475,7 @@
     "name": "Avachrus XII 'Gravefiller' Pattern Shotgun",
     "type": "ranged",
     "category": "Solid Projectile Weapons",
-    "description": "In the illustrious manufactorums of Avachrus, the Shotgun variant known across Gilead by the rank and file of the Astra Militarum as the 'Gravefiller' is produced en masse. The Avachrus XII is a non-standard, fully automatic, drum-fed combat Shotgun, commonly carried by officers and engineers of the Gilead Gravediggers. When operated on fully automatic, its extensive magazine allows it to create a continuous hail of deadly shot which can quickly suppress enemy movement. The robust stock is fully removable and also functions as a multi-purpose entrenchment tool.",
+    "description": "Carried by only a handful of bodyguards and servants who protect the hallowed priests and cardinals in the upper echelons of Enoch's many spires, the Avachrus II-B is a rare and illustrious firearm. This variant is a magazine-fed, triple barrelled Combat Shotgun enclosed in a solid adamantium casing and capable of both single and semi-automatic firing. Originally produced in the manufactorums of Avachrus, longstanding and ancient decree sees each completed weapon then transported to Enoch under the watchful eye of the Archdeacon Mertramar Clade — this despite a longstanding rivalry between the two worlds that borders on outright disgust.\nHere the II-B undergoes a sequence of sacred blessings and sanctification rituals. Once blessed and purified the weapon is biometrically locked to its designated user. This lengthy and arduous process ensures that only those in service to individuals held in the highest regard within the priesthood may requisition one, and outside of Enoch's highest spires they remain a rare, yet deadly, sight.",
     "damage": {
       "base": 8,
       "attribute": null,
@@ -10509,7 +10509,7 @@
     "name": "Avachrus II-B Enochian Sanctified Shotgun",
     "type": "ranged",
     "category": "Solid Projectile Weapons",
-    "description": "...Here the II-B undergoes a sequence of sacred blessings and sanctification rituals. Once blessed and purified the weapon is biometrically locked to its designated user.",
+    "description": "Carried by only a handful of bodyguards and servants who protect the hallowed priests and cardinals in the upper echelons of Enoch's many spires, the Avachrus II-B is a rare and illustrious firearm. This variant is a magazine-fed, triple barrelled Combat Shotgun enclosed in a solid adamantium casing and capable of both single and semi-automatic firing. Originally produced in the manufactorums of Avachrus, longstanding and ancient decree sees each completed weapon then transported to Enoch under the watchful eye of the Archdeacon Mertramar Clade \u2014 this despite a longstanding rivalry between the two worlds that borders on outright disgust.\nHere the II-B undergoes a sequence of sacred blessings and sanctification rituals. Once blessed and purified the weapon is biometrically locked to its designated user. This lengthy and arduous process ensures that only those in service to individuals held in the highest regard within the priesthood may requisition one, and outside of Enoch's highest spires they remain a rare, yet deadly, sight.",
     "damage": {
       "base": 10,
       "attribute": null,
@@ -11887,7 +11887,7 @@
     "name": "Shardnet",
     "type": "melee",
     "category": "Aeldari",
-    "description": "...The net deals damage every Turn or until the target succeeds on an Opposed Strength Test against the attacker (or DN 5, if the net was thrown), disentangling themself.",
+    "description": "Shardnets are weighted wire mesh covered in vicious hooks and barbs. They administer electric shocks to entangled victims, greatly impairing their ability to defend themselves, while also causing involuntary muscle spasms that cause the hooks to tear deeper. The net deals damage every Turn or until the target succeeds on an Opposed Strength Test against the attacker (or DN 5, if the net was thrown), disentangling themself.",
     "damage": {
       "base": 7,
       "attribute": null,
@@ -11996,7 +11996,7 @@
     "name": "Mindphase Gauntlet",
     "type": "melee",
     "category": "Aeldari",
-    "description": "...Multiple hits stack; even a mighty Genestealer Patriarch may be rendered slack-jawed and docile by this terrifying weapon.",
+    "description": "A Mindphase Gauntlet resembles an emaciated, skeletal hand. It counts as an unarmed attack and does not deal damage conventionally. Instead, it saps strength and willpower. A character hit by a Mindphase Gauntlet must pass a DN 3 Willpower Test or lose 1 Willpower until the end of combat. Multiple hits stack; even a mighty Genestealer Patriarch may be rendered slack-jawed and docile by this terrifying weapon.",
     "damage": {
       "base": 0,
       "attribute": "strength",

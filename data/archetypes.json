@@ -5440,7 +5440,7 @@
   {
     "id": "arbites_subductor_aoa",
     "name": "Arbites Subductor (Abundance of Apocrypha)",
-    "description": "While wielding a shield, you may take the Full Defence action as a Simple Action, rather than a Full-Round Action, and you may add +1 die to the Initiative Test for each ally wielding a Shield within ...",
+    "description": "While wielding a shield, you may take the Full Defence action as a Simple Action, rather than a Full-Round Action, and you may add +1 die to the Initiative Test for each ally wielding a Shield within Rank metres.",
     "tier": 2,
     "species": [
       "human"
@@ -5526,7 +5526,7 @@
   {
     "id": "banisher_aoa",
     "name": "Banisher (Abundance of Apocrypha)",
-    "description": "You have +1 Faith Point. When you attempt an Intimidation or Persuasion Interaction Attack against a DAEMON, you may spend one Faith point to invoke the Litany of Purity. If the Interaction Attack suc...",
+    "description": "You have +1 Faith Point. When you attempt an Intimidation or Persuasion Interaction Attack against a DAEMON, you may spend one Faith point to invoke the Litany of Purity. If the Interaction Attack succeeds, the DAEMON is Pinned in addition to other effects, and suffers 1d3 Mortal Wounds, +1 per Exalted Icon shifted.",
     "tier": 2,
     "species": [
       "human"
@@ -5572,7 +5572,7 @@
   {
     "id": "black_sentinel_aoa",
     "name": "Black Sentinel (Abundance of Apocrypha)",
-    "description": "You are trained to react swiftly to psychic phenomena. When a PSYKER within Double Rank metres of you attempts to use a Psychic Power, or suffers Perils of the Warp, you may use your Reflexive action ...",
+    "description": "You are trained to react swiftly to psychic phenomena. When a PSYKER within Double Rank metres of you attempts to use a Psychic Power, or suffers Perils of the Warp, you may use your Reflexive action to immediately attack that Psyker. If the attack inflicts one or more Wounds, the psychic power and any accompanying Perils of the Warp immediately fails. If you use this ability on a Friendly Psyker, you may choose to reduce the damage inflicted by up to Rank.",
     "tier": 2,
     "species": [
       "custodian_aoa"
@@ -5618,7 +5618,7 @@
   {
     "id": "bonesinger_aoa",
     "name": "Bonesinger (Abundance of Apocrypha)",
-    "description": "You are a psyker; you know the Smite and Vaul's Song psychic powers and may purchase other powers from the Divination discipline, the Runes of Shaping discipline, and one other discipline of your choi...",
+    "description": "You are a psyker; you know the Smite and Vaul's Song psychic powers and may purchase other powers from the Divination discipline, the Runes of Shaping discipline, and one other discipline of your choice.",
     "tier": 2,
     "species": [
       "aeldari",
@@ -5713,7 +5713,7 @@
   {
     "id": "calculus_logi_aoa",
     "name": "Calculus Logi (Abundance of Apocrypha)",
-    "description": "Whenever you succeed at an Investigation or Scholar test, and shift an Exalted Icon to gain additional information, you may ask a number of additional questions equal to your Rank. In addition, at the...",
+    "description": "Whenever you succeed at an Investigation or Scholar test, and shift an Exalted Icon to gain additional information, you may ask a number of additional questions equal to your Rank. In addition, at the start of a scene, you may spend 1 Glory to ask the GM to give you a number of facts about the location or situation equal to your Rank.",
     "tier": 2,
     "species": [
       "human"
@@ -5974,7 +5974,7 @@
   {
     "id": "historitor_investigatus_aoa",
     "name": "Historitor-Investigatus (Abundance of Apocrypha)",
-    "description": "Your studies are broad and deep, and your wealth of knowledge can serve you in all manner of ways. When you make a skill test, you may spend 1 Wrath to use your Scholar (Int) dice pool instead of the ...",
+    "description": "Your studies are broad and deep, and your wealth of knowledge can serve you in all manner of ways. When you make a skill test, you may spend 1 Wrath to use your Scholar (Int) dice pool instead of the dice pool you would normally have used for that skill test.",
     "tier": 2,
     "species": [
       "human"
@@ -6017,7 +6017,7 @@
   {
     "id": "inquisitorial_storm_trooper_aoa",
     "name": "Inquisitorial Storm Trooper (Abundance of Apocrypha)",
-    "description": "At the start of the first round of combat, before any actions are taken, select a single enemy you can see or who you know for certain is present in the scene. They are your priority target. Against y...",
+    "description": "At the start of the first round of combat, before any actions are taken, select a single enemy you can see or who you know for certain is present in the scene. They are your priority target. Against your priority target, you may re-roll up to Rank dice on all Awareness tests and attacks. Once your priority target has been slain, you may select a new priority target as a Simple Action.",
     "tier": 2,
     "species": [
       "human"
@@ -6198,7 +6198,7 @@
   {
     "id": "imperial_navy_breacher_aoa",
     "name": "Imperial Navy Breacher (Abundance of Apocrypha)",
-    "description": "When you take your turn, you may use a Simple Action to prepare for an ally within 6m of you. If you do so, you may Keep the Initiative to allow that ally to take a turn, without needing to spend Glor...",
+    "description": "When you take your turn, you may use a Simple Action to prepare for an ally within 6m of you. If you do so, you may Keep the Initiative to allow that ally to take a turn, without needing to spend Glory. This ability does not function if the chosen ally has already taken a turn, and it does not allow you to Keep the Initiative if you normally couldn't. You may use this a number of times each scene equal to your Rank.",
     "tier": 2,
     "species": [
       "human"
@@ -6238,7 +6238,7 @@
   {
     "id": "imperial_navy_officer_aoa",
     "name": "Imperial Navy Officer (Abundance of Apocrypha)",
-    "description": "You gain +Rank bonus dice on all Leadership skill tests to command, bolster, or rally NAVIS IMPERIALIS characters, or to issue orders aboard a starship. Further, NAVIS IMPERIALIS characters within 6m ...",
+    "description": "You gain +Rank bonus dice on all Leadership skill tests to command, bolster, or rally NAVIS IMPERIALIS characters, or to issue orders aboard a starship. Further, NAVIS IMPERIALIS characters within 6m of you may add your Rank bonus to their Resolve.",
     "tier": 2,
     "species": [
       "human"
@@ -6321,7 +6321,7 @@
   {
     "id": "painboy_aoa",
     "name": "Painboy (Abundance of Apocrypha)",
-    "description": "All Betta You add Double Rank bonus dice to all Medicae tests made on characters with the ORK keyword. In addition, when making a Medicae test on an ORK character outside of combat, you may spend an E...",
+    "description": "You add Double Rank bonus dice to all Medicae tests made on characters with the ORK keyword. In addition, when making a Medicae test on an ORK character outside of combat, you may spend an Exalted Icon to remove a single Traumatic Injury immediately, as you crudely reattach lost body parts.",
     "tier": 2,
     "species": [
       "ork"
@@ -6359,7 +6359,7 @@
   {
     "id": "reaver_aoa",
     "name": "Reaver (Abundance of Apocrypha)",
-    "description": "While riding a Reaver Jetbike, you may attempt to roll Determination against damage inflicted to your vehicle: roll dice equal to your Pilot dice pool, or the Jetbike's Handling score, whichever is hi...",
+    "description": "While riding a Reaver Jetbike, you may attempt to roll Determination against damage inflicted to your vehicle; roll dice equal to your Pilot dice pool, or the Jetbike's Handling score, whichever is higher. Each Icon converts Wounds to Shock as normal. In addition, you may add +Rank ED to the damage of your Reaver Jetbike's Bladevanes.",
     "tier": 2,
     "species": [
       "drukhari_aoa"
@@ -6401,7 +6401,7 @@
   {
     "id": "rogue_psyker_aoa",
     "name": "Rogue Psyker (Abundance of Apocrypha)",
-    "description": "You are a psyker; you have all the Universal psyker abilities, you know the Smite psychic power. You know the Maleficarum discipline, and receive one power from that Discipline, and you may select one...",
+    "description": "You are a psyker; you have all the Universal psyker abilities, you know the Smite psychic power. You know the Maleficarum discipline, and receive one power from that Discipline, and you may select one other Psychic Discipline of your choice to learn powers from. Further, when you use a psychic power, you may re-roll up to Tier dice on your Psychic Mastery test, but each dice you re-roll counts as an additional Wrath Complication. In addition, you gain 1d3x2 Corruption when you select this Archetype.",
     "tier": 2,
     "species": [
       "human"
@@ -6458,7 +6458,7 @@
   {
     "id": "runtherd_aoa",
     "name": "Runtherd (Abundance of Apocrypha)",
-    "description": "You are accompanied by a mob of Grots equal to your Rank x4. If any of your Grots die, they can be replaced between sessions at the GM's discretion. All Grots, Snotlings, and Squigs within 10...",
+    "description": "You are accompanied by a mob of Grots equal to your Rank x4. If any of your Grots die, they can be replaced between sessions at the GM's discretion. All Grots, Snotlings, and Squigs within 10 + Rank metres of you add your Leadership to their Resolve.",
     "tier": 2,
     "species": [
       "ork"
@@ -6498,7 +6498,7 @@
   {
     "id": "scourge_aoa",
     "name": "Scourge (Abundance of Apocrypha)",
-    "description": "As long as you do not touch the ground at any point during your turn, you increase your Flying speed by +Rank. You add +Rank bonus dice to any ranged attack made while you are flying, against any enem...",
+    "description": "As long as you do not touch the ground at any point during your turn, you increase your Flying speed by +Rank. You add +Rank bonus dice to any ranged attack made while you are flying, against any enemy who is on the ground.",
     "tier": 2,
     "species": [
       "drukhari_aoa"
@@ -6539,7 +6539,7 @@
   {
     "id": "seeker_aoa",
     "name": "Seeker (Abundance of Apocrypha)",
-    "description": "Whenever you make an Awareness (Int) test to detect a hidden enemy, you may add +Rank bonus dice to your test. During combat, at the start of your turn, you may suffer 1 Shock to add +Rank to your Pas...",
+    "description": "Whenever you make an Awareness (Int) test to detect a hidden enemy, you may add +Rank bonus dice to your test. During combat, at the start of your turn, you may suffer 1 Shock to add +Rank to your Passive Awareness until the start of your next turn.",
     "tier": 2,
     "species": [
       "human"
@@ -6627,7 +6627,7 @@
   {
     "id": "skitarius_vanguard_aoa",
     "name": "Skitarius Vanguard (Abundance of Apocrypha)",
-    "description": "You do not bleed (making you immune to Bleeding), and gain +Rank bonus dice to Determination rolls. In addition, any living creature without the ADEPTUS MECHANICUS keyword within 2 metres of you at th...",
+    "description": "You do not bleed (making you immune to Bleeding), and gain +Rank bonus dice to Determination rolls. In addition, any living creature without the ADEPTUS MECHANICUS keyword within 2 metres of you at the start of their turn must pass a DN 3 Toughness Test or suffer the Poisoned condition. This poison is radiation poisoning, inflicting 1 Mortal Wound and Rank Shock at the start of each of the Poisoned character's turns.",
     "tier": 2,
     "species": [
       "human"
@@ -6665,7 +6665,7 @@
   {
     "id": "speculor_aoa",
     "name": "Speculor (Abundance of Apocrypha)",
-    "description": "You possess numerous cover identities. You can create up to Rank alternative identities, which function in the same way as with the Secret Identity talent. You may only use one identity at a time, and...",
+    "description": "You possess numerous cover identities. You can create up to Rank alternative identities, which function in the same way as with the Secret Identity talent. You may only use one identity at a time, and if one is revealed or exposed, you may replace it with a new identity. These identities have their own Influence score, with a bonus starting at +0. When you use one of your identities, you may re-roll up to double Rank bonus dice on Deception tests.",
     "tier": 2,
     "species": [
       "human"
@@ -6824,7 +6824,7 @@
   {
     "id": "transmechanic_aoa",
     "name": "Transmechanic (Abundance of Apocrypha)",
-    "description": "You can silently communicate with any vox or similar communications device within Rank x100 kilometres. You may also make Awareness (Int) or Investigation (Int) tests to detect concealed signals and s...",
+    "description": "You can silently communicate with any vox or similar communications device within Rank x100 kilometres. You may also make Awareness (Int) or Investigation (Int) tests to detect concealed signals and study intercepted signals. You add +Rank bonus dice to any Investigation (Int) or Scholar (Int) test to decipher a code, translate a language, or create a new cipher.",
     "tier": 2,
     "species": [
       "human"
@@ -6866,7 +6866,7 @@
   {
     "id": "arch_confessor_aoa",
     "name": "Arch-Confessor (Abundance of Apocrypha)",
-    "description": "You add +Double Rank to all Persuasion Interaction attacks against targets with the IMPERIUM, SCUM, or HERETIC keywords. In addition, you may spend a Wrath point to make yourself Frenzied; If you do s...",
+    "description": "You add +Double Rank to all Persuasion Interaction attacks against targets with the IMPERIUM, SCUM, or HERETIC keywords. In addition, you may spend a Wrath point to make yourself Frenzied; if you do so, then you may make all allies with the IMPERIUM keyword within 15 +Double Rank metres Frenzied as well.",
     "tier": 3,
     "species": [
       "human"
@@ -6909,7 +6909,7 @@
   {
     "id": "brôkhyr_iron_master_aoa",
     "name": "Brôkhyr Iron-Master (Abundance of Apocrypha)",
-    "description": "You receive +Rank on Tech tests to repair a damaged LEAGUES OF VOTANN machine, or to craft a new one. You may re-roll up to Rank dice on any skill test made to use a device you've personally built. Yo...",
+    "description": "You receive +Rank on Tech tests to repair a damaged LEAGUES OF VOTANN machine, or to craft a new one. You may re-roll up to Rank dice on any skill test made to use a device you've personally built. You are considered to have built all of your starting wargear personally.",
     "tier": 3,
     "species": [
       "kin_aoa"
@@ -7000,7 +7000,7 @@
   {
     "id": "chastener_aoa",
     "name": "Chastener (Abundance of Apocrypha)",
-    "description": "Interrogate You add +Rank bonus dice to all Intimidation and Insight tests during an interrogation. In addition, when you make an attack with an Agonizing weapon and your target exceeds their Max Woun...",
+    "description": "You add +Rank bonus dice to all Intimidation and Insight tests during an interrogation. In addition, when you make an attack with an Agonizing weapon and your target exceeds their Max Wounds as a result, you may choose for them to become unconscious (unable to take further action, unaware of their surroundings) rather than dying.",
     "tier": 3,
     "species": [
       "human"
@@ -7180,7 +7180,7 @@
   {
     "id": "detective_aoa",
     "name": "Detective (Abundance of Apocrypha)",
-    "description": "You gain +Rank bonus dice on all Deception tests make to disguise yourself or present yourself as someone else. In addition, you may spend an Exalted Icon from a Deception test to grant yourself the u...",
+    "description": "You gain +Rank bonus dice on all Deception tests made to disguise yourself or present yourself as someone else. In addition, you may spend an Exalted Icon from a Deception test to grant yourself the use of a Keyword which you don't normally possess. This keyword must relate to your current disguise or alias.",
     "tier": 3,
     "species": [
       "human"
@@ -7227,7 +7227,7 @@
   {
     "id": "dire_avenger_aspect_warrior_aoa",
     "name": "Dire Avenger Aspect Warrior (Abundance of Apocrypha)",
-    "description": "When an enemy concludes their movement within 3 +Rank metres of you, you may make a ranged attack against them as a Reflexive Action, adding +2 to the DN of the attack. This attack is resolved before ...",
+    "description": "When an enemy concludes their movement within 3 +Rank metres of you, you may make a ranged attack against them as a Reflexive Action, adding +2 to the DN of the attack. This attack is resolved before the enemy moves. This attack is considered a Salvo attack.",
     "tier": 3,
     "species": [
       "aeldari",
@@ -7448,7 +7448,7 @@
   {
     "id": "havoc_aoa",
     "name": "Havoc (Abundance of Apocrypha)",
-    "description": "When you roll a 6 on your Wrath die when making a ranged attack, you may forego the critical hit and spend a reload in order to make a second ranged attack with that weapon. This second attack cannot ...",
+    "description": "When you roll a 6 on your Wrath die when making a ranged attack, you may forego the critical hit and spend a reload in order to make a second ranged attack with that weapon. This second attack cannot produce further attacks. In addition, you gain 1d3x3 Corruption when you select this Archetype.",
     "tier": 3,
     "species": [
       "astartes"
@@ -7588,7 +7588,7 @@
   {
     "id": "legionary_aoa",
     "name": "Legionary (Abundance of Apocrypha)",
-    "description": "When you inflict a critical hit, you count as having spent 1 Glory to improve the effect. You may still spend additional Glory to improve the effect further. In addition, you gain 1d3x3 Corruption whe...",
+    "description": "When you inflict a critical hit, you count as having spent 1 Glory to improve the effect. You may still spend additional Glory to improve the effect further. In addition, you gain 1d3x3 Corruption when you select this Archetype.",
     "tier": 3,
     "species": [
       "astartes"
@@ -7868,7 +7868,7 @@
   {
     "id": "apothecary_aoa",
     "name": "Apothecary (Abundance of Apocrypha)",
-    "description": "Whenever you succeed at a Medicae test upon a Dying ally with the ADEPTUS ASTARTES keyword, gain 1 Wrath. In addition, you gain +Rank to Resolve and Determination while you can see or hear one or more...",
+    "description": "Whenever you succeed at a Medicae test upon a Dying ally with the ADEPTUS ASTARTES keyword, gain 1 Wrath. In addition, you gain +Rank to Resolve and Determination while you can see or hear one or more Dying Adeptus Astartes allies.",
     "tier": 3,
     "species": [
       "astartes"
@@ -7919,7 +7919,7 @@
   {
     "id": "primaris_apothecary_aoa",
     "name": "Primaris Apothecary (Abundance of Apocrypha)",
-    "description": "Whenever you succeed at a Medicae test upon a Dying ally with the ADEPTUS ASTARTES keyword, gain 1 Wrath. In addition, you gain +Rank to Resolve and Determination while you can see or hear one or more...",
+    "description": "Whenever you succeed at a Medicae test upon a Dying ally with the ADEPTUS ASTARTES keyword, gain 1 Wrath. In addition, you gain +Rank to Resolve and Determination while you can see or hear one or more Dying Adeptus Astartes allies.",
     "tier": 4,
     "species": [
       "primaris"
@@ -8058,7 +8058,7 @@
   {
     "id": "verispex_adept_aoa",
     "name": "Verispex Adept (Abundance of Apocrypha)",
-    "description": "Investigation You have seen enough crime scenes that you can quickly identify common patterns. When you shift one or more Exalted Icons on an Investigation test, you count as having shifted +Rank addi...",
+    "description": "You have seen enough crime scenes that you can quickly identify common patterns. When you shift one or more Exalted Icons on an Investigation test, you count as having shifted +Rank additional Exalted Icons (this doesn't affect whether you pass or fail, just the number of extra benefits you get from shifting).",
     "tier": 3,
     "species": [
       "human"
@@ -8251,7 +8251,7 @@
   {
     "id": "dark_apostle_aoa",
     "name": "Dark Apostle (Abundance of Apocrypha)",
-    "description": "You, and all allies with the CHAOS keyword within 15+Rank metres add +Rank to Resolve. This increases to +Double Rank if they share your [MARK OF CHAOS] or [LEGION] keyword. In addition, you gain 1d3x...",
+    "description": "You, and all allies with the CHAOS keyword within 15+Rank metres add +Rank to Resolve. This increases to +Double Rank if they share your [MARK OF CHAOS] or [LEGION] keyword. In addition, you gain 1d3x4 Corruption when you select this Archetype.",
     "tier": 4,
     "species": [
       "astartes"
@@ -8303,7 +8303,7 @@
   {
     "id": "genetor_aoa",
     "name": "Genetor (Abundance of Apocrypha)",
-    "description": "You add +Rank bonus dice to any Medicae test you attempt and take only half as long to perform a Medicae test. In addition, your bioengineered and genetic augmentations increase your Max Wounds and Ma...",
+    "description": "You add +Rank bonus dice to any Medicae test you attempt and take only half as long to perform a Medicae test. In addition, your bioengineered and genetic augmentations increase your Max Wounds and Max Shock by +Rank.",
     "tier": 4,
     "species": [
       "human"
@@ -8347,7 +8347,7 @@
   {
     "id": "grimnyr_aoa",
     "name": "Grimnyr (Abundance of Apocrypha)",
-    "description": "You are a Psyker; you know the Smite psychic power. You know one power from the Skeinwrought discipline and may learn other powers from the Skeinwrought discipline. In addition, add +1 Resolve to alli...",
+    "description": "You are a Psyker; you know the Smite psychic power. You know one power from the Skeinwrought discipline and may learn other powers from the Skeinwrought discipline. In addition, add +1 Resolve to allies with the LEAGUES OF VOTANN keyword within 6m.",
     "tier": 4,
     "species": [
       "kin_aoa"
@@ -8413,7 +8413,7 @@
   {
     "id": "kâhl_aoa",
     "name": "Kâhl (Abundance of Apocrypha)",
-    "description": "As a Free Action at the start of each of your turns, you may spend 1 Glory to Judge a single enemy you can see. You may also Judge an enemy for free as a Reflexive Action if they kill a LEAGUES OF VOT...",
+    "description": "As a Free Action at the start of each of your turns, you may spend 1 Glory to Judge a single enemy you can see. You may also Judge an enemy for free as a Reflexive Action if they kill a LEAGUES OF VOTANN ally. You may have a maximum number of enemies Judged equal to twice your Rank. Whenever a Judged enemy is slain or leaves the scene, they are no longer Judged, and you may choose to remove the Judged state from an enemy when you Judge a new enemy. When a LEAGUES OF VOTANN ally makes an attack against a Judged enemy, for each Exalted Icon shifted for damage, add +2ED rather than +1ED.",
     "tier": 4,
     "species": [
       "kin_aoa"
@@ -8506,7 +8506,7 @@
   {
     "id": "logis_aoa",
     "name": "Logis (Abundance of Apocrypha)",
-    "description": "You may purchase psychic powers from the Divination discipline even though you are not a Psyker, and you know one power from that Discipline. Using these powers requires an Investigation test in place...",
+    "description": "You may purchase psychic powers from the Divination discipline even though you are not a Psyker, and you know one power from that Discipline. Using these powers requires an Investigation test in place of a Psychic Mastery test, and you do not choose a power level. Use of these abilities is not considered a psychic power. A Complication that results from one of these abilities inflicts 1d3+1 Shock, due to logic errors and paradoxical outcomes.",
     "tier": 4,
     "species": [
       "human"
@@ -8548,7 +8548,7 @@
   {
     "id": "magos_aoa",
     "name": "Magos (Abundance of Apocrypha)",
-    "description": "You halve the time it takes to attempt any Tech test, and you add +Double Rank bonus dice to interact with machinery. In addition, as a Simple Action you may invoke one of the Canticles of the Omnissi...",
+    "description": "You halve the time it takes to attempt any Tech test, and you add +Double Rank bonus dice to interact with machinery. In addition, as a Simple Action you may invoke one of the Canticles of the Omnissiah.",
     "tier": 4,
     "species": [
       "human"
@@ -8591,7 +8591,7 @@
   {
     "id": "navis_scion_aoa",
     "name": "Navis Scion (Abundance of Apocrypha)",
-    "description": "You are trained to be able to guide a starship through the Warp. In addition, you are a PSYKER, and may only learn and use Navigator powers. You begin with the Lidless Stare power and one other Naviga...",
+    "description": "You are trained to be able to guide a starship through the Warp. In addition, you are a PSYKER, and may only learn and use Navigator powers. You begin with the Lidless Stare power and one other Navigator power. Finally, your status and influence are such that you gain +Rank bonus dice on Persuasion (Fel) Tests and Influence tests made to negotiate or to acquire goods and services.",
     "tier": 4,
     "species": [
       "navigator_aoa"
@@ -8656,7 +8656,7 @@
   {
     "id": "noise_marine_aoa",
     "name": "Noise Marine (Abundance of Apocrypha)",
-    "description": "You add +Double Rank bonus dice on Awareness and Insight tests that relate specifically to hearing, and you can pick out sounds, and variations in sounds that a normal human cannot. Further, you recov...",
+    "description": "You add +Double Rank bonus dice on Awareness and Insight tests that relate specifically to hearing, and you can pick out sounds, and variations in sounds that a normal human cannot. Further, you recover Rank Shock at the end of every turn, as you revel in the din of battle. However, if you reach Max Shock, you are Staggered as well as Exhausted, as you are overcome by sensation. In addition, you gain 1d3x4 Corruption when you select this Archetype.",
     "tier": 4,
     "species": [
       "astartes"
@@ -8706,7 +8706,7 @@
   {
     "id": "oblivion_knight_aoa",
     "name": "Oblivion Knight (Abundance of Apocrypha)",
-    "description": "You add +Rank ED to all attacks you make against creatures with the PSYKER or DAEMON keyword. In addition, for the purposes of your Pariah species abilities, and any Pariah-specific talents you posses...",
+    "description": "You add +Rank ED to all attacks you make against creatures with the PSYKER or DAEMON keyword. In addition, for the purposes of your Pariah species abilities, and any Pariah-specific talents you possess, your Willpower is increased by +Rank.",
     "tier": 4,
     "species": [
       "pariah_aoa"
@@ -8756,7 +8756,7 @@
   {
     "id": "nurgle_plague_marine_aoa",
     "name": "Nurgle Plague Marine (Abundance of Apocrypha)",
-    "description": "You may roll Determination against Mortal Wounds. In addition, any Wounds negated by Determination are ignored rather than being converted into Shock. However, your Speed is reduced by 1. In addition,...",
+    "description": "You may roll Determination against Mortal Wounds. In addition, any Wounds negated by Determination are ignored rather than being converted into Shock. However, your Speed is reduced by 1. In addition, you gain 1d3x4 Corruption when you select this Archetype.",
     "tier": 4,
     "species": [
       "astartes"
@@ -8954,7 +8954,7 @@
   {
     "id": "primaris_inceptor_aoa",
     "name": "Primaris Inceptor (Abundance of Apocrypha)",
-    "description": "You run, sprint, or charge using your jump pack, any enemy within 2m of the point where you landed must pass an Agility test (DN 2+Rank) or be knocked prone and suffer a Mortal Wound. Guns Blazing: Wh...",
+    "description": "When you run, sprint, or charge using your jump pack, any enemy within 2m of the point where you landed must pass an Agility test (DN 2+Rank) or be knocked prone and suffer a Mortal Wound. When you wield a pair of Assault Bolters or Plasma Exterminators, you may benefit from the Dual Wield or Simultaneous Strike talents even though those weapons lack the Pistol trait.",
     "tier": 4,
     "species": [
       "primaris"
@@ -9261,7 +9261,7 @@
   {
     "id": "space_marine_librarian_aoa",
     "name": "Space Marine Librarian (Abundance of Apocrypha)",
-    "description": "You are a psyker; you have all the Universal psyker abilities, you know the Smite psychic power. You know the Librarius discipline, and receive one power from that Discipline, and you may select one o...",
+    "description": "You are a psyker; you have all the Universal psyker abilities, you know the Smite psychic power. You know the Librarius discipline, and receive one power from that Discipline, and you may select one other Psychic Discipline of your choice to learn powers from.",
     "tier": 4,
     "species": [
       "astartes"
@@ -9331,7 +9331,7 @@
   {
     "id": "primaris_librarian_aoa",
     "name": "Primaris Librarian (Abundance of Apocrypha)",
-    "description": "You are a psyker; you have all the Universal psyker abilities, you know the Smite psychic power. You know the Librarius discipline, and receive one power from that Discipline, and you may select one o...",
+    "description": "You are a psyker; you have all the Universal psyker abilities, you know the Smite psychic power. You know the Librarius discipline, and receive one power from that Discipline, and you may select one other Psychic Discipline of your choice to learn powers from.",
     "tier": 5,
     "species": [
       "primaris"
@@ -9511,7 +9511,7 @@
   {
     "id": "warpsmith_aoa",
     "name": "Warpsmith (Abundance of Apocrypha)",
-    "description": "You add +Rank to all Tech tests to control or repair daemonic or corrupted technology, or to corrupt Imperial technology. You only take half as long as normal to perform a Tech test. In addition, you ...",
+    "description": "You add +Rank to all Tech tests to control or repair daemonic or corrupted technology, or to corrupt Imperial technology. You only take half as long as normal to perform a Tech test. In addition, you gain 1d3x4 Corruption when you select this Archetype.",
     "tier": 3,
     "species": [
       "astartes"
@@ -9565,7 +9565,7 @@
   {
     "id": "adamus_assassin_aoa",
     "name": "Adamus Assassin (Abundance of Apocrypha)",
-    "description": "When you make a melee attack against a single enemy—not as part of a multi- attack or multi-action—you gain bonus dice on your attack equal to the number of Personal Ruin that enemy possesses. Further...",
+    "description": "When you make a melee attack against a single enemy—not as part of a multi-attack or multi-action—you gain bonus dice on your attack equal to the number of Personal Ruin that enemy possesses. Further, each Exalted Icon rolled on that melee weapon's ED inflicts one Mortal Wound.",
     "tier": 5,
     "species": [
       "human"
@@ -9613,7 +9613,7 @@
   {
     "id": "archon_aoa",
     "name": "Archon (Abundance of Apocrypha)",
-    "description": "You are accompanied by a retinue of 4 + Double Rank Kabalite Trueborn Troops. Allied characters with the [KABAL] or INCUBI keywords within 6 metres may re-roll any die which rolls a 1 when making an a...",
+    "description": "You are accompanied by a retinue of 4 + Double Rank Kabalite Trueborn Troops. Allied characters with the [KABAL] or INCUBI keywords within 6 metres may re-roll any die which rolls a 1 when making an attack.",
     "tier": 5,
     "species": [
       "drukhari_aoa"
@@ -9660,7 +9660,7 @@
   {
     "id": "autarch_aoa",
     "name": "Autarch (Abundance of Apocrypha)",
-    "description": "Whenever an ally who can hear you with fails a Test, you may spend 1 Glory as a Free Action to allow them to re-roll a number of dice equal to your Leadership. In addition, allied [CRAFTWORLD] charact...",
+    "description": "Whenever an ally who can hear you fails a Test, you may spend 1 Glory as a Free Action to allow them to re-roll a number of dice equal to your Leadership. In addition, allied [CRAFTWORLD] characters within 6m of you may re-roll any dice which roll 1 when they make an attack.",
     "tier": 5,
     "species": [
       "aeldari",
@@ -9717,7 +9717,7 @@
   {
     "id": "callidus_assassin_aoa",
     "name": "Callidus Assassin (Abundance of Apocrypha)",
-    "description": "When disguised or otherwise concealing your identity, you gain a Stealth Score based on the total of your Deception test. This score only decreases when you take actions which may reveal your true int...",
+    "description": "When disguised or otherwise concealing your identity, you gain a Stealth Score based on the total of your Deception test. This score only decreases when you take actions which may reveal your true intentions (GM's discretion).",
     "tier": 5,
     "species": [
       "human"
@@ -9823,7 +9823,7 @@
   {
     "id": "eversor_assassin_aoa",
     "name": "Eversor Assassin (Abundance of Apocrypha)",
-    "description": "Each time you kill an enemy or inflict a Critical Hit, recover 1d3+Rank Shock immediately. However, when you suffer one or more Wounds in melee, roll 1d6; on a 4+, the attacker suffers a Mortal Wound....",
+    "description": "Each time you kill an enemy or inflict a Critical Hit, recover 1d3+Rank Shock immediately. However, when you suffer one or more Wounds in melee, roll 1d6; on a 4+, the attacker suffers a Mortal Wound. If you are killed, you detonate, inflicting 10 +4ED damage with AP-2 to everything within Blast (X), where X is your Toughness.",
     "tier": 5,
     "species": [
       "human"
@@ -9881,7 +9881,7 @@
   {
     "id": "haemonculus_aoa",
     "name": "Haemonculus (Abundance of Apocrypha)",
-    "description": "You have no Maximum Shock and cannot suffer Shock for any reason. When you roll Determination, wounds are cancelled entirely rather than transformed into Shock, and you may roll Determination against ...",
+    "description": "You have no Maximum Shock and cannot suffer Shock for any reason. When you roll Determination, wounds are cancelled entirely rather than being converted into Shock, and you may roll Determination against Mortal Wounds. You cannot wear armour, due to your custom physiology.",
     "tier": 5,
     "species": [
       "drukhari_aoa"
@@ -9977,7 +9977,7 @@
   {
     "id": "harlequin_shadowseer_aoa",
     "name": "Harlequin Shadowseer (Abundance of Apocrypha)",
-    "description": "You are a Psyker, and you know the Smite psychic power, and one power from the Phantasmancy discipline. You may learn additional psychic powers from the Divination, Telepathy, and Phantasmancy discipl...",
+    "description": "You are a Psyker, and you know the Smite psychic power, and one power from the Phantasmancy discipline. You may learn additional psychic powers from the Divination, Telepathy, and Phantasmancy disciplines. HARLEQUIN allies within 6 metres of you add +Rank to their Resilience. When you select this Archetype, you may choose to replace Shield from Harm with one of the following: VEIL OF ILLUSION: Whenever a ranged attack targets an ally within 6 metres of you, the attacker counts the range as being +Triple Rank metres longer than it actually is. GLOOMWAKE: Allies within 6 metres of you receive +Rank Defence against ranged attacks. This is considered to be a bonus from Cover. AGENT OF BEDLAM: Enemies within 6 metres of you add +Rank to the DN of all melee attacks they make.",
     "tier": 5,
     "species": [
       "aeldari",
@@ -10048,7 +10048,7 @@
   {
     "id": "harlequin_solitaire_aoa",
     "name": "Harlequin Solitaire (Abundance of Apocrypha)",
-    "description": "Other Aeldari shun you, and you add +6 to the DN of all Interaction tests with other Aeldari outside of ritual circumstances or performances. All Aeldari – even allies – must pass a Fear test (DN 3) w...",
+    "description": "Other Aeldari shun you, and you add +6 to the DN of all Interaction tests with other Aeldari outside of ritual circumstances or performances. All Aeldari — even allies — must pass a Fear test (DN 3) when they first meet you. However, you automatically succeed at all Conviction and Resolve tests. At the start of one of your turns, you may choose to initiate a Blitz. When you do so, your Speed is doubled, and you ignore Double Rank DN increases on Multi-Attacks until the end of your turn. Once you have done this, you cannot do so again until after your next Regroup. When you select this Archetype, you may choose to replace Blitz with one of the following: SHOCKING EMERGENCE: As a Free Action at the start of combat, you may take on an indistinct, shimmering form, and cannot be seen or targeted by enemies or allies; you cannot take any actions other than movement in this form. At the start of any of your turns, you may reveal yourself, and you add +Rank bonus dice to any melee attack you make if you charge on the turn you reveal yourself. CHROMATIC RUSH: Your speed is increased by +Double Rank. This replaces the increase to Speed from the Harlequins' Rising Crescendo ability. UNNATURAL ACROBATICS: Your Defence is increased by +Rank.",
     "tier": 5,
     "species": [
       "aeldari",
@@ -10144,7 +10144,7 @@
   {
     "id": "succubus_aoa",
     "name": "Succubus (Abundance of Apocrypha)",
-    "description": "As long as you are not immobilised or Restrained, you may use Agility instead of Toughness when you roll Determination, and you may roll Determination against Mortal Wounds.  In addition, whenever you...",
+    "description": "As long as you are not immobilised or Restrained, you may use Agility instead of Toughness when you roll Determination, and you may roll Determination against Mortal Wounds. In addition, whenever you roll Determination, you may move up to half your Speed immediately. Enemies may not make Reflexive Action attacks against you when you use this movement.",
     "tier": 4,
     "species": [
       "drukhari_aoa"
@@ -10190,7 +10190,7 @@
   {
     "id": "vanus_assassin_aoa",
     "name": "Vanus Assassin (Abundance of Apocrypha)",
-    "description": "You may attempt Tech Interaction Attacks at a range of your Intellect multiplied by your Rank, and you may measure this distance from any servo-skull under your control. Further, if you succeed, you m...",
+    "description": "You may attempt Tech Interaction Attacks at a range of your Intellect multiplied by your Rank, and you may measure this distance from any servo-skull under your control. Further, if you succeed, you may inflict 1d3 Mortal Wounds (+1 per Icon shifted) or select an automated or machine-mounted weapon (which must be visible to, and within your Intellect in metres of, the target) and make a ranged attack with it.",
     "tier": 5,
     "species": [
       "human"
@@ -10246,7 +10246,7 @@
   {
     "id": "venenum_assassin_aoa",
     "name": "Venenum Assassin (Abundance of Apocrypha)",
-    "description": "Whenever a creature suffers the Poisoned (X) condition from an attack or weapon from you, they will suffer 1d3+Rank Mortal Wounds at the start of each of their turns. In addition, you cannot ever be a...",
+    "description": "Whenever a creature suffers the Poisoned (X) condition from an attack or weapon from you, they will suffer 1d3+Rank Mortal Wounds at the start of each of their turns. In addition, you cannot ever be affected by the Poisoned condition, and you are immune to poisons, diseases, and radiation effects.",
     "tier": 5,
     "species": [
       "human"
