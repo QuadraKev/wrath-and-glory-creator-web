@@ -3548,7 +3548,7 @@
       "dn": "5",
       "cost": 15,
       "source": "aeldari",
-      "page": 49,
+      "page": 70,
       "description": "Your consciousness creeps out across the battlefield like a sprawling mist, seeping into the mind of the enemy and confounding their senses. While this power is sustained, you and any allies with the HARLEQUIN [MASQUE] Keyword gain a +1 bonus to Defence and +1 bonus die to any Stealth (A) Tests you make."
     },
     "mirror_of_minds": {
@@ -3566,7 +3566,7 @@
       "dn": "Target's Defence",
       "cost": 25,
       "source": "aeldari",
-      "page": 49,
+      "page": 71,
       "description": "Vibrant shards of polychrome energy lash forward from your mind and bombard the psyche of the target, inflicting excruciating psychosomatic wounds that leave them injured and disorientated. Shards of Light travel instantaneously in a straight line for 10m in the direction the Psyker is facing. Targets struck by the shards suffer 12+2 ED damage and must pass a DN 4 Willpower or Psychic Mastery Test or gain the Blinded Condition."
     },
     "twilight_pathways": {
@@ -3593,7 +3593,7 @@
       "dn": "9",
       "cost": 25,
       "source": "aeldari",
-      "page": 49,
+      "page": 71,
       "description": "You pull the veil between realspace and the Webway aside, allowing the Troupe to weave freely among the enemy, twisting and contorting away from danger only to reappear elsewhere. While this power is sustained, any allies with the HARLEQUIN [MASQUE] Keyword may reroll any failed Determination rolls."
     },
     "doom": {
@@ -3602,7 +3602,7 @@
       "dn": "Target's Defence",
       "cost": 25,
       "source": "aeldari",
-      "page": 12,
+      "page": 74,
       "description": "You weave the fabric of destiny to cast a darkening shadow over an enemy's soul, ensuring that each shot and blow that befalls them endeavours to be their last. While this power is sustained, the target suffers a -1 penalty to their Base Resilience and a +1 DN penalty to any Resolve Tests."
     },
     "executioner": {
@@ -3620,7 +3620,7 @@
       "dn": "5",
       "cost": 20,
       "source": "aeldari",
-      "page": 23,
+      "page": 74,
       "description": "With infinite pathways laid out before you, you can see the perils that await your allies before they come to pass and assist them in avoiding danger. If successfully activated you and all allies with the AELDARI Keyword gain a +1 bonus to your Defence until the beginning of your next Turn."
     },
     "guide": {
@@ -3629,7 +3629,7 @@
       "dn": "6",
       "cost": 15,
       "source": "aeldari",
-      "page": 17,
+      "page": 74,
       "description": "You reshape the paths of destiny by the sheer force of your will, picking out targets through the turmoil of war with your mind and guiding your allies' shots towards their target. Once activated, you and all allies within range with the AELDARI Keyword gain +2 bonus dice to all Ballistic Skill (A) Tests until the beginning of your next Turn."
     },
     "mind_war": {
@@ -5582,7 +5582,7 @@
       "dn": "5",
       "cost": 15,
       "source": "dh",
-      "page": 121,
+      "page": 122,
       "description": "With a caress and a whisper, you share a vision of the world as perceived by the Dark Prince's faithful, with all sensory perception elevated to its lurid extreme. The target gains 1 Corruption, and whilst this power is sustained, gains +6 bonus dice on Awareness (Int) and Insight (Fel) Tests. Exalted Icons on these Tests may be Shifted for insights beyond the scope of human senses, perhaps allowing the creature to smell lies, hear colours, or taste an upcoming ambush. Complications subject the target to sensory overload, inflicting 1d3 Shock in addition to the usual effect of the Complication. A creature that has beheld the world through the prism of this power is forever changed, perceiving the normal world as drab and depressing in comparison. Some may even become willing servants of the sorcerer, selling their souls for the exhilaration of seeing the world in its true, dreadful form."
     },
     "subversion": {

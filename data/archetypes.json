@@ -1829,7 +1829,7 @@
     ],
     "wargearChoices": "Any three pieces of Wargear with the IMPERIUM Keyword of a rarity of Rare or less",
     "source": "fspg",
-    "page": 110
+    "page": 118
   },
   {
     "id": "kroot_mercenary",
@@ -3105,7 +3105,7 @@
       "disciplineChoices": 0
     },
     "source": "aeldari",
-    "page": 31
+    "page": 34
   },
   {
     "id": "kabalite_warrior",
@@ -3388,7 +3388,7 @@
       "plasma_grenades"
     ],
     "source": "aeldari",
-    "page": 38
+    "page": 42
   },
   {
     "id": "archon",
@@ -3435,7 +3435,7 @@
       "trophy_rack"
     ],
     "source": "aeldari",
-    "page": 38
+    "page": 43
   },
   {
     "id": "haemonculus",
@@ -3481,7 +3481,7 @@
       "ichor_injector"
     ],
     "source": "aeldari",
-    "page": 38
+    "page": 44
   },
   {
     "id": "succubus",
@@ -3523,7 +3523,7 @@
       "combat_drugs"
     ],
     "source": "aeldari",
-    "page": 38
+    "page": 45
   },
   {
     "id": "troupe_player",
@@ -3887,7 +3887,7 @@
     ],
     "wargearChoices": "Shuriken Rifle or Shuriken Pistol and Void Sabre",
     "source": "aeldari",
-    "page": 52
+    "page": 53
   },
   {
     "id": "felarch",

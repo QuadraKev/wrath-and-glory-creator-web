@@ -454,7 +454,7 @@
     ],
     "invulnerable": true,
     "source": "aeldari",
-    "page": 91
+    "page": 92
   },
   {
     "id": "heavy_aspect_armour",
@@ -493,7 +493,7 @@
     ],
     "invulnerable": true,
     "source": "aeldari",
-    "page": 91
+    "page": 92
   },
   {
     "id": "holo_suit",
@@ -512,7 +512,7 @@
       "HARLEQUIN"
     ],
     "source": "aeldari",
-    "page": 91
+    "page": 92
   },
   {
     "id": "incubus_warsuit",
@@ -529,7 +529,7 @@
       "INCUBUS"
     ],
     "source": "aeldari",
-    "page": 91
+    "page": 92
   },
   {
     "id": "kabalite_armour",
@@ -623,7 +623,7 @@
     ],
     "invulnerable": true,
     "source": "aeldari",
-    "page": 91
+    "page": 92
   },
   {
     "id": "gloom_field",

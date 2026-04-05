@@ -1035,7 +1035,7 @@
       "SHURIKEN"
     ],
     "source": "aeldari",
-    "page": 80
+    "page": 81
   },
   {
     "id": "shuriken_rifle",
@@ -1068,7 +1068,7 @@
       "SHURIKEN"
     ],
     "source": "aeldari",
-    "page": 80
+    "page": 81
   },
   {
     "id": "death_spinner",
@@ -1368,7 +1368,7 @@
       "SHURIKEN"
     ],
     "source": "aeldari",
-    "page": 80
+    "page": 81
   },
   {
     "id": "neuro_disruptor",
@@ -1495,7 +1495,7 @@
       "POWER FIELD"
     ],
     "source": "aeldari",
-    "page": 87
+    "page": 89
   },
   {
     "id": "scorpion_chainsword",
@@ -1630,7 +1630,7 @@
       "WYCH CULT"
     ],
     "source": "aeldari",
-    "page": 86
+    "page": 87
   },
   {
     "id": "hellglaive",
@@ -1654,7 +1654,7 @@
       "HELLION"
     ],
     "source": "aeldari",
-    "page": 86
+    "page": 87
   },
   {
     "id": "agoniser",
@@ -1681,7 +1681,7 @@
       "WYCH CULT"
     ],
     "source": "aeldari",
-    "page": 87
+    "page": 89
   },
   {
     "id": "klaive",
@@ -1710,7 +1710,7 @@
       "POWER FIELD"
     ],
     "source": "aeldari",
-    "page": 87
+    "page": 89
   },
   {
     "id": "huskblade",
@@ -1762,7 +1762,7 @@
       "WYCH CULT"
     ],
     "source": "aeldari",
-    "page": 87
+    "page": 89
   },
   {
     "id": "harlequin_kiss",
@@ -1893,7 +1893,7 @@
       "ANHRATHE"
     ],
     "source": "aeldari",
-    "page": 87
+    "page": 89
   },
   {
     "id": "scissorhand",
@@ -1946,7 +1946,7 @@
       "MANDRAKE"
     ],
     "source": "aeldari",
-    "page": 86
+    "page": 87
   },
   {
     "id": "astartes_chainsword",
@@ -10366,7 +10366,7 @@
       "ASTRA MILITARUM"
     ],
     "source": "shotguns",
-    "page": 9
+    "page": 5
   },
   {
     "id": "varonia_honorbound_pattern_shotgun",
@@ -10699,7 +10699,7 @@
       "DRUKHARI"
     ],
     "source": "aeldari",
-    "page": 79
+    "page": 80
   },
   {
     "id": "blast_pistol",
@@ -10797,7 +10797,7 @@
       "SHURIKEN"
     ],
     "source": "aeldari",
-    "page": 80
+    "page": 81
   },
   {
     "id": "clawmounted_shuriken_catapult",
@@ -11260,7 +11260,7 @@
       "ASURYANI"
     ],
     "source": "aeldari",
-    "page": 83
+    "page": 82
   },
   {
     "id": "firepike",
@@ -11327,7 +11327,7 @@
       "MELTA"
     ],
     "source": "aeldari",
-    "page": 83
+    "page": 84
   },
   {
     "id": "splinter_cannon",
@@ -11553,7 +11553,7 @@
       "POWER FIELD"
     ],
     "source": "aeldari",
-    "page": 86
+    "page": 89
   },
   {
     "id": "demiklaive",
@@ -11582,7 +11582,7 @@
       "POWER FIELD"
     ],
     "source": "aeldari",
-    "page": 87
+    "page": 89
   },
   {
     "id": "electrocorrosive_whip",
@@ -11610,7 +11610,7 @@
       "WYCH CULT"
     ],
     "source": "aeldari",
-    "page": 87
+    "page": 89
   },
   {
     "id": "executioner",
@@ -11637,7 +11637,7 @@
       "POWER FIELD"
     ],
     "source": "aeldari",
-    "page": 87
+    "page": 89
   },
   {
     "id": "flesh_gauntlet",
@@ -11665,7 +11665,7 @@
       "HAEMONCULUS"
     ],
     "source": "aeldari",
-    "page": 87
+    "page": 89
   },
   {
     "id": "ghostaxe",
@@ -11746,7 +11746,7 @@
       "WYCH CULT"
     ],
     "source": "aeldari",
-    "page": 88
+    "page": 89
   },
   {
     "id": "ichor_injector",
@@ -11773,7 +11773,7 @@
       "HAEMONCULUS"
     ],
     "source": "aeldari",
-    "page": 86
+    "page": 87
   },
   {
     "id": "impaler",
@@ -11800,7 +11800,7 @@
       "WYCH CULT"
     ],
     "source": "aeldari",
-    "page": 86
+    "page": 87
   },
   {
     "id": "drukhari_knife",
@@ -11823,7 +11823,7 @@
       "AELDARI"
     ],
     "source": "aeldari",
-    "page": 86
+    "page": 87
   },
   {
     "id": "razorflail_sword",
@@ -11909,7 +11909,7 @@
       "WYCH CULT"
     ],
     "source": "aeldari",
-    "page": 86
+    "page": 87
   },
   {
     "id": "scorpions_claw",
@@ -12040,7 +12040,7 @@
       "HARLEQUIN"
     ],
     "source": "aeldari",
-    "page": 88
+    "page": 89
   },
   {
     "id": "venom_blade",
@@ -12159,7 +12159,7 @@
       "GRENADE"
     ],
     "source": "aeldari",
-    "page": 82
+    "page": 91
   },
   {
     "id": "haywire_grenade",
@@ -12225,7 +12225,7 @@
       "GRENADE"
     ],
     "source": "aeldari",
-    "page": 82
+    "page": 91
   },
   {
     "id": "plasma_grenade",
