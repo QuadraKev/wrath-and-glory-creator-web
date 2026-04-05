@@ -129,7 +129,7 @@
     "rarity": "Rare",
     "keywords": [],
     "source": "core",
-    "page": 74
+    "page": 238
   },
   {
     "id": "cameleoline_cloak",
@@ -372,20 +372,6 @@
     "page": 89
   },
   {
-    "id": "ripped_clothes",
-    "name": "Ripped Clothes",
-    "category": "clothing",
-    "description": "Torn and battered garments, typical Ork attire.",
-    "effect": "Basic clothing.",
-    "value": 1,
-    "rarity": "Common",
-    "keywords": [
-      "ORK"
-    ],
-    "source": "core",
-    "page": 354
-  },
-  {
     "id": "rags",
     "name": "Rags",
     "category": "clothing",
@@ -539,7 +525,7 @@
       "IMPERIUM"
     ],
     "source": "core",
-    "page": 106
+    "page": 226
   },
   {
     "id": "krak_grenades",
@@ -1790,7 +1776,7 @@
       "IMPERIUM"
     ],
     "source": "core",
-    "page": 129
+    "page": 243
   },
   {
     "id": "apertor_aoa",

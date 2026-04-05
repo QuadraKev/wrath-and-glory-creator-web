@@ -23,7 +23,7 @@
       "IMPERIUM"
     ],
     "source": "core",
-    "page": 21,
+    "page": 30,
     "subOptions": {
       "type": "homeworld",
       "label": "Homeworld (Abundance of Apocrypha)",
@@ -174,7 +174,7 @@
       "ADEPTUS ASTARTES"
     ],
     "source": "core",
-    "page": 2,
+    "page": 30,
     "subOptions": {
       "type": "chapter",
       "label": "Chapter",
@@ -610,7 +610,7 @@
       "PRIMARIS"
     ],
     "source": "core",
-    "page": 25,
+    "page": 30,
     "subOptions": {
       "type": "chapter",
       "label": "Chapter",
@@ -1012,7 +1012,7 @@
       "AELDARI"
     ],
     "source": "core",
-    "page": 2,
+    "page": 30,
     "subOptions": [
       {
         "type": "psychosensitive",
@@ -1033,96 +1033,96 @@
         "label": "Asuryani Path",
         "required": true,
         "addKeyword": false,
-      "options": [
-        {
-          "id": "path_of_awakening",
-          "name": "Path of Awakening",
-          "effect": "+Rank bonus dice to Awareness Tests.",
-          "bonuses": {
-            "skills": {
-              "awareness": "rank"
+        "options": [
+          {
+            "id": "path_of_awakening",
+            "name": "Path of Awakening",
+            "effect": "+Rank bonus dice to Awareness Tests.",
+            "bonuses": {
+              "skills": {
+                "awareness": "rank"
+              }
             }
-          }
-        },
-        {
-          "id": "path_of_the_artisan",
-          "name": "Path of the Artisan",
-          "effect": "+Double Rank to AELDARI Scholar Tests.",
-          "bonuses": {
-            "conditionalSkills": {
-              "scholar": {
-                "condition": "AELDARI",
-                "bonus": "doubleRank"
+          },
+          {
+            "id": "path_of_the_artisan",
+            "name": "Path of the Artisan",
+            "effect": "+Double Rank to AELDARI Scholar Tests.",
+            "bonuses": {
+              "conditionalSkills": {
+                "scholar": {
+                  "condition": "AELDARI",
+                  "bonus": "doubleRank"
+                }
+              }
+            }
+          },
+          {
+            "id": "path_of_the_bonesinger",
+            "name": "Path of the Bonesinger",
+            "effect": "+Double Rank to AELDARI Tech Tests.",
+            "bonuses": {
+              "conditionalSkills": {
+                "tech": {
+                  "condition": "AELDARI",
+                  "bonus": "doubleRank"
+                }
+              }
+            }
+          },
+          {
+            "id": "path_of_the_dreamer",
+            "name": "Path of the Dreamer",
+            "effect": "+Rank bonus dice to Corruption Tests."
+          },
+          {
+            "id": "path_of_the_healer",
+            "name": "Path of the Healer",
+            "effect": "+Double Rank to AELDARI Medicae Tests.",
+            "bonuses": {
+              "conditionalSkills": {
+                "medicae": {
+                  "condition": "AELDARI",
+                  "bonus": "doubleRank"
+                }
+              }
+            }
+          },
+          {
+            "id": "path_of_the_mariner",
+            "name": "Path of the Mariner",
+            "effect": "+Double Rank to AELDARI Pilot Tests.",
+            "bonuses": {
+              "conditionalSkills": {
+                "pilot": {
+                  "condition": "AELDARI",
+                  "bonus": "doubleRank"
+                }
+              }
+            }
+          },
+          {
+            "id": "path_of_the_mourner",
+            "name": "Path of the Mourner",
+            "effect": "+Rank Maximum Shock.",
+            "bonuses": {
+              "maxShock": "rank"
+            }
+          },
+          {
+            "id": "path_of_service",
+            "name": "Path of Service",
+            "effect": "+Double Rank to AELDARI Insight Tests.",
+            "bonuses": {
+              "conditionalSkills": {
+                "insight": {
+                  "condition": "AELDARI",
+                  "bonus": "doubleRank"
+                }
               }
             }
           }
-        },
-        {
-          "id": "path_of_the_bonesinger",
-          "name": "Path of the Bonesinger",
-          "effect": "+Double Rank to AELDARI Tech Tests.",
-          "bonuses": {
-            "conditionalSkills": {
-              "tech": {
-                "condition": "AELDARI",
-                "bonus": "doubleRank"
-              }
-            }
-          }
-        },
-        {
-          "id": "path_of_the_dreamer",
-          "name": "Path of the Dreamer",
-          "effect": "+Rank bonus dice to Corruption Tests."
-        },
-        {
-          "id": "path_of_the_healer",
-          "name": "Path of the Healer",
-          "effect": "+Double Rank to AELDARI Medicae Tests.",
-          "bonuses": {
-            "conditionalSkills": {
-              "medicae": {
-                "condition": "AELDARI",
-                "bonus": "doubleRank"
-              }
-            }
-          }
-        },
-        {
-          "id": "path_of_the_mariner",
-          "name": "Path of the Mariner",
-          "effect": "+Double Rank to AELDARI Pilot Tests.",
-          "bonuses": {
-            "conditionalSkills": {
-              "pilot": {
-                "condition": "AELDARI",
-                "bonus": "doubleRank"
-              }
-            }
-          }
-        },
-        {
-          "id": "path_of_the_mourner",
-          "name": "Path of the Mourner",
-          "effect": "+Rank Maximum Shock.",
-          "bonuses": {
-            "maxShock": "rank"
-          }
-        },
-        {
-          "id": "path_of_service",
-          "name": "Path of Service",
-          "effect": "+Double Rank to AELDARI Insight Tests.",
-          "bonuses": {
-            "conditionalSkills": {
-              "insight": {
-                "condition": "AELDARI",
-                "bonus": "doubleRank"
-              }
-            }
-          }
-        }
-      ]
+        ]
       }
     ]
   },
@@ -1162,7 +1162,7 @@
       "ORK"
     ],
     "source": "core",
-    "page": 2,
+    "page": 30,
     "subOptions": {
       "type": "clan",
       "label": "Clan",

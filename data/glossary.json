@@ -3404,7 +3404,7 @@
       "dn": "3",
       "cost": 5,
       "source": "core",
-      "page": 3,
+      "page": 279,
       "description": "You reach out with your mind to link with another and communicate with nothing but thoughts. You don't need line of sight to the target, and no obstacles except those designed specifically for warding off psychic intrusion can prevent this communication. You don't need to know whether any targets are in range, and may simply use Telepathy to contact the nearest target. Once you activate the power, communication continues until you end it. If the target wishes to break the link against your will, they must make a successful DN 3 Willpower Test. If the target forcibly breaks the telepathic link in this manner, you suffer 1d3 Shock. You may use Telepathy to eavesdrop on a target instead of communicating, and may still choose to 'speak' at any time using the link. If you use Telepathy in this way, the target may still become aware of the link and that something is amiss with a successful Awareness (Int) Test (DN equal to your Psychic Mastery (Wil) dice pool). If the target becomes aware of the telepathic communication, it can choose to use the link itself or attempt to terminate it as above. Telepathy only reads active surface thoughts, so you cannot pry into another's secrets, unless the target is actively thinking about them at the time. If you use Telepathy to communicate with more than one target, you act as a communication hub and all targets can 'hear' one another through you. Acting as a telepathic hub in this way is mentally taxing. You suffer 1 Shock for every 20 minutes you sustain the power. You may not recover Shock while sustaining this power."
     },
     "terrify": {
@@ -5456,7 +5456,7 @@
       "dn": "5",
       "cost": 20,
       "source": "dh",
-      "page": 126,
+      "page": 116,
       "description": "You beseech the Warp to send forth its vilest curses, causing the most foolproof of protections to fail. For the duration of this combat — or the next combat the target fights — the target cannot use any effects that allow them to roll Determination against Mortal Wounds, and loses the benefit of Invulnerable armour (their Resilience is reduced by AP as usual). In addition, any attacks against the target increase their AP by +1."
     },
     "diabolic_strength": {
@@ -5465,7 +5465,7 @@
       "dn": "5",
       "cost": 20,
       "source": "dh",
-      "page": 126,
+      "page": 117,
       "description": "The dreadful power of the warp floods the target's muscles, imbuing them with a horrifying strength not their own. The target gains +3 bonus dice on Strength Tests, and inflicts +3 ED Damage on all melee attacks. Creatures that roll a Complication whilst benefiting from Diabolic Strength are liable to cause terrible collateral damage, as the ruinous power of Chaos surges through them."
     },
     "vortex_of_chaos": {
@@ -5474,7 +5474,7 @@
       "dn": "8",
       "cost": 30,
       "source": "dh",
-      "page": 126,
+      "page": 117,
       "description": "You puncture a black hole into the Warp that tears your enemies apart, flings them around the battlefield, or drags them screaming into the Immaterium. The target suffers 20 +3 ED Damage, with AP –4, and the Blast (6) and Warp Weapon Traits. Any creatures that suffer Damage from the attack but survive are Scattered 1d6 metres in a random direction, and suffer the Restrained Condition on their next Turn."
     },
     "warp_storm": {
@@ -5492,7 +5492,7 @@
       "dn": "Target's Defence",
       "cost": 20,
       "source": "dh",
-      "page": 51,
+      "page": 119,
       "description": "You unleash a strike of eldritch lightning, triggering a chain reaction of appalling transmutations for those caught in the blast.\nThe target takes 15 +9 ED Damage and 1d3 Corruption. When you activate this power, one Agent, Elite, or Adversary who would otherwise be killed by the Damage inflicted is instead irreversibly transformed into a Chaos Spawn, which attacks everyone around them in a suicidal frenzy."
     },
     "desecration_of_worlds": {
@@ -5501,7 +5501,7 @@
       "dn": "Target's Defence",
       "cost": 25,
       "source": "dh",
-      "page": 126,
+      "page": 119,
       "description": "The mutating sorcery of the Great Conspirator bleeds from the earth, marring those it obstructs with its profane taint. The target gains 1 Corruption, and immediately rolls on the Perils of the Warp table, as though they were the psyker that triggered the effect. For as long as the power is sustained, the target counts as being in Difficult Terrain, and suffers 1 Mortal Wound whenever they roll a Complication. You suffer 1 Corruption for every minute you sustain this power, as the Warp's intrusion into real space begins to leave its stain on you too."
     },
     "boon_of_mutation": {
@@ -5510,7 +5510,7 @@
       "dn": "6",
       "cost": 20,
       "source": "dh",
-      "page": 126,
+      "page": 119,
       "description": "You are generous with Tzeentch's dark blessing, spreading a wave of transformative sorceries amongst friends and enemies alike. The target suffers 2 Shock, 1d3 Corruption, and gains a random mutation from the Severe Mutation table. The mutation is so horrific that the target might be hacked apart by their own allies, but if the target survives until the power ends, their flesh returns to normal. Serving as a vector of mutation is an offence upon reality. You suffer 1 Corruption for every minute you sustain this power."
     },
     "gaze_of_fate": {
@@ -5519,7 +5519,7 @@
       "dn": "9",
       "cost": 25,
       "source": "dh",
-      "page": 120,
+      "page": 119,
       "description": "Your unquenchable appetite for secret knowledge beckons you into the currents of the Immaterium, where the agents of Tzeentch gleefully indulge you with visions of forgotten pasts and possible futures. For the remainder of the Scene, you roll an extra Wrath Die on all Tests. You roll a second extra Wrath Die on Investigation (Int), Psychic Mastery (Wil), and Scholar (Int) Tests. Whilst using these extra Wrath Dice, you achieve a Wrath Critical if you score an Exalted Icon on any Wrath Dice in your pool, unless you are Dying or making a Test where Wrath Criticals are not possible. However, any Complications rolled trigger a Perils of the Warp effect. In addition, you may beseech the Changer of the Ways to answer a single question about the future. Compared to uses of the Prescience power, the GM's response is likely to be much more detailed and vivid than a short phrase or emotion. However, this flood of forbidden knowledge is often horrifying or destabilising, perhaps requiring a Resolve Test to resist Fear, or a Conviction Test to resist Corruption. Casting Gaze of Fate automatically triggers a Perils of the Warp effect. Add +10 to the roll on the Perils of the Warp table for each Complication rolled as part of the Psychic Mastery (Wil) Test. You may only cast Gaze of Fate once per scene."
     },
     "infernal_flames": {
@@ -5528,7 +5528,7 @@
       "dn": "Target's Defence",
       "cost": 20,
       "source": "dh",
-      "page": 126,
+      "page": 120,
       "description": "Multi-coloured fires of Tzeentch wreath the target, scorching their bodies and assailing their soul. The target suffers 9 +9 ED Damage and 1 Corruption. If the target loses any Wounds from this attack, they gain the On Fire Condition."
     },
     "twisting_path": {
@@ -5546,7 +5546,7 @@
       "dn": "5",
       "cost": 15,
       "source": "dh",
-      "page": 126,
+      "page": 121,
       "description": "You issue forth an ear-splitting scream of harmonising horrors, torturing your enemies to the edge of lucidity. All creatures in Range, excluding yourself, suffer 1 Corruption and 1d6+3 Shock."
     },
     "soul_wrack_terror": {
@@ -5564,7 +5564,7 @@
       "dn": "4",
       "cost": 20,
       "source": "dh",
-      "page": 126,
+      "page": 121,
       "description": "You interfere with the mental processes of your target so that pain is perceived as stimulating pleasure, baiting them to seek out extra torments. Whilst the power is sustained, the target suffers no penalties for being Wounded, and suffers no restrictions on actions they can undertake whilst Dying. Furthermore, they gain +1 bonus die on all Tests made whilst Wounded, and +1 bonus die on all Tests for each Traumatic Injury they have."
     },
     "phantasmagoria": {
@@ -5573,7 +5573,7 @@
       "dn": "Target's Willpower",
       "cost": 20,
       "source": "dh",
-      "page": 126,
+      "page": 121,
       "description": "You invoke visions of such maddening sensation that the target is transfixed by the nightmare, fighting the urge to tear out their own eyes, or succumb to psychic overload. The target suffers the effects of Fear, imposing a +2 DN penalty on all Tests, unless the target is immune to Fear. This Condition cannot be removed until the power ends, at which point the Condition is removed automatically. In addition, whilst the power is sustained, the target suffers 1d6 Shock at the start of each of their Turns. You suffer 1 Corruption for every minute you sustain this power, as you lose perspective on which horrors are real and which are conjured from your imagination."
     },
     "sensory_overload": {
@@ -5591,7 +5591,7 @@
       "dn": "6",
       "cost": 15,
       "source": "dh",
-      "page": null,
+      "page": 122,
       "description": "You expel an aura of acquiescence that puts mortal enemies at ease, convincing them to comply with your whims. For as long as the power is sustained, anyone who looks upon you feels positively disposed to your presence. You may choose how this charisma manifests, allowing you to masquerade as a respected authority, vulnerable innocent, dependable comrade, or intriguing companion. You cannot change your appearance to impersonate a specific individual, nor implant false memories of time you have spent with a stranger. If beheld by someone who has never met you before, they feel a natural kinship, for reasons they cannot rationally explain. Whilst the power continues, enemies will not harm or impede you unless they have orders to do so, or in self-defence. Enemies ordered to attack you are reluctant and remorseful, suffering the Hindered Condition — if a leader is personally present to issue the order, they can make a DN 3 Leadership (Wil) Test as an Action to remove the Condition. You cannot vouch for other creatures to protect them from reprisals, but gain +1 bonus die on Deception (Fel) Tests to convince your \"friends\" to cooperate with seemingly harmless actions. If you make an attack Test, use a different psychic power, or take any other hostile action, the power ends immediately. Excessive use of this power has caused many to lose sight of their true identity, ensnaring themselves in a web of lies. For every hour you sustain the power, you suffer 1 Corruption."
     },
     "fleshy_abundance": {
@@ -5600,7 +5600,7 @@
       "dn": "4",
       "cost": 15,
       "source": "dh",
-      "page": 126,
+      "page": 123,
       "description": "The target's torso is swelled by the power of the warp, distorting their form into impossible shapes, but providing an ablative layer of overlapping flesh. Whilst the power is sustained, the target gains +3 Resilience. They also apply +1 DN to all social interaction Tests, except those targeting characters with the NURGLE Keyword. The target gains +1 Corruption for each minute the power is sustained, as daemonic mites make a new home in the target's capacious guts."
     },
     "grandfathers_alleviation": {
@@ -5609,7 +5609,7 @@
       "dn": "4",
       "cost": 10,
       "source": "dh",
-      "page": 126,
+      "page": 124,
       "description": "In his infinite benevolence, the Lord of Decay relieves the target of their burdens, be they gunshot wounds, binding restraints, or psychological dismay. Whilst the power is sustained, the target does not suffer DN penalties for being Wounded, is not limited in what actions they can take whilst Dying, and ignores the effects of any Conditions they suffer. However, the target cannot remove Conditions even once their usual time limit has lapsed, still accumulates Traumatic Injuries as normal, and cannot roll Determination if they have exceeded their Maximum Shock. Because this power merely ignores Conditions instead of removing them, the effects and penalties of those Conditions immediately return once the power ends. Returned Conditions can lapse or be healed per the normal rules. The target gains +1 Corruption for each minute the power is sustained, as their untreated debilities start to incubate psychic infection."
     },
     "glitching_curse": {
@@ -5618,7 +5618,7 @@
       "dn": "4",
       "cost": 10,
       "source": "dh",
-      "page": 126,
+      "page": 124,
       "description": "You emit a screech of discordant static, infecting nearby machine spirits with a debilitating virus as contagious as any of Nurgle's biological plagues. Whilst this power is sustained, it affects any Tests by an enemy within range of you that utilises technology, such as an attack with a weapon, movement in power armour, or piloting a vehicle. All affected Tests replace 1 additional die in their pool with a Wrath Die. Whilst rolling extra Wrath Dice, affected targets can only score a Wrath Critical if all dice in their pool score an Exalted Icon. Complications, however, are triggered if any Wrath Dice roll a 1. Complications from infected technology cause glitches like jams, ammo loss, and unplanned activations, which must be corrected with a DN 2 Tech (Int) Test before they can be used again. If a Test affected by this power triggers multiple Complications, the effects are disastrous — the user suffers 1d3 Mortal Wounds, the machine misfires in a manner of your choosing, and the device is inoperable until repaired with a DN 4 Tech (Int) Test."
     },
     "malodorous_pall": {
@@ -5627,7 +5627,7 @@
       "dn": "4",
       "cost": 10,
       "source": "dh",
-      "page": 126,
+      "page": 124,
       "description": "A cloud of flies and rancid filth settles around the target, obscuring them in a putrid miasma, and assaulting the nostrils of nearby unfortunates. Whilst the power is sustained, any attack Tests against the target, or Tests by enemies Engaged with the target, apply the Hindered (2) Condition (applying +2 DN). The target themselves also applies the same Condition when making Medicae (Int) Tests, Tech (Int) Tests, and social interaction Tests — unless the target of the Test has the NURGLE Keyword. The target gains +1 Corruption for each minute the power is sustained, as the stench of decay leaves a stain on their very soul."
     },
     "stream_of_pestilence": {
@@ -5645,7 +5645,7 @@
       "dn": "7",
       "cost": 20,
       "source": "dh",
-      "page": 74,
+      "page": 125,
       "description": "You unleash the vilest plague known to mortal-kind, whilst praising the Fly Lord's name. The target immediately suffers 1 Corruption and 1d3 Mortal Wounds. Whilst the power is sustained, the target suffers 1d3 Mortal Wounds at the start of each Turn. In addition, any creature who starts their Turn Engaged with the target must make a DN 3 Toughness Test. If they fail, they too become infected — immediately suffering 1 Corruption and 1d3 Mortal Wounds, and suffering 1d3 Mortal Wounds at the start of each subsequent turn. A creature cannot be infected by Nurgle's Rot multiple times at once. When the power ends, every infected target must make a DN 3 Toughness Test. If they fail, the Rot has taken hold, and their fate is sealed. The creature can no longer regain Wounds by any means, and suffers 1 Mortal Wound in each Regroup and Respite. There is no cure for Nurgle's Rot. The character can only hope to postpone the inevitable, whilst fulfilling any outstanding business. It is said that any souls claimed by Nurgle's Rot are seized by the Lord of Decay, and reformed into Plaguebearers to serve in his daemonic legions. Whenever an Adversary or Agent is killed using this power, the GM gains 1 Ruin. Opening oneself to the pestilent power of Nurgle is never without repercussions. You gain 1 Corruption per Round you sustain this power."
     },
     "veil_of_time": {
