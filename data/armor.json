@@ -979,7 +979,7 @@
       "OFFICIO ASSASSINORUM"
     ],
     "source": "apocrypha",
-    "page": 196
+    "page": 398
   },
   {
     "id": "auramite_custodian_power_armour_aoa",
@@ -997,7 +997,7 @@
       "ADEPTUS CUSTODES"
     ],
     "source": "apocrypha",
-    "page": 197
+    "page": 398
   },
   {
     "id": "endurant_shield_aoa",
@@ -1369,7 +1369,7 @@
       "ADEPTUS ASTARTES"
     ],
     "source": "apocrypha",
-    "page": 190
+    "page": 403
   },
   {
     "id": "cataphractii_terminator_armour_aoa",
@@ -1527,7 +1527,7 @@
     ],
     "invulnerable": true,
     "source": "apocrypha",
-    "page": 104
+    "page": 406
   },
   {
     "id": "iron_halo_aoa",
@@ -1586,7 +1586,7 @@
     ],
     "invulnerable": true,
     "source": "apocrypha",
-    "page": 179
+    "page": 407
   },
   {
     "id": "voltagheist_field_generator_aoa",
@@ -1606,7 +1606,7 @@
     ],
     "invulnerable": true,
     "source": "apocrypha",
-    "page": 110
+    "page": 407
   },
   {
     "id": "daemonic_rune_aoa",
@@ -1679,7 +1679,7 @@
     ],
     "invulnerable": true,
     "source": "apocrypha",
-    "page": 112
+    "page": 408
   },
   {
     "id": "aspect_armour_aoa",
@@ -1700,7 +1700,7 @@
     ],
     "invulnerable": true,
     "source": "apocrypha",
-    "page": 216
+    "page": 409
   },
   {
     "id": "heavy_aspect_armour_aoa",
@@ -1722,7 +1722,7 @@
     ],
     "invulnerable": true,
     "source": "apocrypha",
-    "page": 143
+    "page": 409
   },
   {
     "id": "force_shield_aeldari_aoa",
@@ -1761,7 +1761,7 @@
     ],
     "invulnerable": true,
     "source": "apocrypha",
-    "page": 203
+    "page": 409
   },
   {
     "id": "clone_field_aoa",
@@ -1797,7 +1797,7 @@
     ],
     "invulnerable": true,
     "source": "apocrypha",
-    "page": 193
+    "page": 410
   },
   {
     "id": "incubus_warsuit_aoa",
@@ -1936,7 +1936,7 @@
     ],
     "invulnerable": true,
     "source": "apocrypha",
-    "page": 173
+    "page": 411
   },
   {
     "id": "exo_armour_aoa",
@@ -1955,7 +1955,7 @@
       "LEAGUES OF VOTANN"
     ],
     "source": "apocrypha",
-    "page": 382
+    "page": 411
   },
   {
     "id": "exo_frame_aoa",
@@ -2011,7 +2011,7 @@
     ],
     "invulnerable": true,
     "source": "apocrypha",
-    "page": 173
+    "page": 412
   },
   {
     "id": "weavefield_crest_aoa",
@@ -2046,7 +2046,7 @@
       "LEAGUES OF VOTANN"
     ],
     "source": "apocrypha",
-    "page": 173
+    "page": 412
   },
   {
     "id": "void_suit_lov_aoa",
@@ -2201,7 +2201,7 @@
       "FIRE CASTE"
     ],
     "source": "apocrypha",
-    "page": 381
+    "page": 415
   },
   {
     "id": "xv85_enforcer_battlesuit_aoa",

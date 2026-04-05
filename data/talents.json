@@ -161,7 +161,7 @@
     "effect": "When you successfully use a psychic power at the Transcendent power level, you may add up to Double Rank additional Exalted Icons to apply to the power’s Potency options. However, you add +30 to any roll on the Perils of the Warp table. You gain 3d3 Corruption when you take this talent. You may not select the Beta-level Psyker or Gamma-level Psyker talents.",
     "flavor": "Your raw power is beyond that of most psykers encountered by the Imperium, but such power is incredibly unstable.",
     "source": "apocrypha",
-    "page": 179
+    "page": 230
   },
   {
     "id": "ambush_aoa",
@@ -190,7 +190,7 @@
     "effect": "Whenever you succeed at a melee attack against a creature with the DAEMON or PSYKER keywords, your attack inflicts mortal wounds equal to your Rank in addition to any other damage inflicted. In addition, creatures with the DAEMON keyword within a number of metres of you equal to your Willpower may not attempt to roll Determination.",
     "flavor": "Your mere presence is bane to daemons and psykers.",
     "source": "apocrypha",
-    "page": 179
+    "page": 231
   },
   {
     "id": "anatomical_scourge",
@@ -221,7 +221,7 @@
     "effect": "You may re-roll any failures on any Resolve test you make.",
     "flavor": "You are one of the Defenders of Humanity, a bulwark against terror forged in the furnace of war.",
     "source": "apocrypha",
-    "page": 145
+    "page": 231
   },
   {
     "id": "angel_of_death",
@@ -501,7 +501,7 @@
     "effect": "You do not have to move in a straight line when you sprint. Further, when you Sprint, you may make a ranged attack with any weapon as if that weapon had the Assault trait. You do not suffer the normal +2DN on the attack for doing this. This does not apply to weapons with the Heavy trait.",
     "flavor": "The warriors of the Craftworlds are swift and certain, able to fight on the move with startling effectiveness.",
     "source": "apocrypha",
-    "page": 83
+    "page": 232
   },
   {
     "id": "battle_fortune_aoa",
@@ -758,7 +758,7 @@
     "effect": "You gain +1d3 Corruption. After you make a melee attack, you may spend 1 Wrath to make an additional attack.",
     "flavor": "You are a blood-soaked devotee of the Lord of Skulls, and your desire to slay cannot be sated.",
     "source": "apocrypha",
-    "page": 174
+    "page": 232
   },
   {
     "id": "blood_must_flow",
@@ -807,7 +807,7 @@
     "effect": "Immediately after you kill an enemy with a melee attack, you may move up to half your Speed towards the next nearest enemy. You may make this move a number of times per round equal to your Rank.",
     "flavor": "Your fury has not been sated by those you have already slain… maybe the next one will quench your thirst for blood.",
     "source": "apocrypha",
-    "page": 154
+    "page": 232
   },
   {
     "id": "bolstering_purity",
@@ -1291,7 +1291,7 @@
     "effect": "When you PILOT a vehicle that you share at least one keyword with, you may roll Determination for that vehicle when it suffers an attack. The dice pool for this is equal to your total Pilot (Agility) test or the vehicle’s Manoeuvrability score, whichever is lower, and you suffer 1 Shock for each Wound cancelled by this roll.",
     "flavor": "You’ve learned how to turn and manoeuvre a vehicle you’re driving to minimise the damage it receives.",
     "source": "apocrypha",
-    "page": 114
+    "page": 234
   },
   {
     "id": "concealed_cavity",
@@ -1568,7 +1568,7 @@
     "effect": "When you make a successful melee attack against a character with the IMPERIUM keyword and roll a 6 on the Wrath die, you may choose to make an additional melee attack instead of inflicting a critical hit. This additional attack cannot be used to gain more attacks.",
     "flavor": "Endless is your spite. Eternal is your hate.",
     "source": "apocrypha",
-    "page": 156
+    "page": 235
   },
   {
     "id": "death_visions_aoa",
@@ -1703,7 +1703,7 @@
     "effect": "You are well-versed in the principles of unyielding defence, and your squad are well-drilled to ensure that no enemy can overcome them without great sacrifice. You and your squad increase Defence and Resilience by +2.",
     "flavor": "",
     "source": "apocrypha",
-    "page": 83
+    "page": 248
   },
   {
     "id": "deflect_shot",
@@ -2212,7 +2212,7 @@
     "effect": "Your companion is a single Troop level Threat of Tiny or Small size. You may use stats from the bestiary or use the following rules: Companion Attributes are equal to 1 + Double Rank. Companion Skills are equal to 1 + Double Rank. A companion’s Attributes and Skills cannot be higher than your own. Your familiar will stick close to you—within 3m—under most circumstances and will try to avoid combat unless ordered otherwise. If your familiar is within 3m of you, its Defence is increased by +2. A collection of custom-made familiars can be found in Chapter IV: Equipment.",
     "flavor": "You are accompanied by a small companion creature which aids and assists you.",
     "source": "apocrypha",
-    "page": 86
+    "page": 236
   },
   {
     "id": "fashionista",
@@ -2402,7 +2402,7 @@
     "effect": "You increase the base damage of a bayonet you wield by +Double Rank when you charge, or when you attack an enemy who charged you since your last turn.",
     "flavor": "Sharp steel, with some guts behind it, is a vital part of defending the Imperium.",
     "source": "apocrypha",
-    "page": 86
+    "page": 236
   },
   {
     "id": "flagellant",
@@ -2605,7 +2605,7 @@
     "effect": "Whenever an ally within Rank metres of you is the target of an attack, you may spend 1 Glory as a Reflexive Action to interpose yourself and become the target of that attack instead. You cannot use this talent if you are Restrained or otherwise have impaired movement.",
     "flavor": "You are a shield for your allies.",
     "source": "apocrypha",
-    "page": 83
+    "page": 237
   },
   {
     "id": "gunnery_crew_aoa",
@@ -3901,7 +3901,7 @@
     "effect": "When you are Charged, you may use your Reflexive Action and spend 1 ammo to make a ranged attack against the enemy Charging you. This attack is resolved before the Charge begins, and the enemy's receives +3 Defence against this attack. This is considered a Salvo option, so you must reload your weapon after this attack before you can fire it again.",
     "flavor": "You’ve trained to be able to snap off a burst of fire at a charging foe.",
     "source": "apocrypha",
-    "page": 116
+    "page": 240
   },
   {
     "id": "pain_glove_endurant",
@@ -4202,7 +4202,7 @@
     "effect": "When you make a ranged attack with a PULSE weapon, you may spend one Glory. If you do so, each Exalted Icon you shift for Extra Damage on that attack adds +2ED rather than 1. You cannot use this talent while wearing a BATTLESUIT.",
     "flavor": "Rather than charge into hand-to-hand combat, T’au soldiers intensify their fire and lay waste to their foes methodically.",
     "source": "apocrypha",
-    "page": 82
+    "page": 242
   },
   {
     "id": "quell_the_warp_aoa",
@@ -4219,7 +4219,7 @@
     "effect": "You gain the ability to Deny the Witch even though you are not a psyker. Instead of a Psychic Mastery test, you make a Willpower test with a bonus of +Double Rank.",
     "flavor": "You can focus your mind to still disturbances in the Warp nearby.",
     "source": "apocrypha",
-    "page": 179
+    "page": 242
   },
   {
     "id": "rad_saturated",
@@ -5141,7 +5141,7 @@
     "effect": "You are evasive and shadowy, never directly observed, only ever glimpsed out of the corner of an enemy’s eyes; aiming at such a target is nigh-impossible. You and all members of your squad add your Rank to their Defence when in cover, in addition to of the normal bonus to defence for cover.",
     "flavor": "",
     "source": "apocrypha",
-    "page": 128
+    "page": 251
   },
   {
     "id": "stand_firm_aoa",
@@ -5211,7 +5211,7 @@
     "effect": "If this Prayer is successful, then while the Prayer remains in effect, a single group of allied T’au numbering no more than your Willpower score, within 12m of you may ignore up to Rank DN penalties when taking a Multi-Action.",
     "flavor": "The steady gaze of the Ethereal reminds those of the Fire Caste that there lies within the heart of every storm a zone of silence that remains serene even as fury rages all about it. So inspired, they apply themselves to their assigned tasks with hard-eyed calm even as they continue to hammer the foe with unrelenting firepower.",
     "source": "apocrypha",
-    "page": 181
+    "page": 258
   },
   {
     "id": "strength_from_steel",
@@ -5245,7 +5245,7 @@
     "effect": "After making a ranged attack, whether successful or not, you may spend one Glory to move up to your Speed.",
     "flavor": "You fight in an elusive manner, withdrawing from battle mere moments after striking with full force, then rallying to strike once more.",
     "source": "apocrypha",
-    "page": 83
+    "page": 243
   },
   {
     "id": "strike_from_the_shadows_aoa",
@@ -5316,7 +5316,7 @@
     "effect": "When an enemy uses the Charge action to charge an ally you can see within 12m of you, you may spend 1 ammo to make a ranged attack as a Reflexive action. This ranged attack is resolved before their Charge action is completed, and the enemy’s Defence is increased by +2. This is considered a Salvo attack, and thus the weapon must be reloaded after the attack.",
     "flavor": "You are always ready to deliver punishing fire against those who stray too close to your allies.",
     "source": "apocrypha",
-    "page": 80
+    "page": 244
   },
   {
     "id": "suppressing_fusillade_aoa",
@@ -5488,7 +5488,7 @@
     "effect": "When you attempt a Resolve or Conviction Test, if you roll a 6 on your Wrath die, the test is automatically successful, regardless of any other factors.",
     "flavor": "You undertook the Ta'lissera rite, bonding you with your teammates in the ultimate expression of unity and respect. That bond is unbreakable.",
     "source": "apocrypha",
-    "page": 80
+    "page": 244
   },
   {
     "id": "tank_killer_aoa",
@@ -5979,7 +5979,7 @@
     "effect": "If this Prayer is successful, you and all allies with the IMPERIUM keyword within 12m of you may re-roll up to Double Rank dice on melee attacks while the Prayer remains in effect.",
     "flavor": "Suffer not the enemies of Mankind to live. Smite them down with all your strength and fury.",
     "source": "apocrypha",
-    "page": 103
+    "page": 255
   },
   {
     "id": "war_hymns_aoa",
@@ -5993,7 +5993,7 @@
     "effect": "You may sing war hymns as a simple action, and all allies with the IMPERIUM keyword within 15+Rank metres gain +Rank bonus dice on all melee attacks until the start of your next turn.",
     "flavor": "Your voice is heard above the clamour and clangour of battle, rallying the servants of the Emperor to greater heights of piety and fury.",
     "source": "apocrypha",
-    "page": 103
+    "page": 245
   },
   {
     "id": "war_shout_aoa",

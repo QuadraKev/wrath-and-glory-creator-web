@@ -4068,7 +4068,7 @@
     "rarity": "Common",
     "keywords": [],
     "source": "apocrypha",
-    "page": 248
+    "page": 329
   },
   {
     "id": "force_rod_aoa",
@@ -10509,7 +10509,7 @@
     "name": "Avachrus II-B Enochian Sanctified Shotgun",
     "type": "ranged",
     "category": "Solid Projectile Weapons",
-    "description": "Carried by only a handful of bodyguards and servants who protect the hallowed priests and cardinals in the upper echelons of Enoch's many spires, the Avachrus II-B is a rare and illustrious firearm. This variant is a magazine-fed, triple barrelled Combat Shotgun enclosed in a solid adamantium casing and capable of both single and semi-automatic firing. Originally produced in the manufactorums of Avachrus, longstanding and ancient decree sees each completed weapon then transported to Enoch under the watchful eye of the Archdeacon Mertramar Clade \u2014 this despite a longstanding rivalry between the two worlds that borders on outright disgust.\nHere the II-B undergoes a sequence of sacred blessings and sanctification rituals. Once blessed and purified the weapon is biometrically locked to its designated user. This lengthy and arduous process ensures that only those in service to individuals held in the highest regard within the priesthood may requisition one, and outside of Enoch's highest spires they remain a rare, yet deadly, sight.",
+    "description": "Carried by only a handful of bodyguards and servants who protect the hallowed priests and cardinals in the upper echelons of Enoch's many spires, the Avachrus II-B is a rare and illustrious firearm. This variant is a magazine-fed, triple barrelled Combat Shotgun enclosed in a solid adamantium casing and capable of both single and semi-automatic firing. Originally produced in the manufactorums of Avachrus, longstanding and ancient decree sees each completed weapon then transported to Enoch under the watchful eye of the Archdeacon Mertramar Clade — this despite a longstanding rivalry between the two worlds that borders on outright disgust.\nHere the II-B undergoes a sequence of sacred blessings and sanctification rituals. Once blessed and purified the weapon is biometrically locked to its designated user. This lengthy and arduous process ensures that only those in service to individuals held in the highest regard within the priesthood may requisition one, and outside of Enoch's highest spires they remain a rare, yet deadly, sight.",
     "damage": {
       "base": 10,
       "attribute": null,
