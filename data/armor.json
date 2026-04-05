@@ -1369,7 +1369,7 @@
       "ADEPTUS ASTARTES"
     ],
     "source": "apocrypha",
-    "page": 403
+    "page": 404
   },
   {
     "id": "cataphractii_terminator_armour_aoa",
@@ -1469,7 +1469,7 @@
     ],
     "invulnerable": true,
     "source": "apocrypha",
-    "page": 399
+    "page": 406
   },
   {
     "id": "combat_shield_aoa",
@@ -1527,7 +1527,7 @@
     ],
     "invulnerable": true,
     "source": "apocrypha",
-    "page": 406
+    "page": 407
   },
   {
     "id": "iron_halo_aoa",
@@ -1586,7 +1586,7 @@
     ],
     "invulnerable": true,
     "source": "apocrypha",
-    "page": 407
+    "page": 408
   },
   {
     "id": "voltagheist_field_generator_aoa",
@@ -1606,7 +1606,7 @@
     ],
     "invulnerable": true,
     "source": "apocrypha",
-    "page": 407
+    "page": 408
   },
   {
     "id": "daemonic_rune_aoa",
@@ -1679,7 +1679,7 @@
     ],
     "invulnerable": true,
     "source": "apocrypha",
-    "page": 408
+    "page": 409
   },
   {
     "id": "aspect_armour_aoa",
@@ -1700,7 +1700,7 @@
     ],
     "invulnerable": true,
     "source": "apocrypha",
-    "page": 409
+    "page": 410
   },
   {
     "id": "heavy_aspect_armour_aoa",
@@ -1722,7 +1722,7 @@
     ],
     "invulnerable": true,
     "source": "apocrypha",
-    "page": 409
+    "page": 410
   },
   {
     "id": "force_shield_aeldari_aoa",
@@ -1761,7 +1761,7 @@
     ],
     "invulnerable": true,
     "source": "apocrypha",
-    "page": 409
+    "page": 410
   },
   {
     "id": "clone_field_aoa",
@@ -1797,7 +1797,7 @@
     ],
     "invulnerable": true,
     "source": "apocrypha",
-    "page": 410
+    "page": 411
   },
   {
     "id": "incubus_warsuit_aoa",
@@ -1936,7 +1936,7 @@
     ],
     "invulnerable": true,
     "source": "apocrypha",
-    "page": 411
+    "page": 412
   },
   {
     "id": "exo_armour_aoa",
@@ -1955,7 +1955,7 @@
       "LEAGUES OF VOTANN"
     ],
     "source": "apocrypha",
-    "page": 411
+    "page": 412
   },
   {
     "id": "exo_frame_aoa",
@@ -2046,7 +2046,7 @@
       "LEAGUES OF VOTANN"
     ],
     "source": "apocrypha",
-    "page": 412
+    "page": 413
   },
   {
     "id": "void_suit_lov_aoa",
@@ -2063,7 +2063,7 @@
       "LEAGUES OF VOTANN"
     ],
     "source": "apocrypha",
-    "page": 414
+    "page": 413
   },
   {
     "id": "field_relay_amplifier_aoa",
@@ -2201,7 +2201,7 @@
       "FIRE CASTE"
     ],
     "source": "apocrypha",
-    "page": 415
+    "page": 416
   },
   {
     "id": "xv85_enforcer_battlesuit_aoa",

@@ -176,7 +176,7 @@
     "effect": "You have a perfect sense of precision and timing, and your ambushes are virtually impossible to detect. You and your squad add +Rank to your Stealth Scores, and enemies may not spend Ruin to become aware of the ambushing Striking Scorpions.",
     "flavor": "",
     "source": "apocrypha",
-    "page": 244
+    "page": 247
   },
   {
     "id": "anathema_aoa",
@@ -1917,7 +1917,7 @@
     "effect": "The Exarch’s motions in battle are misleading, even entrancing, leaving enemies off-balance and unable to perceive when the true attack will come. You may make an Athletics Interaction attack as a Simple Action, rather than a Combat Action.",
     "flavor": "",
     "source": "apocrypha",
-    "page": 245
+    "page": 248
   },
   {
     "id": "disturbing_voice",
@@ -2533,7 +2533,7 @@
     "effect": "When you attempt to use a psychic power at the Unbound or Transcendent power level, for each Exalted Icon you roll, you may roll one additional die for the Psychic Mastery test. These additional dice may not themselves grant more dice. You gain 1d3 Corruption Points when you take this talent. You may not select the Alpha-level Psyker or Beta-level Psyker talents.",
     "flavor": "Your psychic powers are particularly potent, with an intensity that few can match.",
     "source": "apocrypha",
-    "page": 232
+    "page": 237
   },
   {
     "id": "gene_wrought_might",
@@ -2633,7 +2633,7 @@
     "effect": "When you use a Salvo option when making a ranged attack, you add +Rank ED to the attack's damage.",
     "flavor": "On command, you can produce a veritable wall of firepower that few foes can withstand.",
     "source": "apocrypha",
-    "page": 232
+    "page": 237
   },
   {
     "id": "hammer_of_wrath",
@@ -6253,7 +6253,7 @@
     "effect": "You are elusive and cannot be held in any battles but the ones they choose to fight. When you or a member of your squad moves out of Engagement with an enemy, you do not provoke Reflexive Attacks from that enemy: you are always considered to have taken the Fall Back action.",
     "flavor": "",
     "source": "apocrypha",
-    "page": 249
+    "page": 253
   },
   {
     "id": "wonders_of_the_brôkhyr_aoa",
