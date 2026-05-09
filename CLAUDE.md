@@ -4,6 +4,13 @@ Web-based character creation tool for the Wrath & Glory tabletop RPG.
 
 **Style Guide**: See `../STYLE_GUIDE.md` for naming conventions, CSS patterns, JS patterns, and data file conventions shared across all Wrath & Glory projects.
 
+## Quick Start
+
+No build step — serve the directory with any static HTTP server:
+```bash
+python3 -m http.server 8000    # then open http://localhost:8000
+```
+
 ## Architecture
 
 Vanilla JavaScript with global object pattern (no modules/bundling). Each file defines a global `const` object (e.g., `const InjuriesTab = {...}`). No build step -- served directly as static files.
@@ -114,7 +121,7 @@ The glossary (`data/glossary.json`) should be kept in sync with the bestiary app
 - **GitHub Issues**: Do NOT resolve/close issues until the user confirms they are resolved. After closing an issue, post a comment summarizing the fix/change (what was wrong, what was changed, relevant commit hash).
 - **Commits**: Push using the QuadraKev PAT. GitHub Actions workflow (`.github/workflows/deploy.yml`) handles Pages deploys on push to main. Use `--author="QuadraKev-Claude <claude-quadrakev@noreply>"` on all commits to differentiate AI-assisted work from the user's personal commits.
 - **GitHub Issues/PRs/Comments**: Use the QuadraKev PAT and include a note (e.g., "Created by Claude Code") to indicate AI authorship. Do NOT use the QuadraKev-bot account — it was flagged by GitHub for TOS violation (one account per person).
-- PAT is available in the `$GH_TOKEN` environment variable (set in `~/.bashrc`).
+- PAT is available in the Windows `$env:GH_TOKEN` environment variable. When pushing from WSL, pass it through (e.g., embed in the remote URL).
 
 ## Books Available (PDF)
 
@@ -143,7 +150,7 @@ Source material PDFs are available locally for reference:
 14. **Ascension enhancements**: Mechanical effects for packages (auto-grant talents/powers/keywords/disciplines), package choice UI (Demanding Patron), archetype ascension stat prereqs + ability descriptions + wargear buttons, prereq gating for both packages and archetypes
 15. **Source book + page annotations**: Every data item annotated with source book + page number. `DataLoader.formatSourcePage()` / `getSourceDisplayName()`. Glossary entries also annotated.
 16. **Mobile layout fixes**: `#app` uses `position: fixed; inset: 0` instead of `height: 100vh`. Header/tab-nav/footer use `flex-shrink: 0`. Scroll chaining prevented with `overscroll-behavior: contain`. Tab nav scrollbar hidden. Sidebar-backdrop moved inside `#app` (required for stacking context).
-17. **Comprehensive data audit**: Visual PDF audit of all 12 data files across all 10 sources (988 entries). Found and fixed 1,184 issues: 251 wrong values, 342 fabricated entries, 305 truncated texts, 286 minor wording differences. Fixes include: ability renames (49 Apocrypha + 5 Core), psychic power renames (Minor Invocation→Malefic Invitation, Warpspeed→Warptime), Kin species subOption corrections, `[AI-Generated]` annotations for entries with no source PDF text, and glossary sync to bestiary. Audit reports stored in `audit-reports-v2/`.
+17. **Comprehensive data audit**: Visual PDF audit of all 12 data files across all 10 sources (988 entries). Found and fixed 1,184 issues: 251 wrong values, 342 fabricated entries, 305 truncated texts, 286 minor wording differences. Fixes include: ability renames (49 Apocrypha + 5 Core), psychic power renames (Minor Invocation→Malefic Invitation, Warpspeed→Warptime), Kin species subOption corrections, `[AI-Generated]` annotations for entries with no source PDF text, and glossary sync to bestiary.
 18. **In-text reference removal**: Stripped ~117 inline page references (e.g., "(Wrath & Glory Rulebook, page 177)") from data description fields. The `source`/`page` fields are preserved — only redundant in-text citations removed.
 19. **Settings tab**: Moved source book selection from Setting builder section to dedicated Settings tab. Gold toggle buttons (matching bestiary style). Glossary tab respects source filters.
 20. **References tab**: Searchable, filterable reference browser for 13 categories: Archetypes, Talents, Weapons, Grenades & Missiles, Armor, Augmetics, Equipment, Psychic Powers, Weapon Upgrades, Ascension Packages, Archetype Abilities, Species Abilities, and Mutations. Species abilities deduplicated across variants.

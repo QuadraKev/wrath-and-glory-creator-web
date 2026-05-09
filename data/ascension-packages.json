@@ -748,10 +748,10 @@
         "AELDARI"
       ],
       "skills": {
-        "pilot": 5,
-        "survival": 5
+        "pilot": 3,
+        "survival": 3
       },
-      "skillRequirement": "Pilot 5+ or Survival Rating 5+"
+      "skillRequirement": "Pilot 3+ or Survival Rating 3+"
     },
     "benefits": [
       "Your journey through the Webway's safer paths earned you a reward before it returned you to where you started. Choose one of the options below:",
@@ -801,7 +801,7 @@
     },
     "benefits": [
       "Work with your Gamemaster and your group to determine what exactly earned you such a reward and the details of the ceremony.",
-      "ADEPTUS MINISTORUM: You may take any Faith Talent that requires the ADEPTUS MINISTORUM Keyword. You have access to the Ecclasian Foresight and Jalyanna's Banishment Rituals (Redacted Records II, pages 9 and 10).",
+      "ADEPTUS MINISTORUM: You may take any Faith Talent that requires the ADEPTUS MINISTORUM Keyword. You have access to the Hepthelian Foresight and Julyanna's Banishment Rituals (Redacted Records II, pages 9 and 10).",
       "ADEPTUS MECHANICUS: You can gain any Imperial augmetic, undergoing an augmentation ritual. You have access to the Avachrus Arch-Assemblage Ritual (Redacted Records II, page 11)."
     ],
     "keywordsGained": [],
@@ -837,7 +837,7 @@
       "other": "ANY; the Keyword of the Faction that named you their holy avenger. If you already have the relevant Keyword, you gain an additional +1 Influence."
     },
     "benefits": [
-      "Work with your Gamemaster to determine the target of your holy vengeance. This mission, including the training beforehand and the fallout afterwards, may be the subject of an entire adventure. These fees are located in the battlezones on pages 38 and 56 of Redacted Records II.",
+      "Work with your Gamemaster to determine the target of your holy vengeance. This mission, including the training beforehand and the fallout afterwards, may be the subject of an entire adventure. Perhaps these foes are located in the battlezones on pages 38 and 56 of Redacted Records II.",
       "Either the Duellist or Eliminator Talent (Wrath & Glory Rulebook, pages 131 & 133).",
       "+1 Wealth, and +1 Wealth when the assassination is confirmed."
     ],
@@ -856,7 +856,7 @@
       "other": "ANY; the Keyword of the Faction that made the relic-based mission. If you already have the relevant Keyword, you gain an additional +1 Influence."
     },
     "benefits": [
-      "Work with your Gamemaster to determine which Faction you will be serving, and the relic they want you to secure, sanctify, or safeguard. This Ascension Package is designed to work with the Malign Artefacts rules (Wrath & Glory Rulebook, page 20).",
+      "Work with your Gamemaster to determine which Faction you will be serving, and the relic they want you to secure, sanctify, or safeguard. This Ascension Package is designed to work with the rules in Chapter 1, either the premade Relics of Renown (page 20), Malign Artefacts (page 26), or a relic of your own creation (Creating Holy Relics, page 12).",
       "Knowledge of the location of a relic, as well as the permission to officially protect said relic.",
       "The Tenacious Talent (Wrath & Glory Rulebook, page 140).",
       "Influence Bonus drops by 3 (to \u20133 total) if the relic is ever lost, destroyed, or falls into the hands of the enemy."
