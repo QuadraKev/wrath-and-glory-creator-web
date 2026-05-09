@@ -91,7 +91,13 @@ const InjuriesTab = {
                 <div class="injury-item">
                     <div class="injury-item-header">
                         <span class="injury-item-name">${inj.name}${sideLabel}</span>
-                        <button class="btn-remove traumatic-remove" data-index="${index}">Remove</button>
+                        <div class="injury-item-actions">
+                            <label class="injury-escalate-label">
+                                <input type="checkbox" class="traumatic-reconstructed" data-index="${index}" ${entry.reconstructed ? 'checked' : ''}>
+                                Reconstructed
+                            </label>
+                            <button class="btn-remove traumatic-remove" data-index="${index}">Remove</button>
+                        </div>
                     </div>
                     <div class="injury-description">${inj.description}</div>
                 </div>
@@ -304,6 +310,14 @@ const InjuriesTab = {
                 }
             });
         }
+
+        // Traumatic injury reconstructed
+        document.querySelectorAll('.traumatic-reconstructed').forEach(cb => {
+            cb.addEventListener('change', () => {
+                State.toggleTraumaticReconstruction(parseInt(cb.dataset.index));
+                this.render();
+            });
+        });
 
         // Traumatic injury remove
         document.querySelectorAll('.traumatic-remove').forEach(btn => {

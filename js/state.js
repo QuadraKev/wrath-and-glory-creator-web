@@ -904,6 +904,15 @@ const State = {
         }
     },
 
+    // Toggle reconstruction on a traumatic injury
+    toggleTraumaticReconstruction(index) {
+        if (!this.character.traumaticInjuries) return;
+        if (index >= 0 && index < this.character.traumaticInjuries.length) {
+            this.character.traumaticInjuries[index].reconstructed = !this.character.traumaticInjuries[index].reconstructed;
+            this.notifyListeners('injuries');
+        }
+    },
+
     // Set corruption points
     setCorruptionPoints(value) {
         this.character.corruption = Math.max(0, parseInt(value) || 0);
