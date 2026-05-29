@@ -3668,6 +3668,11 @@ textarea {
     width: 60px;
 }
 
+.sheet-powers-table .sheet-power-range {
+    text-align: center;
+    white-space: nowrap;
+}
+
 .sheet-powers-table .sheet-power-desc {
     font-size: 12px;
     color: var(--text-secondary);

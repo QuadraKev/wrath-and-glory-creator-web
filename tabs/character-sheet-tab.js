@@ -1228,6 +1228,7 @@ const CharacterSheetTab = {
                 <tr>
                     <td class="sheet-power-name">${power.name}<div class="source-ref">${DataLoader.formatSourcePage(power)}</div></td>
                     <td class="sheet-power-dn">${power.dn || '-'}</td>
+                    <td class="sheet-power-range">${power.range || '-'}</td>
                     <td class="sheet-power-desc">${power.effect || '-'}</td>
                 </tr>
             `;
@@ -1242,6 +1243,7 @@ const CharacterSheetTab = {
                 <tr>
                     <td class="sheet-power-name">${power.name}<div class="source-ref">${DataLoader.formatSourcePage(power)}</div></td>
                     <td class="sheet-power-dn">${power.dn || '-'}</td>
+                    <td class="sheet-power-range">${power.range || '-'}</td>
                     <td class="sheet-power-desc">${power.effect || '-'}</td>
                 </tr>
             `;
@@ -1255,6 +1257,7 @@ const CharacterSheetTab = {
                         <tr>
                             <th>Name</th>
                             <th>DN</th>
+                            <th>Range</th>
                             <th>Effect</th>
                         </tr>
                     </thead>
