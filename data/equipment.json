@@ -546,14 +546,14 @@
     "name": "Plasma Grenades",
     "category": "explosive",
     "description": "Terrifying potential in a small package, a Plasma Grenade is little more than a miniaturised plasma manifold rigged to violently overheat on command. The resulting ball of untethered annihilation is enough to make anyone think twice about even carrying these unstable grenades.",
-    "effect": "[AI-Generated] Blast (Medium), 14+2ED damage, AP -2.",
+    "effect": "Thrown up to 4 metres or fired from a launcher. Damage 10, ED 5, AP -1, with Blast (6).",
     "value": 5,
-    "rarity": "Rare",
+    "rarity": "Very Rare",
     "keywords": [
       "AELDARI"
     ],
     "source": "core",
-    "page": 229
+    "page": 220
   },
   {
     "id": "stikkbombs",
@@ -574,7 +574,7 @@
     "name": "Mechadendrite",
     "category": "augmetic",
     "description": "Artificial limbs protruding from a mount grafted to the spine. The Adeptus Mechanicus make extensive use of these substantial augmetics; each is controlled by the mind and purpose-built.",
-    "effect": "When you acquire a Mechadendrite, choose a single type. Ballistic: functions as a Laspistol (uses no Ammo and never needs Reloading). Exploration: functions as an Auspex; +1 bonus die to Survival (Wil) Tests to navigate or track. Medicae: functions as a Medikit and Diagnostor; +1 bonus die to Medicae (Int) Tests; can inject toxins, sedatives, or stimulants as a Simple Action. Optical: functions as a Magnoculor Scope and Preysense Goggles; +1 bonus die to Awareness (Int) Tests. Servo-Arm: gain +4 Strength when using the arm and Brace as a Free Action; melee profile Damage (S)+4, ED 2, AP -3, Unwieldy (2). Utility: functions as a Combi-Tool; +1 bonus die to Tech (Int) Tests.",
+    "effect": "When you acquire a Mechadendrite, choose one type. Ballistic: acts as a built-in Laspistol that needs no Ammo or Reloading. Exploration: acts as an Auspex and gives +1 bonus die to Survival (Wil) Tests to navigate or track. Medicae: acts as a Medikit and Diagnostor, gives +1 bonus die to Medicae (Int) Tests, and can inject drugs as a Simple Action. Optical: acts as a Magnoculor Scope and Preysense Goggles and gives +1 bonus die to Awareness (Int) Tests. Servo-Arm: gives +4 Strength when used, allows Brace as a Free Action, and attacks as a melee weapon at (S)+4, ED 2, AP -3, Unwieldy (2). Utility: acts as a Combi-Tool and gives +1 bonus die to Tech (Int) Tests.",
     "value": 5,
     "rarity": "Very Rare",
     "keywords": [
@@ -603,7 +603,7 @@
     "name": "Augmetic Eye",
     "category": "augmetic",
     "description": "Several patterns available, all able to vastly expand visual perception.",
-    "effect": "Select one enhancement: auger, night vision, pict recorder, reticule, or telescopic.",
+    "effect": "Select 1 enhancement per Augmetic Eye. Auger: +1 bonus die to sight-based Awareness (Int) Tests. Night: Acts as Preysense Goggles. Pict Recorder: Can record up to 1 hour of video or 86,400 still images. Reticule: +1 bonus die to ranged Attack Tests. Telescopic: You ignore any penalties related to visual distance. Having two eyes of the same type doubles the benefits (if applicable).",
     "value": 6,
     "rarity": "Uncommon",
     "keywords": [],
@@ -1337,7 +1337,7 @@
     "id": "narthecium",
     "name": "Narthecium",
     "category": "tool",
-    "description": "[AI-Generated] A sophisticated medical device used by Space Marine Apothecaries. Most Nartheciums incorporate a Reductor, which allows gene-seed to be recovered from a dead Astartes.",
+    "description": "[AI-Generated] An Apothecary's compact set of surgical and medical tools, used to treat wounded battle-brothers and to recover gene-seed from the slain.",
     "effect": "You can make Medicae (Int) Tests to perform surgeries and heal others without suffering any DN penalties related to the current situation. When you make a Medicae (Int) Test using a Narthecium as part of a Multi-Action in combat, the DN penalty is decreased by 2. Most Nartheciums incorporate a Reductor, which allows gene-seed to be recovered from a dead Astartes with a Simple Action.",
     "value": 5,
     "rarity": "Uncommon",
@@ -1352,8 +1352,8 @@
     "id": "reductor",
     "name": "Reductor",
     "category": "tool",
-    "description": "[AI-Generated] A specialized surgical tool used by Space Marine Apothecaries to extract the progenoid glands (gene-seed) from fallen battle-brothers.",
-    "effect": "[AI-Generated] Allows gene-seed to be recovered from a dead Astartes with a Simple Action.",
+    "description": "[AI-Generated] A specialised tool used by Apothecaries to recover the gene-seed of fallen Space Marines.",
+    "effect": "Extracts gene-seed (progenoids) from a slain Astartes as a Simple Action; commonly built into a Narthecium.",
     "value": 4,
     "rarity": "Rare",
     "keywords": [
@@ -1425,70 +1425,26 @@
     "page": 73
   },
   {
-    "id": "company_standard",
-    "name": "Company Standard",
-    "category": "misc",
-    "description": "[AI-Generated] A sacred banner bearing the heraldry of a Space Marine Company, carried into battle by the Company Ancient.",
-    "effect": "[AI-Generated] Inspires nearby allies. Functions as a Symbol of Authority for ADEPTUS ASTARTES.",
-    "value": 6,
-    "rarity": "Very Rare",
-    "keywords": [
-      "IMPERIUM",
-      "ADEPTUS ASTARTES"
-    ],
-    "source": "voa",
-    "page": 42
-  },
-  {
-    "id": "smoke_grenades",
-    "name": "Smoke Grenades",
-    "category": "explosive",
-    "description": "[AI-Generated] Grenades that release thick smoke to obscure vision and provide concealment.",
-    "effect": "[AI-Generated] Creates a smoke cloud that blocks line of sight in a Medium Blast area for several rounds.",
-    "value": 2,
-    "rarity": "Common",
-    "keywords": [
-      "IMPERIUM"
-    ],
-    "source": "voa",
-    "page": 33
-  },
-  {
     "id": "shock_grenades",
     "name": "Shock Grenades",
     "category": "explosive",
-    "description": "[AI-Generated] Non-lethal grenades that emit a blinding flash and deafening sound to disorient targets.",
-    "effect": "[AI-Generated] Blast (Medium), targets must pass a Toughness Test or be Stunned.",
-    "value": 3,
-    "rarity": "Uncommon",
+    "description": "[AI-Generated] A grenade that bursts in a blinding, deafening flash to disorient and stun those nearby rather than kill them.",
+    "effect": "Thrown up to 4 metres or fired from a launcher. Deals 3 Shock damage with Blast (6), and inflicts Blinded (1) and Vulnerable (1) on targets caught in the blast.",
+    "value": 2,
+    "rarity": "Common",
     "keywords": [
       "IMPERIUM",
       "ADEPTUS ASTARTES"
     ],
-    "source": "voa",
-    "page": 37
-  },
-  {
-    "id": "haywire_mine",
-    "name": "Haywire Mine",
-    "category": "explosive",
-    "description": "[AI-Generated] An electromagnetic pulse mine designed to disable vehicles and mechanical targets.",
-    "effect": "[AI-Generated] When triggered, releases an EMP that damages and disables machines and vehicles in the area.",
-    "value": 5,
-    "rarity": "Rare",
-    "keywords": [
-      "IMPERIUM",
-      "ADEPTUS ASTARTES"
-    ],
-    "source": "voa",
-    "page": 33
+    "source": "fspg",
+    "page": 124
   },
   {
     "id": "combat_drugs",
     "name": "Combat Drugs",
     "category": "drug",
-    "description": "[AI-Generated] A collection of performance-enhancing substances used by Drukhari warriors to heighten their abilities in battle.",
-    "effect": "[AI-Generated] Roll or choose from the combat drug table to gain various combat bonuses. Standard dose lasts 4 Rounds.",
+    "description": "[AI-Generated] Lethal alchemical stimulants brewed by the Drukhari to push body and mind past mortal limits for the span of a battle.",
+    "effect": "A dose lasts 4 Rounds; a second dose lasts 3 Rounds, and each further dose adds 1 Round. If the number of active doses equals the user's Toughness, they must pass a DN 3 Toughness Test or overdose. Individual Drukhari combat drugs (Adrenalight, Grave Lotus, Hypex, Painbringer, Serpentin, Splintermind) each grant a distinct benefit.",
     "value": 5,
     "rarity": "Rare",
     "keywords": [
@@ -1544,28 +1500,12 @@
     "page": 116
   },
   {
-    "id": "ballistic_autoreliquary",
-    "name": "Ballistic Autoreliquary",
-    "category": "misc",
-    "description": "[AI-Generated] A sacred container housing blessed bolt shells and relics of the Chapter, carried by Primaris Marines.",
-    "effect": "[AI-Generated] Provides blessed ammunition for bolt weapons.",
-    "value": 5,
-    "rarity": "Rare",
-    "keywords": [
-      "IMPERIUM",
-      "ADEPTUS ASTARTES",
-      "PRIMARIS"
-    ],
-    "source": "voa",
-    "page": 34
-  },
-  {
     "id": "hook_and_chains",
-    "name": "Hooks and Chains",
+    "name": "Chains, Blades, and Hooks",
     "category": "misc",
-    "description": "[AI-Generated] Chains, hooks, and blades affixed to Kabalite armor that make them more intimidating and dangerous in melee.",
-    "effect": "[AI-Generated] May be used as improvised weapons. Can be used in grapples to inflict additional damage.",
-    "value": 3,
+    "description": "[AI-Generated] An array of barbed chains, blades, and hooks worn by Kabalite warriors to lacerate, intimidate, and entangle their prey.",
+    "effect": "Choose one option when acquired: used as a Whip with +1 to grapple attacks; melee attacks also inflict the Bleeding Condition; or attempts to grapple the wearer increase their DN by 1.",
+    "value": 4,
     "rarity": "Common",
     "keywords": [
       "AELDARI",
@@ -1863,7 +1803,7 @@
     "name": "Grapple Gun (Abundance of Apocrypha)",
     "category": "tools",
     "description": "These devices, appearing like a normal firearm, use gas pressure or magnetic impulse to propel a sturdy metal hook attached to a cable. They're favoured by shock troops fighting in dense terrain, as it allows them to attack from unexpected directions and position themselves in hard-to-reach vantages.",
-    "effect": "[AI-Generated] Allows rapid ascent and traversal of difficult terrain.",
+    "effect": "Fires a hooked cable by gas or magnetic propulsion that anchors to a surface, letting the user climb or reach otherwise inaccessible vantage points.",
     "value": 2,
     "rarity": "Uncommon",
     "keywords": [],
