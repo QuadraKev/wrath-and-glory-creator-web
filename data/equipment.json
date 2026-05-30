@@ -573,8 +573,8 @@
     "id": "mechadendrite",
     "name": "Mechadendrite",
     "category": "augmetic",
-    "description": "Artificial limbs protruding from mount grafted to spine. Adeptus Mechanicus make extensive use.",
-    "effect": "Various functions depending on type (ballistic, exploration, medicae, optical).",
+    "description": "Artificial limbs protruding from a mount grafted to the spine. The Adeptus Mechanicus make extensive use of these substantial augmetics; each is controlled by the mind and purpose-built.",
+    "effect": "When you acquire a Mechadendrite, choose a single type. Ballistic: functions as a Laspistol (uses no Ammo and never needs Reloading). Exploration: functions as an Auspex; +1 bonus die to Survival (Wil) Tests to navigate or track. Medicae: functions as a Medikit and Diagnostor; +1 bonus die to Medicae (Int) Tests; can inject toxins, sedatives, or stimulants as a Simple Action. Optical: functions as a Magnoculor Scope and Preysense Goggles; +1 bonus die to Awareness (Int) Tests. Servo-Arm: gain +4 Strength when using the arm and Brace as a Free Action; melee profile Damage (S)+4, ED 2, AP -3, Unwieldy (2). Utility: functions as a Combi-Tool; +1 bonus die to Tech (Int) Tests.",
     "value": 5,
     "rarity": "Very Rare",
     "keywords": [
@@ -1410,26 +1410,10 @@
     "page": 239
   },
   {
-    "id": "servo_harness",
-    "name": "Servo-Harness",
-    "category": "augmetic",
-    "description": "[AI-Generated] A complex array of servo-arms, cutters, and other tools mounted on a harness worn by Techmarines. In battle, it can be adapted to wield bolters and flamers.",
-    "effect": "[AI-Generated] Provides multiple servo-arms for engineering and combat tasks. Allows the wearer to perform repairs while engaging enemies.",
-    "value": 7,
-    "rarity": "Very Rare",
-    "keywords": [
-      "IMPERIUM",
-      "ADEPTUS MECHANICUS",
-      "ADEPTUS ASTARTES"
-    ],
-    "source": "voa",
-    "page": 39
-  },
-  {
     "id": "astartes_servo_arm",
     "name": "Astartes Servo-Arm",
     "category": "augmetic",
-    "description": "[AI-Generated] A powerful mechanical appendage that combines the strength of the Machine Spirit with blessed unguents.",
+    "description": "These powerful augmetic limbs are utilised by Techmarines, who have specially adapted armour to allow them to function. Equipped with powerful pincers for grabbing or cutting, and an array of small tools for finer work, they greatly increase the efficiency of the Techmarine's labours. In combat, the same forces that can lift a vehicle or twist buckled armour plates back into shape can be employed to devastating effect, crushing foes without mercy. Astartes Servo-Arms are stronger and more durable than their Human counterparts.",
     "effect": "You gain +5 Strength when using the Astartes Servo-Arm. The arm allows you to Brace as a Free Action in combat. It adds +1 bonus dice to all Tech (Int) Tests to perform engineering tasks, and can be used to make unarmed strikes with the servo-arm's Strength.",
     "value": 5,
     "rarity": "Uncommon",
@@ -1733,23 +1717,6 @@
     "page": 93
   },
   {
-    "id": "mandiblaster",
-    "name": "Mandiblaster",
-    "category": "augmetic",
-    "description": "A pair of miniature laser weapons built into a Striking Scorpion's helmet, psychically triggered.",
-    "effect": "If a Striking Scorpion rolls a Wrath Critical on a melee attack Test against a creature Size Average or smaller, the target suffers 3 Mortal Wounds in addition to the Critical Hit's effects.",
-    "value": 8,
-    "rarity": "Very Rare",
-    "keywords": [
-      "AELDARI",
-      "ASURYANI",
-      "ASPECT WARRIOR",
-      "STRIKING SCORPION"
-    ],
-    "source": "aeldari",
-    "page": 94
-  },
-  {
     "id": "null_rod",
     "name": "Null Rod",
     "category": "misc",
@@ -1763,20 +1730,6 @@
     ],
     "source": "fspg",
     "page": 127
-  },
-  {
-    "id": "augmetics",
-    "name": "Augmetics",
-    "category": "augmetic",
-    "description": "A general category of cybernetic enhancements common in the Imperium.",
-    "effect": "Varies depending on specific augmetic chosen.",
-    "value": 4,
-    "rarity": "Rare",
-    "keywords": [
-      "IMPERIUM"
-    ],
-    "source": "core",
-    "page": 243
   },
   {
     "id": "apertor_aoa",
@@ -4548,7 +4501,7 @@
     "category": "augmetic",
     "description": "Grafted to the spine and affixed by thick cables to heavy metal vambraces, these metre-long poles are designed to gather and conduct psychic energy, allowing a psyker to channel more aggressively. Implants of this sort have been extensively tested by the Adeptus Astra Telepathica, but it has been found that the power they provide is dangerously unstable, and they are banned by order of the Inquisition.",
     "effect": "When you roll a Wrath Critical on a Psychic Mastery test, you may roll one additional Wrath Die immediately (these extra dice cannot themselves generate extra dice).",
-    "value": 7,
+    "value": 6,
     "rarity": "Very Rare",
     "keywords": [
       "CHAOS",
@@ -4904,8 +4857,8 @@
     "category": "augmetic",
     "description": "A complex network of micro-servos and subskin synth-flesh dispensers, twitch-masks allow the user to adjust his facial features at will, altering shape and texture in a matter of moments. Rare and difficult to implant, they are nonetheless favoured by confidence tricksters and any others for whom being recognised is a liability.",
     "effect": "You add +2 dice on all Deception tests made to pass yourself off as another person. You may increase this bonus to +4 dice by suffering 1 Shock when you assume the disguise.",
-    "value": 6,
-    "rarity": "Very Rare",
+    "value": 2,
+    "rarity": "Common",
     "keywords": [
       "IMPERIUM",
       "SCUM"
