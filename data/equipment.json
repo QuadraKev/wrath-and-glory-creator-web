@@ -1545,22 +1545,6 @@
     "page": 47
   },
   {
-    "id": "ichor_injector",
-    "name": "Ichor Injector",
-    "category": "tool",
-    "description": "[AI-Generated] A medical device used by Haemonculi to inject potent substances into their subjects.",
-    "effect": "[AI-Generated] Can inject toxins, stimulants, or other substances as a Combat Action.",
-    "value": 5,
-    "rarity": "Rare",
-    "keywords": [
-      "AELDARI",
-      "DRUKHARI",
-      "HAEMONCULUS"
-    ],
-    "source": "aeldari",
-    "page": 86
-  },
-  {
     "id": "back_banner",
     "name": "Back Banner",
     "category": "misc",
