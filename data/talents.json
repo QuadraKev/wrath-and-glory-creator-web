@@ -1274,7 +1274,7 @@
         "ULTRAMARINES"
       ]
     },
-    "effect": "Since the return of Roboute Guilliman, the Codex Astartes has slowly been recognised as a living document which the greatest tacticians may contribute and iterate upon. Your own studious knowledge of the Codex Astartes and years of service allow you to quickly adapt and evolve strategies on the battlefield in line with its tenets. [...] When executing a strategic plan or tactic that you helped create, you add + (Rank) dice to all Leadership (Wil) and Persuasion (Fel) Tests to guide others through the details. In addition, if you have at least one hour to plan for an upcoming encounter or mission, you receive one bonus Wrath point that can only be spent on a Narrative Declaration relevant to your plan. This Wrath point can carry over between sessions, but you may never possess more than one bonus Wrath point from this Talent.",
+    "effect": "Since the return of Roboute Guilliman, the Codex Astartes has slowly been recognised as a living document which the greatest tacticians may contribute and iterate upon. Your own studious knowledge of the Codex Astartes and years of service allow you to quickly adapt and evolve strategies on the battlefield in line with its tenets. While it may be decades or centuries before your tactics receive the necessary approval to be disseminated to other Chapters for consideration and adoption, your brethren know your strategic insight, as do all those who witness you in battle.\n\nWhen executing a strategic plan or tactic that you helped create, you add + (Rank) dice to all Leadership (Wil) and Persuasion (Fel) Tests to guide others through the details. In addition, if you have at least one hour to plan for an upcoming encounter or mission, you receive one bonus Wrath point that can only be spent on a Narrative Declaration relevant to your plan. This Wrath point can carry over between sessions, but you may never possess more than one bonus Wrath point from this Talent.",
     "flavor": "[AI-Generated] Like Guilliman himself, you understand that the Codex is a guide, not a cage. Adaptation is the key to victory.",
     "source": "voa",
     "page": 45
@@ -1462,7 +1462,7 @@
       ],
       "keywordsAny": true
     },
-    "effect": "A 1st Company Veteran, Librarian, or Chaplain may begin with Terminator armour. Terminator armour comes with the following weapon combinations: Storm Bolter and Power Fist or Chainfist as standard. The Storm Bolter may be exchanged for a Heavy Flamer or Assault Cannon. Alternatively, the Powerfist/Chainfist may be exchanged for a Power Sword or Storm Shield. The Storm Bolter and Powerfist/Chainfist can both be exchanged for a pair of Lightning Claws. If worn by a Chaplain, the Powerfist/Chainfist is replaced with a Crozius Arcanum. If worn by a Librarian, the Powerfist/Chainfist is replaced with a Force Weapon.",
+    "effect": "A 1st Company Veteran, Librarian, or Chaplain may begin with Terminator armour. Terminator armour comes with the following weapon combinations:\nStorm Bolter and Power Fist or Chainfist as standard.\nThe Storm Boler may be exchanged for a Heavy Flamer or Assault Cannon.\nAlternatively, the Powerfist/Chainfist may be exchanged for a Power Sword or Storm Shield.\nThe Storm Bolter and Powerfist/Chainfist can both be exchanged for a pair of Lightning Claws.\nIf worn by a Chaplain, the Powerfist/Chainfist is replaced with a Crozius Arcanum.\nIf worn by a Librarian, the Powerfist/Chainfist is replaced with a Force Weapon.",
     "flavor": "[AI-Generated] You have earned the right to wear the ancient Tactical Dreadnought Armour, becoming a walking fortress of ceramite and adamantium.",
     "isAscension": true,
     "source": "voa",
@@ -2027,7 +2027,7 @@
         "BLOOD ANGELS"
       ]
     },
-    "effect": "The violent and horrific death of the Blood Angels' Primarch at the hands of Warmaster Horus haunts all of Sanguinius' sons to this day. [...] You may declare you have had a vision after a Respite. If you do, ask the GM one question about events related to your mission. The GM must answer truthfully, although they do not need to tell the whole truth and may be cryptic in their response. However, after your vision, the closeness to Sanguinius' spirit haunts you. If you have the PRIMARIS Keyword, you are affected by the Blood Angels gene-seed flaw despite your refined origin. Otherwise, increase the DN of the Willpower Test to avoid becoming Frenzied to 5. This effect lasts until your next Respite.",
+    "effect": "The violent and horrific death of the Blood Angels’ Primarch at the hands of Warmaster Horus haunts all of Sanguinius’ sons to this day. Those most afflicted eventually succumb to the Black Rage, haunted by the psychic echoes of that fateful battle. Still, there are more benign manifestations — including the one to which you have become a witness.\n\nA fragment of the visionary spirit of your Primarch lives within you, granting you knowledge of the past and future. You may declare you have had a vision after a Respite. If you do, ask the GM one question about events related to your mission. The GM must answer truthfully, although they do not need to tell the whole truth and may be cryptic in their response. However, after your vision, the closeness to Sanguinius’ spirit haunts you. If you have the PRIMARIS Keyword, you are affected by the Blood Angels gene-seed flaw despite your refined origin. Otherwise, increase the DN of the Willpower Test to avoid becoming Frenzied to 5. This effect lasts until your next Respite.",
     "flavor": "[AI-Generated] The blood of the Great Angel flows through your veins, granting prophetic visions—at a terrible price.",
     "source": "voa",
     "page": 46
@@ -2547,7 +2547,7 @@
         "ADEPTUS ASTARTES"
       ]
     },
-    "effect": "Add an automatic Icon to Tests involving physical might (like Athletics to lift debris). Such Tests take half as long as usual.",
+    "effect": "The power of your modified physiology enables you to perform incredible feats of raw strength, and failure in such endeavours is a stranger to you. You may add an automatic Icon to your results when making a Test involving physical might, such as an Athletics (S) Test to lift a chunk of debris pinning a wounded ally. Additionally, any such Tests take half as long as usual.",
     "flavor": "[AI-Generated] Your gene-enhanced musculature grants you strength beyond even other Astartes.",
     "source": "voa",
     "page": 46
@@ -2881,7 +2881,7 @@
       "other": "Must know the secret of the Fallen"
     },
     "effect": "As one entrusted with these secrets — perhaps by Interrogator-Chaplain Caphziel aboard the Varonius Flotilla — or who discovered the terrible truth in the field, you are prepared to face the worst forms of betrayal. Ever vigilant, you do not need to pay a point of Glory to be considered aware of an ambush, and reduce by 2 the DN of Cunning (Fel) and Scholar (Int) Tests to unearth or learn of betrayal and those who would engage in it.",
-    "flavor": "The Dark Angels and their Successors sometimes cryptically refer to themselves as the 'Unforgiven,' and even the lay brethren of these Chapters do not fully understand why. It is a secret wreathed in myth and metaphor, obscured by Chapter mysteries to which only a few are privy. Those who learn the truth, or are sufficiently trusted by their superiors, are inducted into the Inner Circle and told the reality of the Legion's ancient split and fall from grace, giving them a unique perspective on fallibility and failure.",
+    "flavor": "The Dark Angels and their Successors sometimes cryptically refer to themselves as the “Unforgiven,” and even the lay brethren of these Chapters do not fully understand why. It is a secret wreathed in myth and metaphor, obscured by Chapter mysteries to which only a few are privy. Those who learn the truth, or are sufficiently trusted by their superiors, are inducted into the Inner Circle and told the reality of the Legion’s ancient split and fall from grace, giving them a unique perspective on fallibility and failure.",
     "source": "voa",
     "page": 47
   },
@@ -4537,7 +4537,7 @@
       ],
       "tier": 3
     },
-    "effect": "Few Space Marines could refuse the prospect of being remade, stronger and faster, more capable of waging war against the enemies of the Imperium. You have undergone the extensive and agonising operation required to be implanted with the three additional organs needed to join your Primaris brethren and now count yourself among those who have crossed the Rubicon Primaris. You gain the Bolter Discipline and the Built Tough talents. You gain the PRIMARIS keyword. In future, you may choose from the Primaris Assencion packages. (pg 34) You gain +2 Influence, and 1 item of Uncommon Wargear. Unless using Terminator Armour you replace your current Power Armour with Mk X Tacticus Armour - Or other variants as discussed with your GM.",
+    "effect": "Few Space Marines could refuse the prospect of being remade, stronger and faster, more capable of waging war against the enemies of the Imperium. You have undergone the extensive and agonising operation required to be implanted with the three additional organs needed to join your Primaris brethren and now count yourself among those who have crossed the Rubicon Primaris.\n\nYou gain the Bolter Discipline and the Built Tough talents. You gain the PRIMARIS keyword. In future, you may choose from the Primaris Assencion packages.\n\nYou gain +2 Influence, and 1 item of Uncommon Wargear. Unless using Terminator Armour you replace your current Power Armour with Mk X Tacticus Armour - Or other variants as discussed with your GM.",
     "flavor": "[AI-Generated] You have crossed the Rubicon, undergoing the dangerous surgery to become Primaris. Many do not survive the procedure.",
     "isAscension": true,
     "source": "voa",

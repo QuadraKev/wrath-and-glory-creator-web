@@ -2,7 +2,7 @@
   {
     "id": "back_from_the_brink",
     "name": "Back From The Brink",
-    "description": "You are dead. Or that's what everyone thinks \u2014 whatever horrible fate befell you didn't quite end your life, and any limbs you may have lost have been replaced by augmetics.",
+    "description": "You are dead. Or that's what everyone thinks — whatever horrible fate befell you didn't quite end your life, and any limbs you may have lost have been replaced by augmetics.",
     "cost": "10 x new Tier",
     "costMultiplier": 10,
     "prerequisites": {
@@ -19,7 +19,11 @@
       "[ANY] (the Faction of those who saved you)"
     ],
     "keywordChoices": [
-      { "placeholder": "[ANY]", "category": "any", "label": "Faction of those who saved you" }
+      {
+        "placeholder": "[ANY]",
+        "category": "any",
+        "label": "Faction of those who saved you"
+      }
     ],
     "influenceModifier": 0,
     "source": "core",
@@ -47,7 +51,11 @@
       "[ANY] (the Faction of your new patron)"
     ],
     "keywordChoices": [
-      { "placeholder": "[ANY]", "category": "any", "label": "Faction of your new patron" }
+      {
+        "placeholder": "[ANY]",
+        "category": "any",
+        "label": "Faction of your new patron"
+      }
     ],
     "influenceModifier": 2,
     "requiresChoice": true,
@@ -85,7 +93,11 @@
       "[ANY]"
     ],
     "keywordChoices": [
-      { "placeholder": "[ANY]", "category": "any", "label": "Faction keyword" }
+      {
+        "placeholder": "[ANY]",
+        "category": "any",
+        "label": "Faction keyword"
+      }
     ],
     "influenceModifier": 2,
     "talentsGranted": [
@@ -97,7 +109,7 @@
   {
     "id": "perfidious_wretch",
     "name": "Perfidious Wretch",
-    "description": "You betrayed your allies to gain favour with another Faction. You may have been seduced by promises of power or material wealth \u2014 all too common in the grim darkness of the 41st Millennium. Or you may have developed a radical mindset that no longer aligns with your Faction and better suits another.",
+    "description": "You betrayed your allies to gain favour with another Faction. You may have been seduced by promises of power or material wealth — all too common in the grim darkness of the 41st Millennium. Or you may have developed a radical mindset that no longer aligns with your Faction and better suits another.",
     "cost": "5 x new Tier",
     "costMultiplier": 5,
     "prerequisites": {
@@ -115,7 +127,11 @@
       "Gain [ANY], remove the Keyword you betrayed"
     ],
     "keywordChoices": [
-      { "placeholder": "[ANY]", "category": "any", "label": "New faction keyword" }
+      {
+        "placeholder": "[ANY]",
+        "category": "any",
+        "label": "New faction keyword"
+      }
     ],
     "influenceModifier": -2,
     "source": "core",
@@ -179,7 +195,7 @@
   {
     "id": "test_of_faith_aoa",
     "name": "A Test of Faith (Abundance of Apocrypha)",
-    "description": "Your faith has always been strong, but seldom has it been tested so strenuously. You encountered some threat, danger, or catastrophe so great that your devotion to the Emperor was put into question\u2026 but when you emerged, your piety was rewarded. Strengthened by the challenge, your faith draws other faithful to you; drawn by the fire in your eyes and the conviction in your voice, and the need to have their own doubts expunged.",
+    "description": "Your faith has always been strong, but seldom has it been tested so strenuously. You encountered some threat, danger, or catastrophe so great that your devotion to the Emperor was put into question… but when you emerged, your piety was rewarded. Strengthened by the challenge, your faith draws other faithful to you; drawn by the fire in your eyes and the conviction in your voice, and the need to have their own doubts expunged.",
     "cost": "10 x new Tier",
     "costMultiplier": 10,
     "prerequisites": {
@@ -232,7 +248,11 @@
       "INQUISITION"
     ],
     "keywordChoices": [
-      { "placeholder": "[ORDO]", "category": "ordo", "label": "Choose your Ordo" }
+      {
+        "placeholder": "[ORDO]",
+        "category": "ordo",
+        "label": "Choose your Ordo"
+      }
     ],
     "influenceModifier": 1,
     "source": "apocrypha",
@@ -295,10 +315,10 @@
     },
     "benefits": [
       "You are faced with trials of faith. Each Trial requires that certain deeds be performed, but each will provide a reward once those deeds have been completed. When you select this Ascension Package, select a single one of the Trials below. When you have completed that Trial, and received the listed reward, you may select another Trial to replace it. If you manage to complete all four Trials, you may gain Sainthood.",
-      "Trial of Faith \u2014 Boundless Faith: You may shift an Exalted Icon to regain 1 Faith.",
-      "Trial of Purity \u2014 Blazing Soulfire: You may spend 2 Faith points to unleash a burst of pure Soulfire as a Simple Action. Roll 3d6 for each enemy within 6m: each enemy suffers a Mortal Wound for each Icon rolled. PSYKERS and CHAOS enemies re-roll any dice which result in a failure.",
-      "Trial of Righteousness \u2014 Righteous Wrath: You may spend 2 Faith points at the end of one of your turns. If you do so, you may take a second turn later in that round.",
-      "Trial of Suffering \u2014 Miraculous Recovery: Your Traumatic Injuries are immediately healed, and new Traumatic Injuries heal immediately upon taking a Respite. Further, you may spend 2 Faith points as a simple action to immediately heal Wounds equal to the game's Tier.",
+      "Trial of Faith — Boundless Faith: You may shift an Exalted Icon to regain 1 Faith.",
+      "Trial of Purity — Blazing Soulfire: You may spend 2 Faith points to unleash a burst of pure Soulfire as a Simple Action. Roll 3d6 for each enemy within 6m: each enemy suffers a Mortal Wound for each Icon rolled. PSYKERS and CHAOS enemies re-roll any dice which result in a failure.",
+      "Trial of Righteousness — Righteous Wrath: You may spend 2 Faith points at the end of one of your turns. If you do so, you may take a second turn later in that round.",
+      "Trial of Suffering — Miraculous Recovery: Your Traumatic Injuries are immediately healed, and new Traumatic Injuries heal immediately upon taking a Respite. Further, you may spend 2 Faith points as a simple action to immediately heal Wounds equal to the game's Tier.",
       "Sainthood: When you die, roll a number of d6 equal to the maximum number of Faith Points you possess. If the number of Icons rolled equals or exceeds two plus the number of times you've died, you are miraculously restored to life. If you are not restored to life, then you die permanently. However, your martyrdom means any other ADEPTA SORORITAS characters in the scene gain 1 Faith Point for each Trial you have completed."
     ],
     "keywordsGained": [],
@@ -535,7 +555,7 @@
   {
     "id": "sanctioned_xenos_aoa",
     "name": "Sanctioned Xenos (Abundance of Apocrypha)",
-    "description": "In the broadest of terms, no human may interact with a xenos creature in any way except violently\u2014such creatures are inherently blasphemous against the God-Emperor and must be eliminated on sight without exception. From a young age, citizens of the Imperium are taught to fear and hate the xenos, and innumerable legions of Imperial Guardsmen are taught of the superiority of Man over all inhuman things as they are drilled in the use of lasgun and bayonet. The number of xenos who have set foot upon human worlds peacefully and survived is small indeed. But this is not always the case. Though the Imperium was founded upon a creed of intolerance towards non-humans, peaceful contact with a variety of xenos species actually happens frequently. In most instances, these are short-term alliances or matters of temporary mutual convenience. Rogue Traders, Inquisitors, and a few other individuals, have the power to do more, and do so legitimately. These men and women, freed from the normal strictures and feudal requirements of the Imperium, have the influence and authority to make peaceful contact with xenos species for trade, temporary alliance or even to hire them as mercenaries.",
+    "description": "In the broadest of terms, no human may interact with a xenos creature in any way except violently—such creatures are inherently blasphemous against the God-Emperor and must be eliminated on sight without exception. From a young age, citizens of the Imperium are taught to fear and hate the xenos, and innumerable legions of Imperial Guardsmen are taught of the superiority of Man over all inhuman things as they are drilled in the use of lasgun and bayonet. The number of xenos who have set foot upon human worlds peacefully and survived is small indeed. But this is not always the case. Though the Imperium was founded upon a creed of intolerance towards non-humans, peaceful contact with a variety of xenos species actually happens frequently. In most instances, these are short-term alliances or matters of temporary mutual convenience. Rogue Traders, Inquisitors, and a few other individuals, have the power to do more, and do so legitimately. These men and women, freed from the normal strictures and feudal requirements of the Imperium, have the influence and authority to make peaceful contact with xenos species for trade, temporary alliance or even to hire them as mercenaries.",
     "cost": "5 x new Tier",
     "costMultiplier": 5,
     "prerequisites": {
@@ -667,7 +687,7 @@
     },
     "benefits": [
       "You have abandoned your Aeldari sub-culture and found refuge with another. Choose one of the sub-factions below as your new kindred. The exact effects of this Ascension Package vary depending on which sub-faction you are leaving and which you are joining.",
-      "Leaving Asuryani: Lose the ASURYANI and [CRAFTWORLD] Keywords, and can no longer purchase Asuryani Paths. Joining Asuryani: Gain the ASURYANI and [CRAFTWORLD] Keywords, and may now purchase Asuryani Paths \u2014 the first costs 10 XP, and all subsequent Paths cost 20 XP each.",
+      "Leaving Asuryani: Lose the ASURYANI and [CRAFTWORLD] Keywords, and can no longer purchase Asuryani Paths. Joining Asuryani: Gain the ASURYANI and [CRAFTWORLD] Keywords, and may now purchase Asuryani Paths — the first costs 10 XP, and all subsequent Paths cost 20 XP each.",
       "Leaving Anhrathe: Lose the ANHRATHE and [COTERIE] Keywords. Joining Anhrathe: Gain the ANHRATHE and [COTERIE] Keywords.",
       "Leaving Drukhari: Lose the DRUKHARI, [KABAL], [WYCH CULT], [COVEN] and BLADES FOR HIRE Keywords. Joining Drukhari: Gain the DRUKHARI and BLADES FOR HIRE Keywords.",
       "Leaving Harlequins: Lose the HARLEQUIN and [MASQUE] Keywords. Joining Harlequins: Gain the HARLEQUIN and [MASQUE] Keywords.",
@@ -682,7 +702,7 @@
   {
     "id": "dark_intrigue",
     "name": "Dark Intrigue",
-    "description": "The current time of turmoil in the Gilead System is but a minor distraction from the dark spectacles seen in Commorragh. Between realspace raids, Drukhari may return to show off their plunder, conspire with their peers, and shore up their territory in the Dark City. When this scheming goes well, the rewards are plentiful \u2014 but everything claimed in Commorragh is at someone else's expense, and the vendettas of slighted rivals can be deadly.",
+    "description": "The current time of turmoil in the Gilead System is but a minor distraction from the dark spectacles seen in Commorragh. Between realspace raids, Drukhari may return to show off their plunder, conspire with their peers, and shore up their territory in the Dark City. When this scheming goes well, the rewards are plentiful — but everything claimed in Commorragh is at someone else's expense, and the vendettas of slighted rivals can be deadly.",
     "cost": "5 x new Tier",
     "costMultiplier": 5,
     "prerequisites": {
@@ -767,7 +787,7 @@
   {
     "id": "cadre_questor",
     "name": "Cadre Questor",
-    "description": "Your reverent acts have not gone unnoticed, and consequently your superiors have assigned you a sacred task: take initiates under your wing, and lead them on a righteous quest in the name of your creed. Conversely, this task may have been foisted upon you as a sacred service or penance for some spiritual slight, leading novitates into the light to correct the errors of your ways. Whatever the cause, you now have a holy mission, and the eyes of your superiors are upon you \u2014 as well as the ever-burning gaze of the Emperor, or the manifold augmented eyes of the Omnissiah.",
+    "description": "Your reverent acts have not gone unnoticed, and consequently your superiors have assigned you a sacred task: take initiates under your wing, and lead them on a righteous quest in the name of your creed. Conversely, this task may have been foisted upon you as a sacred service or penance for some spiritual slight, leading novitates into the light to correct the errors of your ways. Whatever the cause, you now have a holy mission, and the eyes of your superiors are upon you — as well as the ever-burning gaze of the Emperor, or the manifold augmented eyes of the Omnissiah.",
     "cost": "30 x new Tier",
     "costMultiplier": 30,
     "prerequisites": {
@@ -778,7 +798,7 @@
       "The Devotees Talent (Wrath & Glory Rulebook, page 132). You do not need to meet the Leadership (Wil) Skill prerequisite. When your Devotees die, you get +1 Influence.",
       "A holy quest to perform. If you complete the quest, you gain +1 Influence.",
       "+Rank bonus dice on any Persuasion (Fel) Test targeting individuals with the awarded Keyword that know of your quest.",
-      "Note: If this quest is a punishment, the Influence Bonus is \u20131 instead of +1."
+      "Note: If this quest is a punishment, the Influence Bonus is –1 instead of +1."
     ],
     "keywordsGained": [],
     "influenceModifier": 1,
@@ -859,7 +879,7 @@
       "Work with your Gamemaster to determine which Faction you will be serving, and the relic they want you to secure, sanctify, or safeguard. This Ascension Package is designed to work with the rules in Chapter 1, either the premade Relics of Renown (page 20), Malign Artefacts (page 26), or a relic of your own creation (Creating Holy Relics, page 12).",
       "Knowledge of the location of a relic, as well as the permission to officially protect said relic.",
       "The Tenacious Talent (Wrath & Glory Rulebook, page 140).",
-      "Influence Bonus drops by 3 (to \u20133 total) if the relic is ever lost, destroyed, or falls into the hands of the enemy."
+      "Influence Bonus drops by 3 (to –3 total) if the relic is ever lost, destroyed, or falls into the hands of the enemy."
     ],
     "keywordsGained": [],
     "influenceModifier": 1,
@@ -869,7 +889,7 @@
   {
     "id": "battle_company_doctrine",
     "name": "Battle Company Doctrine",
-    "description": "You have battled across countless worlds and faced all manner of heretics and xenos threats. You have mastered numerous weapons and your skills and conviction have earned you a place amongst a Battle Company of the Chapter.",
+    "description": "You have battled across countless worlds and faced all manner of heretics and xenos threats. You have mastered numerous weapons and and your skills and conviction has earned you a place amongst a Battle Company of the Chapter.",
     "cost": "60",
     "costMultiplier": 0,
     "prerequisites": {
@@ -890,7 +910,7 @@
   {
     "id": "crux_terminatus",
     "name": "Crux Terminatus",
-    "description": "The Crux Terminatus is awarded to highly skilled and experienced Space Marine Veterans trained in the use of Terminator Armour. A 1st Company Veteran, Librarian, or Chaplain may begin with Terminator armour, the most resilient and powerful armour available to the Adeptus Astartes.",
+    "description": "A 1st Company Veteran, Librarian, or Chaplain may begin with Terminator armour. Terminator armour comes with the following weapon combinations:\nStorm Bolter and Power Fist or Chainfist as standard.\nThe Storm Boler may be exchanged for a Heavy Flamer or Assault Cannon.\nAlternatively, the Powerfist/Chainfist may be exchanged for a Power Sword or Storm Shield.\nThe Storm Bolter and Powerfist/Chainfist can both be exchanged for a pair of Lightning Claws.\nIf worn by a Chaplain, the Powerfist/Chainfist is replaced with a Crozius Arcanum.\nIf worn by a Librarian, the Powerfist/Chainfist is replaced with a Force Weapon.",
     "cost": "60",
     "costMultiplier": 0,
     "prerequisites": {
@@ -926,7 +946,7 @@
     },
     "benefits": [
       "You gain the Bolter Discipline and the Built Tough talents. You gain the PRIMARIS keyword. In future, you may choose from the Primaris Advancement Packages (Vow of Absolution, page 35).",
-      "You gain +2 Influence, and 1 item of Uncommon Wargear. Unless using Terminator Armour, you replace your current Power Armour with Mk X Tacticus Armour \u2014 or other variants as discussed with your GM."
+      "You gain +2 Influence, and 1 item of Uncommon Wargear. Unless using Terminator Armour, you replace your current Power Armour with Mk X Tacticus Armour — or other variants as discussed with your GM."
     ],
     "keywordsGained": [
       "PRIMARIS"

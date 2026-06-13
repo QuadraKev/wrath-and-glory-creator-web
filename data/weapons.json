@@ -2008,7 +2008,7 @@
     "name": "Crozius Arcanum",
     "type": "melee",
     "category": "Power Weapons",
-    "description": "[AI-Generated] The weapon of a Chaplain is also their badge of office. This skull-headed power mace is a symbol of the Chaplain's authority to enforce spiritual discipline, and a tool for crushing the Emperor's enemies.",
+    "description": "Few figures within a Chapter are both as feared and as revered as the Chaplain, with their distinctive skull-faced masks and lacquered black armour. To be in the Chaplain's presence is to have the piercing gaze of the Emperor Himself upon you, offering zealous and uplifting inspiration and harsh censure in equal measure. The most potent symbol of a Chaplain's devotion is the mace they wield in battle, each crowned with the iconography of their Chapter and crackling with power fields that can rip steel and flesh asunder with the merest touch.\n\nEvery Crozius Arcanum is a work of surpassing mastery, handed down through centuries or millennia of use, and bearing countless tales of battle and valour. A Crozius of the Absolvers will have minuscule etched records of the brothers that have died under the bearer's watch, vows sworn in their presence, and any unpaid debts of vengeance owed to the enemies of the Chapter which the bearer intends to fulfil personally.",
     "damage": {
       "base": 5,
       "attribute": "strength",
@@ -2115,7 +2115,7 @@
     "name": "Heavy Thunder Hammer",
     "type": "melee",
     "category": "Power Weapons",
-    "description": "[AI-Generated] An oversized variant of the already-devastating Thunder Hammer, this two-handed weapon releases a thunderclap of energy upon impact. Only the strongest warriors can wield such a weapon effectively.",
+    "description": "A two-headed version of the Thunder Hammer, the Heavy Thunder Hammer is a genuinely massive melee weapon that only the mightiest Astartes warriors can wield. Its blows can shatter almost any armoured surface, and living creatures rupture explosively at its deadly strikes. Only issued to the most experienced of Vanguard Veterans, such hammers are considered an inelegant but incredibly effective way of clearing swathes of enemies, shattering the morale of those who witness their comrades bodies torn asunder. A unit that employs such weapons tends to be bloodied and dripping with gore by the end of the battle, vaporised blood particles hanging around them like a miniature stormcloud. It is prudent for such Marines to have their armour thoroughly cleaned by Chapter serfs before they remove their helmets. The most venerable example in the Chapter's arsenal is the Angelus Intonat, a legendary weapon that once destroyed a heretic Land-Raider with a single, devastating blow.",
     "damage": {
       "base": 10,
       "attribute": "strength",
@@ -2143,7 +2143,7 @@
     "name": "Lightning Claws",
     "type": "melee",
     "category": "Power Weapons",
-    "description": "[AI-Generated] Lightning Claws are power weapons in the form of gauntlets fitted with long, razor-sharp talons. The disruption field that wraps each claw allows them to shred armour with every swipe.",
+    "description": "The addition of a massive set of mono-edged blades attached to a pair of power fists, Lightning Claws are so bulky and power-hungry that they are most commonly seen used in conjuction with Terminator armour. The Absolvers employ the Angel's Talon pattern of lightning claw, which is optimally used in paired sets, although a single lightning claw can be used to allow a ranged weapon to be fired with the other hand. Assault Terminators equipped with these fearsome weapons can cut through almost any material and are all but invincible in melee. In close conditions, a Terminator with paired lightning claws can prove unstoppable, easily tearing apart even the most dangerous opponents and providing a bulwark for their brothers to advance behind. However, in open terrain, the bulky armour and long claws make for a slow turning arc, and Terminators may require support to keep foes off their backs.",
     "damage": {
       "base": 5,
       "attribute": "strength",
@@ -2197,7 +2197,7 @@
     "name": "Relic Blade",
     "type": "melee",
     "category": "Power Weapons",
-    "description": "[AI-Generated] These ancient Power Swords have been crafted to exacting standards by master artificers. Each Relic Blade is a Chapter treasure, often with a history stretching back millennia.",
+    "description": "Huge, two-handed power-swords, Relic Blades are as much a part of the Chapter's history as part of its arsenal. The oldest and most storied of these weapons is said to date back to the very forging of the Imperium itself. Even more recent examples are old indeed, with The Talon of Gilead seeing use during the liberation of Gilead Primus at the battle of Talon's Gate. The reason for the rarity of these mighty blades is manifold. Many employ arcane technologies long lost to the Adeptus Mechanicus and unable to be replicated, while others contain relics of incredible value. Nonetheless, these great weapons are no mere ornaments to hang on the walls of Castle Grigori but instead see regular use amongst Vanguard Veterans, Terminators, and other high-ranking Chapter members.\n\nPerfectly balanced and faultlessly maintained, these weapons are masterpieces of the armourer's art. Unfortunately, most such blades have run out of space for further histories to be engraved, so instead, Techmarines maintain weighty tomes dedicated to the victories and battles each blade has seen. Those honoured with wielding such a blade regularly read and meditate upon these tomes.",
     "damage": {
       "base": 6,
       "attribute": "strength",
@@ -2252,7 +2252,7 @@
     "name": "Accelerator Autocannon",
     "type": "ranged",
     "category": "Heavy Weapons",
-    "description": "[AI-Generated] Mounted on Invictor Tactical Warsuits and other heavy platforms, the Accelerator Autocannon uses gravitic technology to fire high-calibre rounds at tremendous velocity.",
+    "description": "Primaris Vanguard Suppressors use these heavy autocannons to devastate enemy vehicles and fortifications. Against infantry, they tend to be overkill, but their impressive range, accuracy, and fire rate mean that they can make short work of entire squads if no more urgent target presents itself. The Absolvers favour such weapons, as the shells are relatively simple to manufacture, making the Accelerator Autocannon a workhorse item for the newly arrived Space Marines in Gilead. Larger and more powerful versions of this weapon are sometimes mounted on vehicles, providing brutally effective fire support.",
     "damage": {
       "base": 16,
       "attribute": null,
@@ -2286,7 +2286,7 @@
     "name": "Assault Bolter",
     "type": "ranged",
     "category": "Bolt Weapons",
-    "description": "[AI-Generated] Designed for Inceptor squads, the Assault Bolter is a compact, rapid-fire bolt weapon optimized for close-range engagements. Its high rate of fire makes it devastating against infantry.",
+    "description": "The Assault Bolter is a miniaturised, single-handed version of the Cawl-Pattern Bolt Rifle. This variant sacrifices range for an increased rate of fire. It is equipped with a high-capacity magazine, gun-shield, auto reloader, and a mag-shield to handle the substantial amount of recoil.",
     "damage": {
       "base": 12,
       "attribute": null,
@@ -2389,7 +2389,7 @@
     "name": "Auto Bolt Rifle",
     "type": "ranged",
     "category": "Bolt Weapons",
-    "description": "[AI-Generated] An automatic variant of the Bolt Rifle favoured by aggressive Intercessors. The Auto Bolt Rifle trades accuracy for volume of fire, laying down a storm of explosive bolts.",
+    "description": "This variant of the Bolt Rifle sacrifices some of its range and penetration in favour of a truly astonishing rate of fire. A single bolt shell is a mass-reactive, high-calibre vessel of the Emperor's own judgement, so to see a hail of them strike a target is to watch it dissolve in a shower of gory explosions. To feed this insatiable hunger, the Auto Bolt Rifle has a large drum magazine installed in front of the trigger guard. Intercessor Squads use standard versions of this weapon, while Primaris officers commonly wield more rarified master-crafted versions. Twin-linked versions of Auto Bolt Rifles are sometimes employed on Invader ATVs and belt-fed from reserves in the chassis.",
     "damage": {
       "base": 12,
       "attribute": null,
@@ -2493,7 +2493,7 @@
     "name": "Executor Bolt Rifle",
     "type": "ranged",
     "category": "Bolt Weapons",
-    "description": "[AI-Generated] A heavy variant of the Bolt Rifle that fires mass-reactive rounds with improved armour penetration. The weapon's extended range and hitting power make it ideal for eliminating priority targets.",
+    "description": "This variant of the standard Bolt Rifle turns it into a somewhat unwieldy long-range weapon employed by Heavy Intercessor Squads. Increased magazine size and barrel length, as well as improved targeting systems and changes to the firing mechanisms, greatly increase the mass of this weapon, meaning only the Gravis-armoured Intercessors can hope to wield it effectively. These changes significantly increase accuracy, effective range, and armour penetration, turning it into a highly effective sniper weapon. Unlike Stalker Bolt Rifles, the wielder of an Executor does not try to disguise their presence — the enemy is welcome to watch the Intercessors calmly picking off their forces while weathering return fire without concern.\n\nThere is also an Executor variant for the Heavy Bolter, though it is yet to be fielded by the Absolvers.",
     "damage": {
       "base": 12,
       "attribute": null,
@@ -2528,7 +2528,7 @@
     "name": "Godwyn Pattern Boltgun",
     "type": "ranged",
     "category": "Bolt Weapons",
-    "description": "[AI-Generated] The Godwyn Pattern is the standard issue boltgun for most Space Marine Chapters. This tried-and-true design has served the Adeptus Astartes for millennia.",
+    "description": "A ruggedly reliable and singularly deadly weapon, a bolter fires self-propelled shells into targets with deadly accuracy. The Godwyn Pattern was the most commonly used pattern among the Adeptus Astartes prior to the Era Indomitus. Once a round strikes, its armour-piercing tip allows it to breach all but the toughest armour. After the shell penetrates deep inside the enemy, the mass-reactive sensors trigger an explosion, blasting them to pieces from within. While almost all Forge Worlds can craft the boltgun's components, many Chapters have their Techmarines make further modifications to suit their combat specifications and traditions. Finally, the Boltgun is assembled by the Space Marines themselves, an important ritual that binds Astartes and machine spirit together in shared loyalty. A bolter will pick up countless kill markers and battle honours throughout its life, dispensing untold bolt shells with thunderous accuracy.",
     "damage": {
       "base": 10,
       "attribute": null,
@@ -2561,7 +2561,7 @@
     "name": "Grapnel Launcher",
     "type": "ranged",
     "category": "Exotic Weapons",
-    "description": "[AI-Generated] Primarily used by Reivers for rapid vertical movement, the Grapnel Launcher can also be used as an improvised weapon. The high-tension cable and hook can cause significant damage.",
+    "description": "These bulky pistols contain a spiked adamantium grappling hook attached to a long cable of nearly indestructible monofilament fibre. Reivers typically use Grapnel Launchers to change positions across the battlefield rapidly. They fire at a solid structure, then use the launcher's powerful motor system to quickly wind the cable, propelling themselves to the new location in seconds.\n\nWhile not intended as weapons, they are destructive to tissue and can also be used to grab opponents and drag them into close combat or to secure a moving vehicle to allow for boarding. Only the superhuman physiology of an Astartes could survive using the Launcher in this way — any ordinary human would see their arms violently torn from their sockets.",
     "damage": {
       "base": 8,
       "attribute": null,
@@ -2592,7 +2592,7 @@
     "name": "Grav-Cannon",
     "type": "ranged",
     "category": "Grav Weapons",
-    "description": "[AI-Generated] The Grav-Cannon uses gravitic technology to crush targets under their own mass. The more heavily armoured the target, the more devastating the effect.",
+    "description": "Usually, these weapons are mounted on vehicles or heavily augmented servitors, but the superhuman physiology of the Astartes also allows them to be used as man-portable. Few Forge Worlds can produce such exotic weaponry in the current age, but the Techmarines of the Absolvers have clung onto their ancient scrolls and have long maintained the patterns for constructing these potent weapons. Once activated, the Grav-Cannon creates a vortex where gravity is multiplied many times. This means that the larger a target is, the more damage the Grav-Cannon does to them, as they suddenly find themselves crushed beneath their weight.\n\nIt is possible to use the Grav-Cannon non-lethally by merely increasing the target's weight until they are immobilised, but Astartes seldom employ such potent weaponry in this manner. It can also be used to reduce or even reverse gravity, but this is considered a frivolous use for such a powerful weapon.",
     "damage": {
       "base": 10,
       "attribute": null,
@@ -2692,7 +2692,7 @@
     "name": "Heavy Bolt Rifle",
     "type": "ranged",
     "category": "Bolt Weapons",
-    "description": "[AI-Generated] Used by Heavy Intercessors, this variant of the Bolt Rifle fires high-calibre rounds with extended range. The weapon's stopping power makes it ideal for taking down armoured targets.",
+    "description": "This is a slightly bulkier version of the Bolt Rifle with increased range and striking power employed by Heavy Intercessor Squads. Senior officers are sometimes granted a master-crafted version of the Heavy Bolt Rifle, usually a named weapon of great renown that has served many great champions.\n\nWithin the ranks of the Absolvers, several Heavy Intercessors are in an informal competition to claim the highest number of kills with their particular weapon. Such friendly rivalries are tolerated as long as they do not interfere with the discharge of their sacred duties. The Chaplains keep a close eye on such matters, doling out punishment or reward as necessary to foster the overall cohesion of the Chapter itself.",
     "damage": {
       "base": 12,
       "attribute": null,
@@ -2760,7 +2760,7 @@
     "name": "Hellstorm Bolt Rifle",
     "type": "ranged",
     "category": "Bolt Weapons",
-    "description": "[AI-Generated] A variant Bolt Rifle designed for aggressive close-support fire. The Hellstorm pattern trades some accuracy for increased rate of fire and ease of use on the move.",
+    "description": "This version of the Bolt Rifle has been reconfigured for rapid assault work and, as such, can be fired quickly and easily even while moving at full pace. The rapid cyclic rate of fire slightly reduces the weapon's armour-piercing characteristics, making it more useful against massed infantry than heavily armoured foes. Heavy Intercessor Squads use such weapons almost exclusively, and few dare stand in the way of such towering Astartes as they charge forward, laying down fire.\n\nThere is also a Heavy Bolter variant which trades a shorter range and lower penetration in exchange for a devastatingly increased rate of fire — only a Primaris Astartes can effectively wield such a weapon.",
     "damage": {
       "base": 10,
       "attribute": null,
@@ -2795,7 +2795,7 @@
     "name": "Las Fusil",
     "type": "ranged",
     "category": "Las Weapons",
-    "description": "[AI-Generated] A precision las weapon used by Eliminators for silent kills. The Las Fusil fires a concentrated beam of energy that burns through targets with surgical precision.",
+    "description": "Traditionally, the Astartes have not widely utilised las-weaponry below the rating of a lascannon, leaving such efficient but inferior weaponry to the ranks of the Astra Militarum. However, the role of the Vanguard Eliminator required a weapon system that was powerful, accurate, and silent, so the Las Fusil was created.\n\nMore compact than a lascannon but vastly more powerful than a long-las, the Las Fusil is a precision weapon that can strike down almost any infantry target and remains useful against light vehicles. While such weapons are difficult to create and repair, their reliability and ease of recharging their las-packs have made them popular in Gilead. Traditionalist Astartes may look askance at such a weapon, but they learn to respect the Las Fusil after seeing it punch through mega-armour and slay an ork warboss with a single shot.",
     "damage": {
       "base": 12,
       "attribute": null,
@@ -2829,7 +2829,7 @@
     "name": "Melta Rifle",
     "type": "ranged",
     "category": "Melta Weapons",
-    "description": "[AI-Generated] The standard melta weapon of Eradicator squads, the Melta Rifle fires a blast of superheated fusion energy. At close range, nothing can withstand its destructive power.",
+    "description": "With a longer range than a standard meltagun, this weapon is one of the most potent and deadly in the Astartes arsenal. Issued exclusively to Primaris Astartes, Melta Rifles are used by Eradicator Squads to scythe through enemy fortifications and vehicles. Used against mere infantry, little remains but a sickening stench and a handful of fused and blackened debris. Without the reinforced strength of Gravis armour, the Eradicators would need to be much more cautious in their approach, as the protection offered by the armour means they can ignore most small arms fire.\n\nAt close range, the beam of the Melta Rifle becomes even more focused and deadly, effectively neutralising almost any armour. Eradicators often return after battle spattered not with gore but with gobbets of molten metal that have sprayed over them, only to cool and harden on their armour, while their weapons are returned to the Techmarines for reverent adjustment and essential maintenance.",
     "damage": {
       "base": 16,
       "attribute": null,
@@ -10240,7 +10240,7 @@
     "name": "Standard Shotgun",
     "type": "ranged",
     "category": "Solid Projectile Weapons",
-    "description": "This ancient and archaic firearm's origins can be traced deep into the annals of Terran history. In the simplest of its multitude of forms the Shotgun is a single-shot projectile weapon. In the wider Imperium it is most comparable to 'Stubber'-type firearms in terms of function. However, unlike other solid projectile weapons, the Shotgun traditionally uses a shell loaded with many smaller projectiles that spread to cover a substantial target area.",
+    "description": "This ancient and archaic firearm’s origins can be traced deep into the annals of Terran history. In the simplest of its multitude of forms the Shotgun is a single-shot projectile weapon. In the wider Imperium it is most comparable to ‘Stubber’-type firearms in terms of function. However, unlike other solid projectile weapons, the Shotgun traditionally uses a shell loaded with many smaller projectiles that spread to cover a substantial target area.\n\nDespite the restrictions of its simplicity, such as effective range or its effectiveness against armour, the Shotgun remains among the most widespread and commonly used weapons across the Imperium, and noted rediscoveries by the Adeptus Mechanicus have allowed it to excel as a role-specific piece of weaponry.",
     "damage": {
       "base": 8,
       "attribute": null,
@@ -10273,7 +10273,7 @@
     "name": "Combat Shotgun",
     "type": "ranged",
     "category": "Solid Projectile Weapons",
-    "description": "Across the breadth of the Imperium the Combat Shotgun is the favoured firearm of boarding parties of both the Imperial Navy and Astra Militarum. Larger and more robustly constructed than the common Shotgun, the Combat variant is designed specifically for use in battle. It features a magazine feed and is capable of both single shot and fully automatic fire, a collapsible stock for increased manoeuvrability at closer range, and an indomitable stopping power.",
+    "description": "Across the breadth of the Imperium the Combat Shotgun is the favoured firearm of boarding parties of both the Imperial Navy and Astra Militarum. Larger and more robustly constructed than the common Shotgun, the Combat variant is designed specifically for use in battle. It features a magazine feed and is capable of both single shot and fully automatic fire, a collapsible stock for increased manoeuvrability at closer range, and an indomitable stopping power.\n\nWhen used up close the Combat Shotgun can quickly put down a target with a single brutal slug, or alternatively can quickly suppress a larger area or grouping of individuals, rapidly spitting out a dense cloud of rending shot over its thunderous roar.",
     "damage": {
       "base": 9,
       "attribute": null,
@@ -10307,7 +10307,7 @@
     "name": "Artificer Shotgun",
     "type": "ranged",
     "category": "Solid Projectile Weapons",
-    "description": "Among the voidsmen-at-arms of the Imperial Navy, these large pump-action Shotguns are the favoured tool of the experienced officers who lead their forces. These masterfully crafted Shotguns are devastating in the close confines of the naval boarding engagements for which they were designed, repelling corridors of boarders one shot at a time.",
+    "description": "Among the voidsmen-at-arms of the Imperial Navy, these large pump-action Shotguns are the favoured tool of the experienced officers who lead their forces. These masterfully crafted Shotguns are devastating in the close confines of the naval boarding engagements for which they were designed, repelling corridors of boarders one shot at a time. Along with their devastating effectiveness against lightly armoured foes, the standard projectile ammunition used with an Artificer Shotgun is less likely to penetrate the hull of smaller craft than that of other weapons. When used outside the confines of a void ship, these weapons continue to excel in many other areas of close-quarters engagement where enemies of the Imperium may be found trespassing.\n\nAs they are an officer’s weapon, they are of a more robust construction than other Navy Shotguns, and in the hands of an experienced and well-trained user they are capable of a surprising rate of fire in a short amount of time.",
     "damage": {
       "base": 8,
       "attribute": null,
@@ -10340,7 +10340,7 @@
     "name": "Auxiliary Shotgun",
     "type": "ranged",
     "category": "Solid Projectile Weapons",
-    "description": "An Auxiliary Shotgun is an underfitting modification that can be attached to most standard-pattern firearms in place of a bayonet. The attachment allows for a single, brutal short-range blast — a fine compliment to a weapon designed for longer-ranged engagements. Note: this weapon requires a full action to reload after every use.",
+    "description": "An Auxiliary Shogun is an underfitting modification that can be attached to most standard-pattern firearms in place of a bayonet. The attachment allows for a single, brutal short-range blast — a fine compliment to a weapon designed for longer-ranged engagements.\n\nThe combined weight of the Auxiliary Shotgun and its ammunition usually makes the weapon bearing the attachment more difficult to wield. Most users find it an acceptable inconvenience given the reassurance of having the devastating stopping power of the Auxiliary Shotgun at hand.\n\nNote: this weapon requires a full action to reload after every use.",
     "damage": {
       "base": 8,
       "attribute": null,
@@ -10373,7 +10373,7 @@
     "name": "Varonia Honorbound Pattern Shotgun",
     "type": "ranged",
     "category": "Solid Projectile Weapons",
-    "description": "Throughout the various vessels of the Varonius Flotilla, the \"Honorbound\" is perhaps the most commonly found variant of Shotgun-type weaponry. Made available to all crew via security-controlled defence lockers in instances of incursion, this pattern is favoured due to both the multiple functional applications of its design and its ease of use by untrained personnel. Robustly constructed, the Varonia Pattern consists of a simple, magazine-fed squared body and wide-bore barrel specifically designed for the rigours of ship-board combat; at short range this weapon can be devastatingly effective in stopping an enemy advance. Should the user be engaged at close quarters, the weapon's stock is reinforced and contains an elongated ceramite weighted component at its base allowing for the firearm to be utilised as a simple, yet effective, bludgeoning type combat weapon.",
+    "description": "Throughout the various vessels of the Varonius Flotilla, the “Honorbound” is perhaps the most commonly found variant of Shotgun-type weaponry. Made available to all crew via security-controlled defence lockers in instances of incursion, this pattern is favoured in such circumstances due to both the multiple functional applications of its design and its ease of use by untrained personnel.\n\nRobustly constructed, the Varonia Pattern consists of a simple, magazine-fed squared body and wide-bore barrel specifically designed for the rigours of ship-board combat; at short range this weapon can be devastatingly effective in stopping an enemy advance. Should the user be engaged at close quarters, the weapon’s stock is reinforced and contains an elongated ceramite weighted component at its base allowing for the firearm to be utilised as a simple, yet effective, bludgeoning type combat weapon.",
     "damage": {
       "base": 8,
       "attribute": null,
@@ -10407,7 +10407,7 @@
     "name": "'Incisor' Shotgun Pistol",
     "type": "ranged",
     "category": "Solid Projectile Weapons",
-    "description": "Notorious for its sheer destructive power and known colloquially by officers and the junior staff of the Imperial Navy as the 'Incisor', this weapon takes the form of a robust and short-barrelled, yet brutally destructive Pistol. Armed with only a single shot, the Pistol is often worn more for its intimidating appearance and fearsome reputation than it is as a practical sidearm.",
+    "description": "Notorious for its sheer destructive power and known colloquially by officers and the junior staff of the Imperial Navy as the ‘Incisor’, this weapon takes the form of a robust and short-barrelled, yet brutally destructive Pistol.\n\nArmed with only a single shot, the Pistol is often worn more for its intimidating appearance and fearsome reputation than it is as a practical sidearm. However, when required, the devastating force and thunderous roar of the Shotgun Pistol can instil fear among the ranks and, as recorded in more than one such instance, leave an observable hole through the chest cavity of the unfortunate target.",
     "damage": {
       "base": 9,
       "attribute": null,
@@ -10475,7 +10475,7 @@
     "name": "Avachrus XII 'Gravefiller' Pattern Shotgun",
     "type": "ranged",
     "category": "Solid Projectile Weapons",
-    "description": "Carried by only a handful of bodyguards and servants who protect the hallowed priests and cardinals in the upper echelons of Enoch's many spires, the Avachrus II-B is a rare and illustrious firearm. This variant is a magazine-fed, triple barrelled Combat Shotgun enclosed in a solid adamantium casing and capable of both single and semi-automatic firing. Originally produced in the manufactorums of Avachrus, longstanding and ancient decree sees each completed weapon then transported to Enoch under the watchful eye of the Archdeacon Mertramar Clade — this despite a longstanding rivalry between the two worlds that borders on outright disgust.\nHere the II-B undergoes a sequence of sacred blessings and sanctification rituals. Once blessed and purified the weapon is biometrically locked to its designated user. This lengthy and arduous process ensures that only those in service to individuals held in the highest regard within the priesthood may requisition one, and outside of Enoch's highest spires they remain a rare, yet deadly, sight.",
+    "description": "In the illustrious manufactorums of Avachrus, the Shotgun variant known across Gilead by the rank and file of the Astra Militarum as the ‘Gravefiller’ is produced en masse.\n\nThe Avachrus XII is a non-standard, fully automatic, drum-fed combat Shotgun, commonly carried by officers and engineers of the Gilead Gravediggers. When operated on fully automatic, its extensive magazine allows it to create a continuous hail of deadly shot which can quickly suppress enemy movement. The robust stock is fully removable and also functions as a multi-purpose entrenchment tool.\n\nDesigned for use in close quarters or clearing enemy positions, recent in-system developments have seen it come to be viewed as an instrument of both authority and control over the vast swathes of penal legionnaires drafted by order of the Lord-Militant Fylamon.",
     "damage": {
       "base": 8,
       "attribute": null,
@@ -10509,7 +10509,7 @@
     "name": "Avachrus II-B Enochian Sanctified Shotgun",
     "type": "ranged",
     "category": "Solid Projectile Weapons",
-    "description": "Carried by only a handful of bodyguards and servants who protect the hallowed priests and cardinals in the upper echelons of Enoch's many spires, the Avachrus II-B is a rare and illustrious firearm. This variant is a magazine-fed, triple barrelled Combat Shotgun enclosed in a solid adamantium casing and capable of both single and semi-automatic firing. Originally produced in the manufactorums of Avachrus, longstanding and ancient decree sees each completed weapon then transported to Enoch under the watchful eye of the Archdeacon Mertramar Clade — this despite a longstanding rivalry between the two worlds that borders on outright disgust.\nHere the II-B undergoes a sequence of sacred blessings and sanctification rituals. Once blessed and purified the weapon is biometrically locked to its designated user. This lengthy and arduous process ensures that only those in service to individuals held in the highest regard within the priesthood may requisition one, and outside of Enoch's highest spires they remain a rare, yet deadly, sight.",
+    "description": "Carried by only a handful of bodyguards and servants who protect the hallowed priests and cardinals in the upper echelons of Enoch’s many spires, the Avachrus II-B is a rare and illustrious firearm. This variant is a magazine-fed, triple barrelled Combat Shotgun enclosed in a solid adamantium casing and capable of both single and semi-automatic firing.\n\nOriginally produced in the manufactorums of Avachrus, longstanding and ancient decree sees each completed weapon then transported to Enoch under the watchful eye of the Archdeacon Merramar Clade. — this despite a longstanding rivalry between the two worlds that borders on outright disgust.\n\nHere the II-B undergoes a sequence of sacred blessings and sanctification rituals. Once blessed and purified the weapon is biometrically locked to its designated user. This lengthy and arduous process ensures that only those in service to individuals held in the highest regard within the priesthood may requisition one, and outside of Enoch’s highest spires they remain a rare, yet deadly, sight.",
     "damage": {
       "base": 10,
       "attribute": null,
@@ -11102,7 +11102,7 @@
     "name": "Reaper Launcher: Starshot Missile",
     "type": "ranged",
     "category": "Aeldari",
-    "description": "[AI-Generated] The specialised missile launcher of the Dark Reapers can fire individual Starshot Missiles. Targeting matrices integrate with the heavy, stabilised armour of the Dark Reaper to ensure deadly accuracy.",
+    "description": "The specialised missile launcher of the Dark Reapers can fire salvoes of Starswarm Missiles or individual Starshot Missiles. Targeting matrices integrate with the heavy, stabilised armour of the Dark Reaper to ensure deadly accuracy.",
     "damage": {
       "base": 16,
       "attribute": null,
@@ -11135,7 +11135,7 @@
     "name": "Reaper Launcher: Starswarm Missile",
     "type": "ranged",
     "category": "Aeldari",
-    "description": "[AI-Generated] The specialised missile launcher of the Dark Reapers can fire salvoes of Starswarm Missiles. Targeting matrices integrate with the heavy, stabilised armour of the Dark Reaper to ensure deadly accuracy.",
+    "description": "The specialised missile launcher of the Dark Reapers can fire salvoes of Starswarm Missiles or individual Starshot Missiles. Targeting matrices integrate with the heavy, stabilised armour of the Dark Reaper to ensure deadly accuracy.",
     "damage": {
       "base": 14,
       "attribute": null,

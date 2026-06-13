@@ -586,7 +586,7 @@
       "name": "ABSOLVERS CHAPTER",
       "source": "voa",
       "page": null,
-      "description": "[AI-Generated] A Space Marine Chapter featured in the Vow of Absolution adventure, engaged in a penitent crusade to atone for a past failing."
+      "description": "[AI-Generated] A Blood Angels Successor Chapter sworn to defend the Gilead System. The Absolvers temper the heinous flaw of their gene-seed with solemn vows and rigorous penitence, guarding an ancient and shameful secret while seeking redemption for a history of hubris."
     },
     "adepta_sororitas": {
       "name": "ADEPTA SORORITAS",
@@ -622,7 +622,7 @@
       "name": "ADEPTUS CUSTODES",
       "source": "apocrypha",
       "page": null,
-      "description": "[AI-Generated] The Emperor's personal bodyguard, the Adeptus Custodes are the mightiest warriors in the Imperium. Each Custodian is a masterwork of genetic engineering, surpassing even the Adeptus Astartes in combat prowess."
+      "description": "The Adeptus Custodes, known as the Legio Custodes during the Great Crusade and Horus Heresy eras, is the Imperial Adepta responsible for protecting the Imperial Palace and the physical body of the Emperor of Mankind, as well as serving as His most important emissaries, His companions, and the keepers of His many secrets.\n\nThe Custodians are an elite cadre of genetically engineered transhuman warriors who are even more potent in combat than the Adeptus Astartes. They are to the Space Marines as the Emperor is to His Primarchs, and it is rumoured that they were each created by the Master of Mankind personally.\n\nThese warriors have stood in the presence of the immortal Emperor of Mankind since before the time of the Unification Wars. For ten thousand Terran years and more, the Custodians have stood watch over their lord and master, serving as the Emperor's personal heralds and praetorian bodyguard.\n\nDuring the Great Crusade, these resplendent warriors guarded the Emperor wherever He went and swore to give their lives to protect His. After His incarceration in the Golden Throne following the Horus Heresy ten millennia ago, they have taken a far more limited role in the Imperium of Man.\n\nWith the birth of the Great Rift in the Era Indomitus, and the resurrection of the Primarch Roboute Guilliman as the Lord Commander of the Imperium, the Adeptus Custodes have been forced to take a more active role in galactic affairs. A force of Custodians has followed Guilliman's Indomitus Crusade out into the galaxy, often serving as the heralds of a Torchbearers fleet.\n\nAs befits such a body of elite warriors, the internal hierarchy of the Adeptus Custodes is remarkably flat. The overall command of the Adeptus Custodes of course lies within the purview of the Emperor directly but serving as the head of the Order is a single officer; the Captain-General, and due to the importance of the Adeptus Custodes in the governing of the Imperium, since they always stand the closest to the Emperor, the Captain-General often holds a position amongst the ruling High Lords of Terra on the Senatorum Imperialis. The Captain-General commands the Ten Thousand, inheriting a post that has been passed down from one gallant leader to the next ever since the mysterious disappearance of Constantin Valdor. The Captain-General has absolute authority over the Custodes, acting as the ritual proxy for the Emperor Himself and speaking with the voice of the Master of Mankind.\n\nImmediately below the absolute authority of the Captain-General were the two Tribunes, the senior members of the Custodian Tribunate; a senior cadre of ten veteran Custodians, forming the Adeptus Custodes' council of war and policy who acted as advisors to the Captain-General. This body has the incomparable privilege of providing their services as counsel to the Emperor Himself should He so desire it, and in the matters of the security of the Imperial Palace's inner sanctums and the person of the Emperor, no higher authority exists. Membership of this body changes periodically to ensure a blend of established wisdom and fresh ideas.\n\nBelow this ruling council can be found the Custodian Prefectorate and the Shield-Captains. The title of Prefect is accorded as a reward of veterancy and favour in service by the Emperor, while the rank of Shield-Captain indicates an active field command over a particular detachment or deployment of the Custodes. These two ranks fulfil the roles of inspiring leaders, gifted generals, and selfless champions. Their titles vary enormously, from \"Supreme Castellans\" and \"Aquila Commanders\" to \"Master Guardians,\" often borne in accordance with the specific duties to which they have been assigned. It is Shield-Captains that take charge of the Adeptus Custodes' military engagements; one is typically afforded overall command of an operation, while several others of his rank may lend him their strength and wisdom in a supporting capacity."
     },
     "adeptus_mechanicus": {
       "name": "ADEPTUS MECHANICUS",
@@ -640,7 +640,7 @@
       "name": "ADMINISTRATUM",
       "source": "core",
       "page": null,
-      "description": "[AI-Generated] A shortened form of Adeptus Administratum, the colossal bureaucratic organisation that governs the Imperium."
+      "description": "The colossal bureaucratic organisation that governs the Imperium. They keep the records, levy the tithes, assemble the munitions, and fulfill a numberless host of other clerical duties."
     },
     "aeldari": {
       "name": "AELDARI",
@@ -658,7 +658,7 @@
       "name": "AIR CASTE",
       "source": "apocrypha",
       "page": null,
-      "description": "[AI-Generated] The pilot caste of the T'au Empire, responsible for atmospheric and void operations. Air Caste T'au have adapted to life in low gravity and are expert aviators."
+      "description": "The Air Caste—the Kor—is charged with holding the Tau Empire together through the Kor'vattra, the Tau Empire's merchant and war-fleet in addition to operating Tau Orbitals and Fortress Stations. Formerly functioning as messengers, these days they are the Tau Navy and are sometimes called the \"Invisible Caste\", for they rarely if ever set foot upon planets. Living in Orbital Cities, Tau of the Air Caste are the tallest and most slender of all Tau, with long, skinny limbs and hollow bones developed due to lives lived mostly in low- and zero-gravity ships and space stations. In the past, before the time of the Mont'au, the Tau that originally became the Air Caste had membranes stretching between their limbs, allowing them to glide on air currents. Tau pilots tend to be superior pilots compared to their human counterparts because they have a better depth perception and higher G-tolerance, but they lack battle-experience compared to the best Imperial fighter-pilots."
     },
     "aircraft": {
       "name": "AIRCRAFT",
@@ -670,13 +670,13 @@
       "name": "ALAITOC",
       "source": "apocrypha",
       "page": null,
-      "description": "[AI-Generated] An Asuryani Craftworld known for its strict adherence to the Path system and its large number of Rangers and Pathfinders who roam the galaxy."
+      "description": "Far out on the frontiers of the galaxy, on the edge of explored space in the Ultima Segmentum, lies the Alaitoc craftworld. The Alaitoc Asuryani are zealous in their guard against the touch of Slaanesh, even more so than is common amongst the other Craftworld Aeldari. As such, Alaitoc is strictly governed to prevent any emergence of the sadistic obsessions that the Aeldari are prone to as a species."
     },
     "anathema_psykana": {
       "name": "ANATHEMA PSYKANA",
       "source": "apocrypha",
       "page": null,
-      "description": "[AI-Generated] The Sisters of Silence are the militant arm of the Anathema Psykana. These warrior-nulls are psychic blanks whose very presence disrupts the Warp, making them uniquely suited to combating psykers and daemons."
+      "description": "The Sisters of Silence are an all-female order of Imperial Witch Hunters tasked with hunting down rogue psykers and other psychic threats across the galaxy.\n\nThe Silent Sisterhood was most active during the time of the Great Crusade in the late 30th and early 31st Millennia. In the wake of the Horus Heresy, they vanished almost entirely from the Imperium, and the order was wrongfully believed to have been disbanded.\n\nYet the Sisters of Silence have recently returned to prominence in the Imperium of Man following the birth of the Great Rift and the start of the Era Indomitus.\n\nThe Sisters of Silence's original purpose was to hunt and kill rogue human psykers whose activities presented a terrible danger to the people of the newborn Imperium of Man and to oversee the tithe of psykers from every Imperial world to Terra.\n\nEach one of the warriors of this order are psychic Nulls, a soulless being who inspires dread wherever they walk. The Sisters of Silence's primary base of operations was the Somnus Citadel on Luna, the moon of Terra, which was maintained by the ancient Selenite Cults of gene-engineers who had long governed that world.\n\nIt was Roboute Guilliman who, upon his resurrection in 999.M41 after the 13th Black Crusade and resumption of the duties of the Lord Commander of the Imperium, ordered the remnants of the Silent Sisterhood located and reinstated to the Imperial fold.\n\nGuilliman well remembered the value his father had placed on the Null-Maidens. With the threat posed by the Great Rift, they were now needed more than ever, and he declared the Dispensatus Anathema, sending out as emissaries those of the Sisterhood who had fought with him at the Battle of Luna. The decree called upon Sisters of Silence who still fought in the sectors surrounding the Throneworld.\n\nAs Guilliman's Indomitus Crusade took shape and the first fleets were mustered, bands of Silent Sisters converged on Terra from every direction. Each isolated group had met different challenges through the generations, diverging to overcome them as necessity dictated.\n\nThe hosts of Silent Sisters upon Terra eventually numbered near three thousand, and Guilliman declared them the Vigil Indomitus. They would be the first in a spreading network of vigils throughout the Imperium, each granted the explicit authority to carry out their ancient duties. The Vigil Indomitus divided into cadres, with each joining the battle groups of the Indomitus Crusade fleets.\n\nThere had once been a large population of Sisters of Silence during the Great Crusade and the Horus Heresy. Though numerous enough to play a role in the War of the Beast a thousand standard years after the end of the Heresy, by the late 41st Millennium they had dwindled almost to extinction. The militant orders of the Emperor's day had been disbanded, diminished, or lost to war.\n\nThe last surviving few were scattered around the Imperium, most reduced to a handful of members. They had fought on, here and there, but their glory days were a myth at best. They were unremembered by the people they had died to protect.\n\nBut after thousands of standard years of obscurity, when Guilliman returned, the Sisters of Silence came back willingly into the light, not because of who he was, but because of what he was. To them, the Primarch was a Living Saint.\n\nNo longer centralised within the vast spire-convents of Luna, the Sisterhood has recently re-established a presence in every Segmentum, forming many new orders and offshoots. Some are charged with specific duties—such as infiltrating the hyperspatial tunnels of the Webway to stymie the plans of psychic xenos races, recovering Pariahs from enemy forces that seek to use them for their own gain, or neutralizing spectral attacks in strategically vital locations.\n\nOthers have carte blanche to pursue their own agendas, provided they culminate in the destruction of the Archenemy's forces. If there is any quality these genetic deviants share in abundance, it is self-reliance."
     },
     "anhrathe": {
       "name": "ANHRATHE",
@@ -694,7 +694,7 @@
       "name": "ANY",
       "source": "core",
       "page": null,
-      "description": "[AI-Generated] Indicates wargear or equipment that can be used by any faction, without restriction."
+      "description": "This Keyword can be replaced with any other Keyword of your choice. In almost all circumstances it makes the most sense to select a Faction Keyword. Discuss your choice with your GM and the group to ensure it makes sense for the narrative of your game."
     },
     "any_keyword": {
       "name": "[ANY]",
@@ -772,7 +772,7 @@
       "name": "BATTLESUIT",
       "source": "apocrypha",
       "page": null,
-      "description": "[AI-Generated] An advanced T'au powered exoskeleton designed for combat, ranging from personal Crisis Suits to massive Riptide and Stormsurge platforms."
+      "description": "Armour with the BATTLESUIT keyword are the armoured battlesuits used by elite T’au warriors. Due to advanced stabilisation systems, a warrior wearing BATTLESUIT armour may make ranged attacks while in engagement range, as if their weapons had the Pistol trait. Weapons with the Blast trait may not be fired in engagement range, however.\n\nBATTLESUIT armour is designed to be fitted with an assortment of modular systems to improve effectiveness. These items have the SUPPORT SYSTEM keyword. A character cannot use a SUPPORT SYSTEM item unless it is mounted on a BATTLESUIT, and each BATTLESUIT can only mount a limited number of SUPPORT SYSTEMS."
     },
     "beast": {
       "name": "BEAST",
@@ -790,7 +790,7 @@
       "name": "BEASTMASTER",
       "source": "aeldari",
       "page": null,
-      "description": "[AI-Generated] A Drukhari warrior who captures and controls exotic and dangerous beasts, unleashing them upon their enemies in the arenas and on the battlefield."
+      "description": "Whether on the battlefield or in the arena, Drukhari employ the services of highly skilled Beastmasters and their monstrous charges. Death at a Beastmaster’s hand can take many forms, from the hulking muscled bulk of the clawed fiends, to the predatory feline grace of the khymerae, or from above on the talons of a razorwing flock."
     },
     "beasts": {
       "name": "BEASTS",
@@ -802,13 +802,13 @@
       "name": "BLACK LEGION",
       "source": "apocrypha",
       "page": null,
-      "description": "[AI-Generated] The largest and most powerful of the Traitor Legions, formerly the Luna Wolves and Sons of Horus, now united under the Warmaster Abaddon in their war against the Imperium."
+      "description": "Once the Luna Wolves, and later the Sons of Horus, the Black Legion are what remains of the legion that Horus commanded during the Heresy. The Luna Wolves were a proud force, that exemplified the best qualities of the Legiones Astartes, but when they came became the Sons of Horus, a darker character has overcome them, a spiteful savagery that has only grown deeper and darker since the Heresy ended. The survivors reforged themselves as the Black Legion, to expunge the stain of Horus' defeat, and their hatred for the Imperium is greater than ever."
     },
     "black_templars": {
       "name": "BLACK TEMPLARS",
       "source": "apocrypha",
       "page": null,
-      "description": "[AI-Generated] A zealous successor Chapter of the Imperial Fists, the Black Templars are the largest Space Marine Chapter and are engaged in an eternal crusade to purge the enemies of the Emperor."
+      "description": "Following the example set by First Captain Sigismund of the Imperial Fists Legion, the Black Templars are eternal crusaders, having devoted themselves utterly to the continued war against the enemies of the Emperor. The Black Templars' crusades have lasted the hundred centuries since their formation, making it the longest Astartes crusade ever carried out, and the Black Templars' fanaticism and righteous fury is legendary. Because of the far-ranging nature of their eternal crusades, groups of Black Templars can be found across the Imperium and beyond, from crusades consisting of several fighting companies of marines, to individual squads or lone warriors on detached duty or penitent mission.\n\nCharacters with the BLACK TEMPLARS keyword may not, under any circumstances, take the PSYKER keyword: The Black Templars accept no psykers within their ranks."
     },
     "blade": {
       "name": "BLADE",
@@ -958,7 +958,7 @@
       "name": "[COVEN]",
       "source": "aeldari",
       "page": null,
-      "description": "[AI-Generated] A shortened form of [HAEMONCULUS COVEN], representing a player's choice of Drukhari Haemonculus Coven."
+      "description": "Little encapsulates the ancient evil and inventive malice of the Drukhari quite like the Covens of the Haemonculi. These twisted fraternities of torturer-alchemists practice vile arts of life and death from their lairs in the Dark City's gnarled underworld. Replace the [COVEN] Keyword with any of the Covens below."
     },
     "craftworld": {
       "name": "[CRAFTWORLD]",
@@ -976,7 +976,7 @@
       "name": "CRIMSON FISTS",
       "source": "apocrypha",
       "page": null,
-      "description": "[AI-Generated] A successor Chapter of the Imperial Fists known for their stoic resilience and disciplined bolter drill, nearly destroyed by an Ork WAAAGH! on their homeworld of Rynn's World."
+      "description": "The other Second Founding Chapter formed from the Imperial Fists, the Crimson Fists were formed from those Imperial Fists who were calm, level-headed, and willing to embrace the logic and reason of the Codex Astartes. In the millennia since, the Crimson Fists have earned a reputation as stalwart, fierce warriors devoted to the preservation of the Imperium. But fate has not been kind: they were almost wiped out during an Ork invasion of their homeworld. In recent days, they have been brought back from the brink by reinforcements from Roboute Guilliman's Indomitus Crusade, and the new Primaris additions to the Chapter have been welcomed for they renew the strength of these fierce Sons of Dorn."
     },
     "cryptek": {
       "name": "CRYPTEK",
@@ -994,7 +994,7 @@
       "name": "CTHONIAN",
       "source": "apocrypha",
       "page": null,
-      "description": "[AI-Generated] A warrior hailing from the subterranean mining world of Cthonia, known for their savage gang-fighting traditions."
+      "description": "[AI-Generated] A Kin of the Cthonian Mining Guild of the Leagues of Votann — gene-wrought, cyber-augmented miners who fearlessly brave the galaxy's most extreme environments to locate, secure, and harvest resources for their race."
     },
     "cult": {
       "name": "[CULT]",
@@ -1018,7 +1018,7 @@
       "name": "CULT OF STRIFE",
       "source": "apocrypha",
       "page": null,
-      "description": "[AI-Generated] The largest and most prestigious of the Drukhari Wych Cults, led by Lelith Hesperax, renowned for the sublime skill and savage grace of their gladiatorial performances."
+      "description": "The mightiest and most respected of Wych Cults, the Cult of Strife are exemplars of the spectacle of bloodshed, and they do not hesitate to show their skill. The character may Seize the Initiative without spending Glory. They may do this a number of times per scene equal to Rank."
     },
     "cultist": {
       "name": "CULTIST",
@@ -1072,7 +1072,7 @@
       "name": "DARKSTAR",
       "source": "apocrypha",
       "page": null,
-      "description": "[AI-Generated] A designation for specialised equipment associated with the Leagues of Votann Darkstar technology."
+      "description": "[AI-Generated] Weapons of the Leagues of Votann wrought from rare Darkstar ore, a mineral whose damping field renders anything it touches inert, whether the electro-mechanical functions of a machine or the organic processes of living tissue. Damage inflicted by a DARKSTAR weapon cannot be negated by rolling Determination."
     },
     "death_guard": {
       "name": "DEATH GUARD",
@@ -1084,7 +1084,7 @@
       "name": "DEATH JESTER",
       "source": "aeldari",
       "page": null,
-      "description": "[AI-Generated] A Harlequin who embodies the role of death in their performances, wielding terrifying weapons and wearing the spirit stones of fallen Harlequins."
+      "description": "[AI-Generated] A Harlequin who embodies the role of Death in their performances, wielding the dreaded Shrieker Cannon. When a Death Jester dies, the bones of their skeleton are harvested for inclusion in their replacement’s costume."
     },
     "deathskullz": {
       "name": "DEATHSKULLZ",
@@ -1120,7 +1120,7 @@
       "name": "DOK",
       "source": "apocrypha",
       "page": null,
-      "description": "[AI-Generated] An Ork Painboy — a crude surgeon who performs brutal medical procedures on other Orks using scavenged tools and a natural Orkoid instinct for anatomy."
+      "description": "An Ork Painboy, also known as a Mad Dok or just a Dok, is a member of a special class of Ork Oddboyz who are responsible for fixing injuries even the highly regenerative Ork physiology cannot repair, such as severed limbs and brain damage."
     },
     "dreadnought": {
       "name": "DREADNOUGHT",
@@ -1156,13 +1156,13 @@
       "name": "EARTH CASTE",
       "source": "apocrypha",
       "page": null,
-      "description": "[AI-Generated] The engineer and artisan caste of the T'au Empire, responsible for construction, manufacturing, and technological innovation."
+      "description": "The Earth caste—the Fio—provides for the manufacturing, agricultural, industrial, artisans, and engineering needs of the Tau Empire. By far the largest caste in sheer numbers, it is they who erect dwellings, provide food, and produce new technology. Members of the Earth Caste are often described as plain and dour, possessing a rather stoic outlook on life in general."
     },
     "emperors_children": {
       "name": "EMPEROR'S CHILDREN",
       "source": "apocrypha",
       "page": null,
-      "description": "[AI-Generated] A Traitor Legion devoted to Slaanesh, the Lord of Excess. Once paragons of martial perfection, they now pursue ever greater sensory extremes."
+      "description": "One of the nine Legions that betrayed the Emperor during the Horus Heresy, the Emperor's Children were once a shining example of what the Legiones Astartes could be. Driven to the pursuit of perfection in all of their endeavours, the Emperor's Children pushed themselves to the very limits of their abilities in the performance of their duties. During and after the Heresy, the Emperor's Children and their Primarch became creatures of excess and sensation, twisting their pursuit of perfection into a desire to experience ever-greater sensations, and no debauchery is beneath their appetites.\n\nCharacters with the EMPEROR'S CHILDREN keyword must take SLAANESH as their [MARK OF CHAOS] keyword."
     },
     "energy": {
       "name": "ENERGY",
@@ -1180,7 +1180,7 @@
       "name": "ETHEREAL CASTE",
       "source": "apocrypha",
       "page": null,
-      "description": "[AI-Generated] The ruling caste of the T'au Empire. Ethereals guide T'au society through their enigmatic influence, inspiring absolute loyalty and devotion to the Greater Good."
+      "description": "The Ethereal Caste—the Aun—are the leaders of T'au society, serving as some mixture of philosopher-kings and spiritual leaders. Their arrival started the unification process between the various Tau tribes and coincided with the implementation of the concept of the Greater Good. They first appeared during a siege between the Tau of the plains (later known as the Fire Caste) and the Tau of the city of Fio'taun (later known as the Earth Caste). The Ethereals brought the two sides together to negotiate and convinced them to follow the Greater Good. Their power over the Tau is such that an Ethereal could tell a Tau to die and that Tau would do so quickly and gladly.\n\nAs the leaders of the Tau, the Ethereals are enigmatic and studious, yet unfaltering in their authority and their drive to further the Greater Good. They are mystics and philosophers, possessed of knowledge and wisdom not shared by their more practical subjects. As such they had some part to play in the Tau rapid development, and to this day guide their species in its dynamic expansion, or the castes revert to the savagery that once threatened to destroy them."
     },
     "evil_sunz": {
       "name": "EVIL SUNZ",
@@ -1210,13 +1210,13 @@
       "name": "FARSEER",
       "source": "apocrypha",
       "page": null,
-      "description": "[AI-Generated] The most powerful Asuryani psykers, Farseers guide their Craftworlds by reading the skeins of fate and manipulating future events to protect their people."
+      "description": "A Farseer is the most potent and respected form of Eldar psyker or Seer. A Farseer has become lost upon the Path of the Seer forever in the same way as the Exarchs are wed eternally to the Path of the Warrior. A council of the most powerful Farseers governs a Craftworld. Farseers possess a wide diversity of psychic specialities with divination being the most common skill. They are most often known for using their vast psychic powers to see the possibilities of the future so that they can manipulate events to better ensure the survival of the Eldar species in the wake of the Fall."
     },
     "farsight_enclaves": {
       "name": "FARSIGHT ENCLAVES",
       "source": "apocrypha",
       "page": null,
-      "description": "[AI-Generated] A breakaway faction of the T'au Empire led by Commander Farsight, who rejected the authority of the Ethereal Caste and established an independent military enclave."
+      "description": "The Farsight Enclaves are a series of heavily fortified T'au colony worlds that are independent and indeed opposed to the rule of the T'au Empire. They are led or ruled by the legendary T'au Fire Caste Commander Farsight and lie on the far side of the Damocles Gulf region of the Segmentum Ultima in the Eastern Fringe of the Milky Way Galaxy."
     },
     "fellgor": {
       "name": "FELLGOR",
@@ -1228,7 +1228,7 @@
       "name": "FIRE CASTE",
       "source": "apocrypha",
       "page": null,
-      "description": "[AI-Generated] The warrior caste of the T'au Empire, responsible for all military operations. Fire Caste T'au are bred for combat and trained from birth in the art of war."
+      "description": "Members of the Fire Caste—the Shas—are the warriors of the Tau Empire, and as such are most often seen on the field of battle. They have been bred to be the strongest and most aggressive Tau, and weak strains are quickly weeded out. These traits come from the Fire Caste's origin on the plains of T'au, where they were hunters and warriors. Fire Warriors, as soldiers of the Fire Caste are known, spend their entire lifetimes in battle or preparing for it, constantly honing their tactics, and working to improve their skills. The Fire Caste guided by the Code of Fire—a doctrine of loyalty, martial arts and merciless war tempered by wisdom."
     },
     "fire_keyword": {
       "name": "FIRE",
@@ -1264,7 +1264,7 @@
       "name": "FLESH TEARERS",
       "source": "apocrypha",
       "page": null,
-      "description": "[AI-Generated] A savage successor Chapter of the Blood Angels, the Flesh Tearers are renowned for their ferocity in battle and their particularly strong susceptibility to the Black Rage."
+      "description": "A much-diminished successor of the Blood Angels, the Flesh Tearers are especially afflicted by the curse of the Black Rage, making them particularly brutal in battle. Their savagery is so notorious that few other servants of the Imperium will call upon their aid unless there is no other recourse, for more than once the Flesh Tearers have been gripped with madness and turned on their allies. In the Era Indomitus, an influx of Primaris Marines, less susceptible to the Red Thirst, may help bring redemption to the Chapter, or it may only prolong their slow decline."
     },
     "flyer": {
       "name": "FLYER",
@@ -1306,7 +1306,7 @@
       "name": "GAUSS",
       "source": "church",
       "page": null,
-      "description": "[AI-Generated] Necron weapons that strip matter apart at a molecular level using focused energy beams."
+      "description": "Meeting death through molecular disassembly, those struck by the sickly green beams of Gauss weapons are deconstructed atom by atom until they are erased from existence. Xenotechnologists speculate that the energy fields fired by Gauss weapons pull subatomic particles away from their target, slowly stripping them of their constituent parts, though none claim a true or complete understanding of their ancient mechanisms."
     },
     "genestealer": {
       "name": "GENESTEALER",
@@ -1354,7 +1354,7 @@
       "name": "GREY KNIGHTS",
       "source": "apocrypha",
       "page": null,
-      "description": "[AI-Generated] A secretive Chapter of Space Marines specialising in combating daemons. Every Grey Knight is a potent psyker, and their very existence is kept hidden from the wider Imperium."
+      "description": "An ancient Chapter, founded in secret at the Emperor's bidding during the Horus Heresy, the Grey Knights exist to combat the threat of the daemonic, and to this end they serve as the Chamber Militant of the Ordo Malleus. Few even know that the Grey Knights exist, for witnesses to their actions are mind-wiped or executed to ensure that the secret is not revealed. Every Grey Knight is a psyker, trained and conditioned to wield their mental powers to ward themselves from corruption and drive back the daemons they battle.\n\nDue to their unique geneseed and secretive nature, the Grey Knights do not yet count any Primaris Marines amongst their number. As such, Primaris Astartes characters cannot select this CHAPTER."
     },
     "grot": {
       "name": "GROT",
@@ -1366,7 +1366,7 @@
       "name": "HAEMACOLYTE",
       "source": "apocrypha",
       "page": null,
-      "description": "[AI-Generated] An apprentice to a Drukhari Haemonculus, learning the dark arts of flesh-sculpting and pain extraction."
+      "description": "If you have the HAEMACOLYTE keyword, you will also have the [COVEN] Keyword, which is replaced with the name of the Haemonculi Coven you belong to."
     },
     "haemonculus_coven": {
       "name": "[HAEMONCULUS COVEN]",
@@ -1402,7 +1402,7 @@
       "name": "HEKATARII",
       "source": "apocrypha",
       "page": null,
-      "description": "[AI-Generated] The gladiatorial warriors of the Drukhari Wych Cults, trained in acrobatic close combat and the use of exotic combat drugs."
+      "description": "Wyches, also known as Hekatarii are gladiatorial warriors of the Drukhari, they each belong to one of the various Wych Cults of Commoragh."
     },
     "hellion": {
       "name": "HELLION",
@@ -1450,7 +1450,7 @@
       "name": "[HOUSE]",
       "source": "apocrypha",
       "page": null,
-      "description": "[AI-Generated] A Navigator House is one of the ancient noble families of the Navis Nobilite. Each House has its own hereditary mutations, political alliances, and traditions surrounding their role as Warp navigators."
+      "description": "All Navigator characters are beholden to a Navigator House, reflected by the [HOUSE] keyword, which should be replaced with the name of the Navigator House the character belongs to. Each Navigator House will be one of the following four types:\n• Nomadic Houses are well-travelled. They grant +Rank dice to Pilot tests and Conviction.\n• Magisterial Houses are exalted and influential. They add +Rank to their Influence and Wealth.\n• Shrouded Houses are mysterious and opportunistic. They add +Rank to Cunning and Stealth tests.\n• Renegade Houses are forsaken and corrupt. They begin with 1d3x Tier Corruption but add +Rank to Psychic Mastery tests and Maximum Shock."
     },
     "howling_banshee": {
       "name": "HOWLING BANSHEE",
@@ -1468,7 +1468,7 @@
       "name": "HUMAN",
       "source": "redacted2",
       "page": null,
-      "description": "[AI-Generated] A baseline human, without the genetic modifications of Astartes, the psychic gifts of Psykers, or the mutations of Abhumans."
+      "description": "[AI-Generated] A baseline member of the Human species, without the genetic modifications of the Adeptus Astartes or the mutations of Abhumans."
     },
     "imperial": {
       "name": "IMPERIAL",
@@ -1486,7 +1486,7 @@
       "name": "IMPERIAL NAVY",
       "source": "apocrypha",
       "page": null,
-      "description": "[AI-Generated] The common name for the Navis Imperialis, the Imperial organisation responsible for void warfare and the transportation of military forces across the galaxy."
+      "description": "The Imperial Navy, or Navis Imperialis is one of the armed forces employed by the Imperium. While the Astra Militarum accounts for the vast majority of the Imperium's ground forces, the Imperial Navy is responsible for the fleets of warships that soar between the stars and planets in the Imperium as well as engaging threats both inside and outside the Imperium's borders.\n\nThe Imperial Navy fleets are arranged around the five Segmentae Majoris that comprise the Imperium—Segmentum Solar, Segmentum Tempestus, Segmentum Pacificus, Segmentum Obscuras, and Ultima Segmentum—and are based at the five Segmentum Fortresses of Mars (Solar), Bakka (Tempestus), Hydraphur (Pacificus), Cypra Mundi (Obscuras) and Kar Duniash (Ultima).\n\nThese fleets are named after the Segmentum in which they are based, such as the Warfleet Solar and so on. These fleets are then sub-divided into smaller fleets patrolling individual sectors and subsectors, again they are generally named after the area they are safeguarding. For example, the renowned Battlefleet Gothic protects the Gothic Sector.\n\nThe Imperial Navy is headed by the Lord High Admiral of the Imperial Navy who is often one of the High Lords of Terra. He oversees five Segmentum Lord High Admirals.\n\nBelow the Lord Admirals are various Sector and Battlefleet commanders, then individual ship Captains and junior officers and below them a myriad array of Non-Commissioned Officers. The Imperial Navy has a corps of Commissars that oversee the morale and discipline of Naval personnel, known as the Fleet Commissariat.\n\nThe Imperial Navy also operates Naval Security Battalions, also known as Naval Armsmen. These consist of units of armed soldiers intended to put down mutinies, board enemy ships, and protect Imperial Navy installations. Typically, Naval Security troopers are equipped with armoured void suits and shotguns.\n\nImperial Navy vessels require personnel from other Imperial factions in order to function. These include Navigators from the Navis Nobilite for navigation, Astropaths for interstellar communication, and Tech-Priests from the Adeptus Mechanicus for higher maintenance. One of the foremost duties of the Navy is to transport the Imperial Guard to warzones, and as such every Navy vessel no matter how small will sport some means of training deck to accommodate them.\n\nThe lowest level of personnel in the Navy hierarchy are bondsmen, which in truth are little more than slaves. Alongside Servitors, these poor souls undertake the most thankless and often most dangerous tasks on a vessel. Bondsmen are acquired from a variety of means, such as rounding up criminals or unsavoury elements of Imperial society or simply being born into their status aboard a vessel. Bondsmen duties include cleaning, hauling ammunition into weapons chambers, shovelling fuel, and manual labour. Working long hours and only fed meagre rations, Bondsmen are met with brutal discipline should they protest their status.\n\nThe Aeronautica Imperialis is a branch of the Imperial Navy dedicated to atmospheric warfare. The Aeronautica Imperialis works closely with the Imperial Guard, providing both gunship transportation and close air support."
     },
     "imperium": {
       "name": "IMPERIUM",
@@ -1522,7 +1522,7 @@
       "name": "IYANDEN",
       "source": "apocrypha",
       "page": null,
-      "description": "[AI-Generated] An Asuryani Craftworld devastated by a Tyranid Hive Fleet, now relying heavily on Wraith Constructs animated by the spirits of its dead to bolster its dwindling population."
+      "description": "Iyanden drifts through the stars of the eastern rim. Once, its halls were busy and vibrant with life, but no longer. Now, it is but a shadow of its former glory, a sombre and desolate vessel where the dead walk and the living dwindle. The Iyanden people have endured much, and suffered great tragedy, but they do not allow their despair to consume them."
     },
     "jokaero": {
       "name": "JOKAERO",
@@ -1534,7 +1534,7 @@
       "name": "JUMP JETS",
       "source": "apocrypha",
       "page": null,
-      "description": "[AI-Generated] Propulsion systems that allow T'au battlesuits and infantry to make powered leaps and short flights across the battlefield."
+      "description": "Many T'au BATTLESUITs are equipped with JUMP JETS. In addition to providing the wearer with a flight speed, a character wearing armour with JUMP JETS may Fall Back from engagement range as a Simple Action, rather than as a Combat Action."
     },
     "kabal": {
       "name": "[KABAL]",
@@ -1606,13 +1606,13 @@
       "name": "[LEAGUE]",
       "source": "apocrypha",
       "page": null,
-      "description": "[AI-Generated] A League of Votann is a large coalition of Kin Holds united by common interests, traditions, and Ancestor Cores. Each League has its own culture and approach to warfare and trade."
+      "description": "A character with the [LEAGUE] keyword may select one of the Leagues listed below, or the player may work with the GM to create a League of their own."
     },
     "leagues_of_votann": {
       "name": "LEAGUES OF VOTANN",
       "source": "apocrypha",
       "page": null,
-      "description": "[AI-Generated] An ancient civilisation of cloned abhumans known as the Kin, who dwell in the galactic core. Their society is organised into Leagues, guided by ancient machine intelligences called Ancestor Cores."
+      "description": "The Leagues of Votann are a prominent civilization based around the Galactic Core. For many thousands of years, they have exploited the riches of the core and endured the hazards and hardships of that perilous region. Over these millennia they have battled many of the galaxy's races, while just as frequently trading or acting as mercenaries.\n\nThe Leagues are a rugged survivalist culture, seeking prosperity for their own kind above all else. They find strength and unity in the endless quest to acquire the resources they need to endure. While many judge them as selfish hoarders, they see these actions as necessary to ensure the survival of their kind.\n\nThe people of the Leagues are known by many names to many other outsiders, and for the most part are content to allow strangers to believe what they will. Amongst themselves, they are simply Kin; the mistaken ideas of others do not matter."
     },
     "legio_cybernetica": {
       "name": "LEGIO CYBERNETICA",
@@ -1648,7 +1648,7 @@
       "name": "LOGOS HISTORICA VERITA",
       "source": "apocrypha",
       "page": null,
-      "description": "[AI-Generated] A secretive Imperial organisation dedicated to uncovering and preserving the true history of the Imperium, often operating at the fringes of sanctioned knowledge."
+      "description": "The Logos Historica Verita is a small Imperial organisation of the Adeptus Terra dedicated to recovering a full and accurate accounting of the history of Mankind unmarred by religious superstition or political bias.\n\nIt was created by Roboute Guilliman, the lord commander of the Imperium and the Primarch of the Ultramarines Legion, sometime after his resurrection.\n\nIt was the Primarch's intent to make a full and accurate accounting of the Imperium of Man's fragmentary and often contradictory history, the truth of which would inevitably help Humanity's advancement out of the darkness that had befallen it in the millennia after the Horus Heresy."
     },
     "luminen": {
       "name": "LUMINEN",
@@ -1660,7 +1660,7 @@
       "name": "MANDRAKE",
       "source": "aeldari",
       "page": null,
-      "description": "[AI-Generated] Mysterious shadow-dwelling creatures of Commorragh that can meld with darkness and strike from the shadows, trading their services as assassins in exchange for the suffering of others."
+      "description": "Resembling Drukhari, but with green-black skin and colourless hair, Mandrakes exist in Aelindrach, a shadow-realm adjacent to both Commorragh and realspace. Their skin writhes with arcane symbols, and they are neither truly insubstantial nor of the flesh. Their motivations are incompletely understood even by those who fight alongside them. Such alliances are always temporary, sealed with unsettling bargains that require payment in captives, or nebulous terms such as a true name, a firstborn child, or a last breath. Drukhari are the stuff of nightmares to all other races, but even they fear Mandrakes."
     },
     "mark_of_chaos": {
       "name": "[MARK OF CHAOS]",
@@ -1702,7 +1702,7 @@
       "name": "[MASQUE]",
       "source": "aeldari",
       "page": null,
-      "description": "[AI-Generated] A Harlequin Masque is a troupe of Harlequins united under a common purpose, performing across the galaxy and fighting with deadly grace. Each Masque has its own mythic cycle and performance traditions."
+      "description": "Each Player and Harlequin Troupe performs as part of a Grand Masque, one of the theatrical companies which coordinate their appearances in standout arena performances and military campaigns. You can replace the [MASQUE] Keyword with any of the Masques below to decide which company your Agent has studied with and accompanied on campaign. The benefits you gain from Wrath Criticals whilst using these Masque abilities stack with any other effects you'd usually gain, such as an additional point of Glory."
     },
     "masterclan": {
       "name": "MASTERCLAN",
@@ -1750,7 +1750,7 @@
       "name": "MONOFILAMENT",
       "source": "aeldari",
       "page": null,
-      "description": "[AI-Generated] Aeldari weapons that utilise incredibly thin filaments to slice through targets with molecular precision."
+      "description": "These weapons employ monomolecular wire filaments with incredible tensile strength. A single monofilament can slice through flesh and armour as easily as a Shuriken. Monofilament weapons are employed to great effect by all Aeldari Factions."
     },
     "monster": {
       "name": "MONSTER",
@@ -1834,7 +1834,7 @@
       "name": "OFFICIO MEDICAE",
       "source": "apocrypha",
       "page": null,
-      "description": "[AI-Generated] The Imperial organisation responsible for medical care and healthcare across the Imperium. Its members serve as battlefield medics, chirurgeons, and physicians."
+      "description": "The Officio Medicae is the office of the Administratum that deals with public health and medical-related issues in the Imperium, operating medical facilities throughout the Galaxy—often in conjunction with the Orders Hospitaller of the Adepta Sororitas—and monitoring the spread and containment of disease on many Imperial worlds."
     },
     "officio_prefectus": {
       "name": "OFFICIO PREFECTUS",
@@ -1858,7 +1858,7 @@
       "name": "ORDO HERETICUS",
       "source": "core",
       "page": null,
-      "description": "[AI-Generated] One of the three major Ordos of the Inquisition, dedicated to hunting heretics, witches, and rogue psykers within the Imperium."
+      "description": "Largest of the Ordos, tasked with hunting the enemy within; mutants, rebels, heretics, and Psykers. They police the other Adeptas of the Imperium, rooting out dissidence in all organisations. Their most common ally is the Order Militant of the Ecclesiarchy, the Sisters of Battle."
     },
     "ordo_malleus": {
       "name": "ORDO MALLEUS",
@@ -1870,7 +1870,7 @@
       "name": "ORDO XENOS",
       "source": "core",
       "page": null,
-      "description": "[AI-Generated] One of the three major Ordos of the Inquisition, dedicated to studying and combating the alien threats that assail the Imperium."
+      "description": "Fighting the varied vile forms of the alien on the frontiers of the galaxy, the Ordo Xenos investigate and eliminate extra terrestrial threats before they can threaten Humanity. Their operations often see them working alongside the Space Marines of the Deathwatch."
     },
     "ork": {
       "name": "ORK",
@@ -1888,7 +1888,7 @@
       "name": "PARIAH",
       "source": "apocrypha",
       "page": null,
-      "description": "[AI-Generated] A psychic blank — an individual with no presence in the Warp. Pariahs cause unease in normal humans and agony in psykers, making them invaluable anti-psyker assets."
+      "description": "Pariahs, also known as untouchables, nulls, and blanks, are a rare form of human mutant that possess no presence in the Warp. Indeed, their souls actively blot it out, disrupting psychic phenomena in their proximity and rendering them utterly impervious to psychic effects.\n\nMost sentient beings have an innate connection to the Warp, and their conscious minds and emotions are reflected within it. This echo, this signature presence, is commonly thought of as the soul by humans and Aeldari alike. Psykers—and Aeldari—have especially strong connections to the Warp, and thus their souls are bright flames in the Immaterium compared to the flickering sparks of the average human. Pariahs, however, have a negative presence to the Warp.\n\nIn practice, this means that a pariah dampens the effects of psychic and warp-spawned powers occurring nearby. A psyker standing in the area will find their powers weakened or nullified entirely. The pariah themselves is immune to all direct psychic effects. They are entirely immune to daemonic possession and corruption by the powers of Chaos. They cannot be detected by most psychic means, though especially perceptive psykers may infer a pariah's presence by the absence they produce.\n\nEnsouled beings perceive the universe as much through their immaterial spirit as through their physical senses. Many humans think of this as instinct, intuition, gut feeling, or as an ability to judge character. To such perceptions, a pariah creates a feeling of deep unease and foreboding, and even revulsion or hostility, creating an instinctive disgust that borders on pain.\n\nSome pariahs feel the absence of human contact and socialisation keenly, while others are utterly without emotion. In either case, they are often driven to the fringes of society, leading short, unhappy lives: ironically, many are persecuted as witches, when nothing could be further from the truth.\n\nIn particular, the Ecclesiarchy teaches that the soulless being is incapable of faith, often leading to added persecution of Pariahs as vile nonbelievers."
     },
     "pathfinder_keyword": {
       "name": "PATHFINDER",
@@ -2080,7 +2080,7 @@
       "name": "[SAEDATH]",
       "source": "apocrypha",
       "page": null,
-      "description": "[AI-Generated] A Harlequin Saedath is a grand narrative performance and strategic battle plan combined, each representing a different mythic cycle that defines the troupe's fighting style."
+      "description": "Since the Fall, a place has traditionally been reserved in a masque's structure should a Solitaire lend their considerable abilities to a cause, but they are otherwise unchanged, centred around three distinct Saedaths: the Light, the Dark, and the Twilight. Each contains a different cast of characters, grouped by outlook and symbolism. This structure ensures that each member is aware their fellows' roles, upon both stage and battlefield."
     },
     "salamanders_chapter": {
       "name": "SALAMANDERS",
@@ -2116,7 +2116,7 @@
       "name": "[SEPT]",
       "source": "apocrypha",
       "page": null,
-      "description": "[AI-Generated] A T'au Sept is a colonial territory of the T'au Empire, centred around a major world. Each Sept has its own distinct culture, military doctrine, and role within the wider Empire."
+      "description": "A character with the [SEPT] keyword may choose a Sept from below, or from other Warhammer 40,000 materials, or to work with the GM to create a Sept of their own. The selected Sept then replaces the [SEPT] keyword on the character sheet."
     },
     "seraphon": {
       "name": "SERAPHON",
@@ -2140,13 +2140,13 @@
       "name": "SHADE RUNNER",
       "source": "aeldari",
       "page": null,
-      "description": "[AI-Generated] A Drukhari warrior specialising in rapid hit-and-run tactics using specialised wargear such as skyboards and blink packs."
+      "description": "Shade Runners represent a fusion of Asuyrani and Drukhari fighting styles. They arm themselves with poisoned serrated blades commonly found amongst the Wych Cults of Commorragh, along with Warp jump packs not unlike those used by the Warp Spider Aspect Warriors."
     },
     "shield_host": {
       "name": "[SHIELD HOST]",
       "source": "apocrypha",
       "page": null,
-      "description": "[AI-Generated] A Shield Host is a military formation of the Adeptus Custodes, each specialising in a particular aspect of the Emperor's defence."
+      "description": "Led by conclaves of Shield-Captains and boasting tens, sometimes hundreds of Custodians, Shield Hosts have the martial strength to crush enemy armies and bring entire star systems to heel. The gathering of such might is a momentous undertaking -- a Shield Host is only assembled to accomplish those tasks that no other Imperial force could be trusted with, and its warriors march to war with a singular and implacable determination to enact the Emperor's will.\n\nMost Shield Hosts are temporary formations, but a few have remained in active service for many millennia, their functions persisting for countless generations.\n\nAll Custodes characters can select a single Shield Host to belong to, reflected by the [SHIELD HOST] keyword, which should be replaced with the name of the Shield Host the character belongs to. Those who do not belong to any specific Shield Host should select the Emperor’s Chosen host instead."
     },
     "shrouded": {
       "name": "SHROUDED",
@@ -2236,7 +2236,7 @@
       "name": "SPLINTER",
       "source": "church",
       "page": null,
-      "description": "[AI-Generated] Drukhari weapons that fire shards of crystal laced with virulent toxins."
+      "description": "Spewing grotesque shards of crystallised neurotoxin, Splinter Weapons are the hallmark of the Drukhari. The minuscule splinters shred through flesh and leave behind a harrowing poison focused on causing pain, a horror the sadistic Drukhari relish."
     },
     "squig": {
       "name": "SQUIG",
@@ -2296,13 +2296,13 @@
       "name": "T'AU EMPIRE",
       "source": "apocrypha",
       "page": null,
-      "description": "[AI-Generated] The interstellar empire of the T'au, a rapidly expanding civilisation on the eastern fringes of the galaxy. The T'au Empire is organised into Septs and united by the philosophy of the Greater Good."
+      "description": "The T’au Empire is a rapidly expanding xenos stellar empire situated within the Imperium of Man’s Ultima Segmentum, near the Eastern Fringes of the Milky Way Galaxy.\n\nThe T’au Empire was founded by the T’au caste called the Ethereals, who lead the T’au Empire in the name of the philosophy they have named the Greater Good.\n\nSeveral intelligent alien races (the Kroot, Vespid, Nicassar, Demiurg and even some Humans who have turned their backs on the Imperium, known as Gue’vesa in the T’au language) have allied themselves with the T’au.\n\nApart from the star systems directly colonised by the T’au, which are known as Septs, the T’au Empire also includes the worlds and star systems belonging to the species of the Kroot, Vespid, and the Nicassar. It is currently unknown if the Demiurg are full members of the Empire, allies, or mere trading partners. The T’au Empire is composed of over twenty fully developed Septs and around one hundred settled worlds, but the exact number and most of their names are unknown to the Imperium.\n\nA known splinter faction among the T’au are the Farsight Enclaves, founded beyond the Damocles Gulf by the T’au Commander Farsight against the orders of the Ethereals. More recently, some worlds and star systems of the Imperium of Man have been conquered by the forces of the T’au, while a handful have seceded from the Imperium and pledged their allegiance to the T’au Empire."
     },
     "tau_sept": {
       "name": "T'AU SEPT",
       "source": "apocrypha",
       "page": null,
-      "description": "[AI-Generated] The homeworld Sept of the T'au, and the most politically significant in the Empire."
+      "description": "The birthworld of the species which shares its name, T'au is a world of traditions, for everything within the T'au Empire has an origin there. Its people have a reputation for wisdom and reverence, building upon the experiences of whose who founded the T'au Empire in everything they do."
     },
     "telepathy": {
       "name": "TELEPATHY",
@@ -2362,19 +2362,19 @@
       "name": "TESLA",
       "source": "church",
       "page": null,
-      "description": "[AI-Generated] Necron weapons that fire arcs of living lightning that leap between nearby targets."
+      "description": "Tesla weapons unleash hectic arcs of living lightning that seem to feed and flourish on the destruction they cause. The mechanism through which these weapons produce lightning is unknown and the behaviour of their caustic arcs is unpredictable, but the results are certain — death and destruction of both mortal life and mechanical systems."
     },
     "thousand_sons": {
       "name": "THOUSAND SONS",
       "source": "apocrypha",
       "page": null,
-      "description": "[AI-Generated] A Traitor Legion devoted to Tzeentch, the Changer of Ways. Once scholars and sorcerers, their ranks now include many automaton Rubric Marines, their souls destroyed by the Rubric of Ahriman."
+      "description": "A Legion of psykers, being sanctioned by the Emperor for their reckless use of sorcery when the Heresy broke out, it was inevitable that the Thousand Sons turned to Horus after the Space Wolves sacked and razed their homeworld. Always a legion of scholars and savants, knowledge was at the heart of the Thousand Sons' existence, but they were punished for delving too deeply in lore that was forbidden, and in their desperation, they found a patron in Tzeentch. However, the instability of their geneseed made mutation rife amongst the Legion, and devotion to the Changer of Ways made this worse, leading the Legion's Chief Librarian, Ahriman, to perform a great ritual to burn this flaw from his brethren. This ritual led to all those with psychic power becoming mightier, but turned the rest of the Legion into automata, their bodies turned to dust within their armour.\n\nThese rules reflect those who possess psychic abilities, rather than the Rubricae automata that accompany them into battle.\n\nCharacters with the THOUSAND SONS keyword must take TZEENTCH as their [MARK OF CHAOS] keyword."
     },
     "toxin": {
       "name": "TOXIN",
       "source": "apocrypha",
       "page": null,
-      "description": "[AI-Generated] A weapon or upgrade that incorporates poisonous substances to debilitate or kill targets."
+      "description": "These upgrades may be used on any DRUKHARI weapon with the Fleshbane trait or with the Inflict (Poisoned X), applying an additional effect upon any target who suffers one or more wounds from the weapon. This adds the Inflict (Poisoned 3) trait to the weapon, if it does not already have that trait or a better version, and applies a specific effect determined by the poison."
     },
     "transonic": {
       "name": "TRANSONIC",
@@ -2440,7 +2440,7 @@
       "name": "UNDEAD",
       "source": "apocrypha",
       "page": null,
-      "description": "[AI-Generated] A creature that has been reanimated after death through sorcery, technology, or Warp energy."
+      "description": "You are immune to effects which would stun or knock out other foes. You can never suffer Shock damage. However, you are distant and disconnected from mortal existence, and thus can never generate Glory."
     },
     "undivided": {
       "name": "UNDIVIDED",
@@ -2470,19 +2470,19 @@
       "name": "VIOR'LA",
       "source": "apocrypha",
       "page": null,
-      "description": "[AI-Generated] A T'au Sept known for producing aggressive and hot-blooded warriors, often at the forefront of the Empire's military campaigns."
+      "description": "Vior'la means “hot-blooded” in the T'au language, and its people live up to that moniker, for they are passionate, quick to anger, and even aggressive."
     },
     "vortex": {
       "name": "VORTEX",
       "source": "aeldari",
       "page": null,
-      "description": "[AI-Generated] Aeldari weapons that tear open holes in the fabric of realspace, exposing anything nearby to the destructive energies of the Warp."
+      "description": "Vortex weapons use advanced psychic technologies to tear a hole into the Warp. Targets are ripped apart by localised gravitic waves or sucked wholly into the Immaterium. Even if an affected target survives, they suffer from local distortions of reality; targets of Vortex weapons roll for Scattering (Wrath & Glory, page 186)."
     },
     "water_caste": {
       "name": "WATER CASTE",
       "source": "apocrypha",
       "page": null,
-      "description": "[AI-Generated] The diplomat and merchant caste of the T'au Empire, responsible for trade, negotiation, and communication with alien species."
+      "description": "The Water Caste—the Por—serve the Tau Empire as traders, merchants, public servants, bureaucrats, administrators, diplomats, and ambassadors. They interact with other races when such affairs are not handled by the Fire Caste, and often act as administrators of Tau worlds in the absence of an Ethereal governor. Like water, Water Caste bureaucrats fluidly move between other Castes and alien races incorporated within the Empire to make sure that it flows smoothly. The Water Caste are known for their great linguistic, diplomatic, and negotiation skills. Members of the Water Caste are often the ones who initiate first contact with new species encountered by the Empire, skilfully negotiating their union with the Tau. The members of the Water Caste has a gift for linguistics that has become more and more developed over time, so they able to learn alien languages with ease and show a remarkable ability to emulate and pick up subtlest of communication features."
     },
     "weirdboy": {
       "name": "WEIRDBOY",
@@ -2500,7 +2500,7 @@
       "name": "WORLD EATERS",
       "source": "apocrypha",
       "page": null,
-      "description": "[AI-Generated] A Traitor Legion devoted to Khorne, the Blood God. Driven mad by the Butcher's Nails implants, the World Eaters live only for slaughter and bloodshed."
+      "description": "One of the Legions that betrayed the Emperor during the Horus Heresy, the World Eaters were always known for their ferocity and brutality. The Twelfth Legion always applied maximum force to every conflict, leaving mountains of corpses in their wake, and they were only unleashed against enemies who could not be reasoned with or forced to yield. During the Heresy, their brutality grew, turning them into bloodthirsty berserkers who would struggle to tell friend from foe in the crimson haze of their frenzy.\n\nCharacters with the WORLD EATERS keyword must take KHORNE as their [MARK OF CHAOS] keyword."
     },
     "wraith_construct": {
       "name": "WRAITH CONSTRUCT",
@@ -2536,7 +2536,7 @@
       "name": "WYCH",
       "source": "apocrypha",
       "page": null,
-      "description": "[AI-Generated] A Drukhari gladiatorial fighter who performs in the arenas of Commorragh and fights in realspace raids, combining lethal acrobatics with exotic combat drugs."
+      "description": "Each Wych Cult is collective of gladiatorial fighters known as Wyches, or Hekatarii, whose battles entertain the masses of the Dark City, and whose skills can be hired by raiding parties when the price is right.\n\nIf you have the WYCH keyword, you will also have the [CULT] Keyword, which is replaced with the name of the Cult you are a member of."
     },
     "xenos": {
       "name": "XENOS",
@@ -2756,7 +2756,7 @@
       "name": "Sonic Weapon",
       "source": "apocrypha",
       "page": 159,
-      "description": "[AI-Generated] These weapons use focused soundwaves to shatter and pulverise. They lose power over distance but affect a wider area as the wave expands. A Sonic Weapon gains +2 ED at Short range, and Spread at Medium or Long range."
+      "description": "[AI-Generated] SONIC is a weapon keyword rather than a weapon trait with rules of its own. It marks the sonic weaponry of Slaanesh-devoted forces — the Sonic Blaster, Blastmaster, and Doom Siren used by Noise Marines — which project devastating waves of sound that can rupture organs and shatter bone. These weapons share no special mechanical effect; each relies on its individual profile and traits, such as Cacophony (attacks ignore cover bonuses to defence)."
     },
     "spread": {
       "name": "Spread",

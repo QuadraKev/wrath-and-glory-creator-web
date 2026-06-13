@@ -1339,8 +1339,8 @@
     "id": "nethreun_penetrators",
     "name": "Nethreun Penetrators",
     "type": "ammo",
-    "description": "These solid-state, large calibre bullets are fitted with an explosive propellant and a timed thermobaric cap, designed to initially pierce through thick hide or scales with ease before detonating milliseconds later with devastating explosive force from within the target.",
-    "effect": "AP -2 & +1 ED. These rounds can be used with weapons that have the PROJECTILE keyword and do not have the Heavy trait.",
+    "description": "Nethrius is a world of unspeakable danger, from the continual upheaval of tectonic shifts to the monstrous creatures that blight the planet’s surface. Even among the network of ventilation and maintenance ducts that service the giant domed city structures of the planet, small but equally vicious predators belligerently stalk the darkness in search of fresh prey.\n\nWhile gun-servitors and emplacements offer a degree of relative safety, the majority of Nethrian service personnel put their trust in the native Penetrator round. These solid-state, large calibre bullets are fitted with an explosive propellant and a timed thermobaric cap, designed to initially pierce through thick hide or scales with ease before detonating milliseconds later with devastating explosive force from within the target.",
+    "effect": "AP –2 & +1 ED",
     "value": 8,
     "rarity": "Very Rare",
     "keywords": [
@@ -1364,8 +1364,8 @@
     "id": "avachrun_forgeshot",
     "name": "Avachrun Forgeshot",
     "type": "ammo",
-    "description": "Mineral-dense dust, gathered as a by-product from the industrial extraction of the planet's core, is recycled and pressed for further reuse. These condensed slabs are then used in the fabrication of shell casings for the famed Forgeshot. With a metallurgical density several times that of common steel, the resultant shot can easily puncture through armour or bulkheads at short range.",
-    "effect": "AP -2. These rounds can be used with weapons that have the PROJECTILE keyword and do not have the Heavy trait.",
+    "description": "The mineral-rich world of Avachrus has long been utilised by the hallowed Adeptus Mechanicus as both a source of valuable resources and as a site of tremendous industry. Under the binary guidance of the Archdominus, the swelling mass of manufactorums and forges are watched with great vigilance to ensure the highest standards of productivity are maintained.\n\nAvachrun Forgeshot is a product of this prudence. Mineral-dense dust, gathered as a by-product from the industrial extraction of the planet’s core, is recycled and pressed for further reuse. These condensed slabs are then used in the fabrication of shell casings for the famed Forgeshot. With a metallurgical density several times that of common steel, the resultant shot can easily puncture through armour or bulkheads at short range.",
+    "effect": "AP –2",
     "value": 6,
     "rarity": "Very Rare",
     "keywords": [
@@ -1389,8 +1389,8 @@
     "id": "vxii_auto_guidesys_targeting_shells",
     "name": "VXII Auto-GuideSys Targeting Shells",
     "type": "ammo",
-    "description": "These shells pair directly with the targeting system of the Shotgun before making use of an intelligent guidance system built into the shell itself that allows each round to track and hit targets with great accuracy.",
-    "effect": "+1 bonus die to your Ballistic Skill (A) Test when targeting enemies outside Short Range, if the weapon is equipped with a Magnocular Scope, or if the user has a properly calibrated augmetic eye. These rounds can be used with weapons that have the PROJECTILE keyword and do not have the Heavy trait.",
+    "description": "Favoured by the noble prosecution forces of GIlead Prime, these shells pair directly with the targeting system of the Shotgun before making use of an intelligent guidance system built into the shell itself that allows each round to track and hit targets with great accuracy.\n\nIn situations that require apprehending high-priority scum or recidivists who have cowardly sought refuge among busy crowds or densely populated areas, the VXII Auto-GuideSys round excels. Fired at range the shell takes an initial moment to acquire bio-lock on its target before relentlessly pursuing them to their explosive conclusion. Due to their complexity, this ammunition type requires the use of sophisticated targeting equipment unavailable to most.",
+    "effect": "+1 bonus die to your Ballistic Skill (A) Test when targeting enemies outside Short Range, if weapon is equipped with a Magnocular Scope, or if the user has a properly calibrated augmetic eye.",
     "value": 3,
     "rarity": "Uncommon",
     "keywords": [
@@ -1412,8 +1412,8 @@
     "id": "enochian_prayershot",
     "name": "Enochian Prayershot",
     "type": "ammo",
-    "description": "To the Sisters of the Adepta Sororitas, the sacred Chaplet Ecclesiasticus is more than just an ornate cluster of devotional prayer beads. Each gleaming adamantium sphere represents an individual or collective act of penitence undertaken by the bearer. Alternatively, they act as an unwavering reminder of the virtues of the beloved Emperor that the Sister personally holds dearest, a symbol of their devotion and unshakeable faith.\nFrom the broken bodies of Sisters honoured enough to die in service of the Emperor, the shattered and sundered Chaplets are recovered. These fragments are eventually returned to the manufactorums of Enoch from which they originate. In the sweltering heat below the towering, sanctified spires, skilled artisans take these blessed remnants and set them in intricately carved and inscribed shell casings which are then anointed with blessings and devotional prayers. The resulting shot, empowered by the faith of the fallen, is brutally effective in the prosecution of daemons and other Warp-spawned monstrosities.",
-    "effect": "+3 ED against enemies with the DAEMON Keyword. These rounds can be used with weapons that have the PROJECTILE keyword and do not have the Heavy trait.",
+    "description": "To the Sisters of the Adepta Sororitas, the sacred Chaplet Ecclesiasticus is more than just an ornate cluster of devotional prayer beads. Each gleaming adamantium sphere represents an individual or collective act of penitence undertaken by the bearer. Alternatively, they act as an unwavering reminder of the virtues of the beloved Emperor that the Sister personally holds dearest, a symbol of their devotion and unshakable faith.\n\nFrom the broken bodies of Sisters honoured enough to die in service of the Emperor, the shattered and sundered Chaplets are recovered. These fragments are eventually returned to the manufactorums of Enoch from which they originate. In the sweltering heat below the towering, sanctified spires, skilled artisans take these blessed remnants and set them in intricately carved and inscribed shell casings which are then anointed with blessings and devotional prayers. The resulting shot, empowered by the faith of the fallen, is brutally effective in the persecution of daemons and other Warp-spawned monstrosities.",
+    "effect": "+3 ED against enemies with the DAEMON Keyword",
     "value": 4,
     "rarity": "Very Rare",
     "keywords": [
@@ -1436,8 +1436,8 @@
     "id": "gravedigger_shells",
     "name": "Gravedigger Shells",
     "type": "ammo",
-    "description": "The most well-known and highly regarded of these illicit modifications is the aforementioned 'Gravedigger' Shell. Its production involves the Guardsman carefully removing a small portion of shot from a common Scatter round and replacing it with shavings taken from the explosive compound commonly found in demo charges or nav markers. When fired, the round explodes with a blinding white flash that disorientates targets in proximity and ignites the remaining shot, showering the target in flaming shrapnel.",
-    "effect": "When fired, any target within Short Range also gains the Blinded Condition. These rounds can be used with weapons that have the PROJECTILE keyword and do not have the Heavy trait.",
+    "description": "Well known for their zealotry, the ranks of the Gilead Gravediggers have been known to customise their own ammunition, from additional blessings over las-packs to the unmistakable Gravedigger Shell — all in direct violation of decrees issued by both the Adeptus Mechanicus and the Departmento Munitorum.\n\nThe most well-known and highly regarded of these illicit modifications is the aforementioned ‘Gravedigger’ Shell. Its production involves the Guardsman carefully removing a small portion of shot from a common Scatter round and replacing it with shavings taken from the explosive compound commonly found in demo charges or nav markers. When fired, the round explodes with a blinding white flash that disorientates targets in proximity and ignites the remaining shot, showering the target in flaming shrapnel.",
+    "effect": "When fired, any target within Short Range also gains the Blinded Condition.",
     "value": 2,
     "rarity": "Uncommon",
     "keywords": [
@@ -1463,8 +1463,8 @@
     "id": "illuminator_flare_round",
     "name": "Illuminator Flare Round",
     "type": "ammo",
-    "description": "Extensively used by the Explorators that first ventured into the Gilead System, the Illuminator Flare Round is now a rare and often overlooked ammunition variant. Based on a standard-pattern shell, this purpose-specific round is designed to act as a source of illumination or as a guiding beacon in times of distress. Due to the Flare Round's immense size and ignition system it can only be fired from the wide-bore Shotgun Pistol.",
-    "effect": "When used as a Flare, the Illuminator Round soars high into the air before exploding with a burning bright marker that hangs in the sky. Its visibility and duration is situationally dependent and at the GM's discretion. When used as ammunition against a Threat, the round is treated as if it had AP -2/+1 ED/Blast (5)/Inflict Blinded and On Fire. The blast radius is centred on the initial target. Can only be fired from a Shotgun Pistol.",
+    "description": "Extensively used by the Explorators that first ventured into the Gilead System, the Illuminator Flare Round is now a rare and often overlooked ammunition variant. Based on a standard-pattern shell, this purpose-specific round is designed to act as a source of illumination or as a guiding beacon in times of distress.\n\nDue to the Flare Round’s immense size and ignition system it can only be fired from the wide-bore Shotgun Pistol. The round is designed to soar high into the air when fired, and contains a small fuel-cell based propellant system that can cause a devastating explosion if fired at close range or in enclosed spaces. This is an ill-advised use, however, as the resulting blast is capable of blowing a hole clean through even reinforced armoured hulls, while the accompanying flare has the potential to cause severe visual impairment and additional combustion.",
+    "effect": "When used as a Flare, the Illuminator Round soars high into the air before exploding with a burning bright marker that hangs in the sky. Its visibility and duration is situationally dependent and at the GM’s discretion. When used as ammunition against a Threat, the round is treated as if it had AP –2/+1 ED/Blast (5)/ Inflict Blinded and On Fire. The blast radius is centred on the initial target.",
     "value": 8,
     "rarity": "Very Rare",
     "keywords": [
@@ -1491,7 +1491,7 @@
     "name": "Biologis Impacter N-MF-76",
     "type": "ammo",
     "description": "Specifically designed by representatives of the Adeptus Mechanicus stationed on Nethrius for the persecution of organic targets, the Biologis Impacter X76 round contains a lethal synaptic inhibitor poison derived from the native megafauna.\nThe round consists of small glass beads in replacement of the standard ceramite shot. These shatter on firing, releasing their virulent contents and creating a deadly hail of toxin tipped shards.\nWhen hit, the deadly toxicant within acts upon the targets biology at a cellular level. This ensures that should the initial force fail to completely neutralise the threat, within a few seconds they are rendered incapacitated as the poison runs rampant through their system, allowing for them to be dispatched with ease.",
-    "effect": "+1 ED, Inflict (Poisoned - 2). These rounds can be used with weapons that have the PROJECTILE keyword and do not have the Heavy trait.",
+    "effect": "+1 ED, Inflict (Poisoned - 2)",
     "value": 5,
     "rarity": "Rare",
     "keywords": [
@@ -1518,7 +1518,7 @@
     "name": "Cryptclearer",
     "type": "ammo",
     "description": "These explosive shells rupture on contact, showering the area of the blast in lethal shrapnel. Used in areas where densely packed or fast moving Xenos foes would seek to gain advantage, the lethal fragmentary payload quickly spreads within enclosed spaces, cutting down threats with ease.",
-    "effect": "+4 ED against targets within Short Range. These rounds can be used with weapons that have the PROJECTILE keyword and do not have the Heavy trait.",
+    "effect": "+4 ED against targets within Short Range",
     "value": 8,
     "rarity": "Unique",
     "keywords": [
@@ -1541,8 +1541,8 @@
     "id": "xenopurge",
     "name": "Xenopurge",
     "type": "ammo",
-    "description": "From within the exalted arsenal of the Deathwatch of the Adeptus Astartes, the ammunition known as Xenopurge fires a heavy slug designed to punch through the natural armour of many xenos species and shred their vital organs. This quality ensures it sees notable usage against Tyranids and other entomic species that favour the simplicity of swarm tactics.",
-    "effect": "AP -2, +2 ED. These rounds can be used with weapons that have the PROJECTILE keyword and do not have the Heavy trait.",
+    "description": "From within the exalted arsenal of the Deathwatch of the Adeptus Astartes, the ammunition known as Xenopurge fires a heavy slug designed to punch through the natural armour of many xenos species and shred their vital organs.\n\nThis quality ensures it sees notable usage against Tyranids and other entomic species that favour the simplicity of swarm tactics. As with many of the tools of the Deathwatch, its exact construction is known only to the specially chosen Tech-Priests who meet the Deathwatch’s strict vetting and are sworn to secrecy.",
+    "effect": "AP -2, +2 ED",
     "value": 9,
     "rarity": "Unique",
     "keywords": [
@@ -1568,7 +1568,7 @@
     "name": "Wyrmsbreath",
     "type": "ammo",
     "description": "Wyrmsbreath shells, most commonly used by the Adeptus Astartes of the Deathwatch, unleash wave-like bursts of sanctified flame that are particularly useful against large mobs of baying recidivists or xenos. Capable of quickly engulfing whole rooms or tightly packed corridors in searing flame, these shells excel against poorly-armoured threats, the initial blast ripping through soft flesh with ease before igniting the target.",
-    "effect": "Any individual within Short Range of an attack made using Wyrmsbreath ammunition also gains the On Fire Condition. These rounds can be used with weapons that have the PROJECTILE keyword and do not have the Heavy trait.",
+    "effect": "Any individual within Short Range of an attack made using Wyrmsbreath ammunition also gains the On Fire Condition",
     "value": 8,
     "rarity": "Unique",
     "keywords": [
