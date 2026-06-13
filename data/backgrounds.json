@@ -181,36 +181,6 @@
       ]
     },
     {
-      "id": "aeldari_craftworld",
-      "name": "Craftworld Born",
-      "description": "This entry does not exist in the Core Rulebook. Aeldari backgrounds only have Accomplishments and Goals tables, not Origins.",
-      "bonus": "+1 Conviction",
-      "bonusType": "conviction",
-      "factions": [
-        "aeldari"
-      ]
-    },
-    {
-      "id": "aeldari_outcast",
-      "name": "The Path of the Outcast",
-      "description": "This entry does not exist in the Core Rulebook. Aeldari backgrounds only have Accomplishments and Goals tables, not Origins.",
-      "bonus": "+1 Resolve",
-      "bonusType": "resolve",
-      "factions": [
-        "aeldari"
-      ]
-    },
-    {
-      "id": "aeldari_survivor",
-      "name": "Survivor of Tragedy",
-      "description": "This entry does not exist in the Core Rulebook. Aeldari backgrounds only have Accomplishments and Goals tables, not Origins.",
-      "bonus": "+1 Determination",
-      "bonusType": "determination",
-      "factions": [
-        "aeldari"
-      ]
-    },
-    {
       "id": "squig_brain_transfer",
       "name": "Squig Brain Transfer",
       "description": "Your earliest memory is awakening from surgery, covered in scars, and the Mad Dok telling you you're ready to fight again. Who were you before? Does it matter?",
